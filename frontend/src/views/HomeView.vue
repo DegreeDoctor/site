@@ -1,5 +1,15 @@
-<script setup></script>
+<script>
+import { useStore } from "../stores/store";
+
+export default {
+    data() {
+        return {
+            store: useStore(),
+        };
+    },
+};
+</script>
 
 <template>
-    <h1>Hello World</h1>
+    <router-link to="home">test</router-link>
 </template>
