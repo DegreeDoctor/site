@@ -1,0 +1,21 @@
+"name (name can only have alphanumeric characters)": {
+    "name": "template name",
+    "HASS": 6, //Hass req amn,
+    "requirements": {//example
+        "calc1": 4,
+        "Physics1": 4,
+        "SCI Elective": 4,
+        "Math elective": 4,
+        "HASS Elective": 24,
+        "computer science1": 4
+    },
+    "template": {
+        "first-fall": [
+            "course1",  
+            "course2"
+        ]
+    },
+    "concentrations": [
+        "name1"
+    ]
+}
