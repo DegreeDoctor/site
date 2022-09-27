@@ -6,10 +6,11 @@ export default {
         return {
             store: useStore(),
         };
-    }
+    },
 };
 </script>
 
 <template>
-    <router-link to="home">test</router-link>
+    <button @click="store.addDegree()">test button</button>
+    <router-link to="degree">test</router-link>
 </template>

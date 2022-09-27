@@ -1,27 +1,31 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import { useStore } from "../stores/store";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
             path: "/",
-            name: "home",
-            component: HomeView,
+            name: "redirect",
+            beforeEnter: () => {
+                const store = useStore();
+                if (store.hasDegrees) {
+                    return { name: "degree" };
+                } else {
+                    return { name: "quiz" };
+                }
+            },
         },
         {
-            path: "/home",
-            redirect: "/",
+            path: "/degree",
+            name: "degree",
+            component: () => import("../views/DegreeView.vue"),
         },
-        /*
-            On non default pages you can Lazy load like below to have
-            faster times to navigate pages.
         {
-            path: "/about",
-            name: "about",
-            component: () => import("../views/AboutView.vue"),
+            path: "/quiz",
+            name: "quiz",
+            component: () => import("../views/QuizView.vue"),
         },
-        */
     ],
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {
