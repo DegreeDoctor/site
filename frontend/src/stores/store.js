@@ -1,9 +1,9 @@
 import { defineStore } from "pinia";
-import { useStorage } from "@vueuse/core"
+import { useStorage } from "@vueuse/core";
 
 export const useStore = defineStore("main", {
     state: () => ({
-        degrees: useStorage('degrees', []),
+        degrees: useStorage("degrees", []),
     }),
     //Act like computed in Vue
     getters: {

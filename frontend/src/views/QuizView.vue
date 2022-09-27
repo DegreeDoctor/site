@@ -6,7 +6,7 @@ export default {
         return {
             store: useStore(),
         };
-    }
+    },
 };
 </script>
 

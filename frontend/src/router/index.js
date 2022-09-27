@@ -9,13 +9,12 @@ const router = createRouter({
             name: "redirect",
             beforeEnter: () => {
                 const store = useStore();
-                if(store.hasDegrees) {
-                    return {name: "degree"}
+                if (store.hasDegrees) {
+                    return { name: "degree" };
+                } else {
+                    return { name: "quiz" };
                 }
-                else {
-                    return {name: "quiz"};
-                }
-            }
+            },
         },
         {
             path: "/degree",
@@ -26,7 +25,7 @@ const router = createRouter({
             path: "/quiz",
             name: "quiz",
             component: () => import("../views/QuizView.vue"),
-        }
+        },
     ],
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {
