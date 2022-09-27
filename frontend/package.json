@@ -9,18 +9,22 @@
         "pretty": "prettier .  --write"
     },
     "dependencies": {
+        "@quasar/extras": "^1.15.3",
         "@vueuse/core": "^9.3.0",
         "pinia": "^2.0.21",
+        "quasar": "^2.8.4",
         "vue": "^3.2.38",
         "vue-router": "^4.1.5"
     },
     "devDependencies": {
+        "@quasar/vite-plugin": "^1.2.3",
         "@rushstack/eslint-patch": "^1.1.4",
         "@vitejs/plugin-vue": "^3.0.3",
         "@vue/eslint-config-prettier": "^7.0.0",
         "eslint": "^8.22.0",
         "eslint-plugin-vue": "^9.3.0",
         "prettier": "^2.7.1",
+        "sass": "^1.32.12",
         "vite": "^3.0.9"
     }
 }
