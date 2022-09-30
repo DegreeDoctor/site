@@ -1,0 +1,57 @@
+<course id="acalog-course-51351">
+    <title xmlns:a="http://www.w3.org/2005/Atom">BIOL 4900 - Team Research</title>
+    <parent xmlns:xi="http://www.w3.org/2001/XInclude">
+        <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:hierarchy//c:entity[@id=\'acalog-entity-1345\'])[1])">
+            <fallback>Biological Sciences</fallback>
+        </include>
+    </parent>
+    <type xmlns:xi="http://www.w3.org/2001/XInclude">
+        <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:types//c:type[@id=\'acalog-course-type-1097\'])[1])">
+            <fallback>Biology</fallback>
+        </include>
+    </type>
+    <content xmlns:a="http://www.w3.org/2005/Atom" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:h="http://www.w3.org/1999/xhtml">
+        <prefix>BIOL</prefix><code>4900</code>
+        <name>Team Research</name>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-592">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-592\'])[1])"></include><data>BIOL</data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-593">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-593\'])[1])"></include><data></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-594">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-594\'])[1])"></include><data>4900</data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-595">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-595\'])[1])"></include><data>&#160;-&#160;</data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-596">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-596\'])[1])"></include><data>Team Research</data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-576">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http:``//acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-576\'])[1])"></include><data></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:h="http://www.w3.org/1999/xhtml" type="acalog-field-577">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-577\'])[1])"></include><data xmlns:h="http://www.w3.org/1999/xhtml"><p xmlns:h="http://www.w3.org/1999/xhtml">Independent research by teams under the supervision of a faculty member, including literature search, brief proposal of project design, conduct of project to completion, and writing of a formal report in the form of a scientific paper and presentation of a seminar or poster on the project.&#160;</p></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-578">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-578\'])[1])"></include><data></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:h="http://www.w3.org/1999/xhtml" type="acalog-field-579">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-579\'])[1])"></include><data xmlns:h="http://www.w3.org/1999/xhtml"><p xmlns:h="http://www.w3.org/1999/xhtml">Restricted to Biology majors who have completed <permalink link-id="acalog-permalink-24" to="acalog-course-51322" type="tooltip"><title xmlns:a="http://www.w3.org/2005/Atom">BIOL 1010</title></permalink>, <permalink link-id="acalog-permalink-23" to="acalog-course-51323" type="tooltip"><title xmlns:a="http://www.w3.org/2005/Atom">BIOL 2120</title></permalink>, and <permalink link-id="acalog-permalink-27" to="acalog-course-51325" type="tooltip"><title xmlns:a="http://www.w3.org/2005/Atom">BIOL 2500</title></permalink>, or equivalents and who have permission of the instructor to register.</p></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-580">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-580\'])[1])"></include><data></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-581">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-581\'])[1])"></include><data>Fall and spring terms annually.</data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-582">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-582\'])[1])"></include><data></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-583">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-583\'])[1])"></include><data></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-584">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-584\'])[1])"></include><data></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-585">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-585\'])[1])"></include><data></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-586">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-586\'])[1])"></include><data></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-587">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-587\'])[1])"></include><data></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-588">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-588\'])[1])"></include><data>4</data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-589">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-589\'])[1])"></include><data></data></field>
+        <field xmlns:xi="http://www.w3.org/2001/XInclude" type="acalog-field-590">
+            <include xmlns:xi="http://www.w3.org/2001/XInclude" xi:xpointer="xmlns(c=http://acalog.com/catalog/1.0) xpointer((//c:courses/c:fields/c:field[@id=\'acalog-field-590\'])[1])"></include><data></data></field>
+    </content>
+</course>
