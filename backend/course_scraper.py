@@ -3,13 +3,10 @@
 
 from typing import Dict, List, Tuple
 import requests
-import sys
 from lxml import html
-import os
 from tqdm import tqdm
 import json
-from lxml import etree
-import csv
+import unicodedata
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
@@ -84,7 +81,7 @@ def get_catalog_description(fields, course_name):
 # ["required" = [Calc1, Calc2...], "One of" = [[Option 1, Option 2], [Option 1, Option 2]]]
 def checkreq(list):
     for dept in depts:
-        if list.find(dept + ' ') != -1 and list[list.find(dept)+5]:
+        if list.find(dept + ' ') != -1:
             if list.find(dept + ' ') + 5 < len(list):
                 if list[list.find(dept)+5].isdigit():
                     return True
@@ -103,6 +100,7 @@ def split_req(str):
     return final
   
 def get_prereq(str): 
+    str = unicodedata.normalize("NFKD",str)
     reqs = []
     one_of = []
     reqset = split_req(str)
@@ -113,13 +111,32 @@ def get_prereq(str):
         else:
             reqs.extend(courses_from_string(''.join(req)))
     return { "req" : reqs, "one_of" : one_of }
+
+# returns the range of credits of a given course while checking for edge cases
 def get_credit(str):
     credit = []
-    if str.find("to") != -1:
-        for x in range(int(str[:1]),int(str[len(str)-1:])+1):
-            credit.append(x)
-    elif str.isdigit():
+    low = 0
+    high = 0
+    if str.isdigit():
+        # Case "4", etc.
         credit.append(int(str))
+    elif str.find(" to ") != -1 or str.find("-") != -1 or str.find(" or ") != -1: 
+        if (str[:1].isdigit() and str[len(str)-1:].isdigit()):
+            # Stress checking is in format "1 ( to ,-, or ) 4" or similar format
+            low = int(str[:1])
+            high = int(str[len(str)-1:])
+        elif str.find("1") != -1 and str.find("4") != -1: 
+            # Case where formatting is slightly off like "1/4 credit"
+            low = 1
+            high = 4
+        for x in range(low,high+1):
+            credit.append(x)
+    elif str[:1].isdigit(): 
+        # Edge cases like "4 (course...", "3 credits each semester"
+        credit.append(int(str[:1]))
+    else: 
+        # Edge cases like "Arranged.", "Variable."
+        credit.append(str)
     return credit
 
 def courses_from_string(inp):
@@ -139,6 +156,11 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
     course_chunks = [
         course_ids[i : i + CHUNK_SIZE] for i in range(0, len(course_ids), CHUNK_SIZE)
     ]
+    dept_input = []
+    f = open('input.json', 'r')
+    f = json.load(f)
+    for dept in f:
+        dept_input.append(dept)
 
     for chunk in course_chunks:
         ids = "".join([f"&ids[]={id}" for id in chunk])
@@ -146,13 +168,12 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
 
         courses_xml = html.fromstring(requests.get(url).text.encode("utf8"))
         courses = courses_xml.xpath("//courses/course[not(@child-of)]")
-        
         for course in courses:
             subj = course.xpath("./content/prefix/text()")[0].strip()
-            if not (subj in depts):
+            if not (subj in dept_input):
                 continue
             ID = course.xpath("./content/code/text()")[0].strip()
-            if ID[0] == '6':
+            if ID[0] == '6' or ID[0] == '9':
                 continue
             course_name = course.xpath("./content/name/text()")[0].strip()
             fields = course.xpath("./content/field")
@@ -194,6 +215,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
                             year = "all"
                         offered_text = field_text
                     elif field.get('type')[-3:] == str(base - 13):
+                        field_text = field.text_content()
                         if len(field_text) > 0:
                             prereqs = get_prereq(field_text.upper())
 
