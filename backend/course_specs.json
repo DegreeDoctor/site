@@ -6,7 +6,15 @@
         "description": "string",
         "credits": [1,2,4],
         "concentration (NEED TO BE IMPLEMENTED)": ["conc1.name"], 
-        "prerequisites": ["course1.name"],
+        "prerequisites": {
+            "req" : [
+                "MATH 1100"
+            ],
+            "one_of": [
+                "CSCI 1200",
+                "CSCI 1100"
+            ]
+        },
         "crosslisted": {
             "SUBJ": "ID"
         },
