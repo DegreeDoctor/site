@@ -4,17 +4,17 @@
         "subject": "SUBJ (4 letters long, ex: CSCI)",
         "ID": "1234 (4 digit number)",
         "description": "string",
-        "credits": 4,
-        "concentration": ["conc1.name"],
+        "credits": [1,2,4],
+        "concentration (NEED TO BE IMPLEMENTED)": ["conc1.name"], 
         "prerequisites": ["course1.name"],
         "crosslisted": {
             "SUBJ": "ID"
         },
         "properties": {
             "CI": true,
-            "MR": true
+            "MR (NEED TO BE IMPLEMENTED)": true
         },
-        "professors": [
+        "professors (NEED TO BE IMPLEMENTED)": [
             "professor1.name"
         ],
         "offered": {

@@ -82,8 +82,45 @@ def get_catalog_description(fields, course_name):
     return ""
 # function should return an object where object = 
 # ["required" = [Calc1, Calc2...], "One of" = [[Option 1, Option 2], [Option 1, Option 2]]]
+def checkreq(list):
+    for dept in depts:
+        if list.find(dept + ' ') != -1 and list[list.find(dept)+5]:
+            if list.find(dept + ' ') + 5 < len(list):
+                if list[list.find(dept)+5].isdigit():
+                    return True
+    return False
+
+
+def split_req(str):
+    reqset = str.split(" AND ")
+    final = []
+    for req in reqset:
+        new = req.split(" OR ")
+        for n in new:
+            if not checkreq(n):
+                new.remove(n)
+        final.append(new)
+    return final
+  
 def get_prereq(str): 
-    return str
+    reqs = []
+    one_of = []
+    reqset = split_req(str)
+    for req in reqset:
+        if len(req) > 1:
+            for r in req:
+                one_of.extend(courses_from_string(r))
+        else:
+            reqs.extend(courses_from_string(''.join(req)))
+    return { "req" : reqs, "one_of" : one_of }
+def get_credit(str):
+    credit = []
+    if str.find("to") != -1:
+        for x in range(int(str[:1]),int(str[len(str)-1:])+1):
+            credit.append(x)
+    elif str.isdigit():
+        credit.append(int(str))
+    return credit
 
 def courses_from_string(inp):
     # REFACTOR (Clean up instead of searching from all dept)
@@ -109,6 +146,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
 
         courses_xml = html.fromstring(requests.get(url).text.encode("utf8"))
         courses = courses_xml.xpath("//courses/course[not(@child-of)]")
+        
         for course in courses:
             subj = course.xpath("./content/prefix/text()")[0].strip()
             if not (subj in depts):
@@ -123,15 +161,22 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
             semesters = []
             cross_listed = []
             prereqs = []
+            credit = []
+
             
             base = int(fields[0].get('type')[-3:])
             for field in fields:
                 field_text = field.xpath("./descendant-or-self::*/text()")
                 if len(field_text) > 0:
                     field_text = field_text[0].strip()
-                    if field.get('type')[-3:] == str(base - 8):
+                    if field.get('type')[-3:] == str(base - 4): 
+                        credit = get_credit(field_text)
+                    elif field.get('type')[-3:] == str(base - 8):
                         if len(field_text) > 0:
                             cross_listed = courses_from_string(field_text.upper())
+                            for item in cross_listed:
+                                if item.find(subj + '-' + str(ID)) != -1:
+                                    cross_listed.remove(item)
                     elif field.get('type')[-3:] == str(base - 11):
                         if "fall" in field_text.lower():
                             semesters.append("fall")
@@ -143,23 +188,23 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
                             year = "even"
                         if "odd" in field_text.lower():
                             year = "odd"
-                        if "availability of instructor" in field_text.lower():
+                        if "instructor" in field_text.lower():
                             year = "UIA"
+                        if len(year) == 0:
+                            year = "all"
                         offered_text = field_text
                     elif field.get('type')[-3:] == str(base - 13):
                         if len(field_text) > 0:
-                            prereqs = courses_from_string(field_text.upper())
+                            prereqs = get_prereq(field_text.upper())
 
             data[course_name] = {
                 "name": course_name,
                 "subj": subj,
                 "ID": ID,
                 "description": get_catalog_description(fields, course_name),
-                "prerequisites": {
-                    "req" : prereqs,
-                    "one_of" : prereqs
-                },
-                "cross listed": cross_listed,
+                "credits" : credit,
+                "prerequisites": prereqs,
+                "crosslisted": cross_listed,
                 "offered": {
                     "year" : year,
                     "semesters" : semesters,

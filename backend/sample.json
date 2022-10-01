@@ -5,13 +5,13 @@
             "subj": "CSCI",
             "ID": "1100",
             "description": "An introduction to computer programming algorithm design and analysis. Additional topics include basic computer organization; internal representation of scalar and array data; use of top-down design and subprograms to tackle complex problems; abstract data types. Enrichment material as time allows. Interdisciplinary case studies, numerical and nonnumerical applications. Students who have passed CSCI 1200 cannot register for this course.",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring",
@@ -29,13 +29,13 @@
             "subj": "CSCI",
             "ID": "1190",
             "description": "This course teaches elementary programming concepts using the MATLAB environment for engineering students with little or no prior programming experience. Concepts include variables, looping, and function calls. Students cannot get credit for CSCI 1190 after earning credit for CSCI 1100 or any higher-level CSCI course.",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                1
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -52,13 +52,16 @@
             "subj": "CSCI",
             "ID": "1200",
             "description": "Programming concepts: functions, parameter passing, pointers, arrays, strings, structs, classes, templates. Mathematical tools: sets, functions, and relations, order notation, complexity of algorithms, proof by induction. Data structures and their representations: data abstraction and internal representation, sequences, trees, binary search trees, associative structures. Algorithms: searching and sorting, generic algorithms, iterative and recursive algorithms. Methods of testing correctness and measuring performance.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -75,13 +78,16 @@
             "subj": "CSCI",
             "ID": "2200",
             "description": "This course introduces important mathematical and theoretical tools for computer science, including topics from set theory, combinatorics, and probability theory, and then proceeds to automata theory, the Turing Machine model of computation, and notions of computational complexity. The course will emphasize formal reasoning and proof techniques.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -98,13 +104,16 @@
             "subj": "CSCI",
             "ID": "2300",
             "description": "Data structures and algorithms, and the mathematical techniques necessary to design and analyze them. Basic data structures: lists, associative structures, trees. Mathematical techniques for designing algorithms and analyzing worst-case and expected-case algorithm efficiency. Advanced data structures: balanced trees, tries, heaps, priority queues, graphs. Searching, sorting. Algorithm design techniques: dynamic programming, greedy algorithms, divide-and-conquer, backtracking. Example graph, string, geometric, and numeric algorithms.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -121,13 +130,16 @@
             "subj": "CSCI",
             "ID": "2500",
             "description": "Introduction to computer organization, assembler language, and operating systems. Computer systems organization: processors, memory, I/O. Digital logic: gates, Boolean algebra, digital logic circuits, memory, buses. Microprogramming. Machine level: instruction formats, addressing modes, instruction types, flow of control. Operating systems: virtual memory, virtual I/O instructions, processes, interprocess communication. Numeric representation. Assembler language: the assembly process, macros, linking, loading. Advanced architectures: RISC architectures, parallel architectures.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -144,13 +156,16 @@
             "subj": "CSCI",
             "ID": "2600",
             "description": "A study of important concepts in software design, implementation, and testing. Topics include specification, abstraction with classes, design principles and patterns, testing, refactoring, the software development process, GUI and event-driven programming, and cloud-based programming. The course also introduces implementation and testing tools, including IDEs, revision control systems, and other frameworks. The overarching goal of the course is for students to learn how to write correct and maintainable software.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring",
                     "summer"
@@ -167,13 +182,16 @@
             "subj": "CSCI",
             "ID": "4020",
             "description": "This course presents fundamental ideas and techniques of modern algorithm design and analysis. After completing this course, students should be able to formally analyze and design efficient algorithms for a variety of computational problems. Topics covered include Greedy Algorithms, Dynamic Programming, Network Flow, NP-Completeness, Linear Programming, Network Algorithms, as well as probabilistic and approximate algorithms.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -189,15 +207,18 @@
             "subj": "CSCI",
             "ID": "4030",
             "description": "State-of-the-art in contemporary algorithm design, randomized algorithms are algorithms that use randomness as part of their functioning. They are typically simple, often easy to analyze, and work well in practice. They have numerous applications in many fields of computer science and mathematics. Randomized algorithms represent an active and vibrant research area with many exciting new results contributed every year.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6220"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -213,11 +234,14 @@
             "subj": "CSCI",
             "ID": "4040",
             "description": "Algorithms with provable guarantees on the quality of their solutions are a powerful way of dealing with intractable problems. This course covers fundamental techniques for designing approximation algorithms. Possible topics include: semi-definite and linear programming, inapproximability and the PCP theorem, randomized rounding, metrics and cuts, primal-dual methods, and online algorithms.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6040"
             ],
             "offered": {
@@ -237,15 +261,18 @@
             "subj": "CSCI",
             "ID": "4100",
             "description": "Introduction to the theory, algorithms, and applications of machine learning (supervised, reinforcement, and unsupervised) from data: What is learning? Is learning feasible? How can we do it? How can we do it well? The course offers a mix of theory, technique, and application with additional selected topics chosen from Pattern Recognition, Decision Trees, Neural Networks, RBF's, Bayesian Learning, PAC Learning, Support Vector Machines, Gaussian processes, and Hidden Markov Models.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6100"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -261,11 +288,14 @@
             "subj": "CSCI",
             "ID": "4110",
             "description": "Introduction to the computational and algorithmic aspects of social processes. Topics covered will be selected to illustrate the diverse challenges in algorithmic social process analysis: social networks and their dynamics; information flow; hidden networks. Algorithms involving social and selfish agents, social choice theory, voting, and auctions. Ranking actors in networks, recommendation systems, peer-review, and aggregation of rankings/reviews.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6110"
             ],
             "offered": {
@@ -285,11 +315,14 @@
             "subj": "CSCI",
             "ID": "4120",
             "description": "Introduction to the computational and mathematical techniques for practical financial applications. The course will emphasize the algorithmic side of finance. Topics will be selected from pricing (options and derivatives), trading, risk-evaluation, selfish agents, sequential decisions, and portfolio optimization. Examples of the mathematical and algorithmic techniques covered are martingale measures, risk-neutral pricing and Monte Carlo, dynamic programing, and stochastic processes.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6120"
             ],
             "offered": {
@@ -309,13 +342,16 @@
             "subj": "CSCI",
             "ID": "4150",
             "description": "Topics and techniques of artificial intelligence using the language LISP. Topics include search, knowledge representation, expert systems, theorem proving, natural language interfaces, learning, game playing, and computer vision. Techniques include pattern matching, data-driven programming, substitution rules, frames, heuristic search, transition networks, neural networks, and evolutionary computation. Development of programming proficiency in LISP is emphasized.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -331,13 +367,16 @@
             "subj": "CSCI",
             "ID": "4210",
             "description": "Discussion of various aspects of computer operating systems design and implementation. Topics include I/O programming, concurrent processes and synchronization problems, process management and scheduling of processes, virtual memory management, device management, file systems, deadlock problems, system calls, and interprocess communication. Programming projects are required.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring",
                     "summer"
@@ -354,13 +393,16 @@
             "subj": "CSCI",
             "ID": "4220",
             "description": "Programming with an overview of the principles of computer networks, including a detailed look at the OSI reference model and various popular network protocol suites. Concentration on Unix interprocess communication (IPC), network programming using TCP and UDP, as well as client-side and mobile programming. Programming projects are required.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -376,15 +418,18 @@
             "subj": "CSCI",
             "ID": "4230",
             "description": "A self-contained course that includes topics from number theory, basic cryptography, and protocol security. This is a hybrid course with sufficient depth in both theory and hands-on experience with network protocols. Topics include: Classical Cryptography, Block Ciphers (DES, AES), Information Theoretical Cryptography, Randomness, RNG and Stream Ciphers, Hash and MAC Algorithms, Public-Key Cryptography, Elliptic Curve Cryptography, Digital Signatures and Identification, Internet Attacks, Web Security, SSL and PGP. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6230"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -400,11 +445,14 @@
             "subj": "CSCI",
             "ID": "4250",
             "description": "This course will offer an introduction to network science and a review of current research in this area. Classes will interchangeably present chapters from the textbook and related current research. The emphasis will be on the mathematical background of network science: graphs and networks; random networks and various types of scale-free networks; network properties such as assortativity, mobility, robustness, social networks, and communities; and dynamics of spreading in networks.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6250"
             ],
             "offered": {
@@ -424,15 +472,18 @@
             "subj": "MATH",
             "ID": "4150",
             "description": "Fundamental concepts and methods of graph theory and its applications to various areas of computing and the social and natural sciences. Topics include graphs as models, representation of graphs, trees, distances, matchings, connectivity, flows in networks, graph colorings, Hamiltonian cycles, traveling salesman problem, planarity. All concepts, methods, and applications are presented through a sequence of exercises and problems, many of which are done with the help of novel software systems for combinatorial computing.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-4260"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -448,15 +499,18 @@
             "subj": "CSCI",
             "ID": "4270",
             "description": "The goal of this course is to introduce students to the problems, challenges, and applications of computer vision from a computational perspective. Topics include camera modeling and image formation, feature extraction, object and face recognition, image mosaic construction, stereo and three-dimensional imaging, motion, and tracking. Machine learning methods, including deep convolutional neural networks, will be studied and applied throughout the course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6270"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -472,11 +526,14 @@
             "subj": "CSCI",
             "ID": "4310",
             "description": "This course introduces Linux kernel programming basics and starts by examining how Berkeley sockets bridge the user-kernel gap. The remainder of the course is spent looking into transport layer (e.g., TCP) and network layer (e.g., IP) implementations. Students do both individual and group programming projects. In addition to coding, there are detailed write-ups and peer reviews in this course. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6310"
             ],
             "offered": {
@@ -496,15 +553,18 @@
             "subj": "CSCI",
             "ID": "4320",
             "description": "Techniques and methods for parallel programming: models of parallel machines and programs, efficiency and complexity of parallel algorithms. Paradigms of parallel programming and corresponding extensions to sequential programming languages. Overview of parallel languages and coordination languages and models; programming on networks of workstations. Basic parallel algorithms: elementary computation, matrix multiplication, sorting; sample scientific application.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6360"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -520,15 +580,18 @@
             "subj": "CSCI",
             "ID": "4340",
             "description": "This course provides an introduction to ontologies, their uses, and an overview of their application in semantically enabled systems. Ontologies encode term meanings and are used to improve communication and enable computer programs to function more effectively. Class participants learn how to use ontologies in Web-based applications and evaluate ontologies for reuse. Participants read relevant papers, learn how to critically review ontology papers and ontologies, and participate in group project(s) designing, using, and evaluating ontologies.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6340"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -544,17 +607,18 @@
             "subj": "CSCI",
             "ID": "4350",
             "description": "Data science is advancing the inductive conduct of science and is driven by the greater volumes, complexity, and heterogeneity of data being made available over the Internet. It combines aspects of data management, library science, computer science, and physical science. It is changing the way all of these disciplines do both their individual and collaborative work. Key methodologies in application areas based on real research experience are taught.",
+            "credits": [
+                3
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-1200"
                 ],
-                "one_of": [
-                    "CSCI-1200"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -570,19 +634,20 @@
             "subj": "CSCI",
             "ID": "4370",
             "description": "Data and Society provides a broad overview of how society is leveraging and responding to the social, organizational, policy, and technical opportunities and challenges of a data-driven world. Course themes focus on various aspects of the data ecosystem, data and innovation, and data and the broader community. Assignments build writing, presentation, and critical thinking, and assessment skills, all of which are important for professional success. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-4350"
                 ],
-                "one_of": [
-                    "CSCI-4350"
-                ]
+                "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6370"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -598,13 +663,16 @@
             "subj": "CSCI",
             "ID": "4380",
             "description": "Discussion of the state of practice in modern database systems, with an emphasis on relational systems. Topics include database design, database system architecture, SQL, normalization techniques, storage structures, query processing, concurrency control, recovery, security, and new directions such as object-oriented and distributed database systems. Students gain hands-on experience with commercial database systems and interface building tools. Programming projects are required.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -621,15 +689,18 @@
             "subj": "CSCI",
             "ID": "4390",
             "description": "This course will provide an introductory survey of the main topics in data mining and knowledge discovery in databases (KDD), including: classification, clustering, association rules, sequence mining, similarity search, deviation detection, and so on. Emphasis will be on the algorithmic and system issues in KDD, as well as on applications such as Web mining, multimedia mining, bioinformatics, geographical information systems, etc.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6390"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -645,17 +716,18 @@
             "subj": "CSCI",
             "ID": "4400",
             "description": "Informatics covers a broad range of disciplines addressing challenges in the explosion of data and information resources. Xinformatics provides commonality for implementations in specific disciplines, e.g. X=astro, geo. Informatics' theoretical bases are information and computer science, cognitive science, social science, library science, aggregating these studies and adding the practice of information processing, and the engineering of information systems. This course grounds the material that students will learn in discipline areas by coursework and project assignments.",
+            "credits": [
+                3
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-1200"
                 ],
-                "one_of": [
-                    "CSCI-1200"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -671,11 +743,14 @@
             "subj": "MATH",
             "ID": "4030",
             "description": "This course covers basic concepts and results in mathematical logic and computability theory, including decision procedures, automated theorem proving techniques for truth-functional and first-order logic, axiomatizations of set theory and arithmetic, Turing Machines, Abacus Machines, recursive functions, the Church-Turing Thesis, the halting problem, undecidability of first-order logic, undecidability of arithmetic, and Godel's incompleteness results.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "odd",
                 "semesters": [
@@ -693,13 +768,16 @@
             "subj": "CSCI",
             "ID": "4430",
             "description": "This course is a study of the important concepts found in current programming languages. Topics include language processing (lexical analysis, parsing, type-checking, interpretation and compilation, run-time environment), the role of abstraction (data abstraction and control abstraction), programming paradigms (procedural, functional, object-oriented, logic-oriented, generic), and formal language definition.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -715,13 +793,16 @@
             "subj": "CSCI",
             "ID": "4440",
             "description": "Software system design methodology emphasizing use of object oriented modeling of application domains and of software systems and emphasizing the roles of written and oral communication in software engineering. Project management and software testing. Individual and team projects include specification, software architecture, user interfaces, and documentation of the phases of a project. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -738,11 +819,14 @@
             "subj": "CSCI",
             "ID": "4450",
             "description": "The goal of this course is to introduce students to program analysis and its many applications in software engineering, particularly in improving software quality and software productivity. Concretely, students who successfully complete this course should be able to: (1) understand and apply program analysis techniques, such as dataflow analysis and type-based analysis; (2) implement program analysis; (3) understand and apply software testing techniques, such as black-box testing and white-box testing; and (4) understand and apply refactoring techniques.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6450"
             ],
             "offered": {
@@ -762,15 +846,18 @@
             "subj": "CSCI",
             "ID": "4460",
             "description": "This course focuses on software development techniques in support of large-scale software projects and maintenance. Specific topics include various programming paradigms and techniques, approaches to testing and automation, debugging, refactoring, and inheriting code. Individual and team assignments are required, including programming assignments. Project topics include text processing, building a search engine, and the like. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6460"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -786,13 +873,16 @@
             "subj": "CSCI",
             "ID": "4470",
             "description": "Open source communities are proven development engines for creating large diverse user-focused software; however, these communities are not easily supported by traditional models of software development. Expected behaviors, tools, and licensing are uniquely adapted to the needs of an often volunteer workforce, distributed and asynchronous development, and meritocracy. In this course, students use and develop open source software, create open source repositories, and participate in open source communities.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring",
                     "summer"
@@ -809,13 +899,16 @@
             "subj": "CSCI",
             "ID": "4480",
             "description": "A survey of the fundamental issues necessary for the design, analysis, control, and implementation of robotic systems. The mathematical description of robot manipulators in terms of kinematics and dynamics. Hardware components of a typical robot arm. Path following, control, and sensing. Examples of several currently available manipulators.",
+            "credits": [
+                3
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -831,15 +924,18 @@
             "subj": "CSCI",
             "ID": "4500",
             "description": "This course will enable students to understand and apply theoretical foundations of programming concurrent, distributed, and mobile computing systems, namely process calculi, actors, join calculus, and mobile ambients. In the practical part, students will compare communication and synchronization aspects in concurrent programming languages following these theoretical models. Students will also review current research on distributed computing over the Internet, on topics including but not limited to coordination, mobility, heterogeneity, security, fault tolerance, scalability, programmability, and verification.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6500"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -855,15 +951,18 @@
             "subj": "CSCI",
             "ID": "4510",
             "description": "This course explores the principles of distributed systems, emphasizing fundamental issues underlying the design of such systems: communication, coordination, synchronization, and fault-tolerance. Key algorithms and theoretical results will be studied and students will explore how these foundations play out in modern systems and applications.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6510"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -879,11 +978,14 @@
             "subj": "CSCI",
             "ID": "4530",
             "description": "This course will survey classic papers and current research in computer graphics. Topics include: advanced ray tracing, global illumination, photon mapping, subsurface scattering, mesh generation and simplification, subdivision surfaces, volumetric modeling, procedural modeling and texturing, weathering, physical simulation, appearance models. Course activities include programming assignments, oral presentations, and a term project.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6530"
             ],
             "offered": {
@@ -903,13 +1005,16 @@
             "subj": "CSCI",
             "ID": "4540",
             "description": "This course follows Game Development I. Students work in interdisciplinary teams to create one large-scale 3D game, working from concept to public release. Projects may include games, educational games, serious games and simulations, and interactive artworks, and will focus on creative design, technical execution, and use of game design principles. The course builds on skills and knowledge in previous courses in the GSAS core, including game design, game mechanics, game programming, art, and narrative.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -925,11 +1030,14 @@
             "subj": "CSCI",
             "ID": "4550",
             "description": "Visualizing data is a key step in understanding many problems. This course is designed to introduce students to methods of visualizing many different types of data, such as images, three-dimensional surfaces, flow fields, and medical data. Both existing visualization software and program custom visualizations using C++ and OpenGL will be used. Course activities include discussion of recent and classic research papers, weekly homework assignments, in-class critiques of visualization artifacts, and a final project to explore creative uses of these techniques. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6550"
             ],
             "offered": {
@@ -949,13 +1057,16 @@
             "subj": "CSCI",
             "ID": "4600",
             "description": "The world at-large is confronted with increasingly larger and complex sets of structured/unstructured information; from cyber and human sources. Traditional enterprises are moving toward analytics-driven approaches for core business functions. Data and information analytics extends analysis (descriptive models of data) by using data mining and machine learning methods, with optimization and validation, to recommend action or guide and communicate decision-making. Thus, analytics is an entire methodology rather than individual analyses or analysis steps.",
+            "credits": [
+                3
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -971,13 +1082,16 @@
             "subj": "CSCI",
             "ID": "4700",
             "description": "The course is intended to provide a computational perspective on one or more topics chosen from theory and algorithms; systems and software; artificial intelligence and data; or vision, graphics, robotics, and games. Students will read classic and recent research results in the field, write critical reviews of these publications, engage in in-class presentations and discussions, and/or write a publication-quality report on an innovative final project of their choice.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "UIA",
                 "semesters": [
                     "fall",
                     "spring"
@@ -994,13 +1108,16 @@
             "subj": "MATH",
             "ID": "4800",
             "description": "A survey of numerical methods for scientific and engineering problems. Topics include numerical solution of linear and nonlinear algebraic equations, interpolation and least squares approximations, numerical integration and differentiation, eigenvalue problems, and an introduction to the numerical solution of ordinary differential equations. Emphasis placed on efficient computational procedures including the use of library and student written procedures using high-level software such as MATLAB.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1017,11 +1134,14 @@
             "subj": "MATH",
             "ID": "4820",
             "description": "Derivation, analysis, and use of computational procedures for solving differential equations. Topics covered include ordinary differential equations (both initial value and boundary value problems) and partial differential equations. Runge-Kutta and multistep methods for initial value problems. Finite difference methods for partial differential equations including techniques for heat conduction, wave propagation, and potential problems. Basic convergence and stability theory.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "even",
                 "semesters": [
@@ -1039,11 +1159,14 @@
             "subj": "CSCI",
             "ID": "4940",
             "description": "",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
                 "year": "",
                 "semesters": [],
@@ -1059,11 +1182,14 @@
             "subj": "CSCI",
             "ID": "4960",
             "description": "",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
                 "year": "",
                 "semesters": [],
@@ -1079,11 +1205,9 @@
             "subj": "MATH",
             "ID": "9990",
             "description": "Active participation in research, under the supervision of a faculty adviser, leading to a doctoral dissertation. Grades of IP are assigned until the dissertation has been publicly defended, approved by the doctoral committee, and accepted by the Office of Graduate Education to be archived in a standard format in the library. Grades will then be listed as S.",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
                 "year": "",
                 "semesters": [],
@@ -1099,13 +1223,13 @@
             "subj": "MATH",
             "ID": "1010",
             "description": "Functions, limits, continuity, derivatives, implicit differentiation, related rates, maxima and minima, elementary transcendental functions, introduction to definite integral with applications to area and volumes of revolution. Students cannot get credit for both MATH 1010 and MATH 1500 .",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1122,13 +1246,16 @@
             "subj": "MATH",
             "ID": "1020",
             "description": "Techniques and applications of integration, polar coordinates, parametric equations, infinite sequences and series, vector functions and curves in space, functions of several variables, and partial derivatives.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1145,13 +1272,16 @@
             "subj": "MATH",
             "ID": "1500",
             "description": "Basic concepts in differential and integral calculus for functions of one variable. Topics will include functions, limits, continuity, derivatives, integration, exponential and logarithmic functions, and techniques of integration. Application areas will include topics in Management, Architecture, and Social Sciences with special emphasis on the role of calculus in introductory probability. Students cannot get credit for both MATH 1500 and MATH 1010 .",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -1167,13 +1297,16 @@
             "subj": "MATH",
             "ID": "1520",
             "description": "Functions of several variables, introductory linear algebra, and other analytical techniques needed for further study in probability, statistics, and operations research. Topics covered include improper integrals, probability density functions, partial derivatives and optimization techniques for functions of several variables, matrix algebra, linear systems, lines and planes in 3-space, linear inequalities, introductory linear programming, introductory combinatorics, and some probability.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -1189,13 +1322,16 @@
             "subj": "MATH",
             "ID": "1620",
             "description": "An application-oriented course introducing contemporary mathematical concepts that pertain to areas of Architecture and Humanities, Arts, and Social Sciences. The course will cover growth and form, symmetry, patterns, tilings, linear programming, information coding, voting systems, game theory, logic, probability, and statistics.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -1211,13 +1347,16 @@
             "subj": "MATH",
             "ID": "1900",
             "description": "A seminar for first-year math majors. The weekly student-faculty discussions will vary but examples of topics are: unsolved math problems, countability and the arithmetic of the infinite, topology and the concept of dimension, geometry and one-sided surfaces, and the theory underlying topics currently covered in calculus.",
+            "credits": [
+                1
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -1233,13 +1372,16 @@
             "subj": "MATH",
             "ID": "1910",
             "description": "A seminar for first-year math majors. The weekly student-faculty discussions will vary but examples of topics are: unsolved math problems, countability and the arithmetic of the infinite, topology and the concept of dimension, geometry and one-sided surfaces, and the theory underlying topics currently covered in calculus.",
+            "credits": [
+                1
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -1255,13 +1397,16 @@
             "subj": "MATH",
             "ID": "2010",
             "description": "Directional derivatives, maxima and minima, double integrals, line integrals, div and curl, and Green's Theorem; matrix algebra and systems of linear equations, vectors and linear transformations in R^n, eigenvectors and eigenvalues, applications in engineering and science.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1278,13 +1423,16 @@
             "subj": "MATH",
             "ID": "2400",
             "description": "First-order differential equations, second-order linear equations, eigenvalues and eigenvectors of matrices, systems of first-order equations, stability and qualitative properties of nonlinear autonomous systems in the plane, Fourier series, separation of variables for partial differential equations.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1301,11 +1449,14 @@
             "subj": "MATH",
             "ID": "4940",
             "description": "",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
                 "year": "",
                 "semesters": [],
@@ -1321,11 +1472,14 @@
             "subj": "MATH",
             "ID": "4960",
             "description": "",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
                 "year": "",
                 "semesters": [],
@@ -1341,13 +1495,16 @@
             "subj": "MATH",
             "ID": "4010",
             "description": "Groups, rings, polynomial rings, fields, integral domains, with emphasis on group theory; homomorphisms and isomorphisms; normal subgroups, cosets, ideals, modules; quotient groups and quotient rings; other topics chosen from number theory, polynomials, and Galois Theory.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -1363,11 +1520,14 @@
             "subj": "MATH",
             "ID": "4020",
             "description": "Topics include the history of number representation systems, divisibility, greatest common divisor and prime factorization, linear Diophantine equations, congruences, and condition congruences. Additional topics may be chosen from cryptology, the perpetual calendar, hashing functions, computer operations and complexity, continued fractions, multiplicative functions, primitive roots, pseudo-random numbers, nonlinear Diophantine equations, Fermat's last theorem, algebraic numbers, and approximation of numbers by rationals.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "odd",
                 "semesters": [
@@ -1385,11 +1545,14 @@
             "subj": "MATH",
             "ID": "4040",
             "description": "Topics include general topological spaces, connectedness, compactness, continuity, and product spaces. Additional topics may be chosen from identification spaces, homotopy, the fundamental group, covering maps, lifts, classification of surfaces, Baire category, dimension, and the Jordan curve theorem.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "even",
                 "semesters": [
@@ -1407,13 +1570,16 @@
             "subj": "MATH",
             "ID": "4090",
             "description": "The course provides an opportunity for the development of theorem-proving skills in the field of mathematical analysis. Expansion of a knowledge base comes as a by-product of energy expended in theorem proving and subsequent exposition. Analysis topics included are: sets, functions, the real numbers, cardinality, induction, decimal representations of real numbers, Euclidean spaces, abstract vector spaces, and metric spaces. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1430,17 +1596,18 @@
             "subj": "MATH",
             "ID": "4100",
             "description": "The theory underlying vector spaces, algebra of subspaces, bases; linear transformations, dual spaces; eigenvectors, eigenvalues, minimal polynomials, canonical forms of linear transformations; inner products, adjoints, orthogonal projections, and complements.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-2010"
                 ],
-                "one_of": [
-                    "MATH-2010"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1457,11 +1624,14 @@
             "subj": "MATH",
             "ID": "4120",
             "description": "Topics may be chosen from differential geometry of curves and surfaces, involutes and evolutes, order of contact, developable surfaces, Euler's and Meusnier's Theorem, mean and Gaussian curvatures, geodesics and parallel transport, The Theorem Egregium of Gauss, Gauss-Bonnet Theorem, computer-aided geometric design, computational geometry, tessellations, tiling and patterns, projective and non-Euclidean geometries, postulates and axiomatic systems, advanced Euclidean geometry, and the history of geometry.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "even",
                 "semesters": [
@@ -1479,11 +1649,14 @@
             "subj": "MATH",
             "ID": "4140",
             "description": "This course is a continuation of PHIL 2140 , covering basic metatheory of logic (including formal syntax and semantics, model theory, and soundness and completeness of proof systems), applications of logic (including automated theorem proving, deductive problem solving, and the axiomatization of various branches of mathematics), and alternative systems of logic (including sequent systems, diagrammatic logic, and modal logic).",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "even",
                 "semesters": [
@@ -1501,13 +1674,16 @@
             "subj": "MATH",
             "ID": "4200",
             "description": "Fundamental concepts of mathematical analysis will be covered including such topics as the real number system, metric spaces, limits, sequences, series, convergence, functions of one variable, uniform convergence, continuity, differentiability, Riemann integration, and the Stone-Weierstrass Theorem.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -1523,13 +1699,16 @@
             "subj": "MATH",
             "ID": "4300",
             "description": "An introduction to the theory and applications of complex variables. Topics include analytic functions, Riemann surfaces, complex integration, Taylor and Laurent series, residues, conformal mapping, harmonic functions, and Laplace transforms. Applications will be to problems in science and engineering such as fluid and heat flow, dynamical systems, and electrostatics.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -1545,13 +1724,16 @@
             "subj": "MATH",
             "ID": "4400",
             "description": "An intermediate course emphasizing a modern geometric approach and applications in science and engineering. Topics include first-order equations, linear systems, phase plane, linearization and stability, calculus of variations, Lagrangian and Hamiltonian mechanics, oscillations, basic bifurcation theory, chaotic dynamics, and existence and uniqueness.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -1567,13 +1749,16 @@
             "subj": "MATH",
             "ID": "4500",
             "description": "An intermediate course serving to introduce both the qualitative properties of solutions of partial differential equations and methods of solution, including separation of variables. Topics include first-order equations, derivation of the classical equations of mathematical physics (wave, potential, and heat equations), method of characteristics, construction and behavior of solutions, maximum principles, energy integrals.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -1589,13 +1774,16 @@
             "subj": "MATH",
             "ID": "4600",
             "description": "A course emphasizing advanced concepts and methods from calculus. Topics include: multivariable integral theorems (Green's, divergence, Stokes', Reynolds transport), extrema of multivariable functions (including Taylor's theorem and Lagrange multipliers), the calculus of variations (EulerLagrange equations, constraints, principle of least action), and Cartesian tensors (calculus, invariants, representations).",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1612,13 +1800,16 @@
             "subj": "MATH",
             "ID": "4700",
             "description": "Mathematical formulation of models for various processes. Derivation of relevant differential equations from conservation laws and constitutive relations. Use of dimensional analysis, scaling, and elementary perturbation methods. Description of basic wave motion. Examples from areas including biology, elasticity, fluid dynamics, particle mechanics, chemistry, geophysics, and finance.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -1634,11 +1825,14 @@
             "subj": "MATH",
             "ID": "4720",
             "description": "An introduction to mathematics used in biology, biophysics, biomedical engineering, and medicine. The mathematical topics covered are selected from calculus, linear algebra, differential equations, numerical methods, and Fourier analysis. The biological applications covered are selected from human physiology (heart, lung, brain), population models (microorganisms, cells, animals), and the diagnosis and treatment of disease (heart, cancer).",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "odd",
                 "semesters": [
@@ -1656,11 +1850,14 @@
             "subj": "MATH",
             "ID": "4740",
             "description": "This course is designed to introduce students to mathematical and computational finance. Topics include a mathematical approach to risk analysis, portfolio selection theory, futures, options, and other derivative investment instruments. Finite difference and finite element methods for computing American option prices are discussed. A working knowledge of MAPLE or MATLAB is required to compute optimal portfolios.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "even",
                 "semesters": [
@@ -1678,15 +1875,14 @@
             "subj": "MATH",
             "ID": "4840",
             "description": "The focus of the course is on fundamental algorithms in computational linear algebra and their applications in science and engineering. These algorithms involve QR and SVD factorizations, the computation of eigenvalues and eigenvectors, basic optimization methods, and iterative methods for sparse systems. Applications will be considered in areas such as data analysis and compression, principal component and spectral analysis, solutions of large sparse systems, among others.",
+            "credits": [],
             "prerequisites": {
                 "req": [
                     "MATH-4800"
                 ],
-                "one_of": [
-                    "MATH-4800"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "odd",
                 "semesters": [
@@ -1704,13 +1900,16 @@
             "subj": "MATH",
             "ID": "4950",
             "description": "Undergraduate mathematics projects that utilize students' mathematical knowledge will result in formal reports and final presentations. Examples are research projects or critical in-depth mathematical literature reviews. Information about projects will be exchanged in weekly meetings with the research supervisor. In order to take this course, students must make arrangements with a math faculty member to act as a research supervisor. This is a communication-intensive course. To be graded S/U.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1727,11 +1926,14 @@
             "subj": "MATH",
             "ID": "4980",
             "description": "",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
                 "year": "",
                 "semesters": [],
@@ -1749,13 +1951,13 @@
             "subj": "CSCI",
             "ID": "1100",
             "description": "An introduction to computer programming algorithm design and analysis. Additional topics include basic computer organization; internal representation of scalar and array data; use of top-down design and subprograms to tackle complex problems; abstract data types. Enrichment material as time allows. Interdisciplinary case studies, numerical and nonnumerical applications. Students who have passed CSCI 1200 cannot register for this course.",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring",
@@ -1773,13 +1975,13 @@
             "subj": "CSCI",
             "ID": "1190",
             "description": "This course teaches elementary programming concepts using the MATLAB environment for engineering students with little or no prior programming experience. Concepts include variables, looping, and function calls. Students cannot get credit for CSCI 1190 after earning credit for CSCI 1100 or any higher-level CSCI course.",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                1
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1796,17 +1998,18 @@
             "subj": "CSCI",
             "ID": "1200",
             "description": "Programming concepts: functions, parameter passing, pointers, arrays, strings, structs, classes, templates. Mathematical tools: sets, functions, and relations, order notation, complexity of algorithms, proof by induction. Data structures and their representations: data abstraction and internal representation, sequences, trees, binary search trees, associative structures. Algorithms: searching and sorting, generic algorithms, iterative and recursive algorithms. Methods of testing correctness and measuring performance.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-1100"
                 ],
-                "one_of": [
-                    "CSCI-1100"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1823,25 +2026,24 @@
             "subj": "CSCI",
             "ID": "2200",
             "description": "This course introduces important mathematical and theoretical tools for computer science, including topics from set theory, combinatorics, and probability theory, and then proceeds to automata theory, the Turing Machine model of computation, and notions of computational complexity. The course will emphasize formal reasoning and proof techniques.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "MATH-1010",
-                    "MATH-1020",
-                    "MATH-1500",
-                    "MATH-2010",
                     "CSCI-1200"
                 ],
                 "one_of": [
                     "MATH-1010",
-                    "MATH-1020",
                     "MATH-1500",
+                    "MATH-1020",
                     "MATH-2010",
-                    "CSCI-1200"
+                    "MATH-1020"
                 ]
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1858,27 +2060,24 @@
             "subj": "CSCI",
             "ID": "2300",
             "description": "Data structures and algorithms, and the mathematical techniques necessary to design and analyze them. Basic data structures: lists, associative structures, trees. Mathematical techniques for designing algorithms and analyzing worst-case and expected-case algorithm efficiency. Advanced data structures: balanced trees, tries, heaps, priority queues, graphs. Searching, sorting. Algorithm design techniques: dynamic programming, greedy algorithms, divide-and-conquer, backtracking. Example graph, string, geometric, and numeric algorithms.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "MATH-1010",
-                    "CSCI-2200",
-                    "MATH-1020",
-                    "MATH-1500",
-                    "MATH-2010",
-                    "CSCI-1200"
+                    "CSCI-1200",
+                    "CSCI-2200"
                 ],
                 "one_of": [
                     "MATH-1010",
-                    "CSCI-2200",
-                    "MATH-1020",
                     "MATH-1500",
-                    "MATH-2010",
-                    "CSCI-1200"
+                    "MATH-1020",
+                    "MATH-2010"
                 ]
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1895,17 +2094,18 @@
             "subj": "CSCI",
             "ID": "2500",
             "description": "Introduction to computer organization, assembler language, and operating systems. Computer systems organization: processors, memory, I/O. Digital logic: gates, Boolean algebra, digital logic circuits, memory, buses. Microprogramming. Machine level: instruction formats, addressing modes, instruction types, flow of control. Operating systems: virtual memory, virtual I/O instructions, processes, interprocess communication. Numeric representation. Assembler language: the assembly process, macros, linking, loading. Advanced architectures: RISC architectures, parallel architectures.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-1200"
                 ],
-                "one_of": [
-                    "CSCI-1200"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -1922,19 +2122,19 @@
             "subj": "CSCI",
             "ID": "2600",
             "description": "A study of important concepts in software design, implementation, and testing. Topics include specification, abstraction with classes, design principles and patterns, testing, refactoring, the software development process, GUI and event-driven programming, and cloud-based programming. The course also introduces implementation and testing tools, including IDEs, revision control systems, and other frameworks. The overarching goal of the course is for students to learn how to write correct and maintainable software.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-1200",
                     "CSCI-2200"
                 ],
-                "one_of": [
-                    "CSCI-1200",
-                    "CSCI-2200"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring",
                     "summer"
@@ -1951,17 +2151,18 @@
             "subj": "CSCI",
             "ID": "4020",
             "description": "This course presents fundamental ideas and techniques of modern algorithm design and analysis. After completing this course, students should be able to formally analyze and design efficient algorithms for a variety of computational problems. Topics covered include Greedy Algorithms, Dynamic Programming, Network Flow, NP-Completeness, Linear Programming, Network Algorithms, as well as probabilistic and approximate algorithms.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-2300"
                 ],
-                "one_of": [
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -1977,20 +2178,20 @@
             "subj": "CSCI",
             "ID": "4030",
             "description": "State-of-the-art in contemporary algorithm design, randomized algorithms are algorithms that use randomness as part of their functioning. They are typically simple, often easy to analyze, and work well in practice. They have numerous applications in many fields of computer science and mathematics. Randomized algorithms represent an active and vibrant research area with many exciting new results contributed every year.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-4020"
                 ],
-                "one_of": [
-                    "CSCI-4020"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-6220",
-                "CSCI-4030"
+            "crosslisted": [
+                "CSCI-6220"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -2006,17 +2207,17 @@
             "subj": "CSCI",
             "ID": "4040",
             "description": "Algorithms with provable guarantees on the quality of their solutions are a powerful way of dealing with intractable problems. This course covers fundamental techniques for designing approximation algorithms. Possible topics include: semi-definite and linear programming, inapproximability and the PCP theorem, randomized rounding, metrics and cuts, primal-dual methods, and online algorithms.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-4020"
                 ],
-                "one_of": [
-                    "CSCI-4020"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-6040",
-                "CSCI-4040"
+            "crosslisted": [
+                "CSCI-6040"
             ],
             "offered": {
                 "year": "odd",
@@ -2035,20 +2236,20 @@
             "subj": "CSCI",
             "ID": "4100",
             "description": "Introduction to the theory, algorithms, and applications of machine learning (supervised, reinforcement, and unsupervised) from data: What is learning? Is learning feasible? How can we do it? How can we do it well? The course offers a mix of theory, technique, and application with additional selected topics chosen from Pattern Recognition, Decision Trees, Neural Networks, RBF's, Bayesian Learning, PAC Learning, Support Vector Machines, Gaussian processes, and Hidden Markov Models.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-2300"
                 ],
-                "one_of": [
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-4100",
+            "crosslisted": [
                 "CSCI-6100"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -2064,16 +2265,16 @@
             "subj": "CSCI",
             "ID": "4110",
             "description": "Introduction to the computational and algorithmic aspects of social processes. Topics covered will be selected to illustrate the diverse challenges in algorithmic social process analysis: social networks and their dynamics; information flow; hidden networks. Algorithms involving social and selfish agents, social choice theory, voting, and auctions. Ranking actors in networks, recommendation systems, peer-review, and aggregation of rankings/reviews.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-2300"
                 ],
-                "one_of": [
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-4110",
+            "crosslisted": [
                 "CSCI-6110"
             ],
             "offered": {
@@ -2093,16 +2294,16 @@
             "subj": "CSCI",
             "ID": "4120",
             "description": "Introduction to the computational and mathematical techniques for practical financial applications. The course will emphasize the algorithmic side of finance. Topics will be selected from pricing (options and derivatives), trading, risk-evaluation, selfish agents, sequential decisions, and portfolio optimization. Examples of the mathematical and algorithmic techniques covered are martingale measures, risk-neutral pricing and Monte Carlo, dynamic programing, and stochastic processes.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-2300"
                 ],
-                "one_of": [
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-4120",
+            "crosslisted": [
                 "CSCI-6120"
             ],
             "offered": {
@@ -2122,17 +2323,18 @@
             "subj": "CSCI",
             "ID": "4150",
             "description": "Topics and techniques of artificial intelligence using the language LISP. Topics include search, knowledge representation, expert systems, theorem proving, natural language interfaces, learning, game playing, and computer vision. Techniques include pattern matching, data-driven programming, substitution rules, frames, heuristic search, transition networks, neural networks, and evolutionary computation. Development of programming proficiency in LISP is emphasized.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-2300"
                 ],
-                "one_of": [
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -2148,19 +2350,19 @@
             "subj": "CSCI",
             "ID": "4210",
             "description": "Discussion of various aspects of computer operating systems design and implementation. Topics include I/O programming, concurrent processes and synchronization problems, process management and scheduling of processes, virtual memory management, device management, file systems, deadlock problems, system calls, and interprocess communication. Programming projects are required.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "CSCI-2500",
-                    "CSCI-2300"
+                    "CSCI-2300",
+                    "CSCI-2500"
                 ],
-                "one_of": [
-                    "CSCI-2500",
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring",
                     "summer"
@@ -2177,17 +2379,18 @@
             "subj": "CSCI",
             "ID": "4220",
             "description": "Programming with an overview of the principles of computer networks, including a detailed look at the OSI reference model and various popular network protocol suites. Concentration on Unix interprocess communication (IPC), network programming using TCP and UDP, as well as client-side and mobile programming. Programming projects are required.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-4210"
                 ],
-                "one_of": [
-                    "CSCI-4210"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -2203,24 +2406,22 @@
             "subj": "CSCI",
             "ID": "4230",
             "description": "A self-contained course that includes topics from number theory, basic cryptography, and protocol security. This is a hybrid course with sufficient depth in both theory and hands-on experience with network protocols. Topics include: Classical Cryptography, Block Ciphers (DES, AES), Information Theoretical Cryptography, Randomness, RNG and Stream Ciphers, Hash and MAC Algorithms, Public-Key Cryptography, Elliptic Curve Cryptography, Digital Signatures and Identification, Internet Attacks, Web Security, SSL and PGP. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "CSCI-4220",
+                    "CSCI-2300",
                     "CSCI-4210",
-                    "CSCI-2300"
+                    "CSCI-4220"
                 ],
-                "one_of": [
-                    "CSCI-4220",
-                    "CSCI-4210",
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-6230",
-                "CSCI-4230"
+            "crosslisted": [
+                "CSCI-6230"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -2236,16 +2437,16 @@
             "subj": "CSCI",
             "ID": "4250",
             "description": "This course will offer an introduction to network science and a review of current research in this area. Classes will interchangeably present chapters from the textbook and related current research. The emphasis will be on the mathematical background of network science: graphs and networks; random networks and various types of scale-free networks; network properties such as assortativity, mobility, robustness, social networks, and communities; and dynamics of spreading in networks.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-2300"
                 ],
-                "one_of": [
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-4250",
+            "crosslisted": [
                 "CSCI-6250"
             ],
             "offered": {
@@ -2265,23 +2466,23 @@
             "subj": "MATH",
             "ID": "4150",
             "description": "Fundamental concepts and methods of graph theory and its applications to various areas of computing and the social and natural sciences. Topics include graphs as models, representation of graphs, trees, distances, matchings, connectivity, flows in networks, graph colorings, Hamiltonian cycles, traveling salesman problem, planarity. All concepts, methods, and applications are presented through a sequence of exercises and problems, many of which are done with the help of novel software systems for combinatorial computing.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "MATH-4090",
-                    "CSCI-1100",
-                    "CSCI-2200"
+                    "CSCI-1100"
                 ],
                 "one_of": [
-                    "MATH-4090",
-                    "CSCI-1100",
-                    "CSCI-2200"
+                    "CSCI-2200",
+                    "MATH-4090"
                 ]
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-4260"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -2297,22 +2498,21 @@
             "subj": "CSCI",
             "ID": "4270",
             "description": "The goal of this course is to introduce students to the problems, challenges, and applications of computer vision from a computational perspective. Topics include camera modeling and image formation, feature extraction, object and face recognition, image mosaic construction, stereo and three-dimensional imaging, motion, and tracking. Machine learning methods, including deep convolutional neural networks, will be studied and applied throughout the course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "MATH-2010",
-                    "CSCI-2300"
+                    "CSCI-2300",
+                    "MATH-2010"
                 ],
-                "one_of": [
-                    "MATH-2010",
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-4270",
+            "crosslisted": [
                 "CSCI-6270"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -2328,17 +2528,17 @@
             "subj": "CSCI",
             "ID": "4310",
             "description": "This course introduces Linux kernel programming basics and starts by examining how Berkeley sockets bridge the user-kernel gap. The remainder of the course is spent looking into transport layer (e.g., TCP) and network layer (e.g., IP) implementations. Students do both individual and group programming projects. In addition to coding, there are detailed write-ups and peer reviews in this course. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-4210"
                 ],
-                "one_of": [
-                    "CSCI-4210"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-6310",
-                "CSCI-4310"
+            "crosslisted": [
+                "CSCI-6310"
             ],
             "offered": {
                 "year": "odd",
@@ -2357,22 +2557,21 @@
             "subj": "CSCI",
             "ID": "4320",
             "description": "Techniques and methods for parallel programming: models of parallel machines and programs, efficiency and complexity of parallel algorithms. Paradigms of parallel programming and corresponding extensions to sequential programming languages. Overview of parallel languages and coordination languages and models; programming on networks of workstations. Basic parallel algorithms: elementary computation, matrix multiplication, sorting; sample scientific application.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "CSCI-2500",
-                    "CSCI-2300"
+                    "CSCI-2300",
+                    "CSCI-2500"
                 ],
-                "one_of": [
-                    "CSCI-2500",
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-4320",
+            "crosslisted": [
                 "CSCI-6360"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -2388,20 +2587,20 @@
             "subj": "CSCI",
             "ID": "4340",
             "description": "This course provides an introduction to ontologies, their uses, and an overview of their application in semantically enabled systems. Ontologies encode term meanings and are used to improve communication and enable computer programs to function more effectively. Class participants learn how to use ontologies in Web-based applications and evaluate ontologies for reuse. Participants read relevant papers, learn how to critically review ontology papers and ontologies, and participate in group project(s) designing, using, and evaluating ontologies.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-2300"
                 ],
-                "one_of": [
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-6340",
-                "CSCI-4340"
+            "crosslisted": [
+                "CSCI-6340"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -2417,21 +2616,21 @@
             "subj": "CSCI",
             "ID": "4350",
             "description": "Data science is advancing the inductive conduct of science and is driven by the greater volumes, complexity, and heterogeneity of data being made available over the Internet. It combines aspects of data management, library science, computer science, and physical science. It is changing the way all of these disciplines do both their individual and collaborative work. Key methodologies in application areas based on real research experience are taught.",
+            "credits": [
+                3
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-1200",
                     "CSCI-4380"
                 ],
-                "one_of": [
-                    "CSCI-1200",
-                    "CSCI-4380"
-                ]
+                "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6350"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -2447,20 +2646,20 @@
             "subj": "CSCI",
             "ID": "4370",
             "description": "Data and Society provides a broad overview of how society is leveraging and responding to the social, organizational, policy, and technical opportunities and challenges of a data-driven world. Course themes focus on various aspects of the data ecosystem, data and innovation, and data and the broader community. Assignments build writing, presentation, and critical thinking, and assessment skills, all of which are important for professional success. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
-                "req": [
-                    "CSCI-4350"
-                ],
+                "req": [],
                 "one_of": [
                     "CSCI-4350"
                 ]
             },
-            "cross listed": [
-                "CSCI-4370",
+            "crosslisted": [
                 "CSCI-6370"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -2476,17 +2675,18 @@
             "subj": "CSCI",
             "ID": "4380",
             "description": "Discussion of the state of practice in modern database systems, with an emphasis on relational systems. Topics include database design, database system architecture, SQL, normalization techniques, storage structures, query processing, concurrency control, recovery, security, and new directions such as object-oriented and distributed database systems. Students gain hands-on experience with commercial database systems and interface building tools. Programming projects are required.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-2300"
                 ],
-                "one_of": [
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -2503,20 +2703,20 @@
             "subj": "CSCI",
             "ID": "4390",
             "description": "This course will provide an introductory survey of the main topics in data mining and knowledge discovery in databases (KDD), including: classification, clustering, association rules, sequence mining, similarity search, deviation detection, and so on. Emphasis will be on the algorithmic and system issues in KDD, as well as on applications such as Web mining, multimedia mining, bioinformatics, geographical information systems, etc.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-2300"
                 ],
-                "one_of": [
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-6390",
-                "CSCI-4390"
+            "crosslisted": [
+                "CSCI-6390"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -2532,19 +2732,20 @@
             "subj": "CSCI",
             "ID": "4400",
             "description": "Informatics covers a broad range of disciplines addressing challenges in the explosion of data and information resources. Xinformatics provides commonality for implementations in specific disciplines, e.g. X=astro, geo. Informatics' theoretical bases are information and computer science, cognitive science, social science, library science, aggregating these studies and adding the practice of information processing, and the engineering of information systems. This course grounds the material that students will learn in discipline areas by coursework and project assignments.",
+            "credits": [
+                3
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-1200"
                 ],
-                "one_of": [
-                    "CSCI-1200"
-                ]
+                "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-6400"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -2560,15 +2761,16 @@
             "subj": "MATH",
             "ID": "4030",
             "description": "This course covers basic concepts and results in mathematical logic and computability theory, including decision procedures, automated theorem proving techniques for truth-functional and first-order logic, axiomatizations of set theory and arithmetic, Turing Machines, Abacus Machines, recursive functions, the Church-Turing Thesis, the halting problem, undecidability of first-order logic, undecidability of arithmetic, and Godel's incompleteness results.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-2200"
                 ],
-                "one_of": [
-                    "CSCI-2200"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "odd",
                 "semesters": [
@@ -2586,19 +2788,19 @@
             "subj": "CSCI",
             "ID": "4430",
             "description": "This course is a study of the important concepts found in current programming languages. Topics include language processing (lexical analysis, parsing, type-checking, interpretation and compilation, run-time environment), the role of abstraction (data abstraction and control abstraction), programming paradigms (procedural, functional, object-oriented, logic-oriented, generic), and formal language definition.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "CSCI-2600",
-                    "CSCI-2300"
+                    "CSCI-2300",
+                    "CSCI-2600"
                 ],
-                "one_of": [
-                    "CSCI-2600",
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -2614,17 +2816,18 @@
             "subj": "CSCI",
             "ID": "4440",
             "description": "Software system design methodology emphasizing use of object oriented modeling of application domains and of software systems and emphasizing the roles of written and oral communication in software engineering. Project management and software testing. Individual and team projects include specification, software architecture, user interfaces, and documentation of the phases of a project. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-2300"
                 ],
-                "one_of": [
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -2641,17 +2844,17 @@
             "subj": "CSCI",
             "ID": "4450",
             "description": "The goal of this course is to introduce students to program analysis and its many applications in software engineering, particularly in improving software quality and software productivity. Concretely, students who successfully complete this course should be able to: (1) understand and apply program analysis techniques, such as dataflow analysis and type-based analysis; (2) implement program analysis; (3) understand and apply software testing techniques, such as black-box testing and white-box testing; and (4) understand and apply refactoring techniques.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-4430"
                 ],
-                "one_of": [
-                    "CSCI-4430"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-6450",
-                "CSCI-4450"
+            "crosslisted": [
+                "CSCI-6450"
             ],
             "offered": {
                 "year": "even",
@@ -2670,20 +2873,20 @@
             "subj": "CSCI",
             "ID": "4460",
             "description": "This course focuses on software development techniques in support of large-scale software projects and maintenance. Specific topics include various programming paradigms and techniques, approaches to testing and automation, debugging, refactoring, and inheriting code. Individual and team assignments are required, including programming assignments. Project topics include text processing, building a search engine, and the like. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-2600"
                 ],
-                "one_of": [
-                    "CSCI-2600"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-4460",
+            "crosslisted": [
                 "CSCI-6460"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -2699,19 +2902,19 @@
             "subj": "CSCI",
             "ID": "4470",
             "description": "Open source communities are proven development engines for creating large diverse user-focused software; however, these communities are not easily supported by traditional models of software development. Expected behaviors, tools, and licensing are uniquely adapted to the needs of an often volunteer workforce, distributed and asynchronous development, and meritocracy. In this course, students use and develop open source software, create open source repositories, and participate in open source communities.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "CSCI-2600",
-                    "CSCI-2300"
+                    "CSCI-2300",
+                    "CSCI-2600"
                 ],
-                "one_of": [
-                    "CSCI-2600",
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring",
                     "summer"
@@ -2728,17 +2931,18 @@
             "subj": "CSCI",
             "ID": "4480",
             "description": "A survey of the fundamental issues necessary for the design, analysis, control, and implementation of robotic systems. The mathematical description of robot manipulators in terms of kinematics and dynamics. Hardware components of a typical robot arm. Path following, control, and sensing. Examples of several currently available manipulators.",
+            "credits": [
+                3
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-2400"
                 ],
-                "one_of": [
-                    "MATH-2400"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -2754,24 +2958,23 @@
             "subj": "CSCI",
             "ID": "4500",
             "description": "This course will enable students to understand and apply theoretical foundations of programming concurrent, distributed, and mobile computing systems, namely process calculi, actors, join calculus, and mobile ambients. In the practical part, students will compare communication and synchronization aspects in concurrent programming languages following these theoretical models. Students will also review current research on distributed computing over the Internet, on topics including but not limited to coordination, mobility, heterogeneity, security, fault tolerance, scalability, programmability, and verification.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "CSCI-4220",
-                    "CSCI-4210",
                     "CSCI-4430"
                 ],
                 "one_of": [
-                    "CSCI-4220",
                     "CSCI-4210",
-                    "CSCI-4430"
+                    "CSCI-4220"
                 ]
             },
-            "cross listed": [
-                "CSCI-4500",
+            "crosslisted": [
                 "CSCI-6500"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -2787,20 +2990,20 @@
             "subj": "CSCI",
             "ID": "4510",
             "description": "This course explores the principles of distributed systems, emphasizing fundamental issues underlying the design of such systems: communication, coordination, synchronization, and fault-tolerance. Key algorithms and theoretical results will be studied and students will explore how these foundations play out in modern systems and applications.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "CSCI-4210"
                 ],
-                "one_of": [
-                    "CSCI-4210"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-6510",
-                "CSCI-4510"
+            "crosslisted": [
+                "CSCI-6510"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -2816,18 +3019,18 @@
             "subj": "CSCI",
             "ID": "4530",
             "description": "This course will survey classic papers and current research in computer graphics. Topics include: advanced ray tracing, global illumination, photon mapping, subsurface scattering, mesh generation and simplification, subdivision surfaces, volumetric modeling, procedural modeling and texturing, weathering, physical simulation, appearance models. Course activities include programming assignments, oral presentations, and a term project.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "CSCI-2600",
                     "CSCI-2300"
                 ],
                 "one_of": [
-                    "CSCI-2600",
-                    "CSCI-2300"
+                    "CSCI-2600"
                 ]
             },
-            "cross listed": [
-                "CSCI-4530",
+            "crosslisted": [
                 "CSCI-6530"
             ],
             "offered": {
@@ -2847,13 +3050,16 @@
             "subj": "CSCI",
             "ID": "4540",
             "description": "This course follows Game Development I. Students work in interdisciplinary teams to create one large-scale 3D game, working from concept to public release. Projects may include games, educational games, serious games and simulations, and interactive artworks, and will focus on creative design, technical execution, and use of game design principles. The course builds on skills and knowledge in previous courses in the GSAS core, including game design, game mechanics, game programming, art, and narrative.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -2869,18 +3075,17 @@
             "subj": "CSCI",
             "ID": "4550",
             "description": "Visualizing data is a key step in understanding many problems. This course is designed to introduce students to methods of visualizing many different types of data, such as images, three-dimensional surfaces, flow fields, and medical data. Both existing visualization software and program custom visualizations using C++ and OpenGL will be used. Course activities include discussion of recent and classic research papers, weekly homework assignments, in-class critiques of visualization artifacts, and a final project to explore creative uses of these techniques. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "CSCI-2600",
-                    "CSCI-2300"
+                    "CSCI-2300",
+                    "CSCI-2600"
                 ],
-                "one_of": [
-                    "CSCI-2600",
-                    "CSCI-2300"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "CSCI-4550",
+            "crosslisted": [
                 "CSCI-6550"
             ],
             "offered": {
@@ -2900,13 +3105,16 @@
             "subj": "CSCI",
             "ID": "4600",
             "description": "The world at-large is confronted with increasingly larger and complex sets of structured/unstructured information; from cyber and human sources. Traditional enterprises are moving toward analytics-driven approaches for core business functions. Data and information analytics extends analysis (descriptive models of data) by using data mining and machine learning methods, with optimization and validation, to recommend action or guide and communicate decision-making. Thus, analytics is an entire methodology rather than individual analyses or analysis steps.",
+            "credits": [
+                3
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -2922,21 +3130,20 @@
             "subj": "CSCI",
             "ID": "4700",
             "description": "The course is intended to provide a computational perspective on one or more topics chosen from theory and algorithms; systems and software; artificial intelligence and data; or vision, graphics, robotics, and games. Students will read classic and recent research results in the field, write critical reviews of these publications, engage in in-class presentations and discussions, and/or write a publication-quality report on an innovative final project of their choice.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
-                "req": [
-                    "CSCI-2600",
-                    "CSCI-2300",
-                    "CSCI-2200"
-                ],
+                "req": [],
                 "one_of": [
-                    "CSCI-2600",
+                    "CSCI-2200",
                     "CSCI-2300",
-                    "CSCI-2200"
+                    "CSCI-2600"
                 ]
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "UIA",
                 "semesters": [
                     "fall",
                     "spring"
@@ -2953,21 +3160,21 @@
             "subj": "MATH",
             "ID": "4800",
             "description": "A survey of numerical methods for scientific and engineering problems. Topics include numerical solution of linear and nonlinear algebraic equations, interpolation and least squares approximations, numerical integration and differentiation, eigenvalue problems, and an introduction to the numerical solution of ordinary differential equations. Emphasis placed on efficient computational procedures including the use of library and student written procedures using high-level software such as MATLAB.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-2010",
                     "MATH-2400"
                 ],
-                "one_of": [
-                    "MATH-2010",
-                    "MATH-2400"
-                ]
+                "one_of": []
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-4800"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -2984,17 +3191,17 @@
             "subj": "MATH",
             "ID": "4820",
             "description": "Derivation, analysis, and use of computational procedures for solving differential equations. Topics covered include ordinary differential equations (both initial value and boundary value problems) and partial differential equations. Runge-Kutta and multistep methods for initial value problems. Finite difference methods for partial differential equations including techniques for heat conduction, wave propagation, and potential problems. Basic convergence and stability theory.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
-                "req": [
-                    "CSCI-4800",
-                    "MATH-4800"
-                ],
+                "req": [],
                 "one_of": [
-                    "CSCI-4800",
-                    "MATH-4800"
+                    "MATH-4800",
+                    "CSCI-4800"
                 ]
             },
-            "cross listed": [
+            "crosslisted": [
                 "CSCI-4820"
             ],
             "offered": {
@@ -3014,11 +3221,14 @@
             "subj": "CSCI",
             "ID": "4940",
             "description": "",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
                 "year": "",
                 "semesters": [],
@@ -3034,11 +3244,14 @@
             "subj": "CSCI",
             "ID": "4960",
             "description": "",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
                 "year": "",
                 "semesters": [],
@@ -3054,11 +3267,9 @@
             "subj": "MATH",
             "ID": "9990",
             "description": "Active participation in research, under the supervision of a faculty adviser, leading to a doctoral dissertation. Grades of IP are assigned until the dissertation has been publicly defended, approved by the doctoral committee, and accepted by the Office of Graduate Education to be archived in a standard format in the library. Grades will then be listed as S.",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
                 "year": "",
                 "semesters": [],
@@ -3074,13 +3285,13 @@
             "subj": "MATH",
             "ID": "1010",
             "description": "Functions, limits, continuity, derivatives, implicit differentiation, related rates, maxima and minima, elementary transcendental functions, introduction to definite integral with applications to area and volumes of revolution. Students cannot get credit for both MATH 1010 and MATH 1500.",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -3097,17 +3308,18 @@
             "subj": "MATH",
             "ID": "1020",
             "description": "Techniques and applications of integration, polar coordinates, parametric equations, infinite sequences and series, vector functions and curves in space, functions of several variables, and partial derivatives.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-1010"
                 ],
-                "one_of": [
-                    "MATH-1010"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -3124,13 +3336,16 @@
             "subj": "MATH",
             "ID": "1500",
             "description": "Basic concepts in differential and integral calculus for functions of one variable. Topics will include functions, limits, continuity, derivatives, integration, exponential and logarithmic functions, and techniques of integration. Application areas will include topics in Management, Architecture, and Social Sciences with special emphasis on the role of calculus in introductory probability. Students cannot get credit for both MATH 1500 and MATH 1010.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -3146,19 +3361,19 @@
             "subj": "MATH",
             "ID": "1520",
             "description": "Functions of several variables, introductory linear algebra, and other analytical techniques needed for further study in probability, statistics, and operations research. Topics covered include improper integrals, probability density functions, partial derivatives and optimization techniques for functions of several variables, matrix algebra, linear systems, lines and planes in 3-space, linear inequalities, introductory linear programming, introductory combinatorics, and some probability.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
-                "req": [
-                    "MATH-1500",
-                    "MATH-1010"
-                ],
+                "req": [],
                 "one_of": [
-                    "MATH-1500",
-                    "MATH-1010"
+                    "MATH-1010",
+                    "MATH-1500"
                 ]
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -3174,19 +3389,19 @@
             "subj": "MATH",
             "ID": "1620",
             "description": "An application-oriented course introducing contemporary mathematical concepts that pertain to areas of Architecture and Humanities, Arts, and Social Sciences. The course will cover growth and form, symmetry, patterns, tilings, linear programming, information coding, voting systems, game theory, logic, probability, and statistics.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
-                "req": [
-                    "MATH-1500",
-                    "MATH-1010"
-                ],
+                "req": [],
                 "one_of": [
-                    "MATH-1500",
-                    "MATH-1010"
+                    "MATH-1010",
+                    "MATH-1500"
                 ]
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -3202,13 +3417,16 @@
             "subj": "MATH",
             "ID": "1900",
             "description": "A seminar for first-year math majors. The weekly student-faculty discussions will vary but examples of topics are: unsolved math problems, countability and the arithmetic of the infinite, topology and the concept of dimension, geometry and one-sided surfaces, and the theory underlying topics currently covered in calculus.",
+            "credits": [
+                1
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -3224,13 +3442,16 @@
             "subj": "MATH",
             "ID": "1910",
             "description": "A seminar for first-year math majors. The weekly student-faculty discussions will vary but examples of topics are: unsolved math problems, countability and the arithmetic of the infinite, topology and the concept of dimension, geometry and one-sided surfaces, and the theory underlying topics currently covered in calculus.",
+            "credits": [
+                1
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -3246,20 +3467,21 @@
             "subj": "MATH",
             "ID": "2010",
             "description": "Directional derivatives, maxima and minima, double integrals, line integrals, div and curl, and Green's Theorem; matrix algebra and systems of linear equations, vectors and linear transformations in R^n, eigenvectors and eigenvalues, applications in engineering and science.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-1020"
                 ],
-                "one_of": [
-                    "MATH-1020"
-                ]
+                "one_of": []
             },
-            "cross listed": [
-                "MATH-2011",
-                "MATH-2012"
+            "crosslisted": [
+                "MATH-2012",
+                "MATH-2011"
             ],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -3276,17 +3498,18 @@
             "subj": "MATH",
             "ID": "2400",
             "description": "First-order differential equations, second-order linear equations, eigenvalues and eigenvectors of matrices, systems of first-order equations, stability and qualitative properties of nonlinear autonomous systems in the plane, Fourier series, separation of variables for partial differential equations.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-1020"
                 ],
-                "one_of": [
-                    "MATH-1020"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -3303,11 +3526,14 @@
             "subj": "MATH",
             "ID": "4940",
             "description": "",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
                 "year": "",
                 "semesters": [],
@@ -3323,11 +3549,14 @@
             "subj": "MATH",
             "ID": "4960",
             "description": "",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
                 "year": "",
                 "semesters": [],
@@ -3343,19 +3572,18 @@
             "subj": "MATH",
             "ID": "4010",
             "description": "Groups, rings, polynomial rings, fields, integral domains, with emphasis on group theory; homomorphisms and isomorphisms; normal subgroups, cosets, ideals, modules; quotient groups and quotient rings; other topics chosen from number theory, polynomials, and Galois Theory.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "MATH-4090",
                     "MATH-4100"
                 ],
-                "one_of": [
-                    "MATH-4090",
-                    "MATH-4100"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -3371,15 +3599,16 @@
             "subj": "MATH",
             "ID": "4020",
             "description": "Topics include the history of number representation systems, divisibility, greatest common divisor and prime factorization, linear Diophantine equations, congruences, and condition congruences. Additional topics may be chosen from cryptology, the perpetual calendar, hashing functions, computer operations and complexity, continued fractions, multiplicative functions, primitive roots, pseudo-random numbers, nonlinear Diophantine equations, Fermats last theorem, algebraic numbers, and approximation of numbers by rationals.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-1020"
                 ],
-                "one_of": [
-                    "MATH-1020"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "odd",
                 "semesters": [
@@ -3397,15 +3626,16 @@
             "subj": "MATH",
             "ID": "4040",
             "description": "Topics include general topological spaces, connectedness, compactness, continuity, and product spaces. Additional topics may be chosen from identification spaces, homotopy, the fundamental group, covering maps, lifts, classification of surfaces, Baire category, dimension, and the Jordan curve theorem.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
-                "req": [
-                    "MATH-4090"
-                ],
+                "req": [],
                 "one_of": [
                     "MATH-4090"
                 ]
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "even",
                 "semesters": [
@@ -3423,17 +3653,18 @@
             "subj": "MATH",
             "ID": "4090",
             "description": "The course provides an opportunity for the development of theorem-proving skills in the field of mathematical analysis. Expansion of a knowledge base comes as a by-product of energy expended in theorem proving and subsequent exposition. Analysis topics included are: sets, functions, the real numbers, cardinality, induction, decimal representations of real numbers, Euclidean spaces, abstract vector spaces, and metric spaces. This is a communication-intensive course.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-2010"
                 ],
-                "one_of": [
-                    "MATH-2010"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -3450,17 +3681,18 @@
             "subj": "MATH",
             "ID": "4100",
             "description": "The theory underlying vector spaces, algebra of subspaces, bases; linear transformations, dual spaces; eigenvectors, eigenvalues, minimal polynomials, canonical forms of linear transformations; inner products, adjoints, orthogonal projections, and complements.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-2010"
                 ],
-                "one_of": [
-                    "MATH-2010"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -3477,15 +3709,16 @@
             "subj": "MATH",
             "ID": "4120",
             "description": "Topics may be chosen from differential geometry of curves and surfaces, involutes and evolutes, order of contact, developable surfaces, Euler's and Meusnier's Theorem, mean and Gaussian curvatures, geodesics and parallel transport, The Theorem Egregium of Gauss, Gauss-Bonnet Theorem, computer-aided geometric design, computational geometry, tessellations, tiling and patterns, projective and non-Euclidean geometries, postulates and axiomatic systems, advanced Euclidean geometry, and the history of geometry.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-2010"
                 ],
-                "one_of": [
-                    "MATH-2010"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "even",
                 "semesters": [
@@ -3503,11 +3736,14 @@
             "subj": "MATH",
             "ID": "4140",
             "description": "This course is a continuation of PHIL 2140, covering basic metatheory of logic (including formal syntax and semantics, model theory, and soundness and completeness of proof systems), applications of logic (including automated theorem proving, deductive problem solving, and the axiomatization of various branches of mathematics), and alternative systems of logic (including sequent systems, diagrammatic logic, and modal logic).",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "even",
                 "semesters": [
@@ -3525,19 +3761,20 @@
             "subj": "MATH",
             "ID": "4200",
             "description": "Fundamental concepts of mathematical analysis will be covered including such topics as the real number system, metric spaces, limits, sequences, series, convergence, functions of one variable, uniform convergence, continuity, differentiability, Riemann integration, and the Stone-Weierstrass Theorem.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "MATH-4090",
                     "MATH-1020"
                 ],
                 "one_of": [
-                    "MATH-4090",
-                    "MATH-1020"
+                    "MATH-4090"
                 ]
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -3553,17 +3790,18 @@
             "subj": "MATH",
             "ID": "4300",
             "description": "An introduction to the theory and applications of complex variables. Topics include analytic functions, Riemann surfaces, complex integration, Taylor and Laurent series, residues, conformal mapping, harmonic functions, and Laplace transforms. Applications will be to problems in science and engineering such as fluid and heat flow, dynamical systems, and electrostatics.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-2010"
                 ],
-                "one_of": [
-                    "MATH-2010"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -3579,19 +3817,19 @@
             "subj": "MATH",
             "ID": "4400",
             "description": "An intermediate course emphasizing a modern geometric approach and applications in science and engineering. Topics include first-order equations, linear systems, phase plane, linearization and stability, calculus of variations, Lagrangian and Hamiltonian mechanics, oscillations, basic bifurcation theory, chaotic dynamics, and existence and uniqueness.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-2010",
                     "MATH-2400"
                 ],
-                "one_of": [
-                    "MATH-2010",
-                    "MATH-2400"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -3607,19 +3845,19 @@
             "subj": "MATH",
             "ID": "4500",
             "description": "An intermediate course serving to introduce both the qualitative properties of solutions of partial differential equations and methods of solution, including separation of variables. Topics include first-order equations, derivation of the classical equations of mathematical physics (wave, potential, and heat equations), method of characteristics, construction and behavior of solutions, maximum principles, energy integrals.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-2010",
                     "MATH-2400"
                 ],
-                "one_of": [
-                    "MATH-2010",
-                    "MATH-2400"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "spring"
                 ],
@@ -3635,17 +3873,18 @@
             "subj": "MATH",
             "ID": "4600",
             "description": "A course emphasizing advanced concepts and methods from calculus. Topics include: multivariable integral theorems (Green's, divergence, Stokes', Reynolds transport), extrema of multivariable functions (including Taylor's theorem and Lagrange multipliers), the calculus of variations (EulerLagrange equations, constraints, principle of least action), and Cartesian tensors (calculus, invariants, representations).",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-2010"
                 ],
-                "one_of": [
-                    "MATH-2010"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -3662,19 +3901,19 @@
             "subj": "MATH",
             "ID": "4700",
             "description": "Mathematical formulation of models for various processes. Derivation of relevant differential equations from conservation laws and constitutive relations. Use of dimensional analysis, scaling, and elementary perturbation methods. Description of basic wave motion. Examples from areas including biology, elasticity, fluid dynamics, particle mechanics, chemistry, geophysics, and finance.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
-                    "MATH-2010",
-                    "MATH-2400"
+                    "MATH-2400",
+                    "MATH-2010"
                 ],
-                "one_of": [
-                    "MATH-2010",
-                    "MATH-2400"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall"
                 ],
@@ -3690,15 +3929,16 @@
             "subj": "MATH",
             "ID": "4720",
             "description": "An introduction to mathematics used in biology, biophysics, biomedical engineering, and medicine. The mathematical topics covered are selected from calculus, linear algebra, differential equations, numerical methods, and Fourier analysis. The biological applications covered are selected from human physiology (heart, lung, brain), population models (microorganisms, cells, animals), and the diagnosis and treatment of disease (heart, cancer).",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-1020"
                 ],
-                "one_of": [
-                    "MATH-1020"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "odd",
                 "semesters": [
@@ -3716,15 +3956,16 @@
             "subj": "MATH",
             "ID": "4740",
             "description": "This course is designed to introduce students to mathematical and computational finance. Topics include a mathematical approach to risk analysis, portfolio selection theory, futures, options, and other derivative investment instruments. Finite difference and finite element methods for computing American option prices are discussed. A working knowledge of MAPLE or MATLAB is required to compute optimal portfolios.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [
                     "MATH-1020"
                 ],
-                "one_of": [
-                    "MATH-1020"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "even",
                 "semesters": [
@@ -3742,15 +3983,14 @@
             "subj": "MATH",
             "ID": "4840",
             "description": "The focus of the course is on fundamental algorithms in computational linear algebra and their applications in science and engineering. These algorithms involve QR and SVD factorizations, the computation of eigenvalues and eigenvectors, basic optimization methods, and iterative methods for sparse systems. Applications will be considered in areas such as data analysis and compression, principal component and spectral analysis, solutions of large sparse systems, among others.",
+            "credits": [],
             "prerequisites": {
                 "req": [
                     "MATH-4800"
                 ],
-                "one_of": [
-                    "MATH-4800"
-                ]
+                "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
                 "year": "odd",
                 "semesters": [
@@ -3768,13 +4008,16 @@
             "subj": "MATH",
             "ID": "4950",
             "description": "Undergraduate mathematics projects that utilize students' mathematical knowledge will result in formal reports and final presentations. Examples are research projects or critical in-depth mathematical literature reviews. Information about projects will be exchanged in weekly meetings with the research supervisor. In order to take this course, students must make arrangements with a math faculty member to act as a research supervisor. This is a communication-intensive course. To be graded S/U.",
+            "credits": [
+                4
+            ],
             "prerequisites": {
                 "req": [],
                 "one_of": []
             },
-            "cross listed": [],
+            "crosslisted": [],
             "offered": {
-                "year": "",
+                "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
@@ -3791,11 +4034,14 @@
             "subj": "MATH",
             "ID": "4980",
             "description": "",
-            "prerequisites": {
-                "req": [],
-                "one_of": []
-            },
-            "cross listed": [],
+            "credits": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "prerequisites": [],
+            "crosslisted": [],
             "offered": {
                 "year": "",
                 "semesters": [],
