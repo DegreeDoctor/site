@@ -244,7 +244,7 @@ def scrape_courses():
     print("Starting courses scraping")
     catalogs = get_catalogs()
 
-    catalogs = catalogs[:2]
+    catalogs = catalogs[:1]
     courses_per_year = {}
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         course_ids = get_course_ids(catalog_id)
