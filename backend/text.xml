@@ -1,0 +1,3496 @@
+b'<catalog>
+    <search>
+        <hits>241</hits>
+        <time>0.052684783935546875</time>
+        <results>
+            <result>
+                <id>4696</id>
+                <name> Economics of Biotech and Medical Innovation Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4704</id>
+                <name>Accelerated Science, Technology, and Society (Law) B.S./J.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4480</id>
+                <name>Aeronautical Engineering Curriculum</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4481</id>
+                <name>Air Force Reserve Officers Training Corps</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+            </result>
+            <result>
+                <id>4483</id>
+                <name>Applied Mathematics M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4484</id>
+                <name>Applied Physics</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4485</id>
+                <name>Applied Science</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="184">Interdisciplinary</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4486</id>
+                <name>Architectural Acoustics Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4487</id>
+                <name>Architectural History Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4488</id>
+                <name>Architectural Sciences (Concentration in Architectural Acoustics) M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4489</id>
+                <name>Architectural Sciences (Concentration in Architectural Acoustics) Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4490</id>
+                <name>Architectural Sciences (Concentration in Built Ecologies) M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4491</id>
+                <name>Architectural Sciences (Concentration in Built Ecologies) Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4493</id>
+                <name>Architectural Sciences (Concentration in Lighting) Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4492</id>
+                <name>Architectural Sciences M.S (Concentration in Lighting)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4494</id>
+                <name>Architecture</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="206">Bachelor of Architecture</degreetype>
+            </result>
+            <result>
+                <id>4495</id>
+                <name>Architecture Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4496</id>
+                <name>Army Reserve Officers Training Corps</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+            </result>
+            <result>
+                <id>4721</id>
+                <name>Artificial Intelligence</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4722</id>
+                <name>Arts History, Theory, and Criticism</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4501</id>
+                <name>Astrobiology Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4672</id>
+                <name>Astronomy M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+            </result>
+            <result>
+                <id>4502</id>
+                <name>Astronomy Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4503</id>
+                <name>Astrophysics Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4723</id>
+                <name>Behavioral and Cognitive Neuroscience</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4702</id>
+                <name>Behavioral and Cognitive Neuroscience</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4504</id>
+                <name>Biochemistry and Biophysics</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="184">Interdisciplinary</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4505</id>
+                <name>Biochemistry/Biophysics Minor for Biology Majors</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4506</id>
+                <name>Biochemistry/Biophysics Minor for Biomedical Engineering Majors</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4507</id>
+                <name>Biochemistry/Biophysics Minor for Chemical Engineering Majors</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4508</id>
+                <name>Biochemistry/Biophysics Minor for Chemistry Majors</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4509</id>
+                <name>Bioinformatics and Molecular Biology</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="184">Interdisciplinary</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4510</id>
+                <name>Biology</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4511</id>
+                <name>Biology M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4512</id>
+                <name>Biology Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4513</id>
+                <name>Biology Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4514</id>
+                <name>Biomedical Engineering</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4515</id>
+                <name>Biomedical Engineering and Management Minor </name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4516</id>
+                <name>Biomedical Engineering and Medicine</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+            </result>
+            <result>
+                <id>4517</id>
+                <name>Biomedical Engineering M.S./M.Eng.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4675</id>
+                <name>Biomedical Engineering, Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4519</id>
+                <name>Building Sciences B.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4711</id>
+                <name>Business Analytics</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4520</id>
+                <name>Business and Management</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4710</id>
+                <name>Business Intelligence Graduate Certificate (BICT) (Hartford)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="183">Graduate Certificate</type>
+                <degreetype id="210">Graduate Certificate</degreetype>
+            </result>
+            <result>
+                <id>4521</id>
+                <name>Chemical Engineering</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4522</id>
+                <name>Chemical Engineering (Professional Program)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="187">Professional</type>
+            </result>
+            <result>
+                <id>4523</id>
+                <name>Chemical Engineering M.Eng.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="213">Master of Engineering</degreetype>
+            </result>
+            <result>
+                <id>4524</id>
+                <name>Chemical Engineering M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4679</id>
+                <name>Chemical Engineering Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4525</id>
+                <name>Chemistry </name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4681</id>
+                <name>Chemistry - Chemical Biology Track</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4526</id>
+                <name>Chemistry M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4527</id>
+                <name>Chemistry Minor for Non-Chemistry Majors</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4528</id>
+                <name>Chemistry Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4724</id>
+                <name>Chinese Language</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4529</id>
+                <name>Chinese Language Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4531</id>
+                <name>Civil and Environmental Engineering M.Eng.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="213">Master of Engineering</degreetype>
+            </result>
+            <result>
+                <id>4532</id>
+                <name>Civil and Environmental Engineering M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4533</id>
+                <name>Civil and Environmental Engineering Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4534</id>
+                <name>Civil Engineering</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4530</id>
+                <name>Civil Engineering (Professional Program)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="187">Professional</type>
+            </result>
+            <result>
+                <id>4535</id>
+                <name>Civil Engineering Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4536</id>
+                <name>Cognitive Science</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4683</id>
+                <name>Cognitive Science M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4665</id>
+                <name>Cognitive Science Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4703</id>
+                <name>Cognitive Science of Artificial Intelligence Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4684</id>
+                <name>Cognitive Science Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4537</id>
+                <name>Communication</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4539</id>
+                <name>Communication and Rhetoric Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4695</id>
+                <name>Communication, Media, and Design</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4541</id>
+                <name>Computer and Systems Engineering</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4543</id>
+                <name>Computer and Systems Engineering Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4545</id>
+                <name>Computer Science</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4548</id>
+                <name>Computer Science M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4550</id>
+                <name>Computer Science Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4551</id>
+                <name>Computer Science Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4725</id>
+                <name>Creative Design and Innovation</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4726</id>
+                <name>Design, Innovation, and Society</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4556</id>
+                <name>Design, Innovation, and Society</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4656</id>
+                <name>Design, Innovation, and Society/Mechanical Engineering</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4785</id>
+                <name>Earth and Envirionmental Science Five-Year B.S.-M.S. Program</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4691</id>
+                <name>Ecology Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4727</id>
+                <name>Economics</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4558</id>
+                <name>Economics</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4559</id>
+                <name>Economics M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4560</id>
+                <name>Economics Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4728</id>
+                <name>Economics of Banking and Finance</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4700</id>
+                <name>Economics of Banking and Finance Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4729</id>
+                <name>Economics of Biotech and Medical Markets </name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4766</id>
+                <name>Economics of Policy and Regulations</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4697</id>
+                <name>Economics of Policy and Regulations</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4767</id>
+                <name>Economics of Quantitative Modeling</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4698</id>
+                <name>Economics of Quantitative Modeling</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4730</id>
+                <name>Economics of Technology and Innovation</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4699</id>
+                <name>Economics of Technology and Innovation Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4565</id>
+                <name>Electrical Engineering</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4568</id>
+                <name>Electrical Engineering Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4570</id>
+                <name>Electrical, Computer and Systems Engineering M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4690</id>
+                <name>Electrical, Computer and Systems Engineering, Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4731</id>
+                <name>Electronic Arts</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4571</id>
+                <name>Electronic Arts</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4573</id>
+                <name>Electronic Arts Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4574</id>
+                <name>Electronic Arts Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4575</id>
+                <name>Electronic Media, Arts, and Communication</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4576</id>
+                <name>Electronic Media, Arts, and Communication (EMAC)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="184">Interdisciplinary</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4671</id>
+                <name>Engineering Core Curriculum</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4680</id>
+                <name>Engineering Science</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4663</id>
+                <name>Entrepreneurship Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4578</id>
+                <name>Environmental Engineering</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4579</id>
+                <name>Environmental Engineering Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4732</id>
+                <name>Environmental Futures</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4580</id>
+                <name>Environmental Science</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="184">Interdisciplinary</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4783</id>
+                <name>Environmental Science M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4581</id>
+                <name>Environmental Science Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4733</id>
+                <name>Ethics, Integrity, and Social Responsibility</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4734</id>
+                <name>Extent and Limits of Rationality</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4735</id>
+                <name>Fact and Fiction</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4583</id>
+                <name>Finance Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4736</id>
+                <name>Foreign Language</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4737</id>
+                <name>Game Studies</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4584</id>
+                <name>Games and Simulation Arts and Sciences</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4738</id>
+                <name>Gender, Race, Sexuality, Ethnicity, and Social Change</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4655</id>
+                <name>General Psychology Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4587</id>
+                <name>Geology</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4784</id>
+                <name>Geology M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4588</id>
+                <name>Geology Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4782</id>
+                <name>Geology Ph.D. </name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4739</id>
+                <name>Graphic Design</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4720</id>
+                <name>Graphic Design Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4713</id>
+                <name>Health Analytics Graduate Certificate</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="183">Graduate Certificate</type>
+                <degreetype id="210">Graduate Certificate</degreetype>
+            </result>
+            <result>
+                <id>4740</id>
+                <name>History</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4708</id>
+                <name>History Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4677</id>
+                <name>Human-Computer Interaction (HCI) Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4594</id>
+                <name>Hydrogeology</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4595</id>
+                <name>Hydrogeology Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4596</id>
+                <name>Industrial and Management Engineering</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4597</id>
+                <name>Industrial and Management Engineering M.S./M.Eng.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4599</id>
+                <name>Information Technology and Web Science</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4601</id>
+                <name>Information Technology and Web Science Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4741</id>
+                <name>Information Technology and Web Sciences</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4686</id>
+                <name>Information Technology M.S (Hartford)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4603</id>
+                <name>Information Technology M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4742</id>
+                <name>Interactive Media/Data Design</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4719</id>
+                <name>Interactive Media/Data Design Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4604</id>
+                <name>Interdisciplinary Science</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="184">Interdisciplinary</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4607</id>
+                <name>J.D.-MBA Program</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+            </result>
+            <result>
+                <id>4743</id>
+                <name>Law and Policy</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4709</id>
+                <name>Law and Policy Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4716</id>
+                <name>Lean Quality in Production Graduate Certificate (LQCT)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="183">Graduate Certificate</type>
+                <degreetype id="210">Graduate Certificate</degreetype>
+            </result>
+            <result>
+                <id>4608</id>
+                <name>Lighting M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4609</id>
+                <name>Lighting Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4692</id>
+                <name>Lighting Minor in Biological Sciences</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4744</id>
+                <name>Linguistics</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4688</id>
+                <name>Linguistics Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4745</id>
+                <name>Literature and Creative Writing</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4610</id>
+                <name>Literature and Creative Writing Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4770</id>
+                <name>Living in a World of Data</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4747</id>
+                <name>Logical Thinking</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4714</id>
+                <name>Machine Learning and Artificial Intelligence Graduate Certificate (MLCT)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="183">Graduate Certificate</type>
+                <degreetype id="210">Graduate Certificate</degreetype>
+            </result>
+            <result>
+                <id>4611</id>
+                <name>Management Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4612</id>
+                <name>Management Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4614</id>
+                <name>Marketing Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4615</id>
+                <name>Master of Architecture -  Professional Program</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="211">Master of Architecture</degreetype>
+            </result>
+            <result>
+                <id>4616</id>
+                <name>Master of Business Administration</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4617</id>
+                <name>Master of Engineering Program in Systems Engineering and Technology Management</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="213">Master of Engineering</degreetype>
+            </result>
+            <result>
+                <id>4678</id>
+                <name>Master of Science in Architecture Program</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4673</id>
+                <name>Master of Science in Business Analytics</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4717</id>
+                <name>Master of Science in Engineering Science (MSESH) (Hartford)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4613</id>
+                <name>Master of Science in Management</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4618</id>
+                <name>Master of Science in Quantitative Finance and Risk Analytics</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4674</id>
+                <name>Master of Science in Supply Chain Management</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4621</id>
+                <name>Master of Science in Technology Commercialization and Entrepreneurship</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4622</id>
+                <name>Materials Engineering</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4623</id>
+                <name>Materials Engineering M.Eng.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="213">Master of Engineering</degreetype>
+            </result>
+            <result>
+                <id>4624</id>
+                <name>Materials Engineering M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4625</id>
+                <name>Materials Engineering Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4693</id>
+                <name>Materials Engineering Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4626</id>
+                <name>Mathematics</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4627</id>
+                <name>Mathematics M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4628</id>
+                <name>Mathematics Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4631</id>
+                <name>Mathematics Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4632</id>
+                <name>Mechanical Engineering Curriculum</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4633</id>
+                <name>Mechanical Engineering M.Eng. (Hartford)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="213">Master of Engineering</degreetype>
+            </result>
+            <result>
+                <id>4635</id>
+                <name>Mechanical, Aerospace, and Nuclear Engineering M.Eng.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="213">Master of Engineering</degreetype>
+            </result>
+            <result>
+                <id>4636</id>
+                <name>Mechanical, Aerospace, and Nuclear Engineering M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4687</id>
+                <name>Mechanical, Aerospace, and Nuclear Engineering, Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4748</id>
+                <name>Media and Culture</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4718</id>
+                <name>Media and Culture Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4637</id>
+                <name>Military Science</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+            </result>
+            <result>
+                <id>4750</id>
+                <name>Mind, Brain, and Intelligence</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4638</id>
+                <name>Multidisciplinary Science</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="184">Interdisciplinary</type>
+            </result>
+            <result>
+                <id>4689</id>
+                <name>Music</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4751</id>
+                <name>Music and Culture</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4752</id>
+                <name>Music Composition and Production</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4639</id>
+                <name>Music Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4753</id>
+                <name>Music Performance </name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4640</id>
+                <name>Naval Reserve Officers Training Corps</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+            </result>
+            <result>
+                <id>4641</id>
+                <name>Nuclear Engineering Curriculum</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4642</id>
+                <name>Nuclear Engineering Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4643</id>
+                <name>Ph.D. Decision Sciences and Engineering Systems</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="208">Doctor of Engineering</degreetype>
+            </result>
+            <result>
+                <id>4754</id>
+                <name>Philosophy</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4644</id>
+                <name>Philosophy</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4645</id>
+                <name>Philosophy Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4676</id>
+                <name>Philosophy of Logic, Computation, and Mind Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4646</id>
+                <name>Physician-Scientist</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4647</id>
+                <name>Physics</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4648</id>
+                <name>Physics M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4649</id>
+                <name>Physics Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4650</id>
+                <name>Physics Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4712</id>
+                <name>Production Analytics Graduate Certificate (PACT)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="183">Graduate Certificate</type>
+                <degreetype id="210">Graduate Certificate</degreetype>
+            </result>
+            <result>
+                <id>4652</id>
+                <name>Professional Writing Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4653</id>
+                <name>Program for Graduates of Naval Nuclear Power Training Command\'s Nuclear Power School</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4654</id>
+                <name>Psychological Science</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4685</id>
+                <name>Psychological Science Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4755</id>
+                <name>Public Health</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4707</id>
+                <name>Public Health Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4658</id>
+                <name>Science and Technology Studies Five-Year B.S./M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4682</id>
+                <name>Science and Technology Studies M.S.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="215">Master of Science</degreetype>
+            </result>
+            <result>
+                <id>4659</id>
+                <name>Science and Technology Studies Ph.D.</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="182">Doctoral</type>
+                <degreetype id="209">Doctor of Philosophy</degreetype>
+            </result>
+            <result>
+                <id>4756</id>
+                <name>Science, Technology, and Society</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4657</id>
+                <name>Science, Technology, and Society</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4660</id>
+                <name>Science, Technology, and Society Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4757</id>
+                <name>Strategic Communication</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4540</id>
+                <name>Strategic Communication</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4772</id>
+                <name>Studio Arts</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4706</id>
+                <name>Studio Arts</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4759</id>
+                <name>Sustainability</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4669</id>
+                <name>Sustainability Studies</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="181">Baccalaureate</type>
+                <degreetype id="207">Bachelor of Science</degreetype>
+            </result>
+            <result>
+                <id>4662</id>
+                <name>Sustainability Studies Minor</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4694</id>
+                <name>Systems Engineering and Technology Management M.Eng. (SETM) (Hartford)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="185">Masters</type>
+                <degreetype id="213">Master of Engineering</degreetype>
+            </result>
+            <result>
+                <id>4715</id>
+                <name>Systems Engineering Graduate Certificate (SECT)</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="183">Graduate Certificate</type>
+                <degreetype id="210">Graduate Certificate</degreetype>
+            </result>
+            <result>
+                <id>4664</id>
+                <name>Technology in Commercialization and Entrepreneurship</name>
+                <altname></altname>
+                <state>
+                    <code>2</code>
+                    <name>Active-Hidden</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4760</id>
+                <name>Thinking with Science</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4761</id>
+                <name>Transfer Student Arts and Humanities</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4762</id>
+                <name>Transfer Student Social Science</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4763</id>
+                <name>Understanding Human Behavior</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4764</id>
+                <name>Video, Performance, and Social Impact</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+            <result>
+                <id>4705</id>
+                <name>Video, Performance, and Social Practice</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4701</id>
+                <name>Well-being</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="186">Minor</type>
+            </result>
+            <result>
+                <id>4765</id>
+                <name>Well-being: Body and Mind</name>
+                <altname></altname>
+                <state>
+                    <code>1</code>
+                    <name>Active-Visible</name>
+                    <parent>
+                        <code>1</code>
+                        <name>Active-Visible</name>
+                    </parent>
+                </state>
+                <type id="188">Integrative Pathway</type>
+            </result>
+        </results>
+    </search>
+    <status>success</status>
+</catalog>\n'
