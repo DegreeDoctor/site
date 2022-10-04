@@ -5,14 +5,17 @@ from tqdm import tqdm
 import json
 import unicodedata
 
+
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
 # It is ok to publish this key because I found it online already public
 DEFAULT_QUERY_PARAMS = "?key=3eef8a28f26fb2bcc514e6f1938929a1f9317628&format=xml"
 CHUNK_SIZE = 500
+
+# Opens the Department.JSON and returns a list of department code
 def get_depts():
     depts = []
-    f = open('depts.json', 'r')
+    f = open('depts.json', 'r') #make sure to close at end of file
     f = json.load(f)
     for dept in f:
         depts.append(dept)
@@ -20,6 +23,7 @@ def get_depts():
 
 depts = get_depts()
 
+# Opens the Course JSON (produced by course_scraper.py) and returns a list of course
 def get_courses():
     course_dict = []
     f = open('courses.json','r')
@@ -36,6 +40,7 @@ course_dict = get_courses()
 #             if (len(course["credits"]))
 #             return course["credits"]
 #     return 0
+
 
 # returns the list of catalogs with the newest one being first
 # each catalog is a tuple (year, catalog_id) ex: ('2020-2021', 21)
@@ -61,7 +66,7 @@ def get_catalogs() -> List[Tuple[str, int]]:
     return ret
 
 
-# Returns a list of course ids for a given catalog
+# Returns a list of program ids for a given catalog
 def get_program_ids(catalog_id: str) -> List[str]:
     programs_xml = html.fromstring(
         requests.get(
@@ -70,6 +75,7 @@ def get_program_ids(catalog_id: str) -> List[str]:
     )
     return programs_xml.xpath('//result[type="Baccalaureate"]/id/text()')
 
+# <<< need rework for programs >>>
 def course_from_string(inp, depts):
     for dept in depts:
         fnd = inp.find(dept)
@@ -78,21 +84,22 @@ def course_from_string(inp, depts):
                 if inp[fnd+5] != '6':
                     return inp[fnd:fnd+4] + inp[fnd+5:fnd+9]
 
-def handle_electives(cont, courses, depts, year):
-    level = '0'
-    for char in cont:
-        if char.isdigit():
-            level = char
-            break;
-    if level == '0':
-        return
-    subj = "TEMP"
-    for word in cont.split():
-        if word in depts:
-            subj = word
-            break
-    if subj == "TEMP":
-        return
+
+# def handle_electives(cont, courses, depts, year):
+#     level = '0'
+#     for char in cont:
+#         if char.isdigit():
+#             level = char
+#             break;
+#     if level == '0':
+#         return
+#     subj = "TEMP"
+#     for word in cont.split():
+#         if word in depts:
+#             subj = word
+#             break
+#     if subj == "TEMP":
+#         return
     # path = '../../frontend/src/data/json/' + str(year)
     # f = open(path + '/courses.json', 'r')
     # all_courses = json.load(f)
@@ -103,11 +110,14 @@ def handle_electives(cont, courses, depts, year):
     #         courses[course.encode("ascii", "ignore").strip().decode().strip()] = subjC+ID
     # f.close()
 
+# Normalize a string, using unicode data. Remove all weird whitespace tag 
 def norm_str(str):
     return unicodedata.normalize("NFKD",str).strip().replace('\n',' ').replace('\t','')
 
+# Take a list of list and remove empty list elements
 def striplist(lstr): 
     return list(filter(None, lstr))
+
 
 def split_content(str):
     ret = []
@@ -131,6 +141,8 @@ def rem_arch(str):
 def rem_all(str):
     return rem_footnote(rem_arch(str))
 
+# takes in xml file of of one semester of courses
+# input:  core.xpath("./children/core")   ==>> cores->core->children->core
 def parse_semester(inp):
     ret = []
     for classes in inp:
@@ -295,4 +307,6 @@ def scrape_pathways():
     with open("programs.json", "w") as outfile:
         outfile.write(json_object)
     return programs_per_year
-scrape_pathways()
+
+if __name__ == "__main__":
+    scrape_pathways()
