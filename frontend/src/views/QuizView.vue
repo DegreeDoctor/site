@@ -13,4 +13,5 @@ export default {
 <template>
     <button @click="store.addDegree()">test button</button>
     <router-link to="degree">test</router-link>
+    <Footer />
 </template>
