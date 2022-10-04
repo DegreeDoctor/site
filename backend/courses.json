@@ -56,7 +56,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-1100"
                 ],
                 "one_of": []
@@ -84,15 +84,17 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-1200"
                 ],
                 "one_of": [
-                    "MATH-1010",
-                    "MATH-1500",
-                    "MATH-1020",
-                    "MATH-2010",
-                    "MATH-1020"
+                    [
+                        "MATH-1010",
+                        "MATH-1500",
+                        "MATH-1020",
+                        "MATH-2010",
+                        "MATH-1020"
+                    ]
                 ]
             },
             "crosslisted": [],
@@ -118,15 +120,17 @@
                 4
             ],
             "prerequisites": {
-                "req": [
-                    "CSCI-2200",
-                    "CSCI-1200"
+                "required": [
+                    "CSCI-1200",
+                    "CSCI-2200"
                 ],
                 "one_of": [
-                    "MATH-1010",
-                    "MATH-1500",
-                    "MATH-1020",
-                    "MATH-2010"
+                    [
+                        "MATH-1010",
+                        "MATH-1500",
+                        "MATH-1020",
+                        "MATH-2010"
+                    ]
                 ]
             },
             "crosslisted": [],
@@ -152,7 +156,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-1200"
                 ],
                 "one_of": []
@@ -180,7 +184,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-1200",
                     "CSCI-2200"
                 ],
@@ -209,7 +213,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300"
                 ],
                 "one_of": []
@@ -236,7 +240,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-4020"
                 ],
                 "one_of": []
@@ -265,7 +269,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-4020"
                 ],
                 "one_of": []
@@ -294,7 +298,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300"
                 ],
                 "one_of": []
@@ -323,7 +327,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300"
                 ],
                 "one_of": []
@@ -352,7 +356,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300"
                 ],
                 "one_of": []
@@ -381,7 +385,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300"
                 ],
                 "one_of": []
@@ -408,12 +412,14 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300"
                 ],
                 "one_of": [
-                    "CSCI-2500",
-                    "ECSE-2660"
+                    [
+                        "CSCI-2500",
+                        "ECSE-2660"
+                    ]
                 ]
             },
             "crosslisted": [],
@@ -439,7 +445,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-4210"
                 ],
                 "one_of": []
@@ -466,9 +472,9 @@
                 4
             ],
             "prerequisites": {
-                "req": [
-                    "CSCI-2300",
+                "required": [
                     "CSCI-4210",
+                    "CSCI-2300",
                     "CSCI-4220"
                 ],
                 "one_of": []
@@ -497,11 +503,11 @@
                 4
             ],
             "prerequisites": {
-                "req": [
-                    "CSCI-4800",
+                "required": [
                     "CSCI-4020",
-                    "CSCI-2300",
-                    "CSCI-4260"
+                    "CSCI-4260",
+                    "CSCI-4800",
+                    "CSCI-2300"
                 ],
                 "one_of": []
             },
@@ -529,12 +535,14 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-1100"
                 ],
                 "one_of": [
-                    "CSCI-2200",
-                    "MATH-4090"
+                    [
+                        "CSCI-2200",
+                        "MATH-4090"
+                    ]
                 ]
             },
             "crosslisted": [
@@ -561,7 +569,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300",
                     "MATH-2010"
                 ],
@@ -591,10 +599,12 @@
                 4
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": [
-                    "CSCI-4210",
-                    "ECSE-2660"
+                    [
+                        "CSCI-4210",
+                        "ECSE-2660"
+                    ]
                 ]
             },
             "crosslisted": [
@@ -621,12 +631,14 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300"
                 ],
                 "one_of": [
-                    "CSCI-2500",
-                    "ECSE-2660"
+                    [
+                        "CSCI-2500",
+                        "ECSE-2660"
+                    ]
                 ]
             },
             "crosslisted": [
@@ -653,7 +665,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300"
                 ],
                 "one_of": []
@@ -682,7 +694,7 @@
                 3
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-1200",
                     "CSCI-4380"
                 ],
@@ -710,12 +722,14 @@
                 4
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": [
-                    "CSCI-4350",
-                    "CSCI-6350",
-                    "ITWS-4350",
-                    "ITWS-6350"
+                    [
+                        "CSCI-6350",
+                        "CSCI-4350",
+                        "ITWS-6350",
+                        "ITWS-4350"
+                    ]
                 ]
             },
             "crosslisted": [
@@ -742,7 +756,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300"
                 ],
                 "one_of": []
@@ -770,7 +784,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300"
                 ],
                 "one_of": []
@@ -799,14 +813,14 @@
                 3
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-1200",
-                    "ERTH-6350",
                     "ITWS-6350",
+                    "CSCI-6350",
+                    "ERTH-4350",
                     "ITWS-4350",
                     "CSCI-4350",
-                    "ERTH-4350",
-                    "CSCI-6350"
+                    "ERTH-6350"
                 ],
                 "one_of": []
             },
@@ -834,10 +848,12 @@
                 4
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": [
-                    "PHIL-2140",
-                    "CSCI-2200"
+                    [
+                        "PHIL-2140",
+                        "CSCI-2200"
+                    ]
                 ]
             },
             "crosslisted": [],
@@ -862,7 +878,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300",
                     "CSCI-2600"
                 ],
@@ -890,7 +906,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300"
                 ],
                 "one_of": []
@@ -918,7 +934,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-4430"
                 ],
                 "one_of": []
@@ -947,7 +963,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2600"
                 ],
                 "one_of": []
@@ -976,7 +992,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300",
                     "CSCI-2600"
                 ],
@@ -1005,7 +1021,7 @@
                 3
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-2400"
                 ],
                 "one_of": []
@@ -1034,12 +1050,14 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-4430"
                 ],
                 "one_of": [
-                    "CSCI-4210",
-                    "CSCI-4220"
+                    [
+                        "CSCI-4210",
+                        "CSCI-4220"
+                    ]
                 ]
             },
             "crosslisted": [
@@ -1066,7 +1084,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-4210"
                 ],
                 "one_of": []
@@ -1095,12 +1113,14 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300"
                 ],
                 "one_of": [
-                    "CSCI-2600",
-                    "ECSE-4750"
+                    [
+                        "CSCI-2600",
+                        "ECSE-4750"
+                    ]
                 ]
             },
             "crosslisted": [
@@ -1127,7 +1147,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": []
             },
             "crosslisted": [
@@ -1154,7 +1174,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "CSCI-2300",
                     "CSCI-2600"
                 ],
@@ -1184,13 +1204,13 @@
                 3
             ],
             "prerequisites": {
-                "req": [
-                    "ERTH-6350",
+                "required": [
                     "ITWS-6350",
+                    "CSCI-6350",
+                    "ERTH-4350",
                     "ITWS-4350",
                     "CSCI-4350",
-                    "ERTH-4350",
-                    "CSCI-6350"
+                    "ERTH-6350"
                 ],
                 "one_of": []
             },
@@ -1218,11 +1238,13 @@
                 4
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": [
-                    "CSCI-2200",
-                    "CSCI-2300",
-                    "CSCI-2600"
+                    [
+                        "CSCI-2200",
+                        "CSCI-2300",
+                        "CSCI-2600"
+                    ]
                 ]
             },
             "crosslisted": [],
@@ -1248,7 +1270,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-2010",
                     "MATH-2400"
                 ],
@@ -1277,10 +1299,12 @@
                 4
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": [
-                    "MATH-4800",
-                    "CSCI-4800"
+                    [
+                        "MATH-4800",
+                        "CSCI-4800"
+                    ]
                 ]
             },
             "crosslisted": [],
@@ -1374,7 +1398,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-1010"
                 ],
                 "one_of": []
@@ -1402,7 +1426,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": []
             },
             "crosslisted": [],
@@ -1427,10 +1451,12 @@
                 4
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": [
-                    "MATH-1010",
-                    "MATH-1500"
+                    [
+                        "MATH-1010",
+                        "MATH-1500"
+                    ]
                 ]
             },
             "crosslisted": [],
@@ -1455,10 +1481,12 @@
                 4
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": [
-                    "MATH-1010",
-                    "MATH-1500"
+                    [
+                        "MATH-1010",
+                        "MATH-1500"
+                    ]
                 ]
             },
             "crosslisted": [],
@@ -1483,7 +1511,7 @@
                 1
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": []
             },
             "crosslisted": [],
@@ -1508,7 +1536,7 @@
                 1
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": []
             },
             "crosslisted": [],
@@ -1533,7 +1561,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-1020"
                 ],
                 "one_of": []
@@ -1561,7 +1589,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-1020"
                 ],
                 "one_of": []
@@ -1635,7 +1663,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-4100"
                 ],
                 "one_of": []
@@ -1662,7 +1690,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-1020"
                 ],
                 "one_of": []
@@ -1689,9 +1717,11 @@
                 4
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": [
-                    "MATH-4090"
+                    [
+                        "MATH-4090"
+                    ]
                 ]
             },
             "crosslisted": [],
@@ -1716,7 +1746,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-2010"
                 ],
                 "one_of": []
@@ -1744,7 +1774,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-2010"
                 ],
                 "one_of": []
@@ -1772,7 +1802,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-2010"
                 ],
                 "one_of": []
@@ -1799,7 +1829,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "PHIL-2140"
                 ],
                 "one_of": []
@@ -1828,11 +1858,13 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-1020"
                 ],
                 "one_of": [
-                    "MATH-4090"
+                    [
+                        "MATH-4090"
+                    ]
                 ]
             },
             "crosslisted": [],
@@ -1857,7 +1889,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-2010"
                 ],
                 "one_of": []
@@ -1884,7 +1916,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-2010",
                     "MATH-2400"
                 ],
@@ -1912,7 +1944,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-2010",
                     "MATH-2400"
                 ],
@@ -1940,7 +1972,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-2010"
                 ],
                 "one_of": []
@@ -1968,7 +2000,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-2400",
                     "MATH-2010"
                 ],
@@ -1996,7 +2028,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-1020"
                 ],
                 "one_of": []
@@ -2023,7 +2055,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-1020"
                 ],
                 "one_of": []
@@ -2048,7 +2080,7 @@
             "description": "The focus of the course is on fundamental algorithms in computational linear algebra and their applications in science and engineering. These algorithms involve QR and SVD factorizations, the computation of eigenvalues and eigenvectors, basic optimization methods, and iterative methods for sparse systems. Applications will be considered in areas such as data analysis and compression, principal component and spectral analysis, solutions of large sparse systems, among others.",
             "credits": [],
             "prerequisites": {
-                "req": [
+                "required": [
                     "MATH-4800"
                 ],
                 "one_of": []
@@ -2075,7 +2107,7 @@
                 4
             ],
             "prerequisites": {
-                "req": [],
+                "required": [],
                 "one_of": []
             },
             "crosslisted": [],

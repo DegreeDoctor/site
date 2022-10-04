@@ -105,12 +105,14 @@ def get_prereq(str):
     one_of = []
     reqset = split_req(str)
     for req in reqset:
+        tmp = []
         if len(req) > 1:
             for r in req:
-                one_of.extend(courses_from_string(r))
+                tmp.extend(courses_from_string(r))
+            one_of.append(tmp)
         else:
             reqs.extend(courses_from_string(''.join(req)))
-    return { "req" : reqs, "one_of" : one_of }
+    return { "required" : reqs, "one_of" : one_of }
 
 # returns the range of credits of a given course while checking for edge cases
 def get_credit(str):
@@ -261,4 +263,5 @@ def scrape_courses():
     
     return courses_per_year
 
-scrape_courses()
+if __name__ == "__main__":
+    scrape_courses()

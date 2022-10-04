@@ -145,11 +145,6 @@ def parse_semester(inp):
                 s = norm_str(b.text_content())
                 sem.append(s)
         if (len(striplist(sem)) > 0):
-            # print("**")
-            # print(classes.text_content())
-            # print("**")
-            # print(sem)
-            # print("--")
             ret.append(striplist(sem))
     return ret
 
@@ -295,4 +290,6 @@ def scrape_pathways():
     with open("programs.json", "w") as outfile:
         outfile.write(json_object)
     return programs_per_year
-scrape_pathways()
+
+if __name__ == "__main__":  
+    scrape_pathways()
