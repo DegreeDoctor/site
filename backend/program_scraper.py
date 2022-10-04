@@ -157,11 +157,6 @@ def parse_semester(inp):
                 s = norm_str(b.text_content())
                 sem.append(s)
         if (len(striplist(sem)) > 0):
-            # print("**")
-            # print(classes.text_content())
-            # print("**")
-            # print(sem)
-            # print("--")
             ret.append(striplist(sem))
     return ret
 

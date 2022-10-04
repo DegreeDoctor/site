@@ -11,8 +11,10 @@
                 "MATH 1100"
             ],
             "one_of": [
+                [
                 "CSCI 1200",
                 "CSCI 1100"
+                ]
             ]
         },
         "crosslisted": {
