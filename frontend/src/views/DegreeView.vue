@@ -10,12 +10,12 @@ export default {
         return {
             store: useStore(),
             crs: {
-                name: "The Name",
+                name: "Introduction to ALgogsd",
                 subject: "TEST",
                 ID: "1234",
                 description:
                     "I am describing a course. blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-                credits: 4,
+                credits: [1, 2, 3, 4],
                 concentration: ["conc1.name"],
                 prerequisites: ["course1.name"],
                 crosslisted: {
@@ -23,11 +23,11 @@ export default {
                 },
                 properties: {
                     CI: true,
-                    MR: true,
+                    MR: false,
                 },
                 professors: ["The Profsessor"],
                 offered: {
-                    year: "all",
+                    year: "uia",
                     semesters: ["spring", "summer"],
                 },
             },
