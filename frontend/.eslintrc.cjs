@@ -19,7 +19,7 @@ module.exports = {
 
         "vue/html-indent": ["warn", 4],
         indent: ["warn", 4],
-
+        "prettier/prettier": "off",
         "vue/max-attributes-per-line": [
             "warn",
             {
