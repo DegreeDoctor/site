@@ -266,18 +266,20 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
 def scrape_pathways():
     print("Starting pathway scraping")
     catalogs = get_catalogs()
-
+    # take the most recent catalog
     catalogs = catalogs[:1]
+
+    # Scraping catalogs
     programs_per_year = {}
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         program_ids = get_program_ids(catalog_id)
+        # scraing the program (degree)
         data = get_program_data(program_ids, catalog_id, year)
-
         programs_per_year[year] = data
     print("Finished program scraping")
 
+    # create JSON obj and write it to file
     json_object = json.dumps(programs_per_year, indent=4)
-
     with open("programs.json", "w") as outfile:
         outfile.write(json_object)
     return programs_per_year
