@@ -4,7 +4,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-
+from degree_util import depts, course_dict
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
@@ -12,27 +12,6 @@ BASE_URL = "http://rpi.apis.acalog.com/v1/"
 DEFAULT_QUERY_PARAMS = "?key=3eef8a28f26fb2bcc514e6f1938929a1f9317628&format=xml"
 CHUNK_SIZE = 500
 
-# Opens the Department.JSON and returns a list of department code
-def get_depts():
-    depts = []
-    f = open('depts.json', 'r') #make sure to close at end of file
-    f = json.load(f)
-    for dept in f:
-        depts.append(dept)
-    return depts
-
-depts = get_depts()
-
-# Opens the Course JSON (produced by course_scraper.py) and returns a list of course
-def get_courses():
-    course_dict = []
-    f = open('courses.json','r')
-    f = json.load(f)
-    for course in f:
-        course_dict.append(course)
-    return course_dict
-
-course_dict = get_courses()
 
 # def get_credit(str):
 #     for course in course_dict:

@@ -1,61 +1,61 @@
 {
-    "2022-2023": {
-        "Computer Science": {
-            "name": "Computer Science",
-            "description": "All computer science students are assigned a faculty adviser to assist them with their interests and career goals throughout their academic career. As shown below in the 128-credit-hour B.S. curriculum leading to the B.S. degree in computer science, flexibility is one of the hallmarks of the Rensselaer computer science program. With this flexibility, students explore related areas and pursue minors and/or dual or double majors in the following fields: mathematics; electrical and computer systems engineering; information technology and web science; games and simulation arts and sciences; business and management; economics; physics; psychology; electronic media, arts, and communication; and most other disciplines.",
-            "credits": 128,
-            "template": {
-                "1-Fall": [
-                    "HASS Core Elective  Credit Hours: 4",
-                    "CSCI 1100 - Computer Science I",
-                    "MATH 1010 - Calculus I",
-                    "PHYS 1100 - Physics I"
-                ],
-                "1-Spring": [
-                    "HASS Core Elective Credit Hours: 4",
-                    "BIOL 1010 - Introduction to Biology",
-                    "BIOL 1015 - Introduction to Biology Laboratory",
-                    "CSCI 1200 - Data Structures",
-                    "MATH 1020 - Calculus II"
-                ],
-                "2-Fall": [
-                    "Mathematics Option I Credit Hours: 4",
-                    "HASS Core Elective Credit Hours: 4",
-                    "CSCI 2200 - Foundations of Computer Science",
-                    "CSCI 2500 - Computer Organization"
-                ],
-                "2-Spring": [
-                    "Mathematics Option II Credit Hours: 4",
-                    "HASS Core Elective Credit Hours: 4",
-                    "CSCI 2300 - Introduction to Algorithms",
-                    "CSCI 2600 - Principles of Software"
-                ],
-                "3-Summer": [
-                    "Computer Science Option/Capstone or Free Elective Credit Hours: 4",
-                    "HASS Core Elective Credit Hours: 4",
-                    "Free Elective Credit Hours: 4",
-                    "CSCI 4210 - Operating Systems"
-                ],
-                "3-Fall or Spring": [
-                    "Science Option Credit Hours: 4",
-                    "HASS Core Elective Credit Hours: 4",
-                    "Free Elective Credit Hours: 4",
-                    "CSCI 4430 - Programming Languages"
-                ],
-                "4-Fall": [
-                    "Computer Science Option/Capstone Credit Hours: 4",
-                    "Free Elective Credit Hours: 4",
-                    "Free Elective Credit Hours: 4",
-                    "CSCI 4430 - Programming Languages"
-                ],
-                "4-Spring": [
-                    "CS Option/Capstone Credit Hours 4",
-                    "Free Elective or Computer Science Option/Capstone Credit Hours: 4",
-                    "Free Elective Credit Hours: 4",
-                    "Free Elective Credit Hours: 4"
-                ],
-                "Extra": []
-            }
-        }
+  "2022-2023": {
+    "Computer Science": {
+      "name": "Computer Science",
+      "description": "All computer science students are assigned a faculty adviser to assist them with their interests and career goals throughout their academic career. As shown below in the 128-credit-hour B.S. curriculum leading to the B.S. degree in computer science, flexibility is one of the hallmarks of the Rensselaer computer science program. With this flexibility, students explore related areas and pursue minors and/or dual or double majors in the following fields: mathematics; electrical and computer systems engineering; information technology and web science; games and simulation arts and sciences; business and management; economics; physics; psychology; electronic media, arts, and communication; and most other disciplines.",
+      "credits": 128,
+      "template": {
+        "1-Fall": [
+          "HASS Core Elective  Credit Hours: 4",
+          "CSCI 1100 - Computer Science I",
+          "MATH 1010 - Calculus I",
+          "PHYS 1100 - Physics I"
+        ],
+        "1-Spring": [
+          "HASS Core Elective Credit Hours: 4",
+          "BIOL 1010 - Introduction to Biology",
+          "BIOL 1015 - Introduction to Biology Laboratory",
+          "CSCI 1200 - Data Structures",
+          "MATH 1020 - Calculus II"
+        ],
+        "2-Fall": [
+          "Mathematics Option I Credit Hours: 4",
+          "HASS Core Elective Credit Hours: 4",
+          "CSCI 2200 - Foundations of Computer Science",
+          "CSCI 2500 - Computer Organization"
+        ],
+        "2-Spring": [
+          "Mathematics Option II Credit Hours: 4",
+          "HASS Core Elective Credit Hours: 4",
+          "CSCI 2300 - Introduction to Algorithms",
+          "CSCI 2600 - Principles of Software"
+        ],
+        "3-Summer": [
+          "Computer Science Option/Capstone or Free Elective Credit Hours: 4",
+          "HASS Core Elective Credit Hours: 4",
+          "Free Elective Credit Hours: 4",
+          "CSCI 4210 - Operating Systems"
+        ],
+        "3-Fall or Spring": [
+          "Science Option Credit Hours: 4",
+          "HASS Core Elective Credit Hours: 4",
+          "Free Elective Credit Hours: 4",
+          "CSCI 4430 - Programming Languages"
+        ],
+        "4-Fall": [
+          "Computer Science Option/Capstone Credit Hours: 4",
+          "Free Elective Credit Hours: 4",
+          "Free Elective Credit Hours: 4",
+          "CSCI 4430 - Programming Languages"
+        ],
+        "4-Spring": [
+          "CS Option/Capstone Credit Hours 4",
+          "Free Elective or Computer Science Option/Capstone Credit Hours: 4",
+          "Free Elective Credit Hours: 4",
+          "Free Elective Credit Hours: 4"
+        ],
+        "Extra": []
+      }
     }
+  }
 }
