@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'AFooter'
+  name: 'AFooter'
 }
 </script>
 
@@ -17,3 +17,10 @@ export default {
     </q-toolbar>
   </q-footer>
 </template>
+
+<style scoped>
+a {
+  color: white;
+  text-decoration: none;
+}
+</style>
