@@ -41,5 +41,5 @@ export default {
 <template>
     <router-link to="quiz">test</router-link>
     <ACourse :course="crs" />
-    <Footer></Footer>
+    <Footer />
 </template>
