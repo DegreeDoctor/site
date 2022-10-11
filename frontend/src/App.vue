@@ -1,9 +1,21 @@
-<script setup>
+<script>
 import { RouterView } from "vue-router";
+
+export default {
+    components: {
+        RouterView,
+    }
+}
 </script>
 
 <template>
-    <RouterView />
+    <q-layout view="hHh LpR fFf">
+        <q-page-container>
+            <RouterView />
+        </q-page-container>
+
+
+    </q-layout>
 </template>
 
 <style scoped></style>
