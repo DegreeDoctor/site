@@ -1,13 +1,13 @@
 <script>
 import { useStore } from "../stores/store";
 import ACourse from "../components/ACourse.vue";
-import Footer from "../components/Footer.vue";
+import AFooter from "../components/AFooter.vue";
 
 export default {
     components: {
-    ACourse,
-    Footer
-},
+        ACourse,
+        AFooter
+    },
     data() {
         return {
             store: useStore(),
@@ -41,5 +41,5 @@ export default {
 <template>
     <router-link to="quiz">test</router-link>
     <ACourse :course="crs" />
-    <Footer />
+    <!-- <AFooter /> -->
 </template>
