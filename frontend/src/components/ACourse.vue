@@ -16,13 +16,6 @@ export default {
             currCredit: this.course.credits[0]
         };
     },
-    mounted() {
-        const creds = this.store.fetchCredits(this.course.name);
-        this.checked = !!creds;
-        if(this.checked) {
-            this.currCredit = creds;
-        }
-    },
     computed: {
         offeredParse() {
             let text = "Offered ";
@@ -71,6 +64,13 @@ export default {
                 name = name.substring(0, 14).trimEnd() + "...";
             }
             return name;
+        }
+    },
+    mounted() {
+        const creds = this.store.fetchCredits(this.course.name);
+        this.checked = !!creds;
+        if(this.checked) {
+            this.currCredit = creds;
         }
     },
     methods: {

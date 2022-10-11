@@ -5,6 +5,7 @@ import ACourse from "../components/ACourse.vue";
 export default {
     components: {
         ACourse,
+        AFooter
     },
     data() {
         return {
@@ -39,4 +40,5 @@ export default {
 <template>
     <router-link to="quiz">test</router-link>
     <ACourse :course="crs" />
+    <!-- <AFooter /> -->
 </template>
