@@ -15,9 +15,7 @@ export default {
         <q-page-container>
             <RouterView />
         </q-page-container>
-
         <AFooter />
-
     </q-layout>
 </template>
 
