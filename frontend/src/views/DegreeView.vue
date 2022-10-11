@@ -1,7 +1,6 @@
 <script>
 import { useStore } from "../stores/store";
 import ACourse from "../components/ACourse.vue";
-import AFooter from "../components/AFooter.vue";
 
 export default {
     components: {
