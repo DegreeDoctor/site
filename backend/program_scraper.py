@@ -120,25 +120,6 @@ def rem_arch(str):
 def rem_all(str):
     return rem_footnote(rem_arch(str))
 
-# takes in xml file of of one semester of courses
-# input:  core.xpath("./children/core")   ==>> cores->core->children->core
-def parse_semester(inp):
-    ret = []
-    for classes in inp:
-        sem = []
-        content = classes.xpath("./content")
-        for c in content:
-            tmp = split_content(rem_all(c.text_content()))
-            sem.extend(tmp)
-        block = classes.xpath("./courses/include")
-        for b in block:
-            if (len(b.text_content()) > 0):
-                s = norm_str(b.text_content())
-                sem.append(s)
-        if (len(striplist(sem)) > 0):
-            ret.append(striplist(sem))
-    return ret
-
 def parse_template(semesters): 
     sems = {}
     count = 1
@@ -169,47 +150,35 @@ def parse_template(semesters):
     sems["Extra"] = extra
     return sems
 
+# takes in xml file of of one semester of courses
+# input:  core.xpath("../cores/core/children/core")  
+def parse_semester(inp):
+    ret = []
+    for classes in inp:
+        sem = []
+        content = classes.xpath("./content")
+        for c in content:
+            tmp = split_content(rem_all(c.text_content()))
+            sem.extend(tmp)
+        block = classes.xpath("./courses/include")
+        for b in block:
+            if (len(b.text_content()) > 0):
+                s = norm_str(b.text_content())
+                sem.append(s)
+
+        course_list = striplist(sem)
+        if (len(course_list) > 0):
+            ret.append(course_list)
+    return ret
 
 def parse_courses(core, name, year):
-    courses = []
-    tmp = core.xpath("./content/ul/li/descendant-or-self::*/text()")
-    tmp += core.xpath("./courses/adhoc/content/ul/li/descendant-or-self::*/text()")
-    tm = core.xpath("./children/core")
-    courses = parse_semester(core.xpath("./children/core"))
-    # print(t)
-    # for t in tmp:
-    #     app = False
-    #     for s in t.split():
-    #         if s in depts:
-    #             app = True
-    #     if app:
-    #         t = (t.strip())
-    #         t = t.encode("ascii", "ignore").strip().decode().strip()
-    #         content.append(t)
-    # if not(len(content) == 0):
-    #     for cont in content:
-    #         if "transfer" in name.lower():
-    #             crs = cont + "XXXX"
-    #             courses[crs] = crs
-    #         # handle as an elective meaning we will have to some funky stuff
-    #         elif "elective" in cont.lower() or "any" in cont.lower() or "level" in cont.lower():
-    #             handle_electives(cont, courses, depts, year)
-    #         else:
-    #             subjID = course_from_string(cont, depts)
-    #             name = ""
-    #             if "-" in cont:
-    #                 name = cont.split("-", 1)[1].strip()
-    #             else:
-    #                 name = cont.split(subjID[4:])[1].strip()
-    #             courses[name] = subjID
-    # courses_xml = core.xpath("./courses/include/fallback/title/text()")
+    # Get an array of all semesters and parse them
+    semester_list = core.xpath("./children/core")
 
-    # for course in courses_xml:
-    #     # fixes all weird unicode and stuff
-    #     course = course.strip().encode("ascii", "ignore").strip().decode()
-    #     subjID = course_from_string(course, depts)
-    #     name = course.split("-", 1)[1].split("Credit")[0].strip()
-    #     courses[name] = subjID
+    # for s in semester_list:
+    #     print(html.textcontent(s.xpath("./title")[0]))
+
+    courses = parse_semester(semester_list)
     return courses
 
 def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
@@ -219,40 +188,28 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
     pathways_xml = html.fromstring(requests.get(url).text.encode("utf8"))
 
     pathways = pathways_xml.xpath("//programs/program[not(@child-of)]");
+    # For every Major degree
     for pathway in pathways:
         courses = []
         name = pathway.xpath("./title/text()")[0].strip()
+
+        # For now only parse CS
         if (name != "Computer Science"):
             continue
         desc = ""
         if len(pathway.xpath("./content/p/text()")) >= 1:
             desc = pathway.xpath("./content/p/text()")[0].strip()
             desc = ' '.join(desc.split())
+        
+        
+        # Get the list of years in the degree
         cores = pathway.xpath("./cores/core")
-        cores += pathway.xpath("./cores/core/children/core")
 
+        # Parse each school year for courses
         for core in cores:
                 courses.extend(parse_courses(core, name, year))
-                # if "required" in anchor_name:
-                #     courses = parse_courses(core, name, year)
-                #     data[name]["Required"] = courses
-                # elif "oneof" in anchor_name:
-                #     courses = parse_courses(core, name, year)
-                #     one_of_name = "One Of" + str(one_of_index)
-                #     data[name][one_of_name] = courses
-                #     one_of_index += 1
-                # elif "minor" in anchor_name:
-                #     minors = list(filter(lambda x: x != "", \
-                #      [minor.replace("Minor", "").replace("minor", "").encode("ascii", "ignore").strip().decode() \
-                #      for minor in core.xpath("./content/descendant::*/text()")]))
-                #     data[name]["minor"] = minors
-                # else:
-        # get rid of duplicates (if it shows up in required, we don't want it to be optional too)
-        # if "Required" in data[name]:
-        #     for req in data[name]["Required"]:
-        #         for type in data[name]:
-        #             if (type == "Remaining" or type[0:6] == "One Of") and req in data[name][type]:
-        #                 del data[name][type][req]
+
+
         template = parse_template(courses)
         data[name] = {
                 "name": name,
