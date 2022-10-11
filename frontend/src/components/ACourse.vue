@@ -16,6 +16,13 @@ export default {
             currCredit: this.course.credits[0]
         };
     },
+    mounted() {
+        const creds = this.store.fetchCredits(this.course.name);
+        this.checked = !!creds;
+        if(this.checked) {
+            this.currCredit = creds;
+        }
+    },
     computed: {
         offeredParse() {
             let text = "Offered ";
@@ -69,15 +76,14 @@ export default {
     methods: {
         checkClicked(value) {
             if (value) {
-                this.store.changeCredits(this.currCredit);
+                this.store.addCredits(this.course.name, this.currCredit);
             } else {
-                this.store.changeCredits(-this.currCredit);
+                this.store.removeCredits(this.course.name);
             }
         },
         updateCredits(c) {
             if(this.checked) {
-                this.store.changeCredits(-this.currCredit);
-                this.store.changeCredits(c);
+                this.store.changeCredits(this.course.name, c);
             }
             this.currCredit = c;
         },
