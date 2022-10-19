@@ -16,8 +16,7 @@
                     "fall",
                     "spring",
                     "summer"
-                ],
-                "text": "Fall, spring, and summer terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -39,8 +38,7 @@
                 "semesters": [
                     "fall",
                     "spring"
-                ],
-                "text": "Half-term courses offered fall and spring terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -67,8 +65,7 @@
                 "semesters": [
                     "fall",
                     "spring"
-                ],
-                "text": "Fall and spring terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -92,8 +89,8 @@
                         "MATH-1010",
                         "MATH-1500",
                         "MATH-1020",
-                        "MATH-2010",
-                        "MATH-1020"
+                        "MATH-1020",
+                        "MATH-2010"
                     ]
                 ]
             },
@@ -103,8 +100,7 @@
                 "semesters": [
                     "fall",
                     "spring"
-                ],
-                "text": "Fall and spring terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -139,8 +135,7 @@
                 "semesters": [
                     "fall",
                     "spring"
-                ],
-                "text": "Fall and spring terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -167,8 +162,7 @@
                 "semesters": [
                     "fall",
                     "spring"
-                ],
-                "text": "Fall and spring terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -196,8 +190,7 @@
                 "semesters": [
                     "spring",
                     "summer"
-                ],
-                "text": "Spring and summer terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -223,8 +216,7 @@
                 "year": "all",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -252,8 +244,7 @@
                 "year": "all",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -281,8 +272,7 @@
                 "year": "odd",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term odd-numbered years."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -310,8 +300,7 @@
                 "year": "all",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -339,8 +328,7 @@
                 "year": "UIA",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term even-numbered years, upon availability of instructor."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -368,8 +356,7 @@
                 "year": "UIA",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term even-numbered years, upon availability of instructor."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -395,8 +382,7 @@
                 "year": "all",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -428,8 +414,7 @@
                 "semesters": [
                     "spring",
                     "summer"
-                ],
-                "text": "Spring and summer terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -455,8 +440,7 @@
                 "year": "all",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -486,8 +470,7 @@
                 "year": "all",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -505,9 +488,9 @@
             "prerequisites": {
                 "required": [
                     "CSCI-4020",
-                    "CSCI-4260",
+                    "CSCI-2300",
                     "CSCI-4800",
-                    "CSCI-2300"
+                    "CSCI-4260"
                 ],
                 "one_of": []
             },
@@ -518,8 +501,7 @@
                 "year": "odd",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term odd-numbered years."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -528,32 +510,27 @@
         },
         "Graph Theory": {
             "name": "Graph Theory",
-            "subj": "MATH",
-            "ID": "4150",
-            "description": "Fundamental concepts and methods of graph theory and its applications to various areas of computing and the social and natural sciences. Topics include graphs as models, representation of graphs, trees, distances, matchings, connectivity, flows in networks, graph colorings, Hamiltonian cycles, traveling salesman problem, planarity. All concepts, methods, and applications are presented through a sequence of exercises and problems, many of which are done with the help of novel software systems for combinatorial computing.",
+            "subj": "CSCI",
+            "ID": "4260",
+            "description": "Fundamental concepts and methods of graph theory and its applications to computing and the social and natural sciences. Topics include graphs as models, representation of graphs, trees, distances, matchings, connectivity, flows in networks, graph colorings, Hamiltonian cycles, traveling salesman problem, planarity. All concepts, methods, and applications are presented through a sequence of exercises and problems, many of which are done with the help of novel software systems for combinatorial computing.",
             "credits": [
                 4
             ],
             "prerequisites": {
                 "required": [
-                    "CSCI-1100"
+                    "CSCI-1100",
+                    "CSCI-2200"
                 ],
-                "one_of": [
-                    [
-                        "CSCI-2200",
-                        "MATH-4090"
-                    ]
-                ]
+                "one_of": []
             },
             "crosslisted": [
-                "CSCI-4260"
+                "MATH-4150"
             ],
             "offered": {
                 "year": "all",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -582,8 +559,7 @@
                 "year": "all",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -614,8 +590,7 @@
                 "year": "odd",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term odd-numbered years."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -648,8 +623,7 @@
                 "year": "all",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -677,8 +651,7 @@
                 "year": "all",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -700,13 +673,18 @@
                 ],
                 "one_of": []
             },
-            "crosslisted": [],
+            "crosslisted": [
+                "ITWS-4350",
+                "ITWS-6350",
+                "ERTH-4350",
+                "ERTH-6350",
+                "CSCI-6350"
+            ],
             "offered": {
                 "year": "all",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -725,8 +703,8 @@
                 "required": [],
                 "one_of": [
                     [
-                        "CSCI-6350",
                         "CSCI-4350",
+                        "CSCI-6350",
                         "ITWS-6350",
                         "ITWS-4350"
                     ]
@@ -739,8 +717,7 @@
                 "year": "all",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -767,8 +744,7 @@
                 "semesters": [
                     "fall",
                     "spring"
-                ],
-                "text": "Fall and spring terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -796,8 +772,7 @@
                 "year": "all",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -815,24 +790,26 @@
             "prerequisites": {
                 "required": [
                     "CSCI-1200",
-                    "ITWS-6350",
-                    "CSCI-6350",
-                    "ERTH-4350",
                     "ITWS-4350",
-                    "CSCI-4350",
-                    "ERTH-6350"
+                    "ITWS-6350",
+                    "ERTH-4350",
+                    "ERTH-6350",
+                    "CSCI-6350",
+                    "CSCI-4350"
                 ],
                 "one_of": []
             },
             "crosslisted": [
-                "ITWS-6400"
+                "ITWS-6400",
+                "ERTH-4400",
+                "CSCI-6400",
+                "ERTH-6400"
             ],
             "offered": {
                 "year": "all",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -841,8 +818,8 @@
         },
         "Computability and Logic": {
             "name": "Computability and Logic",
-            "subj": "MATH",
-            "ID": "4030",
+            "subj": "CSCI",
+            "ID": "4420",
             "description": "This course covers basic concepts and results in mathematical logic and computability theory, including decision procedures, automated theorem proving techniques for truth-functional and first-order logic, axiomatizations of set theory and arithmetic, Turing Machines, Abacus Machines, recursive functions, the Church-Turing Thesis, the halting problem, undecidability of first-order logic, undecidability of arithmetic, and Godel's incompleteness results.",
             "credits": [
                 4
@@ -856,13 +833,15 @@
                     ]
                 ]
             },
-            "crosslisted": [],
+            "crosslisted": [
+                "MATH-4030",
+                "PHIL-4420"
+            ],
             "offered": {
                 "year": "odd",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring term odd-numbered years."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -889,8 +868,7 @@
                 "year": "all",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -917,8 +895,7 @@
                 "semesters": [
                     "fall",
                     "spring"
-                ],
-                "text": "Fall and spring terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -946,8 +923,7 @@
                 "year": "even",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring term even-numbered years."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -975,8 +951,7 @@
                 "year": "all",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -1004,8 +979,7 @@
                 "semesters": [
                     "spring",
                     "summer"
-                ],
-                "text": "Spring and summer terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -1033,8 +1007,7 @@
                 "year": "all",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -1067,8 +1040,7 @@
                 "year": "all",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -1096,8 +1068,7 @@
                 "year": "all",
                 "semesters": [
                     "fall"
-                ],
-                "text": "Fall term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -1130,35 +1101,7 @@
                 "year": "odd",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring term odd-numbered years."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Game Development II": {
-            "name": "Game Development II",
-            "subj": "CSCI",
-            "ID": "4540",
-            "description": "This course follows Game Development I. Students work in interdisciplinary teams to create one large-scale 3D game, working from concept to public release. Projects may include games, educational games, serious games and simulations, and interactive artworks, and will focus on creative design, technical execution, and use of game design principles. The course builds on skills and knowledge in previous courses in the GSAS core, including game design, game mechanics, game programming, art, and narrative.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [],
-                "one_of": []
-            },
-            "crosslisted": [
-                "GSAS-4540"
-            ],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "spring"
-                ],
-                "text": "Spring term annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -1187,8 +1130,36 @@
                 "year": "even",
                 "semesters": [
                     "spring"
+                ]
+            },
+            "properties": {
+                "CI": false,
+                "MR": false
+            }
+        },
+        "Computational Geometry": {
+            "name": "Computational Geometry",
+            "subj": "CSCI",
+            "ID": "4560",
+            "description": "We will study theoretical and practical solutions to computational geometry problems found in computer graphics, visualization, vision, robotics, engineering, manufacturing, and geographic information systems. Topics include convex hulls, half-planes, Voronoi diagrams, Delaunay triangulations, binary space partitions, motion planning, visibility, and meshes. Course activities include programming assignments, written homework with proofs of computational complexity, and a term project with presentation.",
+            "credits": [
+                4
+            ],
+            "prerequisites": {
+                "required": [
+                    "CSCI-2300",
+                    "CSCI-2600"
                 ],
-                "text": "Spring term even-numbered years."
+                "one_of": []
+            },
+            "crosslisted": [
+                "CSCI-6560"
+            ],
+            "offered": {
+                "year": "UIA",
+                "semesters": [
+                    "spring"
+                ]
             },
             "properties": {
                 "CI": false,
@@ -1205,24 +1176,24 @@
             ],
             "prerequisites": {
                 "required": [
-                    "ITWS-6350",
-                    "CSCI-6350",
-                    "ERTH-4350",
                     "ITWS-4350",
-                    "CSCI-4350",
-                    "ERTH-6350"
+                    "ITWS-6350",
+                    "ERTH-4350",
+                    "ERTH-6350",
+                    "CSCI-6350",
+                    "CSCI-4350"
                 ],
                 "one_of": []
             },
             "crosslisted": [
+                "ITWS-6600",
                 "ITWS-4600"
             ],
             "offered": {
                 "year": "all",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -1253,8 +1224,7 @@
                 "semesters": [
                     "fall",
                     "spring"
-                ],
-                "text": "Fall or spring terms annually, depending on availability and interest of instructors."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -1263,9 +1233,9 @@
         },
         "Numerical Computing": {
             "name": "Numerical Computing",
-            "subj": "MATH",
+            "subj": "CSCI",
             "ID": "4800",
-            "description": "A survey of numerical methods for scientific and engineering problems. Topics include numerical solution of linear and nonlinear algebraic equations, interpolation and least squares approximations, numerical integration and differentiation, eigenvalue problems, and an introduction to the numerical solution of ordinary differential equations. Emphasis placed on efficient computational procedures including the use of library and student written procedures using high-level software such as MATLAB.",
+            "description": "A survey of numerical methods for scientific and engineering problems. Topics include numerical solution of linear and nonlinear algebraic equations, interpolation and least squares approximations, numerical integration and differentiation, eigenvalue problems, and an introduction to the numerical solution of ordinary differential equations. Emphasis is placed on efficient computational procedures including the use of library and student written procedures using high-level software such as MATLAB.",
             "credits": [
                 4
             ],
@@ -1276,14 +1246,15 @@
                 ],
                 "one_of": []
             },
-            "crosslisted": [],
+            "crosslisted": [
+                "MATH-4800"
+            ],
             "offered": {
                 "year": "all",
                 "semesters": [
                     "fall",
                     "spring"
-                ],
-                "text": "Fall and spring terms annually."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -1292,7 +1263,7 @@
         },
         "Introduction to Numerical Methods for Differential Equations": {
             "name": "Introduction to Numerical Methods for Differential Equations",
-            "subj": "MATH",
+            "subj": "CSCI",
             "ID": "4820",
             "description": "Derivation, analysis, and use of computational procedures for solving differential equations. Topics covered include ordinary differential equations (both initial value and boundary value problems) and partial differential equations. Runge-Kutta and multistep methods for initial value problems. Finite difference methods for partial differential equations including techniques for heat conduction, wave propagation, and potential problems. Basic convergence and stability theory.",
             "credits": [
@@ -1307,13 +1278,14 @@
                     ]
                 ]
             },
-            "crosslisted": [],
+            "crosslisted": [
+                "MATH-4820"
+            ],
             "offered": {
-                "year": "even",
+                "year": "all",
                 "semesters": [
                     "spring"
-                ],
-                "text": "Spring term even-numbered years."
+                ]
             },
             "properties": {
                 "CI": false,
@@ -1335,8 +1307,7 @@
             "crosslisted": [],
             "offered": {
                 "year": "",
-                "semesters": [],
-                "text": ""
+                "semesters": []
             },
             "properties": {
                 "CI": false,
@@ -1358,789 +1329,7 @@
             "crosslisted": [],
             "offered": {
                 "year": "",
-                "semesters": [],
-                "text": ""
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Calculus I": {
-            "name": "Calculus I",
-            "subj": "MATH",
-            "ID": "1010",
-            "description": "Functions, limits, continuity, derivatives, implicit differentiation, related rates, maxima and minima, elementary transcendental functions, introduction to definite integral with applications to area and volumes of revolution. Students cannot get credit for both MATH 1010 and MATH 1500 .",
-            "credits": [
-                4
-            ],
-            "prerequisites": [],
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall",
-                    "spring"
-                ],
-                "text": "Fall and spring terms annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Calculus II": {
-            "name": "Calculus II",
-            "subj": "MATH",
-            "ID": "1020",
-            "description": "Techniques and applications of integration, polar coordinates, parametric equations, infinite sequences and series, vector functions and curves in space, functions of several variables, and partial derivatives.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-1010"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall",
-                    "spring"
-                ],
-                "text": "Fall and spring terms annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Calculus for Architecture, Management, and HASS": {
-            "name": "Calculus for Architecture, Management, and HASS",
-            "subj": "MATH",
-            "ID": "1500",
-            "description": "Basic concepts in differential and integral calculus for functions of one variable. Topics will include functions, limits, continuity, derivatives, integration, exponential and logarithmic functions, and techniques of integration. Application areas will include topics in Management, Architecture, and Social Sciences with special emphasis on the role of calculus in introductory probability. Students cannot get credit for both MATH 1500 and MATH 1010 .",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall"
-                ],
-                "text": "Fall term annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Mathematical Methods in Management and Economics": {
-            "name": "Mathematical Methods in Management and Economics",
-            "subj": "MATH",
-            "ID": "1520",
-            "description": "Functions of several variables, introductory linear algebra, and other analytical techniques needed for further study in probability, statistics, and operations research. Topics covered include improper integrals, probability density functions, partial derivatives and optimization techniques for functions of several variables, matrix algebra, linear systems, lines and planes in 3-space, linear inequalities, introductory linear programming, introductory combinatorics, and some probability.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [],
-                "one_of": [
-                    [
-                        "MATH-1010",
-                        "MATH-1500"
-                    ]
-                ]
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "spring"
-                ],
-                "text": "Spring term annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Contemporary Mathematical Ideas in Society": {
-            "name": "Contemporary Mathematical Ideas in Society",
-            "subj": "MATH",
-            "ID": "1620",
-            "description": "An application-oriented course introducing contemporary mathematical concepts that pertain to areas of Architecture and Humanities, Arts, and Social Sciences. The course will cover growth and form, symmetry, patterns, tilings, linear programming, information coding, voting systems, game theory, logic, probability, and statistics.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [],
-                "one_of": [
-                    [
-                        "MATH-1010",
-                        "MATH-1500"
-                    ]
-                ]
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "spring"
-                ],
-                "text": "Spring term annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Art and Science of Mathematics I": {
-            "name": "Art and Science of Mathematics I",
-            "subj": "MATH",
-            "ID": "1900",
-            "description": "A seminar for first-year math majors. The weekly student-faculty discussions will vary but examples of topics are: unsolved math problems, countability and the arithmetic of the infinite, topology and the concept of dimension, geometry and one-sided surfaces, and the theory underlying topics currently covered in calculus.",
-            "credits": [
-                1
-            ],
-            "prerequisites": {
-                "required": [],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall"
-                ],
-                "text": "Fall term annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Art and Science of Mathematics II": {
-            "name": "Art and Science of Mathematics II",
-            "subj": "MATH",
-            "ID": "1910",
-            "description": "A seminar for first-year math majors. The weekly student-faculty discussions will vary but examples of topics are: unsolved math problems, countability and the arithmetic of the infinite, topology and the concept of dimension, geometry and one-sided surfaces, and the theory underlying topics currently covered in calculus.",
-            "credits": [
-                1
-            ],
-            "prerequisites": {
-                "required": [],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "spring"
-                ],
-                "text": "Spring term annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Multivariable Calculus and Matrix Algebra": {
-            "name": "Multivariable Calculus and Matrix Algebra",
-            "subj": "MATH",
-            "ID": "2010",
-            "description": "Directional derivatives, maxima and minima, double integrals, line integrals, div and curl, and Green's Theorem; matrix algebra and systems of linear equations, vectors and linear transformations in R^n, eigenvectors and eigenvalues, applications in engineering and science.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-1020"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall",
-                    "spring"
-                ],
-                "text": "Fall and spring terms annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Introduction to Differential Equations": {
-            "name": "Introduction to Differential Equations",
-            "subj": "MATH",
-            "ID": "2400",
-            "description": "First-order differential equations, second-order linear equations, eigenvalues and eigenvectors of matrices, systems of first-order equations, stability and qualitative properties of nonlinear autonomous systems in the plane, Fourier series, separation of variables for partial differential equations.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-1020"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall",
-                    "spring"
-                ],
-                "text": "Fall and spring terms annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Readings in Mathematics": {
-            "name": "Readings in Mathematics",
-            "subj": "MATH",
-            "ID": "4940",
-            "description": "",
-            "credits": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "prerequisites": [],
-            "crosslisted": [],
-            "offered": {
-                "year": "",
-                "semesters": [],
-                "text": ""
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Topics in Mathematics": {
-            "name": "Topics in Mathematics",
-            "subj": "MATH",
-            "ID": "4960",
-            "description": "",
-            "credits": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "prerequisites": [],
-            "crosslisted": [],
-            "offered": {
-                "year": "",
-                "semesters": [],
-                "text": ""
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Abstract Algebra": {
-            "name": "Abstract Algebra",
-            "subj": "MATH",
-            "ID": "4010",
-            "description": "Groups, rings, polynomial rings, fields, integral domains, with emphasis on group theory; homomorphisms and isomorphisms; normal subgroups, cosets, ideals, modules; quotient groups and quotient rings; other topics chosen from number theory, polynomials, and Galois Theory.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-4100"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "spring"
-                ],
-                "text": "Spring term annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Introduction to Number Theory": {
-            "name": "Introduction to Number Theory",
-            "subj": "MATH",
-            "ID": "4020",
-            "description": "Topics include the history of number representation systems, divisibility, greatest common divisor and prime factorization, linear Diophantine equations, congruences, and condition congruences. Additional topics may be chosen from cryptology, the perpetual calendar, hashing functions, computer operations and complexity, continued fractions, multiplicative functions, primitive roots, pseudo-random numbers, nonlinear Diophantine equations, Fermat's last theorem, algebraic numbers, and approximation of numbers by rationals.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-1020"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "odd",
-                "semesters": [
-                    "spring"
-                ],
-                "text": "Spring term odd-numbered years."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Introduction to Topology": {
-            "name": "Introduction to Topology",
-            "subj": "MATH",
-            "ID": "4040",
-            "description": "Topics include general topological spaces, connectedness, compactness, continuity, and product spaces. Additional topics may be chosen from identification spaces, homotopy, the fundamental group, covering maps, lifts, classification of surfaces, Baire category, dimension, and the Jordan curve theorem.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [],
-                "one_of": [
-                    [
-                        "MATH-4090"
-                    ]
-                ]
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "even",
-                "semesters": [
-                    "fall"
-                ],
-                "text": "Fall term even-numbered years."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Foundation of Analysis": {
-            "name": "Foundation of Analysis",
-            "subj": "MATH",
-            "ID": "4090",
-            "description": "The course provides an opportunity for the development of theorem-proving skills in the field of mathematical analysis. Expansion of a knowledge base comes as a by-product of energy expended in theorem proving and subsequent exposition. Analysis topics included are: sets, functions, the real numbers, cardinality, induction, decimal representations of real numbers, Euclidean spaces, abstract vector spaces, and metric spaces. This is a communication-intensive course.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-2010"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall",
-                    "spring"
-                ],
-                "text": "Fall and spring terms annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Linear Algebra": {
-            "name": "Linear Algebra",
-            "subj": "MATH",
-            "ID": "4100",
-            "description": "The theory underlying vector spaces, algebra of subspaces, bases; linear transformations, dual spaces; eigenvectors, eigenvalues, minimal polynomials, canonical forms of linear transformations; inner products, adjoints, orthogonal projections, and complements.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-2010"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall",
-                    "spring"
-                ],
-                "text": "Fall and spring terms annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Fundamentals of Geometry": {
-            "name": "Fundamentals of Geometry",
-            "subj": "MATH",
-            "ID": "4120",
-            "description": "Topics may be chosen from differential geometry of curves and surfaces, involutes and evolutes, order of contact, developable surfaces, Euler's and Meusnier's Theorem, mean and Gaussian curvatures, geodesics and parallel transport, The Theorem Egregium of Gauss, Gauss-Bonnet Theorem, computer-aided geometric design, computational geometry, tessellations, tiling and patterns, projective and non-Euclidean geometries, postulates and axiomatic systems, advanced Euclidean geometry, and the history of geometry.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-2010"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "even",
-                "semesters": [
-                    "spring"
-                ],
-                "text": "Spring term even-numbered years."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Intermediate Logic": {
-            "name": "Intermediate Logic",
-            "subj": "MATH",
-            "ID": "4140",
-            "description": "This course is a continuation of PHIL 2140 , covering basic metatheory of logic (including formal syntax and semantics, model theory, and soundness and completeness of proof systems), applications of logic (including automated theorem proving, deductive problem solving, and the axiomatization of various branches of mathematics), and alternative systems of logic (including sequent systems, diagrammatic logic, and modal logic).",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "PHIL-2140"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [
-                "PHIL-4140"
-            ],
-            "offered": {
-                "year": "even",
-                "semesters": [
-                    "spring"
-                ],
-                "text": "Spring terms even numbered years."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Mathematical Analysis I": {
-            "name": "Mathematical Analysis I",
-            "subj": "MATH",
-            "ID": "4200",
-            "description": "Fundamental concepts of mathematical analysis will be covered including such topics as the real number system, metric spaces, limits, sequences, series, convergence, functions of one variable, uniform convergence, continuity, differentiability, Riemann integration, and the Stone-Weierstrass Theorem.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-1020"
-                ],
-                "one_of": [
-                    [
-                        "MATH-4090"
-                    ]
-                ]
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall"
-                ],
-                "text": "Fall term annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Introduction to Complex Variables: Theory and Applications": {
-            "name": "Introduction to Complex Variables: Theory and Applications",
-            "subj": "MATH",
-            "ID": "4300",
-            "description": "An introduction to the theory and applications of complex variables. Topics include analytic functions, Riemann surfaces, complex integration, Taylor and Laurent series, residues, conformal mapping, harmonic functions, and Laplace transforms. Applications will be to problems in science and engineering such as fluid and heat flow, dynamical systems, and electrostatics.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-2010"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "spring"
-                ],
-                "text": "Spring term annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Ordinary Differential Equations and Dynamical Systems": {
-            "name": "Ordinary Differential Equations and Dynamical Systems",
-            "subj": "MATH",
-            "ID": "4400",
-            "description": "An intermediate course emphasizing a modern geometric approach and applications in science and engineering. Topics include first-order equations, linear systems, phase plane, linearization and stability, calculus of variations, Lagrangian and Hamiltonian mechanics, oscillations, basic bifurcation theory, chaotic dynamics, and existence and uniqueness.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-2010",
-                    "MATH-2400"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall"
-                ],
-                "text": "Fall term annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Methods of Partial Differential Equations of Mathematical Physics": {
-            "name": "Methods of Partial Differential Equations of Mathematical Physics",
-            "subj": "MATH",
-            "ID": "4500",
-            "description": "An intermediate course serving to introduce both the qualitative properties of solutions of partial differential equations and methods of solution, including separation of variables. Topics include first-order equations, derivation of the classical equations of mathematical physics (wave, potential, and heat equations), method of characteristics, construction and behavior of solutions, maximum principles, energy integrals.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-2010",
-                    "MATH-2400"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "spring"
-                ],
-                "text": "Spring term annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Advanced Calculus": {
-            "name": "Advanced Calculus",
-            "subj": "MATH",
-            "ID": "4600",
-            "description": "A course emphasizing advanced concepts and methods from calculus. Topics include: multivariable integral theorems (Green's, divergence, Stokes', Reynolds transport), extrema of multivariable functions (including Taylor's theorem and Lagrange multipliers), the calculus of variations (EulerLagrange equations, constraints, principle of least action), and Cartesian tensors (calculus, invariants, representations).",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-2010"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall",
-                    "spring"
-                ],
-                "text": "Fall and spring terms annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Foundations of Applied Mathematics": {
-            "name": "Foundations of Applied Mathematics",
-            "subj": "MATH",
-            "ID": "4700",
-            "description": "Mathematical formulation of models for various processes. Derivation of relevant differential equations from conservation laws and constitutive relations. Use of dimensional analysis, scaling, and elementary perturbation methods. Description of basic wave motion. Examples from areas including biology, elasticity, fluid dynamics, particle mechanics, chemistry, geophysics, and finance.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-2400",
-                    "MATH-2010"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall"
-                ],
-                "text": "Fall term annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Mathematics in Medicine and Biology": {
-            "name": "Mathematics in Medicine and Biology",
-            "subj": "MATH",
-            "ID": "4720",
-            "description": "An introduction to mathematics used in biology, biophysics, biomedical engineering, and medicine. The mathematical topics covered are selected from calculus, linear algebra, differential equations, numerical methods, and Fourier analysis. The biological applications covered are selected from human physiology (heart, lung, brain), population models (microorganisms, cells, animals), and the diagnosis and treatment of disease (heart, cancer).",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-1020"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "odd",
-                "semesters": [
-                    "fall"
-                ],
-                "text": "Fall term odd numbered years."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Introduction to Financial Mathematics and Engineering": {
-            "name": "Introduction to Financial Mathematics and Engineering",
-            "subj": "MATH",
-            "ID": "4740",
-            "description": "This course is designed to introduce students to mathematical and computational finance. Topics include a mathematical approach to risk analysis, portfolio selection theory, futures, options, and other derivative investment instruments. Finite difference and finite element methods for computing American option prices are discussed. A working knowledge of MAPLE or MATLAB is required to compute optimal portfolios.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [
-                    "MATH-1020"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "even",
-                "semesters": [
-                    "fall"
-                ],
-                "text": "Fall term even numbered years."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Numerical Linear Algebra with Applications": {
-            "name": "Numerical Linear Algebra with Applications",
-            "subj": "MATH",
-            "ID": "4840",
-            "description": "The focus of the course is on fundamental algorithms in computational linear algebra and their applications in science and engineering. These algorithms involve QR and SVD factorizations, the computation of eigenvalues and eigenvectors, basic optimization methods, and iterative methods for sparse systems. Applications will be considered in areas such as data analysis and compression, principal component and spectral analysis, solutions of large sparse systems, among others.",
-            "credits": [],
-            "prerequisites": {
-                "required": [
-                    "MATH-4800"
-                ],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "odd",
-                "semesters": [
-                    "spring"
-                ],
-                "text": "Spring term odd-numbered years."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Research in Mathematics": {
-            "name": "Research in Mathematics",
-            "subj": "MATH",
-            "ID": "4950",
-            "description": "Undergraduate mathematics projects that utilize students' mathematical knowledge will result in formal reports and final presentations. Examples are research projects or critical in-depth mathematical literature reviews. Information about projects will be exchanged in weekly meetings with the research supervisor. In order to take this course, students must make arrangements with a math faculty member to act as a research supervisor. This is a communication-intensive course. To be graded S/U.",
-            "credits": [
-                4
-            ],
-            "prerequisites": {
-                "required": [],
-                "one_of": []
-            },
-            "crosslisted": [],
-            "offered": {
-                "year": "all",
-                "semesters": [
-                    "fall",
-                    "spring"
-                ],
-                "text": "Fall and spring terms annually."
-            },
-            "properties": {
-                "CI": false,
-                "MR": false
-            }
-        },
-        "Undergraduate Project in Mathematics": {
-            "name": "Undergraduate Project in Mathematics",
-            "subj": "MATH",
-            "ID": "4980",
-            "description": "",
-            "credits": [
-                1,
-                2,
-                3,
-                4
-            ],
-            "prerequisites": [],
-            "crosslisted": [],
-            "offered": {
-                "year": "",
-                "semesters": [],
-                "text": ""
+                "semesters": []
             },
             "properties": {
                 "CI": false,
