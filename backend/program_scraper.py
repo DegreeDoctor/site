@@ -156,24 +156,35 @@ def parse_template(semesters):
 def parse_semester(inp):
     ret = []
     for classes in inp:
-        sem = []
-        # Parsing electives include: Free electives, Hass electives, Capstones
-        electives = classes.xpath("./content")
-        for c in electives:
-            tmp = split_content(rem_all(c.text_content()))
-            sem.extend(tmp)
-                
-        # Parsing Major course
-        block = classes.xpath("./courses/include")
-        for b in block:
-            if (len(b.text_content()) > 0):
-                s = norm_str(b.text_content())
-                # print(s)
-                sem.append(s)
+        title =classes.xpath("./title")
+        title = title[0].text_content().strip()
+        
+        if title.count("Fall") == 0 and title.count("Spring") == 0 and title.count("Arch") == 0:
+            content = classes.xpath("./content")
+            content_txt = content[0].text_content().strip()
+            
+            ret.append([title, norm_str(content_txt)])
 
-        course_list = striplist(sem)
-        if (len(course_list) > 0):
-            ret.append(course_list)
+
+        else:
+            sem = []
+            # Parsing electives include: Free electives, Hass electives, Capstones
+            electives = classes.xpath("./content")
+            for c in electives:
+                tmp = split_content(rem_all(c.text_content()))
+                sem.extend(tmp)
+                    
+            # Parsing Major course
+            block = classes.xpath("./courses/include")
+            for b in block:
+                if (len(b.text_content()) > 0):
+                    s = norm_str(b.text_content())
+                    # print(s)
+                    sem.append(s)
+
+            course_list = striplist(sem)
+            if (len(course_list) > 0):
+                ret.append(course_list)
     return ret
 
 def parse_courses(core, name, year):
