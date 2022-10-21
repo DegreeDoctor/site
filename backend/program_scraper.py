@@ -92,7 +92,7 @@ def course_from_string(inp, depts):
 
 # Normalize a string, using unicode data. Remove all weird whitespace tag 
 def norm_str(str):
-    return unicodedata.normalize("NFKD",str).strip().replace('\n',' ').replace('\t','')
+    return unicodedata.normalize("NFKD",str).strip()
 
 # Take a list of list and remove empty list elements
 def striplist(lstr): 
@@ -109,7 +109,7 @@ def split_content(str):
 
 def rem_footnote(str):
     while (str.find("(See footnote") != -1):
-        str = str[:str.find("(See footnote")] + str[str.find("(See footnote") + 23:]
+        str = str[:str.find("(See footnote")] + str[str.find("(See footnote") + 22:]
     return str
 
 def rem_arch(str):
@@ -209,7 +209,7 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
 
         # Parse each school year for courses
         for core in cores:
-                courses.extend(parse_courses(core, name, year))
+            courses.extend(parse_courses(core, name, year))
 
         template = parse_template(courses)
         data[name] = {

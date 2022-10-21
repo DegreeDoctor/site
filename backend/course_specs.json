@@ -17,9 +17,9 @@
                 ]
             ]
         },
-        "crosslisted": {
+        "crosslisted": [
             "SUBJ": "ID"
-        },
+        ],
         "properties": {
             "CI": true,
             "MR (NEED TO BE IMPLEMENTED)": true
