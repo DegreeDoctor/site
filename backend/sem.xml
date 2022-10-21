@@ -223,12 +223,12 @@ xmlns:a="http://www.w3.org/2005/Atom" xi:xpointer="xmlns(c=http://acalog.com/cat
 <a xmlns:h="http://www.w3.org/1999/xhtml" name="fallorspring" id="core-38053"></a>
 </anchors>
 <content xmlns:a="http://www.w3.org/2005/Atom"
-xmlns:h="http://www.w3.org/1999/xhtml">
-<ul xmlns:h="http://www.w3.org/1999/xhtml">
-<li>Science Option&#160;<em>Credit Hours:&#160;4</em>
-</li>\n\t<li>HASS Core Elective <em>Credit Hours:&#160;4</em>
-</li>\n\t<li>Free Elective <em>Credit Hours:&#160;4</em>
-</li>\n</ul>
+    xmlns:h="http://www.w3.org/1999/xhtml">
+    <ul xmlns:h="http://www.w3.org/1999/xhtml">
+    <li>Science Option&#160;<em>Credit Hours:&#160;4</em>
+    </li>\n\t<li>HASS Core Elective <em>Credit Hours:&#160;4</em>
+    </li>\n\t<li>Free Elective <em>Credit Hours:&#160;4</em>
+    </li>\n</ul>
 </content>
 <courses xmlns:xi="http://www.w3.org/2001/XInclude"
 xmlns:a="http://www.w3.org/2005/Atom"

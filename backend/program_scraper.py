@@ -5,6 +5,7 @@ from tqdm import tqdm
 import json
 import unicodedata
 from degree_util import depts, course_dict
+from collections import OrderedDict
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
@@ -121,32 +122,32 @@ def rem_all(str):
     return rem_footnote(rem_arch(str))
 
 def parse_template(semesters): 
-    sems = {}
-    count = 1
-    sem = 0
+    sems = OrderedDict()
+    curr_year = 1
+    first_sem_in_year = True
     extra = []
     for item in semesters:
-        template_str = str(count) + "-"
-        if count > 4:
+        template_str = str(curr_year) + "-" 
+        # Extra content 
+        if curr_year > 4:
             extra.extend(item)
+            continue
+        # Year 1,2 and 4
+        if curr_year != 3:
+            if first_sem_in_year:
+                template_str += "Fall"
+            elif not first_sem_in_year:
+                template_str += "Spring"
+                curr_year += 1
+            first_sem_in_year = not first_sem_in_year
         else:
-            if count != 3:
-                if sem == 0:
-                    template_str += "Fall"
-                    sem = 1
-                elif sem == 1:
-                    template_str += "Spring"
-                    count = count + 1
-                    sem = 0
-            else:
-                if sem == 0:
-                    template_str += "Summer"
-                    sem = 1
-                elif sem == 1:
-                    template_str += "Fall or Spring"
-                    count = count + 1
-                    sem = 0
-            sems[template_str] = item
+            if first_sem_in_year:
+                template_str += "Summer"
+            elif not first_sem_in_year:
+                template_str += "Fall or Spring"
+                curr_year += 1
+            first_sem_in_year = not first_sem_in_year 
+        sems[template_str] = item
     sems["Extra"] = extra
     return sems
 
@@ -156,14 +157,18 @@ def parse_semester(inp):
     ret = []
     for classes in inp:
         sem = []
-        content = classes.xpath("./content")
-        for c in content:
+        # Parsing electives include: Free electives, Hass electives, Capstones
+        electives = classes.xpath("./content")
+        for c in electives:
             tmp = split_content(rem_all(c.text_content()))
             sem.extend(tmp)
+                
+        # Parsing Major course
         block = classes.xpath("./courses/include")
         for b in block:
             if (len(b.text_content()) > 0):
                 s = norm_str(b.text_content())
+                # print(s)
                 sem.append(s)
 
         course_list = striplist(sem)
@@ -174,10 +179,6 @@ def parse_semester(inp):
 def parse_courses(core, name, year):
     # Get an array of all semesters and parse them
     semester_list = core.xpath("./children/core")
-
-    # for s in semester_list:
-    #     print(html.textcontent(s.xpath("./title")[0]))
-
     courses = parse_semester(semester_list)
     return courses
 
@@ -196,19 +197,19 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         # For now only parse CS
         if (name != "Computer Science"):
             continue
+        
+        # Get program description
         desc = ""
         if len(pathway.xpath("./content/p/text()")) >= 1:
             desc = pathway.xpath("./content/p/text()")[0].strip()
             desc = ' '.join(desc.split())
         
-        
-        # Get the list of years in the degree
+        # Get the list of years in the program
         cores = pathway.xpath("./cores/core")
 
         # Parse each school year for courses
         for core in cores:
                 courses.extend(parse_courses(core, name, year))
-
 
         template = parse_template(courses)
         data[name] = {
@@ -222,19 +223,22 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
 
 def scrape_pathways():
     print("Starting pathway scraping")
+    num_catalog = 6
     catalogs = get_catalogs()
-    # take the most recent catalog
-    catalogs = catalogs[:1]
+    # take the most recent num_catalog catalogs
+    catalogs = catalogs[:num_catalog]
 
     # Scraping catalogs
     programs_per_year = {}
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
+        # print(year)
         program_ids = get_program_ids(catalog_id)
         # scraing the program (degree)
         data = get_program_data(program_ids, catalog_id, year)
         programs_per_year[year] = data
     print("Finished program scraping")
 
+    
     # create JSON obj and write it to file
     json_object = json.dumps(programs_per_year, indent=4)
     with open("programs.json", "w") as outfile:
