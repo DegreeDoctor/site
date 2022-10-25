@@ -4,7 +4,7 @@ import { useStore } from "../stores/store";
 export default {
     data() {
         return {
-            prompt: false,
+            plan: false,
             current: "CS Plan",
             plans: ["CS Plan", "ITWS Plan", "HASS Plan"]
         };
@@ -23,15 +23,14 @@ export default {
         </q-toolbar-title>
 
     <div class="q-pa-md q-gutter-sm">
-        <q-btn label="Prompt" color="primary" @click="prompt = true"></q-btn>
-        <q-dialog v-model="prompt">
+        <q-btn no-caps label="My Plans" color="primary" @click="plan = true"></q-btn>
+        <q-dialog v-model="plan">
             <q-card style="min-width: 350px">
             <q-card-section>
                 <div class="text-h6">Pick a plan</div>
             </q-card-section>
 
             <q-card-section class="q-pt-none">
-                <!-- <q-input dense v-model="address" autofocus @keyup.enter="prompt = false"></q-input> -->
                 <h6 class="q-ma-none">Current Plan: {{ current }}</h6>
                 <q-select
                     filled
@@ -55,7 +54,7 @@ export default {
 
             <q-card-actions class="text-primary">
                 <q-btn flat label="Cancel" v-close-popup></q-btn>
-                <q-btn flat label="Add new plan" v-close-popup></q-btn>
+                <q-btn flat label="Add new plan" to="/quiz" v-close-popup></q-btn>
             </q-card-actions>
             </q-card>
         </q-dialog>
