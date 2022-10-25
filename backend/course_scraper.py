@@ -7,21 +7,14 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
+from degree_util import depts
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
 # It is ok to publish this key because I found it online already public
 DEFAULT_QUERY_PARAMS = "?key=3eef8a28f26fb2bcc514e6f1938929a1f9317628&format=xml"
 CHUNK_SIZE = 500
-def get_depts():
-    depts = []
-    f = open('depts.json', 'r')
-    f = json.load(f)
-    for dept in f:
-        depts.append(dept)
-    return depts
 
-depts = get_depts()
 # returns the list of catalogs with the newest one being first
 # each catalog is a tuple (year, catalog_id) ex: ('2020-2021', 21)
 def get_catalogs() -> List[Tuple[str, int]]:
