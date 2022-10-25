@@ -165,7 +165,6 @@ def parse_semester(inp):
             
             ret.append([title, norm_str(content_txt)])
 
-
         else:
             sem = []
             # Parsing electives include: Free electives, Hass electives, Capstones
@@ -175,12 +174,24 @@ def parse_semester(inp):
                 sem.extend(tmp)
                     
             # Parsing Major course
-            block = classes.xpath("./courses/include")
-            for b in block:
-                if (len(b.text_content()) > 0):
-                    s = norm_str(b.text_content())
-                    # print(s)
-                    sem.append(s)
+            block = classes.xpath("./courses")
+            for b in block: 
+                content = b.xpath("./include")
+                adhoc = b.xpath("./adhoc/content")
+                extra = ""
+                s = ""
+                for a in adhoc: 
+                    if (len(rem_all(a.text_content())) > 0):
+                        extra += rem_all(a.text_content())
+                for c in content:
+                    if (len(c.text_content()) > 0):
+                        s = norm_str(c.text_content())
+                        if (len(extra) > 0):
+                            if (extra[0] == " "):
+                                s += extra
+                            else:
+                                s += " " + extra
+                        sem.append(s)
 
             course_list = striplist(sem)
             if (len(course_list) > 0):
@@ -234,7 +245,7 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
 
 def scrape_pathways():
     print("Starting pathway scraping")
-    num_catalog = 6
+    num_catalog = 1
     catalogs = get_catalogs()
     # take the most recent num_catalog catalogs
     catalogs = catalogs[:num_catalog]

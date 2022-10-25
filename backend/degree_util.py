@@ -20,3 +20,6 @@ def get_courses():
     return course_dict
 
 course_dict = get_courses()
+
+def clean_list(s: str) -> str:
+    return "".join([x for x in s if x.isalnum() or x.isspace()])

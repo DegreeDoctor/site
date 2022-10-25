@@ -54,7 +54,8 @@ def get_course_ids(catalog_id: str) -> List[str]:
     )
     return courses_xml.xpath("//id/text()")
 
-
+def clean_list(s: str) -> str:
+    return "".join([x for x in s if x.isalnum() or x.isspace()])
 # Finds and returns a cleaned up description of the course
 def get_catalog_description(fields, course_name):
     found_name = False
@@ -69,6 +70,7 @@ def get_catalog_description(fields, course_name):
             description = field.xpath(".//*/text()")
             if description:
                 clean_description = " ".join(" ".join(description).split())
+                clean_description = clean_list(clean_description)
                 # Short descriptions are usually false positives
                 if clean_description.startswith("Prerequisite"):
                     return ""
@@ -85,7 +87,6 @@ def checkreq(list):
                 if list[list.find(dept)+5].isdigit():
                     return True
     return False
-
 
 def split_req(str):
     reqset = str.split(" AND ")
@@ -176,7 +177,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
             ID = course.xpath("./content/code/text()")[0].strip()
             if ID[0] == '6' or ID[0] == '9':
                 continue
-            course_name = course.xpath("./content/name/text()")[0].strip()
+            course_name = clean_list(course.xpath("./content/name/text()")[0].strip())
             fields = course.xpath("./content/field")
             year = ""
             semesters = []
@@ -242,13 +243,13 @@ def scrape_courses():
     print("Starting courses scraping")
     catalogs = get_catalogs()
 
-    catalogs = catalogs[:1]
+    catalogs = catalogs[:4]
+    catalogs.reverse()
     courses_per_year = {}
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         course_ids = get_course_ids(catalog_id)
         data = get_course_data(course_ids, catalog_id)
-        
-        courses_per_year[year] = data
+        courses_per_year.update(data)
     # Serializing json
     json_object = json.dumps(courses_per_year, indent=4)
  
