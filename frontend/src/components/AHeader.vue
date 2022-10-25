@@ -1,5 +1,6 @@
 <script>
 import { useStore } from "../stores/store";
+import DarkModeToggle from "./DarkModeToggle.vue";
 
 export default {
     data() {
@@ -8,7 +9,7 @@ export default {
             current: "CS Plan",
             plans: ["CS Plan", "ITWS Plan", "HASS Plan"]
         };
-    }
+    },
 }
 </script>
 
@@ -22,7 +23,8 @@ export default {
             Degree Doctor
         </q-toolbar-title>
 
-    <div class="q-pa-md q-gutter-sm">
+    <dark-mode-toggle />
+    <div class="q-pa-md">
         <q-btn no-caps label="My Plans" color="primary" @click="plan = true"></q-btn>
         <q-dialog v-model="plan">
             <q-card style="min-width: 350px">
