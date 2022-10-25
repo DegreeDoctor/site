@@ -1,4 +1,6 @@
+from os import TMP_MAX
 from typing import Dict, List, Tuple
+from xxlimited import Str
 import requests
 from lxml import html
 from tqdm import tqdm
@@ -176,22 +178,64 @@ def get_elec(str):
             ret.append(replace_dept(s[0:fnd_o-1]))
     return ret
 
+def seperate_class(str):
+    fnd = str.find(" - ")
+    if fnd != -1:
+        return str[fnd+3:]
+    return str
+
+def find_credit_from_catalog(inp): 
+    for course in course_dict:
+        if course == inp:
+            print(course)
+
+def remove_or_from_list(inp):
+    ret = []
+    for i in inp:
+        tmp = [seperate_class_list(c) for c in i]
+        ret.append(tmp)
+    return ret
+
+def seperate_class_list(inp):
+    ret = []
+    tmp = inp.split(" or ")
+    for t in tmp:
+        ret.extend(t.split(" Or "))
+    return ret
+
+def add_classes_and_credits(str,ret_set,ret_dict):
+    if (len(get_dept(str)) > 0):
+        ret_set.add(seperate_class(str))
+    else:
+        tmp = get_elec(str)
+        for t in tmp:
+            if ret_dict.get(t) != None:
+                ret_dict[t] += 4
+            else: 
+                ret_dict[t] = 4
+    return (ret_set,ret_dict)
+
 def generate_credits(inp):
     ret = {}
-    for i in range(0,8):
-        for c in inp[i]:
-            if (len(get_dept(c)) > 0):
-                print(c)
-            else:
-                tmp = get_elec(c)
-                for t in tmp:
-                    if ret.get(t) != None:
-                        ret[t] += 4
-                    else: 
-                        ret[t] = 4
+    duplicates = {}
+    named_classes = set()
+    del inp[8:]
+    inp = remove_or_from_list(inp)
+    for sem in inp:
+        for item in sem:
+            if (len(item) > 1):
+                for i in item:
+                    (named_classes,duplicates) = add_classes_and_credits(i,named_classes,duplicates)
+            else: 
+                (named_classes,ret) = add_classes_and_credits(item[0],named_classes,ret)
+    duplicates = {key: int(value / 2) for key, value in duplicates.items()}
+    for key in duplicates.keys():
+        if ret.get(key) != None:
+            ret[key] += duplicates[key]
+        else:
+            ret[key] = duplicates[key]
+    print(list(named_classes))
     print(ret)
-    
-        
 
 # takes in xml file of of one semester of courses
 # input:  core.xpath("../cores/core/children/core")  
