@@ -98,7 +98,6 @@ def norm_str(str):
 def striplist(lstr): 
     return list(filter(None, lstr))
 
-
 def split_content(str):
     ret = []
     while (str.find("Credit Hours") != -1):
@@ -150,6 +149,49 @@ def parse_template(semesters):
         sems[template_str] = item
     sems["Extra"] = extra
     return sems
+
+def get_dept(str):
+    for dept in depts: 
+        fnd = str.find(dept)
+        if fnd != -1:
+            return str[fnd:fnd+4]
+    return ""
+
+def replace_dept(str):
+    if str == "CS" or str == "Computer Science":
+        return "CSCI"
+    if str == "Mathematics":
+        return "MATH"
+    return str
+
+def get_elec(str):
+    ret = []
+    spltstr = str.split(" or ")
+    for s in spltstr:
+        fnd_e = s.find("Elective")
+        fnd_o = s.find("Option")
+        if fnd_e != -1:
+            ret.append(replace_dept(s[0:fnd_e-1]))
+        if fnd_o != -1:
+            ret.append(replace_dept(s[0:fnd_o-1]))
+    return ret
+
+def generate_credits(inp):
+    ret = {}
+    for i in range(0,8):
+        for c in inp[i]:
+            if (len(get_dept(c)) > 0):
+                print(c)
+            else:
+                tmp = get_elec(c)
+                for t in tmp:
+                    if ret.get(t) != None:
+                        ret[t] += 4
+                    else: 
+                        ret[t] = 4
+    print(ret)
+    
+        
 
 # takes in xml file of of one semester of courses
 # input:  core.xpath("../cores/core/children/core")  
@@ -232,7 +274,7 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         # Parse each school year for courses
         for core in cores:
             courses.extend(parse_courses(core, name, year))
-
+        generate_credits(courses)
         template = parse_template(courses)
         data[name] = {
                 "name": name,
