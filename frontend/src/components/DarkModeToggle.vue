@@ -1,16 +1,23 @@
 <script>
 import { useQuasar } from 'quasar';
+import { useStore } from '../stores/store';
 
 export default {
     data() {
         return {
             q: useQuasar(),
-            darkMode: useQuasar().dark.isActive
+            darkMode: false,
+            store: useStore(),
         }
+    },
+    created() {
+        this.darkMode = this.store.getDarkMode;
+        this.q.dark.set(this.darkMode);
     },
     methods: {
         darkToggle() {
             this.q.dark.toggle()
+            this.store.toggleDarkMode()
         }
     }
 }
