@@ -6,8 +6,8 @@ export default {
     components: {
         RouterView,
         AHeader,
-    }
-}
+    },
+};
 </script>
 
 <template>
@@ -16,8 +16,6 @@ export default {
         <q-page-container>
             <RouterView />
         </q-page-container>
-
-
     </q-layout>
 </template>
 

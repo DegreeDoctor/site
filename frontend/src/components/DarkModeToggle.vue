@@ -1,6 +1,6 @@
 <script>
-import { useQuasar } from 'quasar';
-import { useStore } from '../stores/store';
+import { useQuasar } from "quasar";
+import { useStore } from "../stores/store";
 
 export default {
     data() {
@@ -8,7 +8,7 @@ export default {
             q: useQuasar(),
             darkMode: false,
             store: useStore(),
-        }
+        };
     },
     created() {
         this.darkMode = this.store.getDarkMode;
@@ -16,11 +16,11 @@ export default {
     },
     methods: {
         darkToggle() {
-            this.q.dark.toggle()
-            this.store.toggleDarkMode()
-        }
-    }
-}
+            this.q.dark.toggle();
+            this.store.toggleDarkMode();
+        },
+    },
+};
 </script>
 
 <template>
@@ -29,7 +29,7 @@ export default {
         unchecked-icon="clear"
         checked-icon="check"
         color="red"
-        label="Light Switch"
+        label="Dark"
         @update:model-value="darkToggle"
     />
 </template>
