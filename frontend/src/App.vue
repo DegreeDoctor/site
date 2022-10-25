@@ -4,8 +4,8 @@ import { RouterView } from "vue-router";
 export default {
     components: {
         RouterView,
-    }
-}
+    },
+};
 </script>
 
 <template>
@@ -13,8 +13,6 @@ export default {
         <q-page-container>
             <RouterView />
         </q-page-container>
-
-
     </q-layout>
 </template>
 
