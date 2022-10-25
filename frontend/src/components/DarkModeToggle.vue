@@ -1,22 +1,28 @@
+<script>
+import { useQuasar } from 'quasar';
+
+export default {
+    data() {
+        return {
+            q: useQuasar(),
+            darkMode: useQuasar().dark.isActive
+        }
+    },
+    methods: {
+        darkToggle() {
+            this.q.dark.toggle()
+        }
+    }
+}
+</script>
+
 <template>
     <q-toggle
         v-model="darkMode"
+        unchecked-icon="clear"
         checked-icon="check"
         color="red"
         label="Light Switch"
-        unchecked-icon="clear"
+        @update:model-value="darkToggle"
     />
 </template>
-
-<script>
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-    setup() {
-        const darkMode = ref(false)
-        return {
-            darkMode
-        }
-    }
-})
-</script>

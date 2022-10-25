@@ -3,6 +3,9 @@ import { useStore } from "../stores/store";
 import DarkModeToggle from "./DarkModeToggle.vue";
 
 export default {
+    components: {
+        DarkModeToggle
+    },
     data() {
         return {
             plan: false,
@@ -23,7 +26,8 @@ export default {
             Degree Doctor
         </q-toolbar-title>
 
-    <dark-mode-toggle />
+    <DarkModeToggle />
+
     <div class="q-pa-md">
         <q-btn no-caps label="My Plans" color="primary" @click="plan = true"></q-btn>
         <q-dialog v-model="plan">
