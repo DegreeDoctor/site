@@ -247,7 +247,7 @@ def scrape_courses():
     json_object = json.dumps(courses_per_year, indent=4)
  
     # Writing to sample.json
-    with open("courses.json", "w") as outfile:
+    with open("./data/courses.json", "w") as outfile:
         outfile.write(json_object)
         print("Finished courses scraping")
     

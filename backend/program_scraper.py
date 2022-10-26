@@ -15,15 +15,6 @@ BASE_URL = "http://rpi.apis.acalog.com/v1/"
 DEFAULT_QUERY_PARAMS = "?key=3eef8a28f26fb2bcc514e6f1938929a1f9317628&format=xml"
 CHUNK_SIZE = 500
 
-
-# def get_credit(str):
-#     for course in course_dict:
-#         if (course["name"] == str):
-#             if (len(course["credits"]))
-#             return course["credits"]
-#     return 0
-
-
 # returns the list of catalogs with the newest one being first
 # each catalog is a tuple (year, catalog_id) ex: ('2020-2021', 21)
 def get_catalogs() -> List[Tuple[str, int]]:
@@ -66,32 +57,6 @@ def course_from_string(inp, depts):
                 if inp[fnd+5] != '6':
                     return inp[fnd:fnd+4] + inp[fnd+5:fnd+9]
 
-
-# def handle_electives(cont, courses, depts, year):
-#     level = '0'
-#     for char in cont:
-#         if char.isdigit():
-#             level = char
-#             break;
-#     if level == '0':
-#         return
-#     subj = "TEMP"
-#     for word in cont.split():
-#         if word in depts:
-#             subj = word
-#             break
-#     if subj == "TEMP":
-#         return
-    # path = '../../frontend/src/data/json/' + str(year)
-    # f = open(path + '/courses.json', 'r')
-    # all_courses = json.load(f)
-    # for course in all_courses:
-    #     ID = all_courses[course]["ID"]
-    #     subjC = all_courses[course]["subj"]
-    #     if ID[0] == level and subjC == subj:
-    #         courses[course.encode("ascii", "ignore").strip().decode().strip()] = subjC+ID
-    # f.close()
-
 # Normalize a string, using unicode data. Remove all weird whitespace tag 
 def norm_str(str):
     return unicodedata.normalize("NFKD",str).strip()
@@ -100,6 +65,7 @@ def norm_str(str):
 def striplist(lstr): 
     return list(filter(None, lstr))
 
+# splits content and normalizes the string using the token 'Credit Hours'
 def split_content(str):
     ret = []
     while (str.find("Credit Hours") != -1):
@@ -108,20 +74,24 @@ def split_content(str):
         str = str[tmp:]
     return ret
 
+# removes footnote tags 
 def rem_footnote(str):
     while (str.find("(See footnote") != -1):
         str = str[:str.find("(See footnote")] + str[str.find("(See footnote") + 22:]
     return str
 
+# removes special message for arch semester
 def rem_arch(str):
     s = "ExceptionProcess."
     if (str.find(s) != -1):
         str = str[str.find(s) + len(s):]
     return str
 
+# removes all unneccesary data in strings
 def rem_all(str):
     return rem_footnote(rem_arch(str))
 
+# parses the template for visual purposes in the JSON 
 def parse_template(semesters): 
     sems = OrderedDict()
     curr_year = 1
@@ -152,6 +122,7 @@ def parse_template(semesters):
     sems["Extra"] = extra
     return sems
 
+# gets the dept string from a given string
 def get_dept(str):
     for dept in depts: 
         fnd = str.find(dept)
@@ -159,6 +130,7 @@ def get_dept(str):
             return str[fnd:fnd+4]
     return ""
 
+# hardcoded replacement for certain strings UPDATE/FIX Later (if its possible to like... not hardcode this)
 def replace_dept(str):
     if str == "CS" or str == "Computer Science":
         return "CSCI"
@@ -166,6 +138,7 @@ def replace_dept(str):
         return "MATH"
     return str
 
+# seperates classes that may be stacked together and finds elective classes' department codes
 def get_elec(str):
     ret = []
     spltstr = str.split(" or ")
@@ -178,24 +151,15 @@ def get_elec(str):
             ret.append(replace_dept(s[0:fnd_o-1]))
     return ret
 
+# seperates the class name from the dept code for parsing
 def seperate_class(str):
     fnd = str.find(" - ")
     if fnd != -1:
         return str[fnd+3:]
     return str
 
-def find_credit_from_catalog(inp): 
-    for course in course_dict:
-        if course == inp:
-            print(course)
-
-def remove_or_from_list(inp):
-    ret = []
-    for i in inp:
-        tmp = [seperate_class_list(c) for c in i]
-        ret.append(tmp)
-    return ret
-
+# seperates class strings into seperates if there exists
+# more than one option
 def seperate_class_list(inp):
     ret = []
     tmp = inp.split(" or ")
@@ -203,6 +167,18 @@ def seperate_class_list(inp):
         ret.extend(t.split(" Or "))
     return ret
 
+# removes ' or ' from lists for duplicate classes
+def remove_or_from_list(inp):
+    ret = []
+    for i in inp:
+        tmp = [seperate_class_list(c) for c in i]
+        ret.append(tmp)
+    return ret
+
+# adds classes and credits for a given set and dictionary,
+# (it is messy because we have to deal with duplicate strings 
+# which may not be equal but have same classes and are therefore 
+# very hard to parse properly without extra logic)
 def add_classes_and_credits(str,ret_set,ret_dict):
     if (len(get_dept(str)) > 0):
         ret_set.add(seperate_class(str))
@@ -215,27 +191,54 @@ def add_classes_and_credits(str,ret_set,ret_dict):
                 ret_dict[t] = 4
     return (ret_set,ret_dict)
 
+# looks through course.json and returns credit amounts for classes
+# returns a list of objects ranging from usually 1 to 4/6 credit #'s
+def get_credits(inp):
+    if course_dict.get(inp) == None:
+        return ""
+    return course_dict[inp]['credits']
+
+# generates the credit requirements for classes for the programs.json file
 def generate_credits(inp):
+
+    # we must handle duplicates seperately as parsing is problematic
     ret = {}
     duplicates = {}
     named_classes = set()
-    del inp[8:]
+
+    # remove the 'extra' part for parsing
+    inp = inp[:8]
+    # prepares input by splitting multiple classes into their own sections
     inp = remove_or_from_list(inp)
+
+    # logic for each sem/class
     for sem in inp:
         for item in sem:
+            # if size is more than one, this is a duplicate class and must
+            # be handled seperately
             if (len(item) > 1):
                 for i in item:
                     (named_classes,duplicates) = add_classes_and_credits(i,named_classes,duplicates)
             else: 
                 (named_classes,ret) = add_classes_and_credits(item[0],named_classes,ret)
+
+    # duplicates show up twice on catalog so we must halve values and use a set for
+    # named classes such that we do not double count
     duplicates = {key: int(value / 2) for key, value in duplicates.items()}
+
+    # add our duplicates to our main requirements
     for key in duplicates.keys():
         if ret.get(key) != None:
             ret[key] += duplicates[key]
         else:
             ret[key] = duplicates[key]
-    print(list(named_classes))
-    print(ret)
+
+    # look up credit totals for each named class and add
+    for key in named_classes:
+        tmp = list(get_credits(key))
+        ret[key] = tmp
+    
+    return ret
 
 # takes in xml file of of one semester of courses
 # input:  core.xpath("../cores/core/children/core")  
@@ -245,6 +248,7 @@ def parse_semester(inp):
         title =classes.xpath("./title")
         title = title[0].text_content().strip()
         
+        # logic for 'extra' content
         if title.count("Fall") == 0 and title.count("Spring") == 0 and title.count("Arch") == 0:
             content = classes.xpath("./content")
             content_txt = content[0].text_content().strip()
@@ -262,13 +266,19 @@ def parse_semester(inp):
             # Parsing Major course
             block = classes.xpath("./courses")
             for b in block: 
+
+                # content is main classes, adhoc sometimes has important content
+                # that needs to be filtered
                 content = b.xpath("./include")
                 adhoc = b.xpath("./adhoc/content")
                 extra = ""
                 s = ""
+                
                 for a in adhoc: 
                     if (len(rem_all(a.text_content())) > 0):
                         extra += rem_all(a.text_content())
+
+                # logic for adding extra content to end of normal parse        
                 for c in content:
                     if (len(c.text_content()) > 0):
                         s = norm_str(c.text_content())
@@ -318,12 +328,13 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         # Parse each school year for courses
         for core in cores:
             courses.extend(parse_courses(core, name, year))
-        generate_credits(courses)
+        
+        credit = generate_credits(courses)
         template = parse_template(courses)
         data[name] = {
                 "name": name,
                 "description": desc,
-                "credits" : 128,
+                "credits" : credit,
                 "template": template
             }
 
@@ -349,7 +360,7 @@ def scrape_pathways():
     
     # create JSON obj and write it to file
     json_object = json.dumps(programs_per_year, indent=4)
-    with open("programs.json", "w") as outfile:
+    with open("./data/programs.json", "w") as outfile:
         outfile.write(json_object)
     return programs_per_year
 

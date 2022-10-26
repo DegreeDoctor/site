@@ -1,4 +1,5 @@
 import json
+from types import SimpleNamespace as Namespace
 
 # Opens the Department.JSON and returns a list of department code
 def get_depts():
@@ -12,12 +13,8 @@ def get_depts():
 depts = get_depts()
 
 def get_courses():
-    course_dict = []
     f = open('./data/courses.json','r')
-    f = json.load(f)
-    for course in f:
-        course_dict.append(course)
-    return course_dict
+    return json.load(f)
 
 course_dict = get_courses()
 
