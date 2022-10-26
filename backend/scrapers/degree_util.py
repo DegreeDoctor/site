@@ -1,10 +1,10 @@
 import json
-from types import SimpleNamespace as Namespace
-
+import os
+filepath = os.path.dirname(os.getcwd())
 # Opens the Department.JSON and returns a list of department code
 def get_depts():
     depts = []
-    f = open('./data/depts.json', 'r') #make sure to close at end of file
+    f = open(filepath + '/data/depts.json', 'r') #make sure to close at end of file
     f = json.load(f)
     for dept in f:
         depts.append(dept)
@@ -13,7 +13,7 @@ def get_depts():
 depts = get_depts()
 
 def get_courses():
-    f = open('./data/courses.json','r')
+    f = open(filepath + '/data/courses.json','r')
     return json.load(f)
 
 course_dict = get_courses()
