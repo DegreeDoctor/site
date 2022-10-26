@@ -3,51 +3,26 @@
         "Computer Science": {
             "name": "Computer Science",
             "description": "All computer science students are assigned a faculty adviser to assist them with their interests and career goals throughout their academic career. As shown below in the 128-credit-hour B.S. curriculum leading to the B.S. degree in computer science, flexibility is one of the hallmarks of the Rensselaer computer science program. With this flexibility, students explore related areas and pursue minors and/or dual or double majors in the following fields: mathematics; electrical and computer systems engineering; information technology and web science; games and simulation arts and sciences; business and management; economics; physics; psychology; electronic media, arts, and communication; and most other disciplines.",
-            "credits": {
+            "credits": 128,
+            "requirements": {
                 "HASS Core": 24,
                 "MATH": 8,
                 "Free": 28,
                 "Science": 4,
                 "CSCI": 16,
-                "Operating Systems": [
-                    4
-                ],
-                "Foundations of Computer Science": [
-                    4
-                ],
-                "Introduction to Algorithms": [
-                    4
-                ],
-                "Programming Languages": [
-                    4
-                ],
-                "Introduction to Biology Laboratory": [
-                    1
-                ],
-                "Calculus II": [
-                    4
-                ],
-                "Computer Organization": [
-                    4
-                ],
-                "Physics I": [
-                    4
-                ],
-                "Principles of Software": [
-                    4
-                ],
-                "Data Structures": [
-                    4
-                ],
-                "Calculus I": [
-                    4
-                ],
-                "Computer Science I": [
-                    4
-                ],
-                "Introduction to Biology": [
-                    3
-                ]
+                "Introduction to Biology": 3,
+                "Introduction to Algorithms": 4,
+                "Programming Languages": 4,
+                "Computer Organization": 4,
+                "Computer Science I": 4,
+                "Foundations of Computer Science": 4,
+                "Data Structures": 4,
+                "Calculus I": 4,
+                "Introduction to Biology Laboratory": 1,
+                "Calculus II": 4,
+                "Physics I": 4,
+                "Operating Systems": 4,
+                "Principles of Software": 4
             },
             "template": {
                 "1-Fall": [
