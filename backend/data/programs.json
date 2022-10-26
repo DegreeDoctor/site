@@ -3,7 +3,52 @@
         "Computer Science": {
             "name": "Computer Science",
             "description": "All computer science students are assigned a faculty adviser to assist them with their interests and career goals throughout their academic career. As shown below in the 128-credit-hour B.S. curriculum leading to the B.S. degree in computer science, flexibility is one of the hallmarks of the Rensselaer computer science program. With this flexibility, students explore related areas and pursue minors and/or dual or double majors in the following fields: mathematics; electrical and computer systems engineering; information technology and web science; games and simulation arts and sciences; business and management; economics; physics; psychology; electronic media, arts, and communication; and most other disciplines.",
-            "credits": 128,
+            "credits": {
+                "HASS Core": 24,
+                "MATH": 8,
+                "Free": 28,
+                "Science": 4,
+                "CSCI": 16,
+                "Operating Systems": [
+                    4
+                ],
+                "Foundations of Computer Science": [
+                    4
+                ],
+                "Introduction to Algorithms": [
+                    4
+                ],
+                "Programming Languages": [
+                    4
+                ],
+                "Introduction to Biology Laboratory": [
+                    1
+                ],
+                "Calculus II": [
+                    4
+                ],
+                "Computer Organization": [
+                    4
+                ],
+                "Physics I": [
+                    4
+                ],
+                "Principles of Software": [
+                    4
+                ],
+                "Data Structures": [
+                    4
+                ],
+                "Calculus I": [
+                    4
+                ],
+                "Computer Science I": [
+                    4
+                ],
+                "Introduction to Biology": [
+                    3
+                ]
+            },
             "template": {
                 "1-Fall": [
                     "HASS Core Elective  Credit Hours: 4",
@@ -54,7 +99,14 @@
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4"
                 ],
-                "Extra": []
+                "Extra": [
+                    "Science",
+                    "A 4-credit course chosen from the following: astronomy, biology, chemistry, earth and environmental science, and physics. The P/NC option cannot be used for this course. The course ERTH 1030 cannot be used to satisfy this requirement.",
+                    "Computer Science",
+                    "Four additional computing courses of 3 or 4 credits at the 4000 or 6000 level, i.e., courses in the series CSCI 4XXX and CSCI 6XXX. Reading and independent study courses cannot be used for these courses. Further, the P/NC option cannot be used for these courses. Note that of the required 16 credits, any missing credits due to 3-credit courses may be made up as free elective credits.",
+                    "Mathematics",
+                    "Two additional courses in mathematics. Mathematics Option I must be one of the following courses: MATH 2010, MATH 4030, MATH 4040/MATH 4140 Intermediate Logic, MATH 4100, or MATP 4600. Mathematics Option II must be any course in MATH/MATP at the 2000 level or above (excluding MATH 2800). Independent study courses cannot be used to satisfy this option. The P/NC option cannot be used for these courses. Note that although some courses are cross listed as both MATH and CSCI, if a course is used to fulfill the Mathematics Option requirement, it cannot also be used as a Computer Science Option/Capstone course."
+                ]
             }
         }
     }
