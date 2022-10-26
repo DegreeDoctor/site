@@ -1,0 +1,1680 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/css/web_defaultapp.css" rel="stylesheet" type="text/css"/>
+<link href="/css/web_defaultprint.css" media="print" rel="stylesheet" type="text/css"/>
+<title>Class Schedule Listing</title>
+<meta content="text/javascript" http-equiv="Content-Script-Type" name="Default_Script_Language"/>
+<script language="JavaScript" type="text/javascript">
+<!-- Hide JavaScript from older browsers 
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding -->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding -->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!-- Hide JavaScript from older browsers 
+function timeout_window() {
+   message_text = "WARNING: Your SIS/RSS session will time out in one minute.\nSessions end after 15 minutes of inactivity as a security measure.";
+   setTimeout('display_message(message_text)', 840000);
+}
+
+function display_message(message_text) {
+   window.alert(message_text);
+}
+//  End script hiding -->
+</script>
+</head>
+<body>
+<div class="headerwrapperdiv">
+<div class="pageheaderdiv1">
+<a class="skiplinks" href="#main_content" onblur="window.status=''; return true" onfocus="window.status='Go to Main Content'; return true" onmouseout="window.status=''; return true" onmouseover="window.status='Go to Main Content'; return true">Go to Main Content</a>
+<h1>Rensselaer Self-Service Information System</h1></div><div class="headerlinksdiv">
+</div>
+<table class="plaintable" summary="This table displays Menu Items and Banner Search textbox." width="100%">
+<tr>
+<td class="pldefault">
+<div class="headerlinksdiv2">
+ 
+</div>
+</td>
+<td class="pldefault"><p class="rightaligntext" p="">
+<span class="pageheaderlinks">
+<a accesskey="H" class="submenulinktext2" href="/wtlhelp/twbhhelp.htm" onblur="window.status=''; return true" onclick="popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" onfocus="window.status='';  return true" onmouseout="window.status=''; return true" onmouseover="window.status='';  return true" target="_blank">HELP</a>
+|
+<a accesskey="3" class="submenulinktext2" href="twbkwbis.P_Logout">EXIT</a>
+</span>
+</p></td>
+</tr>
+</table>
+</div>
+<div class="pagetitlediv">
+<table class="plaintable" summary="This table displays title and static header displays." width="100%">
+<tr>
+<td class="pldefault">
+<h2>Class Schedule Listing</h2>
+</td>
+<td class="pldefault">
+ 
+</td>
+<td class="pldefault"><p class="rightaligntext" p="">
+<div class="staticheaders">
+Fall 2022<br/>
+Oct 25, 2022<br/>
+</div>
+</p></td>
+</tr>
+<tr>
+<td class="bg3" colspan="3" width="100%"><img alt="Transparent Image" border="0" class="headerImg" height="3" hspace="0" name="web_transparent" src="/wtlgifs/web_transparent.gif" title="Transparent Image" vspace="0" width="10"/></td>
+</tr>
+</table>
+<a name="main_content"></a>
+</div>
+<div class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<br>
+<input name="sel_crn" type="hidden" value="dummy"/>
+<input name="assoc_term_in" type="hidden" value="dummy"/>
+<input name="ADD_BTN" type="hidden" value="dummy"/>
+<table class="datadisplaytable" summary="This layout table is used to present the sections found" width="100%"><caption class="captiontext">Sections Found</caption>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=55032">COMPUTER SCIENCE I - 55032 - CSCI 1100 - 01</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">10:00 am - 11:50 am</td>
+<td class="dddefault">T</td>
+<td class="dddefault">Voorhees Computing Center NO</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</br></td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=55350">COMPUTER SCIENCE I - 55350 - CSCI 1100 - 02</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">10:00 am - 11:50 am</td>
+<td class="dddefault">T</td>
+<td class="dddefault">Low Center for Industrial Inn. 4034</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=55351">COMPUTER SCIENCE I - 55351 - CSCI 1100 - 03</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:50 pm</td>
+<td class="dddefault">T</td>
+<td class="dddefault">Voorhees Computing Center NO</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=57095">COMPUTER SCIENCE I - 57095 - CSCI 1100 - 04</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">10:00 am - 11:50 am</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Low Center for Industrial Inn. 4034</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=57096">COMPUTER SCIENCE I - 57096 - CSCI 1100 - 05</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:50 pm</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Low Center for Industrial Inn. 4034</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=56273">COMPUTER SCIENCE I - 56273 - CSCI 1100 - 06</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:50 pm</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Amos Eaton Hall 215</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=55033">COMPUTER SCIENCE I - 55033 - CSCI 1100 - 07</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">4:00 pm - 5:50 pm</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Low Center for Industrial Inn. 4040</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=56816">COMPUTER SCIENCE I - 56816 - CSCI 1100 - 08</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:50 pm</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Low Center for Industrial Inn. 4034</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=56281">COMPUTER SCIENCE I - 56281 - CSCI 1100 - 09</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:50 pm</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Low Center for Industrial Inn. 4040</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 324</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=55034">COMPUTER SCIENCE I - 55034 - CSCI 1100 - 10</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Amos Eaton Hall 215</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 324</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=57868">COMPUTER SCIENCE I - 57868 - CSCI 1100 - 11</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">10:00 am - 11:50 am</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Russell Sage Laboratory 5101</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 324</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=57280">COMPUTER SCIENCE I - 57280 - CSCI 1100 - 12</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:50 pm</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Troy Building 2018</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 330</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=58472">COMPUTER SCIENCE I - 58472 - CSCI 1100 - 13</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Wesley D  Turner (<abbr title="Primary">P</abbr>)<a href="mailto:turnew2@rpi.edu" target="Wesley D. Turner"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:50 pm</td>
+<td class="dddefault">T</td>
+<td class="dddefault">Troy Building 2018</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Darrin Communications Center 330</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=57869">COMPUTER SCIENCE I - 57869 - CSCI 1100 - 14</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Uzma   Mushtaque (<abbr title="Primary">P</abbr>)<a href="mailto:mushtu@rpi.edu" target="Uzma Mushtaque"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:50 pm</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Low Center for Industrial Inn. 4040</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Russell Sage Laboratory 3303</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=55036">COMPUTER SCIENCE I - 55036 - CSCI 1100 - 15</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Uzma   Mushtaque (<abbr title="Primary">P</abbr>)<a href="mailto:mushtu@rpi.edu" target="Uzma Mushtaque"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Low Center for Industrial Inn. 4034</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Russell Sage Laboratory 3303</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=57674">COMPUTER SCIENCE I - 57674 - CSCI 1100 - 16</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Uzma   Mushtaque (<abbr title="Primary">P</abbr>)<a href="mailto:mushtu@rpi.edu" target="Uzma Mushtaque"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:50 pm</td>
+<td class="dddefault">T</td>
+<td class="dddefault">Low Center for Industrial Inn. 4040</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Russell Sage Laboratory 3303</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=56455">COMPUTER SCIENCE I - 56455 - CSCI 1100 - 17</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Uzma   Mushtaque (<abbr title="Primary">P</abbr>)<a href="mailto:mushtu@rpi.edu" target="Uzma Mushtaque"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">4:00 pm - 5:50 pm</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Low Center for Industrial Inn. 4034</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Russell Sage Laboratory 3303</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=57870">COMPUTER SCIENCE I - 57870 - CSCI 1100 - 18</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Uzma   Mushtaque (<abbr title="Primary">P</abbr>)<a href="mailto:mushtu@rpi.edu" target="Uzma Mushtaque"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Low Center for Industrial Inn. 4040</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Russell Sage Laboratory 3510</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=57981">COMPUTER SCIENCE I - 57981 - CSCI 1100 - 19</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Uzma   Mushtaque (<abbr title="Primary">P</abbr>)<a href="mailto:mushtu@rpi.edu" target="Uzma Mushtaque"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">10:00 am - 11:50 am</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Low Center for Industrial Inn. 4040</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Russell Sage Laboratory 3510</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=57982">COMPUTER SCIENCE I - 57982 - CSCI 1100 - 20</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Uzma   Mushtaque (<abbr title="Primary">P</abbr>)<a href="mailto:mushtu@rpi.edu" target="Uzma Mushtaque"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">10:00 am - 11:50 am</td>
+<td class="dddefault">T</td>
+<td class="dddefault">Low Center for Industrial Inn. 4040</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Russell Sage Laboratory 3510</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=57983">COMPUTER SCIENCE I - 57983 - CSCI 1100 - 21</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Uzma   Mushtaque (<abbr title="Primary">P</abbr>)<a href="mailto:mushtu@rpi.edu" target="Uzma Mushtaque"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:50 pm</td>
+<td class="dddefault">T</td>
+<td class="dddefault">Voorhees Computing Center SO</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Amos Eaton Hall 214</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=57984">COMPUTER SCIENCE I - 57984 - CSCI 1100 - 22</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Uzma   Mushtaque (<abbr title="Primary">P</abbr>)<a href="mailto:mushtu@rpi.edu" target="Uzma Mushtaque"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">2:00 pm - 3:50 pm</td>
+<td class="dddefault">T</td>
+<td class="dddefault">Low Center for Industrial Inn. 4040</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Amos Eaton Hall 214</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+<tr>
+<th class="ddtitle" scope="colgroup"><a href="/rss/bwckschd.p_disp_detail_sched?term_in=202209&amp;crn_in=55035">COMPUTER SCIENCE I - 55035 - CSCI 1100 - 23</a></th>
+</tr>
+<tr>
+<td class="dddefault">
+<span class="fieldlabeltext">Associated Term: </span>Fall 2022 
+<br/>
+<span class="fieldlabeltext">Registration Dates: </span>May 02, 2022 to Sep 12, 2022 
+<br/>
+<span class="fieldlabeltext">Levels: </span>Graduate, Undergraduate 
+<br/>
+<span class="fieldlabeltext">Attributes: </span>Introductory Level Course 
+<br/>
+<br/>
+Troy Campus
+<br/>
+Lecture Schedule Type
+<br/>
+TR Instructional Method
+<br/>
+       4.000 Credits
+<br/>
+<a href="/rss/bwckctlg.p_display_courses?term_in=202209&amp;one_subj=CSCI&amp;sel_crse_strt=1100&amp;sel_crse_end=1100&amp;sel_subj=&amp;sel_levl=&amp;sel_schd=&amp;sel_coll=&amp;sel_divs=&amp;sel_dept=&amp;sel_attr=">View Catalog Entry</a>
+<br/>
+<br/>
+<table class="datadisplaytable" summary="This table lists the scheduled meeting times and assigned instructors for this class.."><caption class="captiontext">Scheduled Meeting Times</caption>
+<tr>
+<th class="ddheader" scope="col">Type</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Where</th>
+<th class="ddheader" scope="col">Date Range</th>
+<th class="ddheader" scope="col">Schedule Type</th>
+<th class="ddheader" scope="col">Instructors</th>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">12:00 pm - 1:20 pm</td>
+<td class="dddefault">MR</td>
+<td class="dddefault">Darrin Communications Center 308</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault">Uzma   Mushtaque (<abbr title="Primary">P</abbr>)<a href="mailto:mushtu@rpi.edu" target="Uzma Mushtaque"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a>, Shianne M.  Hulbert <a href="mailto:hulbes@rpi.edu" target="Shianne M. Hulbert"><img align="middle" alt="E-mail" border="0" class="headerImg" height="28" hspace="0" name="web_email" src="/wtlgifs/web_email.gif" title="E-mail" vspace="0" width="28"/></a></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">4:00 pm - 5:50 pm</td>
+<td class="dddefault">W</td>
+<td class="dddefault">Troy Building 2012</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+<tr>
+<td class="dddefault">Class</td>
+<td class="dddefault">6:00 pm - 7:50 pm</td>
+<td class="dddefault">R</td>
+<td class="dddefault">Amos Eaton Hall 214</td>
+<td class="dddefault">Aug 29, 2022 - Dec 20, 2022</td>
+<td class="dddefault">Lecture</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+</tr>
+</table>
+<br/>
+<br/>
+</td>
+</tr>
+</table>
+<br/>
+<table class="datadisplaytable" summary="This is for formatting of the bottom links." width="50%">
+<tr>
+<td class="ntdefault">
+<a href="javascript:history.go(-1)" onblur="window.status='';  return true" onfocus="window.status='Return to Previous';  return true" onmouseout="window.status='';  return true" onmouseover="window.status='Return to Previous';  return true">Return to Previous</a>
+</td>
+</tr>
+</table>
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<table border="0" cellpadding="0" cellspacing="0" class="plaintable" summary="This is table displays line separator at end of the page." width="100%"><tr><td class="bgtabon" colspan="2" width="100%"><img alt="Transparent Image" border="0" class="headerImg" height="3" hspace="0" name="web_transparent" src="/wtlgifs/web_transparent.gif" title="Transparent Image" vspace="0" width="10"/></td></tr></table>
+<a class="skiplinks" href="#top" onblur="window.status=''; return true" onfocus="window.status='Skip to top of page'; return true" onmouseout="window.status=''; return true" onmouseover="window.status='Skip to top of page'; return true">Skip to top of page</a>
+</br></div>
+<div class="footerbeforediv">
+</div>
+<div class="footerafterdiv">
+</div>
+<div class="globalafterdiv">
+</div>
+<div class="globalfooterdiv">
+</div>
+<div class="pagefooterdiv">
+<span class="releasetext">Release: 8.7.2</span>
+</div>
+<div class="poweredbydiv">
+</div>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+<div class="div5"></div>
+<div class="div6"></div>
+<div class="banner_copyright"> <br/><h5>© 2022 Ellucian Company L.P. and its affiliates.<br/></h5></div>
+</body>
+</html>
+
