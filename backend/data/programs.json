@@ -10,19 +10,19 @@
                 "Free": 28,
                 "Science": 4,
                 "CSCI": 16,
-                "Introduction to Biology": 3,
+                "Computer Organization": 4,
                 "Introduction to Algorithms": 4,
                 "Programming Languages": 4,
-                "Computer Organization": 4,
-                "Computer Science I": 4,
-                "Foundations of Computer Science": 4,
-                "Data Structures": 4,
-                "Calculus I": 4,
-                "Introduction to Biology Laboratory": 1,
+                "Principles of Software": 4,
                 "Calculus II": 4,
-                "Physics I": 4,
+                "Introduction to Biology Laboratory": 1,
+                "Computer Science I": 4,
+                "Introduction to Biology": 3,
+                "Data Structures": 4,
                 "Operating Systems": 4,
-                "Principles of Software": 4
+                "Foundations of Computer Science": 4,
+                "Physics I": 4,
+                "Calculus I": 4
             },
             "template": {
                 "1-Fall": [

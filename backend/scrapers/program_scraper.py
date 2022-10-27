@@ -4,7 +4,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import depts, course_dict, filepath
+from degree_util import subjs, course_dict, filepath
 from collections import OrderedDict
 
 # The api key is public so it does not need to be hidden in a .env file
@@ -47,9 +47,9 @@ def get_program_ids(catalog_id: str) -> List[str]:
     return programs_xml.xpath('//result[type="Baccalaureate"]/id/text()')
 
 # <<< need rework for programs >>>
-def course_from_string(inp, depts):
-    for dept in depts:
-        fnd = inp.find(dept)
+def course_from_string(inp, subjs):
+    for subj in subjs:
+        fnd = inp.find(subj)
         if fnd != -1:
             if inp[fnd+8].isdigit() or inp[fnd+8] == "X":
                 if inp[fnd+5] != '6':
@@ -120,16 +120,16 @@ def parse_template(semesters):
     sems["Extra"] = extra
     return sems
 
-# gets the dept string from a given string
-def get_dept(str):
-    for dept in depts: 
-        fnd = str.find(dept)
+# gets the subj string from a given string
+def get_subj(str):
+    for subj in subjs: 
+        fnd = str.find(subj)
         if fnd != -1:
             return str[fnd:fnd+4]
     return ""
 
 # hardcoded replacement for certain strings UPDATE/FIX Later (if its possible to like... not hardcode this)
-def replace_dept(str):
+def replace_subj(str):
     if str == "CS" or str == "Computer Science":
         return "CSCI"
     if str == "Mathematics":
@@ -144,12 +144,12 @@ def get_elec(str):
         fnd_e = s.find("Elective")
         fnd_o = s.find("Option")
         if fnd_e != -1:
-            ret.append(replace_dept(s[0:fnd_e-1]))
+            ret.append(replace_subj(s[0:fnd_e-1]))
         if fnd_o != -1:
-            ret.append(replace_dept(s[0:fnd_o-1]))
+            ret.append(replace_subj(s[0:fnd_o-1]))
     return ret
 
-# seperates the class name from the dept code for parsing
+# seperates the class name from the subj code for parsing
 def seperate_class(str):
     fnd = str.find(" - ")
     if fnd != -1:
@@ -178,7 +178,7 @@ def remove_or_from_list(inp):
 # which may not be equal but have same classes and are therefore 
 # very hard to parse properly without extra logic)
 def add_classes_and_credits(str,ret_set,ret_dict):
-    if (len(get_dept(str)) > 0):
+    if (len(get_subj(str)) > 0):
         ret_set.add(seperate_class(str))
     else:
         tmp = get_elec(str)
@@ -243,7 +243,7 @@ def generate_requirements(inp):
         tmp = list(get_credits(key))
         if (len(tmp) > 1):
             ret[key] = tmp[1:][0]
-        else:
+        elif (len(tmp) == 1):
             ret[key] = tmp[0]
     
     return ret

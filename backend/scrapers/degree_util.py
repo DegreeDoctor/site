@@ -1,20 +1,23 @@
 import json
 import os
 filepath = os.path.dirname(os.getcwd())
-# Opens the Department.JSON and returns a list of department code
-def get_depts():
-    depts = []
-    f = open(filepath + '/data/depts.json', 'r') #make sure to close at end of file
-    f = json.load(f)
-    for dept in f:
-        depts.append(dept)
-    return depts
+# Opens the subjects.JSON and returns a list of subject code
+def get_subjs():
+    subjs = []
+    f = open(filepath + '/data/subjs.json', 'r') #make sure to close at end of file
+    tmp = json.load(f)
+    for subj in tmp:
+        subjs.append(subj)
+    f.close()
+    return subjs
 
-depts = get_depts()
+subjs = get_subjs()
 
 def get_courses():
     f = open(filepath + '/data/courses.json','r')
-    return json.load(f)
+    ret = json.load(f)
+    f.close()
+    return ret
 
 course_dict = get_courses()
 

@@ -437,8 +437,8 @@
                 [
                     "BIOL-2120",
                     "CHEM-2250",
-                    "BIOL-4620",
-                    "PHYS-1100"
+                    "PHYS-1100",
+                    "BIOL-4620"
                 ]
             ]
         },
@@ -607,8 +607,8 @@
         "prerequisites": {
             "required": [
                 "CSCI-1200",
-                "BIOL-4620",
-                "MATH-1020"
+                "MATH-1020",
+                "BIOL-4620"
             ],
             "one_of": []
         },
@@ -637,15 +637,15 @@
         "prerequisites": {
             "required": [
                 "BIOL-4760",
-                "BIOL-4620",
-                "MATH-1020"
+                "MATH-1020",
+                "BIOL-4620"
             ],
             "one_of": []
         },
         "crosslisted": [
-            "BCBP-4550",
+            "BCBP-6420",
             "BIOL-6420",
-            "BCBP-6420"
+            "BCBP-4550"
         ],
         "offered": {
             "year": "all",
@@ -730,9 +730,9 @@
             "one_of": []
         },
         "crosslisted": [
-            "BCBP-6650",
+            "BCBP-4660",
             "BIOL-6650",
-            "BCBP-4660"
+            "BCBP-6650"
         ],
         "offered": {
             "year": "all",
@@ -876,8 +876,8 @@
             "one_of": []
         },
         "crosslisted": [
-            "CHEM-4770",
-            "BCBP-4770"
+            "BCBP-4770",
+            "CHEM-4770"
         ],
         "offered": {
             "year": "all",
@@ -1270,8 +1270,8 @@
                     "MATH-1010",
                     "MATH-1500",
                     "MATH-1020",
-                    "MATH-2010",
-                    "MATH-1020"
+                    "MATH-1020",
+                    "MATH-2010"
                 ]
             ]
         },
@@ -1922,10 +1922,10 @@
         },
         "crosslisted": [
             "ITWS-4350",
-            "CSCI-6350",
             "ERTH-4350",
+            "ERTH-6350",
             "ITWS-6350",
-            "ERTH-6350"
+            "CSCI-6350"
         ],
         "offered": {
             "year": "all",
@@ -1952,8 +1952,8 @@
                 [
                     "CSCI-6350",
                     "CSCI-4350",
-                    "ITWS-4350",
-                    "ITWS-6350"
+                    "ITWS-6350",
+                    "ITWS-4350"
                 ]
             ]
         },
@@ -2039,18 +2039,18 @@
                 "CSCI-1200",
                 "CSCI-4350",
                 "ITWS-4350",
-                "CSCI-6350",
                 "ERTH-4350",
+                "ERTH-6350",
                 "ITWS-6350",
-                "ERTH-6350"
+                "CSCI-6350"
             ],
             "one_of": []
         },
         "crosslisted": [
-            "ITWS-6400",
-            "ERTH-6400",
+            "ERTH-4400",
             "CSCI-6400",
-            "ERTH-4400"
+            "ERTH-6400",
+            "ITWS-6400"
         ],
         "offered": {
             "year": "all",
@@ -2275,8 +2275,8 @@
             "one_of": []
         },
         "crosslisted": [
-            "CSCI-6490",
             "ECSE-4490",
+            "CSCI-6490",
             "ECSE-6490"
         ],
         "offered": {
@@ -2482,17 +2482,17 @@
             "required": [
                 "CSCI-4350",
                 "ITWS-4350",
-                "CSCI-6350",
                 "ERTH-4350",
+                "ERTH-6350",
                 "ITWS-6350",
-                "ERTH-6350"
+                "CSCI-6350"
             ],
             "one_of": []
         },
         "crosslisted": [
-            "BCBP-4600",
             "ITWS-4600",
-            "ITWS-6600"
+            "ITWS-6600",
+            "BCBP-4600"
         ],
         "offered": {
             "year": "all",
@@ -3599,8 +3599,8 @@
             "one_of": []
         },
         "crosslisted": [
-            "CHEM-1600",
             "ISCI-1600",
+            "CHEM-1600",
             "ENGR-1600"
         ],
         "offered": {
@@ -3647,8 +3647,8 @@
             "one_of": [
                 [
                     "PHYS-1200",
-                    "PHYS-1250",
-                    "MATH-1020"
+                    "MATH-1020",
+                    "PHYS-1250"
                 ]
             ]
         },
@@ -3922,8 +3922,8 @@
         ],
         "prerequisites": {
             "required": [
-                "MATH-2400",
                 "PHYS-2220",
+                "MATH-2400",
                 "MATH-2010"
             ],
             "one_of": []
@@ -4059,8 +4059,8 @@
         ],
         "prerequisites": {
             "required": [
-                "CSCI-1100",
                 "PHYS-1100",
+                "CSCI-1100",
                 "PHYS-1200"
             ],
             "one_of": []
@@ -4089,16 +4089,16 @@
             "required": [],
             "one_of": [
                 [
-                    "ASTR-4220",
-                    "ASTR-4510",
-                    "ASTR-4240",
-                    "PHYS-4240",
-                    "ASTR-4120",
-                    "PHYS-4620",
                     "PHYS-4630",
+                    "ASTR-4120",
                     "PHYS-4640",
-                    "PHYS-4720",
-                    "PHYS-4810"
+                    "PHYS-4240",
+                    "PHYS-4620",
+                    "ASTR-4240",
+                    "ASTR-4510",
+                    "ASTR-4220",
+                    "PHYS-4810",
+                    "PHYS-4720"
                 ]
             ]
         },
@@ -4127,8 +4127,8 @@
             "one_of": []
         },
         "crosslisted": [
-            "BCBP-6470",
             "BCBP-4470",
+            "BCBP-6470",
             "BIOL-6470"
         ],
         "offered": {
@@ -4210,8 +4210,8 @@
         ],
         "prerequisites": {
             "required": [
-                "BIOL-1010",
                 "BIOL-1015",
+                "BIOL-1010",
                 "BIOL-2120",
                 "BIOL-2125"
             ],

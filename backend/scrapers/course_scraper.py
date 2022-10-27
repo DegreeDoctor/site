@@ -7,7 +7,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import depts, filepath
+from degree_util import subjs, filepath
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
@@ -76,10 +76,10 @@ def get_catalog_description(fields, course_name):
 # function should return an object where object = 
 # ["required" = [Calc1, Calc2...], "One of" = [[Option 1, Option 2], [Option 1, Option 2]]]
 def checkreq(list):
-    for dept in depts:
-        if list.find(dept + ' ') != -1:
-            if list.find(dept + ' ') + 5 < len(list):
-                if list[list.find(dept)+5].isdigit():
+    for subj in subjs:
+        if list.find(subj + ' ') != -1:
+            if list.find(subj + ' ') + 5 < len(list):
+                if list[list.find(subj)+5].isdigit():
                     return True
     return False
 
@@ -139,16 +139,16 @@ def get_credit(str):
         credit.append(str)
     return credit
 
- # REFACTOR (Clean up instead of searching from all dept)
+ # REFACTOR (Clean up instead of searching from all subj)
  # gets the courses in a given string
 def courses_from_string(inp):
     crses = set()
-    for dept in depts:
-        sp = inp.split(dept)
+    for subj in subjs:
+        sp = inp.split(subj)
         if len(sp) > 1: 
             for item in sp: 
                 if item[1:5].isdigit():
-                    crses.add(dept + '-' + item[1:5])
+                    crses.add(subj + '-' + item[1:5])
     return list(crses)
 
 def get_course_data(course_ids: List[str], catalog_id) -> Dict:
@@ -157,11 +157,11 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
     course_chunks = [
         course_ids[i : i + CHUNK_SIZE] for i in range(0, len(course_ids), CHUNK_SIZE)
     ]
-    dept_input = []
+    subj_input = []
     f = open(filepath + '/data/input.json', 'r')
     f = json.load(f)
-    for dept in f:
-        dept_input.append(dept)
+    for subj in f:
+        subj_input.append(subj)
 
     for chunk in course_chunks:
         ids = "".join([f"&ids[]={id}" for id in chunk])
@@ -171,7 +171,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
         courses = courses_xml.xpath("//courses/course[not(@child-of)]")
         for course in courses:
             subj = course.xpath("./content/prefix/text()")[0].strip()
-            if not (subj in dept_input):
+            if not (subj in subj_input):
                 continue
             ID = course.xpath("./content/code/text()")[0].strip()
             if ID[0] == '6' or ID[0] == '9':
