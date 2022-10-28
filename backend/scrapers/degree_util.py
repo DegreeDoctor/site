@@ -1,6 +1,6 @@
 import json
 import os
-filepath = os.path.dirname(os.getcwd())
+filepath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 # Opens the subjects.JSON and returns a list of subject code
 def get_subjs():
     subjs = []
