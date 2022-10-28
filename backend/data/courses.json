@@ -25,7 +25,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Biology Laboratory": {
         "name": "Introduction to Biology Laboratory",
@@ -53,7 +54,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Cell and Molecular Biology": {
         "name": "Introduction to Cell and Molecular Biology",
@@ -81,7 +83,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Geobiology": {
         "name": "Introduction to Geobiology",
@@ -109,7 +112,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Genetics and Evolution": {
         "name": "Genetics and Evolution",
@@ -135,7 +139,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Research in Biology": {
         "name": "Research in Biology",
@@ -164,7 +169,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "OutofClassroom Experience in Biology": {
         "name": "OutofClassroom Experience in Biology",
@@ -193,7 +199,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "From Neuron to Behavior": {
         "name": "From Neuron to Behavior",
@@ -222,7 +229,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Investigative Medicine I": {
         "name": "Investigative Medicine I",
@@ -246,7 +254,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Investigative Medicine II": {
         "name": "Investigative Medicine II",
@@ -272,7 +281,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Cellular Neuroscience": {
         "name": "Cellular Neuroscience",
@@ -304,7 +314,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Biostatistics": {
         "name": "Biostatistics",
@@ -333,7 +344,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Machine Learning for Environmental Biology": {
         "name": "Machine Learning for Environmental Biology",
@@ -361,7 +373,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Developmental Biology": {
         "name": "Developmental Biology",
@@ -373,8 +386,8 @@
         ],
         "prerequisites": {
             "required": [
-                "BIOL-2120",
-                "BIOL-2500"
+                "BIOL-2500",
+                "BIOL-2120"
             ],
             "one_of": []
         },
@@ -388,7 +401,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Advanced Cell Biology": {
         "name": "Advanced Cell Biology",
@@ -421,7 +435,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Human Physiology": {
         "name": "Human Physiology",
@@ -436,9 +451,9 @@
             "one_of": [
                 [
                     "BIOL-2120",
-                    "CHEM-2250",
                     "PHYS-1100",
-                    "BIOL-4620"
+                    "BIOL-4620",
+                    "CHEM-2250"
                 ]
             ]
         },
@@ -453,7 +468,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Microbiology": {
         "name": "Microbiology",
@@ -481,7 +497,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Microbiology Lab": {
         "name": "Microbiology Lab",
@@ -507,7 +524,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Virology": {
         "name": "Virology",
@@ -536,7 +554,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Geomicrobiology": {
         "name": "Geomicrobiology",
@@ -553,8 +572,8 @@
             "one_of": []
         },
         "crosslisted": [
-            "ENVE-4360",
-            "BIOL-6360"
+            "BIOL-6360",
+            "ENVE-4360"
         ],
         "offered": {
             "year": "all",
@@ -565,7 +584,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Origins of Life": {
         "name": "Origins of Life",
@@ -594,7 +614,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Sequence Analysis": {
         "name": "Sequence Analysis",
@@ -606,9 +627,9 @@
         ],
         "prerequisites": {
             "required": [
+                "BIOL-4620",
                 "CSCI-1200",
-                "MATH-1020",
-                "BIOL-4620"
+                "MATH-1020"
             ],
             "one_of": []
         },
@@ -624,7 +645,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Molecular Modeling": {
         "name": "Molecular Modeling",
@@ -636,16 +658,16 @@
         ],
         "prerequisites": {
             "required": [
+                "BIOL-4620",
                 "BIOL-4760",
-                "MATH-1020",
-                "BIOL-4620"
+                "MATH-1020"
             ],
             "one_of": []
         },
         "crosslisted": [
-            "BCBP-6420",
             "BIOL-6420",
-            "BCBP-4550"
+            "BCBP-4550",
+            "BCBP-6420"
         ],
         "offered": {
             "year": "all",
@@ -656,7 +678,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Molecular Biology": {
         "name": "Molecular Biology",
@@ -683,7 +706,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Molecular Biology II": {
         "name": "Molecular Biology II",
@@ -712,7 +736,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "The Biology of Systems": {
         "name": "The Biology of Systems",
@@ -730,9 +755,9 @@
             "one_of": []
         },
         "crosslisted": [
-            "BCBP-4660",
+            "BCBP-6650",
             "BIOL-6650",
-            "BCBP-6650"
+            "BCBP-4660"
         ],
         "offered": {
             "year": "all",
@@ -743,7 +768,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Biochemistry Laboratory": {
         "name": "Biochemistry Laboratory",
@@ -772,7 +798,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Molecular Biology Laboratory": {
         "name": "Molecular Biology Laboratory",
@@ -800,7 +827,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Advanced Cell Biology Laboratory": {
         "name": "Advanced Cell Biology Laboratory",
@@ -828,7 +856,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Molecular Biochemistry I": {
         "name": "Molecular Biochemistry I",
@@ -859,7 +888,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Molecular Biochemistry II": {
         "name": "Molecular Biochemistry II",
@@ -888,7 +918,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Principles of Ecology": {
         "name": "Principles of Ecology",
@@ -917,7 +948,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Evolution": {
         "name": "Evolution",
@@ -944,7 +976,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Lake George Limnology and Underwater Ecology BLUE": {
         "name": "Lake George Limnology and Underwater Ecology BLUE",
@@ -968,7 +1001,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "The Global Environment": {
         "name": "The Global Environment",
@@ -996,7 +1030,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Team Research": {
         "name": "Team Research",
@@ -1023,7 +1058,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Readings in Biology": {
         "name": "Readings in Biology",
@@ -1052,7 +1088,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Human Population": {
         "name": "Human Population",
@@ -1079,7 +1116,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Nonthesis Research": {
         "name": "Nonthesis Research",
@@ -1108,7 +1146,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Biomedical Research": {
         "name": "Biomedical Research",
@@ -1132,7 +1171,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Senior Research Thesis": {
         "name": "Senior Research Thesis",
@@ -1158,7 +1198,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Computer Programming": {
         "name": "Introduction to Computer Programming",
@@ -1179,7 +1220,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Computer Science I": {
         "name": "Computer Science I",
@@ -1202,7 +1244,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Beginning Programming for Engineers": {
         "name": "Beginning Programming for Engineers",
@@ -1224,7 +1267,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Data Structures": {
         "name": "Data Structures",
@@ -1251,7 +1295,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Foundations of Computer Science": {
         "name": "Foundations of Computer Science",
@@ -1286,7 +1331,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Algorithms": {
         "name": "Introduction to Algorithms",
@@ -1321,7 +1367,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Computer Organization": {
         "name": "Computer Organization",
@@ -1348,7 +1395,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Principles of Software": {
         "name": "Principles of Software",
@@ -1376,7 +1424,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Design and Analysis of Algorithms": {
         "name": "Design and Analysis of Algorithms",
@@ -1402,7 +1451,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Randomized Algorithms": {
         "name": "Randomized Algorithms",
@@ -1430,7 +1480,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Approximation Algorithms": {
         "name": "Approximation Algorithms",
@@ -1458,7 +1509,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Machine Learning from Data": {
         "name": "Machine Learning from Data",
@@ -1486,7 +1538,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Computational Social Processes": {
         "name": "Computational Social Processes",
@@ -1514,7 +1567,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Computational Finance": {
         "name": "Computational Finance",
@@ -1542,7 +1596,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Natural Language Processing": {
         "name": "Natural Language Processing",
@@ -1571,7 +1626,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Artificial Intelligence": {
         "name": "Introduction to Artificial Intelligence",
@@ -1597,7 +1653,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Operating Systems": {
         "name": "Operating Systems",
@@ -1629,7 +1686,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Network Programming": {
         "name": "Network Programming",
@@ -1655,7 +1713,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Cryptography and Network Security I": {
         "name": "Cryptography and Network Security I",
@@ -1667,8 +1726,8 @@
         ],
         "prerequisites": {
             "required": [
-                "CSCI-2300",
                 "CSCI-4210",
+                "CSCI-2300",
                 "CSCI-4220"
             ],
             "one_of": []
@@ -1685,7 +1744,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Cryptography and Network Security II": {
         "name": "Cryptography and Network Security II",
@@ -1699,8 +1759,8 @@
             "required": [],
             "one_of": [
                 [
-                    "CSCI-4230",
                     "ECSE-4670",
+                    "CSCI-4230",
                     "CSCI-4220",
                     "CSCI-4210"
                 ]
@@ -1718,7 +1778,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Frontiers of Network Science": {
         "name": "Frontiers of Network Science",
@@ -1731,9 +1792,9 @@
         "prerequisites": {
             "required": [
                 "CSCI-2300",
-                "CSCI-4800",
                 "CSCI-4020",
-                "CSCI-4260"
+                "CSCI-4260",
+                "CSCI-4800"
             ],
             "one_of": []
         },
@@ -1749,7 +1810,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Graph Theory": {
         "name": "Graph Theory",
@@ -1782,7 +1844,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Computational Vision": {
         "name": "Computational Vision",
@@ -1811,7 +1874,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Networking in the Linux Kernel": {
         "name": "Networking in the Linux Kernel",
@@ -1842,7 +1906,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Parallel Programming": {
         "name": "Parallel Programming",
@@ -1875,7 +1940,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Ontologies": {
         "name": "Ontologies",
@@ -1903,7 +1969,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Data Science": {
         "name": "Data Science",
@@ -1921,11 +1988,11 @@
             "one_of": []
         },
         "crosslisted": [
+            "ERTH-6350",
             "ITWS-4350",
             "ERTH-4350",
-            "ERTH-6350",
-            "ITWS-6350",
-            "CSCI-6350"
+            "CSCI-6350",
+            "ITWS-6350"
         ],
         "offered": {
             "year": "all",
@@ -1936,7 +2003,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Data and Society": {
         "name": "Data and Society",
@@ -1950,10 +2018,10 @@
             "required": [],
             "one_of": [
                 [
-                    "CSCI-6350",
                     "CSCI-4350",
-                    "ITWS-6350",
-                    "ITWS-4350"
+                    "CSCI-6350",
+                    "ITWS-4350",
+                    "ITWS-6350"
                 ]
             ]
         },
@@ -1969,7 +2037,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Database Systems": {
         "name": "Database Systems",
@@ -1996,7 +2065,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Data Mining": {
         "name": "Data Mining",
@@ -2024,7 +2094,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Xinformatics": {
         "name": "Xinformatics",
@@ -2037,19 +2108,19 @@
         "prerequisites": {
             "required": [
                 "CSCI-1200",
-                "CSCI-4350",
-                "ITWS-4350",
-                "ERTH-4350",
                 "ERTH-6350",
-                "ITWS-6350",
-                "CSCI-6350"
+                "ITWS-4350",
+                "CSCI-4350",
+                "ERTH-4350",
+                "CSCI-6350",
+                "ITWS-6350"
             ],
             "one_of": []
         },
         "crosslisted": [
+            "ERTH-6400",
             "ERTH-4400",
             "CSCI-6400",
-            "ERTH-6400",
             "ITWS-6400"
         ],
         "offered": {
@@ -2061,7 +2132,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Computability and Logic": {
         "name": "Computability and Logic",
@@ -2092,7 +2164,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Programming Languages": {
         "name": "Programming Languages",
@@ -2119,7 +2192,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Software Design and Documentation": {
         "name": "Software Design and Documentation",
@@ -2146,7 +2220,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Principles of Program Analysis": {
         "name": "Principles of Program Analysis",
@@ -2174,7 +2249,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "LargeScale Programming and Testing": {
         "name": "LargeScale Programming and Testing",
@@ -2202,7 +2278,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Open Source Software": {
         "name": "Open Source Software",
@@ -2230,7 +2307,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Robotics I": {
         "name": "Robotics I",
@@ -2258,7 +2336,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Robotics II": {
         "name": "Robotics II",
@@ -2288,7 +2367,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Distributed Computing Over The Internet": {
         "name": "Distributed Computing Over The Internet",
@@ -2321,7 +2401,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Distributed Systems and Algorithms": {
         "name": "Distributed Systems and Algorithms",
@@ -2349,7 +2430,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Game Development I": {
         "name": "Game Development I",
@@ -2380,7 +2462,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Advanced Computer Graphics": {
         "name": "Advanced Computer Graphics",
@@ -2413,7 +2496,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Game Development II": {
         "name": "Game Development II",
@@ -2439,7 +2523,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Interactive Visualization": {
         "name": "Interactive Visualization",
@@ -2468,7 +2553,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Data Analytics": {
         "name": "Data Analytics",
@@ -2480,18 +2566,18 @@
         ],
         "prerequisites": {
             "required": [
-                "CSCI-4350",
-                "ITWS-4350",
-                "ERTH-4350",
                 "ERTH-6350",
-                "ITWS-6350",
-                "CSCI-6350"
+                "ITWS-4350",
+                "CSCI-4350",
+                "ERTH-4350",
+                "CSCI-6350",
+                "ITWS-6350"
             ],
             "one_of": []
         },
         "crosslisted": [
-            "ITWS-4600",
             "ITWS-6600",
+            "ITWS-4600",
             "BCBP-4600"
         ],
         "offered": {
@@ -2503,7 +2589,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Technical Writing and Communication in Computer Science": {
         "name": "Technical Writing and Communication in Computer Science",
@@ -2534,7 +2621,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Numerical Computing": {
         "name": "Numerical Computing",
@@ -2564,7 +2652,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Numerical Methods for Differential Equations": {
         "name": "Introduction to Numerical Methods for Differential Equations",
@@ -2595,7 +2684,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Readings in Computer Science": {
         "name": "Readings in Computer Science",
@@ -2617,7 +2707,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Topics in Computer Science": {
         "name": "Topics in Computer Science",
@@ -2639,7 +2730,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Calculus I": {
         "name": "Calculus I",
@@ -2661,7 +2753,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Calculus II": {
         "name": "Calculus II",
@@ -2688,7 +2781,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Calculus for Architecture Management and HASS": {
         "name": "Calculus for Architecture Management and HASS",
@@ -2712,7 +2806,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Mathematical Methods in Management and Economics": {
         "name": "Mathematical Methods in Management and Economics",
@@ -2741,7 +2836,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Contemporary Mathematical Ideas in Society": {
         "name": "Contemporary Mathematical Ideas in Society",
@@ -2770,7 +2866,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Art and Science of Mathematics I": {
         "name": "Art and Science of Mathematics I",
@@ -2794,7 +2891,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Art and Science of Mathematics II": {
         "name": "Art and Science of Mathematics II",
@@ -2818,7 +2916,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Multivariable Calculus and Matrix Algebra": {
         "name": "Multivariable Calculus and Matrix Algebra",
@@ -2835,8 +2934,8 @@
             "one_of": []
         },
         "crosslisted": [
-            "MATH-2011",
-            "MATH-2012"
+            "MATH-2012",
+            "MATH-2011"
         ],
         "offered": {
             "year": "all",
@@ -2848,7 +2947,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Differential Equations": {
         "name": "Introduction to Differential Equations",
@@ -2875,7 +2975,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Readings in Mathematics": {
         "name": "Readings in Mathematics",
@@ -2897,7 +2998,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Topics in Mathematics": {
         "name": "Topics in Mathematics",
@@ -2919,7 +3021,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Abstract Algebra": {
         "name": "Abstract Algebra",
@@ -2945,7 +3048,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Number Theory": {
         "name": "Introduction to Number Theory",
@@ -2971,7 +3075,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Topology": {
         "name": "Introduction to Topology",
@@ -2999,7 +3104,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Foundation of Analysis": {
         "name": "Foundation of Analysis",
@@ -3026,7 +3132,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Linear Algebra": {
         "name": "Linear Algebra",
@@ -3053,7 +3160,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Fundamentals of Geometry": {
         "name": "Fundamentals of Geometry",
@@ -3079,7 +3187,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Mathematical Analysis I": {
         "name": "Mathematical Analysis I",
@@ -3109,7 +3218,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Mathematical Analysis II": {
         "name": "Mathematical Analysis II",
@@ -3137,7 +3247,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Complex Variables Theory and Applications": {
         "name": "Introduction to Complex Variables Theory and Applications",
@@ -3163,7 +3274,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Ordinary Differential Equations and Dynamical Systems": {
         "name": "Ordinary Differential Equations and Dynamical Systems",
@@ -3190,7 +3302,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Methods of Partial Differential Equations of Mathematical Physics": {
         "name": "Methods of Partial Differential Equations of Mathematical Physics",
@@ -3217,7 +3330,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Advanced Calculus": {
         "name": "Advanced Calculus",
@@ -3244,7 +3358,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Foundations of Applied Mathematics": {
         "name": "Foundations of Applied Mathematics",
@@ -3271,7 +3386,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Mathematics in Medicine and Biology": {
         "name": "Mathematics in Medicine and Biology",
@@ -3297,7 +3413,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Financial Mathematics and Engineering": {
         "name": "Introduction to Financial Mathematics and Engineering",
@@ -3323,7 +3440,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Numerical Linear Algebra with Applications": {
         "name": "Numerical Linear Algebra with Applications",
@@ -3347,7 +3465,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Research in Mathematics": {
         "name": "Research in Mathematics",
@@ -3372,7 +3491,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Undergraduate Project in Mathematics": {
         "name": "Undergraduate Project in Mathematics",
@@ -3394,7 +3514,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "A Passion for Physics": {
         "name": "A Passion for Physics",
@@ -3415,7 +3536,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "General Physics": {
         "name": "General Physics",
@@ -3443,7 +3565,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Physics I": {
         "name": "Physics I",
@@ -3475,7 +3598,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Honors Physics I": {
         "name": "Honors Physics I",
@@ -3501,7 +3625,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Physics II": {
         "name": "Physics II",
@@ -3531,7 +3656,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Honors Physics II": {
         "name": "Honors Physics II",
@@ -3560,7 +3686,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Physical Modeling": {
         "name": "Physical Modeling",
@@ -3582,7 +3709,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Materials Science": {
         "name": "Materials Science",
@@ -3599,9 +3727,9 @@
             "one_of": []
         },
         "crosslisted": [
-            "ISCI-1600",
             "CHEM-1600",
-            "ENGR-1600"
+            "ENGR-1600",
+            "ISCI-1600"
         ],
         "offered": {
             "year": "all",
@@ -3613,7 +3741,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Topics in Physics": {
         "name": "Topics in Physics",
@@ -3632,7 +3761,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Quantum Physics I": {
         "name": "Quantum Physics I",
@@ -3647,8 +3777,8 @@
             "one_of": [
                 [
                     "PHYS-1200",
-                    "MATH-1020",
-                    "PHYS-1250"
+                    "PHYS-1250",
+                    "MATH-1020"
                 ]
             ]
         },
@@ -3663,7 +3793,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Quantum Physics II": {
         "name": "Quantum Physics II",
@@ -3691,7 +3822,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Experimental Physics": {
         "name": "Experimental Physics",
@@ -3719,7 +3851,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Fundamentals of Optics": {
         "name": "Fundamentals of Optics",
@@ -3745,7 +3878,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Special Projects in Physics": {
         "name": "Special Projects in Physics",
@@ -3767,7 +3901,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Thesis": {
         "name": "Thesis",
@@ -3790,7 +3925,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introductory Quantum Mechanics": {
         "name": "Introductory Quantum Mechanics",
@@ -3817,7 +3953,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Electromagnetic Theory": {
         "name": "Electromagnetic Theory",
@@ -3849,7 +3986,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "General Relativity": {
         "name": "General Relativity",
@@ -3876,7 +4014,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Theoretical Mechanics": {
         "name": "Theoretical Mechanics",
@@ -3910,7 +4049,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Thermodynamics and Statistical Mechanics": {
         "name": "Thermodynamics and Statistical Mechanics",
@@ -3939,7 +4079,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Elementary Particle Physics": {
         "name": "Elementary Particle Physics",
@@ -3963,7 +4104,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Lasers and Optical Systems": {
         "name": "Lasers and Optical Systems",
@@ -3991,7 +4133,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Optical Communications and Integrated Optics": {
         "name": "Optical Communications and Integrated Optics",
@@ -4019,7 +4162,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "SolidState Physics": {
         "name": "SolidState Physics",
@@ -4047,7 +4191,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Computational Physics": {
         "name": "Computational Physics",
@@ -4059,8 +4204,8 @@
         ],
         "prerequisites": {
             "required": [
-                "PHYS-1100",
                 "CSCI-1100",
+                "PHYS-1100",
                 "PHYS-1200"
             ],
             "one_of": []
@@ -4075,7 +4220,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Culminating Experience Project": {
         "name": "Culminating Experience Project",
@@ -4089,16 +4235,16 @@
             "required": [],
             "one_of": [
                 [
-                    "PHYS-4630",
-                    "ASTR-4120",
-                    "PHYS-4640",
-                    "PHYS-4240",
-                    "PHYS-4620",
                     "ASTR-4240",
-                    "ASTR-4510",
                     "ASTR-4220",
-                    "PHYS-4810",
-                    "PHYS-4720"
+                    "ASTR-4510",
+                    "ASTR-4120",
+                    "PHYS-4630",
+                    "PHYS-4640",
+                    "PHYS-4620",
+                    "PHYS-4240",
+                    "PHYS-4720",
+                    "PHYS-4810"
                 ]
             ]
         },
@@ -4110,7 +4256,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Muscle  Cardiac Biology": {
         "name": "Muscle  Cardiac Biology",
@@ -4127,9 +4274,9 @@
             "one_of": []
         },
         "crosslisted": [
+            "BIOL-6470",
             "BCBP-4470",
-            "BCBP-6470",
-            "BIOL-6470"
+            "BCBP-6470"
         ],
         "offered": {
             "year": "",
@@ -4138,7 +4285,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Optics": {
         "name": "Optics",
@@ -4169,7 +4317,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introduction to Cellular and Molecular Biology Laboratory": {
         "name": "Introduction to Cellular and Molecular Biology Laboratory",
@@ -4198,7 +4347,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Global Environmental Change": {
         "name": "Global Environmental Change",
@@ -4229,7 +4379,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Intermediate Logic": {
         "name": "Intermediate Logic",
@@ -4257,7 +4408,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Cytoskeletal Biology": {
         "name": "Cytoskeletal Biology",
@@ -4283,7 +4435,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Topics in Circadian Biology": {
         "name": "Topics in Circadian Biology",
@@ -4306,7 +4459,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Computational Geometry": {
         "name": "Computational Geometry",
@@ -4335,7 +4489,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introductory Modern Physics": {
         "name": "Introductory Modern Physics",
@@ -4356,7 +4511,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introductory Classical Dynamics": {
         "name": "Introductory Classical Dynamics",
@@ -4382,7 +4538,8 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     },
     "Introductory Electromagnetic Theory": {
         "name": "Introductory Electromagnetic Theory",
@@ -4411,6 +4568,7 @@
         "properties": {
             "CI": false,
             "MR": false
-        }
+        },
+        "professors": []
     }
 }

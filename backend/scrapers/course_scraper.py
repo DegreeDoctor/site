@@ -183,6 +183,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
             cross_listed = []
             prereqs = []
             credit = []
+            professors = []
 
             
             base = int(fields[0].get('type')[-3:])
@@ -233,7 +234,8 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
                 "properties": {
                     "CI": False,
                     "MR": False
-                }
+                },
+                "professors": professors
             }
 
     return data
