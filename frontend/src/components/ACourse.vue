@@ -87,16 +87,23 @@ export default {
             }
             this.currCredit = c;
         },
+        dragged(e) {
+            e.dataTransfer.setData('text', e.target.id);
+            e.dataTransfer.dropEffect = 'move';
+        }
     },
 };
 </script>
 
 <template>
     <q-card
+        :id="course.name"
         flat
         bordered
+        draggable="true"
         class="course-card"
         color="primary"
+        @dragstart="dragged"
     >   
         <q-card-section horizontal @click.self="popup = true">
             <q-card-section class="text-subtitle1" @click.self="popup = true">

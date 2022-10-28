@@ -1,10 +1,12 @@
 <script>
 import { useStore } from "../stores/store";
 import ACourse from "../components/ACourse.vue";
+import CourseHolder from "../components/CourseHolder.vue";
 
 export default {
     components: {
-        ACourse
+        ACourse,
+        CourseHolder
     },
     data() {
         return {
@@ -39,4 +41,6 @@ export default {
 <template>
     <router-link to="quiz">test</router-link>
     <ACourse :course="crs" />
+    <CourseHolder />
+    <CourseHolder />
 </template>
