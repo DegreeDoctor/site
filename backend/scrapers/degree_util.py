@@ -21,5 +21,16 @@ def get_courses():
 
 course_dict = get_courses()
 
-def clean_list(s: str) -> str:
+def get_prgms():
+    prgms = []
+    f = open(filepath + '/data/skip_prgms.json', 'r')
+    tmp = json.load(f)
+    for prgm in tmp:
+        prgms.append(prgm)
+    f.close()
+    return prgms
+
+prgms = get_prgms()
+
+def clean_str(s: str) -> str:
     return "".join([x for x in s if x.isalnum() or x.isspace()])

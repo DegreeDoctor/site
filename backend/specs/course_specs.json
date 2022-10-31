@@ -24,7 +24,7 @@
             "CI": true,
             "MR (NEED TO BE IMPLEMENTED)": true
         },
-        "professors (NEED TO BE IMPLEMENTED)": [
+        "professors": [
             "professor1.name"
         ],
         "offered": {

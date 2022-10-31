@@ -1,0 +1,23 @@
+Badly parsed
+    Economics
+    Environmental Science
+    Information Technology and Web Science
+    Music
+
+trailing "or" or "oror" 
+    Engineering Core Curriculum
+    Accelerated Science, Technology, and Society (Law) B.S./J.D.
+
+Parsing "X-X" credits:
+    Computer and Systems Engineering
+
+"\u200bScience Core" leading artifact tag
+    Design, Innovation, and Society
+    Games and Simulation Arts and Sciences
+    Music
+    Computer and Systems Engineering
+
+Biology Summer/Fall away not parsed because sub item
+
+Credit Parsing Issues
+    Business Analytics

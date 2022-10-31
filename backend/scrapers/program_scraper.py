@@ -4,7 +4,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import subjs, course_dict, filepath
+from degree_util import subjs, prgms, course_dict, filepath, clean_str
 from collections import OrderedDict
 
 # The api key is public so it does not need to be hidden in a .env file
@@ -57,7 +57,7 @@ def course_from_string(inp, subjs):
 
 # Normalize a string, using unicode data. Remove all weird whitespace tag 
 def norm_str(str):
-    return unicodedata.normalize("NFKD",str).strip()
+    return unicodedata.normalize("NFKD",str).strip().replace("\n","").replace("\t","")
 
 # Take a list of list and remove empty list elements
 def striplist(lstr): 
@@ -66,24 +66,45 @@ def striplist(lstr):
 # splits content and normalizes the string using the token 'Credit Hours'
 def split_content(str):
     ret = []
+    str = norm_str(str)
     while (str.find("Credit Hours") != -1):
-        tmp = str.find("Credit Hours") + 16
-        ret.append(norm_str(str[:tmp]))
-        str = str[tmp:]
+        ind = str.find("Credit Hours")
+        while (ind < len(str) and not str[ind].isnumeric()):
+            ind += 1
+        if ((len(str[ind+1:]) > 0 and str[ind+1:][0] == '-') or (len(str[ind+1:]) > 1 and str[ind+1:][1] == '-')):
+            bound = ind+2
+            if str[ind+1:][0] == ' ':
+                bound += 2
+            while (bound < len(str) and str[bound].isnumeric()):
+                bound += 1
+            ret.append(norm_str(str[:bound]))
+            str = str[bound:]
+        else:
+            ret.append(norm_str(str[:ind+1]))
+            str = str[ind+1:]
+    # print(ret)
     return ret
 
 # removes footnote tags 
 def rem_footnote(str):
-    while (str.find("(See footnote") != -1):
-        str = str[:str.find("(See footnote")] + str[str.find("(See footnote") + 22:]
+    while (str.find("(") != -1 and str.find(")") != -1):
+        str = str[:str.find("(")] + str[str.find(")")+1:]
+    while (str.find("[") != -1 and str.find("]") != -1):
+        str = str[:str.find("[")] + str[str.find("]")+1:]
     return str
 
 # removes special message for arch semester
 def rem_arch(str):
-    s = "ExceptionProcess."
+    s = "ExceptionProcess"
     if (str.find(s) != -1):
         str = str[str.find(s) + len(s):]
     return str
+
+def rem_misc(str):
+    if (str.find("Or ") != -1 or str.find("OR ") != -1 or str.find("or ") != -1):
+        return str
+    else:
+        return ""
 
 # removes all unneccesary data in strings
 def rem_all(str):
@@ -130,10 +151,14 @@ def get_subj(str):
 
 # hardcoded replacement for certain strings UPDATE/FIX Later (if its possible to like... not hardcode this)
 def replace_subj(str):
+    if str.find("Elective") != -1:
+        return "Elective"
     if str == "CS" or str == "Computer Science":
         return "CSCI"
     if str == "Mathematics":
         return "MATH"
+    if str == "HASS Core" or str == "HASS  Core":
+        return "HASS"
     return str
 
 # seperates classes that may be stacked together and finds elective classes' department codes
@@ -172,6 +197,12 @@ def remove_or_from_list(inp):
         tmp = [seperate_class_list(c) for c in i]
         ret.append(tmp)
     return ret
+
+# removes leading sentences
+def rem_sent(str):
+    while (str.find(".") != -1):
+        str = str[str.find(".")+1:]
+    return str
 
 # adds classes and credits for a given set and dictionary,
 # (it is messy because we have to deal with duplicate strings 
@@ -254,27 +285,25 @@ def parse_semester(inp):
     ret = []
     for classes in inp:
         title =classes.xpath("./title")
-        title = title[0].text_content().strip()
+        title = title[0].text_content().strip()   
         
         # logic for 'extra' content
-        if title.count("Fall") == 0 and title.count("Spring") == 0 and title.count("Arch") == 0:
+        if title.count("Fall") == 0 and title.count("Spring") == 0 and title.count("Summer") == 0 and title.count("Arch") == 0:
             content = classes.xpath("./content")
             content_txt = content[0].text_content().strip()
-            
-            ret.append([title, norm_str(content_txt)])
+            ret.append([title, norm_str(rem_all(content_txt))])
 
         else:
             sem = []
             # Parsing electives include: Free electives, Hass electives, Capstones
             electives = classes.xpath("./content")
             for c in electives:
-                tmp = split_content(rem_all(c.text_content()))
+                tmp = split_content(rem_sent(rem_all(c.text_content())))
                 sem.extend(tmp)
                     
             # Parsing Major course
             block = classes.xpath("./courses")
             for b in block: 
-
                 # content is main classes, adhoc sometimes has important content
                 # that needs to be filtered
                 content = b.xpath("./include")
@@ -283,14 +312,13 @@ def parse_semester(inp):
                 s = ""
                 
                 for a in adhoc: 
-                    if (len(rem_all(a.text_content())) > 0):
+                    if (len(rem_all(rem_misc(a.text_content()))) > 0):
                         extra += rem_all(a.text_content())
-
                 # logic for adding extra content to end of normal parse        
                 for c in content:
                     if (len(c.text_content()) > 0):
                         s = norm_str(c.text_content())
-                        if (len(extra) > 0):
+                        if (len(rem_misc(extra)) > 0):
                             if (extra[0] == " "):
                                 s += extra
                             else:
@@ -320,9 +348,18 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         courses = []
         name = pathway.xpath("./title/text()")[0].strip()
 
-        # For now only parse CS
-        if (name != "Computer Science"):
+        # included to skip programs that either have really bad edge cases/are super specific programs
+        # to be decided on a later date if it is worth to refactor code for (and to keep a list of really)
+        # broken but small programs
+        check = False
+        for prgm in prgms:
+            if (name == prgm):
+                check = True
+        if (check):
             continue
+        # # For now only parse CS
+        # if (name != "Computer and Systems Engineering" ):
+        #     continue
         
         # Get program description
         desc = ""
@@ -350,8 +387,8 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
 
     return data
 
-def scrape_pathways():
-    print("Starting pathway scraping")
+def scrape_programs():
+    print("Starting program scraping")
     num_catalog = 1
     catalogs = get_catalogs()
     # take the most recent num_catalog catalogs
@@ -375,4 +412,4 @@ def scrape_pathways():
     return programs_per_year
 
 if __name__ == "__main__":
-    scrape_pathways()
+    scrape_programs()

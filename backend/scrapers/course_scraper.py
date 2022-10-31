@@ -7,7 +7,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import subjs, filepath
+from degree_util import subjs, filepath, clean_str
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
@@ -47,10 +47,6 @@ def get_course_ids(catalog_id: str) -> List[str]:
     )
     return courses_xml.xpath("//id/text()")
 
-# returns only alphanumeric characters in string
-def clean_list(s: str) -> str:
-    return "".join([x for x in s if x.isalnum() or x.isspace()])
-
 # Finds and returns a cleaned up description of the course
 def get_catalog_description(fields, course_name):
     found_name = False
@@ -65,7 +61,7 @@ def get_catalog_description(fields, course_name):
             description = field.xpath(".//*/text()")
             if description:
                 clean_description = " ".join(" ".join(description).split())
-                clean_description = clean_list(clean_description)
+                clean_description = clean_str(clean_description)
                 # Short descriptions are usually false positives
                 if clean_description.startswith("Prerequisite"):
                     return ""
@@ -176,7 +172,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
             ID = course.xpath("./content/code/text()")[0].strip()
             if ID[0] == '6' or ID[0] == '9':
                 continue
-            course_name = clean_list(course.xpath("./content/name/text()")[0].strip())
+            course_name = clean_str(course.xpath("./content/name/text()")[0].strip())
             fields = course.xpath("./content/field")
             year = ""
             semesters = []
