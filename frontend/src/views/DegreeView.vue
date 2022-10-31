@@ -11,36 +11,37 @@ export default {
     data() {
         return {
             store: useStore(),
-            crs: {
-                name: "Introduction to ALgogsd",
-                subject: "TEST",
-                ID: "1234",
-                description:
-                    "I am describing a course. blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-                credits: [1, 2, 3, 4],
-                concentration: ["conc1.name"],
-                prerequisites: ["course1.name"],
-                crosslisted: {
-                    CROSS: "1324",
-                },
-                properties: {
-                    CI: true,
-                    MR: false,
-                },
-                professors: ["The Profsessor"],
-                offered: {
-                    year: "uia",
-                    semesters: ["spring", "summer"],
-                },
-            },
+            coursesData: null
         };
     },
+    created() {
+        import('../data/courses.json').then((val) => this.coursesData = Object.freeze(val));
+    },
+    computed: {
+        templateToArray() {
+            const template = this.store.getCurrentDegree;
+            const array = [];
+            const subArray = [];
+            let year = "1";
+            for(const name in template) {
+                if(name[0] == year) {
+                    subArray.push(template[name]);
+                }
+                else {
+                    array.push(subArray);
+                    year = name[0];
+                    subArray = [];
+                }
+            }
+            
+            return array;
+        }
+    }
 };
 </script>
 
 <template>
-    <router-link to="quiz">test</router-link>
-    <ACourse :course="crs" />
+    <!-- <ACourse :course="crs" />
     <CourseHolder />
-    <CourseHolder />
+    <CourseHolder /> -->
 </template>

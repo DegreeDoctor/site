@@ -49,7 +49,61 @@ export const useStore = defineStore("main", {
                 "minors": ["Mathematics"],
                 "pathway": "Artificial Intelligence",
                 "concentration": "Artificial Intelligence",
+                "template": {
+                    "1-Fall": [
+                        "Minds and Machines",
+                        "Computer Science I",
+                        "Calculus I",
+                        "Physics I"
+                    ],
+                    "1-Spring": [
+                        "Introduction to Cognitive Science",
+                        "Introduction to Biology",
+                        "Introduction to Biology Laboratory",
+                        "Data Structures",
+                        "Calculus II"
+                    ],
+                    "2-Fall": [
+                        "Multivariable Calculus and Matrix Algebra",
+                        "Writing in Context",
+                        "Foundations of Computer Science",
+                        "Computer Organization"
+                    ],
+                    "2-Spring": [
+                        "Linear Algebra",
+                        "Strategic Writing",
+                        "Introduction to Algorithms",
+                        "Principles of Software"
+                    ],
+                    "3-Summer": [
+                        "Introduction to Artificial Intelligence",
+                        "Programming for Cognitive Science and Artificial Intelligence",
+                        "Critical Thinking",
+                        "Operating Systems"
+                    ],
+                    "3-Fall or Spring": [
+                        "Earth and Sky",
+                        "Intelligent Virtual Agents",
+                        "Introduction to Differential Equations",
+                        "Programming Languages"
+                    ],
+                    "4-Fall": [
+                        "Software Design and Documentation",
+                        "Distributed Computing Over The Internet",
+                        "Design and Analysis of Algorithms",
+                        "Open Source Software"
+                    ],
+                    "4-Spring": [
+                        "Randomized Algorithms",
+                        "Machine Learning from Data",
+                        "Computational Finance",
+                        "Natural Language Processing"
+                    ],
+                }
             };
+        },
+        updateDegree(name, degree) {
+            this.degrees[name] = degree;
         },
         removeDegree(name) {
             delete this.degrees[name];
