@@ -1,0 +1,645 @@
+b'<result>
+    <id>6545</id>
+    <name>Accelerated Science, Technology, and Society (Law) B.S./J.D.</name>
+    <altname></altname>
+    <state>
+        <code>1</code>
+        <name>Active-Visible</name>
+        <parent>
+            <code>1</code>
+            <name>Active-Visible</name>
+        </parent>
+    </state>
+    <type id="229">Baccalaureate</type>
+    <degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6330</id>
+<name>Aeronautical Engineering Curriculum</name>
+<altname></altname>
+<state>
+    <code>1</code>
+    <name>Active-Visible</name>
+    <parent>
+        <code>1</code>
+        <name>Active-Visible</name>
+    </parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6334</id>
+<name>Applied Physics</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+    <code>1</code>
+    <name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6344</id>
+<name>Architecture</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="256">Bachelor of Architecture</degreetype>
+</result>'b'<result>
+<id>6617</id>
+<name>Biological Neuroscience</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6356</id>
+<name>Biology</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6360</id>
+<name>Biomedical Engineering</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6623</id>
+<name>Biotechnology and Health Economics</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6365</id>
+<name>Building Sciences B.S.</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6552</id>
+<name>Business Analytics</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6366</id>
+<name>Business and Management</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6367</id>
+<name>Chemical Engineering</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6371</id>
+<name>Chemistry </name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6522</id>
+<name>Chemistry - Chemical Biology Track</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6618</id>
+<name>Chemistry - Industrial Chemistry Track</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6380</id>
+<name>Civil Engineering</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6382</id>
+<name>Cognitive Science</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6536</id>
+<name>Communication, Media, and Design</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6385</id>
+<name>Computer and Systems Engineering</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6389</id>
+<name>Computer Science</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6399</id>
+<name>Design, Innovation, and Society</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6497</id>
+<name>Design, Innovation, and Society/Mechanical Engineering</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6401</id>
+<name>Economics</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6408</id>
+<name>Electrical Engineering</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6414</id>
+<name>Electronic Arts</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6512</id>
+<name>Engineering Core Curriculum</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6521</id>
+<name>Engineering Science</name>
+<altname></altname>
+<state>
+<code>2</code>
+<name>Active-Hidden</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6421</id>
+<name>Environmental Engineering</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6423</id>
+<name>Environmental Science</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6427</id>
+<name>Games and Simulation Arts and Sciences</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6429</id>
+<name>Geology</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6436</id>
+<name>Hydrogeology</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6438</id>
+<name>Industrial and Management Engineering</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6441</id>
+<name>Information Technology and Web Science</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6463</id>
+<name>Materials Engineering</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6467</id>
+<name>Mathematics</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6473</id>
+<name>Mechanical Engineering Curriculum</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6530</id>
+<name>Music</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6482</id>
+<name>Nuclear Engineering Curriculum</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6485</id>
+<name>Philosophy</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6487</id>
+<name>Physician-Scientist</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6488</id>
+<name>Physics</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6494</id>
+<name>Program for Graduates of Naval Nuclear Power Training Command\'s Nuclear Power School</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6495</id>
+<name>Psychological Science</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6498</id>
+<name>Science, Technology, and Society</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'b'<result>
+<id>6510</id>
+<name>Sustainability Studies</name>
+<altname></altname>
+<state>
+<code>1</code>
+<name>Active-Visible</name>
+<parent>
+<code>1</code>
+<name>Active-Visible</name>
+</parent>
+</state>
+<type id="229">Baccalaureate</type>
+<degreetype id="257">Bachelor of Science</degreetype>
+</result>'
