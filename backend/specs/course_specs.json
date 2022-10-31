@@ -1,0 +1,35 @@
+{
+    "name (name can only have alphanumeric characters)" : {
+        "name": "course name",
+        "subject": "SUBJ (4 letters long, ex: CSCI)",
+        "ID": "1234 (4 digit number)",
+        "description": "string",
+        "credits": [1,2,4],
+        "concentration (NEED TO BE IMPLEMENTED)": ["conc1.name"], 
+        "prerequisites": {
+            "req" : [
+                "MATH 1100"
+            ],
+            "one_of": [
+                [
+                "CSCI 1200",
+                "CSCI 1100"
+                ]
+            ]
+        },
+        "crosslisted": {
+            "SUBJ": "ID"
+        },
+        "properties": {
+            "CI": true,
+            "MR (NEED TO BE IMPLEMENTED)": true
+        },
+        "professors (NEED TO BE IMPLEMENTED)": [
+            "professor1.name"
+        ],
+        "offered": {
+            "year": "even/odd/all/uia",
+            "semesters": ["spring"]
+        }
+    }
+}
