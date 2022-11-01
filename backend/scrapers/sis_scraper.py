@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 import requests
 import datetime
+import os
 
 
 '''
@@ -17,9 +18,9 @@ def year_generator():
     yearList = list(range(currYear - 3, currYear + 1))
     finalList = []
     for year in yearList:
-        finalList.append(year + '09') #Fall
-        finalList.append(year + '01') #Spring
-        finalList.append(year + '05') #Arch
+        finalList.append(str(year) + '09') #Fall
+        finalList.append(str(year) + '01') #Spring
+        finalList.append(str(year) + '05') #Arch
     return finalList
 
 
@@ -32,7 +33,8 @@ the professors of the course and if it is CI(communication intensive)
 It stores this information and then updates the .json file of courses with it.
 '''
 def sis_scraper():
-    f = open('data/courses.json','r')   #Opens the .json file and stores it as a python object
+    filepath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    f = open(filepath + '/data/courses.json','r')   #Opens the .json file and stores it as a python object
     courseJson = json.load(f)
     f.close()
 
@@ -71,11 +73,12 @@ def sis_scraper():
         instructorStorage = [*set(instructorStorage)]
         courseJson[course]['professors'] = instructorStorage
         courseJson[course]['properties']['CI'] = CI
-        f2 = open('data/courses.json', 'w')
+        f2 = open(filepath + '/data/courses.json', 'w')
         json.dump(courseJson, f2, sort_keys=True, indent=2, ensure_ascii=False)
         f2.close()
             
-
+if __name__ == '__main__':
+    sis_scraper()
         
        
 
