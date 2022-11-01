@@ -4,7 +4,7 @@ import ACourse from "../components/ACourse.vue";
 
 export default {
     components: {
-        ACourse,
+        ACourse
     },
     data() {
         return {
