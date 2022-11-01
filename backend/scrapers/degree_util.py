@@ -1,5 +1,9 @@
 import json
 import os
+from typing import Dict, List, Tuple
+import requests
+from lxml import html
+from tqdm import tqdm
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
