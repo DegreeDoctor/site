@@ -5,24 +5,28 @@ from tqdm import tqdm
 import requests
 import datetime
 import os
+from degree_util import get_catalogs
 
 
 '''
-year_generator uses the datetime library to grab the current year.
-With this it creates a list of the past 4 years, including the current year.
-Finally, it creates a new list of each of the aforementioned years including the semester call codes for
-SIS calls.
+year_generator makes use of the get_catalogs function
+from the degree_util file which gives a list of all years with catalog data.
+from there I take the most recent 4 years and clean them up to use in the sis_scraper.
 '''
 def year_generator():
-    currYear = (datetime.date.today()).year  
-    yearList = list(range(currYear - 3, currYear + 1))
+    catalog = get_catalogs()
+    years = catalog[:4]
+    yearList = []
+    for pair in years:
+        yearList.append(pair[0][-4:])
     finalList = []
     for year in yearList:
-        finalList.append(str(year) + '09') #Fall
-        finalList.append(str(year) + '01') #Spring
-        finalList.append(str(year) + '05') #Arch
+        finalList.append(str(year) + '01') 
+        finalList.append(str(year) + '05')
+        finalList.append(str(year) + '09')
     return finalList
 
+    
 
 
 '''
@@ -37,12 +41,10 @@ def sis_scraper():
     f = open(filepath + '/data/courses.json','r')   #Opens the .json file and stores it as a python object
     courseJson = json.load(f)
     f.close()
-
+    years = year_generator()
     for course in tqdm(courseJson): #Iterates through every course
         instructorStorage = []
         CI = False
-        years = year_generator()
-
         for currYear in years: #For every course we iterate through every year and open the respective webpage
             page = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse"
             webpage_response = requests.get(page + '?term_in=' + currYear + '&subj_in=' + courseJson[course]["subj"] + '&crse_in=' + courseJson[course]["ID"] + '&schd_in=L')
