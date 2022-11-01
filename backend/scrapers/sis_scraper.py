@@ -11,7 +11,7 @@ from degree_util import get_catalogs
 '''
 year_generator makes use of the get_catalogs function
 from the degree_util file which gives a list of all years with catalog data.
-from there I take the most recent 4 years and clean them up to use in the sis_scraper.
+from there it takes the most recent 4 years and cleans them up to then be used in the sis_scraper.
 '''
 def year_generator():
     catalog = get_catalogs()
