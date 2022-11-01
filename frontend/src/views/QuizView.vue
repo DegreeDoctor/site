@@ -159,42 +159,18 @@ export default {
 
 <template>
     <q-form action="https://some-url.com" method="post" class="fixed-center">
+        <p>Enter Your Plan Name:</p>
+        <q-input standout="bg-teal text-white" v-model="text" label="My Course Plan" />
         <p>Select Your Major(s):</p>
-        <q-select
-            v-model="selectedMajors"
-            filled
-            use-input
-            use-chips
-            multiple
-            input-debounce="0"
-            :options="filteredMajors"
-            style="width: 250px"
-            @new-value="addMajor"
-            @input-value="filterMajor"
-        />
+        <q-select standout="bg-teal text-white" v-model="selectedMajors" filled use-input use-chips multiple
+            input-debounce="0" :options="filteredMajors" style="width: 250px" @new-value="addMajor"
+            @input-value="filterMajor" />
         <p>Select Your Minor(s):</p>
-        <q-select
-            v-model="selectedMinors"
-            filled
-            use-input
-            use-chips
-            multiple
-            input-debounce="0"
-            :options="filteredMinors"
-            style="width: 250px"
-            @new-value="addMinor"
-            @input-value="filterMinor"
-        />
+        <q-select standout="bg-teal text-white" v-model="selectedMinors" filled use-input use-chips multiple
+            input-debounce="0" :options="filteredMinors" style="width: 250px" @new-value="addMinor"
+            @input-value="filterMinor" />
         <p>Select Your Pathway(s):</p>
-        <q-select
-            v-model="selectedPathways"
-            filled
-            use-input
-            input-debounce="0"
-            :options="filteredPathways"
-            style="width: 250px"
-            @new-value="addPathway"
-            @input-value="filterPathway"
-        />
+        <q-select standout="bg-teal text-white" v-model="selectedPathways" filled use-input input-debounce="0"
+            :options="filteredPathways" style="width: 250px" @new-value="addPathway" @input-value="filterPathway" />
     </q-form>
 </template>
