@@ -7,7 +7,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import subjs, filepath, get_catalogs
+from degree_util import subjs, filepath, get_catalogs, root
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
@@ -135,7 +135,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
         course_ids[i : i + CHUNK_SIZE] for i in range(0, len(course_ids), CHUNK_SIZE)
     ]
     subj_input = []
-    f = open(filepath + '/data/input.json', 'r')
+    f = open(root + '/frontend/src/data/input.json', 'r')
     f = json.load(f)
     for subj in f:
         subj_input.append(subj)
@@ -232,7 +232,7 @@ def scrape_courses():
     json_object = json.dumps(courses_per_year, indent=4)
  
     # Writing to sample.json
-    with open(filepath + "/data/courses.json", "w") as outfile:
+    with open(root + "/frontend/src/data/courses.json", "w") as outfile:
         outfile.write(json_object)
         print("Finished courses scraping")
     

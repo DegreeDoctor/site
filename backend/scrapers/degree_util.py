@@ -13,10 +13,11 @@ CHUNK_SIZE = 500
 
 
 filepath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+root = os.path.dirname(filepath)
 # Opens the subjects.JSON and returns a list of subject code
 def get_subjs():
     subjs = []
-    f = open(filepath + '/data/subjs.json', 'r') #make sure to close at end of file
+    f = open(root + '/frontend/src/data/subjs.json', 'r') #make sure to close at end of file
     tmp = json.load(f)
     for subj in tmp:
         subjs.append(subj)
@@ -26,7 +27,7 @@ def get_subjs():
 subjs = get_subjs()
 
 def get_courses():
-    f = open(filepath + '/data/courses.json','r')
+    f = open(root + '/frontend/src/data/courses.json','r')
     ret = json.load(f)
     f.close()
     return ret

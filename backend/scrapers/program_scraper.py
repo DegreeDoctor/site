@@ -4,7 +4,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import subjs, course_dict, filepath, get_catalogs
+from degree_util import subjs, course_dict, filepath, get_catalogs, root
 from collections import OrderedDict
 
 # The api key is public so it does not need to be hidden in a .env file
@@ -297,8 +297,8 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         name = pathway.xpath("./title/text()")[0].strip()
 
         # For now only parse CS
-        if (name != "Computer Science"):
-            continue
+        # if (name != "Computer Science"):
+        #     continue
         
         # Get program description
         desc = ""
@@ -343,10 +343,9 @@ def scrape_pathways():
         programs_per_year[year] = data
     print("Finished program scraping")
 
-    
     # create JSON obj and write it to file
     json_object = json.dumps(programs_per_year, indent=4)
-    with open(filepath + "/data/programs.json", "w") as outfile:
+    with open(root + "/frontend/src/data/programs.json", "w") as outfile:
         outfile.write(json_object)
     return programs_per_year
 
