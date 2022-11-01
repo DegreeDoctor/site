@@ -108,7 +108,7 @@ export default {
             "Crizbae is a Monkey3",
             "Crizbae is a Monkey4",
             "Crizbae is a Monkey5",
-        ]
+        ];
         return {
             store: useStore(),
             selectedMajors: [],
@@ -167,8 +167,8 @@ export default {
             }
         },
         filterConcentration(val) {
-            this.filteredConcentrations = this.concentrationOptions.filter((x) =>
-                x.toLowerCase().includes(val.toLowerCase())
+            this.filteredConcentrations = this.concentrationOptions.filter(
+                (x) => x.toLowerCase().includes(val.toLowerCase())
             );
         },
         addConcentration(val) {
@@ -183,26 +183,71 @@ export default {
 </script>
 
 <template>
-    <q-form action="https://some-url.com" method="post" class="full-width column wrap justify-center items-center content-center">
+    <q-form
+        action="https://some-url.com"
+        method="post"
+        class="full-width column wrap justify-center items-center content-center"
+    >
         <p>Enter Your Plan Name:</p>
-        <q-input standout="bg-teal text-white" v-model="text" label="My Course Plan" />
+        <q-input
+            v-model="text"
+            standout="bg-teal text-white"
+            label="My Course Plan"
+        />
         <p>Select Your Major(s):</p>
-        <q-select standout="bg-teal text-white" v-model="selectedMajors" filled use-input use-chips multiple
-            input-debounce="0" :options="filteredMajors" style="width: 250px" @new-value="addMajor"
-            @input-value="filterMajor" />
+        <q-select
+            v-model="selectedMajors"
+            standout="bg-teal text-white"
+            filled
+            use-input
+            use-chips
+            multiple
+            input-debounce="0"
+            :options="filteredMajors"
+            style="width: 250px"
+            @new-value="addMajor"
+            @input-value="filterMajor"
+        />
         <p>Select Your Minor(s):</p>
-        <q-select standout="bg-teal text-white" v-model="selectedMinors" filled use-input use-chips multiple
-            input-debounce="0" :options="filteredMinors" style="width: 250px" @new-value="addMinor"
-            @input-value="filterMinor" />
+        <q-select
+            v-model="selectedMinors"
+            standout="bg-teal text-white"
+            filled
+            use-input
+            use-chips
+            multiple
+            input-debounce="0"
+            :options="filteredMinors"
+            style="width: 250px"
+            @new-value="addMinor"
+            @input-value="filterMinor"
+        />
         <p>Select Your Pathway(s):</p>
-        <q-select standout="bg-teal text-white" v-model="selectedPathways" filled use-input input-debounce="0"
-            :options="filteredPathways" style="width: 250px" @new-value="addPathway" @input-value="filterPathway" />
+        <q-select
+            v-model="selectedPathways"
+            standout="bg-teal text-white"
+            filled
+            use-input
+            input-debounce="0"
+            :options="filteredPathways"
+            style="width: 250px"
+            @new-value="addPathway"
+            @input-value="filterPathway"
+        />
         <p>Select Your Concentration(s):</p>
-        <q-select standout="bg-teal text-white" v-model="selectedConcentrations" filled use-input input-debounce="0"
-            :options="filteredConcentrations" style="width: 250px; padding-bottom: 20px;" @new-value="addConcentration"
-            @input-value="filterConcentration" />
+        <q-select
+            v-model="selectedConcentrations"
+            standout="bg-teal text-white"
+            filled
+            use-input
+            input-debounce="0"
+            :options="filteredConcentrations"
+            style="width: 250px; padding-bottom: 20px"
+            @new-value="addConcentration"
+            @input-value="filterConcentration"
+        />
         <div>
-            <q-btn label="Submit" type="submit" color="primary"/>
+            <q-btn label="Submit" type="submit" color="primary" />
         </div>
     </q-form>
 </template>
