@@ -4,7 +4,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import subjs, prgms, course_dict, filepath, norm_str, striplist
+from degree_util import subjs, prgms, course_dict, root, get_catalogs, norm_str, striplist
 from collections import OrderedDict
 
 # The api key is public so it does not need to be hidden in a .env file
@@ -12,30 +12,6 @@ BASE_URL = "http://rpi.apis.acalog.com/v1/"
 # It is ok to publish this key because I found it online already public
 DEFAULT_QUERY_PARAMS = "?key=3eef8a28f26fb2bcc514e6f1938929a1f9317628&format=xml"
 CHUNK_SIZE = 500
-
-# returns the list of catalogs with the newest one being first
-# each catalog is a tuple (year, catalog_id) ex: ('2020-2021', 21)
-def get_catalogs() -> List[Tuple[str, int]]:
-    catalogs_xml = html.fromstring(
-        requests.get(
-            f"{BASE_URL}content{DEFAULT_QUERY_PARAMS}&method=getCatalogs"
-        ).text.encode("utf8")
-    )
-    catalogs = catalogs_xml.xpath("//catalogs/catalog")
-
-    ret: List[Tuple[str, int]] = []
-    # For each catalog get its year and id and add that as as tuples to ret
-    for catalog in catalogs:
-        catalog_id: int = catalog.xpath("@id")[0].split("acalog-catalog-")[1]
-        catalog_year: str = catalog.xpath(".//title/text()")[0].split(
-            "Rensselaer Catalog "
-        )[1]
-        ret.append((catalog_year, catalog_id))
-
-    # sort so that the newest catalog is always first
-    ret.sort(key=lambda tup: tup[0], reverse=True)
-    return ret
-
 
 # Returns a list of program ids for a given catalog
 def get_program_ids(catalog_id: str) -> List[str]:
@@ -74,6 +50,15 @@ def split_content(str):
         else:
             ret.append(rem_lor(norm_str(str[:ind+1])))
             str = str[ind+1:]
+    return ret
+
+# seperates class strings into seperates if there exists
+# more than one option
+def seperate_class_list(inp):
+    ret = []
+    tmp = inp.split(" or ")
+    for t in tmp:
+        ret.extend(t.split(" Or "))
     return ret
 
 # removes ' or ' from lists for duplicate classes
@@ -167,10 +152,8 @@ def get_subj(str):
 
 def strip_subj(str):
     if (len(get_subj(str)) == 0):
-        return str
-
+        return rep_subj_template(str)
     fnd = str.find(" - ")
-    # print(str,": ",fnd)
     if (fnd != -1):
         str = str[fnd+3:]
     return str
@@ -178,8 +161,24 @@ def strip_subj(str):
 def strip_list(inp):
     return [strip_subj(x) for x in inp]
 
+def trim_space(str):
+    while (str.find("  ") != -1):
+        str = str.replace("  "," ");
+    return str
+
+def rep_subj_template(str):
+    str = trim_space(str)
+    li = [('HASS Core','HASS'), ('Mathematics','MATH'), ('CS', 'CSCI'), ('Computer Science','CSCI'),
+    ('Science', 'SCIS')]
+    if str.find("Elective") != -1 or str.find("Option") != -1:
+        for a,b in li:
+            if (str.find(a) != -1):
+                return str[:str.find(a)] + b + str[str.find(a) + len(a):]
+
+    return str
+
 # hardcoded replacement for certain strings UPDATE/FIX Later (if its possible to like... not hardcode this)
-def replace_subj(str):
+def rep_subj(str):
     if str.find("Elective") != -1:
         return "Elective"
     if str == "CS" or str == "Computer Science":
@@ -188,6 +187,8 @@ def replace_subj(str):
         return "MATH"
     if str == "HASS Core" or str == "HASS  Core":
         return "HASS"
+    if str == "Science":
+        return "SCIS"
     return str
 
 # seperates classes that may be stacked together and finds elective classes' department codes
@@ -198,19 +199,16 @@ def get_elec(str):
         fnd_e = s.find("Elective")
         fnd_o = s.find("Option")
         if fnd_e != -1:
-            ret.append(replace_subj(s[0:fnd_e-1]))
+            ret.append(rep_subj(s[0:fnd_e-1]))
         if fnd_o != -1:
-            ret.append(replace_subj(s[0:fnd_o-1]))
+            ret.append(rep_subj(s[0:fnd_o-1]))
     return ret
 
-# seperates class strings into seperates if there exists
-# more than one option
-def seperate_class_list(inp):
-    ret = []
-    tmp = inp.split(" or ")
-    for t in tmp:
-        ret.extend(t.split(" Or "))
-    return ret
+# get max credits from electives
+def get_elec_cred(str):
+    if (str[len(str)-1].isnumeric()):
+        return int(str[len(str)-1])
+    return 4
 
 # adds classes and credits for a given set and dictionary,
 # (it is messy because we have to deal with duplicate strings 
@@ -220,12 +218,13 @@ def add_classes_and_credits(str,ret_set,ret_dict):
     if (len(get_subj(str)) > 0):
         ret_set.add(strip_subj(str))
     else:
-        tmp = get_elec(str)
+        tmp = get_elec(str.strip())
         for t in tmp:
+            cred = get_elec_cred(str)
             if ret_dict.get(t) != None:
-                ret_dict[t] += 4
+                ret_dict[t] += cred
             else: 
-                ret_dict[t] = 4
+                ret_dict[t] = cred
     return (ret_set,ret_dict)
 
 # looks through course.json and returns credit amounts for classes
@@ -253,7 +252,6 @@ def generate_requirements(inp):
     inp = inp[:8]
     # prepares input by splitting multiple classes into their own sections
     inp = remove_or_from_list(inp)
-
     # logic for each sem/class
     for sem in inp:
         for item in sem:
@@ -268,7 +266,6 @@ def generate_requirements(inp):
     # duplicates show up twice on catalog so we must halve values and use a set for
     # named classes such that we do not double count
     duplicates = {key: int(value / 2) for key, value in duplicates.items()}
-
     # add our duplicates to our main requirements
     for key in duplicates.keys():
         if ret.get(key) != None:
@@ -283,7 +280,6 @@ def generate_requirements(inp):
             ret[key] = tmp[1:][0]
         elif (len(tmp) == 1):
             ret[key] = tmp[0]
-    
     return ret
 
 # takes in xml file of of one semester of courses
@@ -365,8 +361,8 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         if (check):
             continue
         # # For now only parse CS
-        # if (name != "Economics" ):
-        #     continue
+        if (name != "Computer Science" ):
+            continue
         
         # Get program description
         desc = ""
@@ -418,7 +414,7 @@ def scrape_programs():
     
     # create JSON obj and write it to file
     json_object = json.dumps(programs_per_year, indent=4)
-    with open(filepath + "/data/programs.json", "w") as outfile:
+    with open(root + "/frontend/src/data/programs.json", "w") as outfile:
         outfile.write(json_object)
     return programs_per_year
 
