@@ -52,6 +52,7 @@ export default {
             "Other",
         ];
         const pathways = [
+            "None",
             "Art History, Theory, and Criticism",
             "Artificial Intelligence",
             "Behavioral and Cognitive Neuroscience",
@@ -100,6 +101,14 @@ export default {
             "Video, Performance, and Social Practice",
             "Well-being: Body and Mind",
         ];
+        const concentrations = [
+            "None",
+            "Crizbae is a Monkey1",
+            "Crizbae is a Monkey2",
+            "Crizbae is a Monkey3",
+            "Crizbae is a Monkey4",
+            "Crizbae is a Monkey5",
+        ]
         return {
             store: useStore(),
             selectedMajors: [],
@@ -110,10 +119,14 @@ export default {
             minorSearch: "",
             minorOptions: minors,
             filteredMinors: minors,
-            selectedPathways: [],
+            selectedPathways: "None",
             pathwaySearch: "",
             pathwayOptions: pathways,
             filteredPathways: pathways,
+            selectedConcentrations: "None",
+            concentrationSearch: "",
+            concentrationOptions: concentrations,
+            filteredConcentrations: concentrations,
         };
     },
     methods: {
@@ -153,12 +166,24 @@ export default {
                 }
             }
         },
+        filterConcentration(val) {
+            this.filteredConcentrations = this.concentrationOptions.filter((x) =>
+                x.toLowerCase().includes(val.toLowerCase())
+            );
+        },
+        addConcentration(val) {
+            if (val.length > 0) {
+                if (!this.selectedConcentrations.includes(val)) {
+                    this.selectedConcentrations.push(val);
+                }
+            }
+        },
     },
 };
 </script>
 
 <template>
-    <q-form action="https://some-url.com" method="post" class="fixed-center">
+    <q-form action="https://some-url.com" method="post" class="full-width column wrap justify-center items-center content-center">
         <p>Enter Your Plan Name:</p>
         <q-input standout="bg-teal text-white" v-model="text" label="My Course Plan" />
         <p>Select Your Major(s):</p>
@@ -172,5 +197,12 @@ export default {
         <p>Select Your Pathway(s):</p>
         <q-select standout="bg-teal text-white" v-model="selectedPathways" filled use-input input-debounce="0"
             :options="filteredPathways" style="width: 250px" @new-value="addPathway" @input-value="filterPathway" />
+        <p>Select Your Concentration(s):</p>
+        <q-select standout="bg-teal text-white" v-model="selectedConcentrations" filled use-input input-debounce="0"
+            :options="filteredConcentrations" style="width: 250px; padding-bottom: 20px;" @new-value="addConcentration"
+            @input-value="filterConcentration" />
+        <div>
+            <q-btn label="Submit" type="submit" color="primary"/>
+        </div>
     </q-form>
 </template>
