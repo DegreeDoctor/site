@@ -51,6 +51,55 @@ export default {
             "Arabic",
             "Other",
         ];
+        const pathways = [
+            "Art History, Theory, and Criticism",
+            "Artificial Intelligence",
+            "Behavioral and Cognitive Neuroscience",
+            "Chinese Language",
+            "Creative Design and Innovation",
+            "Design, Innovation, and Society Pathway",
+            "Economics",
+            "Economics of Banking and Finance",
+            "Economics of Decision-Making",
+            "Economics of Healthcare Markets",
+            "Economics of Policy and Regulations",
+            "Economics of Quantitative Modeling",
+            "Economics of Technology and Innovation",
+            "Electronic Arts",
+            "Environmental Futures",
+            "Ethics, Integrity, and Social Responsibility",
+            "Extent and Limits of Rationality",
+            "Fact and Fiction",
+            "Game Studies",
+            "Gender, Race, Sexuality, Ethnicity, and Social Change",
+            "Graphic Design",
+            "History",
+            "Information Technology and Web Sciences",
+            "Interactive Media/Data Design",
+            "Language",
+            "Linguistics",
+            "Literature and Creative Writing",
+            "Living in a World of Data",
+            "Logical Thinking",
+            "Media and Culture",
+            "Mind, Brain, and Intelligence",
+            "Music and Culture",
+            "Music Composition and Production",
+            "Music Performance",
+            "Philosophy",
+            "Pre-Health Pathway",
+            "Public Health",
+            "Science, Technology, and Society",
+            "Strategic Communication",
+            "Studio Arts",
+            "Sustainability",
+            "Thinking with Science",
+            "Transfer Student Arts and Humanities",
+            "Transfer Student Social Science",
+            "Understanding Human Behavior",
+            "Video, Performance, and Social Practice",
+            "Well-being: Body and Mind",
+        ];
         return {
             store: useStore(),
             selectedMajors: [],
@@ -61,6 +110,10 @@ export default {
             minorSearch: "",
             minorOptions: minors,
             filteredMinors: minors,
+            selectedPathways: [],
+            pathwaySearch: "",
+            pathwayOptions: pathways,
+            filteredPathways: pathways,
         };
     },
     methods: {
@@ -87,6 +140,18 @@ export default {
             this.filteredMinors = this.minorOptions.filter((x) =>
                 x.toLowerCase().includes(val.toLowerCase())
             );
+        },
+        filterPathway(val) {
+            this.filteredPathways = this.pathwayOptions.filter((x) =>
+                x.toLowerCase().includes(val.toLowerCase())
+            );
+        },
+        addPathway(val) {
+            if (val.length > 0) {
+                if (!this.selectedPathways.includes(val)) {
+                    this.selectedPathways.push(val);
+                }
+            }
         },
     },
 };
@@ -119,6 +184,17 @@ export default {
             style="width: 250px"
             @new-value="addMinor"
             @input-value="filterMinor"
+        />
+        <p>Select Your Pathway(s):</p>
+        <q-select
+            v-model="selectedPathways"
+            filled
+            use-input
+            input-debounce="0"
+            :options="filteredPathways"
+            style="width: 250px"
+            @new-value="addPathway"
+            @input-value="filterPathway"
         />
     </q-form>
 </template>
