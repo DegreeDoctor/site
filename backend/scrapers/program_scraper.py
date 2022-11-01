@@ -4,7 +4,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import subjs, prgms, course_dict, filepath, clean_str
+from degree_util import subjs, prgms, course_dict, filepath, norm_str, striplist
 from collections import OrderedDict
 
 # The api key is public so it does not need to be hidden in a .env file
@@ -55,14 +55,6 @@ def course_from_string(inp, subjs):
                 if inp[fnd+5] != '6':
                     return inp[fnd:fnd+4] + inp[fnd+5:fnd+9]
 
-# Normalize a string, using unicode data. Remove all weird whitespace tag 
-def norm_str(str):
-    return unicodedata.normalize("NFKD",str).strip().replace("\n","").replace("\t","")
-
-# Take a list of list and remove empty list elements
-def striplist(lstr): 
-    return list(filter(None, lstr))
-
 # splits content and normalizes the string using the token 'Credit Hours'
 def split_content(str):
     ret = []
@@ -77,13 +69,26 @@ def split_content(str):
                 bound += 2
             while (bound < len(str) and str[bound].isnumeric()):
                 bound += 1
-            ret.append(norm_str(str[:bound]))
+            ret.append(rem_lor(norm_str(str[:bound])))
             str = str[bound:]
         else:
-            ret.append(norm_str(str[:ind+1]))
+            ret.append(rem_lor(norm_str(str[:ind+1])))
             str = str[ind+1:]
-    # print(ret)
     return ret
+
+# removes ' or ' from lists for duplicate classes
+def remove_or_from_list(inp):
+    ret = []
+    for i in inp:
+        tmp = [seperate_class_list(c) for c in i]
+        ret.append(tmp)
+    return ret
+
+# removes leading sentences
+def rem_sent(str):
+    while (str.find(".") != -1):
+        str = str[str.find(".")+1:]
+    return str
 
 # removes footnote tags 
 def rem_footnote(str):
@@ -100,11 +105,22 @@ def rem_arch(str):
         str = str[str.find(s) + len(s):]
     return str
 
+# case to check if this is additional info attached in extra
 def rem_misc(str):
-    if (str.find("Or ") != -1 or str.find("OR ") != -1 or str.find("or ") != -1):
+    tmp = str.lower()
+    fnd = tmp.find("or ")
+    if (fnd != -1):
         return str
     else:
         return ""
+
+# case for leading or's
+def rem_lor(str):
+    tmp = str.lower()
+    fnd = tmp.find("or ")
+    if (fnd != -1 and fnd == 0):
+        str = str[fnd+3:]
+    return str
 
 # removes all unneccesary data in strings
 def rem_all(str):
@@ -149,6 +165,19 @@ def get_subj(str):
             return str[fnd:fnd+4]
     return ""
 
+def strip_subj(str):
+    if (len(get_subj(str)) == 0):
+        return str
+
+    fnd = str.find(" - ")
+    # print(str,": ",fnd)
+    if (fnd != -1):
+        str = str[fnd+3:]
+    return str
+
+def strip_list(inp):
+    return [strip_subj(x) for x in inp]
+
 # hardcoded replacement for certain strings UPDATE/FIX Later (if its possible to like... not hardcode this)
 def replace_subj(str):
     if str.find("Elective") != -1:
@@ -174,13 +203,6 @@ def get_elec(str):
             ret.append(replace_subj(s[0:fnd_o-1]))
     return ret
 
-# seperates the class name from the subj code for parsing
-def seperate_class(str):
-    fnd = str.find(" - ")
-    if fnd != -1:
-        return str[fnd+3:]
-    return str
-
 # seperates class strings into seperates if there exists
 # more than one option
 def seperate_class_list(inp):
@@ -190,27 +212,13 @@ def seperate_class_list(inp):
         ret.extend(t.split(" Or "))
     return ret
 
-# removes ' or ' from lists for duplicate classes
-def remove_or_from_list(inp):
-    ret = []
-    for i in inp:
-        tmp = [seperate_class_list(c) for c in i]
-        ret.append(tmp)
-    return ret
-
-# removes leading sentences
-def rem_sent(str):
-    while (str.find(".") != -1):
-        str = str[str.find(".")+1:]
-    return str
-
 # adds classes and credits for a given set and dictionary,
 # (it is messy because we have to deal with duplicate strings 
 # which may not be equal but have same classes and are therefore 
 # very hard to parse properly without extra logic)
 def add_classes_and_credits(str,ret_set,ret_dict):
     if (len(get_subj(str)) > 0):
-        ret_set.add(seperate_class(str))
+        ret_set.add(strip_subj(str))
     else:
         tmp = get_elec(str)
         for t in tmp:
@@ -236,7 +244,6 @@ def generate_credits(inp):
 
 # generates the credit requirements for classes for the programs.json file
 def generate_requirements(inp):
-
     # we must handle duplicates seperately as parsing is problematic
     ret = {}
     duplicates = {}
@@ -298,7 +305,7 @@ def parse_semester(inp):
             # Parsing electives include: Free electives, Hass electives, Capstones
             electives = classes.xpath("./content")
             for c in electives:
-                tmp = split_content(rem_sent(rem_all(c.text_content())))
+                tmp = split_content(rem_sent(rem_all(norm_str(c.text_content()))))
                 sem.extend(tmp)
                     
             # Parsing Major course
@@ -313,7 +320,7 @@ def parse_semester(inp):
                 
                 for a in adhoc: 
                     if (len(rem_all(rem_misc(a.text_content()))) > 0):
-                        extra += rem_all(a.text_content())
+                        extra += rem_all(norm_str(a.text_content()))
                 # logic for adding extra content to end of normal parse        
                 for c in content:
                     if (len(c.text_content()) > 0):
@@ -358,14 +365,14 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         if (check):
             continue
         # # For now only parse CS
-        # if (name != "Computer and Systems Engineering" ):
+        # if (name != "Economics" ):
         #     continue
         
         # Get program description
         desc = ""
         if len(pathway.xpath("./content/p/text()")) >= 1:
             desc = pathway.xpath("./content/p/text()")[0].strip()
-            desc = ' '.join(desc.split())
+            desc = norm_str(' '.join(desc.split()))
         
         # Get the list of years in the program
         cores = pathway.xpath("./cores/core")
@@ -376,6 +383,10 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         
         requirements = generate_requirements(courses)
         credit = generate_credits(requirements)
+
+        # this is neccesary for frontend visibility (we no longer
+        # want to distinguish between named and elective classes)
+        courses = [strip_list(x) for x in courses]
         template = parse_template(courses)
         data[name] = {
                 "name": name,

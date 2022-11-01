@@ -7,7 +7,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import subjs, filepath, clean_str
+from degree_util import subjs, filepath, clean_str, norm_str
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
@@ -94,7 +94,7 @@ def split_req(str):
 # uses unicodedata to normalize str and then splits pre-requirements into
 # 'required' and 'one_of'
 def get_prereq(str): 
-    str = unicodedata.normalize("NFKD",str)
+    str = norm_str(str)
     reqs = []
     one_of = []
     reqset = split_req(str)
