@@ -42,12 +42,13 @@ def sis_scraper():
     courseJson = json.load(f)
     f.close()
     years = year_generator()
+    s = requests.Session()
     for course in tqdm(courseJson): #Iterates through every course
         instructorStorage = []
         CI = False
         for currYear in years: #For every course we iterate through every year and open the respective webpage
             page = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse"
-            webpage_response = requests.get(page + '?term_in=' + currYear + '&subj_in=' + courseJson[course]["subj"] + '&crse_in=' + courseJson[course]["ID"] + '&schd_in=L')
+            webpage_response = s.get(page + '?term_in=' + currYear + '&subj_in=' + courseJson[course]["subj"] + '&crse_in=' + courseJson[course]["ID"] + '&schd_in=L')
             webpage = webpage_response.content
             soup = BeautifulSoup(webpage, "html.parser")
 
