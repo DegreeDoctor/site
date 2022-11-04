@@ -68,7 +68,7 @@ def get_catalogs() -> List[Tuple[str, int]]:
     # sort so that the newest catalog is always first
     ret.sort(key=lambda tup: tup[0], reverse=True)
     return ret
-
+    
 # QOL functions 
 def clean_str(s: str) -> str:
     return "".join([x for x in s if x.isalnum() or x.isspace()])
