@@ -112,6 +112,7 @@ export default {
         return {
             store: useStore(),
             selectedMajors: [],
+            degreeName: "",
             majorSearch: "",
             majorOptions: majors,
             filteredMajors: majors,
@@ -178,19 +179,28 @@ export default {
                 }
             }
         },
+        submit() {
+            let degree = {
+                name: this.degreeName,
+                majors: this.selectedMajors,
+                minors: this.selectedMinors,
+                pathway: this.selectedPathways,
+                concentration: this.selectedConcentrations,
+            };
+            console.log(degree);
+            this.$router.push("/degree")
+        },
     },
 };
 </script>
 
 <template>
     <q-form
-        action="https://some-url.com"
-        method="post"
         class="full-width column wrap justify-center items-center content-center"
     >
         <p>Enter Your Plan Name:</p>
         <q-input
-            v-model="text"
+            v-model="degreeName"
             standout="bg-teal text-white"
             label="My Course Plan"
         />
@@ -247,7 +257,7 @@ export default {
             @input-value="filterConcentration"
         />
         <div>
-            <q-btn label="Submit" type="submit" color="primary" />
+            <q-btn label="Submit" color="primary" @click="submit" />
         </div>
     </q-form>
 </template>
