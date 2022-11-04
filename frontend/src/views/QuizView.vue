@@ -188,7 +188,7 @@ export default {
                 concentration: this.selectedConcentrations,
             };
             console.log(degree);
-            this.$router.push("/degree")
+            this.$router.push("/degree");
         },
     },
 };
