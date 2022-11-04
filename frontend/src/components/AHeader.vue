@@ -7,12 +7,28 @@ export default {
         DarkModeToggle,
     },
     data() {
+        const plans = [
+            "CS Plan", 
+            "ITWS Plan", 
+            "HASS Plan"
+        ];
         return {
             plan: false,
-            current: "CS Plan",
-            plans: ["CS Plan", "ITWS Plan", "HASS Plan"],
+            selectedPlan: "CS Plan",
+            filteredPlans: plans,
+            planOptions: plans,
         };
     },
+    methods: {
+        selectPlan(val) {
+            this.selectedPlan = val;
+        },
+        filterPlan(val) {
+            this.filteredPlans = this.planOptions.filter((x) =>
+                x.toLowerCase().includes(val.toLowerCase())
+            );
+        },
+    }
 };
 </script>
 
@@ -43,17 +59,18 @@ export default {
 
                         <q-card-section class="q-pt-none">
                             <h6 class="q-ma-none">
-                                Current Plan: {{ current }}
+                                Current Plan: {{ selectedPlan }}
                             </h6>
                             <q-select
                                 filled
-                                v-model="current"
+                                v-model="selectedPlan"
                                 use-input
                                 input-debounce="0"
                                 label="Simple filter"
-                                :options="plans"
+                                :options="filteredPlans"
                                 style="width: 200px"
                                 behavior="menu"
+                                @input-value="filterPlan"
                             >
                                 <template v-slot:no-option>
                                     <q-item>
