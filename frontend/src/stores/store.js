@@ -22,22 +22,22 @@ export const useStore = defineStore("main", {
             this.degrees.push("Degree");
         },
         addCredits(name, amount) {
-            if(!this.credits[name]) {
+            if (!this.credits[name]) {
                 this.credits[name] = amount;
             }
         },
         removeCredits(name) {
-            if(this.credits[name]) {
+            if (this.credits[name]) {
                 delete this.credits[name];
             }
         },
         changeCredits(name, amount) {
-            if(this.credits[name]) {
+            if (this.credits[name]) {
                 this.credits[name] = amount;
             }
         },
         fetchCredits(name) {
             return this.credits[name];
-        }
+        },
     },
 });
