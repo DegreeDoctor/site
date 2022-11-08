@@ -1,12 +1,30 @@
 <script>
 import { useStore } from "../stores/store";
+import ACourse from "./ACourse.vue";
 
 export default {
+    components: {
+        ACourse,
+    },
+    props: {
+        course: {
+            type: Object,
+            required: false,
+            default: null
+        },
+    },
     data() {
         return {
-            store: useStore(),
-            course: null
+            store: useStore()
         }
+    },
+    mounted() {
+            // if(this.course) {
+            //     // console.log(this)
+            //     const courseEl = document.getElementById(this.course.name);
+            //     console.log(courseEl)
+            //     this.$el.appendChild(courseEl);
+            // }
     },
     methods: {
         courseIn(e) {
@@ -24,7 +42,7 @@ export default {
             e.preventDefault();
 
             // don't drop on other draggables
-            if (e.target.draggable === true) {
+            if (e.target.draggable === true && e.target.hasChildeNodes()) {
               return;
             }
 
@@ -53,7 +71,9 @@ export default {
         @dragleave="courseOut"
         @dragover="courseDrag"
         @drop="courseDrop"
-    />
+    >
+    <ACourse v-if="course" :course="course"/>
+    </div>
 </template>
 
 <style scoped lang="scss">
