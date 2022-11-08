@@ -80,6 +80,13 @@ export default {
             this.currCredit = creds;
         }
     },
+    mounted() {
+        const creds = this.store.fetchCredits(this.course.name);
+        this.checked = !!creds;
+        if(this.checked) {
+            this.currCredit = creds;
+        }
+    },
     methods: {
         checkClicked(value) {
             if (value) {
