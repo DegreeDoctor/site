@@ -62,8 +62,8 @@ export default {
                                 Current Plan: {{ selectedPlan }}
                             </h6>
                             <q-select
-                                filled
                                 v-model="selectedPlan"
+                                filled
                                 use-input
                                 input-debounce="0"
                                 label="Simple filter"
@@ -72,7 +72,7 @@ export default {
                                 behavior="menu"
                                 @input-value="filterPlan"
                             >
-                                <template v-slot:no-option>
+                                <template #no-option>
                                     <q-item>
                                         <q-item-section class="text-grey">
                                             No results
@@ -83,12 +83,12 @@ export default {
                         </q-card-section>
 
                         <q-card-actions class="text-primary">
-                            <q-btn flat label="Cancel" v-close-popup></q-btn>
+                            <q-btn v-close-popup flat label="Cancel"></q-btn>
                             <q-btn
+                                v-close-popup
                                 flat
                                 label="Add new plan"
                                 to="/quiz"
-                                v-close-popup
                             ></q-btn>
                         </q-card-actions>
                     </q-card>

@@ -16,13 +16,6 @@ export default {
             currCredit: this.course.credits[0],
         };
     },
-    mounted() {
-        const creds = this.store.fetchCredits(this.course.name);
-        this.checked = !!creds;
-        if (this.checked) {
-            this.currCredit = creds;
-        }
-    },
     computed: {
         offeredParse() {
             let text = "Offered ";
@@ -79,6 +72,13 @@ export default {
             }
             return name;
         },
+    },
+    mounted() {
+        const creds = this.store.fetchCredits(this.course.name);
+        this.checked = !!creds;
+        if (this.checked) {
+            this.currCredit = creds;
+        }
     },
     methods: {
         checkClicked(value) {
@@ -140,7 +140,9 @@ export default {
             <q-card-section class="row items-center q-pb-none">
                 <div class="text-h5">{{ course.name }}</div>
                 <q-space />
-                <q-btn v-close-popup icon="close" flat round dense />
+                <q-btn
+                    v-close-popup icon="close" flat round
+                    dense />
             </q-card-section>
             <q-card-section class="q-pt-none">
                 <div class="text-body1">
