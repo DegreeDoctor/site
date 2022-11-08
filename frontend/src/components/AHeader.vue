@@ -7,11 +7,7 @@ export default {
         DarkModeToggle,
     },
     data() {
-        const plans = [
-            "CS Plan", 
-            "ITWS Plan", 
-            "HASS Plan"
-        ];
+        const plans = ["CS Plan", "ITWS Plan", "HASS Plan"];
         return {
             plan: false,
             selectedPlan: "CS Plan",
@@ -28,7 +24,7 @@ export default {
                 x.toLowerCase().includes(val.toLowerCase())
             );
         },
-    }
+    },
 };
 </script>
 
