@@ -7,7 +7,7 @@
         "credits": [1,2,4],
         "concentration (NEED TO BE IMPLEMENTED)": ["conc1.name"], 
         "prerequisites": {
-            "req" : [
+            "required" : [
                 "MATH 1100"
             ],
             "one_of": [
@@ -24,7 +24,7 @@
             "CI": true,
             "MR (NEED TO BE IMPLEMENTED)": true
         },
-        "professors (NEED TO BE IMPLEMENTED)": [
+        "professors": [
             "professor1.name"
         ],
         "offered": {
