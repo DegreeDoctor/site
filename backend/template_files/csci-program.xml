@@ -35,6 +35,8 @@
 		xmlns:a="http://www.w3.org/2005/Atom"
 		xmlns:h="http://www.w3.org/1999/xhtml"
 		xmlns:xi="http://www.w3.org/2001/XInclude">
+
+		<!-- Semesters Core -->
 		<core
 			xmlns:a="http://www.w3.org/2005/Atom"
 			xmlns:h="http://www.w3.org/1999/xhtml" id="acalog-core-38045">
@@ -699,13 +701,9 @@
             </children>
 		</core>
 
-        
-			<core
-				xmlns:a="http://www.w3.org/2005/Atom"
-				xmlns:h="http://www.w3.org/1999/xhtml" id="acalog-core-38057">
-				<title
-					xmlns:a="http://www.w3.org/2005/Atom">Options
-				</title>
+     <!--Option Core  -->
+		<core xmlns:a="http://www.w3.org/2005/Atom" xmlns:h="http://www.w3.org/1999/xhtml" id="acalog-core-38057">
+				<title xmlns:a="http://www.w3.org/2005/Atom">Options </title>
 				<code></code>
 				<anchors
 					xmlns:h="http://www.w3.org/1999/xhtml">
@@ -827,12 +825,11 @@
 					</core>
 				</children>
 			</core>
+
+			<!-- Capstone Core -->
 			<core
-				xmlns:a="http://www.w3.org/2005/Atom"
-				xmlns:h="http://www.w3.org/1999/xhtml" id="acalog-core-38781">
-				<title
-					xmlns:a="http://www.w3.org/2005/Atom">Capstone
-				</title>
+				xmlns:a="http://www.w3.org/2005/Atom" xmlns:h="http://www.w3.org/1999/xhtml" id="acalog-core-38781">
+				<title xmlns:a="http://www.w3.org/2005/Atom">Capstone </title>
 				<code></code>
 				<anchors
 					xmlns:h="http://www.w3.org/1999/xhtml">
@@ -869,12 +866,10 @@
 					</content>
 					<courses></courses>
 				</core>
-				<core
-					xmlns:a="http://www.w3.org/2005/Atom"
-					xmlns:h="http://www.w3.org/1999/xhtml" id="acalog-core-39068">
-					<title
-						xmlns:a="http://www.w3.org/2005/Atom">Transfer Credit Policy
-					</title>
+				
+				<!-- Transfer Credit Core -->
+				<core xmlns:a="http://www.w3.org/2005/Atom" xmlns:h="http://www.w3.org/1999/xhtml" id="acalog-core-39068">
+					<title xmlns:a="http://www.w3.org/2005/Atom">Transfer Credit Policy </title>
 					<code></code>
 					<anchors
 						xmlns:h="http://www.w3.org/1999/xhtml">
@@ -911,13 +906,11 @@
 						</ul>
 					</content>
 					<courses></courses>
-			</core>
-				<core
-					xmlns:a="http://www.w3.org/2005/Atom"
-					xmlns:h="http://www.w3.org/1999/xhtml" id="acalog-core-38061">
-					<title
-						xmlns:a="http://www.w3.org/2005/Atom">Footnotes
-					</title>
+				</core>
+				
+				<!-- Foot Note Core -->
+				<core xmlns:a="http://www.w3.org/2005/Atom" xmlns:h="http://www.w3.org/1999/xhtml" id="acalog-core-38061">
+					<title xmlns:a="http://www.w3.org/2005/Atom">Footnotes </title>
 					<code></code>
 					<anchors
 						xmlns:h="http://www.w3.org/1999/xhtml">
@@ -1010,5 +1003,5 @@
 					</content>
 					<courses></courses>
 				</core>
-			</cores>
-		</program>
+	</cores>
+</program>
