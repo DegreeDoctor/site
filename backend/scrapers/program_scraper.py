@@ -231,58 +231,54 @@ def parse_semester(inp):
     for classes in inp:
         title =classes.xpath("./title")
         title = title[0].text_content().strip()
-        
-        # logic for 'extra' content
-        if title.count("Fall") == 0 and title.count("Spring") == 0 and title.count("Arch") == 0:
-            content = classes.xpath("./content")
-            content_txt = content[0].text_content().strip()
-            
-            ret.append([title, norm_str(content_txt)])
-
-        else:
-            sem = []
-            # Parsing electives include: Free electives, Hass electives, Capstones
-            electives = classes.xpath("./content")
-            for c in electives:
-                tmp = split_content(rem_all(c.text_content()))
-                sem.extend(tmp)
-                    
-            # Parsing Major course
-            block = classes.xpath("./courses")
-            for b in block: 
-
-                # content is main classes, adhoc sometimes has important content
-                # that needs to be filtered
-                content = b.xpath("./include")
-                adhoc = b.xpath("./adhoc/content")
-                extra = ""
-                s = ""
+        sem = []
+        # Parsing electives include: Free electives, Hass electives, Capstones
+        electives = classes.xpath("./content")
+        for c in electives:
+            tmp = split_content(rem_all(c.text_content()))
+            sem.extend(tmp)
                 
-                for a in adhoc: 
-                    if (len(rem_all(a.text_content())) > 0):
-                        extra += rem_all(a.text_content())
+        # Parsing Major course
+        block = classes.xpath("./courses")
+        for b in block: 
 
-                # logic for adding extra content to end of normal parse        
-                for c in content:
-                    if (len(c.text_content()) > 0):
-                        s = norm_str(c.text_content())
-                        if (len(extra) > 0):
-                            if (extra[0] == " "):
-                                s += extra
-                            else:
-                                s += " " + extra
-                        sem.append(s)
+            # content is main classes, adhoc sometimes has important content
+            # that needs to be filtered
+            content = b.xpath("./include")
+            adhoc = b.xpath("./adhoc/content")
+            extra = ""
+            s = ""
+            
+            for a in adhoc: 
+                if (len(rem_all(a.text_content())) > 0):
+                    extra += rem_all(a.text_content())
 
-            course_list = striplist(sem)
-            if (len(course_list) > 0):
-                ret.append(course_list)
+            # logic for adding extra content to end of normal parse        
+            for c in content:
+                if (len(c.text_content()) > 0):
+                    s = norm_str(c.text_content())
+                    if (len(extra) > 0):
+                        if (extra[0] == " "):
+                            s += extra
+                        else:
+                            s += " " + extra
+                    sem.append(s)
+
+        course_list = striplist(sem)
+        if (len(course_list) > 0):
+            ret.append(course_list)
     return ret
 
-def parse_courses(core, name, year):
-    # Get an array of all semesters and parse them
+def parse_courses(core):
+    # Get an array of all cores/core and parse them
     semester_list = core.xpath("./children/core")
     courses = parse_semester(semester_list)
     return courses
+
+def parse_extra_core(cor,core_title):
+    
+    print(cor.text_content().strip()[len(core_title):])
+    return [[core_title]]
 
 def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
     data = {}
@@ -297,8 +293,8 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         name = pathway.xpath("./title/text()")[0].strip()
 
         # For now only parse CS
-        # if (name != "Computer Science"):
-        #     continue
+        if (name != "Computer Science"):
+            continue
         
         # Get program description
         desc = ""
@@ -311,11 +307,20 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
 
         # Parse each school year for courses
         for core in cores:
-            courses.extend(parse_courses(core, name, year))
-        
+            core_title = core.xpath("./title")[0].text_content().strip()
+
+            if core_title == "First Year" or core_title == "Second Year" or core_title == "Third Year" or core_title == "Fourth Year":
+                courses.extend(parse_courses(core))
+            else:
+                print("Remaning Cores")
+                print(core_title)
+                courses.extend(parse_extra_core(core, core_title))
+
         requirements = generate_requirements(courses)
         credit = generate_credits(requirements)
         template = parse_template(courses)
+
+
         data[name] = {
                 "name": name,
                 "description": desc,
