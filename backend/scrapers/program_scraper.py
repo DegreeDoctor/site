@@ -4,7 +4,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import subjs, prgms, course_dict, root, get_catalogs, norm_str, striplist
+from degree_util import subjs, prgms, course_dict, root, get_catalogs, norm_str, striplist, clean_str
 from collections import OrderedDict
 
 # The api key is public so it does not need to be hidden in a .env file
@@ -50,6 +50,8 @@ def split_content(str):
         else:
             ret.append(rem_lor(norm_str(str[:ind+1])))
             str = str[ind+1:]
+    if (len(str) > 0):
+        ret.append(str)
     return ret
 
 # seperates class strings into seperates if there exists
@@ -71,8 +73,12 @@ def remove_or_from_list(inp):
 
 # removes leading sentences
 def rem_sent(str):
+    str = trim_space(str)
     while (str.find(".") != -1):
-        str = str[str.find(".")+1:]
+        if (str.find(".")+2 < len(str) and str[str.find(".")+1] != "."):
+            str = str[str.find(".")+1:]
+        else: 
+            break
     return str
 
 # removes footnote tags 
@@ -144,6 +150,9 @@ def parse_template(semesters):
 
 # gets the subj string from a given string
 def get_subj(str):
+    if (str.find("Elective") != -1 or str.find("Credit Hours:") != -1):
+        return ""
+    
     for subj in subjs: 
         fnd = str.find(subj)
         if fnd != -1:
@@ -153,9 +162,11 @@ def get_subj(str):
 def strip_subj(str):
     if (len(get_subj(str)) == 0):
         return rep_subj_template(str)
-    fnd = str.find(" - ")
-    if (fnd != -1):
-        str = str[fnd+3:]
+    while (str.find(" - ") != -1):
+        if (str.find(" - ") > 9):
+            str = str[:str.find(" - ")-9] + str[str.find(" - ")+3:]
+        else:
+            str = str[str.find(" - ")+3:]
     return str
 
 def strip_list(inp):
@@ -195,6 +206,11 @@ def rep_subj(str):
 def get_elec(str):
     ret = []
     spltstr = str.split(" or ")
+    
+    if (len(spltstr) == 1):
+        ret.append(str)
+        return ret
+
     for s in spltstr:
         fnd_e = s.find("Elective")
         fnd_o = s.find("Option")
@@ -206,7 +222,10 @@ def get_elec(str):
 
 # get max credits from electives
 def get_elec_cred(str):
+    str = str[str.find("Credit Hours:"):]
     if (str[len(str)-1].isnumeric()):
+        if (str.find("-") >= len(str)-5):
+            return int(str[str.find("-")+1:])
         return int(str[len(str)-1])
     return 4
 
@@ -218,9 +237,11 @@ def add_classes_and_credits(str,ret_set,ret_dict):
     if (len(get_subj(str)) > 0):
         ret_set.add(strip_subj(str))
     else:
+        print(str)
         tmp = get_elec(str.strip())
         for t in tmp:
             cred = get_elec_cred(str)
+            print(cred)
             if ret_dict.get(t) != None:
                 ret_dict[t] += cred
             else: 
@@ -273,6 +294,9 @@ def generate_requirements(inp):
         else:
             ret[key] = duplicates[key]
 
+    # remove non-alphanumeric chars from named classes
+    named_classes = [clean_str(x) for x in named_classes]
+
     # look up credit totals for each named class and add
     for key in named_classes:
         tmp = list(get_credits(key))
@@ -282,13 +306,24 @@ def generate_requirements(inp):
             ret[key] = tmp[0]
     return ret
 
+def one_of_parsing(inp):
+    options = inp.xpath("./core/courses/include")
+    ret = ""
+    for option in options:
+        ret += norm_str(option.text_content()) + " or "
+    return ret[:len(ret)-4]
+
 # takes in xml file of of one semester of courses
 # input:  core.xpath("../cores/core/children/core")  
 def parse_semester(inp):
     ret = []
     for classes in inp:
+        sem = []
         title =classes.xpath("./title")
-        title = title[0].text_content().strip()   
+        title = title[0].text_content().strip()  
+        options = classes.xpath("./children")
+        if (len(options) == 1):
+            sem.append(one_of_parsing(options[0]))
         
         # logic for 'extra' content
         if title.count("Fall") == 0 and title.count("Spring") == 0 and title.count("Summer") == 0 and title.count("Arch") == 0:
@@ -297,7 +332,6 @@ def parse_semester(inp):
             ret.append([title, norm_str(rem_all(content_txt))])
 
         else:
-            sem = []
             # Parsing electives include: Free electives, Hass electives, Capstones
             electives = classes.xpath("./content")
             for c in electives:
@@ -350,7 +384,6 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
     for pathway in pathways:
         courses = []
         name = pathway.xpath("./title/text()")[0].strip()
-
         # included to skip programs that either have really bad edge cases/are super specific programs
         # to be decided on a later date if it is worth to refactor code for (and to keep a list of really)
         # broken but small programs
@@ -361,7 +394,7 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         if (check):
             continue
         # # For now only parse CS
-        if (name != "Computer Science" ):
+        if (name != "Aeronautical Engineering Curriculum" ):
             continue
         
         # Get program description
@@ -379,6 +412,9 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         
         requirements = generate_requirements(courses)
         credit = generate_credits(requirements)
+        
+        # sorts credit requirements alphabetically
+        requirements = OrderedDict(sorted(requirements.items()))
 
         # this is neccesary for frontend visibility (we no longer
         # want to distinguish between named and elective classes)

@@ -153,7 +153,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
             fields = course.xpath("./content/field")
             year = ""
             semesters = []
-            cross_listed = []
+            cross_listed = {}
             prereqs = []
             credit = []
             professors = []
@@ -168,10 +168,10 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
                         credit = get_credit(field_text)
                     elif field.get('type')[-3:] == str(base - 8):
                         if len(field_text) > 0:
-                            cross_listed = courses_from_string(field.text_content().upper())
-                            for item in cross_listed:
-                                if item.find(subj + '-' + str(ID)) != -1:
-                                    cross_listed.remove(item)
+                            crs = courses_from_string(field.text_content().upper())
+                            for item in crs:
+                                if item.find(subj + '-' + str(ID)) == -1:
+                                    cross_listed[subj] = str(ID)
                     elif field.get('type')[-3:] == str(base - 11):
                         if "fall" in field_text.lower():
                             semesters.append("fall")
@@ -194,7 +194,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
 
             data[course_name] = {
                 "name": course_name,
-                "subj": subj,
+                "subject": subj,
                 "ID": ID,
                 "description": get_catalog_description(fields, course_name),
                 "credits" : credit,
