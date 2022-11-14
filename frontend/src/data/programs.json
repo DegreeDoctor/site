@@ -1,87 +1,103 @@
 {
     "2022-2023": {
-        "Computer Science": {
-            "name": "Computer Science",
-            "description": "All computer science students are assigned a faculty adviser to assist them with their interests and career goals throughout their academic career. As shown below in the 128-credit-hour B.S. curriculum leading to the B.S. degree in computer science, flexibility is one of the hallmarks of the Rensselaer computer science program. With this flexibility, students explore related areas and pursue minors and/or dual or double majors in the following fields: mathematics; electrical and computer systems engineering; information technology and web science; games and simulation arts and sciences; business and management; economics; physics; psychology; electronic media, arts, and communication; and most other disciplines.",
-            "credits": 128,
+        "Aeronautical Engineering Curriculum": {
+            "name": "Aeronautical Engineering Curriculum",
+            "description": "Freshmen or sophomores who have identified aeronautical engineering as their major may follow the baccalaureate program below in lieu of the general core engineering program. Dual major programs which lead to a single baccalaureate degree embracing two fields are also available and are described in more detail in the MANE Handbook (emailed to you when you declare a major in MANE, and available from the MANE Student Services Office, JEC 2012).",
+            "credits": 130,
             "requirements": {
-                "HASS": 24,
-                "MATH": 8,
-                "Free": 28,
-                "SCIS": 4,
-                "CSCI": 16,
-                "Introduction to Algorithms": 4,
-                "Operating Systems": 4,
-                "Data Structures": 4,
-                "Foundations of Computer Science": 4,
-                "Programming Languages": 4,
-                "Computer Science I": 4,
-                "Calculus II": 4,
-                "Physics I": 4,
-                "Principles of Software": 4,
-                "Introduction to Biology Laboratory": 1,
-                "Computer Organization": 4,
+                "Aerodynamics": 4,
+                "Aeroelasticity and Structural Vibrations": 3,
+                "Aerospace Structures Laboratory": 2,
+                "Aerospace Structures and Materials": 4,
                 "Calculus I": 4,
-                "Introduction to Biology": 3
+                "Calculus II": 4,
+                "Chemistry I": 4,
+                "Control Systems Laboratory": 2,
+                "Engineering Dynamics": 4,
+                "Engineering Graphics and CAD": 1,
+                "Engineering Processes": 1,
+                "Fluid Dynamics Laboratory": 2,
+                "Fluid Mechanics": 3,
+                "Free Elective Credit Hours: 4": 12,
+                "Fundamentals of Flight": 1,
+                "HASS Core Elective Credit Hours: 4": 20,
+                "Introduction to Differential Equations": 4,
+                "Introduction to Engineering Analysis": 4,
+                "MANE 4.... Aerospace Technical Elective Credit Hours: 3": 3,
+                "MANE 4.... Capstone Design Elective Credit Hours: 3": 3,
+                "MANE 4.... Computation Elective Credit Hours: 3": 3,
+                "MANE 4.... Flight Mechanics Elective Credit Hours: 4": 4,
+                "Modeling and Analysis of Uncertainty": 3,
+                "Modeling and Control of Dynamic Systems": 3,
+                "Multivariable Calculus and Matrix Algebra": 4,
+                "Numerical Methods and Programming for Engineers": 3,
+                "Physics I": 4,
+                "Physics II": 4,
+                "Professional Development Leadership Competencies": 1,
+                "Propulsion Systems": 3,
+                "STSO 4100 Professional Development II Credit Hours: 2": 2,
+                "SoE 2.... Engineering Design Elective": 4,
+                "Strength of Materials": 4,
+                "Thermodynamics": 3
             },
             "template": {
                 "1-Fall": [
                     "HASS Elective Credit Hours: 4",
-                    "Computer Science I",
+                    "Introduction to Engineering Analysis",
+                    "Engineering Graphics and CAD",
                     "Calculus I",
                     "Physics I"
                 ],
                 "1-Spring": [
                     "HASS Elective Credit Hours: 4",
-                    "Introduction to Biology",
-                    "Introduction to Biology Laboratory",
-                    "Data Structures",
-                    "Calculus II"
+                    "Chemistry I",
+                    "Fundamentals of Flight",
+                    "Calculus II",
+                    "Physics II"
                 ],
                 "2-Fall": [
-                    "MATH Option I Credit Hours: 4",
-                    "HASS Elective Credit Hours: 4",
-                    "Foundations of Computer Science",
-                    "Computer Organization"
+                    "SoE 2.... Engineering Design Elective",
+                    "Engineering Processes",
+                    "Strength of Materials",
+                    "Introduction to Differential Equations",
+                    "Thermodynamics"
                 ],
                 "2-Spring": [
-                    "MATH Option II Credit Hours: 4",
                     "HASS Elective Credit Hours: 4",
-                    "Introduction to Algorithms",
-                    "Principles of Software"
+                    "Modeling and Analysis of Uncertainty",
+                    "Numerical Methods and Programming for Engineers",
+                    "Fluid Mechanics",
+                    "Multivariable Calculus and Matrix Algebra"
                 ],
                 "3-Summer": [
-                    "CSCI Option/Capstone or Free Elective Credit Hours: 4",
                     "HASS Elective Credit Hours: 4",
-                    "Free Elective Credit Hours: 4",
-                    "Operating Systems"
+                    "Engineering Dynamics",
+                    "Aerospace Structures and Materials",
+                    "Aerodynamics"
                 ],
                 "3-Fall or Spring": [
-                    "SCIS Option Credit Hours: 4",
-                    "HASS Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
-                    "Programming Languages Or CS Option/Capstone"
+                    "STSO 4100 Professional Development II Credit Hours: 2",
+                    "Modeling and Control of Dynamic Systems",
+                    "Aeroelasticity and Structural Vibrations",
+                    "Fluid Dynamics Laboratory",
+                    "Aerospace Structures Laboratory"
                 ],
                 "4-Fall": [
-                    "CSCI Option/Capstone Credit Hours: 4",
+                    "MANE 4.... Computation Elective Credit Hours: 3",
+                    "MANE 4.... Flight Mechanics Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
-                    "Free Elective Credit Hours: 4",
-                    "Programming Languages Or CS Option/Capstone"
+                    "Propulsion Systems",
+                    "Control Systems Laboratory"
                 ],
                 "4-Spring": [
-                    "CSCI Option/Capstone Credit Hours 4",
-                    "Free Elective or CSCI Option/Capstone Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
-                    "Free Elective Credit Hours: 4"
+                    "HASS Elective Credit Hours: 4",
+                    "MANE 4.... Capstone Design Elective Credit Hours: 3",
+                    "MANE 4.... Aerospace Technical Elective Credit Hours: 3",
+                    "Professional Development: Leadership Competencies"
                 ],
-                "Extra": [
-                    "Science",
-                    "A 4-credit course chosen from the following: astronomy, biology, chemistry, earth and environmental science, and physics. The P/NC option cannot be used for this course. The course ERTH 1030 cannot be used to satisfy this requirement.",
-                    "Computer Science",
-                    "Four additional computing courses of 3 or 4 credits at the 4000 or 6000 level, i.e., courses in the series CSCI 4XXX and CSCI 6XXX. Reading and independent study courses cannot be used for these courses. Further, the P/NC option cannot be used for these courses. Note that of the required 16 credits, any missing credits due to 3-credit courses may be made up as free elective credits.",
-                    "Mathematics",
-                    "Two additional courses in mathematics. Mathematics Option I must be one of the following courses: MATH 2010, MATH 4030, MATH 4040/MATH 4140 Intermediate Logic, MATH 4100, or MATP 4600. Mathematics Option II must be any course in MATH/MATP at the 2000 level or above . Independent study courses cannot be used to satisfy this option. The P/NC option cannot be used for these courses. Note that although some courses are cross listed as both MATH and CSCI, if a course is used to fulfill the Mathematics Option requirement, it cannot also be used as a Computer Science Option/Capstone course."
-                ]
+                "Extra": []
             }
         }
     }
