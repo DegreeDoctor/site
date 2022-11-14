@@ -6,6 +6,7 @@ export const useStore = defineStore("main", {
         degrees: useStorage("degrees", []),
         // Object of lists formatted as: {"course1": 4, "Course2", 3}
         credits: useStorage("credits", {}),
+        darkMode: useStorage("darkMode", false),
     }),
     //Act like computed in Vue
     getters: {
@@ -14,6 +15,9 @@ export const useStore = defineStore("main", {
         },
         getCredits: (state) => {
             return state.credits;
+        },
+        getDarkMode: (state) => {
+            return state.darkMode;
         },
     },
     //Act like methods in Vue
@@ -38,6 +42,9 @@ export const useStore = defineStore("main", {
         },
         fetchCredits(name) {
             return this.credits[name];
+        },
+        toggleDarkMode() {
+            this.darkMode = !this.darkMode;
         },
     },
 });
