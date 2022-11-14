@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { useStorage, useStorageAsync } from "@vueuse/core";
+import { useStorage } from "@vueuse/core";
 
 export const useStore = defineStore("main", {
     state: () => ({
