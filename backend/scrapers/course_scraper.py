@@ -198,7 +198,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
 
             data[course_name] = {
                 "name": course_name,
-                "subj": subj,
+                "subject": subj,
                 "ID": ID,
                 "description": get_catalog_description(fields, course_name),
                 "credits" : credit,
