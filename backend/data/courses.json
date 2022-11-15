@@ -44,8 +44,8 @@
       ]
     },
     "professors": [
-      "Chjan C Lim",
       "Bruce Piper",
+      "Chjan C Lim",
       "Gina Irene Kucinski"
     ],
     "properties": {
@@ -76,12 +76,12 @@
       ]
     },
     "professors": [
-      "Ashwani Kumar Kapila",
-      "Mohamed Boudjelkha",
+      "Gregor Kovacic",
       "Eliane Zerbetto Traldi",
-      "Wing Sze E Kam",
       "Jeffrey William Banks",
-      "Gregor Kovacic"
+      "Mohamed Boudjelkha",
+      "Wing Sze E Kam",
+      "Ashwani Kumar Kapila"
     ],
     "properties": {
       "CI": false,
@@ -117,8 +117,8 @@
       ]
     },
     "professors": [
-      "Scott Thomas Forth",
-      "Lee Ligon"
+      "Lee Ligon",
+      "Scott Thomas Forth"
     ],
     "properties": {
       "CI": false,
@@ -244,8 +244,8 @@
     },
     "professors": [
       "Jeffrey William Banks",
-      "Gregor Kovacic",
-      "Eliane Zerbetto Traldi"
+      "Eliane Zerbetto Traldi",
+      "Gregor Kovacic"
     ],
     "properties": {
       "CI": false,
@@ -388,10 +388,10 @@
       ]
     },
     "professors": [
-      "Jeremy Lynch Farrell",
+      "Jonathan T Stetler",
       "Kevin Christopher Rose",
       "Bradford C Lister",
-      "Jonathan T Stetler"
+      "Jeremy Lynch Farrell"
     ],
     "properties": {
       "CI": false,
@@ -416,14 +416,14 @@
     },
     "prerequisites": [],
     "professors": [
-      "Bruce Piper",
-      "Elisabeth Maria Brown",
-      "Kseniya Yevgenyevna Klyachko",
-      "Gina Irene Kucinski",
-      "Eliane Zerbetto Traldi",
       "David A Schmidt",
+      "Kseniya Yevgenyevna Klyachko",
+      "Eliane Zerbetto Traldi",
+      "Elisabeth Maria Brown",
+      "Gina Irene Kucinski",
       "Margaret Z. Kiehl",
       "Wing Sze E Kam",
+      "Bruce Piper",
       "Belmiro Galo da Silva"
     ],
     "properties": {
@@ -454,13 +454,13 @@
       ]
     },
     "professors": [
-      "Bruce Piper",
-      "Elisabeth Maria Brown",
-      "Daniel Franklin Stevenson",
-      "Gina Irene Kucinski",
       "Kseniya Yevgenyevna Klyachko",
       "Eliane Zerbetto Traldi",
+      "Elisabeth Maria Brown",
+      "Gina Irene Kucinski",
       "Margaret Z. Kiehl",
+      "Daniel Franklin Stevenson",
+      "Bruce Piper",
       "Belmiro Galo da Silva"
     ],
     "properties": {

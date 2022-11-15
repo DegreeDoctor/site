@@ -43,6 +43,7 @@ def sis_scraper():
     f.close()
     years = year_generator()
     s = requests.Session()
+
     for course in tqdm(courseJson): #Iterates through every course
         instructorStorage = []
         CI = False
@@ -70,6 +71,8 @@ def sis_scraper():
                 tmp = attribute.group(1).strip() if attribute != None else ""
                 if 'Communication Intensive' in tmp:
                     CI= True
+        link = link_grabber(s, soup)
+        restrictedMajor = majorRestrictionChecker(s, link)
 
         #With all of the information gathered we put it into the python json object and then push it back
         #into the course json
@@ -79,9 +82,29 @@ def sis_scraper():
         f2 = open(filepath + '/data/courses.json', 'w')
         json.dump(courseJson, f2, sort_keys=True, indent=2, ensure_ascii=False)
         f2.close()
+
+
+def link_grabber(session, soup):
+    key = "/rss/bwckschd.p_disp_detail_sched?term_in="
+    linkMass = soup.find_all("a", href=True)
+    for val in linkMass:
+        if key in val['href']:
+            link = val['href']
+            break
+    return link
+
+
+
+    
+
+    
+    
+
+
+
             
 if __name__ == '__main__':
-    sis_scraper()
+    link_grabber()
         
        
 
