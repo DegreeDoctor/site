@@ -14,7 +14,7 @@ export default {
 
 <template>
     <q-layout view="hHh LpR fFf">
-        <ProgressBar :circle="true" />
+        <ProgressBar />
         <q-page-container>
             <RouterView />
         </q-page-container>

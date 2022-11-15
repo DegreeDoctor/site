@@ -1,12 +1,6 @@
 <script>
 export default {
     name: 'ProgressBar',
-    props: {
-        circle: {
-            type: Boolean,
-            required: true,
-        },
-    },
     data () {
         return {
             percent: 50,
@@ -17,7 +11,6 @@ export default {
 
 <template>
     <q-circular-progress
-        v-if = "circle"
         show-value
         font-size="12px"
         :value="percent"
