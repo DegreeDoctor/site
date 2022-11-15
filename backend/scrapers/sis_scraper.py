@@ -93,6 +93,21 @@ def link_grabber(session, soup):
             break
     return link
 
+def majorRestrictionChecker(session, link):
+    innerPage = "https://sis.rpi.edu" + link
+    response = session.get(innerPage)
+    innerContent = response.text
+    soup2 = BeautifulSoup(innerContent, "html.parser")
+    innerText = soup2.text
+    textList = innerText.splitlines()
+    red = list(filter(lambda item: item.strip(), textList))
+    searchString = "Must be enrolled in one of the following Majors:"
+    majorIndex = -1
+    for i in range(0, len(textList)):
+        if searchString in textList[i]:
+            majorIndex = i
+
+    return textList[majorIndex+1].strip()
 
 
     
