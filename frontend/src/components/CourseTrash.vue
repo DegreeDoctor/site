@@ -1,23 +1,5 @@
 <script>
-import { useStore } from "../stores/store";
-import ACourse from "./ACourse.vue";
-
 export default {
-    components: {
-        ACourse,
-    },
-    props: {
-        course: {
-            type: Object,
-            required: false,
-            default: null
-        },
-    },
-    data() {
-        return {
-            store: useStore()
-        }
-    },
     methods: {
         courseIn(e) {
             if (e.target.draggable !== true) {
@@ -50,7 +32,6 @@ export default {
 
             // make the exchange
             draggedEl.parentNode.removeChild(draggedEl);
-            e.target.appendChild(draggedEl);
             e.target.classList.remove('drag-enter');
         }
     }
@@ -58,25 +39,16 @@ export default {
 </script>
 
 <template>
-    <div
-        class="holder"
+    <q-avatar 
+        rounded 
+        size="100px" 
+        font-size="82px" 
+        color="primary" 
+        text-color="red" 
+        icon="fa-solid fa-trash"
         @dragenter="courseIn"
         @dragleave="courseOut"
         @dragover="courseDrag"
         @drop="courseDrop"
-    >
-    <ACourse v-if="course" :course="course"/>
-    </div>
+    />
 </template>
-
-<style scoped lang="scss">
-    .holder {
-        height: 100px;
-        width:  310px;
-        background-color: darken($secondary, 15%)
-    }
-
-    .drag-enter{
-        outline-style: dashed
-    }
-</style>

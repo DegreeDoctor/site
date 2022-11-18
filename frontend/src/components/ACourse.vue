@@ -52,8 +52,9 @@ export default {
             return text;
         },
         crosslistedParse() {
-            let text = this.course.subj + "-" + this.course.ID;
+            let text = this.course.subject + "-" + this.course.ID;
             for(const subj in this.course.crosslisted) {
+                console.log(this.course.crosslisted[subj]);
                 text += "/" + subj + "-" + this.course.crosslisted[subj];
             }
             return text;
@@ -109,7 +110,7 @@ export default {
             <q-card-section class="text-subtitle1" @click.self="popup = true">
                 {{ fixName }}
                 <q-separator />
-                {{ course.subj + "-" + course.ID }}
+                {{ course.subject + "-" + course.ID }}
             </q-card-section>
             <q-card-section vertical class="q-py-sm" @click.self="popup = true">
                 <q-btn color="secondary" dense :label="currCredit" class="q-px-md">
