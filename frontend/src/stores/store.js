@@ -28,7 +28,7 @@ export const useStore = defineStore("main", {
         // Object of lists formatted as: {"course1": 4, "Course2", 3}
         credits: useStorage("credits", {}),
         // Current degree to view in degree view
-        selectedDegree: useStorage("selectedDegree", "")
+        selectedDegree: useStorage("selectedDegree", ""),
     }),
     //Act like computed in Vue
     getters: {
@@ -44,62 +44,62 @@ export const useStore = defineStore("main", {
         addDegree(degree) {
             //this.degrees[degree.name] = degree;
             this.degrees["Test Ryan Fun God Turbo"] = {
-                "name": "Test Ryan Fun God Turbo",
-                "majors": ["Computer Science"],
-                "minors": ["Mathematics"],
-                "pathway": "Artificial Intelligence",
-                "concentration": "Artificial Intelligence",
-                "template": {
+                name: "Test Ryan Fun God Turbo",
+                majors: ["Computer Science"],
+                minors: ["Mathematics"],
+                pathway: "Artificial Intelligence",
+                concentration: "Artificial Intelligence",
+                template: {
                     "1-Fall": [
                         "Minds and Machines",
                         "Computer Science I",
                         "Calculus I",
-                        "Physics I"
+                        "Physics I",
                     ],
                     "1-Spring": [
                         "Introduction to Cognitive Science",
                         "Introduction to Biology",
                         "Introduction to Biology Laboratory",
                         "Data Structures",
-                        "Calculus II"
+                        "Calculus II",
                     ],
                     "2-Fall": [
                         "Multivariable Calculus and Matrix Algebra",
                         "Writing in Context",
                         "Foundations of Computer Science",
-                        "Computer Organization"
+                        "Computer Organization",
                     ],
                     "2-Spring": [
                         "Linear Algebra",
                         "Strategic Writing",
                         "Introduction to Algorithms",
-                        "Principles of Software"
+                        "Principles of Software",
                     ],
                     "3-Summer": [
                         "Introduction to Artificial Intelligence",
                         "Programming for Cognitive Science and Artificial Intelligence",
                         "Critical Thinking",
-                        "Operating Systems"
+                        "Operating Systems",
                     ],
                     "3-Fall or Spring": [
                         "Earth and Sky",
                         "Intelligent Virtual Agents",
                         "Introduction to Differential Equations",
-                        "Programming Languages"
+                        "Programming Languages",
                     ],
                     "4-Fall": [
                         "Software Design and Documentation",
                         "Distributed Computing Over The Internet",
                         "Design and Analysis of Algorithms",
-                        "Open Source Software"
+                        "Open Source Software",
                     ],
                     "4-Spring": [
                         "Randomized Algorithms",
                         "Machine Learning from Data",
                         "Computational Finance",
-                        "Natural Language Processing"
+                        "Natural Language Processing",
                     ],
-                }
+                },
             };
         },
         updateDegree(name, degree) {
@@ -109,22 +109,22 @@ export const useStore = defineStore("main", {
             delete this.degrees[name];
         },
         addCredits(name, amount) {
-            if(!this.credits[name]) {
+            if (!this.credits[name]) {
                 this.credits[name] = amount;
             }
         },
         removeCredits(name) {
-            if(this.credits[name]) {
+            if (this.credits[name]) {
                 delete this.credits[name];
             }
         },
         changeCredits(name, amount) {
-            if(this.credits[name]) {
+            if (this.credits[name]) {
                 this.credits[name] = amount;
             }
         },
         fetchCredits(name) {
             return this.credits[name];
-        }
+        },
     },
 });
