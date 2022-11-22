@@ -71,14 +71,21 @@ def sis_scraper():
                 tmp = attribute.group(1).strip() if attribute != None else ""
                 if 'Communication Intensive' in tmp:
                     CI= True
-        link = link_grabber(s, soup)
-        restrictedMajor = majorRestrictionChecker(s, link)
+                link = link_grabber(s, soup)
+                restrictedMajor = majorRestrictionChecker(s, link)
+                if restrictedMajor != "":
+                    restrictedMajors = [major.strip() for major in restrictedMajor.split('&')]
+                
+
 
         #With all of the information gathered we put it into the python json object and then push it back
         #into the course json
         instructorStorage = [*set(instructorStorage)]
         courseJson[course]['professors'] = instructorStorage
         courseJson[course]['properties']['CI'] = CI
+        if restrictedMajor != "":
+            courseJson[course]['properties']['MR'] = True
+            courseJson[course]['properties']['majorRestriction'] = restrictedMajors
         f2 = open(filepath + '/data/courses.json', 'w')
         json.dump(courseJson, f2, sort_keys=True, indent=2, ensure_ascii=False)
         f2.close()
@@ -103,11 +110,12 @@ def majorRestrictionChecker(session, link):
     red = list(filter(lambda item: item.strip(), textList))
     searchString = "Must be enrolled in one of the following Majors:"
     majorIndex = -1
-    for i in range(0, len(textList)):
+    holder = ""
+    for i in range(0, len(textList) - 2):
         if searchString in textList[i]:
-            majorIndex = i
+            holder = textList[i + 2].strip()
+    return holder
 
-    return textList[majorIndex+1].strip()
 
 
     
@@ -119,7 +127,7 @@ def majorRestrictionChecker(session, link):
 
             
 if __name__ == '__main__':
-    link_grabber()
+    sis_scraper()
         
        
 
