@@ -54,7 +54,6 @@ export default {
             draggedEl.parentNode.removeChild(draggedEl);
             e.target.appendChild(draggedEl);
             e.target.classList.remove("drag-enter");
-
         },
     },
 };
@@ -68,8 +67,15 @@ export default {
         @dragover="courseDrag"
         @drop="courseDrop"
     >
-        <ACourse v-if="course" :course="course" />
-        <q-avatar v-else square size="75px" font-size="50px" color="primary" icon="directions" />
+        <ACourse v-if="course" :course="course" :check="true" />
+        <q-avatar
+            v-else
+            square
+            size="75px"
+            font-size="50px"
+            color="primary"
+            icon="directions"
+        />
     </div>
 </template>
 

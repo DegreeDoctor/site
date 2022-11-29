@@ -7,6 +7,11 @@ export default {
             type: Object,
             required: true,
         },
+        check: {
+            type: Boolean,
+            required: false,
+            default: true
+        }
     },
     data() {
         return {
@@ -61,7 +66,6 @@ export default {
         crosslistedParse() {
             let text = this.course.subject + "-" + this.course.ID;
             for (const subj in this.course.crosslisted) {
-                console.log(this.course.crosslisted[subj]);
                 text += "/" + subj + "-" + this.course.crosslisted[subj];
             }
             return text;
@@ -142,6 +146,7 @@ export default {
                 </q-btn>
                 <q-separator />
                 <q-checkbox
+                    v-if="check"
                     v-model="checked"
                     color="secondary"
                     @update:model-value="(value) => checkClicked(value)"
