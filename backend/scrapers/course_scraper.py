@@ -225,7 +225,7 @@ def scrape_courses():
         data = get_course_data(course_ids, catalog_id)
         courses_per_year.update(data)
     # Serializing json
-    json_object = json.dumps(courses_per_year, indent=4)
+    json_object = json.dumps(courses_per_year,sort_keys=True, indent=2, ensure_ascii=False)
  
     # Writing to sample.json
     with open(root + "/frontend/src/data/courses.json", "w") as outfile:

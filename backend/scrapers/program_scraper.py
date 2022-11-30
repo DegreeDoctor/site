@@ -473,7 +473,7 @@ def scrape_programs():
     print("Finished program scraping")
 
     # create JSON obj and write it to file
-    json_object = json.dumps(programs_per_year, indent=4)
+    json_object = json.dumps(programs_per_year,sort_keys=True, indent=2, ensure_ascii=False)
     with open(root + "/frontend/src/data/programs.json", "w") as outfile:
         outfile.write(json_object)
     return programs_per_year
