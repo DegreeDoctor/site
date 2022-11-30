@@ -94,6 +94,8 @@ for i in range(itr, len(file_text)):
   if line.find("Concentration Area:") >= 0:
     curr_concentration = line.split("Concentration Area:")[1]
     curr_concentration = " ".join(curr_concentration.split())
+    curr_concentration = curr_concentration.replace(" )", ")")
+    curr_concentration = curr_concentration.replace(" ,", ",")
     if curr_concentration not in concentration_dict:
       concentration_dict[curr_concentration] = []
   else:
