@@ -82,5 +82,10 @@ def norm_str(str):
     return rep_uni(s1)
 
 # Take a list of list and remove empty list elements
-def striplist(lstr): 
+def rem_empty(lstr): 
     return list(filter(None, lstr))
+
+def trim_space(str):
+    while (str.find("  ") != -1):
+        str = str.replace("  "," ");
+    return str

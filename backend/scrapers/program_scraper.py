@@ -4,7 +4,8 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import subjs, prgms, course_dict, root, get_catalogs, norm_str, striplist, clean_str
+from degree_util import subjs, prgms, course_dict, root
+from degree_util import get_catalogs, norm_str, rem_empty, clean_str, trim_space
 from collections import OrderedDict
 
 # The api key is public so it does not need to be hidden in a .env file
@@ -50,8 +51,30 @@ def split_content(str):
         else:
             ret.append(rem_lor(norm_str(str[:ind+1])))
             str = str[ind+1:]
+    
+    # while (str.find("Elective") != -1 and str.find("Credit Hours") == -1):
+    #     ind = str.find("Elective") + 9
+    #     tmp = str[:ind]
+    #     while (ind < len(str) and str[ind] == "I"):
+    #         tmp += str[ind]
+    #         ind+= 1
+    #     str = str[ind:]
+    #     ret.append(tmp)
+
     if (len(str) > 0):
         ret.append(str)
+    
+    added = []
+    for i,r in enumerate(ret):
+        if (r.find("Capstone I") != -1):
+            ind = r.find("Capstone I")+10
+            curr = r[:r.find("Capstone I")+10]
+            while (ind < len(r) and r[ind] == "I"):
+                ind += 1
+                curr += "I"
+            added.append(curr)
+            ret[i] = r[ind:]
+    ret.extend(added)
     return ret
 
 # seperates class strings into seperates if there exists
@@ -160,8 +183,10 @@ def get_subj(str):
     return ""
 
 def strip_subj(str):
+    str = trim_space(str)
     if (len(get_subj(str)) == 0):
         return rep_subj_template(str)
+    str = rep_subj_template(str)
     while (str.find(" - ") != -1):
         if (str.find(" - ") > 9):
             str = str[:str.find(" - ")-9] + str[str.find(" - ")+3:]
@@ -172,43 +197,45 @@ def strip_subj(str):
 def strip_list(inp):
     return [strip_subj(x) for x in inp]
 
-def trim_space(str):
-    while (str.find("  ") != -1):
-        str = str.replace("  "," ");
-    return str
-
 def rep_subj_template(str):
-    str = trim_space(str)
-    li = [('HASS Core','HASS'), ('Mathematics','MATH'), ('CS', 'CSCI'), ('Computer Science','CSCI'),
+    li = [('HASS Core','HASS'), ('Mathematics','MATH'), ('CS ', 'CSCI '), ('Computer Science','CSCI'),
     ('Science', 'SCIS')]
     if str.find("Elective") != -1 or str.find("Option") != -1:
         for a,b in li:
-            if (str.find(a) != -1):
-                return str[:str.find(a)] + b + str[str.find(a) + len(a):]
+            str = str.replace(a,b)
 
     return str
 
 # hardcoded replacement for certain strings UPDATE/FIX Later (if its possible to like... not hardcode this)
 def rep_subj(str):
-    if str.find("Elective") != -1:
-        return "Elective"
-    if str == "CS" or str == "Computer Science":
+    str = str.strip()
+    if str.find("Free") != -1:
+        return "Free"
+    if str.find("CS") != -1 or str.find("Computer Science") != -1:
         return "CSCI"
-    if str == "Mathematics":
+    if str.find("Mathematics") != -1:
         return "MATH"
-    if str == "HASS Core" or str == "HASS  Core":
+    if str.find("HASS") != -1:
         return "HASS"
-    if str == "Science":
+    if str.find("Science") != -1:
         return "SCIS"
+    if str.find("Elective") != -1:
+        if str == "Elective" or str == "Electives":
+            return "Elective"
+        if (len(str[:str.find("Elective")]) > 0):
+            return str[:str.find("Elective")].strip()
     return str
 
 # seperates classes that may be stacked together and finds elective classes' department codes
 def get_elec(str):
     ret = []
     spltstr = str.split(" or ")
-    
-    if (len(spltstr) == 1):
-        ret.append(str)
+
+    if (len(spltstr) == 1): 
+        if (str.find("Credit Hours") != -1):
+            ret.append(rep_subj(str[:str.find("Credit Hours")]))
+        else:
+            ret.append(rep_subj(str));
         return ret
 
     for s in spltstr:
@@ -222,7 +249,7 @@ def get_elec(str):
 
 # get max credits from electives
 def get_elec_cred(str):
-    str = str[str.find("Credit Hours:"):]
+    str = str[str.find("Credit Hours"):]
     if (str[len(str)-1].isnumeric()):
         if (str.find("-") >= len(str)-5):
             return int(str[str.find("-")+1:])
@@ -237,11 +264,9 @@ def add_classes_and_credits(str,ret_set,ret_dict):
     if (len(get_subj(str)) > 0):
         ret_set.add(strip_subj(str))
     else:
-        print(str)
         tmp = get_elec(str.strip())
         for t in tmp:
             cred = get_elec_cred(str)
-            print(cred)
             if ret_dict.get(t) != None:
                 ret_dict[t] += cred
             else: 
@@ -362,7 +387,7 @@ def parse_semester(inp):
                                 s += " " + extra
                         sem.append(s)
 
-            course_list = striplist(sem)
+            course_list = rem_empty(sem)
             if (len(course_list) > 0):
                 ret.append(course_list)
     return ret
@@ -394,8 +419,8 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         if (check):
             continue
         # # For now only parse CS
-        if (name != "Aeronautical Engineering Curriculum" ):
-            continue
+        # if (name != "Materials Engineering" ):
+        #     continue
         
         # Get program description
         desc = ""

@@ -7,7 +7,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import subjs, root, get_catalogs, clean_str, norm_str
+from degree_util import subjs, root, get_catalogs, clean_str, norm_str, trim_space
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
@@ -149,7 +149,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
             ID = course.xpath("./content/code/text()")[0].strip()
             if ID[0] == '6' or ID[0] == '9':
                 continue
-            course_name = clean_str(course.xpath("./content/name/text()")[0].strip())
+            course_name = clean_str(trim_space(norm_str(course.xpath("./content/name/text()")[0].strip())))
             fields = course.xpath("./content/field")
             year = ""
             semesters = []
