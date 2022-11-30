@@ -287,8 +287,8 @@
         ],
         "prerequisites": {
             "required": [
-                "ARCH-2530",
-                "ARCH-2820"
+                "ARCH-2820",
+                "ARCH-2530"
             ],
             "one_of": []
         },
@@ -317,8 +317,8 @@
         ],
         "prerequisites": {
             "required": [
-                "ARCH-2830",
-                "ARCH-2540"
+                "ARCH-2540",
+                "ARCH-2830"
             ],
             "one_of": []
         },
@@ -398,8 +398,8 @@
         ],
         "prerequisites": {
             "required": [
-                "ARCH-2800",
-                "ARCH-2530"
+                "ARCH-2530",
+                "ARCH-2800"
             ],
             "one_of": []
         },
@@ -685,8 +685,8 @@
         ],
         "prerequisites": {
             "required": [
-                "ARCH-2150",
-                "ARCH-2160"
+                "ARCH-2160",
+                "ARCH-2150"
             ],
             "one_of": []
         },
@@ -713,8 +713,8 @@
         ],
         "prerequisites": {
             "required": [
-                "ARCH-2150",
-                "ARCH-2160"
+                "ARCH-2160",
+                "ARCH-2150"
             ],
             "one_of": []
         },
@@ -869,8 +869,8 @@
         ],
         "prerequisites": {
             "required": [
-                "ARCH-2360",
                 "ARCH-4550",
+                "ARCH-2360",
                 "ARCH-4740"
             ],
             "one_of": []
@@ -1138,7 +1138,7 @@
         "name": "Sustainable Building Design Metrics",
         "subject": "ARCH",
         "ID": "4750",
-        "description": "A review of current and anticipated metrics associated with sustainable building design will be reviewed as well as construction practices in the building industry will be discussed  H ow sustainable design practices can mitigate the climate change in a positive way will be reviewed An understanding of energy terminology is useful for this course Lectures discussions field trips and assigned reading will be utilized to explore the subject matter",
+        "description": "A review of current and anticipated metrics associated with sustainable building design will be reviewed as well as construction practices in the building industry will be discussed H ow sustainable design practices can mitigate the climate change in a positive way will be reviewed An understanding of energy terminology is useful for this course Lectures discussions field trips and assigned reading will be utilized to explore the subject matter",
         "credits": [
             2
         ],
@@ -1489,8 +1489,8 @@
         ],
         "prerequisites": {
             "required": [
-                "ARCH-4830",
-                "ARCH-4780"
+                "ARCH-4780",
+                "ARCH-4830"
             ],
             "one_of": []
         },
@@ -1969,8 +1969,8 @@
             "required": [],
             "one_of": [
                 [
-                    "ARTS-1020",
                     "ARTS-1040",
+                    "ARTS-1020",
                     "ARTS-1200"
                 ]
             ]
@@ -2570,8 +2570,8 @@
             "one_of": [
                 [
                     "ARTS-2020",
-                    "ARTS-4510",
-                    "ARTS-4010"
+                    "ARTS-4010",
+                    "ARTS-4510"
                 ]
             ]
         },
@@ -2600,8 +2600,8 @@
         ],
         "prerequisites": {
             "required": [
-                "ARTS-1030",
                 "IHSS-1040",
+                "ARTS-1030",
                 "IHSS-1030"
             ],
             "one_of": []
@@ -2685,17 +2685,17 @@
         ],
         "prerequisites": {
             "required": [
-                "ARTS-1020",
+                "IHSS-1040",
                 "ARTS-1040",
+                "ARTS-2220",
                 "IHSS-1030",
                 "ARTS-2380",
-                "IHSS-1170",
-                "ARTS-1200",
                 "ARTS-2020",
-                "ARTS-2220",
-                "IHSS-1040",
                 "ARTS-1030",
-                "IHSS-1180"
+                "IHSS-1180",
+                "ARTS-1200",
+                "ARTS-1020",
+                "IHSS-1170"
             ],
             "one_of": []
         },
@@ -2777,8 +2777,8 @@
         ],
         "prerequisites": {
             "required": [
-                "ARTS-2500",
-                "ARTS-2540"
+                "ARTS-2540",
+                "ARTS-2500"
             ],
             "one_of": []
         },
@@ -2996,19 +2996,19 @@
         ],
         "prerequisites": {
             "required": [
-                "ARTS-1020",
-                "ARTS-1040",
-                "ARTS-4120",
-                "IHSS-1030",
-                "ARTS-2380",
-                "IHSS-1170",
-                "ARTS-4140",
-                "ARTS-1200",
-                "ARTS-2020",
-                "ARTS-2220",
                 "IHSS-1040",
+                "ARTS-1040",
+                "ARTS-2220",
+                "IHSS-1030",
+                "ARTS-4140",
+                "ARTS-2380",
+                "ARTS-2020",
+                "ARTS-4120",
                 "ARTS-1030",
-                "IHSS-1180"
+                "IHSS-1180",
+                "ARTS-1200",
+                "ARTS-1020",
+                "IHSS-1170"
             ],
             "one_of": []
         },
@@ -3195,8 +3195,8 @@
         ],
         "prerequisites": {
             "required": [
-                "CSCI-4540",
-                "GSAS-4540"
+                "GSAS-4540",
+                "CSCI-4540"
             ],
             "one_of": []
         },
@@ -3298,19 +3298,19 @@
         ],
         "prerequisites": {
             "required": [
-                "ARTS-1020",
-                "ARTS-1040",
-                "ARTS-4120",
-                "IHSS-1030",
-                "ARTS-2380",
-                "IHSS-1170",
-                "ARTS-4140",
-                "ARTS-1200",
-                "ARTS-2020",
-                "ARTS-2220",
                 "IHSS-1040",
+                "ARTS-1040",
+                "ARTS-2220",
+                "IHSS-1030",
+                "ARTS-4140",
+                "ARTS-2380",
+                "ARTS-2020",
+                "ARTS-4120",
                 "ARTS-1030",
-                "IHSS-1180"
+                "IHSS-1180",
+                "ARTS-1200",
+                "ARTS-1020",
+                "IHSS-1170"
             ],
             "one_of": []
         },
@@ -3899,8 +3899,8 @@
         "prerequisites": {
             "required": [
                 "BIOL-4760",
-                "BIOL-4620",
-                "MATH-1020"
+                "MATH-1020",
+                "BIOL-4620"
             ],
             "one_of": []
         },
@@ -4554,8 +4554,8 @@
         ],
         "prerequisites": {
             "required": [
-                "MATH-1010",
-                "BIOL-1010"
+                "BIOL-1010",
+                "MATH-1010"
             ],
             "one_of": []
         },
@@ -4678,9 +4678,9 @@
             "one_of": [
                 [
                     "BIOL-2120",
+                    "PHYS-1100",
                     "CHEM-2250",
-                    "BIOL-4620",
-                    "PHYS-1100"
+                    "BIOL-4620"
                 ]
             ]
         },
@@ -4852,9 +4852,9 @@
         ],
         "prerequisites": {
             "required": [
+                "CSCI-1200",
                 "MATH-1020",
-                "BIOL-4620",
-                "CSCI-1200"
+                "BIOL-4620"
             ],
             "one_of": []
         },
@@ -5382,8 +5382,8 @@
         ],
         "prerequisites": {
             "required": [
-                "BMED-2300",
                 "BMED-2100",
+                "BMED-2300",
                 "BMED-2540"
             ],
             "one_of": []
@@ -5412,9 +5412,9 @@
         ],
         "prerequisites": {
             "required": [
-                "MATH-2400",
+                "PHYS-1200",
                 "BMED-2050",
-                "PHYS-1200"
+                "MATH-2400"
             ],
             "one_of": []
         },
@@ -6112,8 +6112,8 @@
                     "CHEM-1210",
                     "CHEM-1600",
                     "ENGR-1600",
-                    "PHYS-1600",
-                    "ISCI-1600"
+                    "ISCI-1600",
+                    "PHYS-1600"
                 ]
             ]
         },
@@ -7356,8 +7356,8 @@
         ],
         "prerequisites": {
             "required": [
-                "CHME-4010",
                 "CHME-2020",
+                "CHME-4010",
                 "CHME-4020"
             ],
             "one_of": []
@@ -7413,8 +7413,8 @@
         ],
         "prerequisites": {
             "required": [
-                "CHME-4020",
                 "CHME-4010",
+                "CHME-4020",
                 "CHME-2020"
             ],
             "one_of": []
@@ -7605,9 +7605,9 @@
         ],
         "prerequisites": {
             "required": [
-                "CHME-4010",
                 "CHME-2020",
                 "CHME-2010",
+                "CHME-4010",
                 "CHME-4020"
             ],
             "one_of": []
@@ -8362,15 +8362,15 @@
         ],
         "prerequisites": {
             "required": [
-                "CSCI-2300",
                 "CSCI-4150",
+                "CSCI-2300",
                 "PSYC-4370"
             ],
             "one_of": [
                 [
                     "PSYC-1200",
-                    "PSYC-2120",
-                    "PHIL-2120"
+                    "PHIL-2120",
+                    "PSYC-2120"
                 ]
             ]
         },
@@ -8397,8 +8397,8 @@
         ],
         "prerequisites": {
             "required": [
-                "COGS-2120",
-                "PSYC-1200"
+                "PSYC-1200",
+                "COGS-2120"
             ],
             "one_of": []
         },
@@ -8575,9 +8575,9 @@
         ],
         "prerequisites": {
             "required": [
-                "IHSS-1150",
                 "IHSS-1140",
-                "PSYC-1200"
+                "PSYC-1200",
+                "IHSS-1150"
             ],
             "one_of": []
         },
@@ -8635,8 +8635,8 @@
             "required": [],
             "one_of": [
                 [
-                    "PSYC-4330",
                     "COGS-4330",
+                    "PSYC-4330",
                     "PSYC-4360",
                     "COGS-4360",
                     "PSYC-4370"
@@ -8699,8 +8699,8 @@
             "required": [],
             "one_of": [
                 [
-                    "PSYC-2120",
                     "PHIL-2120",
+                    "PSYC-2120",
                     "PSYC-4310",
                     "PSYC-4370"
                 ]
@@ -9193,8 +9193,8 @@
         ],
         "prerequisites": {
             "required": [
-                "ARCH-2520",
                 "COMM-2660",
+                "ARCH-2520",
                 "ARTS-1020",
                 "COMM-2570"
             ],
@@ -9600,8 +9600,8 @@
                     "MATH-1010",
                     "MATH-1500",
                     "MATH-1020",
-                    "MATH-2010",
-                    "MATH-1020"
+                    "MATH-1020",
+                    "MATH-2010"
                 ]
             ]
         },
@@ -10011,8 +10011,8 @@
         ],
         "prerequisites": {
             "required": [
-                "CSCI-4210",
                 "CSCI-2300",
+                "CSCI-4210",
                 "CSCI-4220"
             ],
             "one_of": []
@@ -10077,8 +10077,8 @@
         "prerequisites": {
             "required": [
                 "CSCI-4800",
-                "CSCI-2300",
                 "CSCI-4260",
+                "CSCI-2300",
                 "CSCI-4020"
             ],
             "one_of": []
@@ -10297,10 +10297,10 @@
         ],
         "prerequisites": {
             "required": [
-                "ITWS-6350",
-                "CSCI-4350",
                 "ITWS-4350",
-                "CSCI-6350"
+                "ITWS-6350",
+                "CSCI-6350",
+                "CSCI-4350"
             ],
             "one_of": []
         },
@@ -10388,8 +10388,8 @@
             "required": [],
             "one_of": [
                 [
-                    "ERTH-4960",
                     "CSCI-1200",
+                    "ERTH-4960",
                     "CSCI-4960"
                 ]
             ]
@@ -10827,9 +10827,9 @@
         ],
         "prerequisites": {
             "required": [
-                "ERTH-4350",
+                "ITWS-4350",
                 "CSCI-4350",
-                "ITWS-4350"
+                "ERTH-4350"
             ],
             "one_of": []
         },
@@ -11218,8 +11218,8 @@
         },
         "professors": []
     },
-    "Structure of Industry  Competition Innovation Entrepreneurship Policy": {
-        "name": "Structure of Industry  Competition Innovation Entrepreneurship Policy",
+    "Structure of Industry Competition Innovation Entrepreneurship Policy": {
+        "name": "Structure of Industry Competition Innovation Entrepreneurship Policy",
         "subject": "ECON",
         "ID": "4140",
         "description": "",
@@ -11644,9 +11644,9 @@
                     "MATH-1010"
                 ],
                 [
+                    "ENGR-2600",
                     "MATP-4600",
                     "MGMT-2100",
-                    "ENGR-2600",
                     "PSYC-2310"
                 ]
             ]
@@ -12533,9 +12533,9 @@
         ],
         "prerequisites": {
             "required": [
+                "ECSE-2100",
                 "ECSE-2050",
-                "MATH-4600",
-                "ECSE-2100"
+                "MATH-4600"
             ],
             "one_of": []
         },
@@ -12927,8 +12927,8 @@
         ],
         "prerequisites": {
             "required": [
-                "MATH-2010",
-                "CSCI-1200"
+                "CSCI-1200",
+                "MATH-2010"
             ],
             "one_of": []
         },
@@ -13640,8 +13640,8 @@
             "one_of": [
                 [
                     "ENGR-1100",
-                    "ECSE-1010",
                     "CIVL-1200",
+                    "ECSE-1010",
                     "ENGR-1200",
                     "ENGR-1400"
                 ],
@@ -13679,8 +13679,8 @@
             "one_of": [
                 [
                     "ENGR-1100",
-                    "MATH-2400",
-                    "ECSE-1010"
+                    "ECSE-1010",
+                    "MATH-2400"
                 ],
                 [
                     "PHYS-1100",
@@ -13716,8 +13716,8 @@
             "one_of": [
                 [
                     "ENGR-1100",
-                    "MATH-2400",
-                    "ECSE-1010"
+                    "ECSE-1010",
+                    "MATH-2400"
                 ],
                 [
                     "PHYS-1100",
@@ -14053,20 +14053,20 @@
     },
     "Design and Innovation Studio C": {
         "name": "Design and Innovation Studio C",
-        "subject": "ENGR",
+        "subject": "STSO",
         "ID": "4610",
-        "description": "DIS Studio C focuses on the coproduction of products organizations and problemsolving strategies Students will explore how to facilitate communication across multiple disciplinary and audience modalities including stakeholders designers and users Projects and course discussions will train students to translate social scientific and engineering problemsolving judgments and to evaluate how complex problems come to be defined This course is required for DIS students who are dualmajoring with the School of Engineering",
+        "description": "",
         "credits": [
             4
         ],
         "prerequisites": {
             "required": [
-                "STSO-2020"
+                "ENGR-2020"
             ],
             "one_of": []
         },
         "crosslisted": {
-            "ENGR": "4610"
+            "STSO": "4610"
         },
         "offered": {
             "year": "all",
@@ -14244,9 +14244,9 @@
         ],
         "prerequisites": {
             "required": [
+                "ENGR-2050",
                 "ENVE-4320",
-                "ENVE-4340",
-                "ENGR-2050"
+                "ENVE-4340"
             ],
             "one_of": []
         },
@@ -14335,10 +14335,10 @@
             "required": [],
             "one_of": [
                 [
-                    "ENGR-2250",
                     "MANE-2720",
                     "BMED-4250",
                     "CIVL-2050",
+                    "ENGR-2250",
                     "CHME-4010"
                 ]
             ]
@@ -14974,8 +14974,8 @@
         ],
         "prerequisites": {
             "required": [
-                "ERTH-1100",
                 "ERTH-1200",
+                "ERTH-1100",
                 "CHEM-1100"
             ],
             "one_of": []
@@ -15050,8 +15050,8 @@
         ],
         "prerequisites": {
             "required": [
-                "ERTH-2610",
-                "ERTH-1200"
+                "ERTH-1200",
+                "ERTH-2610"
             ],
             "one_of": []
         },
@@ -16044,7 +16044,7 @@
         "name": "Human Rights in History",
         "subject": "IHSS",
         "ID": "1500",
-        "description": "This course explores the historical development of modern international human rights through the lens of American foreign policy  Through lecture and discussion of the assigned readings this course will guide students in critical analysis of the narratives and national myths surrounding human rights in the history of the United States and the world  Major themes include the origins of human rights human rights abuses the human rights regime human rights institutions and problems of enforcement",
+        "description": "This course explores the historical development of modern international human rights through the lens of American foreign policy Through lecture and discussion of the assigned readings this course will guide students in critical analysis of the narratives and national myths surrounding human rights in the history of the United States and the world Major themes include the origins of human rights human rights abuses the human rights regime human rights institutions and problems of enforcement",
         "credits": [
             4
         ],
@@ -18142,7 +18142,8 @@
         "prerequisites": {
             "required": [
                 "ENGR-2250",
-                "MANE-2720"
+                "MANE-2720",
+                "MATH-2010"
             ],
             "one_of": []
         },
@@ -19169,8 +19170,8 @@
         "prerequisites": {
             "required": [
                 "MANE-2710",
-                "MANE-4740",
-                "MANE-2720"
+                "MANE-2720",
+                "MANE-4740"
             ],
             "one_of": []
         },
@@ -20000,7 +20001,11 @@
         ],
         "prerequisites": {
             "required": [],
-            "one_of": []
+            "one_of": [
+                [
+                    "MATH-4200"
+                ]
+            ]
         },
         "crosslisted": {},
         "offered": {
@@ -20413,8 +20418,8 @@
             "one_of": [
                 [
                     "MATP-4400",
-                    "CSCI-4100",
                     "CSCI-6100",
+                    "CSCI-4100",
                     "ECSE-6610",
                     "ITWS-6600",
                     "ITWS-4600",
@@ -21863,9 +21868,9 @@
         ],
         "prerequisites": {
             "required": [
-                "MGMT-2300",
                 "MGMT-2430",
                 "MGMT-2320",
+                "MGMT-2300",
                 "MGMT-4110"
             ],
             "one_of": []
@@ -21925,9 +21930,9 @@
                 "MGMT-6040",
                 "MGMT-7730",
                 "MGMT-7060",
+                "MGMT-6020",
                 "MGMT-6100",
                 "MGMT-6140",
-                "MGMT-6020",
                 "MGMT-6060"
             ],
             "one_of": []
@@ -22009,9 +22014,9 @@
                 "MGMT-6040",
                 "MGMT-7730",
                 "MGMT-7060",
+                "MGMT-6020",
                 "MGMT-6100",
                 "MGMT-6140",
-                "MGMT-6020",
                 "MGMT-6060"
             ],
             "one_of": []
@@ -22636,9 +22641,9 @@
         ],
         "prerequisites": {
             "required": [
-                "ENGR-2250",
                 "ENGR-1600",
-                "CHEM-1100"
+                "CHEM-1100",
+                "ENGR-2250"
             ],
             "one_of": []
         },
@@ -22665,8 +22670,8 @@
         ],
         "prerequisites": {
             "required": [
-                "CHEM-1100",
-                "MTLE-4100"
+                "MTLE-4100",
+                "CHEM-1100"
             ],
             "one_of": [
                 [
@@ -22725,9 +22730,9 @@
         ],
         "prerequisites": {
             "required": [
+                "PHYS-1200",
                 "ENGR-1600",
-                "MTLE-2100",
-                "PHYS-1200"
+                "MTLE-2100"
             ],
             "one_of": []
         },
@@ -22808,8 +22813,8 @@
         "prerequisites": {
             "required": [
                 "MTLE-4150",
-                "MTLE-4200",
-                "MTLE-4250"
+                "MTLE-4250",
+                "MTLE-4200"
             ],
             "one_of": []
         },
@@ -23419,12 +23424,12 @@
         ],
         "prerequisites": {
             "required": [
+                "PHIL-4240",
+                "STSO-2500",
                 "STSO-2510",
-                "IHSS-1150",
                 "STSO-2520",
                 "IHSS-1160",
-                "STSO-2500",
-                "PHIL-4240",
+                "IHSS-1150",
                 "PHIL-1110"
             ],
             "one_of": []
@@ -23987,8 +23992,8 @@
         ],
         "prerequisites": {
             "required": [
-                "MATH-2400",
                 "PHYS-2220",
+                "MATH-2400",
                 "MATH-2010"
             ],
             "one_of": []
@@ -24073,16 +24078,16 @@
             "required": [],
             "one_of": [
                 [
+                    "ASTR-4220",
+                    "PHYS-4640",
                     "PHYS-4620",
                     "PHYS-4630",
                     "ASTR-4510",
-                    "PHYS-4640",
-                    "PHYS-4240",
-                    "ASTR-4240",
                     "ASTR-4120",
-                    "ASTR-4220",
-                    "PHYS-4720",
-                    "PHYS-4810"
+                    "ASTR-4240",
+                    "PHYS-4240",
+                    "PHYS-4810",
+                    "PHYS-4720"
                 ]
             ]
         },
@@ -24531,8 +24536,8 @@
             "one_of": [
                 [
                     "PSYC-1200",
-                    "PSYC-2120",
-                    "PHIL-2120"
+                    "PHIL-2120",
+                    "PSYC-2120"
                 ]
             ]
         },
@@ -24967,8 +24972,8 @@
         "prerequisites": {
             "required": [
                 "STSO-2210",
-                "STSO-2500",
                 "STSO-1110",
+                "STSO-2500",
                 "STSO-2520"
             ],
             "one_of": []
@@ -25109,8 +25114,8 @@
         "prerequisites": {
             "required": [
                 "STSO-2500",
-                "STSO-2520",
-                "STSO-2510"
+                "STSO-2510",
+                "STSO-2520"
             ],
             "one_of": []
         },
@@ -25138,9 +25143,9 @@
         "prerequisites": {
             "required": [
                 "IHSS-1410",
-                "IHSS-1420",
                 "STSO-1110",
-                "IHSS-1430"
+                "IHSS-1430",
+                "IHSS-1420"
             ],
             "one_of": [
                 [
@@ -25198,9 +25203,9 @@
         "prerequisites": {
             "required": [
                 "IHSS-1410",
-                "IHSS-1420",
                 "STSO-1110",
-                "IHSS-1430"
+                "IHSS-1430",
+                "IHSS-1420"
             ],
             "one_of": [
                 [
@@ -25286,11 +25291,11 @@
         ],
         "prerequisites": {
             "required": [
-                "STSO-1110",
-                "IHSS-1430",
-                "IHSS-1420",
+                "STSO-2500",
                 "STSO-2520",
-                "STSO-2500"
+                "IHSS-1420",
+                "STSO-1110",
+                "IHSS-1430"
             ],
             "one_of": []
         },
@@ -25420,13 +25425,13 @@
         ],
         "prerequisites": {
             "required": [
-                "STSS-2510",
+                "STSS-2100",
                 "STSS-2520",
                 "STSS-2210",
-                "STSS-2700",
-                "STSH-2500",
                 "STSS-2300",
-                "STSS-2100"
+                "STSS-2510",
+                "STSH-2500",
+                "STSS-2700"
             ],
             "one_of": []
         },
@@ -25531,10 +25536,10 @@
         ],
         "prerequisites": {
             "required": [
+                "IHSS-1110",
                 "STSO-1110",
-                "IHSS-1240",
                 "IHSS-1320",
-                "IHSS-1110"
+                "IHSS-1240"
             ],
             "one_of": []
         },
@@ -25583,10 +25588,10 @@
         ],
         "prerequisites": {
             "required": [
+                "IHSS-1110",
                 "STSO-1110",
-                "IHSS-1240",
                 "IHSS-1320",
-                "IHSS-1110"
+                "IHSS-1240"
             ],
             "one_of": []
         },
@@ -25687,8 +25692,8 @@
         },
         "professors": []
     },
-    "Professional Development  2 \u00e2Technical Issues and Solutions": {
-        "name": "Professional Development  2 \u00e2Technical Issues and Solutions",
+    "Professional Development 2 Technical Issues and Solutions": {
+        "name": "Professional Development 2 Technical Issues and Solutions",
         "subject": "STSO",
         "ID": "4100",
         "description": "",
@@ -25721,11 +25726,11 @@
         ],
         "prerequisites": {
             "required": [
-                "STSO-2510",
+                "STSO-2500",
                 "STSO-2210",
+                "STSO-2510",
                 "STSO-2520",
-                "STSO-2300",
-                "STSO-2500"
+                "STSO-2300"
             ],
             "one_of": []
         },
@@ -25802,12 +25807,12 @@
         ],
         "prerequisites": {
             "required": [
-                "STSO-2100",
-                "STSO-2010",
-                "STSO-2520",
+                "STSO-2500",
                 "STSO-2210",
-                "STSO-2300",
-                "STSO-2500"
+                "STSO-2100",
+                "STSO-2520",
+                "STSO-2010",
+                "STSO-2300"
             ],
             "one_of": []
         },
@@ -25908,12 +25913,12 @@
         ],
         "prerequisites": {
             "required": [
-                "STSO-2510",
-                "STSO-2100",
-                "STSO-2520",
+                "STSO-2500",
                 "STSO-2210",
-                "STSO-2300",
-                "STSO-2500"
+                "STSO-2100",
+                "STSO-2510",
+                "STSO-2520",
+                "STSO-2300"
             ],
             "one_of": []
         },
@@ -25942,9 +25947,9 @@
             "required": [],
             "one_of": [
                 [
+                    "STSH-2500",
                     "STSS-2520",
                     "STSS-2300",
-                    "STSH-2500",
                     "STSS-2510"
                 ]
             ]
@@ -26003,35 +26008,6 @@
             "year": "odd",
             "semesters": [
                 "fall"
-            ]
-        },
-        "properties": {
-            "CI": false,
-            "MR": false
-        },
-        "professors": []
-    },
-    "Design and Innovation  Studio C": {
-        "name": "Design and Innovation  Studio C",
-        "subject": "STSO",
-        "ID": "4610",
-        "description": "DIS Studio C focuses on the coproduction of products organizations and problemsolving strategies Students will explore how to facilitate communication across multiple disciplinary and audience modalities including stakeholders designers and users Projects and course discussions will train students to translate social scientific and engineering problemsolving judgments and to evaluate how complex problems come to be defined This course is required for DIS students who are dualmajoring with the School of Engineering",
-        "credits": [
-            4
-        ],
-        "prerequisites": {
-            "required": [
-                "ENGR-2020"
-            ],
-            "one_of": []
-        },
-        "crosslisted": {
-            "STSO": "4610"
-        },
-        "offered": {
-            "year": "all",
-            "semesters": [
-                "spring"
             ]
         },
         "properties": {
@@ -26173,8 +26149,8 @@
         },
         "professors": []
     },
-    "Creative Writing  The Short Story": {
-        "name": "Creative Writing  The Short Story",
+    "Creative Writing The Short Story": {
+        "name": "Creative Writing The Short Story",
         "subject": "WRIT",
         "ID": "2330",
         "description": "",
@@ -26308,9 +26284,9 @@
         ],
         "prerequisites": {
             "required": [
-                "WRIT-2110",
+                "WRIT-1110",
                 "COMM-2520",
-                "WRIT-1110"
+                "WRIT-2110"
             ],
             "one_of": []
         },
@@ -26395,18 +26371,18 @@
         ],
         "prerequisites": {
             "required": [
-                "ARTS-1020",
-                "ARTS-1040",
-                "IHSS-1030",
-                "ARTS-2380",
-                "IHSS-1170",
-                "ARTS-4140",
-                "ARTS-1200",
-                "ARTS-2020",
-                "ARTS-2220",
                 "IHSS-1040",
+                "ARTS-1040",
+                "ARTS-2220",
+                "IHSS-1030",
+                "ARTS-4140",
+                "ARTS-2380",
+                "ARTS-2020",
                 "ARTS-1030",
-                "IHSS-1180"
+                "IHSS-1180",
+                "ARTS-1200",
+                "ARTS-1020",
+                "IHSS-1170"
             ],
             "one_of": []
         },
@@ -26541,9 +26517,9 @@
         ],
         "prerequisites": {
             "required": [
-                "ENGR-1100",
+                "PHYS-1100",
                 "MATH-2400",
-                "PHYS-1100"
+                "ENGR-1100"
             ],
             "one_of": []
         },
@@ -26773,11 +26749,11 @@
             "required": [
                 "MATH-2010",
                 "ECON-4570",
-                "MATP-4600",
-                "PSYC-2310",
                 "MGMT-2100",
-                "BIOL-4200",
-                "ENGR-2600"
+                "PSYC-2310",
+                "MATP-4600",
+                "ENGR-2600",
+                "BIOL-4200"
             ],
             "one_of": []
         },
@@ -27853,10 +27829,10 @@
             "required": [],
             "one_of": [
                 [
-                    "COGS-2340",
                     "PSYC-1200",
-                    "COGS-2120",
                     "COGS-4330",
+                    "COGS-2120",
+                    "COGS-2340",
                     "PSYC-4370"
                 ]
             ]
@@ -28035,8 +28011,8 @@
             "required": [],
             "one_of": [
                 [
-                    "PHYS-1100",
                     "ERTH-1100",
+                    "PHYS-1100",
                     "CHEM-1100",
                     "BIOL-1010"
                 ]
@@ -28090,10 +28066,10 @@
             "required": [],
             "one_of": [
                 [
-                    "GSAS-1600",
                     "GSAS-2520",
-                    "GSAS-1040",
                     "GSAS-2510",
+                    "GSAS-1040",
+                    "GSAS-1600",
                     "GSAS-2540"
                 ]
             ]
@@ -28123,9 +28099,9 @@
             "required": [],
             "one_of": [
                 [
-                    "CSCI-2300",
                     "CSCI-2200",
                     "CSCI-2500",
+                    "CSCI-2300",
                     "CSCI-2600"
                 ]
             ]
@@ -28511,6 +28487,7 @@
         ],
         "prerequisites": {
             "required": [
+                "STSO-2300",
                 "STSO-1110"
             ],
             "one_of": []
@@ -28538,10 +28515,10 @@
         ],
         "prerequisites": {
             "required": [
+                "IHSS-1110",
                 "STSO-2300",
                 "STSO-1110",
-                "IHSS-1240",
-                "IHSS-1110"
+                "IHSS-1240"
             ],
             "one_of": []
         },
@@ -28753,9 +28730,9 @@
         ],
         "prerequisites": {
             "required": [
-                "CHME-4020",
                 "MATH-2400",
-                "CHME-2050"
+                "CHME-2050",
+                "CHME-4020"
             ],
             "one_of": []
         },
@@ -29229,11 +29206,11 @@
             "required": [],
             "one_of": [
                 [
-                    "ENGR-1600",
                     "ENGR-2350",
-                    "ENGR-2530",
-                    "MANE-4500",
+                    "ENGR-1600",
                     "ENGR-2600",
+                    "MANE-4500",
+                    "ENGR-2530",
                     "MANE-2720"
                 ]
             ]
@@ -29305,8 +29282,8 @@
         "prerequisites": {
             "required": [
                 "MGMT-6040",
-                "MGMT-6100",
-                "MGMT-6450"
+                "MGMT-6450",
+                "MGMT-6100"
             ],
             "one_of": []
         },
@@ -29468,30 +29445,6 @@
         },
         "professors": []
     },
-    "Professional Development  2 Technical Issues and Solutions": {
-        "name": "Professional Development  2 Technical Issues and Solutions",
-        "subject": "STSO",
-        "ID": "4100",
-        "description": "",
-        "credits": [
-            2
-        ],
-        "prerequisites": [],
-        "crosslisted": {},
-        "offered": {
-            "year": "all",
-            "semesters": [
-                "fall",
-                "spring",
-                "summer"
-            ]
-        },
-        "properties": {
-            "CI": false,
-            "MR": false
-        },
-        "professors": []
-    },
     "Sustainability and STS Careers": {
         "name": "Sustainability and STS Careers",
         "subject": "STSO",
@@ -29536,8 +29489,8 @@
         },
         "professors": []
     },
-    "Creative Writing  Short Story": {
-        "name": "Creative Writing  Short Story",
+    "Creative Writing Short Story": {
+        "name": "Creative Writing Short Story",
         "subject": "WRIT",
         "ID": "2330",
         "description": "",
