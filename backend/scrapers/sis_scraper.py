@@ -91,6 +91,11 @@ def sis_scraper():
         f2.close()
 
 
+
+'''
+link grabber takes in a given SIS page soup and finds the first class info
+link in it and returns that link.
+'''
 def link_grabber(session, soup):
     key = "/rss/bwckschd.p_disp_detail_sched?term_in="
     linkMass = soup.find_all("a", href=True)
@@ -100,6 +105,13 @@ def link_grabber(session, soup):
             break
     return link
 
+'''
+majorRestrictionChecker takes in a link and
+turns it into an array of text lines.
+From that it checks for a keyphrase and then returns 
+text that is guaranteed to follow that keyphrase being the restricted majors.
+If the keyphrase doesn't exist it returns an empty string.
+'''
 def majorRestrictionChecker(session, link):
     innerPage = "https://sis.rpi.edu" + link
     response = session.get(innerPage)
@@ -109,7 +121,6 @@ def majorRestrictionChecker(session, link):
     textList = innerText.splitlines()
     red = list(filter(lambda item: item.strip(), textList))
     searchString = "Must be enrolled in one of the following Majors:"
-    majorIndex = -1
     holder = ""
     for i in range(0, len(textList) - 2):
         if searchString in textList[i]:
