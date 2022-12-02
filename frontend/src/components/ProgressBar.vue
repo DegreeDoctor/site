@@ -1,9 +1,17 @@
 <script>
+import { useStore } from "../stores/store";
+
 export default {
     name: 'ProgressBar',
-    data () {
+    data() {
         return {
-            percent: 50,
+            store: useStore(),
+        }
+    },
+    computed: {
+        percent() {
+            let p = this.store.getCredits;
+            return p / 128;
         }
     }
 }
