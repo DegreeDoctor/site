@@ -16,9 +16,9 @@ export default {
 
 <template>
     <q-layout view="hHh LpR fFf">
-        <ProgressBar />
         <AHeader />
         <q-page-container>
+            <ProgressBar />
             <RouterView />
         </q-page-container>
         <AFooter />

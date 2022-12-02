@@ -1,6 +1,7 @@
 <script>
 import { useStore } from "../stores/store";
 import ACourse from "../components/ACourse.vue";
+import ProgressBar from "../components/ProgressBar.vue";
 
 export default {
     components: {
@@ -38,5 +39,6 @@ export default {
 
 <template>
     <router-link to="quiz">test</router-link>
+    <ProgressBar />
     <ACourse :course="crs" />
 </template>
