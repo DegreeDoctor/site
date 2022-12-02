@@ -199,8 +199,9 @@ export default {
             v-model="degreeName"
             standout="bg-teal text-white"
             label="My Course Plan"
+            :dense="true"
+            style="width: 250px; margin-bottom: 20px"
         />
-        <p>Select Your Major(s):</p>
         <q-select
             v-model="selectedMajors"
             standout="bg-teal text-white"
@@ -210,11 +211,14 @@ export default {
             multiple
             input-debounce="0"
             :options="filteredMajors"
-            style="width: 250px"
+            style="width: 250px; margin-bottom: 20px"
             @new-value="addMajor"
             @input-value="filterMajor"
+            :dense="true"
+            :popup-content-style="{ fontSize: '12px', width: '250px' }"
+            label="Major"
+            hint="Select Your Major(s)"
         />
-        <p>Select Your Minor(s):</p>
         <q-select
             v-model="selectedMinors"
             standout="bg-teal text-white"
@@ -224,11 +228,14 @@ export default {
             multiple
             input-debounce="0"
             :options="filteredMinors"
-            style="width: 250px"
+            style="width: 250px; margin-bottom: 20px"
             @new-value="addMinor"
             @input-value="filterMinor"
+            :dense="true"
+            :popup-content-style="{ fontSize: '12px', width: '250px' }"
+            label="Minor(s)"
+            hint="Select Your Minor(s)"
         />
-        <p>Select Your Pathway(s):</p>
         <q-select
             v-model="selectedPathways"
             standout="bg-teal text-white"
@@ -236,11 +243,14 @@ export default {
             use-input
             input-debounce="0"
             :options="filteredPathways"
-            style="width: 250px"
+            style="width: 250px; margin-bottom: 20px"
             @new-value="addPathway"
             @input-value="filterPathway"
+            :dense="true"
+            :popup-content-style="{ fontSize: '12px', width: '250px' }"
+            label="Pathway(s)"
+            hint="Select Your Pathway(s)"
         />
-        <p>Select Your Concentration(s):</p>
         <q-select
             v-model="selectedConcentrations"
             standout="bg-teal text-white"
@@ -248,12 +258,23 @@ export default {
             use-input
             input-debounce="0"
             :options="filteredConcentrations"
-            style="width: 250px; padding-bottom: 20px"
+            style="width: 250px; margin-bottom: 20px"
             @new-value="addConcentration"
             @input-value="filterConcentration"
+            :dense="true"
+            :popup-content-style="{ fontSize: '12px', width: '250px' }"
+            label="Concentration(s)"
+            hint="Select Your Concentration(s)"
         />
         <div>
             <q-btn label="Submit" color="primary" @click="submit" />
         </div>
     </q-form>
 </template>
+
+<style>
+p {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+</style>
