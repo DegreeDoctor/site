@@ -10,8 +10,12 @@ export default {
     },
     computed: {
         percent() {
-            let p = this.store.getCredits;
-            return p / 128;
+            let total = 0;
+            let courses = this.store.getCredits;
+            for (const name in courses) {
+                total += courses[name];
+            }
+            return total / 128;
         }
     }
 }
