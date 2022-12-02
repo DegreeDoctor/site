@@ -18,7 +18,7 @@ root = os.path.dirname(filepath)
 # Opens the subjects.JSON and returns a list of subject code
 def get_subjs():
     subjs = []
-    f = open(root + '/frontend/src/data/subjs.json', 'r') #make sure to close at end of file
+    f = open(root + '/backend/data/subjs.json', 'r') #make sure to close at end of file
     tmp = json.load(f)
     for subj in tmp:
         subjs.append(subj)
@@ -37,7 +37,7 @@ course_dict = get_courses()
 
 def get_prgms():
     prgms = []
-    f = open(root + '/frontend/src/data/skip_prgms.json', 'r')
+    f = open(root + '/backend/data/skip_prgms.json', 'r')
     tmp = json.load(f)
     for prgm in tmp:
         prgms.append(prgm)

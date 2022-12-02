@@ -131,7 +131,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
         course_ids[i : i + CHUNK_SIZE] for i in range(0, len(course_ids), CHUNK_SIZE)
     ]
     subj_input = []
-    f = open(root + '/frontend/src/data/input.json', 'r')
+    f = open(root + '/backend/data/input.json', 'r')
     f = json.load(f)
     for subj in f:
         subj_input.append(subj)

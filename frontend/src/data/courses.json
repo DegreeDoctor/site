@@ -16,8 +16,8 @@
     "prerequisites": {
       "one_of": [
         [
-          "ARTS-1020",
           "ARTS-1040",
+          "ARTS-1020",
           "ARTS-1200"
         ]
       ],
@@ -488,8 +488,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "BIOL-2120",
         "BIOL-2125",
+        "BIOL-2120",
         "BIOL-2500"
       ]
     },
@@ -1067,8 +1067,7 @@
       "one_of": [],
       "required": [
         "ENGR-2250",
-        "MANE-2720",
-        "MATH-2010"
+        "MANE-2720"
       ]
     },
     "professors": [],
@@ -1368,8 +1367,8 @@
       "one_of": [
         [
           "COGS-2340",
-          "COGS-4330",
           "COGS-2120",
+          "COGS-4330",
           "PSYC-1200",
           "PSYC-4370"
         ]
@@ -1523,12 +1522,12 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "ECON-4570",
         "MATH-2010",
-        "BIOL-4200",
+        "ECON-4570",
+        "PSYC-2310",
         "MGMT-2100",
         "MATP-4600",
-        "PSYC-2310",
+        "BIOL-4200",
         "ENGR-2600"
       ]
     },
@@ -1620,10 +1619,10 @@
     "prerequisites": {
       "one_of": [
         [
-          "CIVL-2050",
-          "MANE-2720",
-          "BMED-4250",
           "ENGR-2250",
+          "CIVL-2050",
+          "BMED-4250",
+          "MANE-2720",
           "CHME-4010"
         ]
       ],
@@ -1740,8 +1739,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "ERTH-2610",
-        "ERTH-1200"
+        "ERTH-1200",
+        "ERTH-2610"
       ]
     },
     "professors": [],
@@ -2204,17 +2203,17 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1030",
         "ARTS-1040",
-        "IHSS-1170",
+        "IHSS-1030",
+        "ARTS-2380",
+        "ARTS-1200",
+        "ARTS-1030",
+        "IHSS-1180",
         "IHSS-1040",
         "ARTS-2020",
-        "IHSS-1180",
+        "IHSS-1170",
         "ARTS-2220",
-        "ARTS-2380",
-        "ARTS-1020",
-        "ARTS-1030",
-        "ARTS-1200"
+        "ARTS-1020"
       ]
     },
     "professors": [],
@@ -2870,13 +2869,13 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "STSO-2510",
-        "STSO-2500",
-        "PHIL-1110",
-        "IHSS-1160",
+        "PHIL-4240",
         "STSO-2520",
+        "PHIL-1110",
+        "STSO-2500",
+        "STSO-2510",
         "IHSS-1150",
-        "PHIL-4240"
+        "IHSS-1160"
       ]
     },
     "professors": [],
@@ -3177,8 +3176,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "BMED-2100",
         "BMED-2300",
+        "BMED-2100",
         "BMED-2540"
       ]
     },
@@ -3294,9 +3293,9 @@
     "prerequisites": {
       "one_of": [],
       "required": [
+        "PHYS-1100",
         "ENGR-1100",
-        "MATH-2400",
-        "PHYS-1100"
+        "MATH-2400"
       ]
     },
     "professors": [],
@@ -3436,18 +3435,18 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1030",
         "ARTS-1040",
-        "IHSS-1170",
+        "IHSS-1030",
+        "ARTS-2380",
+        "ARTS-1200",
+        "ARTS-1030",
+        "IHSS-1180",
         "IHSS-1040",
         "ARTS-2020",
-        "IHSS-1180",
+        "IHSS-1170",
         "ARTS-2220",
-        "ARTS-2380",
-        "ARTS-1020",
-        "ARTS-1030",
-        "ARTS-1200",
-        "ARTS-4140"
+        "ARTS-4140",
+        "ARTS-1020"
       ]
     },
     "professors": [],
@@ -4215,8 +4214,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "CHME-2010",
         "CHME-2050",
+        "CHME-2010",
         "MATH-2400"
       ]
     },
@@ -4274,8 +4273,8 @@
       "one_of": [],
       "required": [
         "CHME-4010",
-        "CHME-2010",
         "CHME-2020",
+        "CHME-2010",
         "CHME-4020"
       ]
     },
@@ -4708,8 +4707,8 @@
           "ENVE-4200",
           "ENVE-4330",
           "ENVE-4340",
-          "ENVE-4350",
-          "ENGR-2050"
+          "ENGR-2050",
+          "ENVE-4350"
         ]
       ],
       "required": [
@@ -4868,8 +4867,8 @@
       ],
       "required": [
         "CSCI-4150",
-        "PSYC-4370",
-        "CSCI-2300"
+        "CSCI-2300",
+        "PSYC-4370"
       ]
     },
     "professors": [],
@@ -5506,8 +5505,8 @@
       "one_of": [
         [
           "CSCI-2500",
-          "CSCI-2200",
           "CSCI-2300",
+          "CSCI-2200",
           "CSCI-2600"
         ]
       ],
@@ -5642,8 +5641,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "MATH-2010",
-        "CSCI-1200"
+        "CSCI-1200",
+        "MATH-2010"
       ]
     },
     "professors": [],
@@ -5724,8 +5723,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "ARCH-4550",
         "ARCH-2360",
+        "ARCH-4550",
         "ARCH-4740"
       ]
     },
@@ -5969,8 +5968,8 @@
     "prerequisites": {
       "one_of": [
         [
-          "STSS-2520",
           "STSS-2300",
+          "STSS-2520",
           "STSH-2500",
           "STSS-2510"
         ]
@@ -6520,16 +6519,16 @@
     "prerequisites": {
       "one_of": [
         [
+          "PHYS-4240",
+          "ASTR-4120",
           "ASTR-4510",
           "ASTR-4240",
-          "PHYS-4620",
-          "ASTR-4120",
-          "PHYS-4630",
           "ASTR-4220",
+          "PHYS-4620",
+          "PHYS-4630",
           "PHYS-4640",
-          "PHYS-4240",
-          "PHYS-4810",
-          "PHYS-4720"
+          "PHYS-4720",
+          "PHYS-4810"
         ]
       ],
       "required": []
@@ -6686,8 +6685,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "ECON-4570",
-        "MATH-2010"
+        "MATH-2010",
+        "ECON-4570"
       ]
     },
     "professors": [],
@@ -6716,8 +6715,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "CSCI-4350",
         "ERTH-4350",
+        "CSCI-4350",
         "ITWS-4350"
       ]
     },
@@ -6751,8 +6750,8 @@
           "CSCI-6100",
           "CSCI-4100",
           "ECSE-6610",
-          "ITWS-4600",
           "ITWS-6600",
+          "ITWS-4600",
           "ISYE-6180",
           "BIOL-4200"
         ]
@@ -6902,9 +6901,9 @@
       "one_of": [],
       "required": [
         "CSCI-4350",
-        "ITWS-4350",
+        "CSCI-6350",
         "ITWS-6350",
-        "CSCI-6350"
+        "ITWS-4350"
       ]
     },
     "professors": [],
@@ -7468,8 +7467,8 @@
         ]
       ],
       "required": [
-        "MATP-4620",
-        "ISYE-4760"
+        "ISYE-4760",
+        "MATP-4620"
       ]
     },
     "professors": [],
@@ -7518,8 +7517,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1200",
-        "ECON-1200"
+        "ECON-1200",
+        "IHSS-1200"
       ]
     },
     "professors": [],
@@ -7658,8 +7657,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "ARCH-2820",
-        "ARCH-2530"
+        "ARCH-2530",
+        "ARCH-2820"
       ]
     },
     "professors": [],
@@ -8330,8 +8329,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "CHEM-1100",
-        "CHEM-1110"
+        "CHEM-1110",
+        "CHEM-1100"
       ]
     },
     "professors": [],
@@ -8360,19 +8359,19 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1030",
+        "ARTS-4120",
         "ARTS-1040",
-        "IHSS-1170",
+        "IHSS-1030",
+        "ARTS-2380",
+        "ARTS-1200",
+        "ARTS-1030",
+        "IHSS-1180",
         "IHSS-1040",
         "ARTS-2020",
-        "IHSS-1180",
+        "IHSS-1170",
         "ARTS-2220",
-        "ARTS-2380",
-        "ARTS-1020",
-        "ARTS-1030",
-        "ARTS-4120",
-        "ARTS-1200",
-        "ARTS-4140"
+        "ARTS-4140",
+        "ARTS-1020"
       ]
     },
     "professors": [],
@@ -8410,9 +8409,9 @@
           "MATH-1010"
         ],
         [
-          "MGMT-2100",
-          "MATP-4600",
           "ENGR-2600",
+          "MATP-4600",
+          "MGMT-2100",
           "PSYC-2310"
         ]
       ],
@@ -8626,8 +8625,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1200",
-        "ECON-1200"
+        "ECON-1200",
+        "IHSS-1200"
       ]
     },
     "professors": [],
@@ -8652,8 +8651,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1200",
-        "ECON-1200"
+        "ECON-1200",
+        "IHSS-1200"
       ]
     },
     "professors": [],
@@ -8743,8 +8742,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1200",
-        "ECON-1200"
+        "ECON-1200",
+        "IHSS-1200"
       ]
     },
     "professors": [],
@@ -8833,9 +8832,9 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "PHYS-1200",
+        "ENGR-1600",
         "MTLE-2100",
-        "ENGR-1600"
+        "PHYS-1200"
       ]
     },
     "professors": [],
@@ -9335,9 +9334,9 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "STSO-2500",
-        "STSO-2210",
         "STSO-2520",
+        "STSO-2210",
+        "STSO-2500",
         "STSO-1110"
       ]
     },
@@ -9632,10 +9631,10 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1110",
         "IHSS-1320",
+        "STSO-1110",
         "IHSS-1240",
-        "STSO-1110"
+        "IHSS-1110"
       ]
     },
     "professors": [],
@@ -9690,9 +9689,9 @@
     "prerequisites": {
       "one_of": [
         [
+          "ERTH-1100",
           "CHEM-1100",
           "PHYS-1100",
-          "ERTH-1100",
           "BIOL-1010"
         ]
       ],
@@ -9720,8 +9719,8 @@
     "prerequisites": {
       "one_of": [
         [
-          "IHSS-1200",
           "ECON-1200",
+          "IHSS-1200",
           "ECON-2010"
         ]
       ],
@@ -9773,10 +9772,10 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1110",
         "STSO-2300",
-        "IHSS-1240",
-        "STSO-1110"
+        "IHSS-1110",
+        "STSO-1110",
+        "IHSS-1240"
       ]
     },
     "professors": [],
@@ -9957,9 +9956,9 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "ENVE-4320",
+        "ENGR-2050",
         "ENVE-4340",
-        "ENGR-2050"
+        "ENVE-4320"
       ]
     },
     "professors": [],
@@ -10596,9 +10595,9 @@
     "prerequisites": {
       "one_of": [],
       "required": [
+        "ECSE-2050",
         "MATH-4600",
-        "ECSE-2100",
-        "ECSE-2050"
+        "ECSE-2100"
       ]
     },
     "professors": [],
@@ -10647,8 +10646,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "ARCH-4780",
-        "ARCH-4830"
+        "ARCH-4830",
+        "ARCH-4780"
       ]
     },
     "professors": [],
@@ -10675,8 +10674,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "ARCH-4910",
-        "ARCH-4790"
+        "ARCH-4790",
+        "ARCH-4910"
       ]
     },
     "professors": [],
@@ -10841,8 +10840,8 @@
       "one_of": [],
       "required": [
         "CHME-2050",
-        "MATH-2400",
-        "CHME-4020"
+        "CHME-4020",
+        "MATH-2400"
       ]
     },
     "professors": [],
@@ -10993,11 +10992,11 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "STSO-2510",
+        "STSO-2520",
         "STSO-2500",
         "STSO-2300",
-        "STSO-2520",
-        "STSO-2210"
+        "STSO-2210",
+        "STSO-2510"
       ]
     },
     "professors": [],
@@ -11305,8 +11304,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "CSCI-4260",
         "CSCI-4020",
+        "CSCI-4260",
         "CSCI-4800",
         "CSCI-2300"
       ]
@@ -11831,11 +11830,11 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "STSO-2510",
+        "STSO-2520",
         "STSO-2500",
         "STSO-2300",
         "STSO-2210",
-        "STSO-2520",
+        "STSO-2510",
         "STSO-2100"
       ]
     },
@@ -12271,10 +12270,10 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "BIOL-1015",
         "BIOL-1010",
-        "BIOL-2120",
-        "BIOL-2125"
+        "BIOL-1015",
+        "BIOL-2125",
+        "BIOL-2120"
       ]
     },
     "professors": [],
@@ -12606,8 +12605,8 @@
         ]
       ],
       "required": [
-        "IHSS-1200",
-        "ECON-1200"
+        "ECON-1200",
+        "IHSS-1200"
       ]
     },
     "professors": [],
@@ -12686,8 +12685,8 @@
       "one_of": [],
       "required": [
         "MANE-2710",
-        "MANE-4740",
-        "MANE-2720"
+        "MANE-2720",
+        "MANE-4740"
       ]
     },
     "professors": [],
@@ -13043,8 +13042,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "STSO-2500",
         "STSO-2520",
+        "STSO-2500",
         "STSO-1110"
       ]
     },
@@ -13237,8 +13236,8 @@
       "one_of": [
         [
           "BIOL-2120",
-          "CHEM-2250",
           "BIOL-4620",
+          "CHEM-2250",
           "PHYS-1100"
         ]
       ],
@@ -13313,7 +13312,7 @@
       4
     ],
     "crosslisted": {},
-    "description": "This course explores the historical development of modern international human rights through the lens of American foreign policy Through lecture and discussion of the assigned readings this course will guide students in critical analysis of the narratives and national myths surrounding human rights in the history of the United States and the world Major themes include the origins of human rights human rights abuses the human rights regime human rights institutions and problems of enforcement",
+    "description": "This course explores the historical development of modern international human rights through the lens of American foreign policy  Through lecture and discussion of the assigned readings this course will guide students in critical analysis of the narratives and national myths surrounding human rights in the history of the United States and the world  Major themes include the origins of human rights human rights abuses the human rights regime human rights institutions and problems of enforcement",
     "name": "Human Rights in History",
     "offered": {
       "semesters": [
@@ -13765,10 +13764,10 @@
         [
           "CHEM-1200",
           "CHEM-1210",
-          "PHYS-1600",
-          "CHEM-1600",
+          "ENGR-1600",
           "ISCI-1600",
-          "ENGR-1600"
+          "CHEM-1600",
+          "PHYS-1600"
         ]
       ],
       "required": []
@@ -13798,8 +13797,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "CHEM-2030",
-        "CHEM-4410"
+        "CHEM-4410",
+        "CHEM-2030"
       ]
     },
     "professors": [],
@@ -14381,8 +14380,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1200",
-        "ECON-1200"
+        "ECON-1200",
+        "IHSS-1200"
       ]
     },
     "professors": [],
@@ -14710,8 +14709,8 @@
         ]
       ],
       "required": [
-        "CSCI-2200",
-        "CSCI-1200"
+        "CSCI-1200",
+        "CSCI-2200"
       ]
     },
     "professors": [],
@@ -16820,10 +16819,10 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1110",
         "IHSS-1320",
+        "STSO-1110",
         "IHSS-1240",
-        "STSO-1110"
+        "IHSS-1110"
       ]
     },
     "professors": [],
@@ -17027,8 +17026,8 @@
         ]
       ],
       "required": [
-        "CHEM-1100",
-        "MTLE-4100"
+        "MTLE-4100",
+        "CHEM-1100"
       ]
     },
     "professors": [],
@@ -17291,8 +17290,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1200",
-        "ECON-1200"
+        "ECON-1200",
+        "IHSS-1200"
       ]
     },
     "professors": [],
@@ -17400,10 +17399,10 @@
     "prerequisites": {
       "one_of": [
         [
-          "GSAS-1600",
-          "GSAS-2520",
           "GSAS-1040",
+          "GSAS-2520",
           "GSAS-2510",
+          "GSAS-1600",
           "GSAS-2540"
         ]
       ],
@@ -17943,11 +17942,11 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "MGMT-6040",
         "MGMT-7730",
+        "MGMT-6040",
+        "MGMT-6020",
         "MGMT-6140",
         "MGMT-7060",
-        "MGMT-6020",
         "MGMT-6100",
         "MGMT-6060"
       ]
@@ -18341,9 +18340,9 @@
     "prerequisites": {
       "one_of": [],
       "required": [
+        "MTLE-4250",
         "MTLE-4150",
-        "MTLE-4200",
-        "MTLE-4250"
+        "MTLE-4200"
       ]
     },
     "professors": [],
@@ -18549,11 +18548,7 @@
       "year": "all"
     },
     "prerequisites": {
-      "one_of": [
-        [
-          "MATH-4200"
-        ]
-      ],
+      "one_of": [],
       "required": []
     },
     "professors": [],
@@ -18850,8 +18845,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "MTLE-2100",
-        "ENGR-1600"
+        "ENGR-1600",
+        "MTLE-2100"
       ]
     },
     "professors": [],
@@ -19093,8 +19088,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "STSO-2510",
         "STSO-2520",
+        "STSO-2510",
         "STSO-2500"
       ]
     },
@@ -19325,8 +19320,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "ENGR-2350",
-        "CSCI-1200"
+        "CSCI-1200",
+        "ENGR-2350"
       ]
     },
     "professors": [],
@@ -19500,9 +19495,9 @@
     "prerequisites": {
       "one_of": [],
       "required": [
+        "MATH-2400",
         "PHYS-1200",
-        "BMED-2050",
-        "MATH-2400"
+        "BMED-2050"
       ]
     },
     "professors": [],
@@ -19731,8 +19726,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "BIOL-2120",
         "BIOL-2125",
+        "BIOL-2120",
         "BIOL-4620"
       ]
     },
@@ -19792,8 +19787,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1200",
-        "ECON-1200"
+        "ECON-1200",
+        "IHSS-1200"
       ]
     },
     "professors": [],
@@ -19874,8 +19869,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "MTLE-4910",
-        "ENGR-2050"
+        "ENGR-2050",
+        "MTLE-4910"
       ]
     },
     "professors": [],
@@ -19905,8 +19900,8 @@
       "one_of": [
         [
           "ARTS-2020",
-          "ARTS-4510",
-          "ARTS-4010"
+          "ARTS-4010",
+          "ARTS-4510"
         ]
       ],
       "required": []
@@ -20269,8 +20264,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1200",
-        "ECON-1200"
+        "ECON-1200",
+        "IHSS-1200"
       ]
     },
     "professors": [],
@@ -20464,8 +20459,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "ARTS-2500",
-        "ARTS-2540"
+        "ARTS-2540",
+        "ARTS-2500"
       ]
     },
     "professors": [],
@@ -22126,11 +22121,11 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "STSO-2010",
+        "STSO-2520",
         "STSO-2500",
         "STSO-2300",
-        "STSO-2520",
         "STSO-2210",
+        "STSO-2010",
         "STSO-2100"
       ]
     },
@@ -22497,6 +22492,30 @@
     "crosslisted": {},
     "description": "",
     "name": "Professional Development 2 Technical Issues and Solutions",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false
+    },
+    "subject": "STSO"
+  },
+  "Professional Development 2 aTechnical Issues and Solutions": {
+    "ID": "4100",
+    "credits": [
+      2
+    ],
+    "crosslisted": {},
+    "description": "",
+    "name": "Professional Development 2 aTechnical Issues and Solutions",
     "offered": {
       "semesters": [
         "fall",
@@ -22966,8 +22985,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "WRIT-1110",
         "COMM-2520",
+        "WRIT-1110",
         "WRIT-2110"
       ]
     },
@@ -23057,8 +23076,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "MATH-1020",
         "BCBP-4760",
+        "MATH-1020",
         "PHYS-1200"
       ]
     },
@@ -23218,13 +23237,13 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "STSS-2700",
+        "STSS-2100",
         "STSS-2300",
-        "STSS-2520",
         "STSS-2510",
-        "STSH-2500",
         "STSS-2210",
-        "STSS-2100"
+        "STSH-2500",
+        "STSS-2520",
+        "STSS-2700"
       ]
     },
     "professors": [],
@@ -23498,8 +23517,8 @@
         ]
       ],
       "required": [
-        "MANE-2830",
-        "MANE-4350"
+        "MANE-4350",
+        "MANE-2830"
       ]
     },
     "professors": [],
@@ -24372,8 +24391,8 @@
     "prerequisites": {
       "one_of": [
         [
-          "PSYC-2310",
           "ENGR-2600",
+          "PSYC-2310",
           "MGMT-2100"
         ]
       ],
@@ -24819,19 +24838,19 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1030",
+        "ARTS-4120",
         "ARTS-1040",
-        "IHSS-1170",
+        "IHSS-1030",
+        "ARTS-2380",
+        "ARTS-1200",
+        "ARTS-1030",
+        "IHSS-1180",
         "IHSS-1040",
         "ARTS-2020",
-        "IHSS-1180",
+        "IHSS-1170",
         "ARTS-2220",
-        "ARTS-2380",
-        "ARTS-1020",
-        "ARTS-1030",
-        "ARTS-4120",
-        "ARTS-1200",
-        "ARTS-4140"
+        "ARTS-4140",
+        "ARTS-1020"
       ]
     },
     "professors": [],
@@ -24998,9 +25017,9 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "CHEM-1100",
         "ERTH-1200",
-        "ERTH-1100"
+        "ERTH-1100",
+        "CHEM-1100"
       ]
     },
     "professors": [],
@@ -25381,8 +25400,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1150",
         "IHSS-1140",
+        "IHSS-1150",
         "PSYC-1200"
       ]
     },
@@ -25412,9 +25431,9 @@
     "prerequisites": {
       "one_of": [],
       "required": [
+        "CSCI-1200",
         "MATH-1020",
-        "BIOL-4620",
-        "CSCI-1200"
+        "BIOL-4620"
       ]
     },
     "professors": [],
@@ -26081,8 +26100,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "PSYC-2800",
-        "PSYC-1200"
+        "PSYC-1200",
+        "PSYC-2800"
       ]
     },
     "professors": [],
@@ -26319,11 +26338,11 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "MGMT-6040",
         "MGMT-7730",
+        "MGMT-6040",
+        "MGMT-6020",
         "MGMT-6140",
         "MGMT-7060",
-        "MGMT-6020",
         "MGMT-6100",
         "MGMT-6060"
       ]
@@ -26354,8 +26373,8 @@
       "one_of": [],
       "required": [
         "MGMT-2320",
-        "MGMT-2430",
         "MGMT-2300",
+        "MGMT-2430",
         "MGMT-4110"
       ]
     },
@@ -26752,8 +26771,8 @@
       "one_of": [],
       "required": [
         "ECSE-2410",
-        "ECSE-2100",
-        "BMED-2800"
+        "BMED-2800",
+        "ECSE-2100"
       ]
     },
     "professors": [],
@@ -26953,7 +26972,6 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "STSO-2300",
         "STSO-1110"
       ]
     },
@@ -26998,7 +27016,7 @@
       2
     ],
     "crosslisted": {},
-    "description": "A review of current and anticipated metrics associated with sustainable building design will be reviewed as well as construction practices in the building industry will be discussed H ow sustainable design practices can mitigate the climate change in a positive way will be reviewed An understanding of energy terminology is useful for this course Lectures discussions field trips and assigned reading will be utilized to explore the subject matter",
+    "description": "A review of current and anticipated metrics associated with sustainable building design will be reviewed as well as construction practices in the building industry will be discussed  H ow sustainable design practices can mitigate the climate change in a positive way will be reviewed An understanding of energy terminology is useful for this course Lectures discussions field trips and assigned reading will be utilized to explore the subject matter",
     "name": "Sustainable Building Design Metrics",
     "offered": {
       "semesters": [
@@ -27333,8 +27351,8 @@
     "prerequisites": {
       "one_of": [
         [
-          "CHEM-1100",
           "ERTH-1100",
+          "CHEM-1100",
           "ERTH-1200"
         ]
       ],
@@ -27661,8 +27679,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "MATH-2400",
         "PHYS-2220",
+        "MATH-2400",
         "MATH-2010"
       ]
     },
@@ -27690,9 +27708,9 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "CHEM-1100",
+        "ENGR-1600",
         "ENGR-2250",
-        "ENGR-1600"
+        "CHEM-1100"
       ]
     },
     "professors": [],
@@ -27989,8 +28007,8 @@
     "prerequisites": {
       "one_of": [],
       "required": [
-        "IHSS-1200",
-        "ECON-1200"
+        "ECON-1200",
+        "IHSS-1200"
       ]
     },
     "professors": [],
@@ -28801,8 +28819,8 @@
       "one_of": [],
       "required": [
         "ECSE-2050",
-        "ECSE-2610",
-        "ECSE-2210"
+        "ECSE-2210",
+        "ECSE-2610"
       ]
     },
     "professors": [],
@@ -29000,10 +29018,10 @@
     "prerequisites": {
       "one_of": [],
       "required": [
+        "ARCH-2520",
         "COMM-2570",
-        "ARTS-1020",
         "COMM-2660",
-        "ARCH-2520"
+        "ARTS-1020"
       ]
     },
     "professors": [],
@@ -29202,11 +29220,11 @@
     "prerequisites": {
       "one_of": [
         [
-          "ENGR-2350",
           "ENGR-1600",
-          "MANE-4500",
+          "ENGR-2350",
           "ENGR-2600",
           "MANE-2720",
+          "MANE-4500",
           "ENGR-2530"
         ]
       ],
@@ -29385,8 +29403,8 @@
       "one_of": [
         [
           "WRIT-1110",
-          "WRIT-2110",
-          "COMM-2520"
+          "COMM-2520",
+          "WRIT-2110"
         ]
       ],
       "required": []
