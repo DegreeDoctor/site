@@ -1,12 +1,8 @@
 import json
-import re
 from bs4 import BeautifulSoup
-from tqdm import tqdm
 import requests
-import datetime
 import os
 from degree_util import get_subjs
-from lxml import html
 import numpy as np
 
 
@@ -17,7 +13,7 @@ def tailGenerator(subjectList):
     tails = []
     for subject in subjectList:
         tails.append("&sel_subj=" + subject)
-    kachow = np.array_split(tails, 5)
+    kachow = np.array_split(tails, 15)
     return kachow
 
 def deep_sis_scraper():
@@ -30,17 +26,34 @@ def deep_sis_scraper():
     subjectList = get_subjs()
     tail = ""
     tail = tailGenerator(subjectList)
+    urlTails = []
     for list in tail:
-        "".join(list)
-    for tails in tail:
-        webpage_response = s.get(head + tail)
+        urlTails.append(''.join(list))
+    for tails in urlTails:
+        webpage_response = s.get(head + tails)
         webpage = webpage_response.content
         soup = BeautifulSoup(webpage, "html.parser")
-    
+        #return soup
+        table = soup.find('table', class_='datadisplaytable')
+        linkMass = table.find_all("a", href=True)
+        sexyLinkList = []
+        key = "/rss/bwckctlg.p_disp_course_detail?cat_term_in="
+        for val in linkMass:
+            if key in val['href']:
+                link = val['href']
+                sexyLinkList.append("https://sis.rpi.edu" + link)
+        for link in sexyLinkList:
+            sexy = s.get(link)
+            sexyContent = sexy.content
+            sexySoup = BeautifulSoup(sexyContent, "html.parser")
+            return soup
 
+        
+        #for course in soup.find_all("td", class_="nttitle"):
+            #print(course)
+
+            #courseCode = course.find("td", class_="dddefault").text
 
 if __name__ == '__main__':
     sand = deep_sis_scraper()
-    for val in sand:
-        print(val)
-        print("")
+    print(sand)
