@@ -15,7 +15,7 @@ export default {
             for (const name in courses) {
                 total += courses[name];
             }
-            return total / 128;
+            return Math.round(total / 128 * 100);
         }
     }
 }
