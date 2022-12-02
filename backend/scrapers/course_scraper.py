@@ -7,36 +7,13 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import subjs, filepath
+from degree_util import subjs, filepath, get_catalogs, root
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
 # It is ok to publish this key because I found it online already public
 DEFAULT_QUERY_PARAMS = "?key=3eef8a28f26fb2bcc514e6f1938929a1f9317628&format=xml"
 CHUNK_SIZE = 500
-
-# returns the list of catalogs with the newest one being first
-# each catalog is a tuple (year, catalog_id) ex: ('2020-2021', 21)
-def get_catalogs() -> List[Tuple[str, int]]:
-    catalogs_xml = html.fromstring(
-        requests.get(
-            f"{BASE_URL}content{DEFAULT_QUERY_PARAMS}&method=getCatalogs"
-        ).text.encode("utf8")
-    )
-    catalogs = catalogs_xml.xpath("//catalogs/catalog")
-
-    ret: List[Tuple[str, int]] = []
-    # For each catalog get its year and id and add that as as tuples to ret
-    for catalog in catalogs:
-        catalog_id: int = catalog.xpath("@id")[0].split("acalog-catalog-")[1]
-        catalog_year: str = catalog.xpath(".//title/text()")[0].split(
-            "Rensselaer Catalog "
-        )[1]
-        ret.append((catalog_year, catalog_id))
-
-    # sort so that the newest catalog is always first
-    ret.sort(key=lambda tup: tup[0], reverse=True)
-    return ret
 
 # Returns a list of course ids for a given catalog
 def get_course_ids(catalog_id: str) -> List[str]:
@@ -158,7 +135,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
         course_ids[i : i + CHUNK_SIZE] for i in range(0, len(course_ids), CHUNK_SIZE)
     ]
     subj_input = []
-    f = open(filepath + '/data/input.json', 'r')
+    f = open(root + '/frontend/src/data/input.json', 'r')
     f = json.load(f)
     for subj in f:
         subj_input.append(subj)
@@ -221,7 +198,7 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
 
             data[course_name] = {
                 "name": course_name,
-                "subj": subj,
+                "subject": subj,
                 "ID": ID,
                 "description": get_catalog_description(fields, course_name),
                 "credits" : credit,
@@ -255,7 +232,7 @@ def scrape_courses():
     json_object = json.dumps(courses_per_year, indent=4)
  
     # Writing to sample.json
-    with open(filepath + "/data/courses.json", "w") as outfile:
+    with open(root + "/frontend/src/data/courses.json", "w") as outfile:
         outfile.write(json_object)
         print("Finished courses scraping")
     

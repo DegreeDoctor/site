@@ -27,6 +27,7 @@ export const useStore = defineStore("main", {
         degrees: useStorage("degrees", {}),
         // Object of lists formatted as: {"course1": 4, "Course2", 3}
         credits: useStorage("credits", {}),
+        darkMode: useStorage("darkMode", false),
         // Current degree to view in degree view
         selectedDegree: useStorage("selectedDegree", ""),
     }),
@@ -37,6 +38,9 @@ export const useStore = defineStore("main", {
         },
         getCredits: (state) => {
             return state.credits;
+        },
+        getDarkMode: (state) => {
+            return state.darkMode;
         },
     },
     //Act like methods in Vue
@@ -101,6 +105,7 @@ export const useStore = defineStore("main", {
                     ],
                 },
             };
+            this.selectedDegree = "Test Ryan Fun God Turbo";
         },
         updateDegree(name, degree) {
             this.degrees[name] = degree;
@@ -125,6 +130,9 @@ export const useStore = defineStore("main", {
         },
         fetchCredits(name) {
             return this.credits[name];
+        },
+        toggleDarkMode() {
+            this.darkMode = !this.darkMode;
         },
     },
 });
