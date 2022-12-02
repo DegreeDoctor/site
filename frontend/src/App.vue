@@ -2,7 +2,6 @@
 import { RouterView } from "vue-router";
 import AHeader from "./components/AHeader.vue";
 import AFooter from "./components/AFooter.vue";
-import ProgressBar from "./components/ProgressBar.vue";
 
 export default {
     components: {
@@ -18,7 +17,6 @@ export default {
     <q-layout view="hHh LpR fFf">
         <AHeader />
         <q-page-container>
-            <ProgressBar />
             <RouterView />
         </q-page-container>
         <AFooter />
