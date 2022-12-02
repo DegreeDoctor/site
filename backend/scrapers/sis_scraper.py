@@ -5,24 +5,28 @@ from tqdm import tqdm
 import requests
 import datetime
 import os
+from degree_util import get_catalogs
 
 
 '''
-year_generator uses the datetime library to grab the current year.
-With this it creates a list of the past 4 years, including the current year.
-Finally, it creates a new list of each of the aforementioned years including the semester call codes for
-SIS calls.
+year_generator makes use of the get_catalogs function
+from the degree_util file which gives a list of all years with catalog data.
+from there it takes the most recent 4 years and cleans them up to then be used in the sis_scraper.
 '''
 def year_generator():
-    currYear = (datetime.date.today()).year  
-    yearList = list(range(currYear - 3, currYear + 1))
+    catalog = get_catalogs()
+    years = catalog[:4]
+    yearList = []
+    for pair in years:
+        yearList.append(pair[0][-4:])
     finalList = []
     for year in yearList:
-        finalList.append(str(year) + '09') #Fall
-        finalList.append(str(year) + '01') #Spring
-        finalList.append(str(year) + '05') #Arch
+        finalList.append(str(year) + '01') 
+        finalList.append(str(year) + '05')
+        finalList.append(str(year) + '09')
     return finalList
 
+    
 
 
 '''
@@ -37,15 +41,15 @@ def sis_scraper():
     f = open(filepath + '/data/courses.json','r')   #Opens the .json file and stores it as a python object
     courseJson = json.load(f)
     f.close()
+    years = year_generator()
+    s = requests.Session()
 
     for course in tqdm(courseJson): #Iterates through every course
         instructorStorage = []
         CI = False
-        years = year_generator()
-
         for currYear in years: #For every course we iterate through every year and open the respective webpage
             page = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse"
-            webpage_response = requests.get(page + '?term_in=' + currYear + '&subj_in=' + courseJson[course]["subj"] + '&crse_in=' + courseJson[course]["ID"] + '&schd_in=L')
+            webpage_response = s.get(page + '?term_in=' + currYear + '&subj_in=' + courseJson[course]["subj"] + '&crse_in=' + courseJson[course]["ID"] + '&schd_in=L')
             webpage = webpage_response.content
             soup = BeautifulSoup(webpage, "html.parser")
 
@@ -67,15 +71,60 @@ def sis_scraper():
                 tmp = attribute.group(1).strip() if attribute != None else ""
                 if 'Communication Intensive' in tmp:
                     CI= True
+                link = link_grabber(s, soup)
+                restrictedMajor = majorRestrictionChecker(s, link)
+                if restrictedMajor != "":
+                    restrictedMajors = [major.strip() for major in restrictedMajor.split('&')]
+                
+
 
         #With all of the information gathered we put it into the python json object and then push it back
         #into the course json
         instructorStorage = [*set(instructorStorage)]
         courseJson[course]['professors'] = instructorStorage
         courseJson[course]['properties']['CI'] = CI
+        if restrictedMajor != "":
+            courseJson[course]['properties']['MR'] = True
+            courseJson[course]['properties']['majorRestriction'] = restrictedMajors
         f2 = open(filepath + '/data/courses.json', 'w')
         json.dump(courseJson, f2, sort_keys=True, indent=2, ensure_ascii=False)
         f2.close()
+
+
+def link_grabber(session, soup):
+    key = "/rss/bwckschd.p_disp_detail_sched?term_in="
+    linkMass = soup.find_all("a", href=True)
+    for val in linkMass:
+        if key in val['href']:
+            link = val['href']
+            break
+    return link
+
+def majorRestrictionChecker(session, link):
+    innerPage = "https://sis.rpi.edu" + link
+    response = session.get(innerPage)
+    innerContent = response.text
+    soup2 = BeautifulSoup(innerContent, "html.parser")
+    innerText = soup2.text
+    textList = innerText.splitlines()
+    red = list(filter(lambda item: item.strip(), textList))
+    searchString = "Must be enrolled in one of the following Majors:"
+    majorIndex = -1
+    holder = ""
+    for i in range(0, len(textList) - 2):
+        if searchString in textList[i]:
+            holder = textList[i + 2].strip()
+    return holder
+
+
+
+    
+
+    
+    
+
+
+
             
 if __name__ == '__main__':
     sis_scraper()
