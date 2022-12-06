@@ -8,7 +8,6 @@ export default {
         RouterView,
         AHeader,
         AFooter,
-        ProgressBar,
     },
 };
 </script>
