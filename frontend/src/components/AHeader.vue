@@ -65,7 +65,7 @@ export default {
                                 filled
                                 use-input
                                 input-debounce="0"
-                                label="Simple filter"
+                                label="Search"
                                 :options="filteredPlans"
                                 style="width: 200px"
                                 behavior="menu"
