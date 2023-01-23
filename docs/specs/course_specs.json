@@ -22,10 +22,17 @@
         },
         "properties": {
             "CI": true,
-            "MR (NEED TO BE IMPLEMENTED)": true
+            "MR": true,
+            "majorRestriction":
+            [
+                "major1",
+                "major2"
+            ]
+            
         },
         "professors": [
-            "professor1.name"
+            "professor1",
+            "professor2"
         ],
         "offered": {
             "year": "even/odd/all/uia",
