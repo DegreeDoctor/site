@@ -8,7 +8,6 @@ import numpy as np
 
 
 
-
 def tailGenerator(subjectList):
     tails = []
     for subject in subjectList:
@@ -33,20 +32,20 @@ def deep_sis_scraper():
         webpage_response = s.get(head + tails)
         webpage = webpage_response.content
         soup = BeautifulSoup(webpage, "html.parser")
-        #return soup
         table = soup.find('table', class_='datadisplaytable')
         linkMass = table.find_all("a", href=True)
-        sexyLinkList = []
+        allLinks = []
         key = "/rss/bwckctlg.p_disp_course_detail?cat_term_in="
         for val in linkMass:
             if key in val['href']:
                 link = val['href']
-                sexyLinkList.append("https://sis.rpi.edu" + link)
-        for link in sexyLinkList:
-            sexy = s.get(link)
-            sexyContent = sexy.content
-            sexySoup = BeautifulSoup(sexyContent, "html.parser")
-            return soup
+                allLinks.append("https://sis.rpi.edu" + link)
+        for link in allLinks:
+            Lcontent = s.get(link)
+            deepContent = Lcontent.content
+            contentSoup = BeautifulSoup(deepContent, "html.parser")
+            
+
 
         
         #for course in soup.find_all("td", class_="nttitle"):

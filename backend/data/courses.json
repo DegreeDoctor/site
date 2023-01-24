@@ -19,7 +19,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -44,13 +45,14 @@
       ]
     },
     "professors": [
+      "Gina Irene Kucinski",
       "Chjan C Lim",
-      "Bruce Piper",
-      "Gina Irene Kucinski"
+      "Bruce Piper"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -76,16 +78,17 @@
       ]
     },
     "professors": [
-      "Wing Sze E Kam",
-      "Gregor Kovacic",
       "Ashwani Kumar Kapila",
-      "Eliane Zerbetto Traldi",
       "Mohamed Boudjelkha",
+      "Wing Sze E Kam",
+      "Eliane Zerbetto Traldi",
+      "Gregor Kovacic",
       "Jeffrey William Banks"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -122,7 +125,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -153,7 +157,8 @@
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -189,7 +194,8 @@
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -220,7 +226,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -243,9 +250,9 @@
       "required": []
     },
     "professors": [
-      "Jeffrey William Banks",
       "Eliane Zerbetto Traldi",
-      "Gregor Kovacic"
+      "Gregor Kovacic",
+      "Jeffrey William Banks"
     ],
     "properties": {
       "CI": false,
@@ -305,7 +312,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -333,12 +341,13 @@
       ]
     },
     "professors": [
-      "Laura Manno Christian",
-      "Eric Matthew Rutledge"
+      "Eric Matthew Rutledge",
+      "Laura Manno Christian"
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -397,10 +406,10 @@
       ]
     },
     "professors": [
-      "Bradford C Lister",
+      "Jonathan T Stetler",
       "Jeremy Lynch Farrell",
-      "Kevin Christopher Rose",
-      "Jonathan T Stetler"
+      "Bradford C Lister",
+      "Kevin Christopher Rose"
     ],
     "properties": {
       "CI": false,
@@ -429,19 +438,20 @@
     },
     "prerequisites": [],
     "professors": [
-      "Wing Sze E Kam",
-      "Kseniya Yevgenyevna Klyachko",
-      "Eliane Zerbetto Traldi",
-      "David A Schmidt",
-      "Elisabeth Maria Brown",
       "Belmiro Galo da Silva",
-      "Margaret Z. Kiehl",
+      "Kseniya Yevgenyevna Klyachko",
+      "Elisabeth Maria Brown",
+      "David A Schmidt",
+      "Wing Sze E Kam",
       "Bruce Piper",
-      "Gina Irene Kucinski"
+      "Eliane Zerbetto Traldi",
+      "Gina Irene Kucinski",
+      "Margaret Z. Kiehl"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -467,18 +477,19 @@
       ]
     },
     "professors": [
+      "Belmiro Galo da Silva",
       "Kseniya Yevgenyevna Klyachko",
       "Daniel Franklin Stevenson",
-      "Eliane Zerbetto Traldi",
       "Elisabeth Maria Brown",
-      "Belmiro Galo da Silva",
-      "Margaret Z. Kiehl",
       "Bruce Piper",
-      "Gina Irene Kucinski"
+      "Eliane Zerbetto Traldi",
+      "Gina Irene Kucinski",
+      "Margaret Z. Kiehl"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -541,7 +552,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -575,7 +587,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -606,7 +619,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -636,7 +650,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -663,13 +678,14 @@
       ]
     },
     "professors": [
-      "Trevor David Rhone",
       "Vincent Meunier",
-      "Damien J. West"
+      "Damien J. West",
+      "Trevor David Rhone"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -698,7 +714,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -730,7 +747,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -756,15 +774,16 @@
       ]
     },
     "professors": [
-      "Christopher D. Carothers",
+      "Konstantin Kuzmin",
       "Shianne M. Hulbert",
-      "George M. Slota",
       "David Eric Goldschmidt",
-      "Konstantin Kuzmin"
+      "Christopher D. Carothers",
+      "George M. Slota"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -791,7 +810,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -821,7 +841,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -854,7 +875,8 @@
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -888,7 +910,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -926,7 +949,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -955,7 +979,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -993,7 +1018,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1024,7 +1050,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1060,7 +1087,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1091,7 +1119,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1123,12 +1152,13 @@
       "required": []
     },
     "professors": [
-      "Francine D. Berman",
-      "James A. Hendler"
+      "James A. Hendler",
+      "Francine D. Berman"
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1154,13 +1184,14 @@
       ]
     },
     "professors": [
-      "Samuel Bernt Johnson",
+      "Sibel Adali",
       "Konstantin Kuzmin",
-      "Sibel Adali"
+      "Samuel Bernt Johnson"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1190,7 +1221,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1216,12 +1248,13 @@
       ]
     },
     "professors": [
-      "Douglas Martin Swank",
-      "Brian Hans Jensen"
+      "Brian Hans Jensen",
+      "Douglas Martin Swank"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -1257,7 +1290,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1288,7 +1322,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1320,14 +1355,15 @@
     },
     "professors": [
       "Julian S. Georg",
-      "Ingrid Wilke",
-      "Esther Alexandra Wertz",
       "Vincent Meunier",
-      "Ethan Craig Brown"
+      "Ethan Craig Brown",
+      "Ingrid Wilke",
+      "Esther Alexandra Wertz"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -1354,7 +1390,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -1384,7 +1421,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -1411,12 +1449,13 @@
       ]
     },
     "professors": [
-      "Joseph Darryl Michael",
-      "Vincent Meunier"
+      "Vincent Meunier",
+      "Joseph Darryl Michael"
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -1442,11 +1481,11 @@
       ]
     },
     "professors": [
-      "Harry W McLaughlin",
       "Daniel Franklin Stevenson",
+      "Harry W McLaughlin",
+      "Bruce Piper",
       "Eliane Zerbetto Traldi",
-      "Margaret Z. Kiehl",
-      "Bruce Piper"
+      "Margaret Z. Kiehl"
     ],
     "properties": {
       "CI": true,
@@ -1484,7 +1523,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -1518,14 +1558,15 @@
       ]
     },
     "professors": [
-      "Alex Algernon Theodore Gittens",
-      "Malik Magdon-Ismail",
       "Stacy Elizabeth Patterson",
-      "David Eric Goldschmidt"
+      "David Eric Goldschmidt",
+      "Alex Algernon Theodore Gittens",
+      "Malik Magdon-Ismail"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1557,7 +1598,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -1591,7 +1633,8 @@
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1616,12 +1659,13 @@
       ]
     },
     "professors": [
-      "David Isaacson",
-      "Rongjie Lai"
+      "Rongjie Lai",
+      "David Isaacson"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -1646,14 +1690,15 @@
       ]
     },
     "professors": [
-      "Esther Alexandra Wertz",
-      "Shawn Yu Lin",
       "Vincent Meunier",
+      "Shawn Yu Lin",
+      "Esther Alexandra Wertz",
       "Moussa Ngom"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -1685,7 +1730,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1715,7 +1761,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -1747,7 +1794,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -1773,12 +1821,13 @@
       ]
     },
     "professors": [
-      "Joel T. Giedt",
-      "Vincent Meunier"
+      "Vincent Meunier",
+      "Joel T. Giedt"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -1807,7 +1856,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -1837,7 +1887,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -1871,7 +1922,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -1908,7 +1960,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -1973,7 +2026,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -2008,7 +2062,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -2034,12 +2089,13 @@
       ]
     },
     "professors": [
-      "Jennifer Marie Hurley",
-      "Eric Matthew Rutledge"
+      "Eric Matthew Rutledge",
+      "Jennifer Marie Hurley"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -2067,12 +2123,13 @@
       ]
     },
     "professors": [
-      "Evan Earl Maicus",
-      "Barbara Cutler"
+      "Barbara Cutler",
+      "Evan Earl Maicus"
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -2099,12 +2156,13 @@
       ]
     },
     "professors": [
-      "Bram Van Heuveln",
-      "Selmer Bringsjord"
+      "Selmer Bringsjord",
+      "Bram Van Heuveln"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -2138,16 +2196,17 @@
       ]
     },
     "professors": [
-      "Bulent Yener",
       "Shianne M. Hulbert",
+      "David Eric Goldschmidt",
+      "Elliot I. Anshelevich",
       "Jianxi Gao",
       "Mohammed J. Zaki",
-      "Elliot I. Anshelevich",
-      "David Eric Goldschmidt"
+      "Bulent Yener"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -2176,7 +2235,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -2203,19 +2263,20 @@
       ]
     },
     "professors": [
-      "Susan P. Gilbert",
-      "Darrin Scott Hunt",
       "Jonathan T Stetler",
-      "Georgi G. Shablovsky",
+      "Darrin Scott Hunt",
       "Jeremy Lynch Farrell",
+      "Seemanti Ramanath",
       "Michael H Hanna",
+      "Georgi G. Shablovsky",
       "Michael T Klein",
       "Sandra Nierzwicki-Bauer",
-      "Seemanti Ramanath"
+      "Susan P. Gilbert"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -2242,14 +2303,15 @@
       ]
     },
     "professors": [
-      "Seemanti Ramanath",
-      "Georgi G. Shablovsky",
       "Jonathan T Stetler",
-      "Darrin Scott Hunt"
+      "Darrin Scott Hunt",
+      "Seemanti Ramanath",
+      "Georgi G. Shablovsky"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -2276,12 +2338,13 @@
       ]
     },
     "professors": [
-      "Michael T Klein",
-      "Eric Matthew Rutledge"
+      "Eric Matthew Rutledge",
+      "Michael T Klein"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -2309,13 +2372,14 @@
       ]
     },
     "professors": [
-      "Michael T Klein",
       "Keith Fraser",
-      "Richard Peter Bonocora"
+      "Richard Peter Bonocora",
+      "Michael T Klein"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -2342,12 +2406,13 @@
     "professors": [
       "Peter R Kramer",
       "Fengyan Li",
-      "Daniel Franklin Stevenson",
-      "Gregor Kovacic"
+      "Gregor Kovacic",
+      "Daniel Franklin Stevenson"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -2369,7 +2434,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -2395,19 +2461,20 @@
       ]
     },
     "professors": [
-      "Yuri V Lvov",
-      "Wing Sze E Kam",
       "Mark H Holmes",
-      "Ashwani Kumar Kapila",
-      "Peter R Kramer",
-      "Donald W Schwendeman",
       "Daniel Franklin Stevenson",
+      "Ashwani Kumar Kapila",
+      "Yuri V Lvov",
+      "Peter R Kramer",
+      "Wing Sze E Kam",
+      "Mohamed Boudjelkha",
       "Eliane Zerbetto Traldi",
-      "Mohamed Boudjelkha"
+      "Donald W Schwendeman"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -2436,7 +2503,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -2463,12 +2531,13 @@
       ]
     },
     "professors": [
-      "Karyn Lynne Rogers",
-      "Sarah Beth Cadieux"
+      "Sarah Beth Cadieux",
+      "Karyn Lynne Rogers"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -2497,7 +2566,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -2532,7 +2602,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -2563,7 +2634,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -2628,7 +2700,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -2687,7 +2760,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -2871,14 +2945,14 @@
       ]
     },
     "professors": [
+      "Belmiro Galo da Silva",
+      "Daniel Franklin Stevenson",
+      "David Isaacson",
+      "Elisabeth Maria Brown",
       "Harry W McLaughlin",
       "Chjan C Lim",
-      "Gregor Kovacic",
-      "David Isaacson",
-      "Daniel Franklin Stevenson",
       "Eliane Zerbetto Traldi",
-      "Elisabeth Maria Brown",
-      "Belmiro Galo da Silva"
+      "Gregor Kovacic"
     ],
     "properties": {
       "CI": false,
@@ -2916,7 +2990,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -2948,7 +3023,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -2978,21 +3054,22 @@
       ]
     },
     "professors": [
+      "Daniel J. Lewis",
       "Chaitanya Kishore Ullal",
-      "Minoru Tomozawa",
-      "Edwin B. Fohtung",
-      "John R. LaGraff",
-      "Yunfeng Shi",
       "Jian Shi",
+      "Edwin B. Fohtung",
+      "Vincent Meunier",
       "Ravishankar Sundararaman",
       "Richard W Siegel",
-      "Vincent Meunier",
       "Edmund Francis Palermo",
-      "Daniel J. Lewis"
+      "Yunfeng Shi",
+      "John R. LaGraff",
+      "Minoru Tomozawa"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -3026,7 +3103,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -3055,7 +3133,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -3083,12 +3162,13 @@
       "required": []
     },
     "professors": [
-      "Wing Sze E Kam",
-      "Eliane Zerbetto Traldi"
+      "Eliane Zerbetto Traldi",
+      "Wing Sze E Kam"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -3117,7 +3197,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -3143,13 +3224,14 @@
       ]
     },
     "professors": [
-      "David Isaacson",
       "Donald W Schwendeman",
-      "Ashwani Kumar Kapila"
+      "Ashwani Kumar Kapila",
+      "David Isaacson"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -3180,7 +3262,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -3209,7 +3292,8 @@
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -3239,12 +3323,13 @@
       ]
     },
     "professors": [
-      "Keith Fraser",
-      "George I. Makhatadze"
+      "George I. Makhatadze",
+      "Keith Fraser"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -3276,7 +3361,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -3307,7 +3393,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -3339,7 +3426,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -3366,12 +3454,13 @@
       ]
     },
     "professors": [
-      "Laura Manno Christian",
-      "Eric Matthew Rutledge"
+      "Eric Matthew Rutledge",
+      "Laura Manno Christian"
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -3402,12 +3491,13 @@
       ]
     },
     "professors": [
-      "Christopher Bystroff",
-      "Chunyu Wang"
+      "Chunyu Wang",
+      "Christopher Bystroff"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -3436,21 +3526,22 @@
       ]
     },
     "professors": [
-      "John E. Mitchell",
-      "Yuri V Lvov",
       "Mark H Holmes",
-      "Gregor Kovacic",
       "Daniel Franklin Stevenson",
-      "Eliane Zerbetto Traldi",
-      "David A Schmidt",
+      "John E. Mitchell",
       "Elisabeth Maria Brown",
+      "David A Schmidt",
+      "Yuri V Lvov",
       "Mohamed Boudjelkha",
       "Bruce Piper",
-      "Gina Irene Kucinski"
+      "Eliane Zerbetto Traldi",
+      "Gina Irene Kucinski",
+      "Gregor Kovacic"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -3481,7 +3572,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -3511,7 +3603,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -3540,7 +3633,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -3574,7 +3668,8 @@
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -3606,7 +3701,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -3635,13 +3731,13 @@
       ]
     },
     "professors": [
-      "Yuri V Lvov",
       "Mark H Holmes",
-      "William Douglas Henshaw",
-      "Rongjie Lai",
+      "Fengyan Li",
+      "Yuri V Lvov",
       "Eliane Zerbetto Traldi",
-      "Jeffrey William Banks",
-      "Fengyan Li"
+      "Rongjie Lai",
+      "William Douglas Henshaw",
+      "Jeffrey William Banks"
     ],
     "properties": {
       "CI": false,
@@ -3675,7 +3771,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -3706,7 +3803,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -3737,7 +3835,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -3768,13 +3867,14 @@
       ]
     },
     "professors": [
-      "Jasmine A. Plum",
       "Wesley D Turner",
-      "David Eric Goldschmidt"
+      "David Eric Goldschmidt",
+      "Jasmine A. Plum"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -3803,7 +3903,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -3833,14 +3934,15 @@
       ]
     },
     "professors": [
-      "Esther Alexandra Wertz",
-      "Shawn Yu Lin",
       "Vincent Meunier",
+      "Shawn Yu Lin",
+      "Esther Alexandra Wertz",
       "Moussa Ngom"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -3871,7 +3973,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -3901,7 +4004,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -3931,7 +4035,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -3967,7 +4072,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -3990,7 +4096,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -4021,29 +4128,30 @@
       ]
     },
     "professors": [
-      "Julian S. Georg",
-      "Paul Martin Amy",
-      "Shengbai Zhang",
-      "Humberto Terrones Maldonado",
-      "Vincent Meunier",
-      "Joseph Darryl Michael",
-      "Shawn Yu Lin",
-      "Charles Harold Martin",
-      "Gwo Ching Wang",
-      "Ingrid Wilke",
-      "Christian M. Wetzel",
-      "Esther Alexandra Wertz",
-      "Hesham Hassan",
-      "Damien J. West",
-      "Pascal D. Bassene",
       "Juan Pablo Borja",
-      "Toh-Ming Lu",
+      "Vincent Meunier",
+      "Shengbai Zhang",
+      "Charles Harold Martin",
       "Morris A Washington",
-      "Yong Sung Kim"
+      "Hesham Hassan",
+      "Shawn Yu Lin",
+      "Ingrid Wilke",
+      "Julian S. Georg",
+      "Pascal D. Bassene",
+      "Damien J. West",
+      "Christian M. Wetzel",
+      "Yong Sung Kim",
+      "Joseph Darryl Michael",
+      "Humberto Terrones Maldonado",
+      "Paul Martin Amy",
+      "Gwo Ching Wang",
+      "Toh-Ming Lu",
+      "Esther Alexandra Wertz"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -4072,19 +4180,22 @@
       "required": []
     },
     "professors": [
-      "Glenn Ciolek",
-      "Vincent Meunier",
-      "Ethan Craig Brown",
-      "John Schroeder",
-      "Nadarajah Narendran",
-      "Peter Persans",
-      "Shawn Yu Lin",
       "Yong Sung Kim",
-      "Damien J. West"
+      "Glenn Ciolek",
+      "Peter Persans",
+      "Vincent Meunier",
+      "Damien J. West",
+      "John Schroeder",
+      "Ethan Craig Brown",
+      "Charles Harold Martin",
+      "Yong Zheng",
+      "Shawn Yu Lin",
+      "Nadarajah Narendran"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -4112,12 +4223,13 @@
       "required": []
     },
     "professors": [
-      "Ricky A Relyea",
-      "Isaac Daniel Shepard"
+      "Kevin Christopher Rose",
+      "Ricky A Relyea"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -4148,7 +4260,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -4180,7 +4293,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -4244,13 +4358,14 @@
       "required": []
     },
     "professors": [
-      "Trevor David Rhone",
       "Peter Persans",
+      "Trevor David Rhone",
       "Vincent Meunier"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -4282,7 +4397,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -4311,7 +4427,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -4341,7 +4458,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -4364,7 +4482,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -4387,7 +4506,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -4417,7 +4537,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -4445,7 +4566,8 @@
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -4472,12 +4594,13 @@
       ]
     },
     "professors": [
-      "Kimberly Irene Oakes",
-      "John Wen"
+      "John Wen",
+      "Kimberly Irene Oakes"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -4508,7 +4631,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -4533,15 +4657,16 @@
       "required": []
     },
     "professors": [
-      "Jennifer Marie Hurley",
-      "Blanca L. Barquera",
-      "Susan P. Gilbert",
       "Christopher Bystroff",
-      "Chunyu Wang"
+      "Chunyu Wang",
+      "Susan P. Gilbert",
+      "Jennifer Marie Hurley",
+      "Blanca L. Barquera"
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -4574,7 +4699,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -4605,7 +4731,8 @@
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -4636,7 +4763,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -4659,7 +4787,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -4687,7 +4816,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -4719,7 +4849,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -4753,7 +4884,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -4784,7 +4916,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -4822,7 +4955,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -4850,13 +4984,14 @@
       ]
     },
     "professors": [
-      "Gyorgy Korniss",
+      "Humberto Terrones Maldonado",
       "Vincent Meunier",
-      "Humberto Terrones Maldonado"
+      "Gyorgy Korniss"
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -4883,7 +5018,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "PHYS"
   },
@@ -4909,7 +5045,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -4930,13 +5067,14 @@
     },
     "prerequisites": [],
     "professors": [
-      "Thilanka Munasinghe",
+      "Konstantin Kuzmin",
       "Tomasz Strzalkowski",
-      "Konstantin Kuzmin"
+      "Thilanka Munasinghe"
     ],
     "properties": {
       "CI": true,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   },
@@ -4959,7 +5097,8 @@
     "professors": [],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "MATH"
   },
@@ -5043,7 +5182,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "BIOL"
   },
@@ -5083,7 +5223,8 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false
+      "MR": false,
+      "majorRestriction": []
     },
     "subj": "CSCI"
   }

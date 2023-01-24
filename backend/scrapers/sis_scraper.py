@@ -86,6 +86,9 @@ def sis_scraper():
         if restrictedMajor != "":
             courseJson[course]['properties']['MR'] = True
             courseJson[course]['properties']['majorRestriction'] = restrictedMajors
+        else:
+            courseJson[course]['properties']['MR'] = False
+            courseJson[course]['properties']['majorRestriction'] = []
         f2 = open(filepath + '/data/courses.json', 'w')
         json.dump(courseJson, f2, sort_keys=True, indent=2, ensure_ascii=False)
         f2.close()
@@ -139,8 +142,5 @@ def majorRestrictionChecker(session, link):
             
 if __name__ == '__main__':
     sis_scraper()
-        
-       
-
 
 
