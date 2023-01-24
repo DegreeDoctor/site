@@ -108,7 +108,6 @@ export default {
     <q-btn label="Add a Course" color="primary" @click="prompt = true" />
     <CourseHolder :course="course" />
 
-    <div>Click to search for a Course</div>
     <q-dialog v-model="prompt" persistent>
         <q-card style="min-width: 350px">
             <q-card-section>

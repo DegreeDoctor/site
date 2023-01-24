@@ -74,7 +74,7 @@ export default {
             size="75px"
             font-size="50px"
             color="primary"
-            icon="directions"
+            icon="add"
         />
     </div>
 </template>
