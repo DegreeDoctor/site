@@ -7,6 +7,11 @@ export default {
             type: Object,
             required: true,
         },
+        check: {
+            type: Boolean,
+            required: false,
+            default: true
+        }
     },
     data() {
         return {
@@ -94,12 +99,24 @@ export default {
             }
             this.currCredit = c;
         },
+        dragged(e) {
+            e.dataTransfer.setData("text", e.target.id);
+            e.dataTransfer.dropEffect = "move";
+        },
     },
 };
 </script>
 
 <template>
-    <q-card flat bordered class="course-card" color="primary">
+    <q-card
+        :id="course.name"
+        flat
+        bordered
+        draggable="true"
+        class="course-card"
+        color="primary"
+        @dragstart="dragged"
+    >
         <q-card-section horizontal @click.self="popup = true">
             <q-card-section class="text-subtitle1" @click.self="popup = true">
                 {{ fixName }}
@@ -117,6 +134,7 @@ export default {
                         <q-list auto-close dense>
                             <q-item
                                 v-for="c in course.credits"
+                                :key="c"
                                 v-close-popup
                                 clickable
                                 @click="updateCredits(c)"
@@ -128,6 +146,7 @@ export default {
                 </q-btn>
                 <q-separator />
                 <q-checkbox
+                    v-if="check"
                     v-model="checked"
                     color="secondary"
                     @update:model-value="(value) => checkClicked(value)"

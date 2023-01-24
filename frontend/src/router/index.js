@@ -9,7 +9,7 @@ const router = createRouter({
             name: "redirect",
             beforeEnter: () => {
                 const store = useStore();
-                if (store.hasDegrees) {
+                if (store.getCurrentDegree) {
                     return { name: "degree" };
                 } else {
                     return { name: "quiz" };
