@@ -72,7 +72,8 @@ export const useStore = defineStore("main", {
             }
         },
         fetchCredits(name) {
-            return this.degrees[state.selectedDegree].credits[name];
+            consoleg.log(this.degrees);
+            return this.degrees[this.selectedDegree].credits[name];
         },
         toggleDarkMode() {
             this.darkMode = !this.darkMode;
