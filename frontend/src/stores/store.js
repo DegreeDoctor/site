@@ -70,18 +70,18 @@ export const useStore = defineStore("main", {
             delete this.degrees[name];
         },
         addCredits(name, amount) {
-            if (!this.degrees[state.selectedDegree].credits[name]) {
-                this.degrees[state.selectedDegree].credits[name] = amount;
+            if (!this.degrees[this.selectedDegree].credits[name]) {
+                this.degrees[this.selectedDegree].credits[name] = amount;
             }
         },
         removeCredits(name) {
-            if (this.degrees[state.selectedDegree].credits[name]) {
-                delete this.degrees[state.selectedDegree].credits[name];
+            if (this.degrees[this.selectedDegree].credits[name]) {
+                delete this.degrees[this.selectedDegree].credits[name];
             }
         },
         changeCredits(name, amount) {
-            if (this.degrees[state.selectedDegree].credits[name]) {
-                this.degrees[state.selectedDegree].credits[name] = amount;
+            if (this.degrees[this.selectedDegree].credits[name]) {
+                this.degrees[this.selectedDegree].credits[name] = amount;
             }
         },
         fetchCredits(name) {

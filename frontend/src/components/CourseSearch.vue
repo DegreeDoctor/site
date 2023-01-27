@@ -1,5 +1,4 @@
 <script>
-import coursesJson from "../data/courses.json";
 import ACourse from "../components/ACourse.vue";
 import CourseHolder from "../components/CourseHolder.vue";
 
@@ -140,7 +139,7 @@ export default {
             </q-card-section>
             <q-card-section>
                 <q-virtual-scroll
-                    v-slot="{ item, index }"
+                    v-slot="{ item }"
                     style="max-height: 300px"
                     :items="filteredCourses"
                 >
