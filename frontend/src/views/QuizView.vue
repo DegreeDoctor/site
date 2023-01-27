@@ -138,7 +138,10 @@ export default {
                 credits: {},
                 concentration: this.selectedConcentrations,
             };
-            degree["template"] = this.programsData["2022-2023"][this.selectedMajors[0]]["template"];
+            degree["template"] =
+                this.programsData["2022-2023"][this.selectedMajors[0]][
+                    "template"
+                ];
             this.store.addDegree(degree);
             this.$router.push("/degree");
         },
@@ -168,12 +171,12 @@ export default {
             input-debounce="0"
             :options="filteredMajors"
             style="width: 250px; margin-bottom: 20px"
-            @new-value="addMajor"
-            @input-value="filterMajor"
             :dense="true"
             :popup-content-style="{ fontSize: '12px', width: '250px' }"
             label="Major"
             hint="Select Your Major(s)"
+            @new-value="addMajor"
+            @input-value="filterMajor"
         />
         <q-select
             v-model="selectedMinors"
@@ -185,12 +188,12 @@ export default {
             input-debounce="0"
             :options="filteredMinors"
             style="width: 250px; margin-bottom: 20px"
-            @new-value="addMinor"
-            @input-value="filterMinor"
             :dense="true"
             :popup-content-style="{ fontSize: '12px', width: '250px' }"
             label="Minor(s)"
             hint="Select Your Minor(s)"
+            @new-value="addMinor"
+            @input-value="filterMinor"
         />
         <q-select
             v-model="selectedPathways"
@@ -200,12 +203,12 @@ export default {
             input-debounce="0"
             :options="filteredPathways"
             style="width: 250px; margin-bottom: 20px"
-            @new-value="addPathway"
-            @input-value="filterPathway"
             :dense="true"
             :popup-content-style="{ fontSize: '12px', width: '250px' }"
             label="Pathway(s)"
             hint="Select Your Pathway(s)"
+            @new-value="addPathway"
+            @input-value="filterPathway"
         />
         <q-select
             v-model="selectedConcentrations"
@@ -215,12 +218,12 @@ export default {
             input-debounce="0"
             :options="filteredConcentrations"
             style="width: 250px; margin-bottom: 20px"
-            @new-value="addConcentration"
-            @input-value="filterConcentration"
             :dense="true"
             :popup-content-style="{ fontSize: '12px', width: '250px' }"
             label="Concentration(s)"
             hint="Select Your Concentration(s)"
+            @new-value="addConcentration"
+            @input-value="filterConcentration"
         />
         <div>
             <q-btn label="Submit" color="primary" @click="submit" />

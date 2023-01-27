@@ -6,7 +6,7 @@ import CourseHolder from "../components/CourseHolder.vue";
 export default {
     components: {
         ACourse,
-        CourseHolder
+        CourseHolder,
     },
     props: {
         coursesData: {
@@ -50,57 +50,67 @@ export default {
         filteredCourses() {
             const courses = Object.values(this.coursesData);
             let output = [];
-            for(const i in courses) {
+            for (const i in courses) {
                 const course = courses[i];
-                if(!course.name.toLowerCase().includes(this.search.toLowerCase())) {
+                if (
+                    !course.name
+                        .toLowerCase()
+                        .includes(this.search.toLowerCase())
+                ) {
                     continue;
                 }
-                if(!course.subject.toLowerCase().includes(this.subject.toLowerCase())) {
+                if (
+                    !course.subject
+                        .toLowerCase()
+                        .includes(this.subject.toLowerCase())
+                ) {
                     continue;
                 }
-                if(!course.ID.toLowerCase().includes(this.code.toLowerCase())) {
+                if (
+                    !course.ID.toLowerCase().includes(this.code.toLowerCase())
+                ) {
                     continue;
                 }
                 const fall = this.chosen.includes("fall");
-                if(fall) {
-                    if(!course.offered.semesters.includes("fall")) {
+                if (fall) {
+                    if (!course.offered.semesters.includes("fall")) {
                         continue;
                     }
                 }
                 const spring = this.chosen.includes("spring");
-                if(spring) {
-                    if(!course.offered.semesters.includes("spring")) {
+                if (spring) {
+                    if (!course.offered.semesters.includes("spring")) {
                         continue;
                     }
                 }
                 const summer = this.chosen.includes("summer");
-                if(summer) {
-                    if(!course.offered.semesters.includes("summer")) {
+                if (summer) {
+                    if (!course.offered.semesters.includes("summer")) {
                         continue;
                     }
                 }
                 const CI = this.chosen.includes("CI");
-                if(CI) {
-                    if(!course.properties.CI) {
+                if (CI) {
+                    if (!course.properties.CI) {
                         continue;
                     }
                 }
                 const LVL4 = this.chosen.includes("4 LVL");
-                if(LVL4) {
-                    if(!(course.ID[0] == "4")) {
+                if (LVL4) {
+                    if (!(course.ID[0] == "4")) {
                         continue;
                     }
                 }
                 output.push(course);
             }
             return output;
-        }
+        },
     },
     methods: {
         addCourse(course) {
             this.course = course;
-        }
-    }
+        },
+    },
 };
 </script>
 
@@ -130,24 +140,24 @@ export default {
             </q-card-section>
             <q-card-section>
                 <q-virtual-scroll
-                    style="max-height: 300px;"
-                  :items="filteredCourses"
-                  v-slot="{item, index}"
+                    v-slot="{ item, index }"
+                    style="max-height: 300px"
+                    :items="filteredCourses"
                 >
                     <q-card-section class="q-pt-md" horizontal>
                         <ACourse :course="item" :check="false" />
                         <q-btn
+                            v-close-popup
                             class="q-ma-none"
                             label="Add Course"
                             @click="addCourse(item)"
-                            v-close-popup 
                         />
                     </q-card-section>
                 </q-virtual-scroll>
             </q-card-section>
 
             <q-card-actions align="right" class="text-primary">
-                <q-btn flat label="Cancel" v-close-popup />
+                <q-btn v-close-popup flat label="Cancel" />
             </q-card-actions>
         </q-card>
     </q-dialog>

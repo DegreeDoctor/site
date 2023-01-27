@@ -2,11 +2,11 @@
 import { useStore } from "../stores/store";
 
 export default {
-    name: 'ProgressBar',
+    name: "ProgressBar",
     data() {
         return {
             store: useStore(),
-        }
+        };
     },
     computed: {
         percent() {
@@ -15,10 +15,10 @@ export default {
             for (const name in courses) {
                 total += courses[name];
             }
-            return Math.round(total / 128 * 100);
-        }
-    }
-}
+            return Math.round((total / 128) * 100);
+        },
+    },
+};
 </script>
 
 <template>
@@ -32,7 +32,6 @@ export default {
         track-color="grey-3"
         class="q-ma-md"
     >
-    {{ percent }}%
+        {{ percent }}%
     </q-circular-progress>
-
 </template>

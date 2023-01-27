@@ -8,7 +8,9 @@ export default {
     <q-footer elevated class="bg-grey-8 text-white">
         <q-toolbar>
             <q-toolbar-title id="footer" class="text-center q-py-xs">
-                <div id="text" class="text-subtitle2">We love your feedback!</div>
+                <div id="text" class="text-subtitle2">
+                    We love your feedback!
+                </div>
                 <a href="https://github.com/Ryzon3/DegreeDoctor">
                     <q-icon id="icon" name="fa-brands fa-github" size="35px" />
                 </a>
@@ -19,7 +21,7 @@ export default {
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 #footer {
     font-size: 0.9em;
@@ -50,7 +52,6 @@ a {
 
 #text {
     font-size: 1.1rem;
-    font-family: 'Noto Serif', serif;
+    font-family: "Noto Serif", serif;
 }
-
 </style>

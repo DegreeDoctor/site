@@ -35,21 +35,30 @@ export const useStore = defineStore("main", {
     //Act like computed in Vue
     getters: {
         getCurrentDegree: (state) => {
-            if(state.selectedDegree != "") {
+            if (state.selectedDegree != "") {
                 return state.degrees[state.selectedDegree];
             }
         },
+        getCurrentDegreeName: (state) => {
+            return state.selectedDegree;
+        },
         getCredits: (state) => {
-            if(state.selectedDegree != "") {
+            if (state.selectedDegree != "") {
                 return state.degrees[state.selectedDegree].credits;
             }
         },
         getDarkMode: (state) => {
             return state.darkMode;
         },
+        getDegreeNames: (state) => {
+            return Object.keys(state.degrees);
+        },
     },
     //Act like methods in Vue
     actions: {
+        swapDegree(name) {
+            this.selectedDegree = name;
+        },
         addDegree(degree) {
             this.degrees[degree.name] = degree;
             this.selectedDegree = degree.name;
