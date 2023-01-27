@@ -10,6 +10,7 @@ export default {
     },
     data() {
         return {
+            current: useStore().getCurrentDegreeName,
             store: useStore(),
             plan: false,
             filter: "",
@@ -67,7 +68,7 @@ export default {
                             </h6>
                             <div class="card-contain">
                                 <q-select
-                                    v-model="selectedPlan"
+                                    v-model="current"
                                     filled
                                     use-input
                                     input-debounce="0"
@@ -76,6 +77,7 @@ export default {
                                     style="width: 200px"
                                     behavior="menu"
                                     @input-value="filterPlan"
+                                    @update:model-value="selectPlan"
                                 >
                                     <template #no-option>
                                         <q-item>
