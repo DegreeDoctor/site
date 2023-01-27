@@ -35,10 +35,14 @@ export const useStore = defineStore("main", {
     //Act like computed in Vue
     getters: {
         getCurrentDegree: (state) => {
-            return state.degrees[state.selectedDegree];
+            if(state.selectedDegree != "") {
+                return state.degrees[state.selectedDegree];
+            }
         },
         getCredits: (state) => {
-            return state.degrees[state.selectedDegree].credits;
+            if(state.selectedDegree != "") {
+                return state.degrees[state.selectedDegree].credits;
+            }
         },
         getDarkMode: (state) => {
             return state.darkMode;
@@ -72,7 +76,6 @@ export const useStore = defineStore("main", {
             }
         },
         fetchCredits(name) {
-            consoleg.log(this.degrees);
             return this.degrees[this.selectedDegree].credits[name];
         },
         toggleDarkMode() {
