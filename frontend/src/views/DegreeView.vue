@@ -4,12 +4,14 @@ import CourseHolder from "../components/CourseHolder.vue";
 import CourseTrash from "../components/CourseTrash.vue";
 import CourseSearch from "../components/CourseSearch.vue";
 import coursesJson from "../data/courses.json";
+import CourseTable from "../components/CourseTable.vue"
 
 export default {
     components: {
         CourseHolder,
         CourseTrash,
         CourseSearch,
+        CourseTable
     },
     data() {
         return {
@@ -42,41 +44,28 @@ export default {
             return array;
         },
     },
+    methods: {
+        debug() {
+            // this.store.deleteEverything();       // this deleted everything in local store
+            console.log(this.templateToArray)
+        }
+    }
 };
 </script>
 
 <template>
-    <CourseSearch :courses-data="coursesData" />
+    <q-btn @click="debug()">
+        debug
+    </q-btn>
+    <br/>
     <CourseTrash />
-    <q-markup-table separator="cell" flat bordered>
-        <tbody>
-            <tr v-for="sem in templateToArray" :key="sem">
-                <td>
-                    <h4 class="q-ma-none">{{ sem[0] }}</h4>
-                </td>
-                <td>
-                    <tr>
-                        <td v-for="course in sem[1]" :key="course" class="col">
-                            Recommended: {{ course.name }}
-                        </td>
-                    </tr>
-                    <!-- Course Row -->
-                    <tr>
-                        <td v-for="course in sem[1]" :key="course" class="col">
-                            <CourseHolder :course="course" />
-                        </td>
-                    </tr>
-                </td>
-            </tr>
-        </tbody>
-    </q-markup-table>
+    <CourseTable :semesters="templateToArray"/>
 </template>
 
 <style scoped lang="scss">
-.col {
-    max-width: 320px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
+
+CourseTable {
+    margin: 0 auto;
 }
 </style>

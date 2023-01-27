@@ -90,5 +90,10 @@ export const useStore = defineStore("main", {
         toggleDarkMode() {
             this.darkMode = !this.darkMode;
         },
+        deleteEverything() {
+            Object.keys(this.degrees).forEach( degreeName => {
+                delete this.degrees[degreeName]
+            })
+        }
     },
 });
