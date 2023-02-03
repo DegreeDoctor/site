@@ -6,6 +6,7 @@ import requests
 import datetime
 import os
 from degree_util import get_catalogs
+from degree_util import root
 
 
 '''
@@ -37,11 +38,12 @@ the professors of the course and if it is CI(communication intensive)
 It stores this information and then updates the .json file of courses with it.
 '''
 def sis_scraper():
-    filepath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    f = open(filepath + '/data/courses.json','r')   #Opens the .json file and stores it as a python object
+    filepath = root
+    f = open(filepath + '/frontend/src/data/courses.json','r')   #Opens the .json file and stores it as a python object
     courseJson = json.load(f)
     f.close()
     years = year_generator()
+    years.reverse()
     s = requests.Session()
 
     for course in tqdm(courseJson): #Iterates through every course
@@ -49,7 +51,7 @@ def sis_scraper():
         CI = False
         for currYear in years: #For every course we iterate through every year and open the respective webpage
             page = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse"
-            webpage_response = s.get(page + '?term_in=' + currYear + '&subj_in=' + courseJson[course]["subj"] + '&crse_in=' + courseJson[course]["ID"] + '&schd_in=L')
+            webpage_response = s.get(page + '?term_in=' + currYear + '&subj_in=' + courseJson[course]["subject"] + '&crse_in=' + courseJson[course]["ID"] + '&schd_in=L')
             webpage = webpage_response.content
             soup = BeautifulSoup(webpage, "html.parser")
 
@@ -73,8 +75,6 @@ def sis_scraper():
                     CI= True
                 link = link_grabber(s, soup)
                 restrictedMajor = majorRestrictionChecker(s, link)
-                if restrictedMajor != "":
-                    restrictedMajors = [major.strip() for major in restrictedMajor.split('&')]
                 
 
 
@@ -83,13 +83,13 @@ def sis_scraper():
         instructorStorage = [*set(instructorStorage)]
         courseJson[course]['professors'] = instructorStorage
         courseJson[course]['properties']['CI'] = CI
-        if restrictedMajor != "":
+        if len(restrictedMajor) > 0:
             courseJson[course]['properties']['MR'] = True
-            courseJson[course]['properties']['majorRestriction'] = restrictedMajors
+            courseJson[course]['properties']['majorRestriction'] = restrictedMajor
         else:
             courseJson[course]['properties']['MR'] = False
             courseJson[course]['properties']['majorRestriction'] = []
-        f2 = open(filepath + '/data/courses.json', 'w')
+        f2 = open(filepath + '/frontend/src/data/courses.json', 'w')
         json.dump(courseJson, f2, sort_keys=True, indent=2, ensure_ascii=False)
         f2.close()
 
@@ -100,6 +100,7 @@ link grabber takes in a given SIS page soup and finds the first class info
 link in it and returns that link.
 '''
 def link_grabber(session, soup):
+    link = ""
     key = "/rss/bwckschd.p_disp_detail_sched?term_in="
     linkMass = soup.find_all("a", href=True)
     for val in linkMass:
@@ -124,11 +125,22 @@ def majorRestrictionChecker(session, link):
     textList = innerText.splitlines()
     red = list(filter(lambda item: item.strip(), textList))
     searchString = "Must be enrolled in one of the following Majors:"
-    holder = ""
+    holder = []
+    startingIndex = 0
     for i in range(0, len(textList) - 2):
         if searchString in textList[i]:
-            holder = textList[i + 2].strip()
-    return holder
+            startingIndex = i
+            break
+    dangerStringOne = "Return"
+    dangerStringTwo = "Prerequisites"
+    if startingIndex != 0:
+        for j in range(startingIndex + 1, len(textList) - 1):
+            if dangerStringOne in textList[j] or dangerStringTwo in textList[j]:
+                break
+            else:
+                holder.append(textList[j].strip())
+    majorList = list(filter(lambda item: item.strip(), holder))
+    return majorList
 
 
 
