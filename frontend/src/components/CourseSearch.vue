@@ -118,11 +118,10 @@ export default {
         font-size="50px"
         color="primary"
         icon="add"
+        class="addButton"
         :style="{cursor: 'pointer'}"
         @click="prompt = true"
     />
-    <!-- <q-btn label="Add a Course" color="primary" @click="prompt = true" /> -->
-
     <q-dialog v-model="prompt" persistent>
         <q-card style="min-width: 350px">
             <q-card-section>
@@ -167,3 +166,11 @@ export default {
         </q-card>
     </q-dialog>
 </template>
+
+
+<style>
+.addButton {
+    margin: auto;
+}
+
+</style>
