@@ -1,24 +1,18 @@
 <template>
     <div id="table">
-        <div class="flex-row" v-for="semester in parsedSemesters">
-            <h3 class="semesterPre">
-                {{ semester[0] }}
-            </h3>
-            <div class="courseCard" v-for="course in semester[1]">
-                <CourseHolder v-if="course.name != 'empty'"   :course="course"  />
-                <CourseHolder v-else/>
-            </div>
-        </div>
+        <Semester v-for="semester in semesters" :semester="semester" />
     </div>
 
 
 </template>
 <script>
 import CourseHolder from './CourseHolder.vue';
+import Semester from './Semester.vue';
 export default {
     components: {
-        CourseHolder
-    },  
+    CourseHolder,
+    Semester
+},  
     data() {
         return {
             parsedSemesters: []
@@ -38,11 +32,10 @@ export default {
     },
     methods: {
         parseSemesters() {
-
             this.parsedSemesters = []
             this.semesters.forEach( sem => {
                 let tempSem = [ sem[0], []]
-                for ( let i = 0; i < 4; i++) {
+                for ( let i = 0; i < 4 ; i++) {
                     if (i < sem[1].length ) {
                         tempSem[1].push(JSON.parse(JSON.stringify(sem[1][i])))
                     } else {
@@ -59,11 +52,11 @@ export default {
 <style>
 
 #table {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 10px;
-    width: fit-content;
+    display: grid;
+    gap: 5%;
+    width: 70%;
     margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
 }
 
 .semesterPre {
