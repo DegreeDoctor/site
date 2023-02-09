@@ -2,7 +2,6 @@
 import { useStore } from "../stores/store";
 import programsJSON from "../data/programs.json";
 import { useQuasar } from 'quasar'
-import { Notify } from 'quasar'
 
 export default {
   data() {
@@ -83,20 +82,6 @@ export default {
     };
   },
   methods: {
-    addMajor(val) {
-      if (val.length > 0) {
-        if (!this.selectedMajors.includes(val)) {
-          this.selectedMajors.push(val);
-        }
-      }
-    },
-    addMinor(val) {
-      if (val.length > 0) {
-        if (!this.selectedMinors.includes(val)) {
-          this.selectedMinors.push(val);
-        }
-      }
-    },
     filterMajor(val) {
       this.filteredMajors = this.majorOptions.filter((x) =>
         x.toLowerCase().includes(val.toLowerCase())
@@ -112,24 +97,10 @@ export default {
         x.toLowerCase().includes(val.toLowerCase())
       );
     },
-    addPathway(val) {
-      if (val.length > 0) {
-        if (!this.selectedPathways.includes(val)) {
-          this.selectedPathways.push(val);
-        }
-      }
-    },
     filterConcentration(val) {
       this.filteredConcentrations = this.concentrationOptions.filter(
         (x) => x.toLowerCase().includes(val.toLowerCase())
       );
-    },
-    addConcentration(val) {
-      if (val.length > 0) {
-        if (!this.selectedConcentrations.includes(val)) {
-          this.selectedConcentrations.push(val);
-        }
-      }
     },
     submit() {
       let degree = {
@@ -140,26 +111,46 @@ export default {
         credits: {},
         concentration: this.selectedConcentrations,
       };
+      // checks if any of the majors are also minors
+      for (let i = 0; i < degree.majors.length; i++) {
+        for (let j = 0; j < degree.minors.length; j++) {
+          if (degree.majors[i] == degree.minors[j]) {
+            this.showNotif("top", "One of your majors is also a minor", "negative");
+            return;
+          }
+        }
+      }
       degree["template"] =
         this.programsData["2022-2023"][this.selectedMajors[0]][
         "template"
         ];
       this.store.addDegree(degree);
       this.$router.push("/degree");
+      let message = "You have created plan " + "\"" + this.degreeName + "\"";
+      this.showNotif("top", message, "positive");
+    },
+    reset() {
+      this.degreeName = "";
+      this.selectedMajors = [];
+      this.selectedMinors = [];
+      this.selectedPathways = "None";
+      this.selectedConcentrations = "None";
+      this.showNotif("top", "Form has been reset", "info", 300)
     },
   },
   setup() {
-    const $q = useQuasar();
-    // check if degreename is empty
+    const $q = useQuasar(); 
     return {
-      showNotify() {
-        const x = 0;
-        if (x === 0) {
-          $q.notify({
-            message: 'Please enter a name for your degree plan.',
-            color: 'red'
-          })
-        }
+      // Useful reference https://quasar.dev/quasar-plugins/notify#positioning
+      showNotif (position, message, type, timeout = 1250) {
+        $q.notify({
+          badgeClass: "hide-badge",
+          type,
+          textColor: "white",
+          message,
+          position,
+          timeout
+        })
       },
     }
   }
@@ -169,43 +160,50 @@ export default {
 
 <template>
   <q-form
-  class="full-width column wrap justify-center items-center content-center" >
+  class="full-width column wrap justify-center items-center content-center" 
+  @submit.prevent.stop="submit">
     <p>Create Your Degree!</p>
     <q-input
       v-model="degreeName"
-      label="Plan Name"
+      label="Plan Name *"
       hint="Name Your Plan"
       :dense="true"
+      clearable
       style="width: 300px; margin-bottom: 20px; font-family: 'Rubik', sans-serif;"
       lazy-rules
       :rules="[ val => val && val.length > 0 || 'Please enter a name']"
-    />
-    <q-select
+      />
+      <q-select
       v-model="selectedMajors"
       use-input
       multiple
       input-debounce="0"
       max-values="2"
       :options="filteredMajors"
+      options-dense
+      clearable
       :dense="true"
-      :input-style="{ FontFace: 'Rubik' }"
-      :popup-content-style="{ fontSize: '12px', width: '250px' }"
-      label="Major"
+      :input-style="{ FontFace: 'Rubik', fontSize: '15px' }"
+      :popup-content-style="{ fontSize: '15px', width: '250px' }"
+      label="Major(s) *"
       hint="Select Your Major(s)"
-      lazy-rules
-      :rules="[ val => val && val.length > 0 || 'Please pick at least one major']"
       @input-value="filterMajor"
       style="width: 300px; margin-bottom: 20px; font-family: 'Rubik', sans-serif;"
+      lazy-rules
+      :rules="[ val => val && val.length > 0 || 'Please pick at least one major']"
       />
       <q-select
       v-model="selectedMinors"
       use-input
       multiple
       max-input="2"
+      :input-style="{ FontFace: 'Rubik', fontSize: '15px' }"
       input-debounce="0"
       :options="filteredMinors"
+      options-dense
+      clearable
       :dense="true"
-      :popup-content-style="{ fontSize: '12px', width: '250px' }"
+      :popup-content-style="{ fontSize: '15px', width: '250px' }"
       label="Minor(s)"
       hint="Select Your Minor(s)"
       @input-value="filterMinor"
@@ -216,10 +214,12 @@ export default {
       use-input
       input-debounce="0"
       :options="filteredPathways"
+      options-dense
+      clearable
       :dense="true"
-      :popup-content-style="{ fontSize: '12px', width: '250px' }"
-      label="Pathway(s)"
-      hint="Select Your Pathway(s)"
+      :popup-content-style="{ fontSize: '15px', width: '250px' }"
+      label="Pathway"
+      hint="Select Your Pathway"
       @input-value="filterPathway"
       style="width: 300px; margin-bottom: 20px; font-family: 'Rubik', sans-serif;"
     />
@@ -229,14 +229,17 @@ export default {
       input-debounce="0"
       :options="filteredConcentrations"
       :dense="true"
-      :popup-content-style="{ fontSize: '12px', width: '250px' }"
-      label="Concentration(s)"
-      hint="Select Your Concentration(s)"
+      options-dense
+      clearable
+      :popup-content-style="{ fontSize: '15px', width: '250px' }"
+      label="Concentration"
+      hint="Select Your Concentration"
       @input-value="filterConcentration"
       style="width: 300px; margin-bottom: 20px; font-family: 'Rubik', sans-serif;"
     />
     <div>
-        <q-btn label="Submit" color="primary" @click="showNotify" />
+        <q-btn label="Submit" color="primary" type="submit" />
+        <q-btn label="Reset" color="primary" flat @click="reset" style="margin-left: 10px;"/>
     </div>
   </q-form>
 </template>
@@ -252,5 +255,10 @@ p {
   font-size: 30px;
 }
 
+.hide-badge {
+  background-color: transparent;
+  box-shadow: 0 0 0 0 transparent;
+  color: transparent;
+}
 
 </style>
