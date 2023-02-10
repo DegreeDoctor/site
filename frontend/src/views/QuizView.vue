@@ -1,56 +1,9 @@
 <script>
 import { useStore } from "../stores/store";
+import programsJSON from "../data/programs.json";
 
 export default {
     data() {
-        const majors = [
-            "Computer Science",
-            "Information Technology Web Science",
-            "Math",
-            "Physics",
-            "Chemistry",
-            "Biology",
-            "History",
-            "Geography",
-            "Economics",
-            "Psychology",
-            "Sociology",
-            "Philosophy",
-            "English",
-            "French",
-            "German",
-            "Spanish",
-            "Italian",
-            "Russian",
-            "Chinese",
-            "Japanese",
-            "Arabic",
-            "Other",
-        ];
-        const minors = [
-            "Monkey Science",
-            "Information Technology Web Science",
-            "Math",
-            "Physics",
-            "Chemistry",
-            "Biology",
-            "History",
-            "Geography",
-            "Economics",
-            "Psychology",
-            "Sociology",
-            "Philosophy",
-            "English",
-            "French",
-            "German",
-            "Spanish",
-            "Italian",
-            "Russian",
-            "Chinese",
-            "Japanese",
-            "Arabic",
-            "Other",
-        ];
         const pathways = [
             "None",
             "Art History, Theory, and Criticism",
@@ -113,17 +66,18 @@ export default {
             store: useStore(),
             selectedMajors: [],
             degreeName: "",
-            majorOptions: majors,
-            filteredMajors: majors,
+            majorOptions: Object.keys(programsJSON["2022-2023"]),
+            filteredMajors: Object.keys(programsJSON["2022-2023"]),
             selectedMinors: [],
-            minorOptions: minors,
-            filteredMinors: minors,
+            minorOptions: Object.keys(programsJSON["2022-2023"]),
+            filteredMinors: Object.keys(programsJSON["2022-2023"]),
             selectedPathways: "None",
             pathwayOptions: pathways,
             filteredPathways: pathways,
             selectedConcentrations: "None",
             concentrationOptions: concentrations,
             filteredConcentrations: concentrations,
+            programsData: programsJSON,
         };
     },
     methods: {
@@ -181,9 +135,14 @@ export default {
                 majors: this.selectedMajors,
                 minors: this.selectedMinors,
                 pathway: this.selectedPathways,
+                credits: {},
                 concentration: this.selectedConcentrations,
             };
-            console.log(degree);
+            degree["template"] =
+                this.programsData["2022-2023"][this.selectedMajors[0]][
+                    "template"
+                ];
+            this.store.addDegree(degree);
             this.$router.push("/degree");
         },
     },
@@ -212,12 +171,12 @@ export default {
             input-debounce="0"
             :options="filteredMajors"
             style="width: 250px; margin-bottom: 20px"
-            @new-value="addMajor"
-            @input-value="filterMajor"
             :dense="true"
             :popup-content-style="{ fontSize: '12px', width: '250px' }"
             label="Major"
             hint="Select Your Major(s)"
+            @new-value="addMajor"
+            @input-value="filterMajor"
         />
         <q-select
             v-model="selectedMinors"
@@ -229,12 +188,12 @@ export default {
             input-debounce="0"
             :options="filteredMinors"
             style="width: 250px; margin-bottom: 20px"
-            @new-value="addMinor"
-            @input-value="filterMinor"
             :dense="true"
             :popup-content-style="{ fontSize: '12px', width: '250px' }"
             label="Minor(s)"
             hint="Select Your Minor(s)"
+            @new-value="addMinor"
+            @input-value="filterMinor"
         />
         <q-select
             v-model="selectedPathways"
@@ -244,12 +203,12 @@ export default {
             input-debounce="0"
             :options="filteredPathways"
             style="width: 250px; margin-bottom: 20px"
-            @new-value="addPathway"
-            @input-value="filterPathway"
             :dense="true"
             :popup-content-style="{ fontSize: '12px', width: '250px' }"
             label="Pathway(s)"
             hint="Select Your Pathway(s)"
+            @new-value="addPathway"
+            @input-value="filterPathway"
         />
         <q-select
             v-model="selectedConcentrations"
@@ -259,12 +218,12 @@ export default {
             input-debounce="0"
             :options="filteredConcentrations"
             style="width: 250px; margin-bottom: 20px"
-            @new-value="addConcentration"
-            @input-value="filterConcentration"
             :dense="true"
             :popup-content-style="{ fontSize: '12px', width: '250px' }"
             label="Concentration(s)"
             hint="Select Your Concentration(s)"
+            @new-value="addConcentration"
+            @input-value="filterConcentration"
         />
         <div>
             <q-btn label="Submit" color="primary" @click="submit" />

@@ -4,7 +4,10 @@ import { useStorage } from "@vueuse/core";
 export const useStore = defineStore("main", {
     state: () => ({
         /* Degree is formatted as follows
-            "name" {   
+            "name" {
+                //Credits
+                // Object of lists formatted as: {"course1": 4, "Course2", 3}
+                credits   {},
                 //Name of degree user defined
                 name: "",
                 //List of major names
@@ -25,8 +28,6 @@ export const useStore = defineStore("main", {
             }
         */
         degrees: useStorage("degrees", {}),
-        // Object of lists formatted as: {"course1": 4, "Course2", 3}
-        credits: useStorage("credits", {}),
         darkMode: useStorage("darkMode", false),
         // Current degree to view in degree view
         selectedDegree: useStorage("selectedDegree", ""),
@@ -34,78 +35,33 @@ export const useStore = defineStore("main", {
     //Act like computed in Vue
     getters: {
         getCurrentDegree: (state) => {
-            return state.degrees[state.selectedDegree];
+            if (state.selectedDegree != "") {
+                return state.degrees[state.selectedDegree];
+            }
+        },
+        getCurrentDegreeName: (state) => {
+            return state.selectedDegree;
         },
         getCredits: (state) => {
-            return state.credits;
+            if (state.selectedDegree != "") {
+                return state.degrees[state.selectedDegree].credits;
+            }
         },
         getDarkMode: (state) => {
             return state.darkMode;
         },
+        getDegreeNames: (state) => {
+            return Object.keys(state.degrees);
+        },
     },
     //Act like methods in Vue
     actions: {
+        swapDegree(name) {
+            this.selectedDegree = name;
+        },
         addDegree(degree) {
-            //this.degrees[degree.name] = degree;
-            this.degrees["Test Ryan Fun God Turbo"] = {
-                name: "Test Ryan Fun God Turbo",
-                majors: ["Computer Science"],
-                minors: ["Mathematics"],
-                pathway: "Artificial Intelligence",
-                concentration: "Artificial Intelligence",
-                template: {
-                    "1-Fall": [
-                        "Minds and Machines",
-                        "Computer Science I",
-                        "Calculus I",
-                        "Physics I",
-                    ],
-                    "1-Spring": [
-                        "Introduction to Cognitive Science",
-                        "Introduction to Biology",
-                        "Introduction to Biology Laboratory",
-                        "Data Structures",
-                        "Calculus II",
-                    ],
-                    "2-Fall": [
-                        "Multivariable Calculus and Matrix Algebra",
-                        "Writing in Context",
-                        "Foundations of Computer Science",
-                        "Computer Organization",
-                    ],
-                    "2-Spring": [
-                        "Linear Algebra",
-                        "Strategic Writing",
-                        "Introduction to Algorithms",
-                        "Principles of Software",
-                    ],
-                    "3-Summer": [
-                        "Introduction to Artificial Intelligence",
-                        "Programming for Cognitive Science and Artificial Intelligence",
-                        "Critical Thinking",
-                        "Operating Systems",
-                    ],
-                    "3-Fall or Spring": [
-                        "Earth and Sky",
-                        "Intelligent Virtual Agents",
-                        "Introduction to Differential Equations",
-                        "Programming Languages",
-                    ],
-                    "4-Fall": [
-                        "Software Design and Documentation",
-                        "Distributed Computing Over The Internet",
-                        "Design and Analysis of Algorithms",
-                        "Open Source Software",
-                    ],
-                    "4-Spring": [
-                        "Randomized Algorithms",
-                        "Machine Learning from Data",
-                        "Computational Finance",
-                        "Natural Language Processing",
-                    ],
-                },
-            };
-            this.selectedDegree = "Test Ryan Fun God Turbo";
+            this.degrees[degree.name] = degree;
+            this.selectedDegree = degree.name;
         },
         updateDegree(name, degree) {
             this.degrees[name] = degree;
@@ -114,22 +70,22 @@ export const useStore = defineStore("main", {
             delete this.degrees[name];
         },
         addCredits(name, amount) {
-            if (!this.credits[name]) {
-                this.credits[name] = amount;
+            if (!this.degrees[this.selectedDegree].credits[name]) {
+                this.degrees[this.selectedDegree].credits[name] = amount;
             }
         },
         removeCredits(name) {
-            if (this.credits[name]) {
-                delete this.credits[name];
+            if (this.degrees[this.selectedDegree].credits[name]) {
+                delete this.degrees[this.selectedDegree].credits[name];
             }
         },
         changeCredits(name, amount) {
-            if (this.credits[name]) {
-                this.credits[name] = amount;
+            if (this.degrees[this.selectedDegree].credits[name]) {
+                this.degrees[this.selectedDegree].credits[name] = amount;
             }
         },
         fetchCredits(name) {
-            return this.credits[name];
+            return this.degrees[this.selectedDegree].credits[name];
         },
         toggleDarkMode() {
             this.darkMode = !this.darkMode;

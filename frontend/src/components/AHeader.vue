@@ -9,22 +9,29 @@ export default {
         ProgressBar,
     },
     data() {
-        const plans = ["CS Plan", "ITWS Plan", "HASS Plan"];
         return {
+            current: useStore().getCurrentDegreeName,
+            store: useStore(),
             plan: false,
-            selectedPlan: "CS Plan",
-            filteredPlans: plans,
-            planOptions: plans,
+            filter: "",
         };
+    },
+    computed: {
+        selectedPlan() {
+            return this.store.getCurrentDegreeName;
+        },
+        filteredPlans() {
+            return this.store.getDegreeNames.filter((x) =>
+                x.toLowerCase().includes(this.filter.toLowerCase())
+            );
+        },
     },
     methods: {
         selectPlan(val) {
-            this.selectedPlan = val;
+            this.store.swapDegree(val);
         },
         filterPlan(val) {
-            this.filteredPlans = this.planOptions.filter((x) =>
-                x.toLowerCase().includes(val.toLowerCase())
-            );
+            this.filter = val;
         },
     },
 };
@@ -61,27 +68,28 @@ export default {
                             </h6>
                             <div class="card-contain">
                                 <q-select
-                                v-model="selectedPlan"
-                                filled
-                                use-input
-                                input-debounce="0"
-                                label="Search"
-                                :options="filteredPlans"
-                                style="width: 200px"
-                                behavior="menu"
-                                @input-value="filterPlan"
-                            >
-                                <template #no-option>
-                                    <q-item>
-                                        <q-item-section class="text-grey">
-                                            No results
-                                        </q-item-section>
-                                    </q-item>
-                                </template>
-                            </q-select>
-                            <div>
-                                <ProgressBar />
-                            </div>
+                                    v-model="current"
+                                    filled
+                                    use-input
+                                    input-debounce="0"
+                                    label="Search"
+                                    :options="filteredPlans"
+                                    style="width: 200px"
+                                    behavior="menu"
+                                    @input-value="filterPlan"
+                                    @update:model-value="selectPlan"
+                                >
+                                    <template #no-option>
+                                        <q-item>
+                                            <q-item-section class="text-grey">
+                                                No results
+                                            </q-item-section>
+                                        </q-item>
+                                    </template>
+                                </q-select>
+                                <div>
+                                    <ProgressBar />
+                                </div>
                             </div>
                         </q-card-section>
                         <q-card-actions class="text-primary">

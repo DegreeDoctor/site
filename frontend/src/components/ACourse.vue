@@ -10,8 +10,8 @@ export default {
         check: {
             type: Boolean,
             required: false,
-            default: true
-        }
+            default: true,
+        },
     },
     data() {
         return {
