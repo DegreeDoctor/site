@@ -90,6 +90,19 @@ export const useStore = defineStore("main", {
         toggleDarkMode() {
             this.darkMode = !this.darkMode;
         },
+        updateDegreeSemester(semester, course, action) {
+            if (action == "add") {
+                console.log(`adding to ${semester}`)
+                this.degrees[this.selectedDegree].template[semester].push(course);
+                console.log(this.degrees[this.selectedDegree].template[semester])
+            } else if (action == "remove") {
+                this.degrees[this.selectedDegree].template[semester] = 
+                    this.degrees[this.selectedDegree].template[semester].filter(
+                        (item) => item.name != course.name
+                    );
+            }
+
+        },
         deleteEverything() {
             Object.keys(this.degrees).forEach( degreeName => {
                 delete this.degrees[degreeName]
