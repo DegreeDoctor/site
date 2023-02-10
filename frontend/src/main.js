@@ -17,12 +17,14 @@ import "./assets/main.css";
 const app = createApp(App);
 const pinia = createPinia();
 app.use(Quasar, {
-  plugins: {
-    Notify
-  }, // import Quasar plugins and add here
-  config: {
-    notify: { /* look at QuasarConfOptions from the API card */ }
-  }
+    plugins: {
+        Notify,
+    }, // import Quasar plugins and add here
+    config: {
+        notify: {
+            /* look at QuasarConfOptions from the API card */
+        },
+    },
 });
 app.use(pinia);
 app.use(router);
