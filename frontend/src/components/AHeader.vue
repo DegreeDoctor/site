@@ -33,6 +33,9 @@ export default {
         filterPlan(val) {
             this.filter = val;
         },
+        deletePlan(val) {
+            this.store.removeDegree(val);
+        },
     },
 };
 </script>
@@ -99,6 +102,13 @@ export default {
                                 flat
                                 label="Add new plan"
                                 to="/quiz"
+                            ></q-btn>
+                            <q-btn
+                                v-close-popup
+                                flat
+                                label="Delete Plan"
+                                @click="deletePlan"
+                                to="/degree"
                             ></q-btn>
                         </q-card-actions>
                     </q-card>
