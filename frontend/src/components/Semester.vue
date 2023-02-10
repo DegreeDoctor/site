@@ -1,23 +1,62 @@
 <template>
     <div class="semesterContainer">
-        <h3 class="semesterName">{{ semester[0] }}</h3>
-        <div class="courseContainer">
-            <CourseCard class="course" v-for="course in semester[1]" :course="course" />
-        </div>
+        <h3 class="semesterName">{{ semesterName }}</h3>
+        <draggable :list="courses" group="courses" class="courseContainer" @change="log">
+            <CourseCard class="course" v-for="course in courses" :course="course" />
+        </draggable>
     </div>
+    <!-- <draggable :list="list" >
+      <div
+        v-for="element in list"
+        :key="element.name"
+      >
+        {{ element.name }}
+      </div>
+    </draggable> -->
 </template>
 <script>
+import { defineComponent } from 'vue'
+import { VueDraggableNext } from 'vue-draggable-next'
 import CourseCard from './CourseCard.vue';
 
-export default {
+export default defineComponent ({
+    components: { 
+        CourseCard, 
+        draggable: VueDraggableNext, 
+    },
+    data() {
+        return {
+            list: [
+                { name: 'John', id: 1 },
+                { name: 'Joao', id: 2 },
+                { name: 'Jean', id: 3 },
+                { name: 'Gerard', id: 4 },
+            ],
+            semesterName: {
+                type: String
+            },
+            courses: {
+                type: Array[Object]
+            }
+
+        }
+    },
     props: {
         semester: {
             type: Object,
             required: true,
         },
     },
-    components: { CourseCard }
-}
+    mounted() {
+        this.semesterName = this.semester[0];
+        this.courses = JSON.parse(JSON.stringify(this.semester[1]))
+    },
+    methods: {
+        log(event) {
+            console.log(event)
+        }
+    }
+})
 </script>
 <style lang="scss">
     .semesterName {
