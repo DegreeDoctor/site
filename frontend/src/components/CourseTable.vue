@@ -24,28 +24,6 @@ export default {
             
         }
     },
-    mounted() {
-        console.log(this.semesters)
-        // parse semesters and make them default to length of 4
-        this.parseSemesters();
-        console.log(this.parsedSemesters)
-    },
-    methods: {
-        parseSemesters() {
-            this.parsedSemesters = []
-            this.semesters.forEach( sem => {
-                let tempSem = [ sem[0], []]
-                for ( let i = 0; i < 4 ; i++) {
-                    if (i < sem[1].length ) {
-                        tempSem[1].push(JSON.parse(JSON.stringify(sem[1][i])))
-                    } else {
-                        tempSem[1].push({name:"empty"})
-                    }
-                }
-                this.parsedSemesters.push(tempSem)
-            })
-        }
-    }
     
 }
 </script>
