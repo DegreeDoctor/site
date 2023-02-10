@@ -1,25 +1,8 @@
 <script>
 import { useStore } from "../stores/store";
 import programsJSON from "../data/programs.json";
-import { useQuasar } from "quasar";
 
 export default {
-    setup() {
-        const $q = useQuasar();
-        return {
-            // Useful reference https://quasar.dev/quasar-plugins/notify#positioning
-            showNotif(position, message, type, timeout = 1250) {
-                $q.notify({
-                    badgeClass: "hide-badge",
-                    type,
-                    textColor: "white",
-                    message,
-                    position,
-                    timeout,
-                });
-            },
-        };
-    },
     data() {
         const pathways = [
             "None",
@@ -157,6 +140,17 @@ export default {
             this.selectedPathways = "None";
             this.selectedConcentrations = "None";
             this.showNotif("top", "Form has been reset", "info", 300);
+        },
+        showNotif(position, message, type, timeout = 1250) {
+          // Useful reference https://quasar.dev/quasar-plugins/notify#positioning
+          this.$q.notify({
+              badgeClass: "hide-badge",
+              type,
+              textColor: "white",
+              message,
+              position,
+              timeout,
+          });
         },
     },
 };
