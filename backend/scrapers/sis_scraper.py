@@ -122,7 +122,7 @@ def majorRestrictionChecker(session, link):
     innerContent = response.text
     soup2 = BeautifulSoup(innerContent, "html.parser")
     innerText = soup2.text
-    textList = innerText.splitlines()
+    textList = innerText.splitlines()  
     red = list(filter(lambda item: item.strip(), textList))
     searchString = "Must be enrolled in one of the following Majors:"
     holder = []
