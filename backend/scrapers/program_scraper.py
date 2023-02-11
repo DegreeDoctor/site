@@ -141,11 +141,10 @@ def rem_all(str):
     return rem_footnote(rem_arch(str))
 
 # parses the template for visual purposes in the JSON 
-def parse_template(semesters): 
+def parse_template(semesters,extra): 
     sems = OrderedDict()
     curr_year = 1
     first_sem_in_year = True
-    extra = []
     for item in semesters:
         template_str = str(curr_year) + "-" 
         # Extra content 
@@ -168,7 +167,6 @@ def parse_template(semesters):
                 curr_year += 1
             first_sem_in_year = not first_sem_in_year 
         sems[template_str] = item
-    sems["Extra"] = extra
     return sems
 
 # gets the subj string from a given string
@@ -444,13 +442,15 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         # this is neccesary for frontend visibility (we no longer
         # want to distinguish between named and elective classes)
         courses = [strip_list(x) for x in courses]
-        template = parse_template(courses)
+        extra = []
+        template = parse_template(courses,extra)
         data[name] = {
                 "name": name,
                 "description": desc,
                 "credits": credit,
                 "requirements" : requirements,
-                "template": template
+                "template": template,
+                "extra": extra
             }
 
     return data
