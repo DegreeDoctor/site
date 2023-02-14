@@ -1,5 +1,6 @@
 <script>
 import { useStore } from "../stores/store";
+import { storeToRefs } from 'pinia'
 import CourseHolder from "../components/CourseHolder.vue";
 import CourseTrash from "../components/CourseTrash.vue";
 import CourseSearch from "../components/CourseSearch.vue";
@@ -23,6 +24,7 @@ export default {
     computed: {
         templateToArray() {
             const template = this.store.getCurrentDegree["template"];
+            console.log(template);
             let array = [];
             let subArray = [];
             let sem = Object.keys(template)[0];

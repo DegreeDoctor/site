@@ -2,8 +2,6 @@
     <div id="table">
         <Semester v-for="semester in semesters" :semester="semester" />
     </div>
-
-
 </template>
 <script>
 import CourseHolder from './CourseHolder.vue';
