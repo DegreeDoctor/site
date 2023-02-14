@@ -132,8 +132,11 @@ export default defineComponent ({
                 // <!--! it does update the store (i think), but it doesn't update the view
                     // <!--! need to look at the docs for pinia more to fix this
             console.log(event)
-            if (event["added"]) {
-                this.store.updateDegreeSemester(this.semesterName, event.added.element, "add")
+            if (Object.keys(event).includes("added")) {
+                this.store.updateDegreeSemester(this.semesterName, event.added.element.name, "add")
+            } else if (Object.keys(event).includes("removed")) {
+                this.store.updateDegreeSemester(this.semesterName, event.removed.element.name, "remove")
+
             }
             // this.store.updateDegreeSemester(this.semesterName, toRaw(this.courseList))
             // console.log(this.store.getCurrentDegree)

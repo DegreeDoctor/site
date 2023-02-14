@@ -96,10 +96,16 @@ export const useStore = defineStore("main", {
                 this.degrees[this.selectedDegree].template[semester].push(course);
                 console.log(this.degrees[this.selectedDegree].template[semester])
             } else if (action == "remove") {
+                console.log(`removing ${course}`)
+                console.log(this.degrees[this.selectedDegree].template[semester])
                 this.degrees[this.selectedDegree].template[semester] = 
                     this.degrees[this.selectedDegree].template[semester].filter(
-                        (item) => item.name != course.name
+                        (item) => item != course
                     );
+                console.log(this.degrees[this.selectedDegree].template[semester].filter(
+                    (item) => item != course
+                ))
+                console.log(this.degrees[this.selectedDegree].template[semester])
             }
 
         },
