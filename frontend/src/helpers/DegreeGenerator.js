@@ -26,23 +26,26 @@ export function degreeGenerator (degree, programsData, coursesData) {
 
     /*
     COurse looks like the following
-    "Computer Science I": {
-        "ID": "1100",
-        "credits": [4],
+    "Introduction to Cellular and Molecular Biology Laboratory": {
+        "ID": "2125",
+        "credits": [1],
         "crosslisted": {},
-        "description": "An introduction to computer programming algorithm design and analysis Additional topics include basic computer organization internal representation of scalar and array data use of topdown design and subprograms to tackle complex problems abstract data types Enrichment material as time allows Interdisciplinary case studies numerical and nonnumerical applications Students who have passed CSCI 1200 cannot register for this course",
-        "name": "Computer Science I",
+        "description": "The goal of this course is to gain practical experience with cellular and molecular biology through handson experimental techniques The laboratory exercises are designed to illustrate current concepts in cellular and molecular biology",
+        "name": "Introduction to Cellular and Molecular Biology Laboratory",
         "offered": {
             "semesters": ["fall", "spring", "summer"],
             "year": "all"
         },
-        "prerequisites": [],
+        "prerequisites": {
+            "one_of": [],
+            "required": ["BIOL-2120", "BIOL-1010"]
+        },
         "professors": [],
         "properties": {
             "CI": false,
             "MR": false
         },
-        "subject": "CSCI"
+        "subject": "BIOL"
     },
     */
 
@@ -74,64 +77,46 @@ export function degreeGenerator (degree, programsData, coursesData) {
         template[sem] = newCourses;
     }
 
-    // Push back courses such that the user doesn't take more than 16 credits in a semester
-    let pushCourses = [];
+    //seperate "labels" from semesters and change courses to array of arrays
+    let semesters = [];
+    let labels = [];
     for(const sem in template) {
-        // add push courses to the semester
-        template[sem] = [...template[sem], ...pushCourses];
-        pushCourses = [];
-        //push back prerequistes courses
-        let toRemove = [];
-        for(const i in template[sem]) {
-            const prereqs = template[sem][i]["prerequisites"];
-            for(const j in prereqs) {
-                let idx = template[sem].indexOf(prereqs[j]);
-                if(idx != -1) {
-                    pushCourses.push(template[sem][idx]);
-                    //remove course
-                    toRemove.push(template[sem][idx]["name"]);
+        labels.push(sem);
+        semesters.push(template[sem]);
+    }
+
+    let coursesToClear = [];
+    for(const i in semesters) {
+        for(const j in semesters[i]) {
+            let course = semesters[i][j];
+            let prereqs = course["prerequisites"]["required"];
+            for(const k in prereqs) {
+                let prereq = prereqs[k];
+                for(const l in semesters[i]) {
+                    if(semesters[i][l]["name"] === prereq) {
+                        coursesToClear.push(semesters[i][l]);
+                        semesters[i+1].push(semesters[i][l]);
+                    }
                 }
             }
         }
 
-        for(const i in toRemove) {
-            let idx = template[sem].indexOf(toRemove[i]);
-            if(idx != -1) {
-                template[sem].splice(idx, 1);
-            }
+        for(const j in coursesToClear) {
+            let course = coursesToClear[j];
+            semesters[i] = semesters[i].filter((c) => c["name"] !== course["name"]);
         }
+        coursesToClear = [];
 
-        
-        let courses = template[sem];
-        toRemove = [];
         let credits = 0;
-        for(const i in courses) {
-            credits += courses[i]["credits"][0];
-            if(credits > 18) {
-                pushCourses.push(courses[i]);
-                credits -= courses[i]["credits"][0];
-                toRemove.push(courses[i]["name"]);
-            }
+        for(const j in semesters[i]) {
+            let course = semesters[i][j];
+            credits += course["credits"][0];
         }
-        for(const i in toRemove) {
-            let idx = template[sem].indexOf(toRemove[i]);
-            if(idx != -1) {
-                template[sem].splice(idx, 1);
-            }
+        //remove course if over 18 credits
+        while(credits > 18) {
+            let course = semesters[i].pop();
+            credits -= course["credits"][0];
         }
-    }
-    if(pushCourses.length > 0) {
-        console.log("Error: Degree is not possible");
-    }
-
-    //Convert templater back to course names
-    for(const sem in template) {
-        let courses = template[sem];
-        let newCourses = [];
-        for(const i in courses) {
-            newCourses.push(courses[i]["name"]);
-        }
-        template[sem] = newCourses;
     }
 
 
