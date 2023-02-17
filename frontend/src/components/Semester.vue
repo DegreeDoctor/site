@@ -4,7 +4,7 @@
         <draggable :list="courseList" group="courses" class="courseContainer" @change="log">
             <CourseCard class="course" v-for="course in courseList" :key=course.name :course="course" />
         </draggable>
-        <q-btn push color="secondary" class="addButton" icon="add"  />
+        <q-btn push color="secondary" class="addButton" icon="add" @click="addCourse" />
     </div>
 </template>
 <script>
@@ -122,6 +122,9 @@ export default defineComponent ({
         }
     },
     methods: {
+        addCourse() {
+            this.$emit("addCourse", this.semesterName)
+        },
         debug() {
             console.log(this.store.getCurrentDegree)
             console.log(this.semesterName)

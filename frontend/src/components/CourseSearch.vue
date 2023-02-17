@@ -10,11 +10,15 @@ export default {
             type: Object,
             required: true,
         },
+        prompt: {
+            type: Boolean,
+            default: false
+        }
     },
     data() {
         return {
             course: null,
-            prompt: false,
+            // prompt: false,
             search: "",
             subject: "",
             code: "",
