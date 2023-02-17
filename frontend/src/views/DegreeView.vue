@@ -24,7 +24,6 @@ export default {
     computed: {
         templateToArray() {
             const template = this.store.getCurrentDegree["template"];
-            console.log(template);
             let array = [];
             let subArray = [];
             let sem = Object.keys(template)[0];
