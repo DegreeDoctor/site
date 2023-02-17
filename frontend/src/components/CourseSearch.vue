@@ -1,11 +1,9 @@
 <script>
 import ACourse from "../components/ACourse.vue";
-import CourseHolder from "../components/CourseHolder.vue";
 
 export default {
     components: {
         ACourse,
-        CourseHolder,
     },
     props: {
         coursesData: {
@@ -114,9 +112,16 @@ export default {
 </script>
 
 <template>
-    <q-btn label="Add a Course" color="primary" @click="prompt = true" />
-    <CourseHolder :course="course" />
-
+    <q-avatar
+        square
+        size="75px"
+        font-size="50px"
+        color="primary"
+        icon="add"
+        class="addButton"
+        :style="{cursor: 'pointer'}"
+        @click="prompt = true"
+    />
     <q-dialog v-model="prompt" persistent>
         <q-card style="min-width: 350px">
             <q-card-section>
@@ -161,3 +166,11 @@ export default {
         </q-card>
     </q-dialog>
 </template>
+
+
+<style>
+.addButton {
+    margin: auto;
+}
+
+</style>
