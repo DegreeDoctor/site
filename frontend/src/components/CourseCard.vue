@@ -4,11 +4,9 @@
         <span class="name">{{ course.name }}</span>
         <span class="bar"></span>
         <span class="courseCode">{{ course.subject }} - {{ course.ID }}</span>
-        <span class="credits">({{ course.credits[0] }})</span>  <!--why is course.credits -->
+        <span class="credits">({{ course.credits[0] }})</span>  <!--why is course.credits an array -->
     </div>
 </template>
-
-<!-- { [checkbox]  [course name] | [course code] ([credits]) [draggable icon] } -->
 
 
 <script>

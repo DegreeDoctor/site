@@ -120,34 +120,25 @@ export default defineComponent ({
         for (let course of this.semester[1]) {
             this.courseList.push(toRaw(course))
         }
-        console.log(this.store.getCurrentDegree)
     },
     methods: {
         debug() {
+            console.log(this.store.getCurrentDegree)
             console.log(this.semesterName)
             console.log(toRaw(this.courseList))
         },
         log(event) {
-            // <!--! this is not reactive right now, still have to change that
-                // <!--! it does update the store (i think), but it doesn't update the view
-                    // <!--! need to look at the docs for pinia more to fix this
-            console.log(event)
+            // this is not reactive right now, still have to change that
+              // it does update the store (i think), but it doesn't update the view
+              // need to look at the docs for pinia more to fix this
+            // update: i did a workaround, it manually updates store now
             if (Object.keys(event).includes("added")) {
                 this.store.updateDegreeSemester(this.semesterName, event.added.element.name, "add")
             } else if (Object.keys(event).includes("removed")) {
                 this.store.updateDegreeSemester(this.semesterName, event.removed.element.name, "remove")
 
             }
-            // this.store.updateDegreeSemester(this.semesterName, toRaw(this.courseList))
-            // console.log(this.store.getCurrentDegree)
         },
-        addCoursetoStore(event) {
-            console.log(event)
-            // this.store.updateDegreeSemester(this.semesterName, this.courseList, "add")
-        },
-        removeCourseFromStore(event) {
-
-        }
     }
 })
 </script>
