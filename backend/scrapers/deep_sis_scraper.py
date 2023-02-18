@@ -41,17 +41,59 @@ def deep_sis_scraper():
                 link = val['href']
                 allLinks.append("https://sis.rpi.edu" + link)
         for link in allLinks:
+            #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=BIOL&crse_numb_in=4310"
             Lcontent = s.get(link)
             deepContent = Lcontent.content
             contentSoup = BeautifulSoup(deepContent, "html.parser")
+            classInformation = contentSoup.text
+            classText = classInformation.splitlines()
+            while("" in classText):
+                classText.remove("")
+            subjectIndex =  link.find("subj_code_in=")
+            subject = ""
+            for i in range(subjectIndex + 13, len(link)):
+                if link[i] == "&":
+                    break
+                subject += link[i]
+            #SUBJECT IS NOW FETCHED CORRECTLY--------------------------------
+            courseIndex =  int(link.find("crse_numb_in="))
+            courseID = link[courseIndex + 13:int(len(link))]
+
+            #checking if the course starts with 6 or 9, those are illegal classes
+            if courseID[0] == "6" or courseID[0] == "9":
+                continue
+            #COURSEID IS NOW FETCHED CORRECTLY---------------------------------
+            courseInfo = ""
+            courseInfoIndex = 0
+            for i in range(0, len(classText)):
+                if subject in classText[i]:
+                    courseInfo = classText[i]
+                    courseInfoIndex = i
+                    break
+            IDindex = courseInfo.find(courseID) + 7
+            courseName = courseInfo[IDindex:]
+
+            #checking if the course is an elective, if it is, we don't want it
+            if "elective" in courseName.lower():
+                continue
+            #COURSE NAME IS NOW FETCHED CORRECTLY----------------------------
+            courseDescription = ""
+            descriptionIndex = courseInfoIndex + 1
+            if classText[descriptionIndex].strip()[0].isdigit():
+                continue
+            else:
+                courseDescription = classText[descriptionIndex].strip()
+            return courseDescription
+
+            
+            
+
+
             
 
 
         
-        #for course in soup.find_all("td", class_="nttitle"):
-            #print(course)
-
-            #courseCode = course.find("td", class_="dddefault").text
+    
 
 if __name__ == '__main__':
     sand = deep_sis_scraper()
