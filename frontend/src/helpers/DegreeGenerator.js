@@ -87,15 +87,27 @@ export function degreeGenerator (degree, programsData, coursesData) {
 
     let coursesToClear = [];
     for(const i in semesters) {
+        //add coursesToClear to this semester
+        console.log(JSON.parse(JSON.stringify(labels[i])));
+        console.log(JSON.parse(JSON.stringify(coursesToClear)));
+        semesters[i] = [...semesters[i], ...coursesToClear];
+        coursesToClear = [];
+
+        console.log(JSON.parse(JSON.stringify(semesters[i])));
         for(const j in semesters[i]) {
             let course = semesters[i][j];
             let prereqs = course["prerequisites"]["required"];
+            for(const c in course["prerequisites"]["one_of"]) {
+                prereqs = [...prereqs, ...course["prerequisites"]["one_of"][c]];
+            }
+
             for(const k in prereqs) {
                 let prereq = prereqs[k];
                 for(const l in semesters[i]) {
                     if(semesters[i][l]["name"] === prereq) {
-                        coursesToClear.push(semesters[i][l]);
-                        semesters[i+1].push(semesters[i][l]);
+                        console.log(semesters[i][j]);
+                        coursesToClear.push(semesters[i][j]);
+                        semesters[i+1].push(semesters[i][j]);
                     }
                 }
             }
@@ -112,13 +124,30 @@ export function degreeGenerator (degree, programsData, coursesData) {
             let course = semesters[i][j];
             credits += course["credits"][0];
         }
-        //remove course if over 18 credits
+
         while(credits > 18) {
             let course = semesters[i].pop();
+            coursesToClear.push(course);
             credits -= course["credits"][0];
         }
     }
 
+    if(coursesToClear.length > 0) {
+        console.log("Error: Not enough semesters to complete degree");
+    }
+
+    //convert back to object
+    template = {};
+    for(const i in semesters) {
+        //convert semester to just course names
+        let courses = semesters[i];
+        let newCourses = [];
+        for(const j in courses) {
+            newCourses.push(courses[j]["name"]);
+        }
+        semesters[i] = newCourses;
+        template[labels[i]] = semesters[i];
+    }
 
     degree["template"] = template;
     return degree;
