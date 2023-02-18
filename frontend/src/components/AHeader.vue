@@ -33,8 +33,14 @@ export default {
         filterPlan(val) {
             this.filter = val;
         },
-        deletePlan(val) {
-            this.store.removeDegree(val);
+        deletePlan() {
+            //When deleting need to change to a different degree
+            //Need to 
+            alert("hello");
+            alert(this.store.getDegreeNames());
+            this.store.removeDegree(this.selectedPlan());
+            
+            alert("hello");
         },
     },
 };
