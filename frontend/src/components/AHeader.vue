@@ -23,8 +23,8 @@ export default {
                 Degree Doctor
             </q-toolbar-title>
 
-            <DarkModeToggle />
             <PlansList />
+            <DarkModeToggle />
         </q-toolbar>
     </q-header>
 </template>

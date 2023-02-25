@@ -6,6 +6,7 @@ export default {
   data() {
     return {
       current: useStore().getCurrentDegreeName,
+      allDegrees: useStore().getDegreeNames,
       store: useStore(),
       plan: false,
       filter: "",
@@ -24,6 +25,7 @@ export default {
   methods: {
     selectPlan(val) {
       this.store.swapDegree(val);
+      this.current = val;
     },
     filterPlan(val) {
       this.filter = val;
@@ -32,7 +34,6 @@ export default {
       this.$q.dialog({
         title: 'Positioned',
         message: 'This dialog appears from bottom.',
-        position: 'bottom'
       })
     },
   },
@@ -40,14 +41,23 @@ export default {
 </script>
 
 <template> 
-<div class="q-pa-md">
-  <q-btn
-      no-caps
-      label="My Plans"
-      color="primary"
-      @click="positioned"
-  ></q-btn>
-  <q-dialog v-model="plan">
+<div class="q-pa-md btn">
+  <!-- <q-btn :ripple="false" flat no-caps v-bind:label="current" icon-right="fa-solid fa-caret-down" class="btn"> -->
+  {{ current }}
+    <q-menu>
+      <q-item v-for="item in allDegrees" :key="item" clickable v-on:click="selectPlan(item)">
+        <q-btn flat >
+          <q-icon name="fa-solid fa-trash" size="1.5em"/>
+        </q-btn>
+        <q-item-section>{{ item }}</q-item-section>
+      </q-item>
+      <q-separator />
+      <q-item>
+        <q-btn flat to="/quiz" label="Create new plan"></q-btn>
+      </q-item>
+    </q-menu>
+  <q-icon name="fa-solid fa-caret-down" />
+  <!-- <q-dialog v-model="plan">
     <q-card style="min-width: 350px">
         <q-card-section>
             <div class="text-h6">Pick a plan</div>
@@ -93,6 +103,29 @@ export default {
             ></q-btn>
         </q-card-actions>
     </q-card>
-  </q-dialog> 
+  </q-dialog>  -->
 </div>
 </template>
+
+<style>
+  .btn {
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    font-size: 1.1em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  .btn .q-icon {
+    font-size: 1em;
+  }
+  .btn:hover {
+    background-color: transparent !important;
+    cursor: pointer;
+  }
+</style>
