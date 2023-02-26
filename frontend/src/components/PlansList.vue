@@ -10,6 +10,7 @@ export default {
       store: useStore(),
       plan: false,
       filter: "",
+      deleteIconsVisible: false,
     };
   },
   computed: {
@@ -30,80 +31,97 @@ export default {
     filterPlan(val) {
       this.filter = val;
     },
-    positioned() {
-      this.$q.dialog({
-        title: 'Positioned',
-        message: 'This dialog appears from bottom.',
-      })
+    deletePlan(val) {
+      // if the degree is undefined, do nothing
+      if (val === "undefined") {
+        this.toggleTrashIcons();
+        return;
+      }
+      this.store.removeDegree(val);
+      // find the index of the next available plan
+      let index = this.store.getDegreeNames.indexOf(val) - 1;
+      if (index < 0) {
+        index = 0;
+      }
+      // if there are no plans left, create a new one send the user to the quiz page
+      if (this.store.getDegreeNames.length === 0) {
+        this.store.addDegree("New Plan");
+        this.$router.push("/quiz");
+      }
+      // show a notification to the user that the plan was deleted
+      let msg = "Plan " + '"' + val + '"' + " deleted";
+      this.showNotif("top", msg, "negative", 1250);
+      // select the next available plan
+      this.selectPlan(this.store.getDegreeNames[index]);
+      this.toggleTrashIcons();
     },
+    toggleTrashIcons() {
+      this.deleteIconsVisible = !this.deleteIconsVisible;
+    },
+    showNotif(position, message, type, timeout = 1250) {
+      // Useful reference https://quasar.dev/quasar-plugins/notify#positioning
+      this.$q.notify({
+        badgeClass: "hide-badge",
+        type,
+        textColor: "white",
+        message,
+        position,
+        timeout,
+      });
+    },
+    renamePlanDialog() {
+      this.$q.dialog({
+        title: 'Change Plan Name',
+        message: 'Rename your plan',
+          prompt: {
+            model: '',
+            type: 'text'
+          },
+          cancel: true,
+          persistent: false
+      }).onOk(data => {
+        this.store.updateDegree(this.current, data)
+        this.selectPlan(data)
+        this.current = data
+      }).onCancel(() => {
+        return;
+      }).onDismiss(() => {
+        return;
+      })
+    }
   },
 }
 </script>
 
 <template> 
 <div class="q-pa-md btn">
-  <!-- <q-btn :ripple="false" flat no-caps v-bind:label="current" icon-right="fa-solid fa-caret-down" class="btn"> -->
   {{ current }}
-    <q-menu>
-      <q-item v-for="item in allDegrees" :key="item" clickable v-on:click="selectPlan(item)">
-        <q-btn flat >
-          <q-icon name="fa-solid fa-trash" size="1.5em"/>
-        </q-btn>
-        <q-item-section>{{ item }}</q-item-section>
+    <q-menu anchor="bottom left" >
+      <q-item class="planList" :class="{ 'active-item': current === item }"
+      v-for="item in allDegrees" :key="item">
+        <a class="item truncate" 
+          :class="{ 'active': current === item }" v-on:click="selectPlan(item)">
+            {{ item }}
+        </a>
+        <a class="edit" v-on:click="renamePlanDialog" :class="{ 'hide-icon': deleteIconsVisible }">
+          <q-icon name="fa-solid fa-pen-to-square" size="1.25em"/>
+        </a>
+        <a class="trash" v-on:click="toggleTrashIcons" :class="{ 'hide-icon': deleteIconsVisible }" >
+          <q-icon name="fa-solid fa-trash" size="1.25em"/>
+        </a>
+        <a class="check" v-on:click="deletePlan(item)" :class="{ 'hide-icon': !deleteIconsVisible }">
+          <q-icon name="fa-solid fa-check" size="1.25em"/>
+        </a>
+        <a class="cross" v-on:click="toggleTrashIcons" :class="{ 'hide-icon': !deleteIconsVisible }">
+          <q-icon name="fa-solid fa-times" size="1.25em"/>
+        </a>
       </q-item>
       <q-separator />
-      <q-item>
-        <q-btn flat to="/quiz" label="Create new plan"></q-btn>
+      <q-item clickable to="/quiz">
+        <a class="new-plan">Create new plan</a>
       </q-item>
     </q-menu>
   <q-icon name="fa-solid fa-caret-down" />
-  <!-- <q-dialog v-model="plan">
-    <q-card style="min-width: 350px">
-        <q-card-section>
-            <div class="text-h6">Pick a plan</div>
-        </q-card-section>
-
-        <q-card-section class="q-pt-none">
-            <h6 class="q-ma-none">
-                Current Plan: {{ selectedPlan }}
-            </h6>
-            <div class="card-contain">
-                <q-select
-                    v-model="current"
-                    filled
-                    use-input
-                    input-debounce="0"
-                    label="Search"
-                    :options="filteredPlans"
-                    style="width: 200px"
-                    behavior="menu"
-                    @input-value="filterPlan"
-                    @update:model-value="selectPlan"
-                >
-                    <template #no-option>
-                        <q-item>
-                            <q-item-section class="text-grey">
-                                No results
-                            </q-item-section>
-                        </q-item>
-                    </template>
-                </q-select>
-                <div>
-                    <ProgressBar />
-                </div>
-            </div>
-        </q-card-section>
-        <q-card-actions class="text-primary">
-            <q-btn v-close-popup flat label="Cancel"></q-btn>
-            <q-btn
-                v-close-popup
-                flat
-                label="Add new plan"
-                to="/quiz"
-            ></q-btn>
-        </q-card-actions>
-    </q-card>
-  </q-dialog>  -->
 </div>
 </template>
 
@@ -118,8 +136,7 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding-right: 1em;
-    padding-left: 1em;
+    gap: 0.5em;
   }
   .btn .q-icon {
     font-size: 1em;
@@ -127,5 +144,75 @@ export default {
   .btn:hover {
     background-color: transparent !important;
     cursor: pointer;
+    color: #bdbdbd;
+  }
+  .btn q-item:hover {
+    background-color: #fff !important;
+    cursor: pointer;
+  }
+  .q-item {
+    align-items:center;
+    justify-content: center;
+  }
+  .hide-icon {
+    display: none;
+  }
+  .active-item {
+    background-color: #eee;
+  }
+  .planList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+  .item {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    text-align: left;
+  }
+  .item:hover {
+    color: #bdbdbd;
+    cursor: pointer;
+  }
+  .edit {
+    color: #2196f3;
+  }
+  .edit:hover {
+    color: #2196f3bd;
+    cursor: pointer;
+  }
+  .trash {
+    color: #f44336;
+  }
+  .trash:hover {
+    color: #f44336bd;
+    cursor: pointer;
+  }
+  .cross {
+    color: #f44336;
+  }
+  .cross:hover {
+    color: #f44336bd;
+    cursor: pointer;
+  }
+  .check {
+    color: #4caf50;
+  }
+  .check:hover {
+    color: #4caf50bd;
+    cursor: pointer;
+  }
+  .truncate {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .new-plan {
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
   }
 </style>
