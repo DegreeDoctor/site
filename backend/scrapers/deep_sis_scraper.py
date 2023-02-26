@@ -88,6 +88,8 @@ def deep_sis_scraper():
                 if "credit hours" in classText[i].lower():
                     creditIndex = i
                     break
+            creditHours = classText[creditIndex].split(" ")[0]
+            #creditHours IS NOW FETCHED CORRECTLY----------------------------
 
 
             
