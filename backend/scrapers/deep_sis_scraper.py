@@ -83,7 +83,12 @@ def deep_sis_scraper():
                 continue
             else:
                 courseDescription = classText[descriptionIndex].strip()
-            return courseDescription
+            #courseDescription IS NOW FETCHED CORRECTLY----------------------
+            for i in range(0, len(classText)):
+                if "credit hours" in classText[i].lower():
+                    creditIndex = i
+                    break
+
 
             
             
