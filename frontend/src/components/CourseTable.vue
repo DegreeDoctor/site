@@ -1,59 +1,66 @@
 <template>
-    <q-btn @click="debug()">
-        debug
-    </q-btn>
-    <CourseSearch :coursesData="coursesData" :prompt="showSearch" @close="debugTest()"/>
+    <q-btn @click="debug()"> debug </q-btn>
+    <CourseSearch
+        :courses-data="coursesData"
+        :prompt="showSearch"
+        @close="showSearch = false"
+        @add-Course="addCourse"
+    />
     <div id="table">
-        <Semester v-for="semester in semesters" :ref=semester[0] :semester="semester" @addCourse="showAddCourseModal"/>
+        <Semester
+            v-for="semester in semesters"
+            :ref="semester[0]"
+            :semester="semester"
+            @add-Course="showAddCourseModal"
+        />
     </div>
 </template>
+
 <script>
-import CourseHolder from './CourseHolder.vue';
-import Semester from './Semester.vue';
-import coursesJson from '../data/courses.json';
-import CourseSearch from './CourseSearch.vue';
+import CourseHolder from "./CourseHolder.vue";
+import Semester from "./Semester.vue";
+import coursesJson from "../data/courses.json";
+import CourseSearch from "./CourseSearch.vue";
 
 export default {
     components: {
-    CourseHolder,
-    Semester,
-    CourseSearch
-},  
+        Semester,
+        CourseSearch,
+    },
+    props: {
+        semesters: {
+            type: Object,
+        },
+    },
+    emits: ["addCourse"],
     data() {
         return {
             parsedSemesters: [],
             coursesData: coursesJson,
             showSearch: false,
-        }
-    },  
-    props: {
-        semesters: {
-            type: Object,
-            
-        }
+            opened: null,
+        };
+    },
+    mounted() {
+        console.log(this.$refs);
     },
     methods: {
         showAddCourseModal(semesterName) {
             this.showSearch = true;
-            // this.$refs[course.se]
-            console.log(this.$refs[semesterName])
-            // this.$emit('addCourse', course);
+            this.opened = semesterName;
+        },
+        addCourse(course) {
+            console.log(course);
+            this.$emit("addCourse", [course, this.opened]);
+            this.showSearch = false;
         },
         debug() {
-            console.log(this.showSearch)
+            console.log(this.showSearch);
         },
-        debugTest() {
-            this.showSearch = false;
-        }
     },
-    mounted() {
-        console.log(this.$refs)
-    }
-    
-}
+};
 </script>
 <style>
-
 #table {
     display: grid;
     gap: 5%;
@@ -73,7 +80,6 @@ export default {
 }
 
 .courseCard {
-    width: fit-content;  
+    width: fit-content;
 }
-    
 </style>

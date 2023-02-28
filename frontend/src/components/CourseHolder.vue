@@ -7,7 +7,7 @@ import CourseSearch from "./CourseSearch.vue";
 export default {
     components: {
         ACourse,
-        CourseSearch
+        CourseSearch,
     },
     props: {
         course: {
@@ -72,7 +72,7 @@ export default {
         @drop="courseDrop"
     >
         <ACourse v-if="course" :course="course" :check="true" />
-        <CourseSearch v-else :courses-data="coursesData"  />
+        <CourseSearch v-else :courses-data="coursesData" />
     </div>
 </template>
 
