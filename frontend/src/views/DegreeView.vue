@@ -1,24 +1,29 @@
+<template>
+    <!-- <q-btn @click="debug()">
+        debug
+    </q-btn> -->
+    <br />
+    <CourseTrash />
+    <CourseTable :semesters="test" @addCourse="addCourse" />
+</template>
+
 <script>
 import { useStore } from "../stores/store";
-import { storeToRefs } from 'pinia'
-import CourseHolder from "../components/CourseHolder.vue";
 import CourseTrash from "../components/CourseTrash.vue";
-import CourseSearch from "../components/CourseSearch.vue";
 import coursesJson from "../data/courses.json";
-import CourseTable from "../components/CourseTable.vue"
+import CourseTable from "../components/CourseTable.vue";
 
 export default {
     components: {
-        CourseHolder,
         CourseTrash,
-        CourseSearch,
-        CourseTable
+        CourseTable,
     },
     data() {
         return {
             store: useStore(),
             coursesData: coursesJson,
             tst: false,
+            test: null,
         };
     },
     computed: {
@@ -45,27 +50,30 @@ export default {
             return array;
         },
     },
+    mounted() {
+        this.test = this.templateToArray;
+    },
     methods: {
         // debug() {
         //     // this.store.deleteEverything();       // this deleted everything in local store
         //     console.log(this.templateToArray)
         // }
-    }
+        addCourse(data) {
+            const courseObj = data[0];
+            const semesterName = data[1];
+            this.store.updateDegreeSemester(
+                semesterName,
+                courseObj.name,
+                "add"
+            );
+            this.test = this.templateToArray;
+            console.log(this.test);
+        },
+    },
 };
 </script>
 
-<template>
-    <!-- <q-btn @click="debug()">
-        debug
-    </q-btn> -->
-    <br/>
-    <CourseTrash />
-    <CourseTable :semesters="templateToArray"/>
-</template>
-
 <style scoped lang="scss">
-
-
 CourseTable {
     margin: 0 auto;
 }

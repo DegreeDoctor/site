@@ -12,9 +12,10 @@ export default {
         },
         prompt: {
             type: Boolean,
-            default: false
-        }
+            default: false,
+        },
     },
+    emits: ["close", "addCourse"],
     data() {
         return {
             course: null,
@@ -109,14 +110,14 @@ export default {
     },
     methods: {
         addCourse(course) {
-            this.course = course;
+            this.$emit("addCourse", course);
         },
         close() {
-            this.$emit("close")
+            this.$emit("close");
         },
         debug() {
-            console.log(this.prompt)
-        }
+            console.log(this.prompt);
+        },
     },
 };
 </script>
@@ -164,16 +165,14 @@ export default {
             </q-card-section>
 
             <q-card-actions align="right" class="text-primary">
-                <q-btn v-close-popup flat label="Cancel" @click="close()"/>
+                <q-btn v-close-popup flat label="Cancel" @click="close()" />
             </q-card-actions>
         </q-card>
     </q-dialog>
 </template>
 
-
 <style>
 .addButton {
     margin: auto;
 }
-
 </style>
