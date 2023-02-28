@@ -1,7 +1,10 @@
 <template>
-    <CourseSearch :coursesData="coursesData" :prompt="showSearch"/>
+    <q-btn @click="debug()">
+        debug
+    </q-btn>
+    <CourseSearch :coursesData="coursesData" :prompt="showSearch" @close="debugTest()"/>
     <div id="table">
-        <Semester v-for="semester in semesters" :semester="semester" @addCourse="showAddCourseModal"/>
+        <Semester v-for="semester in semesters" :ref=semester[0] :semester="semester" @addCourse="showAddCourseModal"/>
     </div>
 </template>
 <script>
@@ -9,6 +12,7 @@ import CourseHolder from './CourseHolder.vue';
 import Semester from './Semester.vue';
 import coursesJson from '../data/courses.json';
 import CourseSearch from './CourseSearch.vue';
+
 export default {
     components: {
     CourseHolder,
@@ -29,10 +33,21 @@ export default {
         }
     },
     methods: {
-        showAddCourseModal(course) {
+        showAddCourseModal(semesterName) {
             this.showSearch = true;
+            // this.$refs[course.se]
+            console.log(this.$refs[semesterName])
             // this.$emit('addCourse', course);
+        },
+        debug() {
+            console.log(this.showSearch)
+        },
+        debugTest() {
+            this.showSearch = false;
         }
+    },
+    mounted() {
+        console.log(this.$refs)
     }
     
 }

@@ -46,18 +46,18 @@ export default {
         },
     },
     methods: {
-        debug() {
-            // this.store.deleteEverything();       // this deleted everything in local store
-            console.log(this.templateToArray)
-        }
+        // debug() {
+        //     // this.store.deleteEverything();       // this deleted everything in local store
+        //     console.log(this.templateToArray)
+        // }
     }
 };
 </script>
 
 <template>
-    <q-btn @click="debug()">
+    <!-- <q-btn @click="debug()">
         debug
-    </q-btn>
+    </q-btn> -->
     <br/>
     <CourseTrash />
     <CourseTable :semesters="templateToArray"/>

@@ -111,21 +111,20 @@ export default {
         addCourse(course) {
             this.course = course;
         },
+        close() {
+            this.$emit("close")
+        },
+        debug() {
+            console.log(this.prompt)
+        }
     },
 };
 </script>
 
 <template>
-    <q-avatar
-        square
-        size="75px"
-        font-size="50px"
-        color="primary"
-        icon="add"
-        class="addButton"
-        :style="{cursor: 'pointer'}"
-        @click="prompt = true"
-    />
+    <!-- <q-btn @click="debug()">
+        course search debug
+    </q-btn> -->
     <q-dialog v-model="prompt" persistent>
         <q-card style="min-width: 350px">
             <q-card-section>
@@ -165,7 +164,7 @@ export default {
             </q-card-section>
 
             <q-card-actions align="right" class="text-primary">
-                <q-btn v-close-popup flat label="Cancel" />
+                <q-btn v-close-popup flat label="Cancel" @click="close()"/>
             </q-card-actions>
         </q-card>
     </q-dialog>
