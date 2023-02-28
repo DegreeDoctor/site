@@ -4,7 +4,7 @@
     </q-btn> -->
     <br />
     <CourseTrash />
-    <CourseTable :semesters="test" @addCourse="addCourse" />
+    <CourseTable :semesters="test" @add-course="addCourse" />
 </template>
 
 <script>

@@ -4,20 +4,20 @@
         :courses-data="coursesData"
         :prompt="showSearch"
         @close="showSearch = false"
-        @add-Course="addCourse"
+        @add-course="addCourse"
     />
     <div id="table">
         <Semester
             v-for="semester in semesters"
             :ref="semester[0]"
+            :key="semester[0]"
             :semester="semester"
-            @add-Course="showAddCourseModal"
+            @add-course="showAddCourseModal"
         />
     </div>
 </template>
 
 <script>
-import CourseHolder from "./CourseHolder.vue";
 import Semester from "./Semester.vue";
 import coursesJson from "../data/courses.json";
 import CourseSearch from "./CourseSearch.vue";
@@ -30,6 +30,7 @@ export default {
     props: {
         semesters: {
             type: Object,
+            default: null,
         },
     },
     emits: ["addCourse"],
