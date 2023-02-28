@@ -41,7 +41,8 @@ def deep_sis_scraper():
                 link = val['href']
                 allLinks.append("https://sis.rpi.edu" + link)
         for link in allLinks:
-            #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=BIOL&crse_numb_in=4310"
+            link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=BIOL&crse_numb_in=4310"
+            #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=COGS&crse_numb_in=2940"
             Lcontent = s.get(link)
             deepContent = Lcontent.content
             contentSoup = BeautifulSoup(deepContent, "html.parser")
@@ -79,18 +80,33 @@ def deep_sis_scraper():
             #COURSE NAME IS NOW FETCHED CORRECTLY----------------------------
             courseDescription = ""
             descriptionIndex = courseInfoIndex + 1
+            creditFound = False
             if classText[descriptionIndex].strip()[0].isdigit():
-                continue
+                creditFound = True
             else:
                 courseDescription = classText[descriptionIndex].strip()
             #courseDescription IS NOW FETCHED CORRECTLY----------------------
-            for i in range(0, len(classText)):
-                if "credit hours" in classText[i].lower():
-                    creditIndex = i
-                    break
-            creditHours = classText[creditIndex].split(" ")[0]
-            #creditHours IS NOW FETCHED CORRECTLY----------------------------
+            creditStorage = ""
+            classCredits = []
+            if creditFound == False:
 
+                for i in range(0, len(classText)):
+                    if "credit hours" in classText[i].lower():
+                        creditIndex = i
+                        break
+                creditStorage = classText[creditIndex]
+                for val in creditStorage:
+                    if val.isdigit() and val!= "0":
+                        classCredits.append(val)
+            else:
+                creditStorage = classText[descriptionIndex].strip()
+            if creditStorage != "":
+                for val in creditStorage:
+                    if val.isdigit() and val != "0":
+                        classCredits.append(val)
+            cleanCredits = np.unique(classCredits)
+
+            #creditHours IS NOW FETCHED CORRECTLY----------------------------
 
             
             
