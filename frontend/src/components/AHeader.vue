@@ -1,13 +1,12 @@
 <script>
-import { useStore } from "../stores/store";
 import DarkModeToggle from "./DarkModeToggle.vue";
-import ProgressBar from "./ProgressBar.vue";
+// import ProgressBar from "./ProgressBar.vue";
 import PlansList from "./PlansList.vue";
 
 export default {
     components: {
         DarkModeToggle,
-        ProgressBar,
+        // ProgressBar,
         PlansList,
     },
 };
