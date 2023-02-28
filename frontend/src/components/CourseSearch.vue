@@ -119,7 +119,7 @@ export default {
         color="primary"
         icon="add"
         class="addButton"
-        :style="{cursor: 'pointer'}"
+        :style="{ cursor: 'pointer' }"
         @click="prompt = true"
     />
     <q-dialog v-model="prompt" persistent>
@@ -167,10 +167,8 @@ export default {
     </q-dialog>
 </template>
 
-
 <style>
 .addButton {
     margin: auto;
 }
-
 </style>

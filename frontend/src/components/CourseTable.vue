@@ -1,32 +1,34 @@
 <template>
     <div id="table">
-        <Semester v-for="semester in semesters" :semester="semester" />
+        <Semester
+            v-for="semester in semesters"
+            :key="semester"
+            :semester="semester"
+        />
     </div>
 </template>
 <script>
-import CourseHolder from './CourseHolder.vue';
-import Semester from './Semester.vue';
+// import CourseHolder from './CourseHolder.vue';
+import Semester from "./Semester.vue";
 export default {
     components: {
-    CourseHolder,
-    Semester
-},  
-    data() {
-        return {
-            parsedSemesters: []
-        }
-    },  
+        // CourseHolder,
+        Semester,
+    },
     props: {
         semesters: {
             type: Object,
-            
-        }
+            default: () => {},
+        },
     },
-    
-}
+    data() {
+        return {
+            parsedSemesters: [],
+        };
+    },
+};
 </script>
 <style>
-
 #table {
     display: grid;
     gap: 5%;
@@ -46,7 +48,6 @@ export default {
 }
 
 .courseCard {
-    width: fit-content;  
+    width: fit-content;
 }
-    
 </style>

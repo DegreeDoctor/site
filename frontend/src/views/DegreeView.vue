@@ -1,18 +1,17 @@
 <script>
 import { useStore } from "../stores/store";
-import { storeToRefs } from 'pinia'
-import CourseHolder from "../components/CourseHolder.vue";
+// import CourseHolder from "../components/CourseHolder.vue";
 import CourseTrash from "../components/CourseTrash.vue";
-import CourseSearch from "../components/CourseSearch.vue";
+// import CourseSearch from "../components/CourseSearch.vue";
 import coursesJson from "../data/courses.json";
-import CourseTable from "../components/CourseTable.vue"
+import CourseTable from "../components/CourseTable.vue";
 
 export default {
     components: {
-        CourseHolder,
+        // CourseHolder,
         CourseTrash,
-        CourseSearch,
-        CourseTable
+        // CourseSearch,
+        CourseTable,
     },
     data() {
         return {
@@ -48,24 +47,20 @@ export default {
     methods: {
         debug() {
             // this.store.deleteEverything();       // this deleted everything in local store
-            console.log(this.templateToArray)
-        }
-    }
+            console.log(this.templateToArray);
+        },
+    },
 };
 </script>
 
 <template>
-    <q-btn @click="debug()">
-        debug
-    </q-btn>
-    <br/>
+    <q-btn @click="debug()"> debug </q-btn>
+    <br />
     <CourseTrash />
-    <CourseTable :semesters="templateToArray"/>
+    <CourseTable :semesters="templateToArray" />
 </template>
 
 <style scoped lang="scss">
-
-
 CourseTable {
     margin: 0 auto;
 }
