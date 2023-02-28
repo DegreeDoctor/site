@@ -7,7 +7,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 import unicodedata
-from degree_util import subjs, root, get_catalogs, clean_str, norm_str, trim_space
+from degree_util import subjs, root, get_catalogs, clean_str, norm_str, trim_space, get_courses, rem_empty
 
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
@@ -213,6 +213,27 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
 
     return data
 
+def find_course(courses, inp): 
+    course = inp.split("-")
+    for item in courses.items():
+        if (item[1]["subject"] == course[0] and item[1]["ID"] == course[1]):
+            return item[0]
+    return ""
+
+def replace_crn(dict): 
+    course_dict  = get_courses()
+    for item in dict.items():
+        prereq = item[1]["prerequisites"]
+        if (len(prereq) > 0):
+            if (len(prereq["required"]) > 0):
+                tmp = [find_course(course_dict,inp) for inp in prereq["required"]]
+                prereq["required"] = rem_empty(tmp)
+                
+            if (len(prereq["one_of"]) > 0):
+                tmp = [find_course(course_dict,inp) for inp in prereq["one_of"][0]]
+                prereq["one_of"] = rem_empty(tmp)
+    return dict
+
 def scrape_courses():
     print("Starting courses scraping")
     catalogs = get_catalogs()
@@ -220,10 +241,13 @@ def scrape_courses():
     catalogs = catalogs[:4]
     catalogs.reverse()
     courses_per_year = {}
+    
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         course_ids = get_course_ids(catalog_id)
         data = get_course_data(course_ids, catalog_id)
         courses_per_year.update(data)
+
+    courses_per_year = replace_crn(courses_per_year)
     # Serializing json
     json_object = json.dumps(courses_per_year,sort_keys=True, indent=2, ensure_ascii=False)
  
@@ -231,7 +255,6 @@ def scrape_courses():
     with open(root + "/frontend/src/data/courses.json", "w") as outfile:
         outfile.write(json_object)
         print("Finished courses scraping")
-    
     return courses_per_year
 
 if __name__ == "__main__":
