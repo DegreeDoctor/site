@@ -159,7 +159,9 @@ export default {
             <q-card-section class="row items-center q-pb-none">
                 <div class="text-h5">{{ course.name }}</div>
                 <q-space />
-                <q-btn v-close-popup icon="close" flat round dense />
+                <q-btn
+                    v-close-popup icon="close" flat round
+                    dense />
             </q-card-section>
             <q-card-section class="q-pt-none">
                 <div class="text-body1">
