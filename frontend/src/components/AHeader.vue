@@ -34,13 +34,7 @@ export default {
             this.filter = val;
         },
         deletePlan() {
-            //When deleting need to change to a different degree
-            //Need to 
-            alert("hello");
-            alert(this.store.getDegreeNames());
-            this.store.removeDegree(this.selectedPlan());
-            
-            alert("hello");
+            this.store.removeDegree(this.selectedPlan);
         },
     },
 };
@@ -113,7 +107,7 @@ export default {
                                 v-close-popup
                                 flat
                                 label="Delete Plan"
-                                @click="deletePlan"
+                                @click="deletePlan();"
                                 to="/degree"
                             ></q-btn>
                         </q-card-actions>

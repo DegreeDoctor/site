@@ -67,10 +67,7 @@ export const useStore = defineStore("main", {
             this.degrees[name] = degree;
         },
         removeDegree(name) {
-            alert(this.degrees.keys()[0]);
-            alert(this.degrees.getDegreeNames[this.degrees.keys()[0]]);
             delete this.degrees[name];
-            this.swapDegree(degrees.getDegreeNames[0]);
         },
         addCredits(name, amount) {
             if (!this.degrees[this.selectedDegree].credits[name]) {
