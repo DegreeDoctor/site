@@ -107,7 +107,12 @@ export function degreeGenerator (degree, programsData, coursesData) {
                     if(semesters[i][l]["name"] === prereq) {
                         console.log(semesters[i][j]);
                         coursesToClear.push(semesters[i][j]);
-                        semesters[i+1].push(semesters[i][j]);
+                        if(semesters[i+1] === undefined) {
+                            console.log("Error: Not enough semesters to complete degree");
+                        }
+                        else {
+                            semesters[i+1].push(semesters[i][j]);
+                        }
                     }
                 }
             }
