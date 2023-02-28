@@ -84,20 +84,6 @@ export default {
         };
     },
     methods: {
-        addMajor(val) {
-            if (val.length > 0) {
-                if (!this.selectedMajors.includes(val)) {
-                    this.selectedMajors.push(val);
-                }
-            }
-        },
-        addMinor(val) {
-            if (val.length > 0) {
-                if (!this.selectedMinors.includes(val)) {
-                    this.selectedMinors.push(val);
-                }
-            }
-        },
         filterMajor(val) {
             this.filteredMajors = this.majorOptions.filter((x) =>
                 x.toLowerCase().includes(val.toLowerCase())
@@ -113,24 +99,10 @@ export default {
                 x.toLowerCase().includes(val.toLowerCase())
             );
         },
-        addPathway(val) {
-            if (val.length > 0) {
-                if (!this.selectedPathways.includes(val)) {
-                    this.selectedPathways.push(val);
-                }
-            }
-        },
         filterConcentration(val) {
             this.filteredConcentrations = this.concentrationOptions.filter(
                 (x) => x.toLowerCase().includes(val.toLowerCase())
             );
-        },
-        addConcentration(val) {
-            if (val.length > 0) {
-                if (!this.selectedConcentrations.includes(val)) {
-                    this.selectedConcentrations.push(val);
-                }
-            }
         },
         submit() {
             let degree = {
@@ -144,6 +116,28 @@ export default {
             degree = degreeGenerator(degree, this.programsData, this.coursesData);
             this.store.addDegree(degree);
             this.$router.push("/degree");
+            let message =
+                "You have created plan " + '"' + this.degreeName + '"';
+            this.showNotif("top", message, "positive");
+        },
+        reset() {
+            this.degreeName = "";
+            this.selectedMajors = [];
+            this.selectedMinors = [];
+            this.selectedPathways = "None";
+            this.selectedConcentrations = "None";
+            this.showNotif("top", "Form has been reset", "info", 300);
+        },
+        showNotif(position, message, type, timeout = 1250) {
+          // Useful reference https://quasar.dev/quasar-plugins/notify#positioning
+          this.$q.notify({
+              badgeClass: "hide-badge",
+              type,
+              textColor: "white",
+              message,
+              position,
+              timeout,
+          });
         },
     },
 };
@@ -152,88 +146,132 @@ export default {
 <template>
     <q-form
         class="full-width column wrap justify-center items-center content-center"
+        @submit.prevent.stop="submit"
     >
-        <p>Enter Your Plan Name:</p>
+        <p>Create Your Degree!</p>
         <q-input
             v-model="degreeName"
-            standout="bg-teal text-white"
-            label="My Course Plan"
+            label="Plan Name *"
+            hint="Name Your Plan"
             :dense="true"
-            style="width: 250px; margin-bottom: 20px"
+            clearable
+            style="
+                width: 300px;
+                margin-bottom: 20px;
+                font-family: 'Rubik', sans-serif;
+            "
+            lazy-rules
+            :rules="[(val) => (val && val.length > 0) || 'Please enter a name']"
         />
         <q-select
             v-model="selectedMajors"
-            standout="bg-teal text-white"
-            filled
             use-input
-            use-chips
             multiple
             input-debounce="0"
+            max-values="2"
             :options="filteredMajors"
-            style="width: 250px; margin-bottom: 20px"
+            options-dense
+            clearable
             :dense="true"
-            :popup-content-style="{ fontSize: '12px', width: '250px' }"
-            label="Major"
+            :input-style="{ FontFace: 'Rubik', fontSize: '15px' }"
+            :popup-content-style="{ fontSize: '15px', width: '250px' }"
+            label="Major(s) *"
             hint="Select Your Major(s)"
-            @new-value="addMajor"
+            style="
+                width: 300px;
+                margin-bottom: 20px;
+                font-family: 'Rubik', sans-serif;
+            "
+            lazy-rules
+            :rules="[
+                (val) =>
+                    (val && val.length > 0) || 'Please pick at least one major',
+            ]"
             @input-value="filterMajor"
         />
         <q-select
             v-model="selectedMinors"
-            standout="bg-teal text-white"
-            filled
             use-input
-            use-chips
             multiple
+            max-input="2"
+            :input-style="{ FontFace: 'Rubik', fontSize: '15px' }"
             input-debounce="0"
             :options="filteredMinors"
-            style="width: 250px; margin-bottom: 20px"
+            options-dense
+            clearable
             :dense="true"
-            :popup-content-style="{ fontSize: '12px', width: '250px' }"
+            :popup-content-style="{ fontSize: '15px', width: '250px' }"
             label="Minor(s)"
             hint="Select Your Minor(s)"
-            @new-value="addMinor"
+            style="
+                width: 300px;
+                margin-bottom: 20px;
+                font-family: 'Rubik', sans-serif;
+            "
             @input-value="filterMinor"
         />
         <q-select
             v-model="selectedPathways"
-            standout="bg-teal text-white"
-            filled
             use-input
             input-debounce="0"
             :options="filteredPathways"
-            style="width: 250px; margin-bottom: 20px"
+            options-dense
+            clearable
             :dense="true"
-            :popup-content-style="{ fontSize: '12px', width: '250px' }"
-            label="Pathway(s)"
-            hint="Select Your Pathway(s)"
-            @new-value="addPathway"
+            :popup-content-style="{ fontSize: '15px', width: '250px' }"
+            label="Pathway"
+            hint="Select Your Pathway"
+            style="
+                width: 300px;
+                margin-bottom: 20px;
+                font-family: 'Rubik', sans-serif;
+            "
             @input-value="filterPathway"
         />
         <q-select
             v-model="selectedConcentrations"
-            standout="bg-teal text-white"
-            filled
             use-input
             input-debounce="0"
             :options="filteredConcentrations"
-            style="width: 250px; margin-bottom: 20px"
             :dense="true"
-            :popup-content-style="{ fontSize: '12px', width: '250px' }"
-            label="Concentration(s)"
-            hint="Select Your Concentration(s)"
-            @new-value="addConcentration"
+            options-dense
+            clearable
+            :popup-content-style="{ fontSize: '15px', width: '250px' }"
+            label="Concentration"
+            hint="Select Your Concentration"
+            style="
+                width: 300px;
+                margin-bottom: 20px;
+                font-family: 'Rubik', sans-serif;
+            "
             @input-value="filterConcentration"
         />
         <div>
-            <q-btn label="Submit" color="primary" @click="submit" />
+            <q-btn label="Submit" color="primary" type="submit" />
+            <q-btn
+                label="Reset"
+                color="primary"
+                flat
+                style="margin-left: 10px"
+                @click="reset"
+            />
         </div>
     </q-form>
 </template>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 p {
     margin-top: 15px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+}
+
+.hide-badge {
+    background-color: transparent;
+    box-shadow: 0 0 0 0 transparent;
+    color: transparent;
 }
 </style>

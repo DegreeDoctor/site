@@ -8,12 +8,12 @@
         "concentration (NEED TO BE IMPLEMENTED)": ["conc1.name"], 
         "prerequisites": {
             "required" : [
-                "MATH 1100"
+                "Calculus 1"
             ],
             "one_of": [
                 [
-                "CSCI 1200",
-                "CSCI 1100"
+                "Data Structures",
+                "Computer Science 1"
                 ]
             ]
         },
