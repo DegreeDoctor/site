@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import { useStorage } from "@vueuse/core";
+import coursesJson from "../data/courses.json";
 
 export const useStore = defineStore("main", {
     state: () => ({
@@ -53,6 +54,33 @@ export const useStore = defineStore("main", {
         getDegreeNames: (state) => {
             return Object.keys(state.degrees);
         },
+        templateToArray: (state) => {
+            console.log("test")
+            const template = state.degrees[state.selectedDegree]["template"];
+            console.log(template)
+            let array = [];
+            let subArray = [];
+
+            
+            let sem = Object.keys(template)[0];
+            for (const name in template) {
+                console.log(name)
+                if (name != sem) {
+                    array.push([sem, subArray]);
+                    sem = name;
+                    subArray = [];
+                }
+                for (const i in template[name]) {
+                    if (coursesJson) {
+                        if (coursesJson[template[name][i]]) {
+                            subArray.push(coursesJson[template[name][i]]);
+                        }
+                    }
+                    subArray.push();
+                }
+            }
+            return array;
+        }
     },
     //Act like methods in Vue
     actions: {

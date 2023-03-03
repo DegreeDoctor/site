@@ -2,9 +2,9 @@
     <!-- <q-btn @click="debug()">
         debug
     </q-btn> -->
-    <br />
+    <!-- <br />
     <CourseTrash />
-    <CourseTable :semesters="test" @add-course="addCourse" />
+    <CourseTable :semesters="test" @add-course="addCourse" /> -->
 </template>
 
 <script>
@@ -26,32 +26,13 @@ export default {
             test: null,
         };
     },
-    computed: {
-        templateToArray() {
-            const template = this.store.getCurrentDegree["template"];
-            let array = [];
-            let subArray = [];
-            let sem = Object.keys(template)[0];
-            for (const name in template) {
-                if (name != sem) {
-                    array.push([sem, subArray]);
-                    sem = name;
-                    subArray = [];
-                }
-                for (const i in template[name]) {
-                    if (this.coursesData) {
-                        if (this.coursesData[template[name][i]]) {
-                            subArray.push(this.coursesData[template[name][i]]);
-                        }
-                    }
-                    subArray.push();
-                }
-            }
-            return array;
-        },
-    },
     mounted() {
         this.test = this.templateToArray;
+        console.log(this.store.templateToArray)
+        // this.store.$subscribe(() => {
+        //     this.test = this.templateToArray;
+        //     console.log("something changed")
+        // });
     },
     methods: {
         // debug() {
