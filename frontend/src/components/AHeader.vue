@@ -125,13 +125,74 @@ export default {
             <div class="image-container">
                 <router-link to="/quiz" id="logo"><img src="../assets/Degree_Doctor_logo.png"/></router-link>
             </div>
+           
             <div class="DD">
                 <RouterLink to="/" id="title">Degree Doctor</RouterLink>
                 <div class="fading-effect"></div>
+                
             </div>
-            <div class="other">
-                <DarkModeToggle/>
-                <RouterLink to="/quiz" id="plans">My Plans</RouterLink>
+            <DarkModeToggle/>
+            <div class="q-pa-md">
+                <q-btn
+                    no-caps
+                    label="My Plans"
+                    color="primary"
+                    @click="plan = true"
+                ></q-btn>
+                <q-dialog v-model="plan">
+                    <q-card style="min-width: 350px">
+                        <q-card-section>
+                            <div class="text-h6">Pick a plan</div>
+                        </q-card-section>
+
+                        <q-card-section class="q-pt-none">
+                            <h6 class="q-ma-none">
+                                Current Plan: {{ selectedPlan }}
+                            </h6>
+                            <div class="card-contain">
+                                <q-select
+                                    v-model="current"
+                                    filled
+                                    use-input
+                                    input-debounce="0"
+                                    label="Search"
+                                    :options="filteredPlans"
+                                    style="width: 200px"
+                                    behavior="menu"
+                                    @input-value="filterPlan"
+                                    @update:model-value="selectPlan"
+                                >
+                                    <template #no-option>
+                                        <q-item>
+                                            <q-item-section class="text-grey">
+                                                No results
+                                            </q-item-section>
+                                        </q-item>
+                                    </template>
+                                </q-select>
+                                <div>
+                                    <ProgressBar />
+                                </div>
+                            </div>
+                        </q-card-section>
+                        <q-card-actions class="text-primary">
+                            <q-btn v-close-popup flat label="Cancel"></q-btn>
+                            <q-btn
+                                v-close-popup
+                                flat
+                                label="Add new plan"
+                                to="/quiz"
+                            ></q-btn>
+                            <q-btn
+                                v-close-popup
+                                flat
+                                label="Delete Plan"
+                                @click="deletePlan();"
+                                to="/degree"
+                            ></q-btn>
+                        </q-card-actions>
+                    </q-card>
+                </q-dialog>
             </div>
         </div>
     </nav>  
@@ -141,14 +202,14 @@ export default {
 .navbar{
     display: flex;
     background:turquoise;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
     height: 5rem;
 }
 .image-container {
   position: absolute;
   top: 5%;
-  left: 25%;
+  right: 25%;
   transform: translate(-50%,-50%);
   z-index: 2; /* Makes sure this is on top */
 }
@@ -160,11 +221,14 @@ export default {
   animation-fill-mode: forwards;
 }
 .DD {
+display: flex;
+align-items:center;
+justify-content: space-between;
   position: absolute;
   top: 5%;
   transform: translate(-50%,-50%);
   z-index: 1; /* Places this below the image container */
-  margin-left: -700px;
+  margin-left: -1000px;
 }
 .DD .fading-effect {
   position: absolute;
@@ -173,10 +237,10 @@ export default {
   right: 0;
   width: 100%;
   background: turquoise;
-  -webkit-animation: text-slide 4s cubic-bezier(1, 0, 0.5, 0.5);
-  animation: text-slide 4s cubic-bezier(1, 0, 0.5, 0.5);
-  animation-fill-mode: backwards;
-  -webkit-animation-fill-mode: backwards;
+  -webkit-animation: text-slide 4s cubic-bezier(.1, 0, 0.5, 0.5);
+  animation: text-slide 5s cubic-bezier(.1, 0, 0.5, 0.5);
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
 }
 .fading-effect {
   position: absolute;
@@ -186,25 +250,54 @@ export default {
   width: 100%;
   background: white;
 }   
-/* Slides the image from left (-250px) to right (150px) */
-@keyframes image-slide {
-  0% { transform: translateX(150px) scale(0); }
-  60% { transform: translateX(150px) scale(1); }
-  90% { transform: translateX(-250px) scale(1); }
-  100% { transform: translateX(-250px) scale(1); }  
+/* Slides the image from right (150px) to left (-250px) */
+@media screen and (min-width: 1000px){
+    @keyframes image-slide {
+        0% { transform: translateX(200px) scale(0); }
+        60% { transform: translateX(200px) scale(1); }
+        90% { transform: translateX(-1000px) scale(1); }
+        100% { transform: translateX(-1000px) scale(1); }  
+    }
+    @keyframes text-slide {
+        100% { width: 100%; }
+        75%{ width: 100%; }
+        60% { width: 0; }
+        0% { width: 0; }
+        75%{ width: 100%; }
+        100% { width: 0%; }
+
+    }
+}
+@media screen and (max-width: 1000px){
+    @keyframes image-slide {
+        0% { transform: translateX(200px) scale(0); }
+        60% { transform: translateX(200px) scale(1); }
+        90% { transform: translateX(-1000px) scale(1); }
+        100% { transform: translateX(-1000px) scale(1); }  
+    }
+    @keyframes text-slide {
+        100% { width: 100%; }
+        75%{ width: 100%; }
+        60% { width: 0; }
+        0% { width: 0; }
+
+    }
+}
+@media screen and (max-width: 450px){
+    @keyframes image-slide {
+        0% { transform: translateX(80px) scale(0); }
+        60% { transform: translateX(80px) scale(1); }
+        90% { transform: translateX(-80px) scale(1); }
+        100% { transform: translateX(-80px) scale(1); }  
+    }
+    @keyframes text-slide {
+        100% { width: 100%; }
+        75%{ width: 100%; }
+        60% { width: 0; }
+        0% { width: 0; }
+    }
 }
 
-/* Slides the text by shrinking the width of the object from full (100%) to nada (0%) */
-@keyframes text-slide {
-    100% { width: 100%; }
-    75%{ width: 100%; }
-    60% { width: 0; }
-    0% { width: 0; }
-  /* 0% { width: 100%; }
-  60% { width: 100%; }
-  75%{ width: 0; }
-  100% { width: 0; } */
-}
 
 
 
