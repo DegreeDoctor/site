@@ -107,7 +107,11 @@ def deep_sis_scraper():
             cleanCredits = np.unique(classCredits)
 
             #creditHours IS NOW FETCHED CORRECTLY----------------------------
-
+            for val in classText:
+                if "prerequisites" in val.lower() and "corequisites" not in val.lower():
+                    prereqIndex = classText.index(val)
+                    break
+            return classText[prereqIndex + 1]
             
             
 
