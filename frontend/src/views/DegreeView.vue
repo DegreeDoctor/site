@@ -2,9 +2,9 @@
     <!-- <q-btn @click="debug()">
         debug
     </q-btn> -->
-    <!-- <br />
+    <br />
     <CourseTrash />
-    <CourseTable :semesters="test" @add-course="addCourse" /> -->
+    <CourseTable :semesters="templateToArray" @add-course="addCourse" />
 </template>
 
 <script>
@@ -26,19 +26,23 @@ export default {
             test: null,
         };
     },
+    computed: {
+        templateToArray() {
+            return this.store.templateToArray;
+        },
+    },
     mounted() {
-        this.test = this.templateToArray;
-        console.log(this.store.templateToArray)
-        // this.store.$subscribe(() => {
-        //     this.test = this.templateToArray;
-        //     console.log("something changed")
-        // });
+        // this.test = this.store.templateToArray;
+        // console.log(this.store.templateToArray)
+        this.store.$subscribe(() => {
+            console.log("something changed")
+        });
     },
     methods: {
         // debug() {
         //     // this.store.deleteEverything();       // this deleted everything in local store
         //     console.log(this.templateToArray)
-        // }
+        // },
         addCourse(data) {
             const courseObj = data[0];
             const semesterName = data[1];
@@ -47,8 +51,6 @@ export default {
                 courseObj.name,
                 "add"
             );
-            this.test = this.templateToArray;
-            console.log(this.test);
         },
     },
 };

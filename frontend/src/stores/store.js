@@ -60,11 +60,8 @@ export const useStore = defineStore("main", {
             console.log(template)
             let array = [];
             let subArray = [];
-
-            
             let sem = Object.keys(template)[0];
             for (const name in template) {
-                console.log(name)
                 if (name != sem) {
                     array.push([sem, subArray]);
                     sem = name;
