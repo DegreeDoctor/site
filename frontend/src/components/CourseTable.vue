@@ -6,7 +6,7 @@
         @close="showSearch = false"
         @add-course="addCourse"
     />
-    <div id="table">
+    <div id="table" :key="semesters">
         <Semester
             v-for="semester in semesters"
             :ref="semester[0]"
@@ -21,7 +21,6 @@
 import Semester from "./Semester.vue";
 import coursesJson from "../data/courses.json";
 import CourseSearch from "./CourseSearch.vue";
-import { useStore } from "../stores/store";
 
 export default {
     components: {
@@ -40,16 +39,10 @@ export default {
             parsedSemesters: [],
             coursesData: coursesJson,
             showSearch: false,
-            opened: null,
-            store: useStore()
+            opened: null
         };
     },
     mounted() {
-        console.log(this.$refs);
-        this.store.$subscribe(() => {
-            console.log("something changed in coursetable");
-            // this.parsedSemesters = 
-        });
     },
     methods: {
         showAddCourseModal(semesterName) {

@@ -32,11 +32,6 @@ export default {
         },
     },
     mounted() {
-        // this.test = this.store.templateToArray;
-        // console.log(this.store.templateToArray)
-        this.store.$subscribe(() => {
-            console.log("something changed")
-        });
     },
     methods: {
         // debug() {
