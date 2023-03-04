@@ -41,8 +41,9 @@ def deep_sis_scraper():
                 link = val['href']
                 allLinks.append("https://sis.rpi.edu" + link)
         for link in allLinks:
-            link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=BIOL&crse_numb_in=4310"
+            #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=BIOL&crse_numb_in=4310"
             #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=COGS&crse_numb_in=2940"
+            link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=CSCI&crse_numb_in=4480"
             Lcontent = s.get(link)
             deepContent = Lcontent.content
             contentSoup = BeautifulSoup(deepContent, "html.parser")
@@ -107,10 +108,12 @@ def deep_sis_scraper():
             cleanCredits = np.unique(classCredits)
 
             #creditHours IS NOW FETCHED CORRECTLY----------------------------
-            for val in classText:
-                if "prerequisites" in val.lower() and "corequisites" not in val.lower():
-                    prereqIndex = classText.index(val)
-                    break
+            prereqIndex = 0
+            preReqString = "prerequisites"
+            underGradString = "undergraduate"
+            for i in range(0, len(classText) - 1):
+                if preReqString in classText[i].lower() and underGradString in classText[i + 1].lower():
+                    prereqIndex = i
             return classText[prereqIndex + 1]
             
             
