@@ -402,7 +402,7 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
     url = f"{BASE_URL}content{DEFAULT_QUERY_PARAMS}&method=getItems&options[full]=1&catalog={catalog_id}&type=programs{ids}"
     pathways_xml = html.fromstring(requests.get(url).text.encode("utf8"))
 
-    pathways = pathways_xml.xpath("//programs/program[not(@child-of)]");
+    pathways = pathways_xml.xpath("//programs/program[not(@child-of)]")
     # For every Major degree
     for pathway in pathways:
         courses = []

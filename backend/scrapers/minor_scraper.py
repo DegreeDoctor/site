@@ -14,6 +14,10 @@ BASE_URL = "http://rpi.apis.acalog.com/v1/"
 DEFAULT_QUERY_PARAMS = "?key=3eef8a28f26fb2bcc514e6f1938929a1f9317628&format=xml"
 CHUNK_SIZE = 500
 
+def write_file(text, file):
+    with open(file, "w") as out:
+        out.write(text)
+
 # Returns a list of program ids for a given catalog
 def get_program_ids(catalog_id: str) -> List[str]:
     programs_xml = html.fromstring(
@@ -21,10 +25,32 @@ def get_program_ids(catalog_id: str) -> List[str]:
             f"{BASE_URL}search/programs{DEFAULT_QUERY_PARAMS}&method=listing&options[limit]=0&catalog={catalog_id}"
         ).text.encode("utf8")
     )
-    with open(root + "/backend/data/type.xml","w") as outfile:
-            outfile.write(str(html.tostring(programs_xml)))
-
     return programs_xml.xpath('//result[type="Minor"]/id/text()')
+
+def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
+    data = {}
+    # Break the courses into chunks of CHUNK_SIZE to make the api happy
+    ids = "".join([f"&ids[]={path}" for path in program_ids])
+    url = f"{BASE_URL}content{DEFAULT_QUERY_PARAMS}&method=getItems&options[full]=1&catalog={catalog_id}&type=programs{ids}"
+
+    program_xml = html.fromstring(requests.get(url).text.encode("utf8"))
+
+    programs = program_xml.xpath("//programs/program[not(@child-of)]");
+
+    for program in programs:
+        name = norm_str(program.xpath("./title/text()")[0].strip())
+        majors = norm_str(program.xpath("./parent")[0].text_content())
+        description = norm_str(program.xpath("./content")[0].text_content().strip())
+        rest = program.xpath("./cores/core")
+
+        data[name] = {
+            "name": name,
+            "description": description,
+            "majors": majors,
+        }
+
+    # write_file(str(html.tostring(program_xml)),root+"/backend/data/2.xml")
+        # programs = programs_xml.xpath("//courses/course[not(@child-of)]")
 
 def scrape_programs():
     print("Starting program scraping")
@@ -38,6 +64,7 @@ def scrape_programs():
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         # print(year)
         program_ids = get_program_ids(catalog_id)
+        data = get_minor_data(program_ids, catalog_id)
         # scraing the program (degree)
         # programs_per_year[year] = data
     print("Finished program scraping")
