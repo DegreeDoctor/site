@@ -9,7 +9,7 @@ export default {
             store: useStore(),
             plan: false,
             filter: "",
-            deleteIconsVisible: false,
+            deleteIconsVisible: false,            
         };
     },
     computed: {
@@ -24,6 +24,9 @@ export default {
         allDegrees() {
             return this.store.getDegreeNames;
         },
+        allDegreesSubNames() {
+            return this.store.getDegreeSubNames;
+        }
     },
     methods: {
         selectPlan(val) {
@@ -142,7 +145,7 @@ export default {
         {{ selectedPlan }}
         <q-menu anchor="bottom left">
             <q-item
-                v-for="item in allDegrees"
+                v-for="item in allDegreesSubNames"
                 :key="item"
                 class="planList"
                 :class="{ 'active-item': selectedPlan === item }"

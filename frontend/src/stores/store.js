@@ -1,10 +1,11 @@
 import { defineStore } from "pinia";
 import { useStorage } from "@vueuse/core";
+import { v4 as uuidv4 } from 'uuid';
 
 export const useStore = defineStore("main", {
     state: () => ({
         /* Degree is formatted as follows
-            "name" {
+            "uuid" {
                 //Credits
                 // Object of lists formatted as: {"course1": 4, "Course2", 3}
                 credits   {},
@@ -40,12 +41,14 @@ export const useStore = defineStore("main", {
             }
         },
         getCurrentDegreeName: (state) => {
-            return state.selectedDegree;
+            if (state.selectedDegree != "") {
+              return state.degrees[state.selectedDegree].name;
+            }
         },
         getCredits: (state) => {
-            if (state.selectedDegree != "") {
-                return state.degrees[state.selectedDegree].credits;
-            }
+          if (state.selectedDegree != "") {
+              return state.degrees[state.selectedDegree].credits;
+          }
         },
         getDarkMode: (state) => {
             return state.darkMode;
@@ -53,15 +56,28 @@ export const useStore = defineStore("main", {
         getDegreeNames: (state) => {
             return Object.keys(state.degrees);
         },
+        getDegreeSubNames: (state) => {
+          let degreeNames = Object.keys(state.degrees);
+          let degreeSubNames = [];
+          degreeNames.forEach((degreeName) => {
+              degreeSubNames.push(state.degrees[degreeName].name);
+          });
+          console.log("HI");
+          return degreeSubNames;
+          
+        }
     },
     //Act like methods in Vue
     actions: {
         swapDegree(name) {
+            // swap degree based uuid
+            console.log(name);
             this.selectedDegree = name;
         },
         addDegree(degree) {
-            this.degrees[degree.name] = degree;
-            this.selectedDegree = degree.name;
+            let uuid = uuidv4();
+            this.degrees[uuid] = degree; // degree.name is outer name
+            this.selectedDegree = uuid;
         },
         updateDegree(name, degree) {
             this.degrees[name] = degree;
