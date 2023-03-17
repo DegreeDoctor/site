@@ -48,8 +48,12 @@ export default {
     border-radius: 1px;
 }
 
+.courseCode {
+    width: 12ch;
+}
+
 .credits {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     text-align: end;
 }
 </style>
