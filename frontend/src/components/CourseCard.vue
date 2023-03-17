@@ -4,8 +4,11 @@
         <span class="name">{{ course.name }}</span>
         <span class="bar"></span>
         <span class="courseCode">{{ course.subject }} - {{ course.ID }}</span>
-        <span class="credits">({{ course.credits[0] }})</span>
-        <!--why is course.credits an array -->
+        <span class="credits">({{ course.credits[0] }})</span>  <!--why is course.credits an array -->
+        <q-btn push color="primary" class="info" padding="none" icon="help_outline" />
+        <!-- <q-icon icon="help_outline"/> -->
+        <!-- <i>help</i> -->
+        <!-- <span icon="help"></span> -->
     </div>
 </template>
 
@@ -29,13 +32,15 @@ export default {
     display: flex;
     width: 100%;
     gap: 2px;
+    cursor: move;
 }
 .card span {
     align-self: center;
 }
 .name {
     font-weight: 600;
-    width: 55%;
+    width: 30ch;
+    /* width: 55%; */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -49,11 +54,17 @@ export default {
 }
 
 .courseCode {
-    width: 12ch;
+    width: 11ch;
 }
 
 .credits {
     /* flex-grow: 1; */
     text-align: end;
+}
+
+.info {
+    padding: 0;
+    aspect-ratio: 1/1;
+    margin-left: auto;
 }
 </style>

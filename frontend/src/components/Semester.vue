@@ -170,7 +170,8 @@ export default defineComponent({
     background-color: darken($secondary, 15%);
     box-sizing: border-box;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
+    height: 7vh;
     color: white;
 }
 
