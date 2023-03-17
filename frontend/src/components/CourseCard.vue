@@ -19,14 +19,18 @@
                 <q-card-section class="column no-wrap">
                     <div>
                         <div class="row no-wrap">
-                            <h4 class="text-weight-bold" style="margin:0">{{ course.name }}</h4>
-                            <q-space/>
-                            <q-btn flat round icon="close" v-close-popup />
+                            <h4 class="text-weight-bold" style="margin: 0">
+                                {{ course.name }}
+                            </h4>
+                            <q-space />
+                            <q-btn v-close-popup flat round icon="close" />
                         </div>
-                        
-                        <div class="text-grey">{{ course.subject }}-{{ course.ID }}</div>
+
+                        <div class="text-grey">
+                            {{ course.subject }}-{{ course.ID }}
+                        </div>
                     </div>
-                    <q-separator/>
+                    <q-separator />
                     <div>
                         <div class="text-grey">
                             {{ course.description }}
@@ -35,14 +39,9 @@
                             {{ offered }}
                         </div>
                     </div>
-                    
                 </q-card-section>
             </q-card>
         </q-dialog>
-
-        <!-- <q-icon icon="help_outline"/> -->
-        <!-- <i>help</i> -->
-        <!-- <span icon="help"></span> -->
     </div>
 </template>
 
@@ -62,7 +61,7 @@ export default {
     },
     computed: {
         offered() {
-        /*
+            /*
 semesters has 3 different cases:
     case                           |  works?
     -----------------------------------------------------------------------------------------
@@ -76,28 +75,30 @@ years has 2-3(?) different cases:
     offered every other year       | (no clue if this works need test cases)
     offered by profs availability  | (no clue, need test cases) */
             const offered = this.course.offered;
-            let out = "Offered"
-            if (offered.semesters.length == 3 ) {
-                // if its offered in all semesters just say "all semesters" 
+            let out = "Offered";
+            if (offered.semesters.length == 3) {
+                // if its offered in all semesters just say "all semesters"
                 //  instead of listing everything individually
                 out += " all semesters";
             } else {
-                out += " in the "
-                // concatenates all of the semesters offered 
+                out += " in the ";
+                // concatenates all of the semesters offered
                 //  adds an "and" between the last 2 semesters
                 //   still needs more testing
                 offered.semesters.forEach((semester, index) => {
-                    out += `${semester}${(index != offered.semesters.length - 1 ? " and " : " ")}`
-                })
+                    out += `${semester}${
+                        index != offered.semesters.length - 1 ? " and " : " "
+                    }`;
+                });
             }
-            if (offered.year == "all" ) {
+            if (offered.year == "all") {
                 // nothing, default is all years
             } else {
-                out += ` in ${offered.year} years`
-            };
-            return out
-        }
-    },  
+                out += ` in ${offered.year} years`;
+            }
+            return out;
+        },
+    },
     methods: {
         toggleCheck() {
             // emit update to parent
