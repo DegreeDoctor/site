@@ -129,15 +129,15 @@ export default {
             this.showNotif("top", "Form has been reset", "info", 300);
         },
         showNotif(position, message, type, timeout = 1250) {
-          // Useful reference https://quasar.dev/quasar-plugins/notify#positioning
-          this.$q.notify({
-              badgeClass: "hide-badge",
-              type,
-              textColor: "white",
-              message,
-              position,
-              timeout,
-          });
+            // Useful reference https://quasar.dev/quasar-plugins/notify#positioning
+            this.$q.notify({
+                badgeClass: "hide-badge",
+                type,
+                textColor: "white",
+                message,
+                position,
+                timeout,
+            });
         },
     },
 };
