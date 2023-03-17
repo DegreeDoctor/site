@@ -1,10 +1,13 @@
 <script>
 import { useStore } from "../stores/store";
 import ACourse from "./ACourse.vue";
+import coursesJson from "../data/courses.json";
+import CourseSearch from "./CourseSearch.vue";
 
 export default {
     components: {
         ACourse,
+        CourseSearch,
     },
     props: {
         course: {
@@ -16,6 +19,7 @@ export default {
     data() {
         return {
             store: useStore(),
+            coursesData: coursesJson,
         };
     },
     methods: {
@@ -68,14 +72,7 @@ export default {
         @drop="courseDrop"
     >
         <ACourse v-if="course" :course="course" :check="true" />
-        <q-avatar
-            v-else
-            square
-            size="75px"
-            font-size="50px"
-            color="primary"
-            icon="add"
-        />
+        <CourseSearch v-else :courses-data="coursesData" />
     </div>
 </template>
 
