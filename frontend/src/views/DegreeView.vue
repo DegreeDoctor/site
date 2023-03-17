@@ -22,6 +22,7 @@ export default {
     },
     computed: {
         templateToArray() {
+            if(!this.store.getCurrentDegree) return [];
             const template = this.store.getCurrentDegree["template"];
             let array = [];
             let subArray = [];
