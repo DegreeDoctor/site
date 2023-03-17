@@ -202,14 +202,14 @@ export default {
 .navbar{
     display: flex;
     background:turquoise;
-    justify-content:space-around;
+    justify-content:flex-end;
     align-items: center;
     height: 5rem;
 }
 .image-container {
   position: absolute;
-  top: 5%;
-  right: 25%;
+  top: 3.8%;
+  right: 20%;
   transform: translate(-50%,-50%);
   z-index: 2; /* Makes sure this is on top */
 }
@@ -225,7 +225,8 @@ display: flex;
 align-items:center;
 justify-content: space-between;
   position: absolute;
-  top: 5%;
+  top: 2.88em;
+  right:75%;
   transform: translate(-50%,-50%);
   z-index: 1; /* Places this below the image container */
   margin-left: -1000px;
@@ -238,7 +239,7 @@ justify-content: space-between;
   width: 100%;
   background: turquoise;
   -webkit-animation: text-slide 4s cubic-bezier(.1, 0, 0.5, 0.5);
-  animation: text-slide 5s cubic-bezier(.1, 0, 0.5, 0.5);
+  animation: text-slide s cubic-bezier(.1, 0, 0.5, 0.5);
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
@@ -253,8 +254,8 @@ justify-content: space-between;
 /* Slides the image from right (150px) to left (-250px) */
 @media screen and (min-width: 1000px){
     @keyframes image-slide {
-        0% { transform: translateX(200px) scale(0); }
-        60% { transform: translateX(200px) scale(1); }
+        0% { transform: translateX(-390px) scale(0); }
+        60% { transform: translateX(-390px) scale(1); }
         90% { transform: translateX(-1000px) scale(1); }
         100% { transform: translateX(-1000px) scale(1); }  
     }
@@ -270,8 +271,8 @@ justify-content: space-between;
 }
 @media screen and (max-width: 1000px){
     @keyframes image-slide {
-        0% { transform: translateX(200px) scale(0); }
-        60% { transform: translateX(200px) scale(1); }
+        0% { transform: translateX(-390px) scale(0); }
+        60% { transform: translateX(-390px) scale(1); }
         90% { transform: translateX(-1000px) scale(1); }
         100% { transform: translateX(-1000px) scale(1); }  
     }
