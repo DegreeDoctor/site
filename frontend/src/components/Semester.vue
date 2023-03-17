@@ -171,7 +171,7 @@ export default defineComponent({
     box-sizing: border-box;
     padding: 5px;
     border-radius: 10px;
-    height: 7vh;
+    height: 5vh;
     color: white;
 }
 
