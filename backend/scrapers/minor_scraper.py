@@ -3,11 +3,9 @@ import requests
 from lxml import html
 from tqdm import tqdm
 import json
-import unicodedata
-from degree_util import subjs, prgms, course_dict, root
-from degree_util import get_catalogs, norm_str, rem_empty, clean_str, trim_space
+from degree_util import mnrs, root
+from degree_util import get_catalogs, norm_str, word_to_num, rep_uni
 from collections import OrderedDict
-
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
 # It is ok to publish this key because I found it online already public
@@ -27,6 +25,9 @@ def get_program_ids(catalog_id: str) -> List[str]:
     )
     return programs_xml.xpath('//result[type="Minor"]/id/text()')
 
+def trim_crn(inp):
+    return inp[inp.find("-")+1:].strip()
+
 def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
     data = {}
     # Break the courses into chunks of CHUNK_SIZE to make the api happy
@@ -36,21 +37,58 @@ def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
     program_xml = html.fromstring(requests.get(url).text.encode("utf8"))
 
     programs = program_xml.xpath("//programs/program[not(@child-of)]");
-
     for program in programs:
+
+        # included to skip programs that either have really bad edge cases/are super specific programs
+        # to be decided on a later date if it is worth to refactor code for (and to keep a list of really)
+        # broken but small programs
+        check = False
+        for mnr in mnrs:
+            if (name == mnr):
+                check = True
+        if (check):
+            continue
+        
+        # rest of parsing
         name = norm_str(program.xpath("./title/text()")[0].strip())
-        majors = norm_str(program.xpath("./parent")[0].text_content())
-        description = norm_str(program.xpath("./content")[0].text_content().strip())
+        description = rep_uni(norm_str(program.xpath("./content")[0].text_content().strip()))
+        if (len(description) == 0):
+            description = rep_uni(norm_str(program.xpath("./cores/core/content")[0].text_content().strip()))
         rest = program.xpath("./cores/core")
+
+        for r in rest: 
+            children = r.xpath("./children/core")
+            rest.extend(children)
+
+        # if (name != "Cognitive Science of Artificial Intelligence Minor"):
+        #     continue
+
+        requirements = []
+
+        for r in rest:
+
+            required = {}
+            course_list = []
+
+            title = r.xpath("./title/text()")
+            tmp = norm_str(title[0])
+            content = r.xpath("./content")
+            content_s = norm_str(content[0].text_content())
+            courses = r.xpath("./courses/include")
+
+            tmp = tmp.replace("Plus","Choose").replace("And","Choose").replace("Remaining","Choose 3")
+            tmp = tmp.replace("Students must also ","").replace("Prerequisites:","Required:")
+            tmp = tmp.replace("Take two","Choose two").replace("Take all","Required")
+            tmp = tmp.replace(" remaining credits from the following with at least","")
+            content_s = content_s.replace("Students must complete:","Required ")
 
         data[name] = {
             "name": name,
             "description": description,
-            "majors": majors,
+            "requirements": requirements
         }
 
-    # write_file(str(html.tostring(program_xml)),root+"/backend/data/2.xml")
-        # programs = programs_xml.xpath("//courses/course[not(@child-of)]")
+    return data
 
 def scrape_programs():
     print("Starting program scraping")
@@ -66,13 +104,12 @@ def scrape_programs():
         program_ids = get_program_ids(catalog_id)
         data = get_minor_data(program_ids, catalog_id)
         # scraing the program (degree)
-        # programs_per_year[year] = data
+        programs_per_year[year] = data
     print("Finished program scraping")
-
     # create JSON obj and write it to file
     json_object = json.dumps(programs_per_year,sort_keys=True, indent=2, ensure_ascii=False)
-    # with open(root + "/backend/data/test.json", "w") as outfile:
-    #     outfile.write(json_object)
+    with open(root + "/backend/data/test.json", "w") as outfile:
+        outfile.write(json_object)
     return programs_per_year
 
 if __name__ == "__main__":
