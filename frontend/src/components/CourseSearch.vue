@@ -49,6 +49,9 @@ export default {
         };
     },
     computed: {
+        showPrompt() {
+            return this.prompt;
+        },
         filteredCourses() {
             const courses = Object.values(this.coursesData);
             let output = [];
@@ -126,7 +129,7 @@ export default {
     <!-- <q-btn @click="debug()">
         course search debug
     </q-btn> -->
-    <q-dialog v-model="prompt" persistent>
+    <q-dialog v-model="showPrompt" persistent>
         <q-card style="min-width: 350px">
             <q-card-section>
                 <div class="text-h6">Search for a course!</div>
