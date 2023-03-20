@@ -1,0 +1,71 @@
+Minor Degree Scraping Progress: 30/67
+[******************************-------------------------------------]
+
+
+
+Architectural Acoustics Minor                                       |DONE|
+Architectural History Minor                                         |DONE|
+Architecture Minor                                                  |DONE|
+Astrobiology Minor                                                  |DONE|
+Astronomy Minor                                                     |DONE|
+Astrophysics Minor                                                  |DONE|
+Behavioral and Cognitive Neuroscience Minor                         |DONE|
+Biochemistry/Biophysics Minor for Biology Majors                    |DONE|
+Biochemistry/Biophysics Minor for Biomedical Engineering Majors     |DONE|
+Biochemistry/Biophysics Minor for Chemical Engineering Majors       |DONE|
+Biochemistry/Biophysics Minor for Chemistry Majors                  |DONE|
+Biological Neuroscience Minor                                       |    |* not parsed
+Biology Minor                                                       |    |* not parsed
+Biomedical Engineering and Management Minor                         |    |* not parsed
+Chemistry Minor for Non-Chemistry Majors                            |DONE|
+Chinese Language Minor                                              |DONE|
+Civil Engineering Minor                                             |DONE|
+Cognitive Science Minor                                             |    |* not parsed
+Cognitive Science of Artificial Intelligence Minor                  |DONE|
+Computer and Systems Engineering Minor                              |    |* not parsed
+Computer Science Minor                                              |    |* not parsed
+Data Science and Engineering                                        |    |* null
+Ecology Minor                                                       |    |* null
+Economics Minor                                                     |    |* issue with "or"
+Economics of Banking and Finance Minor                              |    |* issue with "or", remaining credit amounts
+Economics of Decision-Making                                        |    |* issue with "or"
+Economics of Healthcare Markets Minor                               |    |* issue with "or"
+Economics of Policy and Regulations                                 |    |* issue with "or", remaining credit amounts
+Economics of Quantitative Modeling                                  |    |* issue with "or", remaining credit amounts
+Economics of Technology and Innovation Minor                        |    |* issue with "or", remaining credit amounts 
+Electrical Engineering Minor                                        |    |* not parsed
+Electronic Arts Minor                                               |    |* credit amounts
+Entrepreneurship Minor                                              |DONE|
+Environmental Design                                                |    |* remaining credit amounts
+Environmental Engineering Minor                                     |    |* credit amounts
+Finance Minor                                                       |    |* credit amounts
+General Psychology Minor                                            |    |* flawed
+Geology Minor                                                       |    |* not parsed
+Graphic Design Minor                                                |DONE|
+History Minor                                                       |    |* remaining credit amounts
+Hydrogeology Minor                                                  |DONE|
+Information Technology and Web Science Minor                        |    |* need to make set of course
+Interactive Media/Data Design Minor                                 |DONE| 
+Lighting Minor                                                      |DONE| 
+Lighting Minor in Biological Sciences                               |DONE|
+Linguistics Minor                                                   |DONE|
+Literature and Creative Writing Minor                               |DONE|
+Management Minor                                                    |DONE|
+Marketing Minor                                                     |    |* credit amounts
+Materials Engineering Minor                                         |    |* not parsed
+Mathematics Minor                                                   |    |* not parsed
+Media and Culture Minor                                             |DONE|
+Music Minor                                                         |    |* badly parsed
+Nuclear Engineering Minor                                           |    |* not parsed
+Philosophy Minor                                                    |    |* not/badly parsed
+Philosophy of Logic, Computation, and Mind Minor                    |    |* credit amounts
+Physics Minor                                                       |    |* not parsed
+Psychological Science Minor                                         |    |* badly parsed
+Public Health Minor                                                 |DONE|
+Science, Technology, and Society Minor                              |    |* badly parsed
+Strategic Communication Minor                                       |DONE|
+Studio Arts                                                         |    |* remaining credit amounts
+Sustainability Studies Minor                                        |DONE|
+Video, Performance, and Social Practice                             |    |* remaining credit amounts
+Well-being                                                          |DONE|
+Writing Minor                                                       |DONE|
