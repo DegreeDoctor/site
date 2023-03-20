@@ -12,7 +12,7 @@
             class="info"
             padding="none"
             icon="help_outline"
-            @click="moreInfo"
+            @click.stop="moreInfo"
         />
         <q-dialog v-model="showInfo" seamless class="moreInfo">
             <q-card style="width: 75vw">
