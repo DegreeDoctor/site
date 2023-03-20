@@ -82,6 +82,38 @@ def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
             tmp = tmp.replace(" remaining credits from the following with at least","")
             content_s = content_s.replace("Students must complete:","Required ")
 
+            if (content_s.upper().find("COMPLETE") != -1):
+                # tmp_s is the word after 'Complete'
+                tmp_s = content_s[content_s.upper().find("COMPLETE")+9:]
+                tmp_s = tmp_s[:tmp_s.find(" ")]
+                required["amount"] = word_to_num(tmp_s) 
+            elif(tmp.upper().find("COMPLETE") != -1):
+                tmp_s = tmp[tmp.upper().find("COMPLETE")+9:]
+                tmp_s = tmp_s[:tmp_s.find(" ")]
+                required["amount"] = word_to_num(tmp_s) 
+            elif (tmp.upper().find("REQUIRE") != -1 or content_s.upper().find("REQUIRE") != -1):
+                required["amount"] = len(courses)
+            else:
+                if (tmp.upper().find("CHOOSE") != -1):
+                    tmp = tmp.replace("at least ","")
+                    tmp = tmp[tmp.find(" ")+1:]
+                    tmp = ''.join([x for x in tmp if x.isalnum() or x.isspace()])
+
+                tmp_s = tmp.lower()[:tmp.find(" ")] if tmp.find(" ") != -1 else tmp.lower()
+                if (tmp_s != word_to_num(tmp_s)):
+                    required["amount"] = word_to_num(tmp_s)  
+
+            for course in courses:
+                course_list.append(trim_crn(norm_str(course.text_content())))
+                
+            if required["amount"] != None and (required["amount"] == 8 or required["amount"] == 16 or required["amount"] == 12):
+                required["amount"] /= 4
+                required["amount"] = int(required["amount"])
+
+            required["courses"] = course_list
+            if (len(course_list) > 0):
+                requirements.append(required)
+
         data[name] = {
             "name": name,
             "description": description,
