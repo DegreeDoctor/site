@@ -62,18 +62,15 @@ export default {
     computed: {
         offered() {
             /*
-semesters has 3 different cases:
-    case                           |  works?
-    -----------------------------------------------------------------------------------------
-    offered in all semesters       | (should be fine)
-    offered in 1-2 semesters       | (should be fine, needs more testing)
-    offered by profs availability  | (no clue how this works, need to find a course to test)
-years has 2-3(?) different cases:
-    case                           |  works?
-    -----------------------------------------------------------------------------------------
-    offered every year             | (default, should be fine)
-    offered every other year       | (no clue if this works need test cases)
-    offered by profs availability  | (no clue, need test cases) */
+semesters has 3 different cases to test:
+    offered in all semesters       | (works)
+    offered in 1-2 semesters       | (works)
+    offered by profs availability  | (needs testing) COMM-4590 is a test case, not available to add though
+years has 2-3(?) different cases to test:
+    offered every year             | (works)
+    offered every other year       | (needs testing) COMM-4590 is a test case, not available to add though
+    offered by profs availability  | (needs testing) COMM-6790 - alternate years
+    */
             const offered = this.course.offered;
             let out = "Offered";
             if (offered.semesters.length == 3) {
