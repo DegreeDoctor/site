@@ -46,6 +46,17 @@ def get_prgms():
 
 prgms = get_prgms()
 
+def get_mnrs():
+    mnrs = []
+    f = open(root + '/backed/data/skip_mnrs.jason','r')
+    tmp = json.load(f)
+    for mnr in tmp:
+        mnrs.append(mnr)
+    f.close()
+    return mnrs
+
+mnrs = get_mnrs()
+
 # returns the list of catalogs with the newest one being first
 # each catalog is a tuple (year, catalog_id) ex: ('2020-2021', 21)
 def get_catalogs() -> List[Tuple[str, int]]:
@@ -74,7 +85,7 @@ def clean_str(s: str) -> str:
     return "".join([x for x in s if x.isalnum() or x.isspace()])
 
 def rep_uni(str):
-    return str.replace("\n","").replace("\t","").replace("\u200b","").replace("\u2013","").replace("\u00ad","")
+    return str.replace("\n","").replace("\t","").replace("\u200b","").replace("\u2013","").replace("\u00ad","").replace("\r","")
 
 # Normalize a string, using unicode data. Remove all weird whitespace tag 
 def norm_str(str):
@@ -89,3 +100,14 @@ def trim_space(str):
     while (str.find("  ") != -1):
         str = str.replace("  "," ");
     return str
+
+def word_to_num(inp):
+    help_dict = {
+    'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5',
+    'six': '6', 'seven': '7', 'eight': '8', 'nine': '9', 'zero': '0',
+    }
+    if (inp.isnumeric()):
+        return int(inp)
+    if (inp not in help_dict.keys()):  
+        return
+    return int(''.join(help_dict[ele] for ele in inp.split()))
