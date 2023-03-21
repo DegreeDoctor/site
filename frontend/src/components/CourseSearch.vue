@@ -1,11 +1,11 @@
 <script>
 // import ACourse from "../components/ACourse.vue";
 
-import CourseCard from './CourseCard.vue';
+import CourseCard from "./CourseCard.vue";
 
 export default {
     components: {
-        CourseCard
+        CourseCard,
     },
     props: {
         coursesData: {
@@ -48,7 +48,7 @@ export default {
                     value: "4 LVL",
                 },
             ],
-            advancedSearch: false
+            advancedSearch: false,
         };
     },
     computed: {
@@ -129,7 +129,7 @@ export default {
         },
         toggleAdvancedSearch() {
             this.advancedSearch = !this.advancedSearch;
-        }   
+        },
     },
 };
 </script>
@@ -139,43 +139,62 @@ export default {
         course search debug
     </q-btn> -->
     <q-dialog v-model="showPrompt" persistent>
-        <q-card style="min-width: 75vw">
+        <q-card style="min-width: 50vw">
             <q-card-section>
                 <div class="text-h3">Search for a course!</div>
             </q-card-section>
 
             <q-card-section>
-                <q-input v-model="search" style="width: 100%" label="Course Name" autofocus />
+                <q-input
+                    v-model="search"
+                    style="width: 100%"
+                    label="Course Name"
+                    autofocus
+                />
             </q-card-section>
             <q-card-section vertical>
                 <q-expansion-item label="Advanced Search Options">
                     <q-separator />
-                    <q-card-section class="flex row advancedFilter">
+                    <q-card-section
+                        class="flex row advancedFilter"
+                        style="padding-bottom: 0"
+                    >
                         <q-card-section style="padding-top: 0">
-                            <q-input v-model="subject" label="Subject (ex: CSCI)" />
-                            <q-input v-model="code" label="Course Code (ex: 2300)" />
+                            <q-input
+                                v-model="subject"
+                                label="Subject (ex: CSCI)"
+                            />
+                            <q-input
+                                v-model="code"
+                                label="Course Code (ex: 2300)"
+                            />
                         </q-card-section>
                         <q-option-group
                             v-model="chosen"
                             :options="options"
                             type="checkbox"
                             label="Select semesters to include"
-                            class="q-pr-md options"
+                            class="q-pr-md col-grow options"
                         />
                     </q-card-section>
                 </q-expansion-item>
             </q-card-section>
-            <q-card-section>
+            <q-card-section style="padding-top: 0">
                 <q-virtual-scroll
                     v-slot="{ item }"
                     style="max-height: 300px"
                     :items="filteredCourses"
                 >
-                    <q-card-section class="q-pt-md" horizontal>
-                        <CourseCard :course="item" :check="false" />
+                    <q-card-section class="q-pt-md courseGroup" horizontal>
+                        <CourseCard
+                            :course="item"
+                            :check="false"
+                            :show-bar="false"
+                            class="course"
+                        />
                         <q-btn
                             v-close-popup
-                            class="q-ma-none"
+                            class="q-ma-none col-grow"
                             label="Add Course"
                             @click="addCourse(item)"
                         />
@@ -183,14 +202,31 @@ export default {
                 </q-virtual-scroll>
             </q-card-section>
 
-            <q-card-actions  class="text-primary">
+            <q-card-actions class="text-primary">
                 <q-btn v-close-popup flat label="Cancel" @click="close()" />
             </q-card-actions>
         </q-card>
     </q-dialog>
 </template>
 
-<style>
+<style lang="scss">
+.card {
+    max-width: 70% !important;
+    background-color: darken($secondary, 15%) !important;
+    box-sizing: border-box !important;
+    padding: 5px !important;
+    border-radius: 10px !important;
+    height: 5vh !important;
+    color: white !important;
+}
+
+.courseGroup {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 2px;
+    width: 90%;
+}
+
 .advancedFilter {
     box-sizing: border-box;
     padding: 15px;

@@ -55,9 +55,9 @@ export const useStore = defineStore("main", {
             return Object.keys(state.degrees);
         },
         templateToArray: (state) => {
-            console.log("test")
+            console.log("test");
             const template = state.degrees[state.selectedDegree]["template"];
-            console.log(template)
+            console.log(template);
             let array = [];
             let subArray = [];
             let sem = Object.keys(template)[0];
@@ -77,7 +77,7 @@ export const useStore = defineStore("main", {
                 }
             }
             return array;
-        }
+        },
     },
     //Act like methods in Vue
     actions: {

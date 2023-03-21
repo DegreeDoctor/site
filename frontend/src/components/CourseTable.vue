@@ -39,11 +39,10 @@ export default {
             parsedSemesters: [],
             coursesData: coursesJson,
             showSearch: false,
-            opened: null
+            opened: null,
         };
     },
-    mounted() {
-    },
+    mounted() {},
     methods: {
         showAddCourseModal(semesterName) {
             this.showSearch = true;

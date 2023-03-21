@@ -10,7 +10,6 @@
             <CourseCard
                 v-for="course in courseList"
                 :key="course.name"
-                class="course"
                 :course="course"
             />
         </draggable>
