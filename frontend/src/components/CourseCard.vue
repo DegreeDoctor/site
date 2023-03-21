@@ -137,7 +137,7 @@ years has 2-3(?) different cases to test:
 }
 
 .courseCode {
-    width: 11ch;
+    width: 12ch;
 }
 
 .credits {

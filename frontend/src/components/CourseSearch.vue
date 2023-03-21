@@ -1,9 +1,11 @@
 <script>
-import ACourse from "../components/ACourse.vue";
+// import ACourse from "../components/ACourse.vue";
+
+import CourseCard from './CourseCard.vue';
 
 export default {
     components: {
-        ACourse,
+        CourseCard
     },
     props: {
         coursesData: {
@@ -46,9 +48,13 @@ export default {
                     value: "4 LVL",
                 },
             ],
+            advancedSearch: false
         };
     },
     computed: {
+        filterIcon() {
+            return this.advancedSearch ? "expand_less" : "expand_more";
+        },
         showPrompt() {
             return this.prompt;
         },
@@ -121,6 +127,9 @@ export default {
         debug() {
             console.log(this.prompt);
         },
+        toggleAdvancedSearch() {
+            this.advancedSearch = !this.advancedSearch;
+        }   
     },
 };
 </script>
@@ -130,24 +139,31 @@ export default {
         course search debug
     </q-btn> -->
     <q-dialog v-model="showPrompt" persistent>
-        <q-card style="min-width: 350px">
+        <q-card style="min-width: 75vw">
             <q-card-section>
-                <div class="text-h6">Search for a course!</div>
+                <div class="text-h3">Search for a course!</div>
             </q-card-section>
 
-            <q-card-section class="q-pt-none" horizontal>
-                <q-card-section class="q-pt-none" vertical>
-                    <q-input v-model="search" label="Course Name" autofocus />
-                    <q-input v-model="subject" label="Subject (ex: CSCI)" />
-                    <q-input v-model="code" label="Course Code (ex: 2300)" />
-                </q-card-section>
-                <q-option-group
-                    v-model="chosen"
-                    :options="options"
-                    type="checkbox"
-                    label="Select semesters to include"
-                    class="q-pr-md"
-                />
+            <q-card-section>
+                <q-input v-model="search" style="width: 100%" label="Course Name" autofocus />
+            </q-card-section>
+            <q-card-section vertical>
+                <q-expansion-item label="Advanced Search Options">
+                    <q-separator />
+                    <q-card-section class="flex row advancedFilter">
+                        <q-card-section style="padding-top: 0">
+                            <q-input v-model="subject" label="Subject (ex: CSCI)" />
+                            <q-input v-model="code" label="Course Code (ex: 2300)" />
+                        </q-card-section>
+                        <q-option-group
+                            v-model="chosen"
+                            :options="options"
+                            type="checkbox"
+                            label="Select semesters to include"
+                            class="q-pr-md options"
+                        />
+                    </q-card-section>
+                </q-expansion-item>
             </q-card-section>
             <q-card-section>
                 <q-virtual-scroll
@@ -156,7 +172,7 @@ export default {
                     :items="filteredCourses"
                 >
                     <q-card-section class="q-pt-md" horizontal>
-                        <ACourse :course="item" :check="false" />
+                        <CourseCard :course="item" :check="false" />
                         <q-btn
                             v-close-popup
                             class="q-ma-none"
@@ -167,7 +183,7 @@ export default {
                 </q-virtual-scroll>
             </q-card-section>
 
-            <q-card-actions align="right" class="text-primary">
+            <q-card-actions  class="text-primary">
                 <q-btn v-close-popup flat label="Cancel" @click="close()" />
             </q-card-actions>
         </q-card>
@@ -175,6 +191,29 @@ export default {
 </template>
 
 <style>
+.advancedFilter {
+    box-sizing: border-box;
+    padding: 15px;
+    gap: 5%;
+}
+
+.options {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.dropdown-toggle {
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.dropdown-toggle:hover {
+    background-color: lightgray;
+}
+
 .addButton {
     margin: auto;
 }
