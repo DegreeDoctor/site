@@ -38,7 +38,8 @@ def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
 
     programs = program_xml.xpath("//programs/program[not(@child-of)]");
     for program in programs:
-
+        
+        name = norm_str(program.xpath("./title/text()")[0].strip())
         # included to skip programs that either have really bad edge cases/are super specific programs
         # to be decided on a later date if it is worth to refactor code for (and to keep a list of really)
         # broken but small programs
@@ -50,10 +51,10 @@ def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
             continue
         
         # rest of parsing
-        name = norm_str(program.xpath("./title/text()")[0].strip())
         description = rep_uni(norm_str(program.xpath("./content")[0].text_content().strip()))
         if (len(description) == 0):
             description = rep_uni(norm_str(program.xpath("./cores/core/content")[0].text_content().strip()))
+        # print(description)
         rest = program.xpath("./cores/core")
 
         for r in rest: 
@@ -64,6 +65,7 @@ def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
         #     continue
 
         requirements = []
+        course_sum = 0
 
         for r in rest:
 
@@ -76,11 +78,14 @@ def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
             content_s = norm_str(content[0].text_content())
             courses = r.xpath("./courses/include")
 
-            tmp = tmp.replace("Plus","Choose").replace("And","Choose").replace("Remaining","Choose 3")
+            rem = 4 - course_sum if course_sum < 4 else 0
+            tmp = tmp.replace("Plus","Choose").replace("And","Choose").replace("Remaining","Choose " + str(rem))
             tmp = tmp.replace("Students must also ","").replace("Prerequisites:","Required:")
-            tmp = tmp.replace("Take two","Choose two").replace("Take all","Required")
-            tmp = tmp.replace(" remaining credits from the following with at least","")
-            content_s = content_s.replace("Students must complete:","Required ")
+            tmp = tmp.replace("Take two","Choose two").replace("Take all","Required").replace("Take the","Required")
+            tmp = tmp.replace("In addition to","Choose").replace("Choose remaining","Choose " + str(rem))
+            tmp = tmp.replace("The remaining (at least)","Choose").replace("HASS Inquiry (choose one):","Choose one ")
+            tmp = tmp.replace("Elective courses (choose one)","Choose one").replace(" any","")
+            content_s = content_s.replace("Students must complete:","Required ").replace("Must take at least","Complete")
 
             if (content_s.upper().find("COMPLETE") != -1):
                 # tmp_s is the word after 'Complete'
@@ -94,25 +99,41 @@ def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
             elif (tmp.upper().find("REQUIRE") != -1 or content_s.upper().find("REQUIRE") != -1):
                 required["amount"] = len(courses)
             else:
+                tmp_s = ""
                 if (tmp.upper().find("CHOOSE") != -1):
                     tmp = tmp.replace("at least ","")
                     tmp = tmp[tmp.find(" ")+1:]
                     tmp = ''.join([x for x in tmp if x.isalnum() or x.isspace()])
+                    tmp_s = tmp.lower()[:tmp.find(" ")] if tmp.find(" ") != -1 else tmp.lower()
 
-                tmp_s = tmp.lower()[:tmp.find(" ")] if tmp.find(" ") != -1 else tmp.lower()
-                if (tmp_s != word_to_num(tmp_s)):
-                    required["amount"] = word_to_num(tmp_s)  
+                elif (content_s.upper().find("CHOOSE") != -1):
+                    content_s = content_s[content_s.find(" ")+1:]
+                    tmp_s = content_s.lower()[:content_s.find(" ")] if content_s.find(" ") != -1 else content_s.lower()
+
+                else:
+                    tmp_s = tmp.lower()[:tmp.find(" ")] if tmp.find(" ") != -1 else tmp.lower()
+                if (isinstance(word_to_num(tmp_s),int)):
+                    required["amount"] = word_to_num(tmp_s)
+                else:
+                    required["amount"] = 0 
 
             for course in courses:
                 course_list.append(trim_crn(norm_str(course.text_content())))
+            
+            if (len(course_list) != len(list(set(course_list)))):
+                course_list = list(set(course_list))
                 
             if required["amount"] != None and (required["amount"] == 8 or required["amount"] == 16 or required["amount"] == 12):
                 required["amount"] /= 4
                 required["amount"] = int(required["amount"])
 
+            course_sum += required["amount"] if (required["amount"] != None) else 0
             required["courses"] = course_list
             if (len(course_list) > 0):
                 requirements.append(required)
+
+        # print(`name)
+        # print(cours`e_sum)
 
         data[name] = {
             "name": name,

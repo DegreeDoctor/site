@@ -51,15 +51,6 @@ def split_content(str):
         else:
             ret.append(rem_lor(norm_str(str[:ind+1])))
             str = str[ind+1:]
-    
-    # while (str.find("Elective") != -1 and str.find("Credit Hours") == -1):
-    #     ind = str.find("Elective") + 9
-    #     tmp = str[:ind]
-    #     while (ind < len(str) and str[ind] == "I"):
-    #         tmp += str[ind]
-    #         ind+= 1
-    #     str = str[ind:]
-    #     ret.append(tmp)
 
     if (len(str) > 0):
         ret.append(str)
@@ -416,9 +407,6 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
                 check = True
         if (check):
             continue
-        # # For now only parse CS
-        # if (name != "Materials Engineering" ):
-        #     continue
         
         # Get program description
         desc = ""

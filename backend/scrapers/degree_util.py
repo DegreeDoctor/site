@@ -48,7 +48,7 @@ prgms = get_prgms()
 
 def get_mnrs():
     mnrs = []
-    f = open(root + '/backed/data/skip_mnrs.jason','r')
+    f = open(root + '/backend/data/skip_mnrs.json','r')
     tmp = json.load(f)
     for mnr in tmp:
         mnrs.append(mnr)
