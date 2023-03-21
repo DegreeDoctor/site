@@ -24,11 +24,14 @@ export default {
         allDegrees() {
             return this.store.getDegreeNames;
         },
-    },
-    methods: {
+      },
+      methods: {
+        darkMode() {
+          return this.store.getDarkMode;
+        },
         selectPlan(val) {
-            this.store.swapDegree(val);
-            this.current = val;
+          this.store.swapDegree(val);
+          this.current = val;
         },
         filterPlan(val) {
             this.filter = val;
@@ -145,7 +148,7 @@ export default {
                 v-for="item in allDegrees"
                 :key="item"
                 class="planList"
-                :class="{ 'active-item': selectedPlan === item }"
+                :class="['planList', { 'active-item': selectedPlan === item }, darkMode() ? 'dark-mode-active-item' : '']"
             >
                 <a
                     class="item truncate"
@@ -198,7 +201,7 @@ export default {
 
 <style>
 .btn {
-    color: #fff;
+
     border-radius: 5px;
     padding: 0.5em 1em;
     font-size: 1.1em;
@@ -218,7 +221,6 @@ export default {
     color: #bdbdbd;
 }
 .btn q-item:hover {
-    background-color: #fff !important;
     cursor: pointer;
 }
 .q-item {
@@ -230,6 +232,10 @@ export default {
 }
 .active-item {
     background-color: #eee;
+}
+.dark-mode-active-item.active-item {
+  background-color: #424242;
+  color: #fff;
 }
 .planList {
     display: flex;
@@ -284,6 +290,10 @@ export default {
 .new-plan {
     font-weight: 500;
     text-decoration: none;
-    color: black;
+}
+.hide-badge {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: transparent !important;
 }
 </style>
