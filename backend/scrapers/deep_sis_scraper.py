@@ -4,6 +4,7 @@ import requests
 import os
 from degree_util import get_subjs
 import numpy as np
+import quacs
 
 
 
@@ -108,13 +109,13 @@ def deep_sis_scraper():
             cleanCredits = np.unique(classCredits)
 
             #creditHours IS NOW FETCHED CORRECTLY----------------------------
-            prereqIndex = 0
-            preReqString = "prerequisites"
-            underGradString = "undergraduate"
-            for i in range(0, len(classText) - 1):
-                if preReqString in classText[i].lower() and underGradString in classText[i + 1].lower():
-                    prereqIndex = i
-            return classText[prereqIndex + 1]
+            
+
+            
+
+
+                        
+                
             
             
 
