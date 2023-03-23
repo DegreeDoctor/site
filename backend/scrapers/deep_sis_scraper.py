@@ -126,7 +126,18 @@ def deep_sis_scraper():
             #crossListed IS NOW FETCHED CORRECTLY----------------------------
 
 
+            search = r"""<span class="fieldlabeltext">Attributes: </span>(.*?)\n<br/>"""
+            attribute = re.search(search, str(soup))
+            tmp = attribute.group(1).strip() if attribute != None else ""
+            if 'Communication Intensive' in tmp:
+                CI= True
+            else:
+                CI = False
+            #communication intensive is now fetched correctly
 
+            #major restriction
+
+            #when offered
             
 
             
