@@ -4,7 +4,8 @@ import requests
 import os
 from degree_util import get_subjs
 import numpy as np
-import quacs
+from sis_scraper import majorRestrictionChecker
+import re
 
 
 
@@ -42,9 +43,9 @@ def deep_sis_scraper():
                 link = val['href']
                 allLinks.append("https://sis.rpi.edu" + link)
         for link in allLinks:
-            #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=BIOL&crse_numb_in=4310"
+            link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=BIOL&crse_numb_in=4310"
             #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=COGS&crse_numb_in=2940"
-            link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=CSCI&crse_numb_in=4480"
+            #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=CSCI&crse_numb_in=4480"
             Lcontent = s.get(link)
             deepContent = Lcontent.content
             contentSoup = BeautifulSoup(deepContent, "html.parser")
@@ -109,6 +110,23 @@ def deep_sis_scraper():
             cleanCredits = np.unique(classCredits)
 
             #creditHours IS NOW FETCHED CORRECTLY----------------------------
+
+            #PREREQUISITES ARE NOW FETCHED CORRECTLY------------------------- HE SAYS XD
+            searchString = "Cross Listed: "
+            crossedIndex = 0
+            for i in range(0, len(classText)):
+                if searchString in classText[i]:
+                    crossedIndex = i
+                    break
+            crossListed = ""
+            if crossedIndex != 0:
+                crossListed = classText[i].find(searchString) + len(searchString)
+                crossListing = classText[i][crossListed:crossListed + 9]
+            
+            #crossListed IS NOW FETCHED CORRECTLY----------------------------
+
+
+
             
 
             
