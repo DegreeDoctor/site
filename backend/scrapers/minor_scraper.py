@@ -159,8 +159,8 @@ def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
 
     return data
 
-def scrape_programs():
-    print("Starting program scraping")
+def scrape_minors():
+    print("Starting minor_scraper scraping:")
     num_catalog = 1
     catalogs = get_catalogs()
     # take the most recent num_catalog catalogs
@@ -174,12 +174,12 @@ def scrape_programs():
         data = get_minor_data(program_ids, catalog_id)
         # scraing the program (degree)
         programs_per_year[year] = data
-    print("Finished program scraping")
     # create JSON obj and write it to file
     json_object = json.dumps(programs_per_year,sort_keys=True, indent=2, ensure_ascii=False)
-    with open(root + "/backend/data/test.json", "w") as outfile:
+    with open(root + "/frontend/src/data/minors.json", "w") as outfile:
         outfile.write(json_object)
+    print("Finished minor_scraper scraping.")
     return programs_per_year
 
 if __name__ == "__main__":
-    scrape_programs()
+    scrape_minors()

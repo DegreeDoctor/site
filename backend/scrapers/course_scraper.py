@@ -237,7 +237,7 @@ def replace_crn(dict):
     return dict
 
 def scrape_courses():
-    print("Starting courses scraping")
+    print("Starting course_scraper scraping:")
     catalogs = get_catalogs()
 
     catalogs = catalogs[:4]
@@ -256,7 +256,7 @@ def scrape_courses():
     # Writing to sample.json
     with open(root + "/frontend/src/data/courses.json", "w") as outfile:
         outfile.write(json_object)
-        print("Finished courses scraping")
+        print("Finished course_scraper scraping.")
     return courses_per_year
 
 if __name__ == "__main__":
