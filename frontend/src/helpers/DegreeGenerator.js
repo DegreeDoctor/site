@@ -85,61 +85,50 @@ export function degreeGenerator (degree, programsData, coursesData) {
         semesters.push(template[sem]);
     }
 
-    let coursesToClear = [];
+    let remainder = [];
+    let newSemesters = [];
     for(const i in semesters) {
-        //add coursesToClear to this semester
-        console.log(JSON.parse(JSON.stringify(labels[i])));
-        console.log(JSON.parse(JSON.stringify(coursesToClear)));
-        semesters[i] = [...semesters[i], ...coursesToClear];
-        coursesToClear = [];
+        let coursesToAdd = [...semesters[i], ...remainder];
+        remainder = [];
+        
+        for(const j in newSemesters[i]) {
+            let course = newSemesters[i][j];
+            if(course["prerequisites"].length != 0) {
+                let prereqs = [...course["prerequisites"]["required"],
+                    ...course["prerequisites"]["one_of"]];
 
-        console.log(JSON.parse(JSON.stringify(semesters[i])));
-        for(const j in semesters[i]) {
-            let course = semesters[i][j];
-            let prereqs = course["prerequisites"]["required"];
-            for(const c in course["prerequisites"]["one_of"]) {
-                prereqs = [...prereqs, ...course["prerequisites"]["one_of"][c]];
-            }
-
-            for(const k in prereqs) {
-                let prereq = prereqs[k];
-                for(const l in semesters[i]) {
-                    if(semesters[i][l]["name"] === prereq) {
-                        console.log(semesters[i][j]);
-                        coursesToClear.push(semesters[i][j]);
-                        if(semesters[i+1] === undefined) {
-                            console.log("Error: Not enough semesters to complete degree");
-                        }
-                        else {
-                            semesters[i+1].push(semesters[i][j]);
+                for(const k in prereqs) {
+                    let prereq = prereqs[k];
+                    for(const l in newSemesters[i]) {
+                        if(newSemesters[i][l]["name"] === prereq) {
+                            remainder.push(newSemesters[i][j]);
+                            coursesToAdd = coursesToAdd.filter((c) => c["name"] !== course["name"]);
                         }
                     }
                 }
             }
         }
 
-        for(const j in coursesToClear) {
-            let course = coursesToClear[j];
-            semesters[i] = semesters[i].filter((c) => c["name"] !== course["name"]);
-        }
-        coursesToClear = [];
-
         let credits = 0;
-        for(const j in semesters[i]) {
-            let course = semesters[i][j];
+        for(const j in coursesToAdd) {
+            let course = coursesToAdd[j];
             credits += course["credits"][0];
         }
 
         while(credits > 18) {
-            let course = semesters[i].pop();
-            coursesToClear.push(course);
+            let course = coursesToAdd.pop();
+            remainder.push(course);
             credits -= course["credits"][0];
         }
+
+        newSemesters.push(coursesToAdd);
     }
 
-    if(coursesToClear.length > 0) {
+    if(remainder.length > 0) {
         console.log("Error: Not enough semesters to complete degree");
     }
+
+    semesters = newSemesters;
 
     //convert back to object
     template = {};
