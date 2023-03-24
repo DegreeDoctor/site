@@ -10,11 +10,16 @@
             <CourseCard
                 v-for="course in courseList"
                 :key="course.name"
-                class="course"
                 :course="course"
             />
         </draggable>
-        <q-btn push color="secondary" class="addButton" icon="add" />
+        <q-btn
+            push
+            color="secondary"
+            class="addButton"
+            icon="add"
+            @click="addCourse"
+        />
     </div>
 </template>
 <script>
@@ -34,6 +39,7 @@ export default defineComponent({
             required: true,
         },
     },
+    emits: ["addCourse"],
     data() {
         return {
             store: useStore(),
@@ -112,6 +118,9 @@ export default defineComponent({
         }
     },
     methods: {
+        addCourse() {
+            this.$emit("addCourse", this.semesterName);
+        },
         debug() {
             console.log(this.store.getCurrentDegree);
             console.log(this.semesterName);
@@ -170,7 +179,8 @@ export default defineComponent({
     background-color: darken($secondary, 15%);
     box-sizing: border-box;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
+    height: 5vh;
     color: white;
 }
 
