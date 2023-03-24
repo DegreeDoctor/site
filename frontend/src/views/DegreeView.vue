@@ -26,6 +26,7 @@ export default {
             const template = this.store.getCurrentDegree["template"];
             let array = [];
             let subArray = [];
+            if (!template) return [];
             let sem = Object.keys(template)[0];
             for (const name in template) {
                 if (name != sem) {

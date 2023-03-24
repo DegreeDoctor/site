@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { useStorage } from "@vueuse/core";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 export const useStore = defineStore("main", {
     state: () => ({
@@ -36,45 +36,44 @@ export const useStore = defineStore("main", {
     //Act like computed in Vue
     getters: {
         getCurrentDegree: (state) => {
+            if (!state.degrees) return undefined;
             if (state.selectedDegree != "") {
                 // get index from uuid
                 return state.degrees[state.selectedDegree];
             }
         },
-        getCurrentDegreeName: (state) => { 
+        getCurrentDegreeName: (state) => {
             if (state.selectedDegree != "") {
-              let index = Object.keys(state.degrees).indexOf(state.selectedDegree);
-              return state.degrees[Object.keys(state.degrees)[index]].name;
+                if(!state.degrees[state.selectedDegree]) return "";
+                return state.degrees[state.selectedDegree].name;
             }
         },
         getCurrentDegreeIndex: (state) => {
-          if (state.selectedDegree != "") {
-              return Object.keys(state.degrees).indexOf(state.selectedDegree);
-          }
+            if (!state.degrees) return -1;
+            if (state.selectedDegree != "") {
+                return Object.keys(state.degrees).indexOf(state.selectedDegree);
+            }
         },
         getCredits: (state) => {
-          if (state.selectedDegree != "") {
-              return state.degrees[state.selectedDegree].credits;
-          }
+            if (state.selectedDegree != "") {
+                if(!state.degrees[state.selectedDegree]) return [];
+                return state.degrees[state.selectedDegree].credits;
+            }
         },
         getDarkMode: (state) => {
             return state.darkMode;
-        },
-        getDegreeNames: (state) => {
-            return Object.keys(state.degrees);
         },
         getDegreeUUID: (state) => {
             return Object.keys(state.degrees);
         },
         getDegreeSubNames: (state) => {
-          // console.log(state.degrees[Object.keys(state.degrees)[getCurrentDegreeIndex]].name);
-          let degreeNames = Object.keys(state.degrees);
-          let degreeSubNames = [];
-          degreeNames.forEach((degreeName) => {
-              degreeSubNames.push(state.degrees[degreeName].name);
-          });
-          return degreeSubNames;
-          
+            // console.log(state.degrees[Object.keys(state.degrees)[getCurrentDegreeIndex]].name);
+            let degreeNames = Object.keys(state.degrees);
+            let degreeSubNames = [];
+            degreeNames.forEach((degreeName) => {
+                degreeSubNames.push(state.degrees[degreeName].name);
+            });
+            return degreeSubNames;
         },
     },
     //Act like methods in Vue
