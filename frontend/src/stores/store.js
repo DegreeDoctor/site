@@ -55,9 +55,7 @@ export const useStore = defineStore("main", {
             return Object.keys(state.degrees);
         },
         templateToArray: (state) => {
-            console.log("test");
             const template = state.degrees[state.selectedDegree]["template"];
-            console.log(template);
             let array = [];
             let subArray = [];
             let sem = Object.keys(template)[0];
@@ -117,30 +115,14 @@ export const useStore = defineStore("main", {
         },
         updateDegreeSemester(semester, course, action) {
             if (action == "add") {
-                console.log(`adding to ${semester}`);
                 this.degrees[this.selectedDegree].template[semester].push(
                     course
                 );
-                console.log(
-                    this.degrees[this.selectedDegree].template[semester]
-                );
             } else if (action == "remove") {
-                console.log(`removing ${course}`);
-                console.log(
-                    this.degrees[this.selectedDegree].template[semester]
-                );
                 this.degrees[this.selectedDegree].template[semester] =
                     this.degrees[this.selectedDegree].template[semester].filter(
                         (item) => item != course
                     );
-                console.log(
-                    this.degrees[this.selectedDegree].template[semester].filter(
-                        (item) => item != course
-                    )
-                );
-                console.log(
-                    this.degrees[this.selectedDegree].template[semester]
-                );
             }
         },
         deleteEverything() {

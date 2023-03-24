@@ -49,7 +49,6 @@ export default {
             this.opened = semesterName;
         },
         addCourse(course) {
-            console.log(course);
             this.$emit("addCourse", [course, this.opened]);
             this.showSearch = false;
         },
