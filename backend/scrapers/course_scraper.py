@@ -72,6 +72,8 @@ def split_req(str):
 # 'required' and 'one_of'
 def get_prereq(str): 
     str = norm_str(str)
+    if (str.upper().find("CREDIT CANNOT") != -1):
+        str = str[:str.upper().find("CREDIT CANNOT")]
     reqs = []
     one_of = []
     reqset = split_req(str)

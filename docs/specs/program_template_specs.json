@@ -20,12 +20,12 @@
                 "1-Spring": [
                     "course1",
                     "course2"
-                ],
-                "Extra": [
-                    "this is a footnote",
-                    "this is an extra class"
                 ]
             },
+            "extra": [
+                "this is a footnote",
+                "this is an extra class"
+            ],
             "concentrations": [
                 "name1"
             ]
