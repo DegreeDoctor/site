@@ -1,11 +1,12 @@
 import { defineStore } from "pinia";
 import { useStorage } from "@vueuse/core";
 import coursesJson from "../data/courses.json";
+import { v4 as uuidv4 } from "uuid";
 
 export const useStore = defineStore("main", {
     state: () => ({
         /* Degree is formatted as follows
-            "name" {
+            "uuid" {
                 //Credits
                 // Object of lists formatted as: {"course1": 4, "Course2", 3}
                 credits   {},
@@ -31,28 +32,49 @@ export const useStore = defineStore("main", {
         degrees: useStorage("degrees", {}),
         darkMode: useStorage("darkMode", false),
         // Current degree to view in degree view
-        selectedDegree: useStorage("selectedDegree", ""),
+        selectedDegree: useStorage("selectedDegree", ""), // uuid
     }),
     //Act like computed in Vue
     getters: {
         getCurrentDegree: (state) => {
+            if (!state.degrees) return undefined;
             if (state.selectedDegree != "") {
+                // get index from uuid
                 return state.degrees[state.selectedDegree];
             }
         },
         getCurrentDegreeName: (state) => {
-            return state.selectedDegree;
+            if (state.selectedDegree != "") {
+                if(!state.degrees[state.selectedDegree]) return "";
+                return state.degrees[state.selectedDegree].name;
+            }
+        },
+        getCurrentDegreeIndex: (state) => {
+            if (!state.degrees) return -1;
+            if (state.selectedDegree != "") {
+                return Object.keys(state.degrees).indexOf(state.selectedDegree);
+            }
         },
         getCredits: (state) => {
             if (state.selectedDegree != "") {
+                if(!state.degrees[state.selectedDegree]) return [];
                 return state.degrees[state.selectedDegree].credits;
             }
         },
         getDarkMode: (state) => {
             return state.darkMode;
         },
-        getDegreeNames: (state) => {
+        getDegreeUUID: (state) => {
             return Object.keys(state.degrees);
+        },
+        getDegreeSubNames: (state) => {
+            // console.log(state.degrees[Object.keys(state.degrees)[getCurrentDegreeIndex]].name);
+            let degreeNames = Object.keys(state.degrees);
+            let degreeSubNames = [];
+            degreeNames.forEach((degreeName) => {
+                degreeSubNames.push(state.degrees[degreeName].name);
+            });
+            return degreeSubNames;
         },
         templateToArray: (state) => {
             if(!state.degrees[state.selectedDegree]) return [];
@@ -81,11 +103,28 @@ export const useStore = defineStore("main", {
     //Act like methods in Vue
     actions: {
         swapDegree(name) {
+            // swap degree based uuid
+            // console.log(name);
+            // console.log(this.selectedDegree);
             this.selectedDegree = name;
         },
+        findDegree(name) {
+            // find degree's uuid based on name
+            let uuid = "";
+            Object.keys(this.degrees).forEach((degreeName) => {
+                if (this.degrees[degreeName].name == name) {
+                    uuid = degreeName;
+                }
+            });
+            return uuid;
+        },
         addDegree(degree) {
-            this.degrees[degree.name] = degree;
-            this.selectedDegree = degree.name;
+            let uuid = uuidv4();
+            // console.log(degree);
+            this.degrees[uuid] = degree; // degree is an object
+            // console.log(this.degrees[uuid].name);
+            // set the objects name atrribute to the uuid
+            this.selectedDegree = uuid;
         },
         updateDegree(name, degree) {
             this.degrees[name] = degree;
