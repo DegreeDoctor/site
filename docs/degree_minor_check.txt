@@ -1,5 +1,5 @@
-Minor Degree Scraping Progress: 41/65
-[*****************************************------------------------]
+Minor Degree Scraping Progress: 48/65
+[************************************************-----------------]
 
 Architectural Acoustics Minor                                       |DONE|
 Architectural History Minor                                         |DONE|
@@ -24,13 +24,13 @@ Computer Science Minor                                              |    |* not 
 Computer and Systems Engineering Minor                              |    |* not parsed
 Data Science and Engineering                                        |DONE|* categories
 Ecology Minor                                                       |DONE|
-Economics Minor                                                     |    |* issue with "or"
-Economics of Banking and Finance Minor                              |    |* issue with "or"
-Economics of Decision-Making                                        |    |* issue with "or"
-Economics of Healthcare Markets Minor                               |    |* issue with "or"
-Economics of Policy and Regulations                                 |    |* issue with "or"
-Economics of Quantitative Modeling                                  |    |* issue with "or"
-Economics of Technology and Innovation Minor                        |    |* issue with "or"
+Economics Minor                                                     |DONE|* electives
+Economics of Banking and Finance Minor                              |DONE|
+Economics of Decision-Making                                        |DONE|
+Economics of Healthcare Markets Minor                               |DONE|
+Economics of Policy and Regulations                                 |DONE|
+Economics of Quantitative Modeling                                  |DONE|
+Economics of Technology and Innovation Minor                        |DONE|
 Electrical Engineering Minor                                        |    |* not parsed
 Entrepreneurship Minor                                              |DONE|
 Environmental Design                                                |DONE|

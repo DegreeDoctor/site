@@ -1,20 +1,15 @@
-from typing import Dict, List, Tuple
+from typing import Dict, List
 import requests
 from lxml import html
 from tqdm import tqdm
 import json
 from degree_util import mnrs, root
 from degree_util import get_catalogs, norm_str, word_to_num, rep_uni
-from collections import OrderedDict
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
 # It is ok to publish this key because I found it online already public
 DEFAULT_QUERY_PARAMS = "?key=3eef8a28f26fb2bcc514e6f1938929a1f9317628&format=xml"
 CHUNK_SIZE = 500
-
-def write_file(text, file):
-    with open(file, "w") as out:
-        out.write(text)
 
 # Returns a list of program ids for a given catalog
 def get_program_ids(catalog_id: str) -> List[str]:
@@ -25,6 +20,7 @@ def get_program_ids(catalog_id: str) -> List[str]:
     )
     return programs_xml.xpath('//result[type="Minor"]/id/text()')
 
+# trims course to only the course name
 def trim_crn(inp):
     return inp[inp.find("-")+1:].strip()
 
@@ -36,6 +32,7 @@ def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
 
     program_xml = html.fromstring(requests.get(url).text.encode("utf8"))
 
+    # get each minor program XML object
     programs = program_xml.xpath("//programs/program[not(@child-of)]");
     for program in programs:
         
@@ -54,15 +51,12 @@ def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
         description = rep_uni(norm_str(program.xpath("./content")[0].text_content().strip()))
         if (len(description) == 0):
             description = rep_uni(norm_str(program.xpath("./cores/core/content")[0].text_content().strip()))
-        # print(description)
         rest = program.xpath("./cores/core")
 
+        # add additional children sub-objects
         for r in rest: 
             children = r.xpath("./children/core")
             rest.extend(children)
-
-        # if (name != "Cognitive Science of Artificial Intelligence Minor"):
-        #     continue
 
         requirements = []
         course_sum = 0
@@ -72,12 +66,16 @@ def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
             required = {}
             course_list = []
 
+            # fetch the title, content, and courses XML paths
             title = r.xpath("./title/text()")
             tmp = norm_str(title[0])
             content = r.xpath("./content")
             content_s = norm_str(content[0].text_content())
             courses = r.xpath("./courses/include")
+            adhocc = r.xpath("./courses/adhoc/content")
 
+            # massaging the inputs to follow a standard input such that 
+            # parsing is possible
             rem = 4 - course_sum if course_sum < 4 else 0
             tmp = tmp.replace("Plus","Choose").replace("And","Choose").replace("Remaining","Choose " + str(rem))
             tmp = tmp.replace("Students must also ","").replace("Prerequisites:","Required:")
@@ -87,53 +85,71 @@ def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
             tmp = tmp.replace("Elective courses (choose one)","Choose one").replace(" any","")
             content_s = content_s.replace("Students must complete:","Required ").replace("Must take at least","Complete")
 
+            # two main cases: required classes vs chosen credit amounts per class
             if (content_s.upper().find("COMPLETE") != -1):
-                # tmp_s is the word after 'Complete'
+
                 tmp_s = content_s[content_s.upper().find("COMPLETE")+9:]
                 tmp_s = tmp_s[:tmp_s.find(" ")]
                 required["amount"] = word_to_num(tmp_s) 
+
             elif(tmp.upper().find("COMPLETE") != -1):
+
                 tmp_s = tmp[tmp.upper().find("COMPLETE")+9:]
                 tmp_s = tmp_s[:tmp_s.find(" ")]
                 required["amount"] = word_to_num(tmp_s) 
+
             elif (tmp.upper().find("REQUIRE") != -1 or content_s.upper().find("REQUIRE") != -1):
+
                 required["amount"] = len(courses)
+                for a in adhocc:
+                    cont = norm_str(a.text_content())
+                    if (cont.upper().find("OR") != -1):
+                        required["amount"] -= 1
+                        break
+
             else:
+
                 tmp_s = ""
+
                 if (tmp.upper().find("CHOOSE") != -1):
+
                     tmp = tmp.replace("at least ","")
                     tmp = tmp[tmp.find(" ")+1:]
                     tmp = ''.join([x for x in tmp if x.isalnum() or x.isspace()])
                     tmp_s = tmp.lower()[:tmp.find(" ")] if tmp.find(" ") != -1 else tmp.lower()
 
                 elif (content_s.upper().find("CHOOSE") != -1):
+
                     content_s = content_s[content_s.find(" ")+1:]
                     tmp_s = content_s.lower()[:content_s.find(" ")] if content_s.find(" ") != -1 else content_s.lower()
 
                 else:
                     tmp_s = tmp.lower()[:tmp.find(" ")] if tmp.find(" ") != -1 else tmp.lower()
+               
+                # check if the input is an integer otherwise set to default 0 value
                 if (isinstance(word_to_num(tmp_s),int)):
                     required["amount"] = word_to_num(tmp_s)
                 else:
                     required["amount"] = 0 
 
+            # add all courses for current chunk to courselist
             for course in courses:
                 course_list.append(trim_crn(norm_str(course.text_content())))
             
+            # if the number of unique courses differs from the number of courses, we have a duplicate
             if (len(course_list) != len(list(set(course_list)))):
                 course_list = list(set(course_list))
                 
+            # we want to reduce all formats from credits -> class amount so we just hard check for it
             if required["amount"] != None and (required["amount"] == 8 or required["amount"] == 16 or required["amount"] == 12):
                 required["amount"] /= 4
                 required["amount"] = int(required["amount"])
 
+            # check the sum of all courses we have parsed so far
             course_sum += required["amount"] if (required["amount"] != None) else 0
             required["courses"] = course_list
             if (len(course_list) > 0):
                 requirements.append(required)
-
-        # print(`name)
-        # print(cours`e_sum)
 
         data[name] = {
             "name": name,
