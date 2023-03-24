@@ -56,30 +56,30 @@
         {
           "amount": 2,
           "courses": [
-            "Stars, Galaxies, and the Cosmos",
-            "Earth Materials",
-            "Introduction to Geochemistry",
-            "Molecular Biology",
-            "Macroscopic Physical Chemistry",
             "Earth and Sky",
+            "Organic Geochemistry",
+            "Macroscopic Physical Chemistry",
+            "Introduction to Geobiology",
             "Physical Chemistry for Life Sciences",
-            "Modern Techniques in Chemistry",
             "Aqueous Geochemistry",
             "Introduction to Cell and Molecular Biology",
             "Chemistry of the Environment",
-            "Evolution",
-            "Instrumental Methods of Analysis",
-            "Molecular Biochemistry II",
-            "Introduction to Astrobiology",
-            "Introductory Astronomy and Astrophysics",
-            "Isotope Geochemistry",
-            "Organic Geochemistry",
-            "Introduction to Geobiology",
-            "Molecular Biology Laboratory",
             "Genetics and Evolution",
-            "Mass Spectrometry",
+            "Stars, Galaxies, and the Cosmos",
+            "Introduction to Geochemistry",
             "Molecular Biochemistry I",
-            "Organic Chemistry I"
+            "Molecular Biology",
+            "Introduction to Astrobiology",
+            "Molecular Biology Laboratory",
+            "Modern Techniques in Chemistry",
+            "Instrumental Methods of Analysis",
+            "Organic Chemistry I",
+            "Isotope Geochemistry",
+            "Earth Materials",
+            "Introductory Astronomy and Astrophysics",
+            "Molecular Biochemistry II",
+            "Evolution",
+            "Mass Spectrometry"
           ]
         }
       ]
@@ -143,11 +143,11 @@
         {
           "amount": 3,
           "courses": [
-            "Stress and the Brain",
-            "Introduction to Cognitive Neuroscience",
             "Hormones, Brain, and Behavior",
-            "Cognition and the Brain",
+            "Stress and the Brain",
             "Drugs, Society, and Behavior",
+            "Cognition and the Brain",
+            "Introduction to Cognitive Neuroscience",
             "Behavioral Neuroscience"
           ]
         }
@@ -447,7 +447,7 @@
       "name": "Ecology Minor",
       "requirements": [
         {
-          "amount": 4,
+          "amount": 3,
           "courses": [
             "Principles of Ecology",
             "Global Environmental Change",
@@ -472,7 +472,7 @@
       "name": "Economics Minor",
       "requirements": [
         {
-          "amount": 3,
+          "amount": 2,
           "courses": [
             "Principles of Economics",
             "Introductory Economics",
@@ -486,7 +486,7 @@
       "name": "Economics of Banking and Finance Minor",
       "requirements": [
         {
-          "amount": 2,
+          "amount": 1,
           "courses": [
             "Principles of Economics",
             "Introductory Economics"
@@ -500,7 +500,7 @@
           ]
         },
         {
-          "amount": 1,
+          "amount": 2,
           "courses": [
             "Money and Banking",
             "Economics of Financial Institutions and Markets",
@@ -514,14 +514,14 @@
       "name": "Economics of Decision-Making",
       "requirements": [
         {
-          "amount": 2,
+          "amount": 1,
           "courses": [
             "Principles of Economics",
             "Introductory Economics"
           ]
         },
         {
-          "amount": 2,
+          "amount": 3,
           "courses": [
             "Applied Game Theory",
             "Behavioral Economics",
@@ -536,7 +536,7 @@
       "name": "Economics of Healthcare Markets Minor",
       "requirements": [
         {
-          "amount": 3,
+          "amount": 2,
           "courses": [
             "Intermediate Microeconomic Theory",
             "Principles of Economics",
@@ -558,7 +558,7 @@
       "name": "Economics of Policy and Regulations",
       "requirements": [
         {
-          "amount": 3,
+          "amount": 2,
           "courses": [
             "Introductory Economics",
             "Principles of Economics",
@@ -566,7 +566,7 @@
           ]
         },
         {
-          "amount": 1,
+          "amount": 2,
           "courses": [
             "Economics of Government Regulation and Firm Strategy",
             "Law and Economics",
@@ -582,7 +582,7 @@
       "name": "Economics of Quantitative Modeling",
       "requirements": [
         {
-          "amount": 3,
+          "amount": 2,
           "courses": [
             "Introductory Economics",
             "Principles of Economics",
@@ -590,7 +590,7 @@
           ]
         },
         {
-          "amount": 1,
+          "amount": 2,
           "courses": [
             "Econometric Methods for Big Data",
             "Econometrics",
@@ -605,7 +605,7 @@
       "name": "Economics of Technology and Innovation Minor",
       "requirements": [
         {
-          "amount": 3,
+          "amount": 2,
           "courses": [
             "Introductory Economics",
             "Principles of Economics",
@@ -613,7 +613,7 @@
           ]
         },
         {
-          "amount": 1,
+          "amount": 2,
           "courses": [
             "Economics of Innovation and New Technologies",
             "Economics of Biotech and Medical Innovations",
@@ -647,14 +647,14 @@
       "name": "Environmental Design",
       "requirements": [
         {
-          "amount": 2,
+          "amount": 1,
           "courses": [
             "Environment and Society",
             "Environmental Parametrics"
           ]
         },
         {
-          "amount": 2,
+          "amount": 3,
           "courses": [
             "Research Investigations: Project Built Ecologies",
             "Materials Systems and Productions",
@@ -876,12 +876,12 @@
         {
           "amount": 4,
           "courses": [
-            "Cross-linguistic Perspectives",
-            "Advanced Topics in Linguistics",
-            "Language-Endowed Intelligent Agents",
             "Introduction to Linguistics",
+            "The Linguistics of Computational Linguistics",
+            "Cross-linguistic Perspectives",
             "Animal Cognition and Interaction with Humans",
-            "The Linguistics of Computational Linguistics"
+            "Advanced Topics in Linguistics",
+            "Language-Endowed Intelligent Agents"
           ]
         }
       ]
@@ -983,15 +983,15 @@
         {
           "amount": 0,
           "courses": [
-            "Popular Music and Society",
-            "Interdisciplinary Research Seminar",
-            "Music, Sound, & the Environment",
-            "World Music",
-            "The Multimedia Century",
-            "Topics in Deep Listening",
-            "Game Sound and Musical Play",
-            "Histories of Jazz and Improvised Music",
             "Histories of Western Music",
+            "Popular Music and Society",
+            "World Music",
+            "Music, Sound, & the Environment",
+            "Topics in Deep Listening",
+            "Histories of Jazz and Improvised Music",
+            "The Multimedia Century",
+            "Game Sound and Musical Play",
+            "Interdisciplinary Research Seminar",
             "Deep Listening",
             "Topics in the History and Analysis of Music"
           ]
@@ -1113,18 +1113,18 @@
         {
           "amount": 1,
           "courses": [
-            "Food, Farms, and Famine",
-            "Behavioral Neuroscience",
-            "Drugs in History",
+            "Health Economics and Policy",
             "Bioethics",
             "Hormones, Brain, and Behavior",
-            "Gender, Science, and Technology",
             "Environmental Justice",
-            "History of Mental Health",
+            "Medicine, Culture, and Society",
             "History of Medicine",
+            "History of Mental Health",
             "Drugs, Society, and Behavior",
-            "Health Economics and Policy",
-            "Medicine, Culture, and Society"
+            "Gender, Science, and Technology",
+            "Behavioral Neuroscience",
+            "Drugs in History",
+            "Food, Farms, and Famine"
           ]
         }
       ]
@@ -1280,17 +1280,17 @@
         {
           "amount": 3,
           "courses": [
-            "Stress and the Brain",
-            "Creative Nonfiction Writing",
             "Hormones, Brain, and Behavior",
-            "Sensibilities",
-            "Psychology of Mindfulness",
-            "Positive Psychology",
-            "Creative Writing:  Short Story",
-            "Drugs, Society, and Behavior",
             "Rensselaer Concert Choir",
+            "Ethics",
+            "Stress and the Brain",
+            "Drugs, Society, and Behavior",
             "Introduction to Psychological Science",
-            "Ethics"
+            "Psychology of Mindfulness",
+            "Creative Nonfiction Writing",
+            "Sensibilities",
+            "Positive Psychology",
+            "Creative Writing:  Short Story"
           ]
         }
       ]
