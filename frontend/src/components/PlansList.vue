@@ -14,6 +14,10 @@ export default {
     },
     computed: {
         selectedPlan() {
+            // if there are no degrees return an empty string
+            if (this.store.getDegreeNames.length === 0) {
+                return "";
+            }
             return this.store.getCurrentDegreeName;
         },
         filteredPlans() {
@@ -28,37 +32,35 @@ export default {
             return this.store.getDegreeSubNames;
         }
     },
-    methods: {
+    methods: { 
         selectPlan(val) {
+            this.store.swapDegree(this.store.findDegree(val));
+            this.current = this.store.findDegree(val);
+        },
+        selectPlanByUUID(val) {
             this.store.swapDegree(val);
-            this.current = val;
+            this.current = this.store.findDegree(val);
         },
         filterPlan(val) {
             this.filter = val;
         },
-        deletePlan(val, all = false) {
-            // if the degree is undefined, do nothing
-            this.store.removeDegree(val);
+        deletePlan(val) {
             // find the index of the next available plan
-            let index = this.store.getDegreeNames.indexOf(val) - 1;
+            let index = this.store.getDegreeNames.indexOf(this.store.findDegree(val)) - 1;
             if (index < 0) {
-                index = 0;
+              index = 0;
             }
+            this.store.removeDegree(this.store.findDegree(val));
             // if there are no plans left, create a new one send the user to the quiz page
             if (this.store.getDegreeNames.length === 0) {
                 this.$router.push("/quiz");
             }
             // show a notification to the user that the plan was deleted
-            if (all === true) {
-                this.toggleTrashIcons();
-                return;
-            } else {
-                let msg = "Plan " + '"' + val + '"' + " deleted";
-                this.showNotif("top", msg, "negative", 1250);
-                // select the next available plan
-                this.selectPlan(this.store.getDegreeNames[index]);
-                this.toggleTrashIcons();
-            }
+            let msg = "Plan " + '"' + val + '"' + " deleted";
+            this.showNotif("top", msg, "negative", 1250);
+            // select the next available plan
+            this.selectPlanByUUID(this.store.getDegreeNames[index]);
+            this.toggleTrashIcons();
         },
         deleteAllPlans() {
             this.$q
@@ -71,7 +73,7 @@ export default {
                 .onOk(() => {
                     // go through each plan and delete it
                     this.store.getDegreeNames.forEach((plan) => {
-                        this.deletePlan(plan, true);
+                        this.store.removeDegree(plan);
                     });
                     this.showNotif(
                         "top",

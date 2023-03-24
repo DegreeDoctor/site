@@ -31,19 +31,26 @@ export const useStore = defineStore("main", {
         degrees: useStorage("degrees", {}),
         darkMode: useStorage("darkMode", false),
         // Current degree to view in degree view
-        selectedDegree: useStorage("selectedDegree", ""),
+        selectedDegree: useStorage("selectedDegree", ""), // uuid
     }),
     //Act like computed in Vue
     getters: {
         getCurrentDegree: (state) => {
             if (state.selectedDegree != "") {
+                // get index from uuid
                 return state.degrees[state.selectedDegree];
             }
         },
-        getCurrentDegreeName: (state) => {
+        getCurrentDegreeName: (state) => { 
             if (state.selectedDegree != "") {
-              return state.degrees[state.selectedDegree].name;
+              let index = Object.keys(state.degrees).indexOf(state.selectedDegree);
+              return state.degrees[Object.keys(state.degrees)[index]].name;
             }
+        },
+        getCurrentDegreeIndex: (state) => {
+          if (state.selectedDegree != "") {
+              return Object.keys(state.degrees).indexOf(state.selectedDegree);
+          }
         },
         getCredits: (state) => {
           if (state.selectedDegree != "") {
@@ -56,27 +63,44 @@ export const useStore = defineStore("main", {
         getDegreeNames: (state) => {
             return Object.keys(state.degrees);
         },
+        getDegreeUUID: (state) => {
+            return Object.keys(state.degrees);
+        },
         getDegreeSubNames: (state) => {
+          // console.log(state.degrees[Object.keys(state.degrees)[getCurrentDegreeIndex]].name);
           let degreeNames = Object.keys(state.degrees);
           let degreeSubNames = [];
           degreeNames.forEach((degreeName) => {
               degreeSubNames.push(state.degrees[degreeName].name);
           });
-          console.log("HI");
           return degreeSubNames;
           
-        }
+        },
     },
     //Act like methods in Vue
     actions: {
         swapDegree(name) {
             // swap degree based uuid
-            console.log(name);
+            // console.log(name);
+            // console.log(this.selectedDegree);
             this.selectedDegree = name;
+        },
+        findDegree(name) {
+            // find degree's uuid based on name
+            let uuid = "";
+            Object.keys(this.degrees).forEach((degreeName) => {
+                if (this.degrees[degreeName].name == name) {
+                    uuid = degreeName;
+                }
+            });
+            return uuid;
         },
         addDegree(degree) {
             let uuid = uuidv4();
-            this.degrees[uuid] = degree; // degree.name is outer name
+            // console.log(degree);
+            this.degrees[uuid] = degree; // degree is an object
+            // console.log(this.degrees[uuid].name);
+            // set the objects name atrribute to the uuid
             this.selectedDegree = uuid;
         },
         updateDegree(name, degree) {
