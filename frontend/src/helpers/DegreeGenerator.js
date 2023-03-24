@@ -115,6 +115,22 @@ export function degreeGenerator (degree, programsData, coursesData) {
             credits += course["credits"][0];
         }
 
+        //sort courses to add by amount of prereqs
+        coursesToAdd.sort((a, b) => {
+            if(a["prerequisites"].length == 0 &&
+                b["prerequisites"].length == 0) {
+                return 0;
+            }
+            if(a["prerequisites"].length == 0) return 1;
+            if(b["prerequisites"].length == 0) return -1;
+
+            let aPrereqs = [...a["prerequisites"]["required"],
+                ...a["prerequisites"]["one_of"]];
+            let bPrereqs = [...b["prerequisites"]["required"],
+                ...b["prerequisites"]["one_of"]];
+            return bPrereqs.length - aPrereqs.length;
+        });
+
         while(credits > 18) {
             let course = coursesToAdd.pop();
             remainder.push(course);
