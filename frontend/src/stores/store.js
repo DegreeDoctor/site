@@ -55,6 +55,7 @@ export const useStore = defineStore("main", {
             return Object.keys(state.degrees);
         },
         templateToArray: (state) => {
+            if(!state.degrees[state.selectedDegree]) return [];
             const template = state.degrees[state.selectedDegree]["template"];
             let array = [];
             let subArray = [];
