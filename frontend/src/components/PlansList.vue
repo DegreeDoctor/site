@@ -10,6 +10,7 @@ export default {
             plan: false,
             filter: "",
             deleteIconsVisible: false,
+            deleteIconsVisibleArray: [false],
         };
     },
     computed: {
@@ -88,8 +89,11 @@ export default {
                     return;
                 });
         },
-        toggleTrashIcons() {
-            this.deleteIconsVisible = !this.deleteIconsVisible;
+        toggleTrashIcons(val) {
+            alert(val);
+            this.deleteIconsVisibleArray[val]=!this.deleteIconsVisibleArray[val];
+            alert(this.deleteIconsVisibleArray[val]);
+            //this.deleteIconsVisible = !this.deleteIconsVisible;
         },
         showNotif(position, message, type, timeout = 1250) {
             // Useful reference https://quasar.dev/quasar-plugins/notify#positioning
@@ -163,28 +167,28 @@ export default {
                 </a>
                 <a
                     class="edit"
-                    :class="{ 'hide-icon': deleteIconsVisible }"
+                    :class="{ 'hide-icon': deleteIconsVisibleArray[item] }"
                     @click="renamePlanNotification"
                 >
                     <q-icon name="fa-solid fa-pen-to-square" size="1.25em" />
                 </a>
                 <a
                     class="trash"
-                    :class="{ 'hide-icon': deleteIconsVisible }"
+                    :class="{ 'hide-icon': deleteIconsVisibleArray[item] }"
                     @click="toggleTrashIcons"
                 >
                     <q-icon name="fa-solid fa-trash" size="1.25em" />
                 </a>
                 <a
                     class="check"
-                    :class="{ 'hide-icon': !deleteIconsVisible }"
+                    :class="{ 'hide-icon': !deleteIconsVisibleArray[item] }"
                     @click="deletePlan(item)"
                 >
                     <q-icon name="fa-solid fa-check" size="1.25em" />
                 </a>
                 <a
                     class="cross"
-                    :class="{ 'hide-icon': !deleteIconsVisible }"
+                    :class="{ 'hide-icon': !deleteIconsVisibleArray[item] }"
                     @click="toggleTrashIcons"
                 >
                     <q-icon name="fa-solid fa-times" size="1.25em" />
