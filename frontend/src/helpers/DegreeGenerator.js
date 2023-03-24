@@ -90,18 +90,18 @@ export function degreeGenerator (degree, programsData, coursesData) {
     for(const i in semesters) {
         let coursesToAdd = [...semesters[i], ...remainder];
         remainder = [];
-        
-        for(const j in newSemesters[i]) {
-            let course = newSemesters[i][j];
+
+        for(const j in semesters[i]) {
+            let course = semesters[i][j];
             if(course["prerequisites"].length != 0) {
                 let prereqs = [...course["prerequisites"]["required"],
                     ...course["prerequisites"]["one_of"]];
-
                 for(const k in prereqs) {
                     let prereq = prereqs[k];
-                    for(const l in newSemesters[i]) {
-                        if(newSemesters[i][l]["name"] === prereq) {
-                            remainder.push(newSemesters[i][j]);
+                    for(const l in semesters[i]) {
+                        if(semesters[i][l]["name"].toLowerCase() === prereq.toLowerCase()
+                            && semesters[i][l]["name"] !== course["name"]) {
+                            remainder.push(semesters[i][j]);
                             coursesToAdd = coursesToAdd.filter((c) => c["name"] !== course["name"]);
                         }
                     }
