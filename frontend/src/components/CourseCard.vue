@@ -2,7 +2,8 @@
     <div class="card" @click="toggleCheck">
         <q-checkbox v-model="val" />
         <span class="name">{{ course.name }}</span>
-        <span class="bar"></span>
+        <span v-if="showBar" class="bar"></span>
+        <q-space />
         <span class="courseCode">{{ course.subject }} - {{ course.ID }}</span>
         <span class="credits">({{ course.credits[0] }})</span>
         <!--why is course.credits an array -->
@@ -51,6 +52,11 @@ export default {
         course: {
             type: Object,
             required: true,
+        },
+        showBar: {
+            type: Boolean,
+            required: false,
+            default: true,
         },
     },
     data() {
@@ -114,7 +120,7 @@ years has 2-3(?) different cases to test:
 .card {
     display: flex;
     width: 100%;
-    gap: 2px;
+    gap: 5px;
     cursor: move;
 }
 .card span {
@@ -137,7 +143,7 @@ years has 2-3(?) different cases to test:
 }
 
 .courseCode {
-    width: 11ch;
+    width: 12ch;
 }
 
 .credits {

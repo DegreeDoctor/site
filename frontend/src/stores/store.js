@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import { useStorage } from "@vueuse/core";
+import coursesJson from "../data/courses.json";
 
 export const useStore = defineStore("main", {
     state: () => ({
@@ -53,6 +54,28 @@ export const useStore = defineStore("main", {
         getDegreeNames: (state) => {
             return Object.keys(state.degrees);
         },
+        templateToArray: (state) => {
+            const template = state.degrees[state.selectedDegree]["template"];
+            let array = [];
+            let subArray = [];
+            let sem = Object.keys(template)[0];
+            for (const name in template) {
+                if (name != sem) {
+                    array.push([sem, subArray]);
+                    sem = name;
+                    subArray = [];
+                }
+                for (const i in template[name]) {
+                    if (coursesJson) {
+                        if (coursesJson[template[name][i]]) {
+                            subArray.push(coursesJson[template[name][i]]);
+                        }
+                    }
+                    subArray.push();
+                }
+            }
+            return array;
+        },
     },
     //Act like methods in Vue
     actions: {
@@ -92,30 +115,14 @@ export const useStore = defineStore("main", {
         },
         updateDegreeSemester(semester, course, action) {
             if (action == "add") {
-                console.log(`adding to ${semester}`);
                 this.degrees[this.selectedDegree].template[semester].push(
                     course
                 );
-                console.log(
-                    this.degrees[this.selectedDegree].template[semester]
-                );
             } else if (action == "remove") {
-                console.log(`removing ${course}`);
-                console.log(
-                    this.degrees[this.selectedDegree].template[semester]
-                );
                 this.degrees[this.selectedDegree].template[semester] =
                     this.degrees[this.selectedDegree].template[semester].filter(
                         (item) => item != course
                     );
-                console.log(
-                    this.degrees[this.selectedDegree].template[semester].filter(
-                        (item) => item != course
-                    )
-                );
-                console.log(
-                    this.degrees[this.selectedDegree].template[semester]
-                );
             }
         },
         deleteEverything() {
