@@ -25,6 +25,7 @@ def deep_sis_scraper():
     f.close()
     s = requests.Session()
     head = "https://sis.rpi.edu/rss/bwckctlg.p_display_courses?term_in=ZIGGSISTHEBEST&call_proc_in=&sel_subj=&sel_levl=&sel_schd=&sel_coll=&sel_divs=&sel_dept=&sel_attr="
+    #ziggs is definitely the goat of all time 😈😈
     subjectList = get_subjs()
     tail = ""
     tail = tailGenerator(subjectList)
@@ -38,7 +39,7 @@ def deep_sis_scraper():
     for tails in urlTails:
         for year in years:
             tempHead = head.replace("ZIGGSISTHEBEST", str(year))
-            webpage_response = s.get(head + tails)
+            webpage_response = s.get(tempHead + tails)
             webpage = webpage_response.content
             soup = BeautifulSoup(webpage, "html.parser")
             table = soup.find('table', class_='datadisplaytable')
@@ -145,11 +146,23 @@ def deep_sis_scraper():
                 #major restriction
 
                 #professors
+                instructorStorage = []
                 professorYear = year
                 professorSubject = subject
                 professorID = courseID
-                professorLink = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?term_in="
-                + professorYear + "&subj_in=" + professorSubject + "&crse_in=" + professorID + "&schd_in=L"
+                professorLink = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?term_in=" + professorYear + "&subj_in=" + professorSubject + "&crse_in=" + professorID + "&schd_in=L"
+                professorSoup = BeautifulSoup(professorLink, "html.parser")
+                times = professorSoup.findAll("table", {
+                    "class": "datadisplaytable",
+                    "summary": "This table lists the scheduled meeting times and assigned instructors for this class..",
+                })
+                #This allows us to clean the text up to easily find the professors, and then we grab the professor names and place them into a list
+                for time in times:
+                    split_up = [x.text for x in time.findAll("td")]
+                    instructor = split_up[6].split('(')[0]
+                    instructor = re.sub(' +', ' ', instructor).strip()
+                    if instructor != "TBA":
+                        instructorStorage.append(instructor)
 
 
                 #when offered
