@@ -10,6 +10,8 @@ Degree Doctor is a web app built in Vue that helps students create and manage a 
 I recommend using some form of Linux to handle installation and running the project locally. If you do not want to install Linux on Windows feel free to use WSL. I have never used Mac so I am not sure what the steps would be for setting up npm.
 If you are on Linux I heavily recommend using [NVM](https://github.com/nvm-sh/nvm) then installing npm through it.
 
+For Windows, go to (https://nodejs.org/en/download) and download using the windows installer. Check the "Automatically install the necessary tools..." button. Let the installer do its work through windows powershell. Once it is done, npm works. This may be the same way to install for mac.
+
 Now that you have npm installed follow the following steps to install the project on your machine:
 Navigate to the frontend folder
 ```sh
