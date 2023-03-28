@@ -60,9 +60,13 @@ export function degreeGenerator (degree, programsData, coursesData) {
             template[sem] = [...template[sem], ...courses];
         }
     }
-    
+
     for(const sem in template) {
         template[sem] = [...new Set(template[sem])];
+        for(const sem2 in template) {
+            if(sem == sem2) continue;
+            template[sem] = template[sem].filter((c) => !template[sem2].includes(c));
+        }
     }
 
     // Convert template to using course objects
@@ -94,10 +98,48 @@ export function degreeGenerator (degree, programsData, coursesData) {
         for(const j in semesters[i]) {
             let course = semesters[i][j];
             if(course["prerequisites"].length != 0) {
-                let prereqs = [...course["prerequisites"]["required"],
-                    ...course["prerequisites"]["one_of"]];
-                for(const k in prereqs) {
-                    let prereq = prereqs[k];
+                const reqs = course["prerequisites"]["required"];
+                let pushed_back = false;
+                for(const k in reqs) {
+                    let prereq = reqs[k];
+                    for(const l in semesters[i]) {
+                        if(semesters[i][l]["name"].toLowerCase() === prereq.toLowerCase()
+                            && semesters[i][l]["name"] !== course["name"]) {
+                            //if the other course has this course as a prereq, ignore it
+                            let otherCourse = semesters[i][l];
+                            if(otherCourse["prerequisites"].length != 0) {
+                                const otherReqs = otherCourse["prerequisites"]["required"];
+                                let needBreak = false;
+                                for(const m in otherReqs) {
+                                    if(otherReqs[m].toLowerCase() === course["name"].toLowerCase()) {
+                                        needBreak = true;
+                                        break;
+                                    }
+                                }
+                                if(needBreak) break;
+                            }
+                            remainder.push(semesters[i][j]);
+                            coursesToAdd = coursesToAdd.filter((c) => c["name"] !== course["name"]);
+                            pushed_back = true;
+                        }
+                    }
+                }
+                if(pushed_back) continue;
+
+                const one_of = course["prerequisites"]["one_of"];
+                let one_of_taken = false;
+                for(const k in one_of) {
+                    let prereq = one_of[k];
+                    for(const l in coursesTaken) {
+                        if(coursesTaken[l]["name"].toLowerCase() === prereq.toLowerCase()) {
+                            one_of_taken = true;
+                        }
+                    }
+                }
+                if(one_of_taken) continue;
+
+                for(const k in one_of) {
+                    let prereq = one_of[k];
                     for(const l in semesters[i]) {
                         if(semesters[i][l]["name"].toLowerCase() === prereq.toLowerCase()
                             && semesters[i][l]["name"] !== course["name"]) {
