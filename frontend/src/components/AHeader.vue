@@ -132,7 +132,7 @@ export default {
 }
 .image-container {
   position: absolute;
-  top: 3.8%;
+  top: 4.8%;
   right: 20%;
   transform: translate(-50%,-50%);
   z-index: 2; /* Makes sure this is on top */
@@ -175,8 +175,7 @@ justify-content: space-between;
   width: 100%;
   background: white;
 }   
-/* Slides the image from right (150px) to left (-250px) */
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1440px){
     @keyframes image-slide {
         0% { transform: translateX(-390px) scale(0); }
         60% { transform: translateX(-390px) scale(1); }
@@ -193,7 +192,8 @@ justify-content: space-between;
 
     }
 }
-@media screen and (max-width: 1000px){
+/* Slides the image from right (150px) to left (-250px) */
+@media screen and (max-width: 1440px){
     @keyframes image-slide {
         0% { transform: translateX(-390px) scale(0); }
         60% { transform: translateX(-390px) scale(1); }
@@ -205,13 +205,109 @@ justify-content: space-between;
         75%{ width: 100%; }
         60% { width: 0; }
         0% { width: 0; }
+        75%{ width: 100%; }
+        100% { width: 0%; }
 
     }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 1024px){
+.image-container {
+    position: absolute;
+    top: 6%;
+    right: 10%;
+    transform: translate(-50%,-50%);
+    z-index: 2; /* Makes sure this is on top */
+}
+.DD {
+display: flex;
+align-items:center;
+justify-content: space-between;
+position: absolute;
+top: 2.88em;
+right:70%;
+transform: translate(-50%,-50%);
+z-index: 1; /* Places this below the image container */
+margin-left: -1000px;
+}
+.DD .fading-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: turquoise;
+  -webkit-animation: text-slide 4s cubic-bezier(.1, 0, 0.5, 0.5);
+  animation: text-slide s cubic-bezier(.1, 0, 0.5, 0.5);
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+.fading-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: white;
+}  
+
     @keyframes image-slide {
-        0% { transform: translateX(80px) scale(0); }
-        60% { transform: translateX(80px) scale(1); }
+        0% { transform: translateX(-350px) scale(0); }
+        60% { transform: translateX(-350px) scale(1); }
+        90% { transform: translateX(-800px) scale(1); }
+        100% { transform: translateX(-800px) scale(1); }  
+    }
+    @keyframes text-slide {
+        100% { width: 100%; }
+        75%{ width: 100%; }
+        60% { width: 0; }
+        0% { width: 0; }
+        75%{ width: 100%; }
+        100% { width: 0%; }
+
+    }
+}
+@media screen and (max-width: 768px){
+.image-container {
+position: absolute;
+top: 6%;
+right: 85%;
+transform: translate(-50%,-50%);
+z-index: 2; /* Makes sure this is on top */
+}
+.DD {
+display: flex;
+align-items:center;
+justify-content: space-between;
+position: absolute;
+top: 2.88em;
+right: 70%;
+transform: translate(-50%,-50%);
+z-index: 1; /* Places this below the image container */
+margin-left: -1000px;
+}
+.DD .fading-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: turquoise;
+  -webkit-animation: text-slide 4s cubic-bezier(.1, 0, 0.5, 0.5);
+  animation: text-slide s cubic-bezier(.1, 0, 0.5, 0.5);
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+.fading-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: white;
+}  
+    @keyframes image-slide {
+        0% { transform: translateX(235px) scale(0); }
+        60% { transform: translateX(235px) scale(1); }
         90% { transform: translateX(-80px) scale(1); }
         100% { transform: translateX(-80px) scale(1); }  
     }
@@ -220,6 +316,8 @@ justify-content: space-between;
         75%{ width: 100%; }
         60% { width: 0; }
         0% { width: 0; }
+        75%{ width: 100%; }
+        100% { width: 0%; }
     }
 }
 
@@ -311,4 +409,149 @@ button{
     font: 2rem;
     text-decoration: none;
 }
-</style>
+
+@media screen and (max-width: 768px){
+    .image-container {
+    position: absolute;
+    top: 6%;
+    right: 62%;
+    transform: translate(-50%,-50%);
+    z-index: 2; /* Makes sure this is on top */
+    }
+    .DD {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    position: absolute;
+    top: 2.88em;
+    right: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 1; /* Places this below the image container */
+    margin-left: -1000px;
+    }
+    .DD .fading-effect {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      background: turquoise;
+      -webkit-animation: text-slide 4s cubic-bezier(.1, 0, 0.5, 0.5);
+      animation: text-slide s cubic-bezier(.1, 0, 0.5, 0.5);
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards;
+    }
+    .fading-effect {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      background: white;
+    }  
+        @keyframes image-slide {
+            0% { transform: translateX(-80px) scale(0); }
+            60% { transform: translateX(-80px) scale(1); }
+            90% { transform: translateX(-80px) scale(1); }
+            100% { transform: translateX(-80px) scale(1); }  
+        }
+        @keyframes text-slide {
+            100% { width: 100%; }
+            75%{ width: 100%; }
+            60% { width: 0; }
+            0% { width: 0; }
+            75%{ width: 100%; }
+            100% { width: 0%; }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #title{
+        display:flex;
+        color:black;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding-bottom: 3px;
+        justify-content: space-around;
+        /* position: relative; */
+    
+    }
+    /* #logo{
+        animation: 1s slideright;
+    } */
+    /* @keyframes slideleft{
+        from {
+        margin-left: -10%;
+        width: 300%;
+      }
+    
+      to {
+        margin-right: 0%;
+        width: 500%;
+      }
+    } */
+    @keyframes slideright{
+        from {
+        margin-left: -10%;
+        width: 200%;
+      }
+    
+      to {
+        margin-right: 0%;
+        width: 300%;
+      }
+    }
+    
+    
+    #plans{
+        /* color:white;  */
+        text-decoration:none;
+    }
+    .navbar-left{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        animation: 1s slideright ;
+        animation-fill-mode: forwards;
+    }
+    
+    .navbar-right{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; 
+    
+    }
+    
+    .navbar img{
+        width: 3rem;
+        height: 3rem;
+    }
+    button{
+        background-color: blue;
+        border-radius: .2rem;
+    }
+    .card-contain {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 1em;
+    }
+    .Degree_Doctor{
+        font: 2rem;
+        text-decoration: none;
+    }
+    </style>
+    
