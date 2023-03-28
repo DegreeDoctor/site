@@ -1,54 +1,4 @@
 export function degreeGenerator (degree, programsData, coursesData) {
-    /* Degree is formatted as follows
-        "name" {
-            //Credits
-            // Object of lists formatted as: {"course1": 4, "Course2", 3}
-            credits   {},
-            //Name of degree user defined
-            name: "",
-            //List of major names
-            majors: [],
-            //List of minor names
-            minors: [],
-            //Name of pathway
-            pathway: "",
-            //Name of concentration
-            concentration: "",
-            // Template see program_template_specs.json in backend for it
-            template: {
-                // Each Semester labeled by number for year and name of semester
-                // Contains a list of courses
-                1-Fall: [
-                ],
-            }
-        }
-    */
-
-    /*
-    COurse looks like the following
-    "Introduction to Cellular and Molecular Biology Laboratory": {
-        "ID": "2125",
-        "credits": [1],
-        "crosslisted": {},
-        "description": "The goal of this course is to gain practical experience with cellular and molecular biology through handson experimental techniques The laboratory exercises are designed to illustrate current concepts in cellular and molecular biology",
-        "name": "Introduction to Cellular and Molecular Biology Laboratory",
-        "offered": {
-            "semesters": ["fall", "spring", "summer"],
-            "year": "all"
-        },
-        "prerequisites": {
-            "one_of": [],
-            "required": ["BIOL-2120", "BIOL-1010"]
-        },
-        "professors": [],
-        "properties": {
-            "CI": false,
-            "MR": false
-        },
-        "subject": "BIOL"
-    },
-    */
-
     let template = {};
     for(const i in degree["majors"]) {
         let temp = programsData["2022-2023"][degree["majors"][i]]["template"];
@@ -91,6 +41,7 @@ export function degreeGenerator (degree, programsData, coursesData) {
 
     let remainder = [];
     let newSemesters = [];
+    let coursesTaken = [];
     for(const i in semesters) {
         let coursesToAdd = [...semesters[i], ...remainder];
         remainder = [];
@@ -179,6 +130,7 @@ export function degreeGenerator (degree, programsData, coursesData) {
             credits -= course["credits"][0];
         }
 
+        coursesTaken = [...coursesTaken, ...coursesToAdd];
         newSemesters.push(coursesToAdd);
     }
 
