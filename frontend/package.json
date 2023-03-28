@@ -13,6 +13,7 @@
         "@vueuse/core": "^9.3.0",
         "pinia": "^2.0.21",
         "quasar": "^2.8.4",
+        "uuid": "^9.0.0",
         "vue": "^3.2.38",
         "vue-draggable-next": "^2.1.1",
         "vue-router": "^4.1.5"

@@ -1,0 +1,5231 @@
+{
+  "A Passion for Physics": {
+    "ID": "1010",
+    "credits": [
+      1
+    ],
+    "crosslisted": [],
+    "description": "A weekly onehour seminar by physics department faculty members in which they describe their scientific and research interests at a level suitable for firstyear college students This course is graded satisfactoryunsatisfactory",
+    "name": "A Passion for Physics",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": [],
+    "professors": [
+      "Esther Alexandra Wertz"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Abstract Algebra": {
+    "ID": "4010",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Groups rings polynomial rings fields integral domains with emphasis on group theory homomorphisms and isomorphisms normal subgroups cosets ideals modules quotient groups and quotient rings other topics chosen from number theory polynomials and Galois Theory",
+    "name": "Abstract Algebra",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-4100"
+      ]
+    },
+    "professors": [
+      "Gina Irene Kucinski",
+      "Chjan C Lim",
+      "Bruce Piper"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Advanced Calculus": {
+    "ID": "4600",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "A course emphasizing advanced concepts and methods from calculus Topics include multivariable integral theorems Greens divergence Stokes Reynolds transport extrema of multivariable functions including Taylors theorem and Lagrange multipliers the calculus of variations EulerLagrange equations constraints principle of least action and Cartesian tensors calculus invariants representations",
+    "name": "Advanced Calculus",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-2010"
+      ]
+    },
+    "professors": [
+      "Ashwani Kumar Kapila",
+      "Mohamed Boudjelkha",
+      "Wing Sze E Kam",
+      "Eliane Zerbetto Traldi",
+      "Gregor Kovacic",
+      "Jeffrey William Banks"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Advanced Cell Biology": {
+    "ID": "4260",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BIOL-6260"
+    ],
+    "description": "This course is designed to enable students to understand how an organism functions at the cellular and molecular level and further how this functioning is regulated so that cells can adapt to changes in their environment Students will learn the fundamental components of the cell from protein to organelle their characteristics and how these components function in both normal and diseased cells Students will also learn biochemical structural and mechanical aspects of cell functioning and regulation in normal and diseased cells In addition students will learn to critically read current scientific literature By reading current literature students will gain knowledge of the practice and presentation of science as well as learn about new techniques and findings",
+    "name": "Advanced Cell Biology",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "BIOL-4620",
+          "BIOL-4760"
+        ]
+      ],
+      "required": [
+        "BIOL-2120"
+      ]
+    },
+    "professors": [
+      "Lee Ligon",
+      "Scott Thomas Forth"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Advanced Cell Biology Laboratory": {
+    "ID": "4740",
+    "credits": [
+      6
+    ],
+    "crosslisted": [],
+    "description": "Students will learn a variety of modern cell biology techniques such as cell culture genetic analysis immunocytochemistry fluorescence microscopy and live cell imaging Using these techniques students will investigate the function of genetically manipulated proteins in cells In the last third of the semester students will develop independent experimental research plans to address questions of interest to the student This is a communicationintensive course",
+    "name": "Advanced Cell Biology Laboratory",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2120",
+        "BIOL-2125",
+        "BIOL-2500"
+      ]
+    },
+    "professors": [
+      "Michael T Klein"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Advanced Computer Graphics": {
+    "ID": "4530",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6530"
+    ],
+    "description": "This course will survey classic papers and current research in computer graphics Topics include advanced ray tracing global illumination photon mapping subsurface scattering mesh generation and simplification subdivision surfaces volumetric modeling procedural modeling and texturing weathering physical simulation appearance models Course activities include programming assignments oral presentations and a term project",
+    "name": "Advanced Computer Graphics",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "odd"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "CSCI-2600",
+          "ECSE-4750"
+        ]
+      ],
+      "required": [
+        "CSCI-2300"
+      ]
+    },
+    "professors": [
+      "Barbara Cutler"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Approximation Algorithms": {
+    "ID": "4040",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6040"
+    ],
+    "description": "Algorithms with provable guarantees on the quality of their solutions are a powerful way of dealing with intractable problems This course covers fundamental techniques for designing approximation algorithms Possible topics include semidefinite and linear programming inapproximability and the PCP theorem randomized rounding metrics and cuts primaldual methods and online algorithms",
+    "name": "Approximation Algorithms",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "odd"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-4020"
+      ]
+    },
+    "professors": [
+      "Elliot I. Anshelevich"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Art and Science of Mathematics I": {
+    "ID": "1900",
+    "credits": [
+      1
+    ],
+    "crosslisted": [],
+    "description": "A seminar for firstyear math majors The weekly studentfaculty discussions will vary but examples of topics are unsolved math problems countability and the arithmetic of the infinite topology and the concept of dimension geometry and onesided surfaces and the theory underlying topics currently covered in calculus",
+    "name": "Art and Science of Mathematics I",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [
+      "Eliane Zerbetto Traldi",
+      "Gregor Kovacic",
+      "Jeffrey William Banks"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Mathematics"
+      ]
+    },
+    "subj": "MATH"
+  },
+  "Art and Science of Mathematics II": {
+    "ID": "1910",
+    "credits": [
+      1
+    ],
+    "crosslisted": [],
+    "description": "A seminar for firstyear math majors The weekly studentfaculty discussions will vary but examples of topics are unsolved math problems countability and the arithmetic of the infinite topology and the concept of dimension geometry and onesided surfaces and the theory underlying topics currently covered in calculus",
+    "name": "Art and Science of Mathematics II",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Mathematics"
+      ]
+    },
+    "subj": "MATH"
+  },
+  "Beginning Programming for Engineers": {
+    "ID": "1190",
+    "credits": [
+      1
+    ],
+    "crosslisted": [],
+    "description": "This course teaches elementary programming concepts using the MATLAB environment for engineering students with little or no prior programming experience Concepts include variables looping and function calls Students cannot get credit for CSCI 1190 after earning credit for CSCI 1100 or any higherlevel CSCI course",
+    "name": "Beginning Programming for Engineers",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": [],
+    "professors": [
+      "Ying Liu"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Biochemistry Laboratory": {
+    "ID": "4710",
+    "credits": [
+      6
+    ],
+    "crosslisted": [
+      "BCBP-4710"
+    ],
+    "description": "Major principles of biochemistry are illustrated as students purify and analyze specific proteins Experience is obtained with various techniques including protein extraction from bacteria and tissues chromatography ultracentrifugation spectrophotometric analysis and electrophoresis The course includes extensive handson laboratory work as well as the writing of indepth reports This is a communicationintensive course",
+    "name": "Biochemistry Laboratory",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2120",
+        "BIOL-2125"
+      ]
+    },
+    "professors": [
+      "Eric Matthew Rutledge",
+      "Laura Manno Christian"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Biomedical Research": {
+    "ID": "4980",
+    "credits": [
+      6
+    ],
+    "crosslisted": [],
+    "description": "Independent research in health sciences supervised by a faculty member for the purpose of developing research skills Such skills include defining a research project both as a written and oral exercise for a scientific and general audience and gathering preliminary research data enabling both a written and oral description of the project in the form of a research proposal and an oral defense Open to students in the accelerated physicianscientist curriculum only This course is the Culminating Experience for students in this program This is a communicationintensive course",
+    "name": "Biomedical Research",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [
+      "Douglas Martin Swank",
+      "Michael H Hanna"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": true,
+      "majorRestriction": [
+        "Biology"
+      ]
+    },
+    "subj": "BIOL"
+  },
+  "Biostatistics": {
+    "ID": "4200",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "An introduction to the concepts and techniques of modern statistics Computerbased inclass sessions will emphasize handson application of statistical techniques using data and examples drawn from the biological and medical sciences Preclass online exercises will prepare students for indepth classroom explorations Topics covered will include sampling regression analysis of variance and factor analysis MANOVA maximum likelihood methods discriminant analysis time series analysis and forecasting The final project requires analysis of a major researchrelated data set and writeup of results in the format of a scientific paper",
+    "name": "Biostatistics",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-1010",
+        "BIOL-1010"
+      ]
+    },
+    "professors": [
+      "Jonathan T Stetler",
+      "Jeremy Lynch Farrell",
+      "Bradford C Lister",
+      "Kevin Christopher Rose"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Biochemistry",
+        "Biophysics"
+      ]
+    },
+    "subj": "BIOL"
+  },
+  "Calculus I": {
+    "ID": "1010",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Functions limits continuity derivatives implicit differentiation related rates maxima and minima elementary transcendental functions introduction to definite integral with applications to area and volumes of revolution Students cannot get credit for both MATH 1010 and MATH 1500",
+    "name": "Calculus I",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": [],
+    "professors": [
+      "Belmiro Galo da Silva",
+      "Kseniya Yevgenyevna Klyachko",
+      "Elisabeth Maria Brown",
+      "David A Schmidt",
+      "Wing Sze E Kam",
+      "Bruce Piper",
+      "Eliane Zerbetto Traldi",
+      "Gina Irene Kucinski",
+      "Margaret Z. Kiehl"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Calculus II": {
+    "ID": "1020",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Techniques and applications of integration polar coordinates parametric equations infinite sequences and series vector functions and curves in space functions of several variables and partial derivatives",
+    "name": "Calculus II",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-1010"
+      ]
+    },
+    "professors": [
+      "Belmiro Galo da Silva",
+      "Kseniya Yevgenyevna Klyachko",
+      "Daniel Franklin Stevenson",
+      "Elisabeth Maria Brown",
+      "Bruce Piper",
+      "Eliane Zerbetto Traldi",
+      "Gina Irene Kucinski",
+      "Margaret Z. Kiehl"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Calculus for Architecture Management and HASS": {
+    "ID": "1500",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "",
+    "name": "Calculus for Architecture Management and HASS",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Architecture"
+      ]
+    },
+    "subj": "MATH"
+  },
+  "Cellular Neuroscience": {
+    "ID": "4150",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BIOL-6150"
+    ],
+    "description": "Neurons are uniquely organized to facilitate signal transmission and information processing in the brain This course will examine the mechanisms that develop and maintain neurons the unusual cellbiological problems these cells solve and the experimental tools that drive modern neuroscience research Students will read current scientific literature evaluate it critically and develop a research project",
+    "name": "Cellular Neuroscience",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "BIOL-4260"
+        ]
+      ],
+      "required": [
+        "BIOL-4100"
+      ]
+    },
+    "professors": [
+      "Marvin D Bentley"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Computability and Logic": {
+    "ID": "4030",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "PHIL-4420"
+    ],
+    "description": "This course covers basic concepts and results in mathematical logic and computability theory including decision procedures automated theorem proving techniques for truthfunctional and firstorder logic axiomatizations of set theory and arithmetic Turing Machines Abacus Machines recursive functions the ChurchTuring Thesis the halting problem undecidability of firstorder logic undecidability of arithmetic and Godels incompleteness results",
+    "name": "Computability and Logic",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "odd"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "PHIL-2140",
+          "CSCI-2200"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Bram Van Heuveln"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Computational Finance": {
+    "ID": "4120",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6120"
+    ],
+    "description": "Introduction to the computational and mathematical techniques for practical financial applications The course will emphasize the algorithmic side of finance Topics will be selected from pricing options and derivatives trading riskevaluation selfish agents sequential decisions and portfolio optimization Examples of the mathematical and algorithmic techniques covered are martingale measures riskneutral pricing and Monte Carlo dynamic programing and stochastic processes",
+    "name": "Computational Finance",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "UIA"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300"
+      ]
+    },
+    "professors": [
+      "Malik Magdon-Ismail"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Computational Geometry": {
+    "ID": "4560",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6560"
+    ],
+    "description": "We will study theoretical and practical solutions to computational geometry problems found in computer graphics visualization vision robotics engineering manufacturing and geographic information systems Topics include convex hulls halfplanes Voronoi diagrams Delaunay triangulations binary space partitions motion planning visibility and meshes Course activities include programming assignments written homework with proofs of computational complexity and a term project with presentation",
+    "name": "Computational Geometry",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "UIA"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300",
+        "CSCI-2600"
+      ]
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Computational Physics": {
+    "ID": "4810",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Computational physics studies the implementation of numerical algorithms to solve problems of physics which do not have analytical solutions Upon completion of this course students will be able to solve physics problems from a variety of fields under realistic conditions using modern architectures such as graphical processing units and supercomputers This course makes extensive use of computers but remains a physics course where students enrich their understanding of physical phenomena A culminating experience project is required",
+    "name": "Computational Physics",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-1100",
+        "PHYS-1100",
+        "PHYS-1200"
+      ]
+    },
+    "professors": [
+      "Vincent Meunier",
+      "Damien J. West",
+      "Trevor David Rhone"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Computational Social Processes": {
+    "ID": "4110",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6110"
+    ],
+    "description": "Introduction to the computational and algorithmic aspects of social processes Topics covered will be selected to illustrate the diverse challenges in algorithmic social process analysis social networks and their dynamics information flow hidden networks Algorithms involving social and selfish agents social choice theory voting and auctions Ranking actors in networks recommendation systems peerreview and aggregation of rankingsreviews",
+    "name": "Computational Social Processes",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "UIA"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300"
+      ]
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Computational Vision": {
+    "ID": "4270",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6270"
+    ],
+    "description": "The goal of this course is to introduce students to the problems challenges and applications of computer vision from a computational perspective Topics include camera modeling and image formation feature extraction object and face recognition image mosaic construction stereo and threedimensional imaging motion and tracking Machine learning methods including deep convolutional neural networks will be studied and applied throughout the course",
+    "name": "Computational Vision",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300",
+        "MATH-2010"
+      ]
+    },
+    "professors": [
+      "Charles V Stewart"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Computer Organization": {
+    "ID": "2500",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Introduction to computer organization assembler language and operating systems Computer systems organization processors memory IO Digital logic gates Boolean algebra digital logic circuits memory buses Microprogramming Machine level instruction formats addressing modes instruction types flow of control Operating systems virtual memory virtual IO instructions processes interprocess communication Numeric representation Assembler language the assembly process macros linking loading Advanced architectures RISC architectures parallel architectures",
+    "name": "Computer Organization",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-1200"
+      ]
+    },
+    "professors": [
+      "Konstantin Kuzmin",
+      "Shianne M. Hulbert",
+      "David Eric Goldschmidt",
+      "Christopher D. Carothers",
+      "George M. Slota"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Computer Science I": {
+    "ID": "1100",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "An introduction to computer programming algorithm design and analysis Additional topics include basic computer organization internal representation of scalar and array data use of topdown design and subprograms to tackle complex problems abstract data types Enrichment material as time allows Interdisciplinary case studies numerical and nonnumerical applications Students who have passed CSCI 1200 cannot register for this course",
+    "name": "Computer Science I",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": [],
+    "professors": [
+      "Wesley D Turner",
+      "Uzma Mushtaque"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Contemporary Mathematical Ideas in Society": {
+    "ID": "1620",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "An applicationoriented course introducing contemporary mathematical concepts that pertain to areas of Architecture and Humanities Arts and Social Sciences The course will cover growth and form symmetry patterns tilings linear programming information coding voting systems game theory logic probability and statistics",
+    "name": "Contemporary Mathematical Ideas in Society",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "MATH-1010",
+          "MATH-1500"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Cryptography and Network Security I": {
+    "ID": "4230",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6230"
+    ],
+    "description": "A selfcontained course that includes topics from number theory basic cryptography and protocol security This is a hybrid course with sufficient depth in both theory and handson experience with network protocols Topics include Classical Cryptography Block Ciphers DES AES Information Theoretical Cryptography Randomness RNG and Stream Ciphers Hash and MAC Algorithms PublicKey Cryptography Elliptic Curve Cryptography Digital Signatures and Identification Internet Attacks Web Security SSL and PGP This is a communicationintensive course",
+    "name": "Cryptography and Network Security I",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-4210",
+        "CSCI-2300",
+        "CSCI-4220"
+      ]
+    },
+    "professors": [
+      "Bulent Yener"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Cryptography and Network Security II": {
+    "ID": "4240",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6240"
+    ],
+    "description": "A course covering advanced security topics with depth both in theory and handson exercises Topics include Probabilistic Encryption Deniable Cryptography Hardcore Predicates AllorNothing Encryption Secret Sharing SubliminalCovert Channels Mental Poker GoldwasserMicali and BlumGoldwasser Cryptosystems Paillier PKC and Homomorphism Elliptic Curve Cryptography and Blind Signatures and Ecash",
+    "name": "Cryptography and Network Security II",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "ECSE-4670",
+          "CSCI-4230",
+          "CSCI-4220",
+          "CSCI-4210"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Culminating Experience Project": {
+    "ID": "4910",
+    "credits": [
+      1
+    ],
+    "crosslisted": [],
+    "description": "Independent study to accompany designated capstone courses in Physics and Astronomy Designated courses are ASTR 4220 Astrophysics ASTR 4240 Gravitation and Cosmology ASTR 4510 Origins of Life a Cosmic Perspective PHYS 4810 Computational Physics PHYS 4620 Elementary Particle Physics PHYS 4240 General Relativity ASTR 4120 Observational Astronomy PHYS 4630 Lasers and Optical Systems PHYS 4640 Optical Communications and Integrated Optics PHYS 4720 Solid State Physics",
+    "name": "Culminating Experience Project",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "ASTR-4240",
+          "ASTR-4220",
+          "ASTR-4510",
+          "ASTR-4120",
+          "PHYS-4630",
+          "PHYS-4640",
+          "PHYS-4620",
+          "PHYS-4240",
+          "PHYS-4720",
+          "PHYS-4810"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Peter Persans"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Cytoskeletal Biology": {
+    "ID": "4140",
+    "credits": [
+      2
+    ],
+    "crosslisted": [
+      "BIOL-6140"
+    ],
+    "description": "This course is an indepth study of current research within the broad field of cytoskeletal biology Students will read interpret and critique recent primary literature present new findings lead discussions and identify rising questions in the field",
+    "name": "Cytoskeletal Biology",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-4260"
+      ]
+    },
+    "professors": [
+      "Marvin D Bentley"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Data Analytics": {
+    "ID": "4600",
+    "credits": [
+      3
+    ],
+    "crosslisted": [
+      "ITWS-6600",
+      "ITWS-4600",
+      "BCBP-4600"
+    ],
+    "description": "The world atlarge is confronted with increasingly larger and complex sets of structuredunstructured information from cyber and human sources Traditional enterprises are moving toward analyticsdriven approaches for core business functions Data and information analytics extends analysis descriptive models of data by using data mining and machine learning methods with optimization and validation to recommend action or guide and communicate decisionmaking Thus analytics is an entire methodology rather than individual analyses or analysis steps",
+    "name": "Data Analytics",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "ERTH-6350",
+        "ITWS-4350",
+        "CSCI-4350",
+        "ERTH-4350",
+        "CSCI-6350",
+        "ITWS-6350"
+      ]
+    },
+    "professors": [
+      "Thilanka Munasinghe"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Data Mining": {
+    "ID": "4390",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6390"
+    ],
+    "description": "This course will provide an introductory survey of the main topics in data mining and knowledge discovery in databases KDD including classification clustering association rules sequence mining similarity search deviation detection and so on Emphasis will be on the algorithmic and system issues in KDD as well as on applications such as Web mining multimedia mining bioinformatics geographical information systems etc",
+    "name": "Data Mining",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300"
+      ]
+    },
+    "professors": [
+      "Mohammed J. Zaki"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Data Science": {
+    "ID": "4350",
+    "credits": [
+      3
+    ],
+    "crosslisted": [
+      "ERTH-6350",
+      "ITWS-4350",
+      "ERTH-4350",
+      "CSCI-6350",
+      "ITWS-6350"
+    ],
+    "description": "Data science is advancing the inductive conduct of science and is driven by the greater volumes complexity and heterogeneity of data being made available over the Internet It combines aspects of data management library science computer science and physical science It is changing the way all of these disciplines do both their individual and collaborative work Key methodologies in application areas based on real research experience are taught",
+    "name": "Data Science",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-1200",
+        "CSCI-4380"
+      ]
+    },
+    "professors": [
+      "Thilanka Munasinghe"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Data Structures": {
+    "ID": "1200",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Programming concepts functions parameter passing pointers arrays strings structs classes templates Mathematical tools sets functions and relations order notation complexity of algorithms proof by induction Data structures and their representations data abstraction and internal representation sequences trees binary search trees associative structures Algorithms searching and sorting generic algorithms iterative and recursive algorithms Methods of testing correctness and measuring performance",
+    "name": "Data Structures",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-1100"
+      ]
+    },
+    "professors": [
+      "Barbara Cutler",
+      "Jasmine A. Plum"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Data and Society": {
+    "ID": "4370",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6370"
+    ],
+    "description": "Data and Society provides a broad overview of how society is leveraging and responding to the social organizational policy and technical opportunities and challenges of a datadriven world Course themes focus on various aspects of the data ecosystem data and innovation and data and the broader community Assignments build writing presentation and critical thinking and assessment skills all of which are important for professional success This is a communicationintensive course",
+    "name": "Data and Society",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "CSCI-4350",
+          "CSCI-6350",
+          "ITWS-4350",
+          "ITWS-6350"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "James A. Hendler",
+      "Francine D. Berman"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Database Systems": {
+    "ID": "4380",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Discussion of the state of practice in modern database systems with an emphasis on relational systems Topics include database design database system architecture SQL normalization techniques storage structures query processing concurrency control recovery security and new directions such as objectoriented and distributed database systems Students gain handson experience with commercial database systems and interface building tools Programming projects are required",
+    "name": "Database Systems",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300"
+      ]
+    },
+    "professors": [
+      "Sibel Adali",
+      "Konstantin Kuzmin",
+      "Samuel Bernt Johnson"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Design and Analysis of Algorithms": {
+    "ID": "4020",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "This course presents fundamental ideas and techniques of modern algorithm design and analysis After completing this course students should be able to formally analyze and design efficient algorithms for a variety of computational problems Topics covered include Greedy Algorithms Dynamic Programming Network Flow NPCompleteness Linear Programming Network Algorithms as well as probabilistic and approximate algorithms",
+    "name": "Design and Analysis of Algorithms",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300"
+      ]
+    },
+    "professors": [
+      "Shianne M. Hulbert",
+      "Elliot I. Anshelevich"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Developmental Biology": {
+    "ID": "4250",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Model systems provide the experimental basis for understanding the conserved principles of developmental biology This class will cover fundamental topics including axis specification pattern formation cell fate and determination cell differentiation senescence and apoptosis Emphasis will be placed on integrating gene function and cell behavior with development Model systems include vertebrates eg frog and chick and genetically tractable invertebrates eg fruit flies and roundworms",
+    "name": "Developmental Biology",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2500",
+        "BIOL-2120"
+      ]
+    },
+    "professors": [
+      "Brian Hans Jensen",
+      "Douglas Martin Swank"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Distributed Computing Over The Internet": {
+    "ID": "4500",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6500"
+    ],
+    "description": "This course will enable students to understand and apply theoretical foundations of programming concurrent distributed and mobile computing systems namely process calculi actors join calculus and mobile ambients In the practical part students will compare communication and synchronization aspects in concurrent programming languages following these theoretical models Students will also review current research on distributed computing over the Internet on topics including but not limited to coordination mobility heterogeneity security fault tolerance scalability programmability and verification",
+    "name": "Distributed Computing Over The Internet",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "CSCI-4210",
+          "CSCI-4220"
+        ]
+      ],
+      "required": [
+        "CSCI-4430"
+      ]
+    },
+    "professors": [
+      "Shianne M. Hulbert"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Distributed Systems and Algorithms": {
+    "ID": "4510",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6510"
+    ],
+    "description": "This course explores the principles of distributed systems emphasizing fundamental issues underlying the design of such systems communication coordination synchronization and faulttolerance Key algorithms and theoretical results will be studied and students will explore how these foundations play out in modern systems and applications",
+    "name": "Distributed Systems and Algorithms",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-4210"
+      ]
+    },
+    "professors": [
+      "Stacy Elizabeth Patterson"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Electromagnetic Theory": {
+    "ID": "4210",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Field theory of electricity and magnetism with emphasis on solving boundary value problems Dielectric and magnetic materials Maxwells equations and wave propagation with applications to optics Relativistic electrodynamics",
+    "name": "Electromagnetic Theory",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "MATH-4600",
+          "MATH-4700"
+        ]
+      ],
+      "required": [
+        "PHYS-2210"
+      ]
+    },
+    "professors": [
+      "Julian S. Georg",
+      "Vincent Meunier",
+      "Ethan Craig Brown",
+      "Ingrid Wilke",
+      "Esther Alexandra Wertz"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Elementary Particle Physics": {
+    "ID": "4620",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Survey of the elementary particles and their interactions Historical introduction and discussion of experimental apparatus and particle accelerators Relativistic kinematics and incorporation into quantum field theory including Feynman diagrams Bound states and the quark model Symmetries and their manifestation Neutrino oscillations and gauge theories Quantum electrodynamics the electroweak interaction quantum chromodynamics and prospects for grand unification A culminating experience project is required",
+    "name": "Elementary Particle Physics",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "PHYS-4100"
+      ]
+    },
+    "professors": [
+      "Joel T. Giedt"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Evolution": {
+    "ID": "4860",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Phylogeny and the patterns of evolution in the fossil record geography of evolution biodiversity origin of genetic variation genetic drift natural selection and adaptation genetic theory of natural selection evolution of phenotypic traits conflict and cooperation speciation fitness coevolution genomic evolution evolution and development macroevolution evolutionary science and society Lectures student presentations and peer learning",
+    "name": "Evolution",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2500"
+      ]
+    },
+    "professors": [
+      "Jeremy Lynch Farrell"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Experimental Physics": {
+    "ID": "2350",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Experiments in mechanics optics electricity and electromagnetics oscillations and waves atomic nuclear and solidstate physics Experimental methods quantitative observations and interpretation of data This is a communicationintensive course",
+    "name": "Experimental Physics",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "PHYS-2220"
+      ]
+    },
+    "professors": [
+      "Vincent Meunier",
+      "Joseph Darryl Michael"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Foundation of Analysis": {
+    "ID": "4090",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "The course provides an opportunity for the development of theoremproving skills in the field of mathematical analysis Expansion of a knowledge base comes as a byproduct of energy expended in theorem proving and subsequent exposition Analysis topics included are sets functions the real numbers cardinality induction decimal representations of real numbers Euclidean spaces abstract vector spaces and metric spaces This is a communicationintensive course",
+    "name": "Foundation of Analysis",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-2010"
+      ]
+    },
+    "professors": [
+      "Daniel Franklin Stevenson",
+      "Harry W McLaughlin",
+      "Bruce Piper",
+      "Eliane Zerbetto Traldi",
+      "Margaret Z. Kiehl"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": true,
+      "majorRestriction": [
+        "Mathematics"
+      ]
+    },
+    "subj": "MATH"
+  },
+  "Foundations of Applied Mathematics": {
+    "ID": "4700",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Mathematical formulation of models for various processes Derivation of relevant differential equations from conservation laws and constitutive relations Use of dimensional analysis scaling and elementary perturbation methods Description of basic wave motion Examples from areas including biology elasticity fluid dynamics particle mechanics chemistry geophysics and finance",
+    "name": "Foundations of Applied Mathematics",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-2400",
+        "MATH-2010"
+      ]
+    },
+    "professors": [
+      "Peter R Kramer",
+      "Ashwani Kumar Kapila"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Foundations of Computer Science": {
+    "ID": "2200",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "This course introduces important mathematical and theoretical tools for computer science including topics from set theory combinatorics and probability theory and then proceeds to automata theory the Turing Machine model of computation and notions of computational complexity The course will emphasize formal reasoning and proof techniques",
+    "name": "Foundations of Computer Science",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "MATH-1010",
+          "MATH-1500",
+          "MATH-1020",
+          "MATH-1020",
+          "MATH-2010"
+        ]
+      ],
+      "required": [
+        "CSCI-1200"
+      ]
+    },
+    "professors": [
+      "Stacy Elizabeth Patterson",
+      "David Eric Goldschmidt",
+      "Alex Algernon Theodore Gittens",
+      "Malik Magdon-Ismail"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "From Neuron to Behavior": {
+    "ID": "4100",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BIOL-6100"
+    ],
+    "description": "A detailed survey of important topics in the neurosciences Some of the topics to be covered in this class are basic mechanisms of neural signaling neurophysiology synaptic transmission and molecular signaling understanding of sensationmovement and in particular how it relates to neuroanatomy neurodevelopment and how the mature brain can change plasticity complex brainfunctions and neurological disease Taught together with BIOL 6100",
+    "name": "From Neuron to Behavior",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2120",
+        "BIOL-1010"
+      ]
+    },
+    "professors": [
+      "Robert Wallace Flint"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Frontiers of Network Science": {
+    "ID": "4250",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6250"
+    ],
+    "description": "This course will offer an introduction to network science and a review of current research in this area Classes will interchangeably present chapters from the textbook and related current research The emphasis will be on the mathematical background of network science graphs and networks random networks and various types of scalefree networks network properties such as assortativity mobility robustness social networks and communities and dynamics of spreading in networks",
+    "name": "Frontiers of Network Science",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "odd"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300",
+        "CSCI-4020",
+        "CSCI-4260",
+        "CSCI-4800"
+      ]
+    },
+    "professors": [
+      "Boleslaw Szymanski"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Fundamentals of Geometry": {
+    "ID": "4120",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Topics may be chosen from differential geometry of curves and surfaces involutes and evolutes order of contact developable surfaces Eulers and Meusniers Theorem mean and Gaussian curvatures geodesics and parallel transport The Theorem Egregium of Gauss GaussBonnet Theorem computeraided geometric design computational geometry tessellations tiling and patterns projective and nonEuclidean geometries postulates and axiomatic systems advanced Euclidean geometry and the history of geometry",
+    "name": "Fundamentals of Geometry",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "even"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-2010"
+      ]
+    },
+    "professors": [
+      "Rongjie Lai",
+      "David Isaacson"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Fundamentals of Optics": {
+    "ID": "2620",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "A survey of optics and optical phenomena and their applications A modern laboratory is part of the course Topics include geometrical optics and instruments wave and Fourier optics and polarization of light Applications of modern optics to communications and manufacturing are stressed",
+    "name": "Fundamentals of Optics",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "PHYS-1200"
+      ]
+    },
+    "professors": [
+      "Vincent Meunier",
+      "Shawn Yu Lin",
+      "Esther Alexandra Wertz",
+      "Moussa Ngom"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Game Development I": {
+    "ID": "4520",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "GSAS-4520"
+    ],
+    "description": "This class is a practical primer for anyone interested in a career in the rapidly evolving industry of video gaming It is an intense teambased projectbased course in which students will closely follow the actual game development cycle with each team producing a complete PC game",
+    "name": "Game Development I",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "GSAS-2510",
+          "CSCI-2300"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Game Development II": {
+    "ID": "4540",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "GSAS-4540"
+    ],
+    "description": "This course follows Game Development I Students work in interdisciplinary teams to create one largescale 3D game working from concept to public release Projects may include games educational games serious games and simulations and interactive artworks and will focus on creative design technical execution and use of game design principles The course builds on skills and knowledge in previous courses in the GSAS core including game design game mechanics game programming art and narrative",
+    "name": "Game Development II",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [
+      "Rebekah Gamin Arcovitch",
+      "Sylvain Payen"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "General Physics": {
+    "ID": "1050",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "A one semester calculusbased overview of physics fundamentals with an emphasis on applications Mechanics including equilibrium and statics fluids oscillations and waves Basics of thermodynamics and heat flow Electrical circuits Electromagnetic radiation and optics Recommended for all students who intend to take only one semester of physics Credit cannot be obtained for both PHYS 1050 and PHYS 1100",
+    "name": "General Physics",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "MATH-1010"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Julian S. Georg",
+      "Vincent Meunier"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "General Relativity": {
+    "ID": "4240",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "ASTR-4240"
+    ],
+    "description": "Introduction to the physics of gravitation and spacetime Special relativity tensor calculus and relativistic electrodynamics General relativity with selected applications of Einsteins field equations gravitational time dilation gravitational lensing frame dragging gravitational radiation The physics of nonrotating and rotating black holes Relativistic models for the largescale structure of the Universe Observational constraints on the cosmological parameters Big Bang nucleosynthesis the Cosmic Background Radiation A culminating experience project is required Meets with ASTR 4240",
+    "name": "General Relativity",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "PHYS-4330",
+        "MATH-4600"
+      ]
+    },
+    "professors": [
+      "Vincent Meunier",
+      "Joel T. Giedt"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Genetics and Evolution": {
+    "ID": "2500",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Mechanisms of inheritance in eukaryotes and prokaryotes genetic mapping gene expression cloning and sequencing quantitative and population genetics and synthetic theory of evolution",
+    "name": "Genetics and Evolution",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2120"
+      ]
+    },
+    "professors": [
+      "Richard Peter Bonocora"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Geomicrobiology": {
+    "ID": "4360",
+    "credits": [
+      3
+    ],
+    "crosslisted": [
+      "BIOL-6360",
+      "ENVE-4360"
+    ],
+    "description": "This course examines relationships between microorganisms and Earth processes Topics include the origins of life on earth surface metabolism theory biological and biochemical benchmarks Earth is considered as a microbial habitat with an emphasis on the lithosphere and hydrosphere including soils seawater lakes rivers and groundwater Geomicrobial processes are discussed with an emphasis on microbes as catalysts of geochemical processes including conversion of inorganics and metals and mineralization of organics Molecular and nonmolecular methods for detection isolation and identification of geomicrobially active organisms are introduced",
+    "name": "Geomicrobiology",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-1010"
+      ]
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Global Environmental Change": {
+    "ID": "4880",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BIOL-6880"
+    ],
+    "description": "This 4credit course will explore global environmental cycles patterns and changes It will discuss elemental cycles of phosphorus nitrogen and carbon and pollutants such as mercury lead and CFCs and how changes in these cycles influence organisms and ecosystems Also discussed will be largescale biotic processes and theory about ecosystem dynamics Major environmental issues such as acid rain eutrophication climate change and land use conversation will also be discussed",
+    "name": "Global Environmental Change",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-1015",
+        "BIOL-1010",
+        "BIOL-2120",
+        "BIOL-2125"
+      ]
+    },
+    "professors": [
+      "Kevin Christopher Rose"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Graph Theory": {
+    "ID": "4150",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-4260"
+    ],
+    "description": "Fundamental concepts and methods of graph theory and its applications to various areas of computing and the social and natural sciences Topics include graphs as models representation of graphs trees distances matchings connectivity flows in networks graph colorings Hamiltonian cycles traveling salesman problem planarity All concepts methods and applications are presented through a sequence of exercises and problems many of which are done with the help of novel software systems for combinatorial computing",
+    "name": "Graph Theory",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "CSCI-2200",
+          "MATH-4090"
+        ]
+      ],
+      "required": [
+        "CSCI-1100"
+      ]
+    },
+    "professors": [
+      "Shianne M. Hulbert",
+      "George M. Slota"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Honors Physics I": {
+    "ID": "1150",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Introductory physics for students seeking a more intensive experience Newtons laws are introduced using differential calculus with solutions based on integral calculus Material on fluids thermodynamics and special relativity is included Laboratory exercises are carried out emphasizing measurement uncertainty and clear concise reporting Recommended for students intending to major in physics",
+    "name": "Honors Physics I",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-1010"
+      ]
+    },
+    "professors": [
+      "Gyorgy Korniss"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Applied Physics"
+      ]
+    },
+    "subj": "PHYS"
+  },
+  "Honors Physics II": {
+    "ID": "1250",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Introductory physics for students seeking a more intensive experience Electricity and magnetism is discussed making use of multivariable differentiation and integration AC and DC circuits Electromagnetic waves optics and selected topics in modern physics Laboratory exercises are carried out emphasizing measurement uncertainty and clear concise reporting Recommended for students intending to major in physics",
+    "name": "Honors Physics II",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "PHYS-1100",
+          "MATH-1020"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Peter Persans",
+      "Vincent Meunier"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Human Physiology": {
+    "ID": "4270",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Fundamental physiological processes and their mechanism of action in human and higher mammalian organisms Emphasis on the control and interaction of physiological systems Introduction to the muscle nervous circulatory renal respiratory digestive reproductive and hormonal systems Limited to biology biochemistry and biophysics bioinformatics and molecular biology majors and biology accelerated medical students",
+    "name": "Human Physiology",
+    "offered": {
+      "semesters": [
+        "fall",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "BIOL-2120",
+          "PHYS-1100",
+          "BIOL-4620",
+          "CHEM-2250"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Douglas Martin Swank"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Human Population": {
+    "ID": "4961",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "This interdisciplinary course examines the human ecology of the global human overpopulation problem Pollution resource depletion extinctions and carrying capacity are explored as well as political psychological cultural and technological adaptations Feedback mechanisms will be proposed and discussed Students will engage in structured debate and group discussion",
+    "name": "Human Population",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-1010",
+        "MATH-1010"
+      ]
+    },
+    "professors": [
+      "Eric Matthew Rutledge",
+      "Jennifer Marie Hurley"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Interactive Visualization": {
+    "ID": "4550",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6550"
+    ],
+    "description": "Visualizing data is a key step in understanding many problems This course is designed to introduce students to methods of visualizing many different types of data such as images threedimensional surfaces flow fields and medical data Both existing visualization software and program custom visualizations using C and OpenGL will be used Course activities include discussion of recent and classic research papers weekly homework assignments inclass critiques of visualization artifacts and a final project to explore creative uses of these techniques This is a communicationintensive course",
+    "name": "Interactive Visualization",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "even"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300",
+        "CSCI-2600"
+      ]
+    },
+    "professors": [
+      "Barbara Cutler",
+      "Evan Earl Maicus"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Intermediate Logic": {
+    "ID": "4140",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "PHIL-4140"
+    ],
+    "description": "This course is a continuation of PHIL 2140  covering basic metatheory of logic including formal syntax and semantics model theory and soundness and completeness of proof systems applications of logic including automated theorem proving deductive problem solving and the axiomatization of various branches of mathematics and alternative systems of logic including sequent systems diagrammatic logic and modal logic",
+    "name": "Intermediate Logic",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "even"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "PHIL-2140"
+      ]
+    },
+    "professors": [
+      "Selmer Bringsjord",
+      "Bram Van Heuveln"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Introduction to Algorithms": {
+    "ID": "2300",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Data structures and algorithms and the mathematical techniques necessary to design and analyze them Basic data structures lists associative structures trees Mathematical techniques for designing algorithms and analyzing worstcase and expectedcase algorithm efficiency Advanced data structures balanced trees tries heaps priority queues graphs Searching sorting Algorithm design techniques dynamic programming greedy algorithms divideandconquer backtracking Example graph string geometric and numeric algorithms",
+    "name": "Introduction to Algorithms",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "MATH-1010",
+          "MATH-1500",
+          "MATH-1020",
+          "MATH-2010"
+        ]
+      ],
+      "required": [
+        "CSCI-2200",
+        "CSCI-1200"
+      ]
+    },
+    "professors": [
+      "Shianne M. Hulbert",
+      "David Eric Goldschmidt",
+      "Elliot I. Anshelevich",
+      "Jianxi Gao",
+      "Mohammed J. Zaki",
+      "Bulent Yener"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Introduction to Artificial Intelligence": {
+    "ID": "4150",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Topics and techniques of artificial intelligence using the language LISP Topics include search knowledge representation expert systems theorem proving natural language interfaces learning game playing and computer vision Techniques include pattern matching datadriven programming substitution rules frames heuristic search transition networks neural networks and evolutionary computation Development of programming proficiency in LISP is emphasized",
+    "name": "Introduction to Artificial Intelligence",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300"
+      ]
+    },
+    "professors": [
+      "Lirong Xia"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Introduction to Biology": {
+    "ID": "1010",
+    "credits": [
+      3
+    ],
+    "crosslisted": [],
+    "description": "Introduction to biological systems Discussion of problems associated with biological organization scaling and hierarchy Major topics covered include evolution genetics and medicine and ecology The course considers the biological components of various environmental social and individual problems Course is taught using both traditional and researchbased pedagogical methods",
+    "name": "Introduction to Biology",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-1015"
+      ]
+    },
+    "professors": [
+      "Jonathan T Stetler",
+      "Darrin Scott Hunt",
+      "Jeremy Lynch Farrell",
+      "Seemanti Ramanath",
+      "Michael H Hanna",
+      "Georgi G. Shablovsky",
+      "Michael T Klein",
+      "Sandra Nierzwicki-Bauer",
+      "Susan P. Gilbert"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Introduction to Biology Laboratory": {
+    "ID": "1015",
+    "credits": [
+      1
+    ],
+    "crosslisted": [],
+    "description": "The goal of this laboratory course is to learn about biology through handson projectbased lab activities that engage students in actual biology experiments and procedures  learning biology by actually doing biology",
+    "name": "Introduction to Biology Laboratory",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-1010"
+      ]
+    },
+    "professors": [
+      "Jonathan T Stetler",
+      "Darrin Scott Hunt",
+      "Seemanti Ramanath",
+      "Georgi G. Shablovsky"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Introduction to Cell and Molecular Biology": {
+    "ID": "2120",
+    "credits": [
+      3
+    ],
+    "crosslisted": [],
+    "description": "Structural and functional relationships of cells are discussed with regard to similarities among all living organisms Introduction to cellular biochemistry metabolism and energy flow cellular and Mendelian genetics and the chemical basis of heredity",
+    "name": "Introduction to Cell and Molecular Biology",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2125",
+        "BIOL-1010"
+      ]
+    },
+    "professors": [
+      "Eric Matthew Rutledge",
+      "Michael T Klein"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Introduction to Cellular and Molecular Biology Laboratory": {
+    "ID": "2125",
+    "credits": [
+      1
+    ],
+    "crosslisted": [],
+    "description": "The goal of this course is to gain practical experience with cellular and molecular biology through handson experimental techniques The laboratory exercises are designed to illustrate current concepts in cellular and molecular biology",
+    "name": "Introduction to Cellular and Molecular Biology Laboratory",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2120",
+        "BIOL-1010"
+      ]
+    },
+    "professors": [
+      "Keith Fraser",
+      "Richard Peter Bonocora",
+      "Michael T Klein"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Introduction to Complex Variables Theory and Applications": {
+    "ID": "4300",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "",
+    "name": "Introduction to Complex Variables Theory and Applications",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-2010"
+      ]
+    },
+    "professors": [
+      "Peter R Kramer",
+      "Fengyan Li",
+      "Gregor Kovacic",
+      "Daniel Franklin Stevenson"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Introduction to Computer Programming": {
+    "ID": "1010",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Computer programming is a way of thinking A successful programmer needs to take a word problem generate a pseudocode algorithm and convert it to the syntax of a specific programming language This course is an alternative to CSCI 1100 and is intended for students who want an introduction to this programming process but do not intend to do further course work in programming or computer science Emphasis will be on the generation of the algorithms and problem solving This course is offered in Python an approachable language with relatively low syntax complexity which allows students to concentrate on the fundamentals without becoming sidetracked by language specifics It also affords students a tool for creating useful personal applications or prototypes in the future Students cannot get credit for this course if they have already taken any other CSCI course",
+    "name": "Introduction to Computer Programming",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Introduction to Differential Equations": {
+    "ID": "2400",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Firstorder differential equations secondorder linear equations eigenvalues and eigenvectors of matrices systems of firstorder equations stability and qualitative properties of nonlinear autonomous systems in the plane Fourier series separation of variables for partial differential equations",
+    "name": "Introduction to Differential Equations",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-1020"
+      ]
+    },
+    "professors": [
+      "Mark H Holmes",
+      "Daniel Franklin Stevenson",
+      "Ashwani Kumar Kapila",
+      "Yuri V Lvov",
+      "Peter R Kramer",
+      "Wing Sze E Kam",
+      "Mohamed Boudjelkha",
+      "Eliane Zerbetto Traldi",
+      "Donald W Schwendeman"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Introduction to Financial Mathematics and Engineering": {
+    "ID": "4740",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "This course is designed to introduce students to mathematical and computational finance Topics include a mathematical approach to risk analysis portfolio selection theory futures options and other derivative investment instruments Finite difference and finite element methods for computing American option prices are discussed A working knowledge of MAPLE or MATLAB is required to compute optimal portfolios",
+    "name": "Introduction to Financial Mathematics and Engineering",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "even"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-1020"
+      ]
+    },
+    "professors": [
+      "Chjan C Lim"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Introduction to Geobiology": {
+    "ID": "2160",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "ERTH-2160"
+    ],
+    "description": "This course focuses on the coevolution of life with Earths systems and targets students in earth science biology chemistry and physics Topics include the emergence and early evolution of life on Earth the environmental limits of life microbial and metabolic evolution the role of life in moderating global elemental cycles earliest records of life evolution of photosynthesis and the Great Oxidation Event fossilization and evolution of complex life mass radiations mass extinctions and global change",
+    "name": "Introduction to Geobiology",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "ERTH-1100"
+      ]
+    },
+    "professors": [
+      "Sarah Beth Cadieux",
+      "Karyn Lynne Rogers"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Introduction to Number Theory": {
+    "ID": "4020",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Topics include the history of number representation systems divisibility greatest common divisor and prime factorization linear Diophantine equations congruences and condition congruences Additional topics may be chosen from cryptology the perpetual calendar hashing functions computer operations and complexity continued fractions multiplicative functions primitive roots pseudorandom numbers nonlinear Diophantine equations Fermats last theorem algebraic numbers and approximation of numbers by rationals",
+    "name": "Introduction to Number Theory",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "odd"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-1020"
+      ]
+    },
+    "professors": [
+      "Bruce Piper"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Introduction to Numerical Methods for Differential Equations": {
+    "ID": "4820",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-4820"
+    ],
+    "description": "Derivation analysis and use of computational procedures for solving differential equations Topics covered include ordinary differential equations both initial value and boundary value problems and partial differential equations RungeKutta and multistep methods for initial value problems Finite difference methods for partial differential equations including techniques for heat conduction wave propagation and potential problems Basic convergence and stability theory",
+    "name": "Introduction to Numerical Methods for Differential Equations",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "even"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "MATH-4800",
+          "CSCI-4800"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Donald W Schwendeman",
+      "William Douglas Henshaw"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Introduction to Topology": {
+    "ID": "4040",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Topics include general topological spaces connectedness compactness continuity and product spaces Additional topics may be chosen from identification spaces homotopy the fundamental group covering maps lifts classification of surfaces Baire category dimension and the Jordan curve theorem",
+    "name": "Introduction to Topology",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "even"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "MATH-4090"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Bruce Piper"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Introductory Classical Dynamics": {
+    "ID": "1150",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Introductory physics for students seeking a more intensive experience Newtons laws are introduced using differential calculus with solutions based on integral calculus Material on fluids and thermodynamics is included Laboratory exercises are carried out emphasizing measurement uncertainty and clear concise reporting Recommended for students intending to major in physics",
+    "name": "Introductory Classical Dynamics",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-1010"
+      ]
+    },
+    "professors": [
+      "Gyorgy Korniss"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Applied Physics"
+      ]
+    },
+    "subj": "PHYS"
+  },
+  "Introductory Electromagnetic Theory": {
+    "ID": "1250",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Introductory physics for students seeking a more intensive experience Electricity and magnetism is discussed making use of multivariable differentiation and integration AC and DC circuits Electromagnetic waves optics and selected topics in modern physics Laboratory exercises are carried out emphasizing measurement uncertainty and clear concise reporting Recommended for students intending to major in physics",
+    "name": "Introductory Electromagnetic Theory",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "PHYS-1100",
+          "MATH-1020"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Peter Persans",
+      "Vincent Meunier"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Introductory Modern Physics": {
+    "ID": "1140",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "An introduction to modern physics with emphasis on special relativity concepts in quantum mechanics elementary particles and fundamental forces and applications to nuclei and atoms Registration is limited to first semester students or by permission of instructor",
+    "name": "Introductory Modern Physics",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": [],
+    "professors": [
+      "Peter Persans"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Applied Physics"
+      ]
+    },
+    "subj": "PHYS"
+  },
+  "Introductory Quantum Mechanics": {
+    "ID": "4100",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Quantum mechanics beyond Schrodinger wave mechanics The postulates of quantum mechanics Second quantization Dirac notation Hilbert spaces perturbation theory and applications to simple systems",
+    "name": "Introductory Quantum Mechanics",
+    "offered": {
+      "semesters": [
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "PHYS-2210"
+      ]
+    },
+    "professors": [
+      "Julian S. Georg",
+      "Vincent Meunier",
+      "Moussa Ngom"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Investigative Medicine I": {
+    "ID": "4110",
+    "credits": [
+      1
+    ],
+    "crosslisted": [],
+    "description": "Students will be exposed to real time investigative biomedical research projects that are currently in development taught the principles of research project development and exposed to clinical experiences at a level typically found in college graduatespost graduates who are entering medical school",
+    "name": "Investigative Medicine I",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [
+      "Douglas Martin Swank",
+      "Michael H Hanna"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Biology"
+      ]
+    },
+    "subj": "BIOL"
+  },
+  "Investigative Medicine II": {
+    "ID": "4120",
+    "credits": [
+      1
+    ],
+    "crosslisted": [],
+    "description": "Students will be exposed to several clinical experiences at a level typically found in college graduatespost graduates who are entering medical school",
+    "name": "Investigative Medicine II",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-4110"
+      ]
+    },
+    "professors": [
+      "Douglas Martin Swank",
+      "Michael H Hanna"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Biology"
+      ]
+    },
+    "subj": "BIOL"
+  },
+  "Lake George Limnology and Underwater Ecology BLUE": {
+    "ID": "4870",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "",
+    "name": "Lake George Limnology and Underwater Ecology BLUE",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-4850"
+      ]
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Biology"
+      ]
+    },
+    "subj": "BIOL"
+  },
+  "LargeScale Programming and Testing": {
+    "ID": "4460",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6460"
+    ],
+    "description": "",
+    "name": "LargeScale Programming and Testing",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2600"
+      ]
+    },
+    "professors": [
+      "David Eric Goldschmidt"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": true,
+      "majorRestriction": [
+        "Computer Science"
+      ]
+    },
+    "subj": "CSCI"
+  },
+  "Lasers and Optical Systems": {
+    "ID": "4630",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "ECSE-4630"
+    ],
+    "description": "Optical physics and applications of lasers Design of optical systems Topics include wave optics and beam propagation Gaussian beams resonators optical properties of atoms and laser gain media laser amplifiers pulsed laser systems applications of lasers nonlinear optics",
+    "name": "Lasers and Optical Systems",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "odd"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "PHYS-2620"
+      ]
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Computer Science"
+      ]
+    },
+    "subj": "PHYS"
+  },
+  "Linear Algebra": {
+    "ID": "4100",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "The theory underlying vector spaces algebra of subspaces bases linear transformations dual spaces eigenvectors eigenvalues minimal polynomials canonical forms of linear transformations inner products adjoints orthogonal projections and complements",
+    "name": "Linear Algebra",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-2010"
+      ]
+    },
+    "professors": [
+      "Belmiro Galo da Silva",
+      "Daniel Franklin Stevenson",
+      "David Isaacson",
+      "Elisabeth Maria Brown",
+      "Harry W McLaughlin",
+      "Chjan C Lim",
+      "Eliane Zerbetto Traldi",
+      "Gregor Kovacic"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Mathematics"
+      ]
+    },
+    "subj": "MATH"
+  },
+  "Machine Learning for Environmental Biology": {
+    "ID": "4220",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BIOL-6220"
+    ],
+    "description": "This course is designed to create an applied learning environment to introduce students to large scale datasets in the environmental field and learn advanced techniques for analyzing them Students will learn multivariate data exploration techniques evaluate the quality of large datasets and analyze the data using machine learning techniques Specifically students will propose develop and finalize projects where they will apply machine learning approaches to datasets to understand complex environmental biology processes Along with these topics students will learn to critically read current scientific literature relevant to their projects",
+    "name": "Machine Learning for Environmental Biology",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-4200"
+      ]
+    },
+    "professors": [
+      "Jeremy Lynch Farrell"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Machine Learning from Data": {
+    "ID": "4100",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6100"
+    ],
+    "description": "Introduction to the theory algorithms and applications of machine learning supervised reinforcement and unsupervised from data What is learning Is learning feasible How can we do it How can we do it well The course offers a mix of theory technique and application with additional selected topics chosen from Pattern Recognition Decision Trees Neural Networks RBFs Bayesian Learning PAC Learning Support Vector Machines Gaussian processes and Hidden Markov Models",
+    "name": "Machine Learning from Data",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300"
+      ]
+    },
+    "professors": [
+      "Malik Magdon-Ismail",
+      "Uzma Mushtaque"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Materials Science": {
+    "ID": "1600",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CHEM-1600",
+      "ENGR-1600",
+      "ISCI-1600"
+    ],
+    "description": "Introduction to the scientific principles that dictate the structure and properties of engineering materials including metals ceramics semiconductors and polymers Physical properties of materials mechanical electrical thermal optical are discussed in terms of the underlying structure spanning multiple length scales from atomic packing to micron scale defects in practical engineering materials Throughout the course the material behaviors are understood from the viewpoint of thermodynamics and kinetics",
+    "name": "Materials Science",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CHEM-1100"
+      ]
+    },
+    "professors": [
+      "Daniel J. Lewis",
+      "Chaitanya Kishore Ullal",
+      "Jian Shi",
+      "Edwin B. Fohtung",
+      "Vincent Meunier",
+      "Ravishankar Sundararaman",
+      "Richard W Siegel",
+      "Edmund Francis Palermo",
+      "Yunfeng Shi",
+      "John R. LaGraff",
+      "Minoru Tomozawa"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Mathematical Analysis I": {
+    "ID": "4200",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Fundamental concepts of mathematical analysis will be covered including such topics as the real number system metric spaces limits sequences series convergence functions of one variable uniform convergence continuity differentiability Riemann integration and the StoneWeierstrass Theorem",
+    "name": "Mathematical Analysis I",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "MATH-4090"
+        ]
+      ],
+      "required": [
+        "MATH-1020"
+      ]
+    },
+    "professors": [
+      "Fengyan Li",
+      "Daniel Franklin Stevenson"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Mathematical Analysis II": {
+    "ID": "4210",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Fundamental concepts of mathematical analysis This is the second course in a twoterm sequence covering such topics as the real number system limits sequences series convergence uniform convergence functions of one variable continuity differentiability Riemann integration StoneWeierstrass Theorem functions of several variables trigonometric series differential forms on manifolds and the higher dimensional Stokes Theorem",
+    "name": "Mathematical Analysis II",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "MATH-4200"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Mathematical Methods in Management and Economics": {
+    "ID": "1520",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Functions of several variables introductory linear algebra and other analytical techniques needed for further study in probability statistics and operations research Topics covered include improper integrals probability density functions partial derivatives and optimization techniques for functions of several variables matrix algebra linear systems lines and planes in 3space linear inequalities introductory linear programming introductory combinatorics and some probability",
+    "name": "Mathematical Methods in Management and Economics",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "MATH-1010",
+          "MATH-1500"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Eliane Zerbetto Traldi",
+      "Wing Sze E Kam"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Mathematics in Medicine and Biology": {
+    "ID": "4720",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "An introduction to mathematics used in biology biophysics biomedical engineering and medicine The mathematical topics covered are selected from calculus linear algebra differential equations numerical methods and Fourier analysis The biological applications covered are selected from human physiology heart lung brain population models microorganisms cells animals and the diagnosis and treatment of disease heart cancer",
+    "name": "Mathematics in Medicine and Biology",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "odd"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-1020"
+      ]
+    },
+    "professors": [
+      "David Isaacson"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Methods of Partial Differential Equations of Mathematical Physics": {
+    "ID": "4500",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "An intermediate course serving to introduce both the qualitative properties of solutions of partial differential equations and methods of solution including separation of variables Topics include firstorder equations derivation of the classical equations of mathematical physics wave potential and heat equations method of characteristics construction and behavior of solutions maximum principles energy integrals",
+    "name": "Methods of Partial Differential Equations of Mathematical Physics",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-2010",
+        "MATH-2400"
+      ]
+    },
+    "professors": [
+      "Donald W Schwendeman",
+      "Ashwani Kumar Kapila",
+      "David Isaacson"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Microbiology": {
+    "ID": "4310",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BIOL-6310"
+    ],
+    "description": "Microbiology is the study of microscopic organisms including members of all the kingdoms of life The course has two objectives 1 Provide an overview of the diversity genetics and physiology of microorganisms 2 Review current topics of investigation in Microbiology in detail Microbes will be studied from a cellular and molecular perspective This includes structure nutrition growth control classification and genetics This course will provide biology students the necessary background in bacterial genetics pathogenic microbiology prokaryotic physiology eukaryotic microbiology molecular biology and microbial ecology",
+    "name": "Microbiology",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2120"
+      ]
+    },
+    "professors": [
+      "Blanca L. Barquera"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Microbiology Lab": {
+    "ID": "4320",
+    "credits": [
+      6
+    ],
+    "crosslisted": [],
+    "description": "Microbiology Laboratory will provide handson experience for broad training in bacteriology and mycology with emphasis on microscopy bacterial growth and biochemical assays An investigative component will involve characterization of an unknown bacterium using the analytical tools learned In addition to laboratory experience and good technique the course will emphasize written communication with reports in the format of scientific papers This is a communicationintensive course",
+    "name": "Microbiology Lab",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2500"
+      ]
+    },
+    "professors": [
+      "Richard Peter Bonocora"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Molecular Biochemistry I": {
+    "ID": "4760",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BCBP-4760",
+      "CHEM-4760"
+    ],
+    "description": "Part I of a twosemester sequence focusing on the chemistry structure and function of biological molecules macromolecules and systems Topics covered include protein and nucleic acid structure enzymology mechanisms of catalysis regulation lipids and membranes carbohydrates bioenergetics and carbohydrate metabolism",
+    "name": "Molecular Biochemistry I",
+    "offered": {
+      "semesters": [
+        "fall",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CHEM-2250",
+        "BIOL-1010"
+      ]
+    },
+    "professors": [
+      "George I. Makhatadze",
+      "Keith Fraser"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Molecular Biochemistry II": {
+    "ID": "4770",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BCBP-4770",
+      "CHEM-4770"
+    ],
+    "description": "The second semester of the molecular biochemistry sequence Topics include lipids and lipid metabolism amino acid metabolism and the coenzymes involved in this metabolism nucleic acid synthesis and chemistry protein synthesis and degradation integration of metabolism photobiology and photosynthesis This course is taught in studio mode Students cannot obtain credit for both this course and either BCBP 4770 or CHEM 4770",
+    "name": "Molecular Biochemistry II",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-4760"
+      ]
+    },
+    "professors": [
+      "Keith Fraser"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Molecular Biology": {
+    "ID": "4620",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Nucleotide biosynthesis structure replication transcription and translation of nucleic acids reassociation of nucleic acids molecular cloning sequencing and endonuclease mapping of DNA control of gene expression in bacteria and higher organisms",
+    "name": "Molecular Biology",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2120",
+        "BIOL-2500"
+      ]
+    },
+    "professors": [
+      "Donna Eisemann Crone",
+      "Eric Matthew Rutledge"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Molecular Biology II": {
+    "ID": "4630",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BIOL-6690"
+    ],
+    "description": "Students will use a variety of tools textbooks scientific journals and Internet resources including molecular databases and data mining tools to increase understanding of genes their expression their products and their interrelatedness Meets together with BIOL 6690",
+    "name": "Molecular Biology II",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-4620",
+        "BIOL-4760"
+      ]
+    },
+    "professors": [
+      "Keith Fraser"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Molecular Biology Laboratory": {
+    "ID": "4720",
+    "credits": [
+      6
+    ],
+    "crosslisted": [],
+    "description": "The techniques of gel electrophoresis restriction enzyme mapping PCR and use of a molecular biology software program are applied to the study of bacterial plasmids and mammalian genes The course includes extensive handson laboratory work as well as the writing of indepth reports This is a communicationintensive course",
+    "name": "Molecular Biology Laboratory",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2120",
+        "BIOL-2125",
+        "BIOL-4620"
+      ]
+    },
+    "professors": [
+      "Eric Matthew Rutledge",
+      "Laura Manno Christian"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Molecular Modeling": {
+    "ID": "4550",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BIOL-6420",
+      "BCBP-4550",
+      "BCBP-6420"
+    ],
+    "description": "This course covers the theory and practice of the structural modeling of proteins and other biomolecules using informaticsdriven and energybased approaches Topics include templatebased comparative modeling secondary structure prediction tertiary structure prediction protein classification sidechain rotamers docking protein design energy minimization electrostatics molecular dynamics and molecular surfaces Molecular modeling software will be provided Laptop computers are required BIOL 4550 BIOL 6420  BCBP 4550  and BCBP 6420 meet jointly",
+    "name": "Molecular Modeling",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-4620",
+        "BIOL-4760",
+        "MATH-1020"
+      ]
+    },
+    "professors": [
+      "Chunyu Wang",
+      "Christopher Bystroff"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Multivariable Calculus and Matrix Algebra": {
+    "ID": "2010",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "MATH-2012",
+      "MATH-2011"
+    ],
+    "description": "Directional derivatives maxima and minima double integrals line integrals div and curl and Greens Theorem matrix algebra and systems of linear equations vectors and linear transformations in Rn eigenvectors and eigenvalues applications in engineering and science",
+    "name": "Multivariable Calculus and Matrix Algebra",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-1020"
+      ]
+    },
+    "professors": [
+      "Mark H Holmes",
+      "Daniel Franklin Stevenson",
+      "John E. Mitchell",
+      "Elisabeth Maria Brown",
+      "David A Schmidt",
+      "Yuri V Lvov",
+      "Mohamed Boudjelkha",
+      "Bruce Piper",
+      "Eliane Zerbetto Traldi",
+      "Gina Irene Kucinski",
+      "Gregor Kovacic"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Muscle  Cardiac Biology": {
+    "ID": "4470",
+    "credits": [
+      2
+    ],
+    "crosslisted": [
+      "BIOL-6470",
+      "BCBP-4470",
+      "BCBP-6470"
+    ],
+    "description": "",
+    "name": "Muscle  Cardiac Biology",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-4270"
+      ]
+    },
+    "professors": [
+      "Douglas Martin Swank"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Natural Language Processing": {
+    "ID": "4130",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6130"
+    ],
+    "description": "This course introduces stateoftheart Natural Language Processing NLP methods covering major popular research topics via the mostcited and uptodate papers for each topic as well as other resources This course also covers machine learning methods for NLP Students implement some of these methods and apply machine learning toolkits to solve a variety of problems Assignments incorporate linguistics mathematics and careful thinking",
+    "name": "Natural Language Processing",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300",
+        "MATH-2010"
+      ]
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Network Programming": {
+    "ID": "4220",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Programming with an overview of the principles of computer networks including a detailed look at the OSI reference model and various popular network protocol suites Concentration on Unix interprocess communication IPC network programming using TCP and UDP as well as clientside and mobile programming Programming projects are required",
+    "name": "Network Programming",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-4210"
+      ]
+    },
+    "professors": [
+      "Jasmine A. Plum"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Networking in the Linux Kernel": {
+    "ID": "4310",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6310"
+    ],
+    "description": "This course introduces Linux kernel programming basics and starts by examining how Berkeley sockets bridge the userkernel gap The remainder of the course is spent looking into transport layer eg TCP and network layer eg IP implementations Students do both individual and group programming projects In addition to coding there are detailed writeups and peer reviews in this course This is a communicationintensive course",
+    "name": "Networking in the Linux Kernel",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "odd"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "CSCI-4210",
+          "ECSE-2660"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Jasmine A. Plum"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Nonthesis Research": {
+    "ID": "4970",
+    "credits": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "crosslisted": [],
+    "description": "",
+    "name": "Nonthesis Research",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [
+      "Catherine Ann Royer"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Numerical Computing": {
+    "ID": "4800",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-4800"
+    ],
+    "description": "A survey of numerical methods for scientific and engineering problems Topics include numerical solution of linear and nonlinear algebraic equations interpolation and least squares approximations numerical integration and differentiation eigenvalue problems and an introduction to the numerical solution of ordinary differential equations Emphasis placed on efficient computational procedures including the use of library and student written procedures using highlevel software such as MATLAB",
+    "name": "Numerical Computing",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-2010",
+        "MATH-2400"
+      ]
+    },
+    "professors": [
+      "Mark H Holmes",
+      "Fengyan Li",
+      "Yuri V Lvov",
+      "Eliane Zerbetto Traldi",
+      "Rongjie Lai",
+      "William Douglas Henshaw",
+      "Jeffrey William Banks"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Computer Science"
+      ]
+    },
+    "subj": "MATH"
+  },
+  "Numerical Linear Algebra with Applications": {
+    "ID": "4840",
+    "credits": [],
+    "crosslisted": [],
+    "description": "The focus of the course is on fundamental algorithms in computational linear algebra and their applications in science and engineering These algorithms involve QR and SVD factorizations the computation of eigenvalues and eigenvectors basic optimization methods and iterative methods for sparse systems Applications will be considered in areas such as data analysis and compression principal component and spectral analysis solutions of large sparse systems among others",
+    "name": "Numerical Linear Algebra with Applications",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "odd"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-4800"
+      ]
+    },
+    "professors": [
+      "Mark H Holmes"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Ontologies": {
+    "ID": "4340",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6340"
+    ],
+    "description": "This course provides an introduction to ontologies their uses and an overview of their application in semantically enabled systems Ontologies encode term meanings and are used to improve communication and enable computer programs to function more effectively Class participants learn how to use ontologies in Webbased applications and evaluate ontologies for reuse Participants read relevant papers learn how to critically review ontology papers and ontologies and participate in group projects designing using and evaluating ontologies",
+    "name": "Ontologies",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300"
+      ]
+    },
+    "professors": [
+      "Deborah L. McGuinness"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Open Source Software": {
+    "ID": "4470",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Open source communities are proven development engines for creating large diverse userfocused software however these communities are not easily supported by traditional models of software development Expected behaviors tools and licensing are uniquely adapted to the needs of an often volunteer workforce distributed and asynchronous development and meritocracy In this course students use and develop open source software create open source repositories and participate in open source communities",
+    "name": "Open Source Software",
+    "offered": {
+      "semesters": [
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300",
+        "CSCI-2600"
+      ]
+    },
+    "professors": [
+      "Wesley D Turner"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Operating Systems": {
+    "ID": "4210",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Discussion of various aspects of computer operating systems design and implementation Topics include IO programming concurrent processes and synchronization problems process management and scheduling of processes virtual memory management device management file systems deadlock problems system calls and interprocess communication Programming projects are required",
+    "name": "Operating Systems",
+    "offered": {
+      "semesters": [
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "CSCI-2500",
+          "ECSE-2660"
+        ]
+      ],
+      "required": [
+        "CSCI-2300"
+      ]
+    },
+    "professors": [
+      "Wesley D Turner",
+      "David Eric Goldschmidt",
+      "Jasmine A. Plum"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Optical Communications and Integrated Optics": {
+    "ID": "4640",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "ECSE-4640"
+    ],
+    "description": "Phenomena materials and devices for optical communications and computing Topics include guided wave and fiber optics integrated optics electrooptic and nonlinear optical switching pulse and soliton propagation sources and detectors",
+    "name": "Optical Communications and Integrated Optics",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "even"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "PHYS-2620"
+      ]
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Optics": {
+    "ID": "2620",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "An introduction to the properties of light and its interactions with matter Topics include wave particle and ray treatments of light geometrical optics and imaging systems interference and diffraction polarization and Fourier methods for imaging and pulses A laboratory is included",
+    "name": "Optics",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "PHYS-1200",
+          "PHYS-1250"
+        ]
+      ],
+      "required": [
+        "MATH-2400"
+      ]
+    },
+    "professors": [
+      "Vincent Meunier",
+      "Shawn Yu Lin",
+      "Esther Alexandra Wertz",
+      "Moussa Ngom"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Ordinary Differential Equations and Dynamical Systems": {
+    "ID": "4400",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "An intermediate course emphasizing a modern geometric approach and applications in science and engineering Topics include firstorder equations linear systems phase plane linearization and stability calculus of variations Lagrangian and Hamiltonian mechanics oscillations basic bifurcation theory chaotic dynamics and existence and uniqueness",
+    "name": "Ordinary Differential Equations and Dynamical Systems",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-2010",
+        "MATH-2400"
+      ]
+    },
+    "professors": [
+      "Peter R Kramer",
+      "Yuri V Lvov"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Origins of Life": {
+    "ID": "4510",
+    "credits": [
+      3
+    ],
+    "crosslisted": [
+      "ERTH-4510",
+      "ASTR-4510"
+    ],
+    "description": "To understand the origin of life is a fundamental goal of science Evidence for important prebiotic molecules in the clouds from which new planetary systems are born is discussed and a comparison is made of cosmic and terrestrial sources of such molecules on the primitive Earth The course is multidisciplinary covering topics in physics astronomy chemistry earth sciences and biology Students may not obtain credit for more than one of ASTR 4510 ERTH 4510 or BIOL 4510",
+    "name": "Origins of Life",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "ASTR-2050"
+      ]
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "OutofClassroom Experience in Biology": {
+    "ID": "2930",
+    "credits": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "crosslisted": [],
+    "description": "",
+    "name": "OutofClassroom Experience in Biology",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Parallel Programming": {
+    "ID": "4320",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6360"
+    ],
+    "description": "Techniques and methods for parallel programming models of parallel machines and programs efficiency and complexity of parallel algorithms Paradigms of parallel programming and corresponding extensions to sequential programming languages Overview of parallel languages and coordination languages and models programming on networks of workstations Basic parallel algorithms elementary computation matrix multiplication sorting sample scientific application",
+    "name": "Parallel Programming",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "CSCI-2500",
+          "ECSE-2660"
+        ]
+      ],
+      "required": [
+        "CSCI-2300"
+      ]
+    },
+    "professors": [
+      "Christopher D. Carothers"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Physical Modeling": {
+    "ID": "1500",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "An introductory physics course in which students learn by constructing computer models of physical systems and then examining the behavior of the models Whenever possible the models will be compared to real systems Spreadsheets will be the main tools used to construct the models and no prior programming experience is required",
+    "name": "Physical Modeling",
+    "offered": {
+      "semesters": [],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Physics I": {
+    "ID": "1100",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "The first semester of a twosemester sequence of interactive courses Topics include linear and angular kinematics and dynamics work and energy momentum and collisions forces and fields gravitation oscillatory motion waves sound and interference",
+    "name": "Physics I",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "MATH-1010",
+          "PHYS-1050"
+        ]
+      ],
+      "required": [
+        "PHYS-1100"
+      ]
+    },
+    "professors": [
+      "Juan Pablo Borja",
+      "Vincent Meunier",
+      "Shengbai Zhang",
+      "Charles Harold Martin",
+      "Morris A Washington",
+      "Hesham Hassan",
+      "Shawn Yu Lin",
+      "Ingrid Wilke",
+      "Julian S. Georg",
+      "Pascal D. Bassene",
+      "Damien J. West",
+      "Christian M. Wetzel",
+      "Yong Sung Kim",
+      "Joseph Darryl Michael",
+      "Humberto Terrones Maldonado",
+      "Paul Martin Amy",
+      "Gwo Ching Wang",
+      "Toh-Ming Lu",
+      "Esther Alexandra Wertz"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Physics II": {
+    "ID": "1200",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "The second semester of the twosemester sequence of interactive courses Topics include electric and magnetic forces and fields Gausss Law dc and ac circuits Amperes Law and Faradays Law electromagnetic radiation physical optics and quantum physics",
+    "name": "Physics II",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "PHYS-1100",
+          "MATH-1020"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Yong Sung Kim",
+      "Glenn Ciolek",
+      "Peter Persans",
+      "Vincent Meunier",
+      "Damien J. West",
+      "John Schroeder",
+      "Ethan Craig Brown",
+      "Charles Harold Martin",
+      "Yong Zheng",
+      "Shawn Yu Lin",
+      "Nadarajah Narendran"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Principles of Ecology": {
+    "ID": "4850",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "A study of the fundamental principles of the ecology of plants and animals Interrelationships between organisms and their environments are discussed as well as material and energy balances in the ecosystem Emphasis on the biology of populations producers consumers and decomposers",
+    "name": "Principles of Ecology",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "BIOL-1010",
+          "BIOL-2120"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Kevin Christopher Rose",
+      "Ricky A Relyea"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Principles of Program Analysis": {
+    "ID": "4450",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6450"
+    ],
+    "description": "The goal of this course is to introduce students to program analysis and its many applications in software engineering particularly in improving software quality and software productivity Concretely students who successfully complete this course should be able to 1 understand and apply program analysis techniques such as dataflow analysis and typebased analysis 2 implement program analysis 3 understand and apply software testing techniques such as blackbox testing and whitebox testing and 4 understand and apply refactoring techniques",
+    "name": "Principles of Program Analysis",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "even"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-4430"
+      ]
+    },
+    "professors": [
+      "Ana L. Milanova"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Principles of Software": {
+    "ID": "2600",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "A study of important concepts in software design implementation and testing Topics include specification abstraction with classes design principles and patterns testing refactoring the software development process GUI and eventdriven programming and cloudbased programming The course also introduces implementation and testing tools including IDEs revision control systems and other frameworks The overarching goal of the course is for students to learn how to write correct and maintainable software",
+    "name": "Principles of Software",
+    "offered": {
+      "semesters": [
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-1200",
+        "CSCI-2200"
+      ]
+    },
+    "professors": [
+      "Shianne M. Hulbert",
+      "Konstantin Kuzmin"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Programming Languages": {
+    "ID": "4430",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "This course is a study of the important concepts found in current programming languages Topics include language processing lexical analysis parsing typechecking interpretation and compilation runtime environment the role of abstraction data abstraction and control abstraction programming paradigms procedural functional objectoriented logicoriented generic and formal language definition",
+    "name": "Programming Languages",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300",
+        "CSCI-2600"
+      ]
+    },
+    "professors": [
+      "Carlos A Varela",
+      "Ana L. Milanova"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Computer Science"
+      ]
+    },
+    "subj": "CSCI"
+  },
+  "Quantum Physics I": {
+    "ID": "2210",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Introduction to the formalism of Special Relativity Schrodinger wave mechanics and spin12 particles Solutions to Schrodingers Equation in one two and three dimensions Oneelectron atoms and quantum mechanical magnetic dipole moments",
+    "name": "Quantum Physics I",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "PHYS-1200",
+          "PHYS-1250",
+          "MATH-1020"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Peter Persans",
+      "Trevor David Rhone",
+      "Vincent Meunier"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Quantum Physics II": {
+    "ID": "2220",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Applications of special relativity and quantum theory to topics in modern physics Atomic and molecular physics Quantum statistics blackbody radiation and lasers Crystalline solids Superconductivity Nuclear and particle physics Astrophysics and cosmology",
+    "name": "Quantum Physics II",
+    "offered": {
+      "semesters": [
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "PHYS-2210",
+        "MATH-2010"
+      ]
+    },
+    "professors": [
+      "Peter Persans",
+      "Vincent Meunier"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Randomized Algorithms": {
+    "ID": "4030",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "CSCI-6220"
+    ],
+    "description": "Stateoftheart in contemporary algorithm design randomized algorithms are algorithms that use randomness as part of their functioning They are typically simple often easy to analyze and work well in practice They have numerous applications in many fields of computer science and mathematics Randomized algorithms represent an active and vibrant research area with many exciting new results contributed every year",
+    "name": "Randomized Algorithms",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-4020"
+      ]
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Readings in Biology": {
+    "ID": "4940",
+    "credits": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "crosslisted": [],
+    "description": "Selected readings in the biological literature to supplement the scientific background of undergraduate students May be used as a biology elective with approval of Biology Department Curriculum Committee",
+    "name": "Readings in Biology",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Readings in Computer Science": {
+    "ID": "4940",
+    "credits": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "crosslisted": [],
+    "description": "",
+    "name": "Readings in Computer Science",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Readings in Mathematics": {
+    "ID": "4940",
+    "credits": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "crosslisted": [],
+    "description": "",
+    "name": "Readings in Mathematics",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Research in Biology": {
+    "ID": "2900",
+    "credits": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "crosslisted": [],
+    "description": "Independent study program for the purpose of developing research skills under the guidance of a faculty member This course may be repeated and it cannot count as a biology elective",
+    "name": "Research in Biology",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Research in Mathematics": {
+    "ID": "4950",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Undergraduate mathematics projects that utilize students mathematical knowledge will result in formal reports and final presentations Examples are research projects or critical indepth mathematical literature reviews Information about projects will be exchanged in weekly meetings with the research supervisor In order to take this course students must make arrangements with a math faculty member to act as a research supervisor This is a communicationintensive course To be graded SU",
+    "name": "Research in Mathematics",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [
+      "Kristin P Bennett"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Robotics I": {
+    "ID": "4480",
+    "credits": [
+      3
+    ],
+    "crosslisted": [
+      "ECSE-4480"
+    ],
+    "description": "A survey of the fundamental issues necessary for the design analysis control and implementation of robotic systems The mathematical description of robot manipulators in terms of kinematics and dynamics Hardware components of a typical robot arm Path following control and sensing Examples of several currently available manipulators",
+    "name": "Robotics I",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "MATH-2400"
+      ]
+    },
+    "professors": [
+      "John Wen",
+      "Kimberly Irene Oakes"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Robotics II": {
+    "ID": "4490",
+    "credits": [
+      3
+    ],
+    "crosslisted": [
+      "ECSE-4490",
+      "CSCI-6490",
+      "ECSE-6490"
+    ],
+    "description": "This course introduces methods that leverage the basic analysis techniques learned in Robotics I to develop numerical and algorithmic techniques needed to endow robots with the intelligence to devise strategies to solve problems they will encounter Once these abilities are sufficiently well developed robots will become safe and autonomous thus paving the way for pervasive personal robots Topics include configuration space representation cell decomposition roadmap methods rapidlyexploring random trees simultaneous localization and mapping contact modeling grasping and dexterous manipulation",
+    "name": "Robotics II",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-4480"
+      ]
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Senior Research Thesis": {
+    "ID": "4990",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Independent research supervised by a faculty member culminating in a written thesis and oral presentation",
+    "name": "Senior Research Thesis",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring",
+        "summer"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [
+      "Christopher Bystroff",
+      "Chunyu Wang",
+      "Susan P. Gilbert",
+      "Jennifer Marie Hurley",
+      "Blanca L. Barquera"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Sequence Analysis": {
+    "ID": "4540",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BIOL-6410"
+    ],
+    "description": "This course covers the theory and practice of biological sequence analysis including algorithms for pairwise sequence alignment multiple sequence alignment phylogenetic analysis and database searching Concepts covered include homology sequence similarity parsimony mechanisms and metrics of molecular evolution biological data bases database search algorithms BLAST and statistical significance Selected topics include hidden Markov models bootstrap analysis and gene finding Modern sequence analysis software will be provided Laptop computers and programming knowledge are required Meets jointly with BIOL 6410",
+    "name": "Sequence Analysis",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-4620",
+        "CSCI-1200",
+        "MATH-1020"
+      ]
+    },
+    "professors": [
+      "Keith Fraser"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Software Design and Documentation": {
+    "ID": "4440",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Software system design methodology emphasizing use of object oriented modeling of application domains and of software systems and emphasizing the roles of written and oral communication in software engineering Project management and software testing Individual and team projects include specification software architecture user interfaces and documentation of the phases of a project This is a communicationintensive course",
+    "name": "Software Design and Documentation",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-2300"
+      ]
+    },
+    "professors": [
+      "John Sturman",
+      "David Eric Goldschmidt"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "SolidState Physics": {
+    "ID": "4720",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "ECSE-4720"
+    ],
+    "description": "",
+    "name": "SolidState Physics",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "PHYS-2220"
+      ]
+    },
+    "professors": [
+      "Humberto Terrones Maldonado"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Special Projects in Physics": {
+    "ID": "2940",
+    "credits": [
+      3
+    ],
+    "crosslisted": [],
+    "description": "Reading and study in various fields of physics to develop interest in and ability for independent study",
+    "name": "Special Projects in Physics",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Team Research": {
+    "ID": "4900",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Independent research by teams under the supervision of a faculty member including literature search brief proposal of project design conduct of project to completion and writing of a formal report in the form of a scientific paper and presentation of a seminar or poster on the project",
+    "name": "Team Research",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-2500"
+      ]
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Technical Writing and Communication in Computer Science": {
+    "ID": "4700",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "The course is intended to provide a computational perspective on one or more topics chosen from theory and algorithms systems and software artificial intelligence and data or vision graphics robotics and games Students will read classic and recent research results in the field write critical reviews of these publications engage in inclass presentations and discussions andor write a publicationquality report on an innovative final project of their choice",
+    "name": "Technical Writing and Communication in Computer Science",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "UIA"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "CSCI-2200",
+          "CSCI-2300",
+          "CSCI-2600"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "The Biology of Systems": {
+    "ID": "4660",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BCBP-6650",
+      "BIOL-6650",
+      "BCBP-4660"
+    ],
+    "description": "This course is designed to be a first course in the study of systems biology to introduce students to the field the experimental and computational methods that are used within it and the type of insights that the field can provide to biology To fully appreciate the complexity of living systems researchers gather systematic quantitative measurements of a systems components using cuttingedge omics techniques In addition researchers also leverage computing power to describe model and predict dynamic behaviors that could otherwise not be perceived in such large scale omics data Along with these topics students will learn to critically read current scientific literature",
+    "name": "The Biology of Systems",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-4620",
+        "BIOL-4760"
+      ]
+    },
+    "professors": [
+      "Jennifer Marie Hurley"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "The Global Environment": {
+    "ID": "4880",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BIOL-6880"
+    ],
+    "description": "This 4credit course will explore global environmental cycles patterns and changes It will discuss elemental cycles of phosphorus nitrogen and carbon and pollutants such as mercury lead and CFCs and how changes in these cycles influence organisms and ecosystems Also discussed will be largescale biotic processes and theory about ecosystem dynamics Major environmental issues such as acid rain eutrophication climate change and land use conversation will also be discussed",
+    "name": "The Global Environment",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-4850"
+      ]
+    },
+    "professors": [
+      "Kevin Christopher Rose"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Theoretical Mechanics": {
+    "ID": "4330",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "Particle and rigid body dynamics using Newtonian Lagrangian and Hamiltonian methods Motion of particle systems Central force motion Rotating coordinate systems Rigid body motion using the inertia tensor and Euler angles Coupled systems and normal coordinates Introduction to continuum mechanics and the mechanics of deformable media Introduction to Hamiltonian Mechanics including proof and applications of Liouvilles Theorem Formalism of Special Relativity Introduction to nonlinear dynamics and chaotic behavior",
+    "name": "Theoretical Mechanics",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [
+        [
+          "PHYS-1250",
+          "PHYS-1200"
+        ],
+        [
+          "MATH-2400",
+          "MATH-2010"
+        ]
+      ],
+      "required": []
+    },
+    "professors": [
+      "Vincent Meunier",
+      "Charles Harold Martin"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Thermodynamics and Statistical Mechanics": {
+    "ID": "4420",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "The principles and physical applications of classical thermodynamics are developed Basic concepts in classical and quantum statistical mechanics are introduced and their relations to thermodynamics are developed",
+    "name": "Thermodynamics and Statistical Mechanics",
+    "offered": {
+      "semesters": [
+        "fall",
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "PHYS-2220",
+        "MATH-2400",
+        "MATH-2010"
+      ]
+    },
+    "professors": [
+      "Humberto Terrones Maldonado",
+      "Vincent Meunier",
+      "Gyorgy Korniss"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Thesis": {
+    "ID": "2990",
+    "credits": [
+      3,
+      4
+    ],
+    "crosslisted": [],
+    "description": "An independent investigation",
+    "name": "Thesis",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": []
+    },
+    "professors": [
+      "Gwo Ching Wang",
+      "Heidi Jo Newberg"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "PHYS"
+  },
+  "Topics in Circadian Biology": {
+    "ID": "4240",
+    "credits": [
+      2
+    ],
+    "crosslisted": [
+      "BCBP-4240"
+    ],
+    "description": "This is an indepth study of current papers within the broad field of Circadian Biology Students will read and critique recent primary literature present current research articles and lead discussions on new findings in the field",
+    "name": "Topics in Circadian Biology",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": [],
+    "professors": [
+      "Jennifer Marie Hurley"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Topics in Computer Science": {
+    "ID": "4960",
+    "credits": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "crosslisted": [],
+    "description": "",
+    "name": "Topics in Computer Science",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": [],
+    "professors": [
+      "Konstantin Kuzmin",
+      "Tomasz Strzalkowski",
+      "Thilanka Munasinghe"
+    ],
+    "properties": {
+      "CI": true,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  },
+  "Topics in Mathematics": {
+    "ID": "4960",
+    "credits": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "crosslisted": [],
+    "description": "",
+    "name": "Topics in Mathematics",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "MATH"
+  },
+  "Topics in Physics": {
+    "ID": "4960",
+    "credits": [
+      4
+    ],
+    "crosslisted": [],
+    "description": "",
+    "name": "Topics in Physics",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": [],
+    "professors": [
+      "Peter Persans",
+      "Glenn Ciolek"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Applied Physics"
+      ]
+    },
+    "subj": "PHYS"
+  },
+  "Undergraduate Project in Mathematics": {
+    "ID": "4980",
+    "credits": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "crosslisted": [],
+    "description": "",
+    "name": "Undergraduate Project in Mathematics",
+    "offered": {
+      "semesters": [],
+      "year": ""
+    },
+    "prerequisites": [],
+    "professors": [],
+    "properties": {
+      "CI": false,
+      "MR": true,
+      "majorRestriction": [
+        "Applied Physics"
+      ]
+    },
+    "subj": "MATH"
+  },
+  "Virology": {
+    "ID": "4350",
+    "credits": [
+      4
+    ],
+    "crosslisted": [
+      "BIOL-6350"
+    ],
+    "description": "This course will provide an exploration of the essential aspects of virology Introductory examination of viral structure entry and replication for each of the major classes of viruses serve as a foundation Case studies will examine virus host interactions and strategies for prevention and intervention of viral infection Additional topics include emerging viruses viral detection viral extinction beneficial use of viruses modified viruses as research tools",
+    "name": "Virology",
+    "offered": {
+      "semesters": [
+        "fall"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "BIOL-4620",
+        "BIOL-4310"
+      ]
+    },
+    "professors": [
+      "Blanca L. Barquera"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "BIOL"
+  },
+  "Xinformatics": {
+    "ID": "4400",
+    "credits": [
+      3
+    ],
+    "crosslisted": [
+      "ERTH-6400",
+      "ERTH-4400",
+      "CSCI-6400",
+      "ITWS-6400"
+    ],
+    "description": "",
+    "name": "Xinformatics",
+    "offered": {
+      "semesters": [
+        "spring"
+      ],
+      "year": "all"
+    },
+    "prerequisites": {
+      "one_of": [],
+      "required": [
+        "CSCI-1200",
+        "ERTH-6350",
+        "ITWS-4350",
+        "CSCI-4350",
+        "ERTH-4350",
+        "CSCI-6350",
+        "ITWS-6350"
+      ]
+    },
+    "professors": [
+      "Thilanka Munasinghe"
+    ],
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subj": "CSCI"
+  }
+}

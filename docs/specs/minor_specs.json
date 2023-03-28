@@ -1,0 +1,33 @@
+{
+    "name (name can only have alphanumeric characters)" : {
+        "name": "course name",
+        "description": "string",
+        "majors": [
+            "major1",
+            "major2"
+        ],
+        "requirements": [
+            {
+                "amount": 1,
+                "classes": [
+                    "Calculus 1"
+                ]
+            },
+            {
+                "amount": 1,
+                "classes": [
+                    "RCOS",
+                    "Computer Science 1"
+                ]
+            },
+            {
+                "amount": 2,
+                "classes": [
+                    "4000-capstone",
+                    "4000-capstone"
+                ]
+            }
+        ],
+        "footnote": "string"
+    }
+}
