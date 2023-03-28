@@ -97,10 +97,8 @@ export default {
                 });
         },
         toggleTrashIcons(val) {
-            alert(val);
-            this.deleteIconsVisibleArray[val]=!this.deleteIconsVisibleArray[val];
-            alert(this.deleteIconsVisibleArray[val]);
-            //this.deleteIconsVisible = !this.deleteIconsVisible;
+            //this.deleteIconsVisibleArray[val]=!this.deleteIconsVisibleArray[val];
+            this.deleteIconsVisible = !this.deleteIconsVisible;
         },
         showNotif(position, message, type, timeout = 1250) {
             // Useful reference https://quasar.dev/quasar-plugins/notify#positioning
@@ -174,28 +172,28 @@ export default {
                 </a>
                 <a
                     class="edit"
-                    :class="{ 'hide-icon': deleteIconsVisibleArray[item] }"
+                    :class="{ 'hide-icon': deleteIconsVisible }"
                     @click="renamePlanNotification"
                 >
                     <q-icon name="fa-solid fa-pen-to-square" size="1.25em" />
                 </a>
                 <a
                     class="trash"
-                    :class="{ 'hide-icon': deleteIconsVisibleArray[item] }"
+                    :class="{ 'hide-icon': deleteIconsVisible }"
                     @click="toggleTrashIcons"
                 >
                     <q-icon name="fa-solid fa-trash" size="1.25em" />
                 </a>
                 <a
                     class="check"
-                    :class="{ 'hide-icon': !deleteIconsVisibleArray[item] }"
+                    :class="{ 'hide-icon': !deleteIconsVisible }"
                     @click="deletePlan(item)"
                 >
                     <q-icon name="fa-solid fa-check" size="1.25em" />
                 </a>
                 <a
                     class="cross"
-                    :class="{ 'hide-icon': !deleteIconsVisibleArray[item] }"
+                    :class="{ 'hide-icon': !deleteIconsVisible }"
                     @click="toggleTrashIcons"
                 >
                     <q-icon name="fa-solid fa-times" size="1.25em" />
