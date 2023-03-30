@@ -4,9 +4,12 @@ import requests
 import os
 from degree_util import get_subjs
 import numpy as np
-from sis_scraper import majorRestrictionChecker
 from sis_scraper import year_generator
 import re
+from sis_scraper import link_grabber
+from sis_scraper import majorRestrictionChecker
+from tqdm import tqdm
+
 
 
 
@@ -17,6 +20,8 @@ def tailGenerator(subjectList):
         tails.append("&sel_subj=" + subject)
     kachow = np.array_split(tails, 15)
     return kachow
+
+
 
 def deep_sis_scraper():
     filepath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
@@ -36,7 +41,7 @@ def deep_sis_scraper():
 
     for list in tail:
         urlTails.append(''.join(list))
-    for tails in urlTails:
+    for tails in tqdm(urlTails):
         for year in years:
             tempHead = head.replace("ZIGGSISTHEBEST", str(year))
             webpage_response = s.get(tempHead + tails)
@@ -54,6 +59,7 @@ def deep_sis_scraper():
                 #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=BIOL&crse_numb_in=4310"
                 #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=COGS&crse_numb_in=2940"
                 #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=CSCI&crse_numb_in=4480"
+                link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=ASTR&crse_numb_in=4220"
                 Lcontent = s.get(link)
                 deepContent = Lcontent.content
                 contentSoup = BeautifulSoup(deepContent, "html.parser")
@@ -141,9 +147,17 @@ def deep_sis_scraper():
                     CI= True
                 else:
                     CI = False
-                #communication intensive is now fetched correctly
+                #communication intensive is now fetched correctly--------------------------
 
                 #major restriction
+                link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?term_in=" + year + "&subj_in=" + subject +"&crse_in=" + courseID +"&schd_in=L"
+                mrPage = s.get(link)
+                mrContent = mrPage.content
+                mrSoup = BeautifulSoup(mrContent, "html.parser")
+                pogLink = link_grabber(s, mrSoup)
+                restrictedMajor = majorRestrictionChecker(s, pogLink)
+                #major restriction is now fetched correctly--------------------------
+
 
                 #professors
                 instructorStorage = []
@@ -151,7 +165,9 @@ def deep_sis_scraper():
                 professorSubject = subject
                 professorID = courseID
                 professorLink = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?term_in=" + professorYear + "&subj_in=" + professorSubject + "&crse_in=" + professorID + "&schd_in=L"
-                professorSoup = BeautifulSoup(professorLink, "html.parser")
+                professorWebPage = s.get(professorLink)
+                professorContent = professorWebPage.content
+                professorSoup = BeautifulSoup(professorContent, "html.parser")
                 times = professorSoup.findAll("table", {
                     "class": "datadisplaytable",
                     "summary": "This table lists the scheduled meeting times and assigned instructors for this class..",
@@ -163,9 +179,12 @@ def deep_sis_scraper():
                     instructor = re.sub(' +', ' ', instructor).strip()
                     if instructor != "TBA":
                         instructorStorage.append(instructor)
+                cleanInstructors = np.unique(instructorStorage)
+                #PROFESSORS ARE NOW FETCHED CORRECTLY----------------------------
+                
 
 
-                #when offered
+                #when offered(deal with later)
             
 
             
