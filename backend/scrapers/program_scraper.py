@@ -1,4 +1,4 @@
-from typing import Dict, List, Tuple
+from typing import Dict, List
 import requests
 from lxml import html
 from tqdm import tqdm
@@ -444,7 +444,7 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
     return data
 
 def scrape_programs():
-    print("Starting program scraping")
+    print("Starting program_scraper scraping:")
     num_catalog = 1
     catalogs = get_catalogs()
     # take the most recent num_catalog catalogs
@@ -458,12 +458,11 @@ def scrape_programs():
         # scraing the program (degree)
         data = get_program_data(program_ids, catalog_id, year)
         programs_per_year[year] = data
-    print("Finished program scraping")
-
     # create JSON obj and write it to file
     json_object = json.dumps(programs_per_year,sort_keys=True, indent=2, ensure_ascii=False)
     with open(root + "/frontend/src/data/programs.json", "w") as outfile:
         outfile.write(json_object)
+    print("Finished program_scraper scraping.")
     return programs_per_year
 
 if __name__ == "__main__":

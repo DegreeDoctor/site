@@ -9,14 +9,19 @@ export default {
         // ProgressBar,
         PlansList,
     },
+    methods: {
+        sendQuiz() {
+            this.$router.push("/quiz");
+        },
+    },
 };
 </script>
 
 <template>
     <q-header elevated class="bg-secondary text-white" height-hint="98">
         <q-toolbar>
-            <q-toolbar-title>
-                <q-avatar>
+            <q-toolbar-title >
+                <q-avatar >
                     <img src="../assets/Degree_Doctor_logo.png" />
                 </q-avatar>
                 Degree Doctor
