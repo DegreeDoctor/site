@@ -19,65 +19,61 @@ export default {
 
 <template>
     <q-header elevated class="bg-secondary text-white header" height-hint="98">
-        <q-toolbar>
+        <q-header>
             <q-toolbar-title>
                 <q-avatar @click="sendQuiz()">
                     <img src="../assets/Degree_Doctor_logo.png" />
                 </q-avatar>
                 <a @click="sendQuiz()"> Degree Doctor</a>
             </q-toolbar-title>
-
-                        <q-card-section class="q-pt-none">
-                            <h6 class="q-ma-none">
-                                Current Plan: {{ selectedPlan }}
-                            </h6>
-                            <div class="card-contain">
-                                <q-select
-                                    v-model="current"
-                                    filled
-                                    use-input
-                                    input-debounce="0"
-                                    label="Search"
-                                    :options="filteredPlans"
-                                    style="width: 200px"
-                                    behavior="menu"
-                                    @input-value="filterPlan"
-                                    @update:model-value="selectPlan"
-                                >
-                                    <template #no-option>
-                                        <q-item>
-                                            <q-item-section class="text-grey">
-                                                No results
-                                            </q-item-section>
-                                        </q-item>
-                                    </template>
-                                </q-select>
-                                <div>
-                                    <ProgressBar />
-                                </div>
-                            </div>
-                        </q-card-section>
-                        <q-card-actions class="text-primary">
-                            <q-btn v-close-popup flat label="Cancel"></q-btn>
-                            <q-btn
-                                v-close-popup
-                                flat
-                                label="Add new plan"
-                                to="/quiz"
-                            ></q-btn>
-                            <q-btn
-                                v-close-popup
-                                flat
-                                label="Delete Plan"
-                                @click="deletePlan();"
-                                to="/degree"
-                            ></q-btn>
-                        </q-card-actions>
-                    </q-card>
-                </q-dialog>
-            </div>
-        </div>
-    </nav>  
+             <q-card-section class="q-pt-none">
+                <h6 class="q-ma-none">
+                    Current Plan: {{ selectedPlan }}
+                </h6>
+                    <div class="card-contain">
+                        <q-select
+                            v-model="current"
+                            filled
+                            use-input
+                            input-debounce="0"
+                            label="Search"
+                            :options="filteredPlans"
+                            style="width: 200px"
+                            behavior="menu"
+                            @input-value="filterPlan"
+                            @update:model-value="selectPlan"
+                        >
+                            <template #no-option>
+                                <q-item>
+                                    <q-item-section class="text-grey">
+                                        No results
+                                    </q-item-section>
+                                </q-item>
+                            </template>
+                        </q-select>
+                        <div>
+                            <ProgressBar />
+                        </div>
+                    </div>
+            </q-card-section>
+            <q-card-actions class="text-primary">
+                <q-btn v-close-popup flat label="Cancel"></q-btn>
+                <q-btn
+                    v-close-popup
+                    flat
+                    label="Add new plan"
+                    to="/quiz"
+                ></q-btn>
+                <q-btn
+                    v-close-popup
+                    flat
+                    label="Delete Plan"
+                    @click="deletePlan();"
+                    to="/degree"
+                ></q-btn>
+            </q-card-actions>
+        </q-header>     
+    </q-header>
 </template>
 
 <style scoped>
