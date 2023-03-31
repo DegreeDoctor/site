@@ -211,7 +211,7 @@ export default {
 
 <style lang="scss">
 .card {
-    max-width: 70% !important;
+    max-width: 70%;
     background-color: darken($secondary, 15%) !important;
     box-sizing: border-box !important;
     padding: 5px !important;

@@ -12,11 +12,13 @@
             :list="courseList"
             group="courses"
             class="courseContainer"
-            :item-key="name"
+            item-key="name"
             @change="log"
         >
             <template #item="{element}">
-                {{element.name}}
+                <span class="holder">
+                    <CourseCard :key="element.name" :course="element" class="course" />
+                </span>
             </template>
             
         </draggable>
@@ -160,6 +162,13 @@ export default {
 };
 </script>
 <style lang="scss">
+.holder {
+    width: fit-content;
+    // width: 100%;
+    // height: 100%;
+    // display: flex;
+}
+
 .semesterName {
     text-align: center;
     font-size: 1.5rem;
@@ -196,7 +205,7 @@ export default {
 }
 
 .card {
-    max-width: 70%;
+    max-width: 100% !important;
     background-color: darken($secondary, 15%);
     box-sizing: border-box;
     padding: 5px;
