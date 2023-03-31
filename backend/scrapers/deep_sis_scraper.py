@@ -9,6 +9,8 @@ import re
 from sis_scraper import link_grabber
 from sis_scraper import majorRestrictionChecker
 from tqdm import tqdm
+from degree_util import root
+
 
 
 
@@ -59,7 +61,7 @@ def deep_sis_scraper():
                 #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=BIOL&crse_numb_in=4310"
                 #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=COGS&crse_numb_in=2940"
                 #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=CSCI&crse_numb_in=4480"
-                link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=ASTR&crse_numb_in=4220"
+                #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=ASTR&crse_numb_in=4220"
                 Lcontent = s.get(link)
                 deepContent = Lcontent.content
                 contentSoup = BeautifulSoup(deepContent, "html.parser")
@@ -68,11 +70,11 @@ def deep_sis_scraper():
                 while("" in classText):
                     classText.remove("")
                 subjectIndex =  link.find("subj_code_in=")
-                subject = ""
+                courseSubject = ""
                 for i in range(subjectIndex + 13, len(link)):
                     if link[i] == "&":
                         break
-                    subject += link[i]
+                    courseSubject += link[i]
                 #SUBJECT IS NOW FETCHED CORRECTLY--------------------------------
                 courseIndex =  int(link.find("crse_numb_in="))
                 courseID = link[courseIndex + 13:int(len(link))]
@@ -84,7 +86,7 @@ def deep_sis_scraper():
                 courseInfo = ""
                 courseInfoIndex = 0
                 for i in range(0, len(classText)):
-                    if subject in classText[i]:
+                    if courseSubject in classText[i]:
                         courseInfo = classText[i]
                         courseInfoIndex = i
                         break
@@ -133,6 +135,7 @@ def deep_sis_scraper():
                         crossedIndex = i
                         break
                 crossListed = ""
+                crossListing = ""
                 if crossedIndex != 0:
                     crossListed = classText[i].find(searchString) + len(searchString)
                     crossListing = classText[i][crossListed:crossListed + 9]
@@ -150,7 +153,7 @@ def deep_sis_scraper():
                 #communication intensive is now fetched correctly--------------------------
 
                 #major restriction
-                link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?term_in=" + year + "&subj_in=" + subject +"&crse_in=" + courseID +"&schd_in=L"
+                link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?term_in=" + year + "&subj_in=" + courseSubject +"&crse_in=" + courseID +"&schd_in=L"
                 mrPage = s.get(link)
                 mrContent = mrPage.content
                 mrSoup = BeautifulSoup(mrContent, "html.parser")
@@ -162,7 +165,7 @@ def deep_sis_scraper():
                 #professors
                 instructorStorage = []
                 professorYear = year
-                professorSubject = subject
+                professorSubject = courseSubject
                 professorID = courseID
                 professorLink = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?term_in=" + professorYear + "&subj_in=" + professorSubject + "&crse_in=" + professorID + "&schd_in=L"
                 professorWebPage = s.get(professorLink)
@@ -182,10 +185,43 @@ def deep_sis_scraper():
                 cleanInstructors = np.unique(instructorStorage)
                 #PROFESSORS ARE NOW FETCHED CORRECTLY----------------------------
                 
-
+                
 
                 #when offered(deal with later)
-            
+
+
+                #hey guys its time for me to put you in the json >:)
+
+                filepath = root
+                f = open(filepath + '/frontend/src/data/courses.json','r')   #Opens the .json file and stores it as a python object
+                courseJson = json.load(f)
+                f.close()
+                if(courseName not in courseJson):
+                    courseJson[courseName] = {} #creates a new course in the json file
+                    courseJson[courseName]['properties'] = {}
+                
+                courseJson[courseName]['subject'] = courseSubject #adds the subject to the course
+                courseJson[courseName]['ID'] = courseID #adds the ID to the course
+                courseJson[courseName]['description'] = courseDescription #adds the description to the course
+                courseJson[courseName]['credits'] = cleanCredits.tolist() #adds the credits to the course
+                #courseJson[courseName]#prereqs
+                courseJson[courseName]['crosslisted'] = crossListing #adds the crossListing to the course
+                courseJson[courseName]['properties']['CI'] = CI #adds if communication intensive to the course
+                if len(restrictedMajor) > 0:
+                    courseJson[courseName]['properties']['MR'] = True
+                    courseJson[courseName]['properties']['majorRestriction'] = restrictedMajor
+                else:
+                    courseJson[courseName]['properties']['MR'] = False
+                    courseJson[courseName]['properties']['majorRestriction'] = []
+                courseJson[courseName]['professors'] = cleanInstructors.tolist() #adds the professors to the course
+                #when offered
+
+
+                f2 = open(filepath + '/frontend/src/data/courses.json', 'w')
+                json.dump(courseJson, f2, sort_keys=True, indent=2, ensure_ascii=False)
+                f2.close()
+
+
 
             
 
