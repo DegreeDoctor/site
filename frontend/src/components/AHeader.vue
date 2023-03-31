@@ -19,10 +19,10 @@ export default {
     <q-header elevated class="bg-secondary text-white header" height-hint="98">
         <q-toolbar>
             <q-toolbar-title>
-                <q-avatar>
+                <q-avatar @click="sendQuiz()">
                     <img src="../assets/Degree_Doctor_logo.png" />
                 </q-avatar>
-                Degree Doctor
+                <a @click="sendQuiz()"> Degree Doctor</a>
             </q-toolbar-title>
 
             <PlansList />
