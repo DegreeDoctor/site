@@ -40,6 +40,7 @@ export default {
         selectPlan(val) {
             this.store.swapDegree(this.store.findDegree(val));
             this.current = this.store.findDegree(val);
+            this.$router.push('/degree');
         },
         selectPlanByUUID(val) {
             this.store.swapDegree(val);
