@@ -5,13 +5,13 @@
             :list="courseList"
             group="courses"
             class="courseContainer"
+            :item-key="name"
             @change="log"
         >
-            <CourseCard
-                v-for="course in courseList"
-                :key="course.name"
-                :course="course"
-            />
+            <template #item="{element}">
+                {{element.name}}
+            </template>
+            
         </draggable>
         <q-btn
             push
@@ -24,14 +24,15 @@
 </template>
 <script>
 import { useStore } from "../stores/store";
-import { defineComponent, toRaw } from "vue";
-import { VueDraggableNext } from "vue-draggable-next";
+import { toRaw } from "vue";
+// import { VueDraggableNext } from "vue-draggable-next";
+import draggable from 'vuedraggable'
 import CourseCard from "./CourseCard.vue";
 
-export default defineComponent({
+export default {
     components: {
         CourseCard,
-        draggable: VueDraggableNext,
+        draggable,
     },
     props: {
         semester: {
@@ -146,7 +147,7 @@ export default defineComponent({
             }
         },
     },
-});
+};
 </script>
 <style lang="scss">
 .semesterName {
