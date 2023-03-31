@@ -1,6 +1,19 @@
 <script>
 import { useStore } from "../stores/store";
 
+Vue.component('editOn', { 
+	template: '<q-icon name="fa-solid fa-pen-to-square" size="1.25em" />' 
+})
+Vue.component('trashOn', { 
+	template: '<q-icon name="fa-solid fa-trash" size="1.25em" />' 
+})
+Vue.component('checkOn', { 
+	template: '<q-icon name="fa-solid fa-check" size="1.25em" />' 
+})
+Vue.component('xOn', { 
+	template: '<q-icon name="fa-solid fa-times" size="1.25em" />' 
+})
+
 export default {
     data() {
         return {
@@ -11,6 +24,7 @@ export default {
             filter: "",
             deleteIconsVisible: false,
             deleteIconsVisibleArray: [false],
+            htmlList: [],
         };
     },
     computed: {
