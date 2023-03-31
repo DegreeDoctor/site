@@ -1,5 +1,4 @@
 <template>
-    <q-btn @click="debug()"> debug </q-btn>
     <CourseSearch
         :courses-data="coursesData"
         :prompt="showSearch"

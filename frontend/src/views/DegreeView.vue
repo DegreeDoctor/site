@@ -3,7 +3,6 @@
         debug
     </q-btn> -->
     <br />
-    <CourseTrash />
     <CourseTable :semesters="templateToArray" @add-course="addCourse" />
 </template>
 
