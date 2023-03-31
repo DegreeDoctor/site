@@ -2,72 +2,30 @@
 import { useImage } from "@vueuse/core";
 import { useStore } from "../stores/store";
 import DarkModeToggle from "./DarkModeToggle.vue";
-import ProgressBar from "./ProgressBar.vue";
 import PlansList from "./PlansList.vue";
 
 export default {
     components: {
-    DarkModeToggle,
-    ProgressBar,
-    useImage
-},
-    data() {
-        return {
-            current: useStore().getCurrentDegreeName,
-            store: useStore(),
-            plan: false,
-            filter: "",
-        };
-    },
-    computed: {
-        selectedPlan() {
-            return this.store.getCurrentDegreeName;
-        },
-        filteredPlans() {
-            return this.store.getDegreeNames.filter((x) =>
-                x.toLowerCase().includes(this.filter.toLowerCase())
-            );
-        },
+        DarkModeToggle,
+        PlansList,
     },
     methods: {
-        selectPlan(val) {
-            this.store.swapDegree(val);
-        },
-        filterPlan(val) {
-            this.filter = val;
-        },
-        deletePlan() {
-            this.store.removeDegree(this.selectedPlan);
+        sendQuiz() {
+            this.$router.push("/quiz");
         },
     },
 };
 </script>
 
 <template>
-    <nav> 
-        <div class="navbar">
-            <div class="image-container">
-                <router-link to="/quiz" id="logo"><img src="../assets/Degree_Doctor_logo.png"/></router-link>
-            </div>
-           
-            <div class="DD">
-                <RouterLink to="/" id="title">Degree Doctor</RouterLink>
-                <div class="fading-effect"></div>
-                
-            </div>
-            <DarkModeToggle/>
-            <div class="q-pa-md">
-                <q-btn
-                    no-caps
-                    label="My Plans"
-                    color="primary"
-                    @click="plan = true"
-                ></q-btn>
-                <q-dialog v-model="plan">
-                    <q-card style="min-width: 350px">
-                        <q-card-section>
-                            <div class="text-h6">Pick a plan</div>
-                        </q-card-section>
+    <q-header elevated class="bg-secondary text-white header" height-hint="98">
+        <q-toolbar>
+            <q-toolbar-title>
+                <q-avatar @click="sendQuiz()">
+                    <img src="../assets/Degree_Doctor_logo.png" />
+                </q-avatar>
+                <a @click="sendQuiz()"> Degree Doctor</a>
+            </q-toolbar-title>
 
                         <q-card-section class="q-pt-none">
                             <h6 class="q-ma-none">
@@ -405,63 +363,11 @@ button{
     justify-content: space-between;
     padding-right: 1em;
 }
-.Degree_Doctor{
-    font: 2rem;
-    text-decoration: none;
-}
-
-@media screen and (max-width: 768px){
-    .image-container {
-    position: absolute;
-    top: 6%;
-    right: 62%;
-    transform: translate(-50%,-50%);
-    z-index: 2; /* Makes sure this is on top */
-    }
-    .DD {
+.header {
     display: flex;
-    align-items:center;
-    justify-content: space-between;
-    position: absolute;
-    top: 2.88em;
-    right: 40%;
-    transform: translate(-50%,-50%);
-    z-index: 1; /* Places this below the image container */
-    margin-left: -1000px;
-    }
-    .DD .fading-effect {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      background: turquoise;
-      -webkit-animation: text-slide 4s cubic-bezier(.1, 0, 0.5, 0.5);
-      animation: text-slide s cubic-bezier(.1, 0, 0.5, 0.5);
-      animation-fill-mode: forwards;
-      -webkit-animation-fill-mode: forwards;
-    }
-    .fading-effect {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      background: white;
-    }  
-        @keyframes image-slide {
-            0% { transform: translateX(-80px) scale(0); }
-            60% { transform: translateX(-80px) scale(1); }
-            90% { transform: translateX(-80px) scale(1); }
-            100% { transform: translateX(-80px) scale(1); }  
-        }
-        @keyframes text-slide {
-            100% { width: 100%; }
-            75%{ width: 100%; }
-            60% { width: 0; }
-            0% { width: 0; }
-            75%{ width: 100%; }
-            100% { width: 0%; }
-        }
-    }
-    </style>
+    justify-content: center;
+    align-items: center;
+    max-height: 54px;
+    height: 100%;
+}
+</style>

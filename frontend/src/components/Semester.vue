@@ -1,6 +1,13 @@
 <template>
-    <div class="semesterContainer">
-        <h3 class="semesterName">{{ semester[0] }}</h3>
+    <div
+        :class="[
+            'semesterContainer',
+            darkMode() ? 'darkModeSemesterContainer' : '',
+        ]"
+    >
+        <h3 :class="['semesterName', darkMode() ? 'darkModeSemesterName' : '']">
+            {{ semester[0] }}
+        </h3>
         <draggable
             :list="courseList"
             group="courses"
@@ -10,11 +17,16 @@
             <CourseCard
                 v-for="course in courseList"
                 :key="course.name"
-                class="course"
                 :course="course"
             />
         </draggable>
-        <q-btn push color="secondary" class="addButton" icon="add" />
+        <q-btn
+            push
+            color="secondary"
+            class="addButton"
+            icon="add"
+            @click="addCourse"
+        />
     </div>
 </template>
 <script>
@@ -34,6 +46,7 @@ export default defineComponent({
             required: true,
         },
     },
+    emits: ["addCourse"],
     data() {
         return {
             store: useStore(),
@@ -112,6 +125,9 @@ export default defineComponent({
         }
     },
     methods: {
+        addCourse() {
+            this.$emit("addCourse", this.semesterName);
+        },
         debug() {
             console.log(this.store.getCurrentDegree);
             console.log(this.semesterName);
@@ -136,6 +152,9 @@ export default defineComponent({
                 );
             }
         },
+        darkMode() {
+            return this.store.getDarkMode;
+        },
     },
 });
 </script>
@@ -148,6 +167,10 @@ export default defineComponent({
     width: 100%;
     background-color: white;
 }
+.darkModeSemesterName.semesterName {
+    color: white;
+    background-color: black;
+}
 
 .semesterContainer {
     border: 1px solid black;
@@ -155,6 +178,12 @@ export default defineComponent({
     min-width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.darkModeSemesterContainer.semesterContainer {
+    border: 1px solid white;
+    background-color: #262626;
+    color: white;
 }
 
 .courseContainer {
@@ -170,7 +199,8 @@ export default defineComponent({
     background-color: darken($secondary, 15%);
     box-sizing: border-box;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
+    height: 5vh;
     color: white;
 }
 

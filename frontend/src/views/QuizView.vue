@@ -1,6 +1,8 @@
 <script>
 import { useStore } from "../stores/store";
 import programsJSON from "../data/programs.json";
+import coursesJSON from "../data/courses.json";
+import { degreeGenerator } from "../helpers/DegreeGenerator.js";
 
 export default {
     data() {
@@ -78,6 +80,7 @@ export default {
             concentrationOptions: concentrations,
             filteredConcentrations: concentrations,
             programsData: programsJSON,
+            coursesData: coursesJSON,
         };
     },
     methods: {
@@ -123,10 +126,16 @@ export default {
                     }
                 }
             }
-            degree["template"] =
-                this.programsData["2022-2023"][this.selectedMajors[0]][
-                    "template"
-                ];
+            // check if degree name is not taken
+            if (this.store.findDegree(this.degreeName) != "") {
+                this.showNotif(
+                    "top",
+                    "Degree name is already taken",
+                    "negative"
+                );
+                return;
+            }
+            degree = degreeGenerator(degree, this.programsData, this.coursesData);
             this.store.addDegree(degree);
             this.$router.push("/degree");
             let message =
@@ -140,6 +149,55 @@ export default {
             this.selectedPathways = "None";
             this.selectedConcentrations = "None";
             this.showNotif("top", "Form has been reset", "info", 300);
+        },
+        massCreate() {
+            // create a bunch of degrees
+            let degree = {
+                name: "Plan 1 - Computer Science",
+                majors: ["Computer Science"],
+                minors: this.selectedMinors,
+                pathway: this.selectedPathways,
+                credits: {},
+                concentration: this.selectedConcentrations,
+            };
+            degree["template"] =
+                this.programsData["2022-2023"]["Computer Science"]["template"];
+            this.store.addDegree(degree);
+            degree = {
+                name: "Plan 2 - Architecture",
+                majors: ["Architecture"],
+                minors: this.selectedMinors,
+                pathway: this.selectedPathways,
+                credits: {},
+                concentration: this.selectedConcentrations,
+            };
+            degree["template"] =
+                this.programsData["2022-2023"]["Architecture"]["template"];
+            this.store.addDegree(degree);
+            degree = {
+                name: "Plan 3 - Biology",
+                majors: ["Biology"],
+                minors: this.selectedMinors,
+                pathway: this.selectedPathways,
+                credits: {},
+                concentration: this.selectedConcentrations,
+            };
+            degree["template"] =
+                this.programsData["2022-2023"]["Biology"]["template"];
+            this.store.addDegree(degree);
+            degree = {
+                name: "Plan 4 - Chemistry",
+                majors: ["Chemistry"],
+                minors: this.selectedMinors,
+                pathway: this.selectedPathways,
+                credits: {},
+                concentration: this.selectedConcentrations,
+            };
+            degree["template"] =
+                this.programsData["2022-2023"]["Chemistry"]["template"];
+            this.store.addDegree(degree);
+            this.$router.push("/degree");
+            this.showNotif("top", "Mass created plans", "alert");
         },
         showNotif(position, message, type, timeout = 1250) {
             // Useful reference https://quasar.dev/quasar-plugins/notify#positioning
@@ -267,6 +325,12 @@ export default {
                 flat
                 style="margin-left: 10px"
                 @click="reset"
+            />
+            <q-btn
+                label="Mass Create"
+                color="accent"
+                style="margin-left: 10px"
+                @click="massCreate"
             />
         </div>
     </q-form>

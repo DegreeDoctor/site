@@ -72,6 +72,8 @@ def split_req(str):
 # 'required' and 'one_of'
 def get_prereq(str): 
     str = norm_str(str)
+    if (str.upper().find("CREDIT CANNOT") != -1):
+        str = str[:str.upper().find("CREDIT CANNOT")]
     reqs = []
     one_of = []
     reqset = split_req(str)
@@ -235,7 +237,7 @@ def replace_crn(dict):
     return dict
 
 def scrape_courses():
-    print("Starting courses scraping")
+    print("Starting course_scraper scraping:")
     catalogs = get_catalogs()
 
     catalogs = catalogs[:4]
@@ -254,7 +256,7 @@ def scrape_courses():
     # Writing to sample.json
     with open(root + "/frontend/src/data/courses.json", "w") as outfile:
         outfile.write(json_object)
-        print("Finished courses scraping")
+        print("Finished course_scraper scraping.")
     return courses_per_year
 
 if __name__ == "__main__":

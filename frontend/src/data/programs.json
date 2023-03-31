@@ -3,6 +3,7 @@
         "Aeronautical Engineering Curriculum": {
             "credits": 130,
             "description": "Freshmen or sophomores who have identified aeronautical engineering as their major may follow the baccalaureate program below in lieu of the general core engineering program. Dual major programs which lead to a single baccalaureate degree embracing two fields are also available and are described in more detail in the MANE Handbook (emailed to you when you declare a major in MANE, and available from the MANE Student Services Office, JEC 2012).",
+            "extra": [],
             "name": "Aeronautical Engineering Curriculum",
             "requirements": {
                 "Aerodynamics": 4,
@@ -96,13 +97,20 @@
                     "MANE 4.... Capstone Design Elective Credit Hours: 3",
                     "MANE 4.... Aerospace Technical Elective Credit Hours: 3",
                     "Professional Development: Leadership Competencies"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Applied Physics": {
             "credits": 125,
             "description": "",
+            "extra": [
+                "Optical Physics",
+                "A track in optical physics might include four courses from the following list:",
+                "Microelectronics",
+                "A track in microelectronics might include four courses from the following list:",
+                "Electives",
+                "Applied physics majors planning to pursue graduate study should take advanced physics courses chosen from the following undergraduate- and graduate-level courses:"
+            ],
             "name": "Applied Physics",
             "requirements": {
                 "A Passion for Physics": 1,
@@ -179,20 +187,23 @@
                     "Technical Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "HASS Elective Credit Hours: 4"
-                ],
-                "Extra": [
-                    "Optical Physics",
-                    "A track in optical physics might include four courses from the following list:",
-                    "Microelectronics",
-                    "A track in microelectronics might include four courses from the following list:",
-                    "Electives",
-                    "Applied physics majors planning to pursue graduate study should take advanced physics courses chosen from the following undergraduate- and graduate-level courses:"
                 ]
             }
         },
         "Architecture": {
             "credits": 142,
             "description": "This five-year undergraduate professional program is a first professional degree accredited by the National Architectural Accreditation Board. The program is for a limited number of qualified students committed to the study of architecture. These students are admitted directly to the professional degree program and begin studies in architecture in the first year.",
+            "extra": [
+                "Professional Elective Credit Hours: 2",
+                "Elective Credit Hours: 4",
+                "HASS Elective Credit Hours: 4",
+                "Architectural Design Studio 7",
+                "Final Project Design Research Seminar",
+                "Professional Elective Credit Hours: 2",
+                "Elective Credit Hours: 4",
+                "Professional Elective Credit Hours: 2",
+                "Final Project Design Studio"
+            ],
             "name": "Architecture",
             "requirements": {
                 "An Architectural Genealogy": 3,
@@ -292,23 +303,13 @@
                     "HASS Elective Credit Hours: 4",
                     "Professional Practice 2",
                     "Architectural Design Studio 6"
-                ],
-                "Extra": [
-                    "Professional Elective Credit Hours: 2",
-                    "Elective Credit Hours: 4",
-                    "HASS Elective Credit Hours: 4",
-                    "Architectural Design Studio 7",
-                    "Final Project Design Research Seminar",
-                    "Professional Elective Credit Hours: 2",
-                    "Elective Credit Hours: 4",
-                    "Professional Elective Credit Hours: 2",
-                    "Final Project Design Studio"
                 ]
             }
         },
         "Biological Neuroscience": {
             "credits": 128,
             "description": "Neuroscience is the study of the structure and function of the brain and nervous system. This field is highly interdisciplinary with scientists and engineers from many different backgrounds using multiple experimental approaches. At Rensselaer through the Department of Biological Sciences, we offer a Program in Biological Neuroscience, which will involve both foundational and advanced coursework.",
+            "extra": [],
             "name": "Biological Neuroscience",
             "requirements": {
                 "Advanced Biology Laboratory Option": 6,
@@ -390,13 +391,13 @@
                     "Free Elective Credit Hours: 4",
                     "Cellular Neuroscience",
                     "Developmental Biology"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Biology": {
             "credits": 112,
             "description": "The undergraduate curriculum in biology is designed to prepare students for admission to graduate or professional school or to enter the workplace. Recognizing that flexibility is essential for students with specific interests and goals other than those spelled out in the traditional curricula, it is designed to leave many options open to the student. The following is a sample biology curriculum, completion of which requires a minimum of 128 credit hours.",
+            "extra": [],
             "name": "Biology",
             "requirements": {
                 "BIOL - Biology": 12,
@@ -469,13 +470,16 @@
                     "BIOL - Biology Elective Credit Hours: 4",
                     "Elective Credit Hours: 4",
                     "Elective Credit Hours: 4"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Biomedical Engineering": {
             "credits": 128,
             "description": "In lieu of the general core engineering program presented earlier, students who identify biomedical engineering as their discipline may follow the program outlined below. This curriculum requires a minimum of 128 credits.",
+            "extra": [
+                "BME Technical Electives and Specialization Areas",
+                "To fulfill the BME Technical Elective requirement, students can take any combination of four courses from the list of approved technical elective courses provided that at least two of the four courses are 4000-level or higher. However, students may want to specialize in certain areas such as biomaterials, biomechanics, bioimaging, biomedical data science, or medical devices. The courses associated with each specialization area can be found in the BME undergraduate student handbook; note that it is not necessary to choose a formal specialization to earn a BME degree, but that this is optional for students with interest in specific areas."
+            ],
             "name": "Biomedical Engineering",
             "requirements": {
                 "Advanced Systems Physiology": 4,
@@ -563,16 +567,20 @@
                     "Free Elective - Credit Hours: 3",
                     "HASS Elective - Credit Hours: 4",
                     "Biomedical Engineering Design"
-                ],
-                "Extra": [
-                    "BME Technical Electives and Specialization Areas",
-                    "To fulfill the BME Technical Elective requirement, students can take any combination of four courses from the list of approved technical elective courses provided that at least two of the four courses are 4000-level or higher. However, students may want to specialize in certain areas such as biomaterials, biomechanics, bioimaging, biomedical data science, or medical devices. The courses associated with each specialization area can be found in the BME undergraduate student handbook; note that it is not necessary to choose a formal specialization to earn a BME degree, but that this is optional for students with interest in specific areas."
                 ]
             }
         },
         "Biotechnology and Health Economics": {
             "credits": 124,
             "description": "The B.S. in Biotechnology and Health Economics provides students with a combination of skills in the biosciences, biotechnology, and economics. We anticipate substantial demand from various sectors in industry and consulting for majors from this program. The combination of skills in complementary areas of biotechnology, sciences and economics is increasingly in demand in industry and consulting. Skilled and quantitatively-trained personnel are often required to analyze not only the scientific side and emergence of new technologies, but also the economic implications for firms related to their pricing, investment, and innovation strategies, as well as the interface with economic and regulatory policy.",
+            "extra": [
+                "Data Analytics Focus Area",
+                "Data AnalyticsEngineering, Science, and ManagementApplied Analytics & Predictive ModelingData Analytics Research LabHealth Analytics Challenges Lab",
+                "Drug Discovery Focus Area",
+                "Metabolic Engineering",
+                "Biotechnology Focus Area",
+                "BiocatalysisNatural Polymers and BiomaterialsNucleic Acids: Nano and BiotechBionanotechnology"
+            ],
             "name": "Biotechnology and Health Economics",
             "requirements": {
                 "Behavioral Economics": 4,
@@ -651,20 +659,13 @@
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 2",
                     "Biochemistry Laboratory"
-                ],
-                "Extra": [
-                    "Data Analytics Focus Area",
-                    "Data AnalyticsEngineering, Science, and ManagementApplied Analytics & Predictive ModelingData Analytics Research LabHealth Analytics Challenges Lab",
-                    "Drug Discovery Focus Area",
-                    "Metabolic Engineering",
-                    "Biotechnology Focus Area",
-                    "BiocatalysisNatural Polymers and BiomaterialsNucleic Acids: Nano and BiotechBionanotechnology"
                 ]
             }
         },
         "Building Sciences B.S.": {
             "credits": 138,
             "description": "The four-year Bachelor of Science degree in Building Sciences prepares students for the broad range of roles and opportunities presented by the building industry. The building sciences focus on the design and construction of building systems such as structures, enclosures, environmental systems, lighting, and acoustics as well as their management, performance, and building diagnostics. The degree consists of 130 credits.",
+            "extra": [],
             "name": "Building Sciences B.S.",
             "requirements": {
                 "Architectural Case Studies": 2,
@@ -757,13 +758,13 @@
                     "SCIS Elective Credit Hours: 4",
                     "Construction Industry Seminar 2",
                     "Building Sciences Capstone"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Business Analytics": {
             "credits": 82,
             "description": "",
+            "extra": [],
             "name": "Business Analytics",
             "requirements": {
                 ".": 4,
@@ -824,13 +825,24 @@
                 ],
                 "4-Spring": [
                     "MGMT 4870 - Strategy and Policy Capstone Credit Hours: 4 HASS or SCIS Elective Credit Hours: 2Elective Credit Hours: 4"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Business and Management": {
             "credits": 108,
             "description": "This four-year B.S. in Business and Management program requires a minimum of 124 credit hours. A typical program is described below.",
+            "extra": [
+                "Entrepreneurship - Any three:",
+                "",
+                "Finance - Any three:",
+                "",
+                "Management Information Systems",
+                "",
+                "Marketing - Any three:",
+                "",
+                "Supply Chain Management",
+                ""
+            ],
             "name": "Business and Management",
             "requirements": {
                 ".": 4,
@@ -902,24 +914,13 @@
                     "Elective Credit Hours: 4",
                     "Elective Credit Hours: 4",
                     "Strategy and Policy"
-                ],
-                "Extra": [
-                    "Entrepreneurship - Any three:",
-                    "",
-                    "Finance - Any three:",
-                    "",
-                    "Management Information Systems",
-                    "",
-                    "Marketing - Any three:",
-                    "",
-                    "Supply Chain Management",
-                    ""
                 ]
             }
         },
         "Chemical Engineering": {
             "credits": 135,
             "description": "The chemical engineering program comprises a minimum of 41 courses, which include three free electives and three area electives: one in advanced chemistry, one in advanced chemical engineering, and one in a nonchemical engineering area. On completion of three years of the baccalaureate program, the student may continue to the fourth year or be admitted to the professional program. While individual variations may be made in the course sequence in consultation with a faculty adviser, all listed courses and elective credits in the curricula must be satisfactorily completed to qualify for the specified degrees. A program outline that indicates required courses and electives is provided below. The complete curriculum totals 131 credit hours.",
+            "extra": [],
             "name": "Chemical Engineering",
             "requirements": {
                 "Bioprocessing Laboratory Course": 3,
@@ -1019,103 +1020,13 @@
                     "Chemical Engineering Laboratory II",
                     "Bioprocessing Laboratory Course",
                     "Professional Development: Leadership Competencies"
-                ],
-                "Extra": []
-            }
-        },
-        "Chemistry": {
-            "credits": 128,
-            "description": "The B.S. in Chemistry curriculum is designed to meet the recommendations of the American Chemical Society Committee on Professional Training. At the same time, it provides ample opportunity for students to select electives that permit them to specialize in particular fields, to explore areas of potential interest, or to take unusual combinations of courses that will suit nontypical career goals. The program emphasizes hands-on laboratory experience and provides extensive opportunities to participate in research. Besides allowing students to prepare for careers that demand a good background in science and mathematics, the curriculum also offers a sound basis for careers in fields such as law, the health professions, management, and technical communication.",
-            "name": "Chemistry",
-            "requirements": {
-                "Calculus I": 4,
-                "Calculus II": 4,
-                "Chemistry I with Advanced Lab": 4,
-                "Chemistry II": 4,
-                "Chemistry for Life": 1,
-                "Elective": 26,
-                "Equilibrium Chemistry and Quantitative Analysis": 3,
-                "Experimental Chemistry I Analytical Techniques": 2,
-                "Experimental Chemistry II Synthesis and Characterization": 3,
-                "Experimental Chemistry III Inorganic and Physical Methods": 3,
-                "Experimental Chemistry IV Physical and Instrumental Methods": 3,
-                "HASS": 24,
-                "Inorganic Chemistry I": 3,
-                "Inorganic Chemistry II": 3,
-                "Instrumental Methods of Analysis": 3,
-                "Introduction to Biology": 3,
-                "Introduction to Biology Laboratory": 1,
-                "Introduction to Differential Equations": 4,
-                "Introduction to Polymer Chemistry": 3,
-                "Macroscopic Physical Chemistry": 3,
-                "Microscopic Physical Chemistry": 3,
-                "Molecular Biochemistry I": 4,
-                "Organic Chemistry I": 3,
-                "Organic Chemistry II": 3,
-                "Physics I": 4,
-                "Physics II": 4,
-                "Professional Development Seminar": 1,
-                "Senior Experience": 2
-            },
-            "template": {
-                "1-Fall": [
-                    "HASS Elective Credit Hours: 4",
-                    "Chemistry I with Advanced Lab",
-                    "Calculus I",
-                    "Physics I",
-                    "Chemistry for Life"
-                ],
-                "1-Spring": [
-                    "HASS Elective Credit Hours: 4",
-                    "Chemistry II",
-                    "Calculus II",
-                    "Physics II"
-                ],
-                "2-Fall": [
-                    "HASS Elective Credit Hours: 4",
-                    "Equilibrium Chemistry and Quantitative Analysis",
-                    "Experimental Chemistry I: Analytical Techniques",
-                    "Organic Chemistry I",
-                    "Introduction to Differential Equations"
-                ],
-                "2-Spring": [
-                    "Elective Credit Hours: 4",
-                    "Introduction to Biology",
-                    "Introduction to Biology Laboratory",
-                    "Inorganic Chemistry I",
-                    "Organic Chemistry II",
-                    "Experimental Chemistry II: Synthesis and Characterization"
-                ],
-                "3-Fall or Spring": [
-                    "HASS Elective Credit Hours: 4",
-                    "Elective Credit Hours: 6",
-                    "Experimental Chemistry III: Inorganic and Physical Methods",
-                    "Microscopic Physical Chemistry"
-                ],
-                "3-Summer": [
-                    "HASS Elective Credit Hours: 4",
-                    "Inorganic Chemistry II",
-                    "Macroscopic Physical Chemistry",
-                    "Molecular Biochemistry I"
-                ],
-                "4-Fall": [
-                    "HASS Elective Credit Hours: 4",
-                    "Electives Credit Hours: 7",
-                    "Instrumental Methods of Analysis",
-                    "Professional Development Seminar",
-                    "Senior Experience"
-                ],
-                "4-Spring": [
-                    "Electives Credit Hours: 9",
-                    "Experimental Chemistry IV: Physical and Instrumental Methods",
-                    "Introduction to Polymer Chemistry"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Chemistry - Chemical Biology Track": {
             "credits": 127,
             "description": "refers to the application of Chemistry to biological problems. The \"",
+            "extra": [],
             "name": "Chemistry - Chemical Biology Track",
             "requirements": {
                 "Biochemistry Laboratory": 6,
@@ -1202,13 +1113,13 @@
                     "Biochemistry Laboratory",
                     "Experimental Chemistry IV: Physical and Instrumental Methods",
                     "Molecular Biochemistry II"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Chemistry - Industrial Chemistry Track": {
             "credits": 128,
             "description": "This track is intended for students planning to go into industry and who wish to incorporate some core Chemical Engineering courses into their program. With proper choice of engineering electives students will be prepared for graduate programs in Chemical Engineering as well as in Chemistry. In particular, this program qualifies students for admission to a co-terminal MS degree program in Chemical Engineering. Students considering this option should consult with Chemical Engineering regarding choice of electives and MS course requirements.",
+            "extra": [],
             "name": "Chemistry - Industrial Chemistry Track",
             "requirements": {
                 "CHME": 4,
@@ -1298,13 +1209,116 @@
                     "Electives Credit Hours: 6",
                     "Experimental Chemistry IV: Physical and Instrumental Methods",
                     "Introduction to Polymer Chemistry"
+                ]
+            }
+        },
+        "Chemistry B.S.": {
+            "credits": 128,
+            "description": "The B.S. in Chemistry curriculum is designed to meet the recommendations of the American Chemical Society Committee on Professional Training. At the same time, it provides ample opportunity for students to select electives that permit them to specialize in particular fields, to explore areas of potential interest, or to take unusual combinations of courses that will suit nontypical career goals. The program emphasizes hands-on laboratory experience and provides extensive opportunities to participate in research. Besides allowing students to prepare for careers that demand a good background in science and mathematics, the curriculum also offers a sound basis for careers in fields such as law, the health professions, management, and technical communication.",
+            "extra": [],
+            "name": "Chemistry B.S.",
+            "requirements": {
+                "Calculus I": 4,
+                "Calculus II": 4,
+                "Chemistry I with Advanced Lab": 4,
+                "Chemistry II": 4,
+                "Chemistry for Life": 1,
+                "Elective": 26,
+                "Equilibrium Chemistry and Quantitative Analysis": 3,
+                "Experimental Chemistry I Analytical Techniques": 2,
+                "Experimental Chemistry II Synthesis and Characterization": 3,
+                "Experimental Chemistry III Inorganic and Physical Methods": 3,
+                "Experimental Chemistry IV Physical and Instrumental Methods": 3,
+                "HASS": 24,
+                "Inorganic Chemistry I": 3,
+                "Inorganic Chemistry II": 3,
+                "Instrumental Methods of Analysis": 3,
+                "Introduction to Biology": 3,
+                "Introduction to Biology Laboratory": 1,
+                "Introduction to Differential Equations": 4,
+                "Introduction to Polymer Chemistry": 3,
+                "Macroscopic Physical Chemistry": 3,
+                "Microscopic Physical Chemistry": 3,
+                "Molecular Biochemistry I": 4,
+                "Organic Chemistry I": 3,
+                "Organic Chemistry II": 3,
+                "Physics I": 4,
+                "Physics II": 4,
+                "Professional Development Seminar": 1,
+                "Senior Experience": 2
+            },
+            "template": {
+                "1-Fall": [
+                    "HASS Elective Credit Hours: 4",
+                    "Chemistry I with Advanced Lab",
+                    "Calculus I",
+                    "Physics I",
+                    "Chemistry for Life"
                 ],
-                "Extra": []
+                "1-Spring": [
+                    "HASS Elective Credit Hours: 4",
+                    "Chemistry II",
+                    "Calculus II",
+                    "Physics II"
+                ],
+                "2-Fall": [
+                    "HASS Elective Credit Hours: 4",
+                    "Equilibrium Chemistry and Quantitative Analysis",
+                    "Experimental Chemistry I: Analytical Techniques",
+                    "Organic Chemistry I",
+                    "Introduction to Differential Equations"
+                ],
+                "2-Spring": [
+                    "Elective Credit Hours: 4",
+                    "Introduction to Biology",
+                    "Introduction to Biology Laboratory",
+                    "Inorganic Chemistry I",
+                    "Organic Chemistry II",
+                    "Experimental Chemistry II: Synthesis and Characterization"
+                ],
+                "3-Fall or Spring": [
+                    "HASS Elective Credit Hours: 4",
+                    "Elective Credit Hours: 6",
+                    "Experimental Chemistry III: Inorganic and Physical Methods",
+                    "Microscopic Physical Chemistry"
+                ],
+                "3-Summer": [
+                    "HASS Elective Credit Hours: 4",
+                    "Inorganic Chemistry II",
+                    "Macroscopic Physical Chemistry",
+                    "Molecular Biochemistry I"
+                ],
+                "4-Fall": [
+                    "HASS Elective Credit Hours: 4",
+                    "Electives Credit Hours: 7",
+                    "Instrumental Methods of Analysis",
+                    "Professional Development Seminar",
+                    "Senior Experience"
+                ],
+                "4-Spring": [
+                    "Electives Credit Hours: 9",
+                    "Experimental Chemistry IV: Physical and Instrumental Methods",
+                    "Introduction to Polymer Chemistry"
+                ]
             }
         },
         "Civil Engineering": {
             "credits": 128,
             "description": "The baccalaureate program in civil engineering leads to a B.S. degree and, for qualified students, a professional program of advanced study is available, leading to both the M.Eng. degree and B.S. degree. The civil engineering curriculum for the B.S. degree is shown below followed by a list of electives for each area of concentration. Concentrations include environmental, geotechnical, structural, transportation, and water resources engineering. A minimum of 128 credit hours is required for this curriculum.",
+            "extra": [
+                "Structural Engineering",
+                "",
+                "Environmental Engineering",
+                "Students must choose two of the following courses:",
+                "Geotechnical Engineering",
+                "Students must take:CIVL 4010 Foundation Engineering Credit Hours: 3And must choose a second course from the following:",
+                "Transportation Engineering",
+                "Students must choose two of the following courses:",
+                "Water Resources Engineering",
+                "Students must choose two of the following courses:",
+                "Additional Courses",
+                "To satisfy the CE Technical Elective requirement, students may choose an additional CE Design Elective within any concentration or, with adviser approval, courses from related disciplines. These related disciplines include architecture, environmental engineering, earth and environmental sciences, mechanical engineering, chemical engineering, industrial engineering, and operations research. A representative list of such courses is as follows:"
+            ],
             "name": "Civil Engineering",
             "requirements": {
                 "Applied Hydrology and Design": 4,
@@ -1390,26 +1404,13 @@
                     "HASS Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "Civil Engineering Capstone Design"
-                ],
-                "Extra": [
-                    "Structural Engineering",
-                    "",
-                    "Environmental Engineering",
-                    "Students must choose two of the following courses:",
-                    "Geotechnical Engineering",
-                    "Students must take:CIVL 4010 Foundation Engineering Credit Hours: 3And must choose a second course from the following:",
-                    "Transportation Engineering",
-                    "Students must choose two of the following courses:",
-                    "Water Resources Engineering",
-                    "Students must choose two of the following courses:",
-                    "Additional Courses",
-                    "To satisfy the CE Technical Elective requirement, students may choose an additional CE Design Elective within any concentration or, with adviser approval, courses from related disciplines. These related disciplines include architecture, environmental engineering, earth and environmental sciences, mechanical engineering, chemical engineering, industrial engineering, and operations research. A representative list of such courses is as follows:"
                 ]
             }
         },
         "Cognitive Science": {
             "credits": 144,
             "description": "Cognitive Science is the scientific study of cognitive phenomena such as reasoning, decision making, memory, learning, language, perception, and action. This young and emerging interdisciplinary field lies at the intersection of psychology, computer science, and philosophy, and has further important links to neuroscience, linguistics, anthropology, mathematics, biology, and education.",
+            "extra": [],
             "name": "Cognitive Science",
             "requirements": {
                 "And": 4,
@@ -1482,13 +1483,13 @@
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Communication, Media, and Design": {
             "credits": 132,
             "description": "The B.S. in Communication, Media, and Design requires a total of 124 credit hours.",
+            "extra": [],
             "name": "Communication, Media, and Design",
             "requirements": {
                 "Communication Theory and Practice": 4,
@@ -1551,13 +1552,20 @@
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "Major Elective Credit Hours: 4"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Computer Science": {
             "credits": 128,
             "description": "All computer science students are assigned a faculty adviser to assist them with their interests and career goals throughout their academic career. As shown below in the 128-credit-hour B.S. curriculum leading to the B.S. degree in computer science, flexibility is one of the hallmarks of the Rensselaer computer science program. With this flexibility, students explore related areas and pursue minors and/or dual or double majors in the following fields: mathematics; electrical and computer systems engineering; information technology and web science; games and simulation arts and sciences; business and management; economics; physics; psychology; electronic media, arts, and communication; and most other disciplines.",
+            "extra": [
+                "Science",
+                "A 4-credit course chosen from the following: astronomy, biology, chemistry, earth and environmental science, and physics. The P/NC option cannot be used for this course. The course ERTH 1030 cannot be used to satisfy this requirement.",
+                "Computer Science",
+                "Four additional computing courses of 3 or 4 credits at the 4000 or 6000 level, i.e., courses in the series CSCI 4XXX and CSCI 6XXX. Reading and independent study courses cannot be used for these courses. Further, the P/NC option cannot be used for these courses. Note that of the required 16 credits, any missing credits due to 3-credit courses may be made up as free elective credits.",
+                "Mathematics",
+                "Two additional courses in mathematics. MATH Option I must be one of the following courses: MATH 2010, MATH 4030, MATH 4040/MATH 4140 Intermediate Logic, MATH 4100, or MATP 4600. MATH Option II must be any course in MATH/MATP at the 2000 level or above . Independent study courses cannot be used to satisfy this option. The P/NC option cannot be used for these courses. Note that although some courses are cross listed as both MATH and CSCI, if a course is used to fulfill the MATH Option requirement, it cannot also be used as a CSCI Option/Capstone course."
+            ],
             "name": "Computer Science",
             "requirements": {
                 "CSCI": 16,
@@ -1628,20 +1636,13 @@
                     "Free Elective or CSCI Option/Capstone Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4"
-                ],
-                "Extra": [
-                    "Science",
-                    "A 4-credit course chosen from the following: astronomy, biology, chemistry, earth and environmental science, and physics. The P/NC option cannot be used for this course. The course ERTH 1030 cannot be used to satisfy this requirement.",
-                    "Computer Science",
-                    "Four additional computing courses of 3 or 4 credits at the 4000 or 6000 level, i.e., courses in the series CSCI 4XXX and CSCI 6XXX. Reading and independent study courses cannot be used for these courses. Further, the P/NC option cannot be used for these courses. Note that of the required 16 credits, any missing credits due to 3-credit courses may be made up as free elective credits.",
-                    "Mathematics",
-                    "Two additional courses in mathematics. MATH Option I must be one of the following courses: MATH 2010, MATH 4030, MATH 4040/MATH 4140 Intermediate Logic, MATH 4100, or MATP 4600. MATH Option II must be any course in MATH/MATP at the 2000 level or above . Independent study courses cannot be used to satisfy this option. The P/NC option cannot be used for these courses. Note that although some courses are cross listed as both MATH and CSCI, if a course is used to fulfill the MATH Option requirement, it cannot also be used as a CSCI Option/Capstone course."
                 ]
             }
         },
         "Computer and Systems Engineering": {
             "credits": 139,
             "description": "This field is one of the fastest-growing branches of engineering. Strong course sequences in software, hardware, and systems engineering are available. Students consider the computer as a system in itself, as a tool for modeling and design, and as an embedded element within a real-time system. There is the flexibility for in depth study in areas such as automatic control, communications, information processing, computer software, computer hardware, computer networks, robotics, signal processing, and image analysis.",
+            "extra": [],
             "name": "Computer and Systems Engineering",
             "requirements": {
                 "Calculus I": 4,
@@ -1729,13 +1730,13 @@
                     "SCIS Elective Credit Hours: 4",
                     "Free Electives Credit Hours: 3 - 8",
                     "HASS Elective Credit Hours: 4"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Design, Innovation, and Society": {
             "credits": 128,
             "description": "The Design, Innovation, and Society (commonly referred to as DIS) bachelor's degree program provides creative, socially conscious students a broad education in design. Offered by the Department of Science and Technology Studies, the program adopts a social-scientific approach to design that integrates creative, technical, and organizational/entrepreneurial dimensions. This unique bachelor's program includes project-based design studios, discussion-focused seminar courses, and a cumulative senior project that integrates all aspects of the student's education.",
+            "extra": [],
             "name": "Design, Innovation, and Society",
             "requirements": {
                 "Capstone Design": 4,
@@ -1803,13 +1804,13 @@
                     "Capstone Design Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Economics": {
             "credits": 128,
             "description": "A major in Economics requires 32 credit hours in the discipline and must include the following:",
+            "extra": [],
             "name": "Economics",
             "requirements": {
                 "Calculus I": 4,
@@ -1874,13 +1875,13 @@
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Electrical Engineering": {
             "credits": 136,
             "description": "Traditionally the largest and most diverse in all of engineering, this curriculum offers courses with various degrees of emphasis on theory, design, experimental work, and computer simulation. Subject matter ranges from semiconductors, electromagnetics, circuits and electronics, and electric power, to control, computer, communication, and information processing systems.",
+            "extra": [],
             "name": "Electrical Engineering",
             "requirements": {
                 "Calculus I": 4,
@@ -1966,13 +1967,28 @@
                     "Restricted Elective Credit Hours: 3-4",
                     "Free Electives Credit Hours: 6-12",
                     "HASS Elective Credit Hours: 4"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Electronic Arts": {
             "credits": 132,
             "description": "The Bachelor of Science in Electronic Arts (EART) degree is designed to support either a single or dual major option. It is intended for students who want to critically and creatively explore the arts at the intersection of the humanities, and the physical, computational, engineering, and social sciences.",
+            "extra": [
+                "Animation and Algorithmic Art",
+                "",
+                "Integrated Visual Arts",
+                "",
+                "Sonic Arts",
+                "",
+                "Video, Performance, and Social Practice",
+                "",
+                "DIY (Do It Yourself)",
+                "",
+                "Comprehensive Course Listings:",
+                "",
+                "Footnotes",
+                "A minimum of three Focus Area Electives must be at the 4000-level.Students should take an Inquiry course during their first year. For a listing of HASS Inquiry courses go to: https://info.rpi.edu/hass-inquiry."
+            ],
             "name": "Electronic Arts",
             "requirements": {
                 "Calculus I": 4,
@@ -2038,28 +2054,13 @@
                     "Free Elective Credit Hours: 4",
                     "HASS Elective Credit Hours: 4",
                     "Creative Seminar II"
-                ],
-                "Extra": [
-                    "Animation and Algorithmic Art",
-                    "",
-                    "Integrated Visual Arts",
-                    "",
-                    "Sonic Arts",
-                    "",
-                    "Video, Performance, and Social Practice",
-                    "",
-                    "DIY (Do It Yourself)",
-                    "",
-                    "Comprehensive Course Listings:",
-                    "",
-                    "Footnotes",
-                    "A minimum of three Focus Area Electives must be at the 4000-level.Students should take an Inquiry course during their first year. For a listing of HASS Inquiry courses go to: https://info.rpi.edu/hass-inquiry."
                 ]
             }
         },
         "Environmental Engineering": {
             "credits": 125,
             "description": "The Rensselaer bachelor's program in environmental engineering builds upon a broad base of studies in chemistry, life sciences, and engineering sciences culminating in a uniquely structured course sequence. This sequence of courses, as shown below, is designed to develop equilibrium, transformation, and transport concepts, together with integrated laboratory experiences. It culminates in senior design courses. This structure presents a unified educational experience in environmental engineering. A minimum of 128 credit hours is required for this curriculum.",
+            "extra": [],
             "name": "Environmental Engineering",
             "requirements": {
                 "Applied Hydrology and Design": 4,
@@ -2144,13 +2145,23 @@
                     "Free Elective III Credit Hours: 4",
                     "Earth SCIS Elective",
                     "Environmental Process Design"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Environmental Science": {
             "credits": 111,
             "description": "This curriculum leads to a B.S. in environmental science. A typical four-year program is illustrated below. However, the order in which students take courses within the first two years is flexible.",
+            "extra": [
+                "Track Course and Free Elective Credit Hours: 1",
+                "2",
+                "Principles of Ecology",
+                "Biology",
+                "",
+                "Chemistry",
+                "",
+                "Geology",
+                "Choose five of the following:ERTH 2960 - Introduction to Geobiology Credit Hours: 4ERTH 4XXX - with permission of Director of Environmental Science"
+            ],
             "name": "Environmental Science",
             "requirements": {
                 "Calculus I": 4,
@@ -2222,23 +2233,26 @@
                     "Culminating Experience Credit Hours: 4",
                     "Track Course or Free Elective Credit Hours: 8",
                     "Geographic Information Systems in the Sciences"
-                ],
-                "Extra": [
-                    "Track Course and Free Elective Credit Hours: 1",
-                    "2",
-                    "Principles of Ecology",
-                    "Biology",
-                    "",
-                    "Chemistry",
-                    "",
-                    "Geology",
-                    "Choose five of the following:ERTH 2960 - Introduction to Geobiology Credit Hours: 4ERTH 4XXX - with permission of Director of Environmental Science"
                 ]
             }
         },
         "Games and Simulation Arts and Sciences": {
             "credits": 140,
             "description": "",
+            "extra": [
+                "Cognitive Science",
+                "",
+                "Computer Science",
+                "",
+                "Electronic Arts",
+                "Required:",
+                "Management",
+                "",
+                "Writing",
+                "Required:",
+                "Music",
+                "Required:"
+            ],
             "name": "Games and Simulation Arts and Sciences",
             "requirements": {
                 "Art for Interactive Media": 4,
@@ -2314,26 +2328,13 @@
                     "GSAS Concentration Course Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "HASS Elective Credit Hours: 4"
-                ],
-                "Extra": [
-                    "Cognitive Science",
-                    "",
-                    "Computer Science",
-                    "",
-                    "Electronic Arts",
-                    "Required:",
-                    "Management",
-                    "",
-                    "Writing",
-                    "Required:",
-                    "Music",
-                    "Required:"
                 ]
             }
         },
         "Geology": {
             "credits": 129,
             "description": "Students who successfully complete this program will be able to demonstrate:",
+            "extra": [],
             "name": "Geology",
             "requirements": {
                 "Biology Requirement": 4,
@@ -2409,13 +2410,13 @@
                     "Electives Credit Hours: 6-7",
                     "Out-of-Classroom Experience in Earth Sciences",
                     "Undergraduate Research Thesis"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Hydrogeology": {
             "credits": 126,
             "description": "Students who successfully complete this program will be able to demonstrate:",
+            "extra": [],
             "name": "Hydrogeology",
             "requirements": {
                 "Biology Requirement": 4,
@@ -2491,13 +2492,13 @@
                     "Electives Credit Hours: 8",
                     "Out-of-Classroom Experience in Earth Sciences",
                     "Undergraduate Research Thesis"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Industrial and Management Engineering": {
             "credits": 128,
             "description": "This curriculum requires a minimum of 128 credit hours and completion of the course requirements shown in the typical four-year program presented below.",
+            "extra": [],
             "name": "Industrial and Management Engineering",
             "requirements": {
                 "Calculus I": 4,
@@ -2567,8 +2568,8 @@
                 "3-Summer": [
                     "HASS Elective IV Credits Hours: 4",
                     "Engineering Economics",
-                    "Introduction to Engineering Design",
-                    "Operations Research Methods"
+                    "Operations Research Methods",
+                    "Introduction to Engineering Design"
                 ],
                 "4-Fall": [
                     "Technical Elective III Credit Hours: 3",
@@ -2582,13 +2583,19 @@
                     "Free Elective III Credit Hours: 4",
                     "Professional Development: Leadership Competencies",
                     "Multidisciplinary Capstone Design"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Information Technology and Web Science": {
             "credits": 110,
             "description": "Completion of the B.S. in Information Technology and Web Science requires a total of 128-130 credit hours, of which 56-58 credits constitute an ITWS Core and 32 credits are devoted to a Focus Track. The remaining credit hours fulfill Rensselaer degree requirements. The ITWS core requirements establish a solid foundation for applying ITWS to any discipline. The Rensselaer requirements ensure the degree's breadth and its consistency with long-established Rensselaer traditions. The required Focus Track provides an opportunity for in-depth study of an ITWS application area. Focus Track options include arts, computer networking, data science, law, information security, management information systems, medicine, psychological science, web technologies and numerous others. In consultation with a faculty adviser, students may also design their own Focus Track through the selection of courses that match their individual interests.",
+            "extra": [
+                "ITWS 4990 - Senior Thesis Credit Hours: 3",
+                "Focus Track Capstone Course/Experience Credit Hours: 4",
+                "Focus Track Course Credit Hours: 4",
+                "HASS Elective Credit Hours: 4",
+                "Free Elective Credit Hours: 4"
+            ],
             "name": "Information Technology and Web Science",
             "requirements": {
                 "Calculus I": 4,
@@ -2655,19 +2662,18 @@
                     "Focus Track Course Credit Hours: 4",
                     "Focus Track Course Credit Hours: 4",
                     "Free Elective Credit Hours: 4"
-                ],
-                "Extra": [
-                    "ITWS 4990 - Senior Thesis Credit Hours: 3",
-                    "Focus Track Capstone Course/Experience Credit Hours: 4",
-                    "Focus Track Course Credit Hours: 4",
-                    "HASS Elective Credit Hours: 4",
-                    "Free Elective Credit Hours: 4"
                 ]
             }
         },
         "Materials Engineering": {
             "credits": 126,
             "description": "The sample curriculum shown below, which results in the B.S. degree in Materials Engineering, requires a minimum of 129 credit hours and completion of the required elective courses that follow.",
+            "extra": [
+                "Restricted Electives (4 credits each)",
+                "",
+                "Materials Electives (3 credits each)",
+                "Note: The courses in the Materials Electives list may be substituted with any MTLE 4000- or 6000-level course. In order to take a 6000-level course, students may be required to obtain formal approval from the Office of Graduate Education, as specified in the course catalog."
+            ],
             "name": "Materials Engineering",
             "requirements": {
                 "Beginning Programming for Engineers": 1,
@@ -2755,18 +2761,13 @@
                     "Materials Elective IIFree Elective III",
                     "Materials Synthesis and Processing",
                     "Multidisciplinary Capstone Design"
-                ],
-                "Extra": [
-                    "Restricted Electives (4 credits each)",
-                    "",
-                    "Materials Electives (3 credits each)",
-                    "Note: The courses in the Materials Electives list may be substituted with any MTLE 4000- or 6000-level course. In order to take a 6000-level course, students may be required to obtain formal approval from the Office of Graduate Education, as specified in the course catalog."
                 ]
             }
         },
         "Mathematics": {
             "credits": 125,
             "description": "",
+            "extra": [],
             "name": "Mathematics",
             "requirements": {
                 "Art and Science of Mathematics I": 1,
@@ -2837,13 +2838,13 @@
                     "Elective Credit Hours: 4",
                     "Elective Credit Hours: 4",
                     "Capstone III"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Mechanical Engineering Curriculum": {
             "credits": 119,
             "description": "Freshmen or sophomores who have identified mechanical engineering as their major may follow the baccalaureate program below in lieu of the general core engineering program. Dual major programs which lead to a single baccalaureate degree embracing two fields are also available and are described in more detail in the MANE Handbook (emailed to studentswhen they declare a major in MANE, and available from the MANE Student Services Office, JEC 2012).",
+            "extra": [],
             "name": "Mechanical Engineering Curriculum",
             "requirements": {
                 "Calculus I": 4,
@@ -2929,13 +2930,20 @@
                     "SoE/SoS-4.... Technical Elective II Credit hours: 3Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "HASS Elective Credit Hours: 4"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Music": {
             "credits": 137,
             "description": "The B.S. in Music focuses on preparing musicians for careers in creative professions combining depth in music with breadth in the sciences, media, and engineering. It advances music study within the technological university by preparing students for the multiplicity of roles available to musicians in the 21st century.",
+            "extra": [
+                "Performance Requirement",
+                "",
+                "Music and Culture Requirement",
+                "",
+                "Culminating Experience",
+                "Credit Hours: 4Select one of the following 4000-level music courses. All of the following can be repeated for additional credit."
+            ],
             "name": "Music",
             "requirements": {
                 "ARTS 4500 - Topics in History and Analysis of Music": 2,
@@ -3013,20 +3021,13 @@
                     "Free Elective or ARTS 4880 - Interdisciplinary Research Seminar Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4"
-                ],
-                "Extra": [
-                    "Performance Requirement",
-                    "",
-                    "Music and Culture Requirement",
-                    "",
-                    "Culminating Experience",
-                    "Credit Hours: 4Select one of the following 4000-level music courses. All of the following can be repeated for additional credit."
                 ]
             }
         },
         "Nuclear Engineering Curriculum": {
             "credits": 130,
             "description": "Freshmen or sophomores who have identified nuclear engineering as their major may follow the baccalaureate program below in lieu of the general core program. Dual major programs which lead to a single baccalaureate degree embracing two fields are also available and are described in more detail in the MANE Handbook (emailed to you when you declare a major in MANE, available from the MANE Student Services office, JEC 2012, and https://mane.rpi.edu/undergraduate).",
+            "extra": [],
             "name": "Nuclear Engineering Curriculum",
             "requirements": {
                 "Calculus I": 4,
@@ -3117,13 +3118,13 @@
                     "MANE 4.... Nuclear Engineering Laboratory II Credit Hours: 3",
                     "MANE 4.... NE Technical Elective II Credit Hours: 3",
                     "Nuclear Engineering Senior Design Project II"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Philosophy": {
             "credits": 172,
             "description": "Philosophy is a search for understanding and wisdom through inquiry into fundamental questions regarding existence, knowledge, the nature of reality, and \"how to live a good life.\" Through research, reflection, and discussion, philosophy seeks both to refine and answer humanity's enduring questions: What is the nature of consciousness? What is the connection between mind and body? Does God exist? What counts as knowledge? Is there only one right way to reason? Does science give us objective truth? Could computers think? Could they feel or exhibit genuine creativity? Do we have free will? How are right and wrong to be determined? Of what does the good life consist? Does life have meaning?",
+            "extra": [],
             "name": "Philosophy",
             "requirements": {
                 "Are Humans Rational": 4,
@@ -3199,13 +3200,16 @@
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Physics": {
             "credits": 125,
             "description": "",
+            "extra": [
+                "Additional Information",
+                "Students planning on graduate work in astrophysics are urged to choose electives from the above list plus the following:"
+            ],
             "name": "Physics",
             "requirements": {
                 "A Passion for Physics": 1,
@@ -3281,16 +3285,13 @@
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "HASS Elective Credit Hours: 4"
-                ],
-                "Extra": [
-                    "Additional Information",
-                    "Students planning on graduate work in astrophysics are urged to choose electives from the above list plus the following:"
                 ]
             }
         },
         "Psychological Science": {
             "credits": 140,
             "description": "The ability to understand and predict how people act and think is more important than ever in addressing many of the greatest challenges faced as a society. At the same time, the study of behavior and mind is undergoing a rapid transformation. New technologies are continually being developed across the behavioral, data, and brain sciences. Advances in cloud and wearable computing, massive open datasets, noninvasive brain imaging, and virtual reality offer powerful new tools for understanding and predicting human thought and behavior. Psychological science is the rapidly evolving discipline that seeks to understand behavior and mind using rigorous scientific methods. Psychological scientists are trained to understand how behavior and thought are influenced by neurophysiological, emotional, cognitive, developmental, social, and environmental factors. With the benefit of emerging technologies, they are gleaning important new insights into how people learn, think, perceive, act, express emotions, make decisions, and interact with others, and applying these discoveries to improve the way people live and work.",
+            "extra": [],
             "name": "Psychological Science",
             "requirements": {
                 "Calculus I": 4,
@@ -3362,13 +3363,13 @@
                     "Choose one:PSYC 4XXX Advanced Seminar in Psychology Credit Hours: 4",
                     "OrUndergraduate Research Project Credit Hours: 4",
                     "OrHonors Thesis Credit Hours: 4"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Science, Technology, and Society": {
             "credits": 132,
             "description": "The Science, Technology, and Society bachelor's program of study is designed for intellectually curious, socially conscious, and self-motivated students who seek a well-rounded education.",
+            "extra": [],
             "name": "Science, Technology, and Society",
             "requirements": {
                 "Advanced STS Course": 8,
@@ -3436,13 +3437,13 @@
                     "Free Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "STS and Sustainability Senior Project"
-                ],
-                "Extra": []
+                ]
             }
         },
         "Sustainability Studies": {
             "credits": 132,
             "description": "The Sustainability Studies bachelor's program (SUST), offered by the Department of Science and Technology Studies (STS), is designed for environmentally conscious students who seek an education that blends social and natural sciences, humanities, and technology.",
+            "extra": [],
             "name": "Sustainability Studies",
             "requirements": {
                 "CAS Course": 12,
@@ -3510,8 +3511,7 @@
                     "HASS Elective Credit Hours: 4",
                     "Free Elective Credit Hours: 4",
                     "STS and Sustainability Senior Project"
-                ],
-                "Extra": []
+                ]
             }
         }
     }

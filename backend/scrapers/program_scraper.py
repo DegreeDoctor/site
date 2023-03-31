@@ -1,4 +1,4 @@
-from typing import Dict, List, Tuple
+from typing import Dict, List
 import requests
 from lxml import html
 from tqdm import tqdm
@@ -51,15 +51,6 @@ def split_content(str):
         else:
             ret.append(rem_lor(norm_str(str[:ind+1])))
             str = str[ind+1:]
-    
-    # while (str.find("Elective") != -1 and str.find("Credit Hours") == -1):
-    #     ind = str.find("Elective") + 9
-    #     tmp = str[:ind]
-    #     while (ind < len(str) and str[ind] == "I"):
-    #         tmp += str[ind]
-    #         ind+= 1
-    #     str = str[ind:]
-    #     ret.append(tmp)
 
     if (len(str) > 0):
         ret.append(str)
@@ -141,11 +132,10 @@ def rem_all(str):
     return rem_footnote(rem_arch(str))
 
 # parses the template for visual purposes in the JSON 
-def parse_template(semesters): 
+def parse_template(semesters,extra): 
     sems = OrderedDict()
     curr_year = 1
     first_sem_in_year = True
-    extra = []
     for item in semesters:
         template_str = str(curr_year) + "-" 
         # Extra content 
@@ -168,7 +158,6 @@ def parse_template(semesters):
                 curr_year += 1
             first_sem_in_year = not first_sem_in_year 
         sems[template_str] = item
-    sems["Extra"] = extra
     return sems
 
 # gets the subj string from a given string
@@ -404,7 +393,7 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
     url = f"{BASE_URL}content{DEFAULT_QUERY_PARAMS}&method=getItems&options[full]=1&catalog={catalog_id}&type=programs{ids}"
     pathways_xml = html.fromstring(requests.get(url).text.encode("utf8"))
 
-    pathways = pathways_xml.xpath("//programs/program[not(@child-of)]");
+    pathways = pathways_xml.xpath("//programs/program[not(@child-of)]")
     # For every Major degree
     for pathway in pathways:
         courses = []
@@ -418,9 +407,6 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
                 check = True
         if (check):
             continue
-        # # For now only parse CS
-        # if (name != "Materials Engineering" ):
-        #     continue
         
         # Get program description
         desc = ""
@@ -444,19 +430,21 @@ def get_program_data(pathway_ids: List[str], catalog_id, year) -> Dict:
         # this is neccesary for frontend visibility (we no longer
         # want to distinguish between named and elective classes)
         courses = [strip_list(x) for x in courses]
-        template = parse_template(courses)
+        extra = []
+        template = parse_template(courses,extra)
         data[name] = {
                 "name": name,
                 "description": desc,
                 "credits": credit,
                 "requirements" : requirements,
-                "template": template
+                "template": template,
+                "extra": extra
             }
 
     return data
 
 def scrape_programs():
-    print("Starting program scraping")
+    print("Starting program_scraper scraping:")
     num_catalog = 1
     catalogs = get_catalogs()
     # take the most recent num_catalog catalogs
@@ -470,12 +458,11 @@ def scrape_programs():
         # scraing the program (degree)
         data = get_program_data(program_ids, catalog_id, year)
         programs_per_year[year] = data
-    print("Finished program scraping")
-
     # create JSON obj and write it to file
     json_object = json.dumps(programs_per_year,sort_keys=True, indent=2, ensure_ascii=False)
     with open(root + "/frontend/src/data/programs.json", "w") as outfile:
         outfile.write(json_object)
+    print("Finished program_scraper scraping.")
     return programs_per_year
 
 if __name__ == "__main__":
