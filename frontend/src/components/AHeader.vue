@@ -18,8 +18,8 @@ export default {
 <template>
     <q-header elevated class="bg-secondary text-white header" height-hint="98">
         <q-toolbar>
-            <q-toolbar-title >
-                <q-avatar >
+            <q-toolbar-title>
+                <q-avatar>
                     <img src="../assets/Degree_Doctor_logo.png" />
                 </q-avatar>
                 Degree Doctor
@@ -40,10 +40,10 @@ export default {
     padding-right: 1em;
 }
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 54px;
-  height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 54px;
+    height: 100%;
 }
 </style>
