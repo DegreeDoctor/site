@@ -1,6 +1,13 @@
 <template>
-    <div class="semesterContainer">
-        <h3 class="semesterName">{{ semester[0] }}</h3>
+    <div
+        :class="[
+            'semesterContainer',
+            darkMode() ? 'darkModeSemesterContainer' : '',
+        ]"
+    >
+        <h3 :class="['semesterName', darkMode() ? 'darkModeSemesterName' : '']">
+            {{ semester[0] }}
+        </h3>
         <draggable
             :list="courseList"
             group="courses"
@@ -146,6 +153,9 @@ export default {
                 );
             }
         },
+        darkMode() {
+            return this.store.getDarkMode;
+        },
     },
 };
 </script>
@@ -158,6 +168,10 @@ export default {
     width: 100%;
     background-color: white;
 }
+.darkModeSemesterName.semesterName {
+    color: white;
+    background-color: black;
+}
 
 .semesterContainer {
     border: 1px solid black;
@@ -165,6 +179,12 @@ export default {
     min-width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.darkModeSemesterContainer.semesterContainer {
+    border: 1px solid white;
+    background-color: #262626;
+    color: white;
 }
 
 .courseContainer {

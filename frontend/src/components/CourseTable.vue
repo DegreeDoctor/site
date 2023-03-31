@@ -1,5 +1,4 @@
 <template>
-    <q-btn @click="debug()"> debug </q-btn>
     <CourseSearch
         :courses-data="coursesData"
         :prompt="showSearch"
@@ -51,9 +50,6 @@ export default {
         addCourse(course) {
             this.$emit("addCourse", [course, this.opened]);
             this.showSearch = false;
-        },
-        debug() {
-            console.log(this.showSearch);
         },
     },
 };
