@@ -113,6 +113,28 @@ export default {
                 credits: {},
                 concentration: this.selectedConcentrations,
             };
+            // checks if any of the majors are also minors
+            for (let i = 0; i < degree.majors.length; i++) {
+                for (let j = 0; j < degree.minors.length; j++) {
+                    if (degree.majors[i] == degree.minors[j]) {
+                        this.showNotif(
+                            "top",
+                            "One of your majors is also a minor",
+                            "negative"
+                        );
+                        return;
+                    }
+                }
+            }
+            // check if degree name is not taken
+            if (this.store.findDegree(this.degreeName) != "") {
+                this.showNotif(
+                    "top",
+                    "Degree name is already taken",
+                    "negative"
+                );
+                return;
+            }
             degree = degreeGenerator(degree, this.programsData, this.coursesData);
             this.store.addDegree(degree);
             this.$router.push("/degree");

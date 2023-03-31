@@ -3,19 +3,16 @@
         debug
     </q-btn> -->
     <br />
-    <CourseTrash />
     <CourseTable :semesters="templateToArray" @add-course="addCourse" />
 </template>
 
 <script>
 import { useStore } from "../stores/store";
-import CourseTrash from "../components/CourseTrash.vue";
 import coursesJson from "../data/courses.json";
 import CourseTable from "../components/CourseTable.vue";
 
 export default {
     components: {
-        CourseTrash,
         CourseTable,
     },
     data() {
