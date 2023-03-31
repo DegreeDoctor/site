@@ -123,6 +123,15 @@ export default {
                     }
                 }
             }
+            // check if degree name is not taken
+            if (this.store.findDegree(this.degreeName) != "") {
+                this.showNotif(
+                    "top",
+                    "Degree name is already taken",
+                    "negative"
+                );
+                return;
+            }
             degree["template"] =
                 this.programsData["2022-2023"][this.selectedMajors[0]][
                     "template"
