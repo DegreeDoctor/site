@@ -50,10 +50,7 @@ export default {
         addCourse(course) {
             this.$emit("addCourse", [course, this.opened]);
             this.showSearch = false;
-        },
-        debug() {
-            console.log(this.showSearch);
-        },
+        }
     },
 };
 </script>
