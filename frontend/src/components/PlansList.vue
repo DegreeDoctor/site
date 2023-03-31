@@ -97,7 +97,7 @@ export default {
                     return;
                 });
         },
-        toggleTrashIcons(val) {
+        toggleTrashIcons() {
             //this.deleteIconsVisibleArray[val]=!this.deleteIconsVisibleArray[val];
             this.deleteIconsVisible = !this.deleteIconsVisible;
         },
