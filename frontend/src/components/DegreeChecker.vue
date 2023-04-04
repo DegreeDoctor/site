@@ -11,8 +11,8 @@ export default {
 
         };
     },
-    methods: {
-        clicked(){
+    computed: {
+        checker(){
             let majors = []//this.programsData["2022-2023"]["Computer Science"]
             let currentDegree = this.store.getCurrentDegree;
             for(const major in currentDegree["majors"]){
@@ -23,22 +23,26 @@ export default {
             for(const semester in currentDegree["template"]){
                 course = [...course, ...currentDegree["template"][semester]];
             }
+            let unfulfilled = []
             for(const major in majors){
                 for(const req in majors[major]["requirements"]){
                     if(!course.includes(req)){
-                        console.log(req);
+                        unfulfilled.push(req);
                     }
                 }
             }
-            console.log(majors)
-            console.log(course)
+            return unfulfilled;
         }
     },
 };
 </script>
 
 <template>
-<q-btn @click = "clicked">
-test
-</q-btn>
+<q-card >
+    <q-list dense>
+        <q-item v-for = "item in checker" :key = "item">
+            {{ item }}
+        </q-item>
+    </q-list>
+</q-card>
 </template>
