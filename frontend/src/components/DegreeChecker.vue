@@ -13,10 +13,25 @@ export default {
     },
     methods: {
         clicked(){
-            let computerScience = this.programsData["2022-2023"]["Computer Science"]
+            let majors = []//this.programsData["2022-2023"]["Computer Science"]
             let currentDegree = this.store.getCurrentDegree;
-            console.log(computerScience)
-            console.log(currentDegree)
+            for(const major in currentDegree["majors"]){
+                let currentMajor = currentDegree["majors"][major];
+                majors.push(this.programsData["2022-2023"][currentMajor]);
+            }
+            let course = []
+            for(const semester in currentDegree["template"]){
+                course = [...course, ...currentDegree["template"][semester]];
+            }
+            for(const major in majors){
+                for(const req in majors[major]["requirements"]){
+                    if(!course.includes(req)){
+                        console.log(req);
+                    }
+                }
+            }
+            console.log(majors)
+            console.log(course)
         }
     },
 };
