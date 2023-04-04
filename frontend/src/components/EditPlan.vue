@@ -1,15 +1,93 @@
 <script>
-export default {
+import { useStore } from "../stores/store";
+import programsJSON from "../data/programs.json";
+import coursesJSON from "../data/courses.json";
 
+export default {
+    data() {
+        const pathways = [
+            "None",
+            "Art History, Theory, and Criticism",
+            "Artificial Intelligence",
+            "Behavioral and Cognitive Neuroscience",
+            "Chinese Language",
+            "Creative Design and Innovation",
+            "Design, Innovation, and Society Pathway",
+            "Economics",
+            "Economics of Banking and Finance",
+            "Economics of Decision-Making",
+            "Economics of Healthcare Markets",
+            "Economics of Policy and Regulations",
+            "Economics of Quantitative Modeling",
+            "Economics of Technology and Innovation",
+            "Electronic Arts",
+            "Environmental Futures",
+            "Ethics, Integrity, and Social Responsibility",
+            "Extent and Limits of Rationality",
+            "Fact and Fiction",
+            "Game Studies",
+            "Gender, Race, Sexuality, Ethnicity, and Social Change",
+            "Graphic Design",
+            "History",
+            "Information Technology and Web Sciences",
+            "Interactive Media/Data Design",
+            "Language",
+            "Linguistics",
+            "Literature and Creative Writing",
+            "Living in a World of Data",
+            "Logical Thinking",
+            "Media and Culture",
+            "Mind, Brain, and Intelligence",
+            "Music and Culture",
+            "Music Composition and Production",
+            "Music Performance",
+            "Philosophy",
+            "Pre-Health Pathway",
+            "Public Health",
+            "Science, Technology, and Society",
+            "Strategic Communication",
+            "Studio Arts",
+            "Sustainability",
+            "Thinking with Science",
+            "Transfer Student Arts and Humanities",
+            "Transfer Student Social Science",
+            "Understanding Human Behavior",
+            "Video, Performance, and Social Practice",
+            "Well-being: Body and Mind",
+        ];
+        const concentrations = [
+            "None",
+            "Crizbae is a Monkey1",
+            "Crizbae is a Monkey2",
+            "Crizbae is a Monkey3",
+            "Crizbae is a Monkey4",
+            "Crizbae is a Monkey5",
+        ];
+        return {
+            store: useStore(),
+            selectedMajors: [],
+            degreeName: "",
+            majorOptions: Object.keys(programsJSON["2022-2023"]),
+            filteredMajors: Object.keys(programsJSON["2022-2023"]),
+            selectedMinors: [],
+            minorOptions: Object.keys(programsJSON["2022-2023"]),
+            filteredMinors: Object.keys(programsJSON["2022-2023"]),
+            selectedPathways: "None",
+            pathwayOptions: pathways,
+            filteredPathways: pathways,
+            selectedConcentrations: "None",
+            concentrationOptions: concentrations,
+            filteredConcentrations: concentrations,
+            programsData: programsJSON,
+            coursesData: coursesJSON,
+        };
+    },
 }
 </script>
 
 
 <template>
-    <q-form
-        class="full-width column wrap justify-center items-center content-center"
-        @submit.prevent.stop="submit"
-    >
+    <q-form class="full-width column wrap justify-center items-center content-center">
         <q-input
             v-model="degreeName"
             label="Plan Name *"
@@ -48,7 +126,7 @@ export default {
                 (val) =>
                     (val && val.length > 0) || 'Please pick at least one major',
             ]"
-            @input-value="filterMajor"
+            @input-value="filteredMajors"
         />
         <q-select
             v-model="selectedMinors"
@@ -105,18 +183,8 @@ export default {
                 margin-bottom: 20px;
                 font-family: 'Rubik', sans-serif;
             "
-            @input-value="filterConcentration"
+            @input-value="filteredConcentrations"
         />
-        <div>
-            <q-btn label="Submit" color="primary" type="submit" />
-            <q-btn
-                label="Reset"
-                color="primary"
-                flat
-                style="margin-left: 10px"
-                @click="reset"
-            />
-        </div>
   </q-form>
 </template>
 

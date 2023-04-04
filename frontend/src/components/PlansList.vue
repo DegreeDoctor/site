@@ -1,7 +1,12 @@
 <script>
 import { useStore } from "../stores/store";
+import EditPlan from "../components/EditPlan.vue";
 
 export default {
+    components: {
+        EditPlan,
+    },
+    emits : ['addPlan'],
     data() {
         return {
             current: useStore().getCurrentDegreeName,
@@ -12,6 +17,7 @@ export default {
             deleteIconsVisible: false,
             deleteIconsVisibleArray: [false],
             htmlList: [],
+            showEditPlan: false,
         };
     },
     computed: {
@@ -123,94 +129,81 @@ export default {
                 timeout: 1250,
             });
         },
-        renamePlanDialog() {
-            this.$q
-                .dialog({
-                    title: "Change Plan Name",
-                    message: "Rename your plan",
-                    prompt: {
-                        model: "",
-                        type: "text",
-                    },
-                    cancel: true,
-                    persistent: false,
-                })
-                .onOk((data) => {
-                    this.store.updateDegree(this.current, data);
-                    this.selectPlan(data);
-                    this.current = data;
-                })
-                .onCancel(() => {
-                    return;
-                })
-                .onDismiss(() => {
-                    return;
-                });
+        // allows to change name of plan, major, minor, etc
+        editPlanModal() {
+            
         },
     },
 };
 </script>
 
 <template>
-    <div class="q-pa-md btn">
-        {{ selectedPlan }}
-        <q-menu anchor="bottom left">
-            <q-item
-                v-for="item in allDegreesSubNames"
-                :key="item"
-                class="planList"
-                :class="[
-                    'planList',
-                    { 'active-item': selectedPlan === item },
-                    darkMode() ? 'dark-mode-active-item' : '',
-                ]"
-            >
-                <a
-                    class="item truncate"
-                    :class="{ active: selectedPlan === item }"
-                    @click="selectPlan(item)"
+    <div>
+        <EditPlan 
+            :prompt="showEditPlan"
+            @close="showEditPlan = false"
+            @edit-plan="editPlanModal"
+        />
+        <div class="q-pa-md btn">
+            {{ selectedPlan }}
+            <q-menu anchor="bottom left">
+                <q-item
+                    v-for="item in allDegreesSubNames"
+                    :key="item"
+                    class="planList"
+                    :class="[
+                        'planList',
+                        { 'active-item': selectedPlan === item },
+                        darkMode() ? 'dark-mode-active-item' : '',
+                    ]"
                 >
-                    {{ item }}
-                </a>
-                <a
-                    class="edit"
-                    :class="{ 'hide-icon': deleteIconsVisible }"
-                    @click="renamePlanNotification"
-                >
-                    <q-icon name="fa-solid fa-pen-to-square" size="1.25em" />
-                </a>
-                <a
-                    class="trash"
-                    :class="{ 'hide-icon': deleteIconsVisible }"
-                    @click="toggleTrashIcons"
-                >
-                    <q-icon name="fa-solid fa-trash" size="1.25em" />
-                </a>
-                <a
-                    class="check"
-                    :class="{ 'hide-icon': !deleteIconsVisible }"
-                    @click="deletePlan(item)"
-                >
-                    <q-icon name="fa-solid fa-check" size="1.25em" />
-                </a>
-                <a
-                    class="cross"
-                    :class="{ 'hide-icon': !deleteIconsVisible }"
-                    @click="toggleTrashIcons"
-                >
-                    <q-icon name="fa-solid fa-times" size="1.25em" />
-                </a>
-            </q-item>
-            <q-separator />
-            <q-item clickable to="/quiz">
-                <a class="new-plan">Create new plan</a>
-            </q-item>
-            <q-separator />
-            <q-item clickable @click="deleteAllPlans">
-                <a class="delete-all">Delete all plans</a>
-            </q-item>
-        </q-menu>
-        <q-icon name="fa-solid fa-caret-down" />
+                    <a
+                        class="item truncate"
+                        :class="{ active: selectedPlan === item }"
+                        @click="selectPlan(item)"
+                    >
+                        {{ item }}
+                    </a>
+                    <a
+                        class="edit"
+                        :class="{ 'hide-icon': deleteIconsVisible }"
+                        @click="renamePlanDialog"
+                    >
+                        <q-icon name="fa-solid fa-pen-to-square" size="1.25em" />
+                    </a>
+                    <a
+                        class="trash"
+                        :class="{ 'hide-icon': deleteIconsVisible }"
+                        @click="toggleTrashIcons"
+                    >
+                        <q-icon name="fa-solid fa-trash" size="1.25em" />
+                    </a>
+                    <a
+                        class="check"
+                        :class="{ 'hide-icon': !deleteIconsVisible }"
+                        @click="deletePlan(item)"
+                    >
+                        <q-icon name="fa-solid fa-check" size="1.25em" />
+                    </a>
+                    <a
+                        class="cross"
+                        :class="{ 'hide-icon': !deleteIconsVisible }"
+                        @click="toggleTrashIcons"
+                    >
+                        <q-icon name="fa-solid fa-times" size="1.25em" />
+                    </a>
+                </q-item>
+                <q-separator />
+                <q-item clickable to="/quiz">
+                    <a class="new-plan">Create new plan</a>
+                </q-item>
+                <q-separator />
+                <q-item clickable @click="deleteAllPlans">
+                    <a class="delete-all">Delete all plans</a>
+                </q-item>
+            </q-menu>
+            <q-icon name="fa-solid fa-caret-down" />
+        </div>
     </div>
 </template>
 
