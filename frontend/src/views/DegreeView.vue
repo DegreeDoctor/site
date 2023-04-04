@@ -2,6 +2,7 @@
     <!-- <q-btn @click="debug()">
         debug
     </q-btn> -->
+    <DegreeChecker/>
     <br />
     <CourseTable :semesters="templateToArray" @add-course="addCourse" />
 </template>
@@ -10,10 +11,12 @@
 import { useStore } from "../stores/store";
 import coursesJson from "../data/courses.json";
 import CourseTable from "../components/CourseTable.vue";
+import DegreeChecker from "../components/DegreeChecker.vue";
 
 export default {
     components: {
         CourseTable,
+        DegreeChecker,
     },
     data() {
         return {
