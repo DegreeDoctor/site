@@ -1,25 +1,28 @@
 <script>
 import DarkModeToggle from "./DarkModeToggle.vue";
-// import ProgressBar from "./ProgressBar.vue";
 import PlansList from "./PlansList.vue";
 
 export default {
     components: {
         DarkModeToggle,
-        // ProgressBar,
         PlansList,
+    },
+    methods: {
+        sendQuiz() {
+            this.$router.push("/quiz");
+        },
     },
 };
 </script>
 
 <template>
-    <q-header elevated class="bg-secondary text-white" height-hint="98">
+    <q-header elevated class="bg-secondary text-white header" height-hint="98">
         <q-toolbar>
             <q-toolbar-title>
-                <q-avatar>
+                <q-avatar @click="sendQuiz()">
                     <img src="../assets/Degree_Doctor_logo.png" />
                 </q-avatar>
-                Degree Doctor
+                <a @click="sendQuiz()"> Degree Doctor</a>
             </q-toolbar-title>
 
             <PlansList />
@@ -35,5 +38,12 @@ export default {
     align-items: center;
     justify-content: space-between;
     padding-right: 1em;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 54px;
+    height: 100%;
 }
 </style>
