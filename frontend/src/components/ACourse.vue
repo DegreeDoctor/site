@@ -108,77 +108,83 @@ export default {
 </script>
 
 <template>
-  <div>
-
-    <q-card
-        :id="course.name"
-        flat
-        bordered
-        draggable="true"
-        class="course-card"
-        color="primary"
-        @dragstart="dragged"
-    >
-        <q-card-section horizontal @click.self="popup = true">
-            <q-card-section class="text-subtitle1" @click.self="popup = true">
-                {{ fixName }}
-                <q-separator />
-                {{ course.subject + "-" + course.ID }}
-            </q-card-section>
-            <q-card-section vertical class="q-py-sm" @click.self="popup = true">
-                <q-btn
-                    color="secondary"
-                    dense
-                    :label="currCredit"
-                    class="q-px-md"
+    <div>
+        <q-card
+            :id="course.name"
+            flat
+            bordered
+            draggable="true"
+            class="course-card"
+            color="primary"
+            @dragstart="dragged"
+        >
+            <q-card-section horizontal @click.self="popup = true">
+                <q-card-section
+                    class="text-subtitle1"
+                    @click.self="popup = true"
                 >
-                    <q-menu>
-                        <q-list auto-close dense>
-                            <q-item
-                                v-for="c in course.credits"
-                                :key="c"
-                                v-close-popup
-                                clickable
-                                @click="updateCredits(c)"
-                            >
-                                <q-item-label>{{ c }}</q-item-label>
-                            </q-item>
-                        </q-list>
-                    </q-menu>
-                </q-btn>
-                <q-separator />
-                <q-checkbox
-                    v-if="check"
-                    v-model="checked"
-                    color="secondary"
-                    @update:model-value="(value) => checkClicked(value)"
-                />
-            </q-card-section>
-        </q-card-section>
-    </q-card>
-    <q-dialog v-model="popup">
-        <q-card>
-            <q-card-section class="row items-center q-pb-none">
-                <div class="text-h5">{{ course.name }}</div>
-                <q-space />
-                <q-btn v-close-popup icon="close" flat round dense />
-            </q-card-section>
-            <q-card-section class="q-pt-none">
-                <div class="text-body1">
-                    {{ crosslistedParse }}
+                    {{ fixName }}
                     <q-separator />
-                    {{ course.description }}
+                    {{ course.subject + "-" + course.ID }}
+                </q-card-section>
+                <q-card-section
+                    vertical
+                    class="q-py-sm"
+                    @click.self="popup = true"
+                >
+                    <q-btn
+                        color="secondary"
+                        dense
+                        :label="currCredit"
+                        class="q-px-md"
+                    >
+                        <q-menu>
+                            <q-list auto-close dense>
+                                <q-item
+                                    v-for="c in course.credits"
+                                    :key="c"
+                                    v-close-popup
+                                    clickable
+                                    @click="updateCredits(c)"
+                                >
+                                    <q-item-label>{{ c }}</q-item-label>
+                                </q-item>
+                            </q-list>
+                        </q-menu>
+                    </q-btn>
                     <q-separator />
-                    <q-space />
-                    {{ propertiesParse }}
-                    <q-space />
-                    {{ offeredParse }}
-                    <q-separator />
-                </div>
+                    <q-checkbox
+                        v-if="check"
+                        v-model="checked"
+                        color="secondary"
+                        @update:model-value="(value) => checkClicked(value)"
+                    />
+                </q-card-section>
             </q-card-section>
         </q-card>
-    </q-dialog>
-  </div>
+        <q-dialog v-model="popup">
+            <q-card>
+                <q-card-section class="row items-center q-pb-none">
+                    <div class="text-h5">{{ course.name }}</div>
+                    <q-space />
+                    <q-btn v-close-popup icon="close" flat round dense />
+                </q-card-section>
+                <q-card-section class="q-pt-none">
+                    <div class="text-body1">
+                        {{ crosslistedParse }}
+                        <q-separator />
+                        {{ course.description }}
+                        <q-separator />
+                        <q-space />
+                        {{ propertiesParse }}
+                        <q-space />
+                        {{ offeredParse }}
+                        <q-separator />
+                    </div>
+                </q-card-section>
+            </q-card>
+        </q-dialog>
+    </div>
 </template>
 
 <style scoped lang="scss">

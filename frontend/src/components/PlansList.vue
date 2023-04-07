@@ -6,7 +6,7 @@ export default {
     components: {
         EditPlan,
     },
-    emits : ['addPlan'],
+    emits: ["addPlan"],
     data() {
         return {
             current: useStore().getCurrentDegreeName,
@@ -47,7 +47,7 @@ export default {
         selectPlan(val) {
             this.store.swapDegree(this.store.findDegree(val));
             this.current = this.store.findDegree(val);
-            this.$router.push('/degree');
+            this.$router.push("/degree");
         },
         selectPlanByUUID(val) {
             this.store.swapDegree(val);
@@ -131,7 +131,8 @@ export default {
         },
         // allows to change name of plan
         renamePlanDialog() {
-            this.$q.dialog({
+            this.$q
+                .dialog({
                     title: "Rename Plan",
                     cancel: true,
                     persistent: false,
@@ -140,7 +141,11 @@ export default {
                         type: "text",
                         label: "New Name",
                         hint: "Enter a new name for the plan",
-                        isValid: ((v) => !!v && v.length <= 25 && !this.store.findDegree(v) && v !== null), 
+                        isValid: (v) =>
+                            !!v &&
+                            v.length <= 25 &&
+                            !this.store.findDegree(v) &&
+                            v !== null,
                         lazyRules: true,
                         rules: [
                             (v) => !!v || "Name is required",
@@ -157,7 +162,10 @@ export default {
                 .onOk((data) => {
                     // check if name is already taken
                     if (!this.store.findDegree(data)) {
-                        this.store.renameDegree(this.store.findDegree(this.selectedPlan), data);
+                        this.store.renameDegree(
+                            this.store.findDegree(this.selectedPlan),
+                            data
+                        );
                         this.showNotif(
                             "top",
                             "Plan renamed to " + '"' + data + '"',
@@ -180,7 +188,7 @@ export default {
                     return;
                 });
         },
-    }
+    },
 };
 </script>
 
@@ -216,7 +224,10 @@ export default {
                         :class="{ 'hide-icon': deleteIconsVisible }"
                         @click="renamePlanDialog"
                     >
-                        <q-icon name="fa-solid fa-pen-to-square" size="1.25em" />
+                        <q-icon
+                            name="fa-solid fa-pen-to-square"
+                            size="1.25em"
+                        />
                     </a>
                     <a
                         class="trash"

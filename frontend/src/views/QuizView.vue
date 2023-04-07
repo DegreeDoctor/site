@@ -135,7 +135,11 @@ export default {
                 );
                 return;
             }
-            degree = degreeGenerator(degree, this.programsData, this.coursesData);
+            degree = degreeGenerator(
+                degree,
+                this.programsData,
+                this.coursesData
+            );
             this.store.addDegree(degree);
             this.$router.push("/degree");
             let message =
