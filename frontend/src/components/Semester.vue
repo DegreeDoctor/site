@@ -20,6 +20,7 @@
                 :course="course"
             />
         </draggable>
+        <span style="flex-grow:1"></span>
         <q-btn
             push
             color="secondary"
@@ -27,6 +28,7 @@
             icon="add"
             @click="addCourse"
         />
+
     </div>
 </template>
 <script>
@@ -158,7 +160,14 @@ export default defineComponent({
     },
 });
 </script>
+
 <style lang="scss">
+
+.addButton {
+    margin: 0 1% 1% auto !important;
+    // margin-left: auto !important;
+}
+
 .semesterName {
     text-align: center;
     font-size: 1.5rem;
@@ -202,9 +211,5 @@ export default defineComponent({
     border-radius: 10px;
     height: 5vh;
     color: white;
-}
-
-.addButton {
-    margin: auto 5px 5px auto;
 }
 </style>
