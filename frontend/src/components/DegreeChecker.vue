@@ -32,6 +32,30 @@ export default {
             console.log(course);
             return course;
         },
+        allrequirements(){
+            let majors = this.majors;
+            let allrequirements = []
+            for(const major in majors){
+                for(const req in majors[major]["requirements"]){
+                    allrequirements.push(req);
+                }
+            }
+            console.log("all requirements");
+            console.log(allrequirements);
+            return allrequirements;
+        },
+        credits(){
+            let majors = this.majors;
+            let credits = []
+            for(const major in majors){
+                for(const req in majors[major]["requirements"]){
+                    credits.push(majors[major]["requirements"][req]);
+                }
+            }
+            console.log("credits");
+            console.log(credits);
+            return credits;
+        },
         unfulfilled(){
             let majors = this.majors;
             let course = this.course;
@@ -70,6 +94,15 @@ export default {
 <template>
 <q-card class = "required">
     <q-list dense>
+        
+        <h>All Requirements</h>
+        <q-item v-for = "item in allrequirements" :key = "item">
+            {{ item }}
+        </q-item>
+        <h>All credits</h>
+        <q-item v-for = "item in credits" :key = "item">
+            {{ item }}
+        </q-item>
         <h>Fulfilled Credits/Requirements</h>
         <q-item v-for = "item in fulfilled" :key = "item">
             {{ item }}
