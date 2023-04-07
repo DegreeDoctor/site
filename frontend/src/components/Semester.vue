@@ -24,10 +24,21 @@
         <q-btn
             push
             color="secondary"
-            class="addButton"
+            class="bottomRight"
             icon="add"
             @click="addCourse"
         />
+        <draggable
+            group="courses"
+            class="bottomRight"
+        >
+            <q-btn  
+                push
+                color="red"
+                icon="delete"
+            />
+        </draggable>
+
 
     </div>
 </template>
@@ -163,7 +174,7 @@ export default defineComponent({
 
 <style lang="scss">
 
-.addButton {
+.bottomRight {
     margin: 0 1% 1% auto !important;
     // margin-left: auto !important;
 }
