@@ -1,9 +1,7 @@
 <template>
-    <!-- <q-btn @click="debug()">
-        debug
-    </q-btn> -->
-    <br />
-    <CourseTable :semesters="templateToArray" @add-course="addCourse" />
+    <div>
+      <CourseTable :semesters="templateToArray" @add-course="addCourse" />
+    </div>    
 </template>
 
 <script>

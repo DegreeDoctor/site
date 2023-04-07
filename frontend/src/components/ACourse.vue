@@ -108,6 +108,8 @@ export default {
 </script>
 
 <template>
+  <div>
+
     <q-card
         :id="course.name"
         flat
@@ -176,6 +178,7 @@ export default {
             </q-card-section>
         </q-card>
     </q-dialog>
+  </div>
 </template>
 
 <style scoped lang="scss">
