@@ -129,21 +129,68 @@ export default {
                 timeout: 1250,
             });
         },
-        // allows to change name of plan, major, minor, etc
-        editPlanModal() {
-            
+        // allows to change name of plan
+        renamePlanDialog() {
+            this.$q.dialog({
+                    title: "Rename Plan",
+                    cancel: true,
+                    persistent: false,
+                    prompt: {
+                        model: "",
+                        type: "text",
+                        label: "New Name",
+                        hint: "Enter a new name for the plan",
+                        isValid: ((v) => !!v && v.length <= 25 && !this.store.findDegree(v) && v !== null), 
+                        lazyRules: true,
+                        rules: [
+                            (v) => !!v || "Name is required",
+                            (v) =>
+                                (v && v.length <= 25) ||
+                                "Name must be less than 25 characters",
+                            // check if the name is already taken
+                            (v) =>
+                                !this.store.findDegree(v) ||
+                                "Name already taken",
+                        ],
+                    },
+                })
+                .onOk((data) => {
+                    // check if name is already taken
+                    if (!this.store.findDegree(data)) {
+                        this.store.renameDegree(this.store.findDegree(this.selectedPlan), data);
+                        this.showNotif(
+                            "top",
+                            "Plan renamed to " + '"' + data + '"',
+                            "positive",
+                            1250
+                        );
+                    } else {
+                        this.showNotif(
+                            "top",
+                            "Name already taken",
+                            "negative",
+                            1250
+                        );
+                    }
+                })
+                .onCancel(() => {
+                    return;
+                })
+                .onDismiss(() => {
+                    return;
+                });
         },
-    },
+    }
 };
 </script>
 
 <template>
     <div>
-        <EditPlan 
+        <!-- <EditPlan 
             :prompt="showEditPlan"
             @close="showEditPlan = false"
             @edit-plan="editPlanModal"
-        />
+        /> -->
         <div class="q-pa-md btn">
             {{ selectedPlan }}
             <q-menu anchor="bottom left">
