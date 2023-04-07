@@ -17,76 +17,34 @@ export default {
 };
 </script>
 
-<template>
-    <q-header elevated class="bg-secondary text-white header" height-hint="98">
-        <q-header>
-            <q-toolbar-title>
-                <q-avatar @click="sendQuiz()">
-                    <img src="../assets/Degree_Doctor_logo.png" />
-                </q-avatar>
-                <a @click="sendQuiz()"> Degree Doctor</a>
-            </q-toolbar-title>
-             <q-card-section class="q-pt-none">
-                <h6 class="q-ma-none">
-                    Current Plan: {{ selectedPlan }}
-                </h6>
-                    <div class="card-contain">
-                        <q-select
-                            v-model="current"
-                            filled
-                            use-input
-                            input-debounce="0"
-                            label="Search"
-                            :options="filteredPlans"
-                            style="width: 200px"
-                            behavior="menu"
-                            @input-value="filterPlan"
-                            @update:model-value="selectPlan"
-                        >
-                            <template #no-option>
-                                <q-item>
-                                    <q-item-section class="text-grey">
-                                        No results
-                                    </q-item-section>
-                                </q-item>
-                            </template>
-                        </q-select>
-                        <div>
-                            <ProgressBar />
-                        </div>
-                    </div>
-            </q-card-section>
-            <q-card-actions class="text-primary">
-                <q-btn v-close-popup flat label="Cancel"></q-btn>
-                <q-btn
-                    v-close-popup
-                    flat
-                    label="Add new plan"
-                    to="/quiz"
-                ></q-btn>
-                <q-btn
-                    v-close-popup
-                    flat
-                    label="Delete Plan"
-                    @click="deletePlan();"
-                    to="/degree"
-                ></q-btn>
-            </q-card-actions>
-        </q-header>     
-    </q-header>
+ <template>
+    <nav> 
+        <div class="navbar">
+            <div class="image-container">
+                <router-link to="/quiz" id="logo"><img src="../assets/Degree_Doctor_logo.png"/></router-link>
+            </div>
+            <div class="DD">
+                <RouterLink to="/" id="title">Degree Doctor</RouterLink>
+                <div class="fading-effect"></div>
+            </div>
+            <div class="other">
+                <DarkModeToggle/>
+            </div>
+        </div>
+    </nav>  
 </template>
 
 <style scoped>
 .navbar{
     display: flex;
-    background:turquoise;
+    background:#835eba;
     justify-content:flex-end;
     align-items: center;
     height: 5rem;
 }
 .image-container {
   position: absolute;
-  top: 4.8%;
+  top: 3.5%;
   right: 20%;
   transform: translate(-50%,-50%);
   z-index: 2; /* Makes sure this is on top */
@@ -115,7 +73,7 @@ justify-content: space-between;
   bottom: 0;
   right: 0;
   width: 100%;
-  background: turquoise;
+  background: #835eba;
   -webkit-animation: text-slide 4s cubic-bezier(.1, 0, 0.5, 0.5);
   animation: text-slide s cubic-bezier(.1, 0, 0.5, 0.5);
   animation-fill-mode: forwards;
@@ -167,7 +125,7 @@ justify-content: space-between;
 @media screen and (max-width: 1024px){
 .image-container {
     position: absolute;
-    top: 6%;
+    top: 4%;
     right: 10%;
     transform: translate(-50%,-50%);
     z-index: 2; /* Makes sure this is on top */
@@ -189,7 +147,7 @@ margin-left: -1000px;
   bottom: 0;
   right: 0;
   width: 100%;
-  background: turquoise;
+  background: #835eba;
   -webkit-animation: text-slide 4s cubic-bezier(.1, 0, 0.5, 0.5);
   animation: text-slide s cubic-bezier(.1, 0, 0.5, 0.5);
   animation-fill-mode: forwards;
@@ -201,7 +159,7 @@ margin-left: -1000px;
   bottom: 0;
   right: 0;
   width: 100%;
-  background: white;
+  background: #835eba;
 }  
 
     @keyframes image-slide {
@@ -223,8 +181,8 @@ margin-left: -1000px;
 @media screen and (max-width: 768px){
 .image-container {
 position: absolute;
-top: 6%;
-right: 85%;
+top: 5.3%;
+right: 75%;
 transform: translate(-50%,-50%);
 z-index: 2; /* Makes sure this is on top */
 }
@@ -234,7 +192,7 @@ align-items:center;
 justify-content: space-between;
 position: absolute;
 top: 2.88em;
-right: 70%;
+right: 63%;
 transform: translate(-50%,-50%);
 z-index: 1; /* Places this below the image container */
 margin-left: -1000px;
@@ -245,19 +203,20 @@ margin-left: -1000px;
   bottom: 0;
   right: 0;
   width: 100%;
-  background: turquoise;
+  background: #835eba;
   -webkit-animation: text-slide 4s cubic-bezier(.1, 0, 0.5, 0.5);
   animation: text-slide s cubic-bezier(.1, 0, 0.5, 0.5);
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
+
 .fading-effect {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   width: 100%;
-  background: white;
+  background: #835eba;
 }  
     @keyframes image-slide {
         0% { transform: translateX(235px) scale(0); }
@@ -275,43 +234,15 @@ margin-left: -1000px;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #title{
     display:flex;
-    color:black;
+    color:WHITE;
     text-decoration: none;
     font-size: 1.2rem;
     padding-bottom: 3px;
     justify-content: space-around;
-    /* position: relative; */
 
 }
-/* #logo{
-    animation: 1s slideright;
-} */
-/* @keyframes slideleft{
-    from {
-    margin-left: -10%;
-    width: 300%;
-  }
-
-  to {
-    margin-right: 0%;
-    width: 500%;
-  }
-} */
 @keyframes slideright{
     from {
     margin-left: -10%;
@@ -349,7 +280,7 @@ margin-left: -1000px;
     height: 3rem;
 }
 button{
-    background-color: blue;
+    background:white;
     border-radius: .2rem;
 }
 .card-contain {
