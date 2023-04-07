@@ -2,9 +2,10 @@
     <!-- <q-btn @click="debug()">
         debug
     </q-btn> -->
-    <DegreeChecker/>
     <br />
     <CourseTable :semesters="templateToArray" @add-course="addCourse" />
+    <br />
+    <DegreeChecker/>
 </template>
 
 <script>

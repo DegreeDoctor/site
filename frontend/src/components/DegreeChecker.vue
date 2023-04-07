@@ -8,21 +8,33 @@ export default {
         return {
             programsData: programsJson,
             store: useStore(),
-
         };
     },
     computed: {
-        checker(){
+        majors(){
             let majors = []//this.programsData["2022-2023"]["Computer Science"]
             let currentDegree = this.store.getCurrentDegree;
             for(const major in currentDegree["majors"]){
                 let currentMajor = currentDegree["majors"][major];
                 majors.push(this.programsData["2022-2023"][currentMajor]);
             }
+            console.log("majors");
+            console.log(majors);
+            return majors;
+        },
+        course(){
             let course = []
+            let currentDegree = this.store.getCurrentDegree;
             for(const semester in currentDegree["template"]){
                 course = [...course, ...currentDegree["template"][semester]];
             }
+            console.log("course");
+            console.log(course);
+            return course;
+        },
+        unfulfilled(){
+            let majors = this.majors;
+            let course = this.course;
             let unfulfilled = []
             for(const major in majors){
                 for(const req in majors[major]["requirements"]){
@@ -31,18 +43,52 @@ export default {
                     }
                 }
             }
+            console.log("unfulfilled");
+            console.log(unfulfilled);
             return unfulfilled;
-        }
+        },
+        fulfilled(){
+            let majors = this.majors;
+            let course = this.course;
+            console.log(course);
+            let fulfilled = []
+            for(const major in majors){
+                for(const req in majors[major]["requirements"]){
+                    if(course.includes(req)){
+                        fulfilled.push(req);
+                    }
+                }
+            }
+            console.log("fulfilled");
+            console.log(fulfilled);
+            return fulfilled;
+        },
     },
 };
 </script>
 
 <template>
-<q-card >
+<q-card class = "required">
     <q-list dense>
-        <q-item v-for = "item in checker" :key = "item">
+        <h>Fulfilled Credits/Requirements</h>
+        <q-item v-for = "item in fulfilled" :key = "item">
+            {{ item }}
+        </q-item>
+        <h>Unfulfilled Credits/Requirements</h>
+        <q-item v-for = "item in unfulfilled" :key = "item">
             {{ item }}
         </q-item>
     </q-list>
 </q-card>
 </template>
+<style lang="scss">
+.required {
+    display: grid;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 20px;
+    top: 150px;
+    background-color: white;
+}
+</style>
