@@ -1,12 +1,7 @@
 <script>
 import { useStore } from "../stores/store";
-import EditPlan from "../components/EditPlan.vue";
 
 export default {
-    components: {
-        EditPlan,
-    },
-    emits: ["addPlan"],
     data() {
         return {
             current: useStore().getCurrentDegreeName,
@@ -117,16 +112,6 @@ export default {
                 message,
                 position,
                 timeout,
-            });
-        },
-        renamePlanNotification() {
-            this.$q.notify({
-                badgeClass: "hide-badge",
-                type: "warning",
-                textColor: "white",
-                message: "This feature is not yet implemented",
-                position: "top",
-                timeout: 1250,
             });
         },
         // allows to change name of plan
