@@ -11,6 +11,7 @@ export default {
             filter: "",
             deleteIconsVisible: false,
             deleteIconsVisibleArray: [false],
+            htmlList: [],
         };
     },
     computed: {
