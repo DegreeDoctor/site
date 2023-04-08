@@ -1,6 +1,8 @@
 <script>
 import { useStore } from "../stores/store";
 import programsJSON from "../data/programs.json";
+import coursesJSON from "../data/courses.json";
+import { degreeGenerator } from "../helpers/DegreeGenerator.js";
 
 export default {
     data() {
@@ -78,6 +80,7 @@ export default {
             concentrationOptions: concentrations,
             filteredConcentrations: concentrations,
             programsData: programsJSON,
+            coursesData: coursesJSON,
         };
     },
     methods: {
@@ -132,10 +135,7 @@ export default {
                 );
                 return;
             }
-            degree["template"] =
-                this.programsData["2022-2023"][this.selectedMajors[0]][
-                    "template"
-                ];
+            degree = degreeGenerator(degree, this.programsData, this.coursesData);
             this.store.addDegree(degree);
             this.$router.push("/degree");
             let message =

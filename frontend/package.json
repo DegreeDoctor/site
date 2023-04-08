@@ -3,7 +3,8 @@
     "version": "0.0.0",
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
+        "build": "vite build", 
+        "deploy": "vite build && gh-pages -r https://github.com/DegreeDoctor/pages -b main -d dist",
         "preview": "vite preview --port 4173",
         "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
         "pretty": "prettier .  --write"
@@ -25,6 +26,7 @@
         "@vue/eslint-config-prettier": "^7.0.0",
         "eslint": "^8.22.0",
         "eslint-plugin-vue": "^9.3.0",
+        "gh-pages": "^5.0.0",
         "prettier": "^2.7.1",
         "sass": "^1.32.12",
         "vite": "^3.0.9"

@@ -1,6 +1,11 @@
 <template>
-    <div :class="['semesterContainer', darkMode() ? 'darkModeSemesterContainer' : '',]">
-        <h3 :class="['semesterName', darkMode() ? 'darkModeSemesterName' : '',]">
+    <div
+        :class="[
+            'semesterContainer',
+            darkMode() ? 'darkModeSemesterContainer' : '',
+        ]"
+    >
+        <h3 :class="['semesterName', darkMode() ? 'darkModeSemesterName' : '']">
             {{ semester[0] }}
         </h3>
         <draggable
