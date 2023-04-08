@@ -1,0 +1,6 @@
+4/7/23
+Scraper is reaching the maximum recursion depth while I try to get all of the information.
+I have removed all scraping except for the subject grabbing portion to see if the problem is somewhere
+in one of the more complicated scrapers. If it is able to run to completion with just this, that will inform me
+I need to look closely at the other sections of my scraper. Its just so god forsakingly slow that testing anything 
+fills me with dread. 

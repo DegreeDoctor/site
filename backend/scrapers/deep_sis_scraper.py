@@ -20,8 +20,7 @@ def tailGenerator(subjectList):
     tails = []
     for subject in subjectList:
         tails.append("&sel_subj=" + subject)
-    kachow = np.array_split(tails, 15)
-    return kachow
+    return tails
 
 
 
@@ -44,7 +43,8 @@ def deep_sis_scraper():
     for list in tail:
         urlTails.append(''.join(list))
     for tails in tqdm(urlTails):
-        for year in years:
+        #for year in years:
+            year = "202209"
             tempHead = head.replace("ZIGGSISTHEBEST", str(year))
             webpage_response = s.get(tempHead + tails)
             webpage = webpage_response.content
@@ -58,7 +58,7 @@ def deep_sis_scraper():
                     link = val['href']
                     allLinks.append("https://sis.rpi.edu" + link)
             for link in allLinks:
-                #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=BIOL&crse_numb_in=4310"
+                link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=ARTS&crse_numb_in=2060"
                 #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=COGS&crse_numb_in=2940"
                 #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=CSCI&crse_numb_in=4480"
                 #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=ASTR&crse_numb_in=4220"
@@ -75,14 +75,21 @@ def deep_sis_scraper():
                     if link[i] == "&":
                         break
                     courseSubject += link[i]
+
+
                 #SUBJECT IS NOW FETCHED CORRECTLY--------------------------------
+
                 courseIndex =  int(link.find("crse_numb_in="))
                 courseID = link[courseIndex + 13:int(len(link))]
 
                 #checking if the course starts with 6 or 9, those are illegal classes
                 if courseID[0] == "6" or courseID[0] == "9":
                     continue
+
+
                 #COURSEID IS NOW FETCHED CORRECTLY---------------------------------
+                
+                
                 courseInfo = ""
                 courseInfoIndex = 0
                 for i in range(0, len(classText)):
@@ -94,6 +101,8 @@ def deep_sis_scraper():
                 courseName = courseInfo[IDindex:]
 
                 #checking if the course is an elective, if it is, we don't want it
+                
+                
                 if "elective" in courseName.lower():
                     continue
                 #COURSE NAME IS NOW FETCHED CORRECTLY----------------------------
@@ -104,7 +113,11 @@ def deep_sis_scraper():
                     creditFound = True
                 else:
                     courseDescription = classText[descriptionIndex].strip()
+
+
                 #courseDescription IS NOW FETCHED CORRECTLY----------------------
+                
+                
                 creditStorage = ""
                 classCredits = []
                 if creditFound == False:
@@ -128,6 +141,9 @@ def deep_sis_scraper():
                 #creditHours IS NOW FETCHED CORRECTLY----------------------------
 
                 #PREREQUISITES ARE NOW FETCHED CORRECTLY------------------------- HE SAYS XD
+                
+                
+                
                 searchString = "Cross Listed: "
                 crossedIndex = 0
                 for i in range(0, len(classText)):
@@ -150,39 +166,54 @@ def deep_sis_scraper():
                     CI= True
                 else:
                     CI = False
+
                 #communication intensive is now fetched correctly--------------------------
 
                 #major restriction
+                
+                
                 link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?term_in=" + year + "&subj_in=" + courseSubject +"&crse_in=" + courseID +"&schd_in=L"
                 mrPage = s.get(link)
                 mrContent = mrPage.content
                 mrSoup = BeautifulSoup(mrContent, "html.parser")
+                return mrSoup
                 pogLink = link_grabber(s, mrSoup)
                 restrictedMajor = majorRestrictionChecker(s, pogLink)
+
+
                 #major restriction is now fetched correctly--------------------------
 
 
                 #professors
-                instructorStorage = []
-                professorYear = year
-                professorSubject = courseSubject
-                professorID = courseID
-                professorLink = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?term_in=" + professorYear + "&subj_in=" + professorSubject + "&crse_in=" + professorID + "&schd_in=L"
-                professorWebPage = s.get(professorLink)
-                professorContent = professorWebPage.content
-                professorSoup = BeautifulSoup(professorContent, "html.parser")
-                times = professorSoup.findAll("table", {
-                    "class": "datadisplaytable",
-                    "summary": "This table lists the scheduled meeting times and assigned instructors for this class..",
-                })
+                
+                
+                
+                # instructorStorage = []
+                # professorYear = year
+                # professorSubject = courseSubject
+                # professorID = courseID
+                # professorLink = "https://sis.rpi.edu/rss/bwckctlg.p_disp_listcrse?term_in=" + professorYear + "&subj_in=" + professorSubject + "&crse_in=" + professorID + "&schd_in=L"
+                # professorWebPage = s.get(professorLink)
+                # professorContent = professorWebPage.content
+                # professorSoup = BeautifulSoup(professorContent, "html.parser")
+                # times = professorSoup.findAll("table", {
+                #     "class": "datadisplaytable",
+                #     "summary": "This table lists the scheduled meeting times and assigned instructors for this class..",
+                # })
+
                 #This allows us to clean the text up to easily find the professors, and then we grab the professor names and place them into a list
-                for time in times:
-                    split_up = [x.text for x in time.findAll("td")]
-                    instructor = split_up[6].split('(')[0]
-                    instructor = re.sub(' +', ' ', instructor).strip()
-                    if instructor != "TBA":
-                        instructorStorage.append(instructor)
-                cleanInstructors = np.unique(instructorStorage)
+                
+                
+                # for time in times:
+                #     split_up = [x.text for x in time.findAll("td")]
+                #     instructor = split_up[6].split('(')[0]
+                #     instructor = re.sub(' +', ' ', instructor).strip()
+                #     if instructor != "TBA":
+                #         instructorStorage.append(instructor)
+                
+                
+                # cleanInstructors = np.unique(instructorStorage)
+
                 #PROFESSORS ARE NOW FETCHED CORRECTLY----------------------------
                 
                 
@@ -192,35 +223,47 @@ def deep_sis_scraper():
 
                 #hey guys its time for me to put you in the json >:)
 
-                filepath = root
-                f = open(filepath + '/frontend/src/data/courses.json','r')   #Opens the .json file and stores it as a python object
-                courseJson = json.load(f)
-                f.close()
-                if(courseName not in courseJson):
-                    courseJson[courseName] = {} #creates a new course in the json file
-                    courseJson[courseName]['properties'] = {}
+                # filepath = root
+                # f = open(filepath + '/frontend/src/data/courses.json','r')   #Opens the .json file and stores it as a python object
+                # courseJson = json.load(f)
+                # f.close()
+                # if(courseName not in courseJson):
+                #     courseJson[courseName] = {} #creates a new course in the json file
+                #     courseJson[courseName]['properties'] = {}
                 
-                courseJson[courseName]['subject'] = courseSubject #adds the subject to the course
-                courseJson[courseName]['ID'] = courseID #adds the ID to the course
-                courseJson[courseName]['description'] = courseDescription #adds the description to the course
-                courseJson[courseName]['credits'] = cleanCredits.tolist() #adds the credits to the course
-                #courseJson[courseName]#prereqs
-                courseJson[courseName]['crosslisted'] = crossListing #adds the crossListing to the course
-                courseJson[courseName]['properties']['CI'] = CI #adds if communication intensive to the course
-                if len(restrictedMajor) > 0:
-                    courseJson[courseName]['properties']['MR'] = True
-                    courseJson[courseName]['properties']['majorRestriction'] = restrictedMajor
-                else:
-                    courseJson[courseName]['properties']['MR'] = False
-                    courseJson[courseName]['properties']['majorRestriction'] = []
-                courseJson[courseName]['professors'] = cleanInstructors.tolist() #adds the professors to the course
+                # courseJson[courseName]['subject'] = courseSubject #adds the subject to the course
+                # courseJson[courseName]['ID'] = courseID #adds the ID to the course
+                # courseJson[courseName]['description'] = courseDescription #adds the description to the course
+                # courseJson[courseName]['credits'] = cleanCredits.tolist() #adds the credits to the course
+                # #courseJson[courseName]#prereqs
+                # courseJson[courseName]['crosslisted'] = crossListing #adds the crossListing to the course
+                # courseJson[courseName]['properties']['CI'] = CI #adds if communication intensive to the course
+                # if len(restrictedMajor) > 0:
+                #     courseJson[courseName]['properties']['MR'] = True
+                #     courseJson[courseName]['properties']['majorRestriction'] = restrictedMajor
+                # else:
+                #     courseJson[courseName]['properties']['MR'] = False
+                #     courseJson[courseName]['properties']['majorRestriction'] = []
+                # courseJson[courseName]['professors'] = cleanInstructors.tolist() #adds the professors to the course
                 #when offered
 
 
-                f2 = open(filepath + '/frontend/src/data/courses.json', 'w')
-                json.dump(courseJson, f2, sort_keys=True, indent=2, ensure_ascii=False)
-                f2.close()
+                # f2 = open(filepath + '/frontend/src/data/courses.json', 'w')
+                # json.dump(courseJson, f2, sort_keys=True, indent=2, ensure_ascii=False)
+                # f2.close()
 
+                print("Course Subject: " + courseSubject)
+                print("Course ID: " + courseID)
+                print("Course Name: " + courseName)
+                print("Course Description: " + courseDescription)
+                print("Credits:", end =" ")
+                print(cleanCredits)
+                print("CrossListing: " + crossListing)
+                print("Comm Intensive: " + str(CI))
+                print("Major Restriction:", end =" ")
+                print(restrictedMajor)
+                break
+            break
 
 
             
