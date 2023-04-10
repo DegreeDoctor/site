@@ -1,0 +1,1143 @@
+{
+  "2022-2023": {
+    "Art History, Theory, and Criticism": {
+      "description": "This pathway allows students to study a range of art history and media art histories and theories. This immersive study will give students a comprehensive view of how these histories have shaped our current day media and given rise to a variety of art making tools in our digital and computational era.To complete this integrative pathway, student must choose a minimum of 12 credits as described:",
+      "name": "Art History, Theory, and Criticism",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Art History",
+            "Histories of Jazz and Improvised Music",
+            "History of Animation",
+            "Race and Film in U.S. Culture and History",
+            "Songwriting Workshop"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "The Multimedia Century",
+            "Histories of Western Music"
+          ]
+        }
+      ]
+    },
+    "Artificial Intelligence": {
+      "description": "Artificial Intelligence is quickly becoming pervasive in our lives. Study how Artificial Intelligence can benefit from concepts and ideas from cognitive science, and explore the ways in which Artificial Intelligence is changing our lives.To complete this integrative pathway, student must choose a minimum of 12 credits as described:",
+      "name": "Artificial Intelligence",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introduction to Cognitive Science"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Minds and Machines",
+            "Are Humans Rational?",
+            "Cognitive Modeling",
+            "Programming for Cognitive Science and Artificial Intelligence",
+            "Game AI",
+            "Learning and Advanced Game AI",
+            "Intelligent Virtual Agents",
+            "Language-Endowed Intelligent Agents"
+          ]
+        }
+      ]
+    },
+    "Behavioral and Cognitive Neuroscience Pathway": {
+      "description": "Behavioral and cognitive neuroscience focus on understanding the brain mechanisms that allow humans and other animals to perceive, think, feel, remember, and act.  Students pursuing this pathway will cultivate an understanding of brain and behavior/cognition relationships by critically analyzing research findings.To complete this integrative pathway, student must choose a minimum of 12 credits as described:",
+      "name": "Behavioral and Cognitive Neuroscience Pathway",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introduction to Psychological Science"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Drugs, Society, and Behavior",
+            "Introduction to Cognitive Neuroscience",
+            "Stress and the Brain",
+            "Cognition and the Brain",
+            "Behavioral Neuroscience",
+            "Hormones, Brain, and Behavior"
+          ]
+        }
+      ]
+    },
+    "Chinese Language": {
+      "description": "Integrated with Chinese culture, students will learn all four types of language skills (listening, speaking, reading, and writing). After completing the Chinese pathway, students will be able to communicate in Chinese at their targeted proficiency levels and think critically and creatively with global and multicultural awareness.To complete this integrative pathway, student must choose a minimum of 12 credits as described:",
+      "name": "Chinese Language",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Chinese I",
+            "Chinese II",
+            "Chinese III",
+            "Chinese IV",
+            "Chinese V"
+          ]
+        }
+      ]
+    },
+    "Creative Design and Innovation": {
+      "description": "This pathway looks at creative design and innovation from various humanities, arts, and social science points of view. Students will learn about the cognitive and communicative principles behind design and innovation, the economic policies, markets, and other social institutions driving and shaping design and innovation, and how to engage in sustainable and socially responsible design and innovation for local and global impact.To complete this integrative pathway, student must choose a minimum of 12 credits as described:",
+      "name": "Creative Design and Innovation",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Digital Imaging",
+            "Digital Filmmaking",
+            "Fundamentals of Music and Sound",
+            "History of Animation",
+            "Songwriting Workshop",
+            "Documentary in the 21st Century: Identity Production"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Visual Poetics and Narrative",
+            "Sculpture I",
+            "Typography",
+            "Topics in Communication",
+            "Fundamentals of 2D Design",
+            "Introduction to Graphic Design",
+            "Introduction to Cognitive Science",
+            "Music and Sound I",
+            "Visual Design: Theory and Application",
+            "Sound Recording and Production I",
+            "Cognitive Engineering",
+            "Topics in the Arts",
+            "Sculpture II"
+          ]
+        }
+      ]
+    },
+    "Design, Innovation, and Society Pathway": {
+      "description": "The pathway in Design, Innovation, and Society (DIS) provides creative, socially conscious students deep context for a broad education in design and innovation. Students take a sequence of studio-based courses that address real-world social and environmental challenges.To complete this integrative pathway, student must choose 12 credits as described:",
+      "name": "Design, Innovation, and Society Pathway",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Design and Innovation Studio I",
+            "Design and Innovation Studio II",
+            "Design and Innovation Studio III"
+          ]
+        }
+      ]
+    },
+    "Economics": {
+      "description": "Study different types of theories and statistical methods used by economists. Students are prepared to gain a broad understanding of how consumers, firms and governments make decisions, and their implications.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Economics",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introductory Economics",
+            "Principles of Economics"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Intermediate Microeconomic Theory",
+            "Intermediate Macroeconomic Theory"
+          ]
+        }
+      ]
+    },
+    "Economics of Banking and Finance": {
+      "description": "Study markets and policies in banking and finance. Students are prepared to use different types of mathematical models and econometric techniques used by economists to study the behavior of individuals, firms, and the economy.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Economics of Banking and Finance",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introductory Economics",
+            "Principles of Economics"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Money and Banking",
+            "Economics of Financial Institutions and Markets"
+          ]
+        }
+      ]
+    },
+    "Economics of Decision-Making": {
+      "description": "To complete this integrative pathway, students must choose a minimum of 12 credits as described below:",
+      "name": "Economics of Decision-Making",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Principles of Economics",
+            "Introductory Economics"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Applied Game Theory",
+            "Behavioral Economics",
+            "Behavioral Financial Economics",
+            "Economic Models of Decision-Making",
+            "Experimental Economics"
+          ]
+        }
+      ]
+    },
+    "Economics of Healthcare Markets": {
+      "description": "Study different types of markets related to pharmaceuticals, medical devices, and healthcare. Students are prepared to use theory, econometric models, and data to study the role of R&D, patents, innovation, and policies in healthcare markets, and in pharmaceuticals and medical devices.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Economics of Healthcare Markets",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introductory Economics",
+            "Principles of Economics"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Health Economics and Policy",
+            "Behavioral Economics",
+            "Economics of Biotech and Medical Innovations"
+          ]
+        }
+      ]
+    },
+    "Economics of Policy and Regulations": {
+      "description": "Study different types of regulations and economic policy measures, and their impact on individuals, markets, and the economy. Students are prepared to use economic models, quantitative methods, and data to assess different types of regulations and policies, and their impact.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Economics of Policy and Regulations",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introductory Economics",
+            "Principles of Economics"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Economics of Government Regulation and Firm Strategy",
+            "Health Economics and Policy",
+            "Law and Economics",
+            "Environmental Economics",
+            "Cost-Benefit Analysis"
+          ]
+        }
+      ]
+    },
+    "Economics of Quantitative Modeling": {
+      "description": "Study different types of mathematical models and econometric techniques used in Economics. Students are prepared to use economic theory, and econometric and statistical methods to study behavior of individuals and firms in the economy.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Economics of Quantitative Modeling",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introductory Economics",
+            "Principles of Economics"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Econometric Methods for Big Data",
+            "Econometrics",
+            "Experimental Economics",
+            "Cost-Benefit Analysis"
+          ]
+        }
+      ]
+    },
+    "Economics of Technology and Innovation": {
+      "description": "Study different types of economic models related to innovation and new technologies. Students are prepared to use economic theory, econometric and statistical methods, and data to examine patents, R&D, and innovation more broadly, as well as in specific industries in the economy.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Economics of Technology and Innovation",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introductory Economics",
+            "Principles of Economics"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Economics of Innovation and New Technologies",
+            "Economics of Growth & Innovation",
+            "Economics of Biotech and Medical Innovations"
+          ]
+        }
+      ]
+    },
+    "Electronic Arts": {
+      "description": "This pathway allows students to study a range of approaches to electronic, or digital arts, such as digital imaging, graphic storytelling, interactive media, and 3D animation. This immersive study will give students a comprehensive view of how to use digital tools to tell stories, and to critically and creatively explore the arts at the intersection of the humanities, and the physical, computational, engineering, and social sciences.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Electronic Arts",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Digital Imaging",
+            "Art History",
+            "Behind the TV Screen",
+            "Documentary in the 21st Century: Identity Production"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Intermediate Digital Imaging",
+            "2D Experimental Animation",
+            "Graphic Storytelling",
+            "3D Digital Modeling",
+            "Sound Recording and Production I",
+            "3D Visual Effects",
+            "3D Animation",
+            "Art and Code and Interactivity",
+            "Advanced Digital Imaging"
+          ]
+        }
+      ]
+    },
+    "Environmental Futures": {
+      "description": "The future seems up for grabs as climate change challenges human and nonhuman societies to meet basic needs for clean air, water, soil, food, and energy. How will humans adapt, reduce harm, or mitigate the problems of the past and present? This pathway involves courses in sustainability, defined as the means to ensure the well-being of the planet and quality of life of present and future generations. Courses integrate research and insights from the social sciences, arts, and humanities to pursue a healthy environment, economic prosperity, and social justice by building on the present to inform the future.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Environmental Futures",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Nature/Society",
+            "Principles of Economics",
+            "Sustainability Debates",
+            "A Century of Environmental Thought",
+            "Law, Values, and Public Policy: Perspectives on Science and Technology",
+            "Music, Sound, & the Environment",
+            "Documentary in the 21st Century: Identity Production"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Sustainability Education",
+            "Biopunk: Arts Lab Practice",
+            "Eco Chic: Living Art",
+            "Consumer Culture",
+            "Environmental Philosophy",
+            "Bioethics",
+            "Queer Ecologies",
+            "Art, Community, and Technology",
+            "Environmental Economics"
+          ]
+        }
+      ]
+    },
+    "Ethics, Integrity, and Social Responsibility": {
+      "description": "In this Pathway, students analyze many aspects of the complex relationship between ethics and areas in science, technology, and engineering. These conversations are critical to ensure the ethical and accessible use of technology and to allow scientists and engineers to think critically and make informed decisions on personal, professional, and public policy levels.To complete this integrative pathway, students must choose a minimum of 12 credits as described. Only four (4) credits from the HASS Inquiry courses listed below (IHSS courses & STSO 1110) can be applied to the pathway.",
+      "name": "Ethics, Integrity, and Social Responsibility",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Medicine, Culture, and Society",
+            "Law, Values, and Public Policy: Perspectives on Science and Technology",
+            "Hactivism",
+            "Eco Chic: Living Art",
+            "Engineering Ethics",
+            "Ethics",
+            "Science, Technology, and Society",
+            "Environmental Philosophy",
+            "Science and Scientific Misconduct",
+            "Bioethics",
+            "Art, Community, and Technology",
+            "Minds and Machines",
+            "The Genome and You"
+          ]
+        }
+      ]
+    },
+    "Extent and Limits of Rationality": {
+      "description": "Humans can do, and have done, some really stupid things: People are not as rational as they would like to think and are subject to scores of cognitive and social biases. That said, however, people also have the power to correct for these, and to do good and constructive work. It is time to see how such cognitive and social powers can be harnessed for the good. How can critical thinking be used constructively? How can people learn from their past mistakes? How can social institutions and policies be set up to ensure that wise decisions are made to create a world that lasts into the extended future?To complete this integrative pathway, students must choose a minimum of 12 credits as described. Only four (4) credits can be applied from the HASS Inquiry (IHSS) courses listed below to this pathway.",
+      "name": "Extent and Limits of Rationality",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Cognitive Psychology",
+            "War and Society",
+            "Principles of Economics",
+            "The Art of Listening",
+            "War and Technology: Past, Present, and Future",
+            "Introduction to Cognitive Science",
+            "Communication Theory and Practice",
+            "Speech Communication",
+            "Applied Game Theory",
+            "Critical Thinking",
+            "Behavioral Economics",
+            "Introduction to Logic",
+            "Proposing and Persuading",
+            "Minds and Machines",
+            "Are Humans Rational?",
+            "History of Science and Technology"
+          ]
+        }
+      ]
+    },
+    "Fact and Fiction": {
+      "description": "A pathway for those who are curious about what makes something fake or factual and how such concepts are evolving in contemporary political and popular culture. Students will learn how to think more precisely and analytically about the distinctions between fact, fiction, truth, and reality.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Fact and Fiction",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Digital Filmmaking",
+            "Science and Scientific Misconduct",
+            "Race and Film in U.S. Culture and History",
+            "Media and Society",
+            "Introduction to Philosophy",
+            "Fiction: From Film to the Internet",
+            "The American Dream"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "American Politics in Crisis",
+            "Hactivism",
+            "Documentary Film",
+            "Post-Factual Media",
+            "Science Fictions",
+            "Advertising and Culture",
+            "Science and Fiction",
+            "Philosophy of Science",
+            "Critical Thinking",
+            "Creative Nonfiction Writing",
+            "Drugs in History",
+            "Creative Writing:  Short Story",
+            "Rethinking Documentary: Video Production"
+          ]
+        }
+      ]
+    },
+    "Game Studies": {
+      "description": "This pathway explores the design, creation, and analysis of games. Students completing this pathway will develop depth in creative and critical thinking, technological proficiency, and multicultural awareness.This pathway is restricted to students in the Game and Simulation Arts and Sciences (GSAS) major.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Game Studies",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "History and Culture of Games",
+            "Introduction to Game Design",
+            "Introduction to Game Storytelling",
+            "Introduction to Game Programming",
+            "Game Development I",
+            "Game Development II",
+            "Experimental Game Design"
+          ]
+        }
+      ]
+    },
+    "Gender, Race, Sexuality, Ethnicity, and Social Change": {
+      "description": "This pathway enables students to cultivate an appreciation of how diverse identities are lived, experienced, and analyzed. Courses in this pathway center gender, dis/ability, race/ethnicity, and social class as ways of knowing and as analytic approaches for understanding distinctions that human societies make and unmake over time. Gender is used as an analytic tool for critical thinking about such topics as studies of sex differences and sexualities; race and gender in science, engineering, or gaming; or studies of the environment, war and peace, and other social impacts. Racial-ethnic formation is similarly used as an analytical tool for visualizing intersecting inequalities; history of science, medicine, arts, and technology.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Gender, Race, Sexuality, Ethnicity, and Social Change",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Documentary Film",
+            "Religion, Politics, & Media",
+            "Women Writers",
+            "Sociology",
+            "Gender, Science, and Technology",
+            "Queer Ecologies",
+            "Popular Music and Society"
+          ]
+        },
+        {
+          "amount": 0,
+          "courses": [
+            "The Genome and You",
+            "Race and Film in U.S. Culture and History",
+            "Language and Power",
+            "Media and Society",
+            "Religion in a Global World"
+          ]
+        }
+      ]
+    },
+    "Graphic Design": {
+      "description": "Study Graphic Design through the integration of theory and practice, in print and digital media. Students are prepared to use creative and critical thinking to solve visual communication problems and reach target audiences with words, symbols and images.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Graphic Design",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Media and Society",
+            "Life in Color",
+            "Communication Theory and Practice",
+            "Typography",
+            "Introduction to Graphic Design",
+            "Visual Poetics and Narrative",
+            "Visual Design: Theory and Application",
+            "2D Motion Graphics",
+            "Brand Identity Design",
+            "Interface Design: Hypermedia Theory and Application",
+            "Interactive Data Visualization",
+            "Writing in Context"
+          ]
+        }
+      ]
+    },
+    "History": {
+      "description": "The pathway in History is designed for students interested in U.S. and world history. Courses primarily focus on the social history and evolution of technology, scientific enterprise, medicine, and law. To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "History",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "American History"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Science, Technology, and Society",
+            "The American Dream",
+            "War and Technology: Past, Present, and Future",
+            "A Century of Environmental Thought",
+            "History of Medicine",
+            "Drugs in History",
+            "History of Mental Health",
+            "History of American Technology",
+            "History of Science and Technology",
+            "Consumer Culture"
+          ]
+        }
+      ]
+    },
+    "Information Technology and Web Sciences": {
+      "description": "The pathway in Information Technology and Web Science (ITWS) is designed to introduce students to the social aspects and human interactions that technology provides in our lives and workplaces. Students will gain knowledge of the social, legal, and ethical issues in employing technology around the world and will learn how to recognize and respond to human-centered design issues to make technology more usable.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Information Technology and Web Sciences",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "IT and Society",
+            "Introduction to Human Computer Interaction"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "The Multimedia Century",
+            "Introduction to Cognitive Science",
+            "Communication Theory and Practice",
+            "Introduction to Graphic Design",
+            "Principles of Economics",
+            "Critical Thinking",
+            "Introduction to Logic",
+            "Introduction to Psychological Science",
+            "Science, Technology, and Society",
+            "Design, Culture, and Society",
+            "Strategic Writing",
+            "Speech Communication",
+            "Foundations of HCI Usability"
+          ]
+        }
+      ]
+    },
+    "Interactive Media/Data Design": {
+      "description": "The Interactive Media/Data Design pathway covers communication design theory and practice, interaction design theory and practice, and information design to prepare students for creating different forms of interactive, multimedia communication and data representation. Students use critical thinking, creative thinking, multimedia design, and data representation to develop effective forms of communication in diverse global contexts.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Interactive Media/Data Design",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Media and Society",
+            "Writing in Context",
+            "Communication Theory and Practice",
+            "Introduction to Graphic Design",
+            "Foundations of HCI Usability",
+            "Information Design",
+            "Interface Design: Hypermedia Theory and Application",
+            "Interactive Narrative",
+            "Interactive Data Visualization"
+          ]
+        }
+      ]
+    },
+    "Language": {
+      "description": "This pathway promotes the development of skills to help students effectively communicate both domestically, and internationally, as well as enhance appreciation for other cultures. Students who select this pathway must have all courses that are part of the pathway be in the same language. Transfer credit from American Sign Language (ASL) courses can be applied to this pathway.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Language",
+      "requirements": []
+    },
+    "Law and Policy": {
+      "description": "The Law and Policy pathway is designed for students interested in the design of policy and legislation and students on a pre-law track. Skills and knowledge may be applied to fields such as environment and climate change, technological innovation, public health law, or intellectual property law.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Law and Policy",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Law, Values, and Public Policy: Perspectives on Science and Technology",
+            "War and Society",
+            "Science, Technology, and Society"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Engineering Ethics",
+            "Drugs in History",
+            "Gender, Science, and Technology",
+            "American Politics in Crisis"
+          ]
+        }
+      ]
+    },
+    "Linguistics": {
+      "description": "Study linguistics from various perspectives, from cognitive analysis of linguistic expressions to the use of language for communication and other social settings. You'll also learn how to effectively communicate and handle foreign languages.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Linguistics",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introduction to Linguistics"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Language and Power",
+            "The Linguistics of Computational Linguistics",
+            "Cross-linguistic Perspectives",
+            "Advanced Topics in Linguistics",
+            "Language-Endowed Intelligent Agents"
+          ]
+        }
+      ]
+    },
+    "Literature and Creative Writing": {
+      "description": "The Literature and Creative Writing Pathway offers discussion-oriented courses across a range of literary genres and themes, with a choice of emphasis on either literature, creative writing, or both. Students will learn to read and write literary art critically and creatively, with clarity and imagination, and with sensitivity to multi-cultural expressions of diversity.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Literature and Creative Writing",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Fiction: From Film to the Internet",
+            "The American Dream",
+            "Visual Poetics and Narrative",
+            "Interactive Narrative",
+            "Introduction to Literature",
+            "Modern and Contemporary Literature",
+            "Science and Fiction",
+            "Irish Literature",
+            "Women Writers",
+            "Writing in Context",
+            "Creative Nonfiction Writing",
+            "Creative Writing:  Short Story"
+          ]
+        }
+      ]
+    },
+    "Living in a World of Data": {
+      "description": "Humans live in the age of information ... and misinformation ... of big data, data mining, and machine learning ... of new media presenting unparalleled means of communication ... of unseen and opaque algorithms driving our news feeds... and of rushing to judgment on viral videos. It is important to develop some 'information intelligence' and 'data dexterity'. Such dexterity and intelligence includes technical skills of quantitative data analysis and IT technology, but also includes critical thinking skills regarding how information is collected, judged, interpreted, and represented, and how big data and information is feeding humans' collective awareness driving their decisions and affecting their world surroundings.To complete this integrative pathway, students must choose a minimum of 12 credits as described. Only four (4) credits from the HASS Inquiry courses listed below (IHSS & ITWS) can be applied to the pathway.",
+      "name": "Living in a World of Data",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Research Methods and Statistics I",
+            "Principles of Economics",
+            "IT and Society",
+            "Information Design",
+            "Econometrics",
+            "Interface Design: Hypermedia Theory and Application",
+            "Mathematical Methods in Psychological Science",
+            "Science and Scientific Misconduct",
+            "Applied Game Theory",
+            "Critical Thinking",
+            "Behavioral Economics",
+            "Interactive Data Visualization",
+            "Minds and Machines",
+            "The Genome and You"
+          ]
+        }
+      ]
+    },
+    "Logical Thinking": {
+      "description": "This Pathway is for students with an interest in symbolic logic, and the connections between formal logic and mathematics, computer science, Artificial Intelligence, and the human mind.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Logical Thinking",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Intermediate Logic",
+            "Computability and Logic",
+            "Critical Thinking",
+            "Introduction to Logic",
+            "Minds and Machines",
+            "Are Humans Rational?"
+          ]
+        }
+      ]
+    },
+    "Media and Culture": {
+      "description": "This pathway examines different forms of expression and their cultural contexts in a variety of media, including film, television, photography, and new media. Its components will enhance creative and critical thinking, communication practices, and awareness of cultural and individual identities. The focus on cultural and media literacy will improve the career readiness and social awareness of those in any program at RPI.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Media and Culture",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Behind the TV Screen",
+            "Media and Society",
+            "The American Dream",
+            "Perspectives on Photography",
+            "Documentary Film",
+            "Communication Theory and Practice",
+            "Superheroes in the Classroom",
+            "Critical Television",
+            "Post-Factual Media",
+            "Visual Culture",
+            "Religion, Politics, & Media",
+            "Advertising and Culture",
+            "Rethinking Documentary: Video Production"
+          ]
+        }
+      ]
+    },
+    "Mind, Brain, and Intelligence": {
+      "description": "Discover Cognitive Science: a young but fast-growing field focused on the study of the mind from the perspectives of philosophy, psychology, neuroscience, linguistics, and artificial intelligence.To complete this integrative pathway, students must choose a minimum of 12 credits with a minimum of 4 credits at the 4000-level:",
+      "name": "Mind, Brain, and Intelligence",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introduction to Cognitive Science"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Minds and Machines",
+            "Are Humans Rational?",
+            "Introduction to Cognitive Neuroscience",
+            "Cognition and the Brain",
+            "Mathematical Methods in Psychological Science",
+            "Cognitive Psychology",
+            "Sensation and Perception"
+          ]
+        }
+      ]
+    },
+    "Music Composition and Production": {
+      "description": "Students learn to compose music starting with the Western Classical tradition then branching out to modern and experimental methods.  Students also learn to program and apply modern information technology to music creation and production.  To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Music Composition and Production",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Fundamentals of Music and Sound",
+            "Histories of Jazz and Improvised Music",
+            "Songwriting Workshop",
+            "Popular Music and Society",
+            "Histories of Western Music"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Music and Technology I",
+            "Music and Sound I",
+            "Ensemble Nonlinear",
+            "Sound Recording and Production I",
+            "Music and Sound II",
+            "Sound Recording and Production II"
+          ]
+        }
+      ]
+    },
+    "Music Performance": {
+      "description": "Students learn to perform focal and instrumental music from a variety of styles, Classical to Afro-Cuban to experimental.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Music Performance",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Fundamentals of Music and Sound",
+            "Histories of Jazz and Improvised Music",
+            "Popular Music and Society",
+            "Histories of Western Music"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Deep Listening",
+            "Rensselaer Orchestra",
+            "Rensselaer Concert Choir",
+            "Chamber Music Ensemble",
+            "Ensemble Nonlinear",
+            "Topics in the Arts",
+            "Topics in Deep Listening",
+            "Private Music Lessons"
+          ]
+        }
+      ]
+    },
+    "Music and Culture": {
+      "description": "Students gain historical and inter-cultural knowledge of music from the Western and various non-Western cultures.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Music and Culture",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Histories of Jazz and Improvised Music",
+            "Songwriting Workshop",
+            "Popular Music and Society"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "World Music",
+            "Sound Recording and Production I",
+            "Sound Recording and Production II",
+            "Histories of Western Music",
+            "Deep Listening",
+            "Topics in Deep Listening"
+          ]
+        }
+      ]
+    },
+    "Philosophy": {
+      "description": "Learn to reason more precisely, think more critically, and ask more penetrating and foundational questions about enduring and contemporary problems in ethics, science, technology, religion, and politics — including some of the biggest challenges that humanity currently faces.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Philosophy",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Great Ideas in Philosophy",
+            "Science and Scientific Misconduct",
+            "Critical Thinking",
+            "Introduction to Philosophy",
+            "Introduction to Logic",
+            "The Genome and You"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Philosophy of Biology",
+            "Ethics",
+            "Environmental Philosophy",
+            "Philosophy of Science",
+            "Critical Thinking",
+            "Introduction to Logic",
+            "Metaphysics and Consciousness"
+          ]
+        }
+      ]
+    },
+    "Pre-Health Pathway": {
+      "description": "",
+      "name": "Pre-Health Pathway",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Introduction to Psychological Science",
+            "Sociology"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Writing in Context",
+            "Strategic Writing",
+            "Speech Communication",
+            "Writing and Response",
+            "Research Writing",
+            "Proposing and Persuading",
+            "Communication Theory and Practice",
+            "Visual Design: Theory and Application"
+          ]
+        }
+      ]
+    },
+    "Public Health": {
+      "description": "The pathway in Public Health is designed for students interested in health-related careers who wish to develop skills and knowledge about global public health challenges. It also offers important courses for students on a pre-health/pre-med track beyond the pre-health/pre-med pathway.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Public Health",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "The Genome and You",
+            "Introduction to Psychological Science",
+            "Science, Technology, and Society"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Sociology"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Medicine, Culture, and Society",
+            "Drugs, Society, and Behavior",
+            "History of Mental Health",
+            "Food, Farms, and Famine",
+            "Gender, Science, and Technology",
+            "Stress and the Brain",
+            "Bioethics",
+            "History of Medicine",
+            "Drugs in History",
+            "Hormones, Brain, and Behavior"
+          ]
+        }
+      ]
+    },
+    "Science, Technology, and Society": {
+      "description": "The pathway in Science, Technology, and Society (STS) is designed for students broadly interested in the social and political dimensions of science, technology, engineering, and medicine. Students use political and social science methods to investigate scientific and technological developments.",
+      "name": "Science, Technology, and Society",
+      "requirements": [
+        {
+          "amount": null,
+          "courses": [
+            "IT and Society",
+            "Science, Technology, and Society",
+            "Environment and Society",
+            "Sociology",
+            "American History"
+          ]
+        }
+      ]
+    },
+    "Strategic Communication": {
+      "description": "This pathway is designed to train versatile, critical, and self-possessed 21st- century communicators. Students who successfully complete this pathway will demonstrate the ability to make focused, audience-appropriate arguments; communicate effectively across diverse rhetorical, sociocultural, and disciplinary contexts; and respond creatively to the analytical demands involved with developing, arranging, and revising ideas and arguments.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Strategic Communication",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Communication Theory and Practice",
+            "Introduction to Graphic Design",
+            "Advertising and Culture",
+            "Language and Power",
+            "Media and Society",
+            "Writing in Context",
+            "Strategic Writing",
+            "Speech Communication"
+          ]
+        }
+      ]
+    },
+    "Studio Arts": {
+      "description": "Study traditional studio arts such as drawing, painting, sculpture in conjunction with art history to learn techniques, history, and theory in the visual arts.  Students will develop basic skills in perspective, proportion, composition, form making, light and shadow, color, 2 and 3D Design, and learn to articulate ideas about their own, other students', and historical works through class discussions and critiques.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Studio Arts",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Art History",
+            "The Multimedia Century"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Basic Drawing",
+            "Intermediate Drawing",
+            "Sculpture I",
+            "Fundamentals of 2D Design",
+            "Advanced Drawing",
+            "Sculpture II",
+            "Painting",
+            "Life Drawing and Anatomy for Artists"
+          ]
+        }
+      ]
+    },
+    "Sustainability": {
+      "description": "The pathway in Sustainability focuses on the interactions between various systems - social, political, cultural, economic, technological and ecological - that undergird environmental sustainability. Students use interdisciplinary approaches to investigate environmental problems.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Sustainability",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Environment and Society"
+          ]
+        },
+        {
+          "amount": null,
+          "courses": [
+            "Science, Technology, and Society",
+            "Nature/Society",
+            "A Century of Environmental Thought",
+            "Sustainability Debates",
+            "Sustainability and STS Careers",
+            "Environmental Philosophy",
+            "History of American Technology",
+            "Consumer Culture",
+            "Food, Farms, and Famine",
+            "Sustainability Education",
+            "Politics of Design",
+            "Globalization and Development",
+            "Environmental Justice"
+          ]
+        }
+      ]
+    },
+    "Thinking with Science": {
+      "description": "This pathway offers instruction in identifying and understanding dissemination and the methods and media for scientific knowledge. Students who successfully complete this pathway will demonstrate the ability to critique how textual and social representations create diverse and competing receptions of scientific knowledge; analyze the social construction of scientific knowledge; and solve problems through disseminating scientific knowledge across a variety of social and rhetorical contexts.To complete this integrative pathway, students must choose a minimum of 12 credits as described. Only four (4) credits from the HASS Inquiry courses listed below (IHSS & STSO 1110) can be applied to the pathway.",
+      "name": "Thinking with Science",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Medicine, Culture, and Society",
+            "Eco Chic: Living Art",
+            "History of American Technology",
+            "Science and Fiction",
+            "War and Technology: Past, Present, and Future",
+            "Philosophy of Biology",
+            "Science, Technology, and Society",
+            "Strategic Writing",
+            "Science and Scientific Misconduct",
+            "Philosophy of Science",
+            "Critical Thinking",
+            "Well-being: Cultivating Curiosity",
+            "Topics in the Arts",
+            "Research Writing",
+            "Proposing and Persuading",
+            "Communication Theory and Practice",
+            "History of Science and Technology"
+          ]
+        }
+      ]
+    },
+    "Transfer Student Arts and Humanities": {
+      "description": "This pathway is intended for transfer students that enter with junior status and who have completed significant coursework within the arts and humanities to be applied toward a pathway.  Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer. To complete this integrative pathway, students must complete a minimum of 12 credits as described:",
+      "name": "Transfer Student Arts and Humanities",
+      "requirements": []
+    },
+    "Transfer Student Social Science": {
+      "description": "This pathway is intended for transfer students that enter with junior status and who have completed significant coursework within the social sciences to be applied toward a pathway.  Coursework may include a mix of transfer courses that come in as electives or courses taken at Rensselaer. To complete this integrative pathway, students must complete a minimum of 12 credits as described:",
+      "name": "Transfer Student Social Science",
+      "requirements": []
+    },
+    "Understanding Human Behavior": {
+      "description": "The ability to understand and predict how people act and think is more important than ever in addressing many of the greatest challenges that we face as a society.  In this pathway, students will learn how behavior and thought are influenced by cognitive, emotional, developmental, social, and environmental factors, and how to apply psychological principles.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Understanding Human Behavior",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introduction to Psychological Science"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Research Methods and Statistics I",
+            "Social Psychology",
+            "Motivation and Performance",
+            "Industrial and Organizational Psychology",
+            "Research Methods and Statistics II",
+            "Mathematical Methods in Psychological Science",
+            "Cognitive Psychology",
+            "Learning",
+            "Drugs, Society, and Behavior",
+            "Abnormal Psychology",
+            "Sport Psychology Seminar"
+          ]
+        }
+      ]
+    },
+    "Video, Performance, and Social Practice": {
+      "description": "This pathway allows students to study video, performance, and social impact through the integration of theory and practice. Students are prepared to analyze and critique moving images; plan, produce and edit their own media productions in video/television and/or performance; and communicate through visual as well as audio mediums. Strategically situating art, media and technology in a social context, students engage in creative practice designed to make change from the local to the global. To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Video, Performance, and Social Practice",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Digital Filmmaking",
+            "Race and Film in U.S. Culture and History",
+            "Behind the TV Screen",
+            "The Art of Listening",
+            "Documentary in the 21st Century: Identity Production"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Intermediate Video",
+            "The Multimedia Century",
+            "Rethinking Documentary: Video Production",
+            "Art, Community, and Technology",
+            "Eco Chic: Living Art",
+            "Hactivism",
+            "Writing and Directing for Video",
+            "Science Fictions",
+            "Biopunk: Arts Lab Practice",
+            "Queer Ecologies",
+            "Advanced Video Media Studio"
+          ]
+        }
+      ]
+    },
+    "Well-being: Body and Mind": {
+      "description": "How do humans maintain a sense of well-being in their lives? Each person's path to well-being in body and mind is unique—arising from an awareness of his or her needs, goals, and what each finds fulfilling. The Well-being Interdisciplinary Pathway includes a wide variety of courses that explore the nature of what it is to be human and to orient oneself in the world, to have relationships, make decisions, be creative, and make discoveries.To complete this integrative pathway, students must choose a minimum of 12 credits as described:",
+      "name": "Well-being: Body and Mind",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Basic Drawing",
+            "Nature/Society",
+            "Minds and Machines",
+            "Well-being: Cultivating Curiosity",
+            "The Art of Listening",
+            "Songwriting Workshop",
+            "Music, Sound, & the Environment"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Positive Psychology",
+            "Drugs, Society, and Behavior",
+            "Rensselaer Concert Choir",
+            "Ethics",
+            "Sensibilities",
+            "Stress and the Brain",
+            "Psychology of Mindfulness",
+            "Topics in the Arts",
+            "Creative Nonfiction Writing",
+            "Hormones, Brain, and Behavior",
+            "Introduction to Psychological Science",
+            "Topics in Psychology",
+            "Creative Writing:  Short Story"
+          ]
+        }
+      ]
+    }
+  }
+}

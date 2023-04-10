@@ -67,6 +67,65 @@ def get_pathway_data(program_ids: List[str], catalog_id) -> Dict:
 
             tmp = tmp.replace("Remaining","Choose " + str(rem)).replace("Choose remaining","Choose " + str(rem))
             tmp = tmp.replace("Select ","Choose ")
+
+            # two main cases: required classes vs chosen credit amounts per class
+            if (content_s.upper().find("COMPLETE") != -1):
+
+                tmp_s = content_s[content_s.upper().find("COMPLETE")+9:]
+                tmp_s = tmp_s[:tmp_s.find(" ")]
+                required["amount"] = word_to_num(tmp_s) 
+
+            elif(tmp.upper().find("COMPLETE") != -1):
+
+                tmp_s = tmp[tmp.upper().find("COMPLETE")+9:]
+                tmp_s = tmp_s[:tmp_s.find(" ")]
+                required["amount"] = word_to_num(tmp_s) 
+
+            elif (tmp.upper().find("REQUIRE") != -1 or content_s.upper().find("REQUIRE") != -1):
+
+                required["amount"] = len(courses)
+                for a in adhocc:
+                    cont = norm_str(a.text_content())
+                    if (cont.upper().find("OR") != -1):
+                        required["amount"] -= 1
+                        break
+
+            else:
+                tmp_s = ""
+
+                if (tmp.upper().find("CHOOSE") != -1):
+                    tmp = tmp.replace("at least ","")
+                    tmp = tmp[tmp.find(" ")+1:]
+                    tmp = ''.join([x for x in tmp if x.isalnum() or x.isspace()])
+                    tmp_s = tmp.lower()[:tmp.find(" ")] if tmp.find(" ") != -1 else tmp.lower()
+
+                else:
+                    tmp_s = tmp.lower()[:tmp.find(" ")] if tmp.find(" ") != -1 else tmp.lower()
+               
+                # check if the input is an integer otherwise set to default 0 value
+                if (isinstance(word_to_num(tmp_s),int)):
+                    required["amount"] = word_to_num(tmp_s)
+                else:
+                    required["amount"] = 0 
+
+            # add all courses for current chunk to courselist
+            for course in courses:
+                course_list.append(trim_crn(norm_str(course.text_content())))
+            
+            # if the number of unique courses differs from the number of courses, we have a duplicate
+            if (len(course_list) != len(list(set(course_list)))):
+                course_list = list(set(course_list))
+                
+            # we want to reduce all formats from credits -> class amount so we just hard check for it
+            if required["amount"] != None and (required["amount"] == 8 or required["amount"] == 16 or required["amount"] == 12):
+                required["amount"] /= 4
+                required["amount"] = int(required["amount"])
+
+            # check the sum of all courses we have parsed so far
+            course_sum += required["amount"] if (required["amount"] != None) else 0
+            required["courses"] = course_list
+            if (len(course_list) > 0):
+                requirements.append(required)
         
         
         data[name] = {
@@ -95,7 +154,7 @@ def scrape_programs():
     print("Finished program scraping")
     # create JSON obj and write it to file
     json_object = json.dumps(pathways_per_year,sort_keys=True, indent=2, ensure_ascii=False)
-    with open(root + "/backend/data/test.json", "w") as outfile:
+    with open(root + "/frontend/src/data/pathways.json", "w") as outfile:
         outfile.write(json_object)
     return pathways_per_year
 
