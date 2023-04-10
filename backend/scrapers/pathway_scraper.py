@@ -20,6 +20,10 @@ def get_program_ids(catalog_id: str) -> List[str]:
     )
     return programs_xml.xpath('//result[type="Integrative Pathway"]/id/text()')
 
+# trims course to only the course name
+def trim_crn(inp):
+    return inp[inp.find("-")+1:].strip()
+
 def get_pathway_data(program_ids: List[str], catalog_id) -> Dict:
     data = {}
     # Break the courses into chunks of CHUNK_SIZE to make the api happy
@@ -31,11 +35,44 @@ def get_pathway_data(program_ids: List[str], catalog_id) -> Dict:
     # get each minor program XML object
     programs = program_xml.xpath("//programs/program[not(@child-of)]");
     for program in programs:
-        
         name = norm_str(program.xpath("./title/text()")[0].strip())
+        description = rep_uni(norm_str(program.xpath("./content")[0].text_content().strip()))
+        if (len(description) == 0):
+            description = rep_uni(norm_str(program.xpath("./cores/core/content")[0].text_content().strip()))
+        
+        rest = program.xpath("./cores/core")
+        for r in rest: 
+            children = r.xpath("./children/core")
+            rest.extend(children)
+        
+        requirements = []
+        course_sum = 0
+
+        for r in rest:
+
+            required = {}
+            course_list = []
+
+            # fetch the title, content, and courses XML paths
+            title = r.xpath("./title/text()")
+            tmp = norm_str(title[0])
+            content = r.xpath("./content")
+            content_s = norm_str(content[0].text_content())
+            courses = r.xpath("./courses/include")
+            adhocc = r.xpath("./courses/adhoc/content")
+
+            # massaging the inputs to follow a standard input such that 
+            # parsing is possible
+            rem = 3 - course_sum if course_sum < 3 else 0
+
+            tmp = tmp.replace("Remaining","Choose " + str(rem)).replace("Choose remaining","Choose " + str(rem))
+            tmp = tmp.replace("Select ","Choose ")
+        
         
         data[name] = {
             "name": name,
+            "description": description,
+            "requirements": requirements
         }
 
     return data
