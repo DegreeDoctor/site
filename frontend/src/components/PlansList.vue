@@ -121,7 +121,7 @@ export default {
                     cancel: true,
                     persistent: false,
                     prompt: {
-                        model: "",
+                        model: item,
                         type: "text",
                         label: "New Name",
                         hint: "Enter a new name for the plan",
