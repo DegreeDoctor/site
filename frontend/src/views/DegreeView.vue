@@ -3,7 +3,7 @@
         debug
     </q-btn> -->
     <br />
-    <CourseTable :semesters="templateToArray" @add-course="addCourse" />
+    <CourseTable :semesters="templateToArray" :credits="credits" @add-course="addCourse" />
 </template>
 
 <script>
@@ -27,9 +27,13 @@ export default {
         templateToArray() {
             return this.store.templateToArray;
         },
+        credits() {
+            return this.store.getCredits;
+        }
     },
     mounted() {
-        console.log(this.templateToArray)
+        // console.log(this.templateToArray)
+        console.log(this.credits)
     },
     methods: {
         // debug() {

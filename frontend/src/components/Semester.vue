@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
     <div
         :class="[
@@ -18,6 +19,7 @@
                 v-for="course in courseList"
                 :key="course.name"
                 :course="course"
+                :val="courseChecked(course.name)"
                 @toggle-check="toggleCheck"
             />
         </draggable>
@@ -59,6 +61,10 @@ export default defineComponent({
             type: Object,
             required: true,
         },
+        credits: {
+            type: Object,
+            required: true
+        }
     },
     emits: ["addCourse"],
     data() {
@@ -139,8 +145,27 @@ export default defineComponent({
         }
     },
     methods: {
-        toggleCheck() {
-            console.log("course checked/unchecked")
+        courseChecked(courseName) {
+            if (this.credits[courseName]) {
+                return true;
+            } else {
+                return false;
+            }
+        },
+        toggleCheck(data) {
+            // index    value
+            // 0:       true/fase
+            // 1:       course name
+            // 2:       course credits
+            if (data[0] == true) {
+                // true -> false
+                //  remove check
+                this.store.removeCredits(data[1])
+            } else {
+                // false -> true
+                //  add check
+                this.store.addCredits(data[1], data[2])
+            }
         },
         addCourse() {
             this.$emit("addCourse", this.semesterName);

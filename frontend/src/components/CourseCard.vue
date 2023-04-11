@@ -61,18 +61,20 @@ export default {
             required: false,
             default: true,
         },
+        val: {
+            type: Boolean,
+            required: true,
+        }
     },
     emits: ['toggleCheck'],
     data() {
         return {
-            val: false, // turn this into a prop later
+            // val: false, // turn this into a prop later
             showInfo: false,
+            checkVal: false,
         };
     },
     computed: {
-        checkVal() {
-            return this.val
-        },
         offered() {
             /*
 semesters has 3 different cases to test:
@@ -109,11 +111,14 @@ years has 2-3(?) different cases to test:
             return out;
         },
     },
+    mounted() {
+        this.checkVal = this.val;
+    },
     methods: {
         toggleCheck() {
             // emit update to parent
-            this.val = !this.val;
-            this.$emit('toggleCheck');
+            // this.val = !this.val;
+            this.$emit('toggleCheck', [this.val, this.course.name, this.course.credits[0]]);
         },
         toggleDesc() {
             this.showInfo = !this.showInfo;

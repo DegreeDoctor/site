@@ -11,6 +11,7 @@
             :ref="semester[0]"
             :key="semester[0]"
             :semester="semester"
+            :credits="credits"
             @add-course="showAddCourseModal"
         />
     </div>
@@ -31,6 +32,10 @@ export default {
             type: Object,
             default: null,
         },
+        credits: {
+            type: Object,
+            default: null,
+        }
     },
     emits: ["addCourse"],
     data() {

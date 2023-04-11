@@ -1,6 +1,4 @@
 <script>
-// import ACourse from "../components/ACourse.vue";
-
 import CourseCard from "./CourseCard.vue";
 
 export default {
