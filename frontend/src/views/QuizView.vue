@@ -154,55 +154,6 @@ export default {
             this.selectedConcentrations = "None";
             this.showNotif("top", "Form has been reset", "info", 300);
         },
-        massCreate() {
-            // create a bunch of degrees
-            let degree = {
-                name: "Plan 1 - Computer Science",
-                majors: ["Computer Science"],
-                minors: this.selectedMinors,
-                pathway: this.selectedPathways,
-                credits: {},
-                concentration: this.selectedConcentrations,
-            };
-            degree["template"] =
-                this.programsData["2022-2023"]["Computer Science"]["template"];
-            this.store.addDegree(degree);
-            degree = {
-                name: "Plan 2 - Architecture",
-                majors: ["Architecture"],
-                minors: this.selectedMinors,
-                pathway: this.selectedPathways,
-                credits: {},
-                concentration: this.selectedConcentrations,
-            };
-            degree["template"] =
-                this.programsData["2022-2023"]["Architecture"]["template"];
-            this.store.addDegree(degree);
-            degree = {
-                name: "Plan 3 - Biology",
-                majors: ["Biology"],
-                minors: this.selectedMinors,
-                pathway: this.selectedPathways,
-                credits: {},
-                concentration: this.selectedConcentrations,
-            };
-            degree["template"] =
-                this.programsData["2022-2023"]["Biology"]["template"];
-            this.store.addDegree(degree);
-            degree = {
-                name: "Plan 4 - Chemistry",
-                majors: ["Chemistry"],
-                minors: this.selectedMinors,
-                pathway: this.selectedPathways,
-                credits: {},
-                concentration: this.selectedConcentrations,
-            };
-            degree["template"] =
-                this.programsData["2022-2023"]["Chemistry"]["template"];
-            this.store.addDegree(degree);
-            this.$router.push("/degree");
-            this.showNotif("top", "Mass created plans", "alert");
-        },
         showNotif(position, message, type, timeout = 1250) {
             // Useful reference https://quasar.dev/quasar-plugins/notify#positioning
             this.$q.notify({
@@ -329,12 +280,6 @@ export default {
                 flat
                 style="margin-left: 10px"
                 @click="reset"
-            />
-            <q-btn
-                label="Mass Create"
-                color="accent"
-                style="margin-left: 10px"
-                @click="massCreate"
             />
         </div>
     </q-form>
