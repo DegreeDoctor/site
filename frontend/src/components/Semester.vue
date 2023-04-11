@@ -18,6 +18,7 @@
                 v-for="course in courseList"
                 :key="course.name"
                 :course="course"
+                @toggle-check="toggleCheck"
             />
         </draggable>
         <span style="flex-grow:1"></span>
@@ -138,6 +139,9 @@ export default defineComponent({
         }
     },
     methods: {
+        toggleCheck() {
+            console.log("course checked/unchecked")
+        },
         addCourse() {
             this.$emit("addCourse", this.semesterName);
         },

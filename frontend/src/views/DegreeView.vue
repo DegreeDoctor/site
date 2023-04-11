@@ -28,7 +28,9 @@ export default {
             return this.store.templateToArray;
         },
     },
-    mounted() {},
+    mounted() {
+        console.log(this.templateToArray)
+    },
     methods: {
         // debug() {
         //     // this.store.deleteEverything();       // this deleted everything in local store

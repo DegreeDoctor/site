@@ -1,6 +1,9 @@
 <template>
     <div class="card" @click="toggleCheck">
-        <q-checkbox v-model="val" />
+        <q-checkbox 
+            v-model="checkVal"
+            @click="toggleCheck"
+        />
         <span class="name">{{ course.name }}</span>
         <span v-if="showBar" class="bar"></span>
         <q-space />
@@ -59,6 +62,7 @@ export default {
             default: true,
         },
     },
+    emits: ['toggleCheck'],
     data() {
         return {
             val: false, // turn this into a prop later
@@ -66,6 +70,9 @@ export default {
         };
     },
     computed: {
+        checkVal() {
+            return this.val
+        },
         offered() {
             /*
 semesters has 3 different cases to test:
@@ -106,6 +113,7 @@ years has 2-3(?) different cases to test:
         toggleCheck() {
             // emit update to parent
             this.val = !this.val;
+            this.$emit('toggleCheck');
         },
         toggleDesc() {
             this.showInfo = !this.showInfo;
