@@ -126,8 +126,8 @@ export const useStore = defineStore("main", {
             // set the objects name atrribute to the uuid
             this.selectedDegree = uuid;
         },
-        updateDegree(name, degree) {
-            this.degrees[name] = degree;
+        renameDegree(id, name) {
+            this.degrees[id].name = name;
         },
         removeDegree(name) {
             delete this.degrees[name];
