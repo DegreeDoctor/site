@@ -1,0 +1,10 @@
+Course Subject: ASTR
+Course ID: 4220
+Course Name: ASTROPHYSICS
+Course Description: A survey course in modern astrophysics with an emphasis on stellar astrophysics and interstellar matter; topics include star formation, the structure and observable properties of normal and degenerate stars; and the composition, dynamics, and stability of the interstellar medium.
+Credits: ['4']
+CrossListing: 
+Comm Intensive: False
+Major Restriction: 
+Professors: []
+None
