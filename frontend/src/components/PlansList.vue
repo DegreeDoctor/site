@@ -12,7 +12,6 @@ export default {
             deleteIconsVisible: false,
             deleteIconsVisibleArray: [false],
             htmlList: [],
-            showEditPlan: false,
         };
     },
     computed: {
@@ -115,7 +114,7 @@ export default {
             });
         },
         // allows to change name of plan
-        renamePlanDialog() {
+        renamePlanDialog(item) {
             this.$q
                 .dialog({
                     title: "Rename Plan",
@@ -148,7 +147,7 @@ export default {
                     // check if name is already taken
                     if (!this.store.findDegree(data)) {
                         this.store.renameDegree(
-                            this.store.findDegree(this.selectedPlan),
+                            this.store.findDegree(item),
                             data
                         );
                         this.showNotif(
@@ -179,11 +178,6 @@ export default {
 
 <template>
     <div>
-        <!-- <EditPlan 
-            :prompt="showEditPlan"
-            @close="showEditPlan = false"
-            @edit-plan="editPlanModal"
-        /> -->
         <div class="q-pa-md btn">
             {{ selectedPlan }}
             <q-menu anchor="bottom left">
@@ -207,7 +201,7 @@ export default {
                     <a
                         class="edit"
                         :class="{ 'hide-icon': deleteIconsVisible }"
-                        @click="renamePlanDialog"
+                        @click="renamePlanDialog(item)"
                     >
                         <q-icon
                             name="fa-solid fa-pen-to-square"
