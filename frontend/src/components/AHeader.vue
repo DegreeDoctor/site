@@ -320,7 +320,7 @@ button{
 }
 img{
     width: 4em;
-    margin-right: 2em;
+    margin-left: 2em;
 
 }
 #title{
@@ -330,11 +330,31 @@ img{
     font-size: 1.2rem;
     padding-bottom: 3px;
     justify-content: space-around;
+    margin-left: 3em;
 }
 .other{
     padding-right: 17em;
 }
-
+.image-container {
+  position: absolute;
+  top: 3.5%;
+  right: 20%;
+  transform: translate(-50%,-50%);
+}
+.image-container img {
+  -webkit-filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
+  filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
+  animation: image-slide 4s cubic-bezier(.5,.5,0,1);
+  animation-fill-mode: forwards;
+}
+@media screen and (min-width: 1440px){
+    @keyframes image-slide {
+        0% { transform: translateX(-390px) scale(0); }
+        60% { transform: translateX(-390px) scale(1); }
+        90% { transform: translateX(-900px) scale(1); }
+        100% { transform: translateX(-900px) scale(1); }  
+    }
+}
 
 
 </style>
