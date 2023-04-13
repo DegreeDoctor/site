@@ -20,12 +20,14 @@ export default {
  <template>
     <nav> 
         <div class="navbar">
-            <div class="image-container">
-                <router-link to="/quiz" id="logo"><img src="../assets/Degree_Doctor_logo.png"/></router-link>
-            </div>
-            <div class="DD">
-                <RouterLink to="/" id="title">Degree Doctor</RouterLink>
-                <div class="fading-effect"></div>
+            <div class="left">
+                <div class="image-container">
+                    <router-link to="/quiz" id="logo"><img src="../assets/Degree_Doctor_logo.png"/></router-link>
+                </div>
+                <div class="DD">
+                    <RouterLink to="/" id="title">Degree Doctor</RouterLink>
+                    <div class="fading-effect"></div>
+                </div>
             </div>
             <div class="other">
                 <DarkModeToggle/>
@@ -34,7 +36,9 @@ export default {
     </nav>  
 </template>
 
-<style scoped>
+
+
+<!-- <style scoped>
 .navbar{
     display: flex;
     background:#835eba;
@@ -297,4 +301,40 @@ button{
     max-height: 54px;
     height: 100%;
 }
+</style> -->
+
+
+<style scoped>
+.navbar{
+    display: flex;
+    background:#835eba;
+    justify-content:space-between;
+    align-items: center;
+    height: 5rem;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   padding-left: 17em;
+}
+img{
+    width: 4em;
+    margin-right: 2em;
+
+}
+#title{
+    display:flex;
+    color:WHITE;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+    justify-content: space-around;
+}
+.other{
+    padding-right: 17em;
+}
+
+
+
 </style>
