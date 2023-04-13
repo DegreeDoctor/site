@@ -14,7 +14,7 @@ export default {
                 <a href="https://github.com/Ryzon3/DegreeDoctor">
                     <q-icon id="icon" name="fa-brands fa-github" size="35px" />
                 </a>
-                <p id="copy">&copy; 2022 Degree Doctor</p>
+                <p id="copy">&copy; 2023 Degree Doctor</p>
             </q-toolbar-title>
         </q-toolbar>
     </q-footer>
