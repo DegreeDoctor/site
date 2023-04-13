@@ -53,7 +53,7 @@ export default {
 }
 img{
     width: 4em;
-    margin-left: 2em;
+    margin-left: -4em;
 
 }
 #title{
@@ -82,12 +82,66 @@ img{
   animation: image-slide 4s cubic-bezier(.5,.5,0,1);
   animation-fill-mode: forwards;
 }
-@media screen and (min-width: 1440px){
+
+@media screen and (max-width: 2560px){
     @keyframes image-slide {
-        0% { transform: translateX(-390px) scale(0); }
-        60% { transform: translateX(-390px) scale(1); }
-        90% { transform: translateX(-900px) scale(1); }
-        100% { transform: translateX(-900px) scale(1); }  
+        0% { transform: translateX(-730px) scale(0); }
+        60% { transform: translateX(-730px) scale(1); }
+        90% { transform: translateX(-1550px) scale(1); }
+        100% { transform: translateX(-1550px) scale(1); }  
+    }
+    @keyframes fade-in{
+        from {
+            opacity: 0; /* Start with the text fully transparent */
+        }
+        to {
+            opacity: 1; /* End with the text fully opaque */
+        }
+    }
+    .navbar{
+        height: 8em;
+    }
+    img{
+        width:5em;
+        margin-top: -3em;
+    }
+    #title{
+        font-size:2em;
+        margin-left: 10em;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 3000ms;
+    }
+    .other{
+        padding-right: 29em;
+
+    }
+    DarkModeToggle{
+        width: 2em;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1440px){
+    @keyframes image-slide {
+        0% { transform: translateX(-400px) scale(0); }
+        60% { transform: translateX(-400px) scale(1); }
+        90% { transform: translateX(-875px) scale(1); }
+        100% { transform: translateX(-875px) scale(1); }  
     }
     @keyframes fade-in{
         from {
@@ -105,6 +159,94 @@ img{
     }
 
 
+}
+@media screen and (max-width: 1024px){
+    @keyframes image-slide {
+        0% { transform: translateX(-275px) scale(0); }
+        60% { transform: translateX(-275px) scale(1); }
+        90% { transform: translateX(-600px) scale(1); }
+        100% { transform: translateX(-600px) scale(1); }  
+    }
+    @keyframes fade-in{
+        from {
+            opacity: 0; /* Start with the text fully transparent */
+        }
+        to {
+            opacity: 1; /* End with the text fully opaque */
+        }
+    }
+    #title{
+        margin-left: 0em;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 3000ms;
+    }
+    .other{
+        padding-right: 11em;
+    }
+
+
+}
+@media screen and (max-width: 768px){
+    @keyframes image-slide {
+        0% { transform: translateX(-200px) scale(0); }
+        60% { transform: translateX(-200px) scale(1); }
+        90% { transform: translateX(-425px) scale(1); }
+        100% { transform: translateX(-425px) scale(1); }  
+    }
+    @keyframes fade-in{
+        from {
+            opacity: 0; /* Start with the text fully transparent */
+        }
+        to {
+            opacity: 1; /* End with the text fully opaque */
+        }
+    }
+    #title{
+        margin-left: -2em;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 3000ms;
+    }
+    .other{
+        padding-right: 9em;
+    }
+    img{
+        margin-top: 1em;
+        width:3.5em;
+    }
+}
+@media screen and (max-width: 768px){
+    @keyframes image-slide {
+        0% { transform: translateX(-200px) scale(0); }
+        60% { transform: translateX(-200px) scale(1); }
+        90% { transform: translateX(-425px) scale(1); }
+        100% { transform: translateX(-425px) scale(1); }  
+    }
+    @keyframes fade-in{
+        from {
+            opacity: 0; /* Start with the text fully transparent */
+        }
+        to {
+            opacity: 1; /* End with the text fully opaque */
+        }
+    }
+    #title{
+        margin-left: -2em;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 3000ms;
+    }
+    .other{
+        padding-right: 9em;
+    }
+    img{
+        margin-top: 1em;
+        width:3.5em;
+    }
 }
 
 
