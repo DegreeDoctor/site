@@ -124,7 +124,7 @@ img{
 
 }
 
-@media screen and (min-width: 2560px)and(max-width: 1440px){
+@media screen and (max-width: 1440px){
     @keyframes image-slide {
         0% { transform: translateX(-400px) scale(0); }
         60% { transform: translateX(-400px) scale(1); }
