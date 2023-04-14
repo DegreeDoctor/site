@@ -53,8 +53,8 @@ export default {
 }
 img{
     width: 4em;
-    margin-left: -1em;
-    margin-top: 4em;
+    margin-left: -4em;
+    margin-top: 0em;
     
 
 }
@@ -67,18 +67,18 @@ img{
     padding-bottom: 3px;
     justify-content: space-around;
     margin-left: 3em;
-    opacity: 0;
+    opacity: 1;
 }
 .other{
     padding-right: 17em;
 }
-.image-container {
+/* .image-container {
   position: absolute;
   top: 3.5%;
   right: 20%;
   transform: translate(-50%,-50%);
-}
-.image-container img {
+} */
+/* .image-container img {
   -webkit-filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
   filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
   animation: image-slide 4s cubic-bezier(.5,.5,0,1);
@@ -94,10 +94,10 @@ img{
     }
     @keyframes fade-in{
         from {
-            opacity: 0; /* Start with the text fully transparent */
+            opacity: 0; 
         }
         to {
-            opacity: 1; /* End with the text fully opaque */
+            opacity: 1; 
         }
     }
     .navbar{
@@ -135,10 +135,10 @@ img{
     }
     @keyframes fade-in{
         from {
-            opacity: 0; /* Start with the text fully transparent */
+            opacity: 0; 
         }
         to {
-            opacity: 1; /* End with the text fully opaque */
+            opacity: 1; 
         }
     }
     #title{
@@ -148,7 +148,7 @@ img{
         animation-delay: 2750ms;
     }
     img{
-        margin-top:.75em;
+        margin-top:2em;
     }
 
 
@@ -162,10 +162,10 @@ img{
     }
     @keyframes fade-in{
         from {
-            opacity: 0; /* Start with the text fully transparent */
+            opacity: 0; 
         }
         to {
-            opacity: 1; /* End with the text fully opaque */
+            opacity: 1; 
         }
     }
     #title{
@@ -176,7 +176,7 @@ img{
         animation-delay: 3000ms;
     }
     img{
-        margin-top:.75em;
+        margin-top:1em;
     }
 
     
@@ -192,10 +192,10 @@ img{
     }
     @keyframes fade-in{
         from {
-            opacity: 0; /* Start with the text fully transparent */
+            opacity: 0; 
         }
         to {
-            opacity: 1; /* End with the text fully opaque */
+            opacity: 1; 
         }
     }
     #title{
@@ -221,10 +221,10 @@ img{
     }
     @keyframes fade-in{
         from {
-            opacity: 0; /* Start with the text fully transparent */
+            opacity: 0; 
         }
         to {
-            opacity: 1; /* End with the text fully opaque */
+            opacity: 1;
         }
     }
     #title{
@@ -251,10 +251,10 @@ img{
     }
     @keyframes fade-in{
         from {
-            opacity: 0; /* Start with the text fully transparent */
+            opacity: 0; 
         }
         to {
-            opacity: 1; /* End with the text fully opaque */
+            opacity: 1;
         }
     }
     #title{
@@ -271,5 +271,5 @@ img{
         margin-top: 1em;
         width:3.5em;
     }
-}
+} */
 </style>
