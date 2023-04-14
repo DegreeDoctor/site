@@ -83,7 +83,7 @@ img{
   animation-fill-mode: forwards;
 }
 
-@media screen and (max-width: 2560px){
+@media screen and (min-width: 2560px){
     @keyframes image-slide {
         0% { transform: translateX(-730px) scale(0); }
         60% { transform: translateX(-730px) scale(1); }
@@ -124,19 +124,7 @@ img{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1440px){
+@media screen and (min-width: 2560px)and(max-width: 1440px){
     @keyframes image-slide {
         0% { transform: translateX(-400px) scale(0); }
         60% { transform: translateX(-400px) scale(1); }
@@ -248,7 +236,4 @@ img{
         width:3.5em;
     }
 }
-
-
-
 </style>
