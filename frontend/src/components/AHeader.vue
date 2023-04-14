@@ -49,11 +49,13 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
-   padding-left: 17em;
+    padding-left: 17em;
 }
 img{
     width: 4em;
-    margin-left: -4em;
+    margin-left: -1em;
+    margin-top: 4em;
+    
 
 }
 #title{
@@ -103,7 +105,7 @@ img{
     }
     img{
         width:5em;
-        margin-top: -3em;
+        margin-top: 3em;
     }
     #title{
         font-size:2em;
@@ -145,6 +147,39 @@ img{
         animation-fill-mode: forwards;
         animation-delay: 2750ms;
     }
+    img{
+        margin-top:.75em;
+    }
+
+
+}
+@media screen and (min-width: 1440px){
+    @keyframes image-slide {
+        0% { transform: translateX(-400px) scale(0); }
+        60% { transform: translateX(-400px) scale(1); }
+        90% { transform: translateX(-900px) scale(1); }
+        100% { transform: translateX(-900px) scale(1); }  
+    }
+    @keyframes fade-in{
+        from {
+            opacity: 0; /* Start with the text fully transparent */
+        }
+        to {
+            opacity: 1; /* End with the text fully opaque */
+        }
+    }
+    #title{
+
+        animation-name: fade-in;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 3000ms;
+    }
+    img{
+        margin-top:.75em;
+    }
+
+    
 
 
 }
@@ -173,6 +208,7 @@ img{
     .other{
         padding-right: 11em;
     }
+ 
 
 
 }
@@ -202,7 +238,7 @@ img{
         padding-right: 9em;
     }
     img{
-        margin-top: 1em;
+        margin-top: 3em;
         width:3.5em;
     }
 }
