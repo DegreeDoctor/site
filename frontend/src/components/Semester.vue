@@ -18,15 +18,29 @@
                 v-for="course in courseList"
                 :key="course.name"
                 :course="course"
+                @toggle-check="toggleCheck"
             />
         </draggable>
+        <span style="flex-grow:1"></span>
         <q-btn
             push
             color="secondary"
-            class="addButton"
+            class="bottomRight"
             icon="add"
             @click="addCourse"
         />
+        <draggable
+            group="courses"
+            class="bottomRight"
+        >
+            <q-btn  
+                push
+                color="red"
+                icon="delete"
+            />
+        </draggable>
+
+
     </div>
 </template>
 <script>
@@ -125,6 +139,9 @@ export default defineComponent({
         }
     },
     methods: {
+        toggleCheck() {
+            console.log("course checked/unchecked")
+        },
         addCourse() {
             this.$emit("addCourse", this.semesterName);
         },
@@ -158,7 +175,14 @@ export default defineComponent({
     },
 });
 </script>
+
 <style lang="scss">
+
+.bottomRight {
+    margin: 0 1% 1% auto !important;
+    // margin-left: auto !important;
+}
+
 .semesterName {
     text-align: center;
     font-size: 1.5rem;
@@ -202,9 +226,5 @@ export default defineComponent({
     border-radius: 10px;
     height: 5vh;
     color: white;
-}
-
-.addButton {
-    margin: auto 5px 5px auto;
 }
 </style>
