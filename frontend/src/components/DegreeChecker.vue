@@ -88,12 +88,25 @@ export default {
             return fulfilled;
         },
     },
+    methods:{
+        openNav() {
+            document.getElementById("dropdown").style.display = "block";
+        },
+
+        closeNav() {
+            document.getElementById("dropdown").style.display = "block";
+        },
+    },
+
 };
 </script>
 
 <template>
 <q-card class = "required">
-    <q-list dense>
+    <q-btn class="openbtn" @click="openNav()"> </q-btn>
+    <q-btn class="closebtn" @click="closeNav()">x</q-btn>
+
+    <q-list dense id="dropdown">
         
         <h>All Requirements</h>
         <q-item v-for = "item in allrequirements" :key = "item">
@@ -120,8 +133,9 @@ export default {
     text-align: left;
     font-size: 1.5rem;
     font-weight: 600;
-    margin: 20px;
+    margin: 200px;
     top: 150px;
+    bottom: 1000px;
     background-color: white;
 }
 </style>
