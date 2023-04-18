@@ -9,7 +9,6 @@
         <q-space />
         <span class="courseCode">{{ course.subject }} - {{ course.ID }}</span>
         <span class="credits">({{ course.credits[0] }})</span>
-        <!--why is course.credits an array -->
         <q-btn
             push
             color="primary"
@@ -69,7 +68,6 @@ export default {
     emits: ['toggleCheck'],
     data() {
         return {
-            // val: false, // turn this into a prop later
             showInfo: false,
             checkVal: false,
         };
@@ -117,7 +115,6 @@ years has 2-3(?) different cases to test:
     methods: {
         toggleCheck() {
             // emit update to parent
-            // this.val = !this.val;
             this.$emit('toggleCheck', [this.val, this.course.name, this.course.credits[0]]);
         },
         toggleDesc() {
@@ -142,7 +139,6 @@ years has 2-3(?) different cases to test:
 .name {
     font-weight: 600;
     width: 30ch;
-    /* width: 55%; */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -160,7 +156,6 @@ years has 2-3(?) different cases to test:
 }
 
 .credits {
-    /* flex-grow: 1; */
     text-align: end;
 }
 

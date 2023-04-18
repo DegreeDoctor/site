@@ -1,14 +1,21 @@
 <template>
+    <!-- the course search component hsa been moved to the entire course table as to save resources -->
+    <!-- and shows itself when any of the add course buttons are clicked                            -->
+    <!-- courses-data is just the json file of all of the course information                        -->
+    <!-- prompt handles whether or not a the add course dialog is visible or not                    -->
     <CourseSearch
         :courses-data="coursesData"
         :prompt="showSearch"
         @close="showSearch = false"
         @add-course="addCourse"
     />
+    <!-- the degree is organized by semesters, and each semester has a number of courses -->
     <div id="table" :key="semesters">
+        <!-- semester prop contains course information for the specific semester -->
+        <!-- credits prop contains information on what courses have been marked as completed -->
+        <!-- the add-course event is when the add course button has been clicked -->
         <Semester
             v-for="semester in semesters"
-            :ref="semester[0]"
             :key="semester[0]"
             :semester="semester"
             :credits="credits"
@@ -40,13 +47,14 @@ export default {
     emits: ["addCourse"],
     data() {
         return {
-            parsedSemesters: [],
+            // this is the json file that has been imported that contains all course data
             coursesData: coursesJson,
+            // this keeps track of if the add course dialog has been opened or not
             showSearch: false,
-            opened: null,
+            // this stores the name of the semester that a course wants to be added to
+            opened: "",
         };
     },
-    mounted() {},
     methods: {
         showAddCourseModal(semesterName) {
             this.showSearch = true;
@@ -55,6 +63,7 @@ export default {
         addCourse(course) {
             this.$emit("addCourse", [course, this.opened]);
             this.showSearch = false;
+            this.opened = "";
         },
     },
 };

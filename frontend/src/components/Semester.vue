@@ -205,7 +205,6 @@ export default defineComponent({
 
 .bottomRight {
     margin: 0 1% 1% auto !important;
-    // margin-left: auto !important;
 }
 
 .semesterName {

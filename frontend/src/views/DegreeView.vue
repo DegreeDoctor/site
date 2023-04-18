@@ -1,14 +1,16 @@
 <template>
-    <!-- <q-btn @click="debug()">
-        debug
-    </q-btn> -->
-    <br />
-    <CourseTable :semesters="templateToArray" :credits="credits" @add-course="addCourse" />
+    <!-- the semesters prop is all of the degree data - what courses at which semesters -->
+    <!-- the credits prop keeps track of which course has been selected which in turn lets the progress bar work -->
+    <!-- the add-course event is when a course had been added through the add course dialog -->
+    <CourseTable 
+        :semesters="templateToArray" 
+        :credits="credits" 
+        @add-course="addCourse" 
+    />
 </template>
 
 <script>
 import { useStore } from "../stores/store";
-import coursesJson from "../data/courses.json";
 import CourseTable from "../components/CourseTable.vue";
 
 export default {
@@ -18,9 +20,6 @@ export default {
     data() {
         return {
             store: useStore(),
-            coursesData: coursesJson,
-            tst: false,
-            test: null,
         };
     },
     computed: {
@@ -31,15 +30,11 @@ export default {
             return this.store.getCredits;
         }
     },
-    mounted() {
-        // console.log(this.templateToArray)
-        console.log(this.credits)
-    },
     methods: {
-        // debug() {
-        //     // this.store.deleteEverything();       // this deleted everything in local store
-        //     console.log(this.templateToArray)
-        // },
+        // this is the function that handles when a course is added through the dialog in CourseTable.vue
+        // it updates the degree in local storage, adding the course name to the selected semester
+        // both the semester and course name are passed through the event through the data variable
+        //  e.g. [ {...name="Computer Science 1"}, "1-Fall"]
         addCourse(data) {
             const courseObj = data[0];
             const semesterName = data[1];

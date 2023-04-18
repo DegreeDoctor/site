@@ -19,7 +19,6 @@ export default {
     data() {
         return {
             course: null,
-            // prompt: false,
             search: "",
             subject: "",
             code: "",
@@ -133,9 +132,6 @@ export default {
 </script>
 
 <template>
-    <!-- <q-btn @click="debug()">
-        course search debug
-    </q-btn> -->
     <q-dialog v-model="showPrompt" persistent>
         <q-card style="min-width: 50vw">
             <q-card-section>
