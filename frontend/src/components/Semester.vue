@@ -25,8 +25,8 @@
             color="secondary"
             class="addButton"
             icon="add"
-            @click="addCourse"
             style="margin-bottom: 8px"
+            @click="addCourse"
         />
     </div>
 </template>

@@ -170,6 +170,5 @@ years has 2-3(?) different cases to test:
         /* margin-left: 0; */
         aspect-ratio: 1.5/1;
     }
-
 }
 </style>

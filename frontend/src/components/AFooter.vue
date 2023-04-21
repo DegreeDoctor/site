@@ -57,18 +57,17 @@ a {
 
 @media (max-width: 600px) {
     #text {
-      display: none;
+        display: none;
     }
     #copy {
-      display: none;
+        display: none;
     }
     #footer {
-      font-size: 0.9em;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+        font-size: 0.9em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
-    
 }
 </style>

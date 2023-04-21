@@ -1,21 +1,21 @@
 <template>
-  <div>
-    <CourseSearch
-        :courses-data="coursesData"
-        :prompt="showSearch"
-        @close="showSearch = false"
-        @add-course="addCourse"
-    />
-    <div id="table" :key="semesters">
-        <Semester
-            v-for="semester in semesters"
-            :ref="semester[0]"
-            :key="semester[0]"
-            :semester="semester"
-            @add-course="showAddCourseModal"
+    <div>
+        <CourseSearch
+            :courses-data="coursesData"
+            :prompt="showSearch"
+            @close="showSearch = false"
+            @add-course="addCourse"
         />
+        <div id="table" :key="semesters">
+            <Semester
+                v-for="semester in semesters"
+                :ref="semester[0]"
+                :key="semester[0]"
+                :semester="semester"
+                @add-course="showAddCourseModal"
+            />
+        </div>
     </div>
-  </div>
 </template>
 
 <script>

@@ -255,9 +255,8 @@ export default {
 }
 
 @media (max-width: 600px) {
-  .card {
-    max-width: 95% !important;
-  }
-
+    .card {
+        max-width: 95% !important;
+    }
 }
 </style>
