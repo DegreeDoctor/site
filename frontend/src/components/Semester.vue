@@ -26,6 +26,7 @@
             class="addButton"
             icon="add"
             @click="addCourse"
+            style="margin-bottom: 8px"
         />
     </div>
 </template>
@@ -205,6 +206,6 @@ export default defineComponent({
 }
 
 .addButton {
-    margin: auto 5px 5px auto;
+    margin: 0 5px 5px 0;
 }
 </style>

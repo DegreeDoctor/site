@@ -22,7 +22,7 @@ export default {
                 <q-avatar @click="sendQuiz()">
                     <img src="../assets/Degree_Doctor_logo.png" />
                 </q-avatar>
-                <a @click="sendQuiz()"> Degree Doctor</a>
+                <a @click="sendQuiz()" class="name"> Degree Doctor</a>
             </q-toolbar-title>
 
             <PlansList />
@@ -46,4 +46,11 @@ export default {
     max-height: 54px;
     height: 100%;
 }
+
+@media (max-width: 600px) {
+    .name { 
+        display: none;
+    }
+}
+
 </style>

@@ -160,4 +160,16 @@ years has 2-3(?) different cases to test:
 .moreInfo {
     position: relative;
 }
+
+@media (max-width: 600px) {
+    .courseCode {
+        width: 49%;
+        text-align: left;
+    }
+    .info {
+        /* margin-left: 0; */
+        aspect-ratio: 1.5/1;
+    }
+
+}
 </style>

@@ -54,4 +54,21 @@ a {
     font-size: 1.1rem;
     font-family: "Noto Serif", serif;
 }
+
+@media (max-width: 600px) {
+    #text {
+      display: none;
+    }
+    #copy {
+      display: none;
+    }
+    #footer {
+      font-size: 0.9em;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    
+}
 </style>

@@ -1,4 +1,5 @@
 <template>
+  <div>
     <CourseSearch
         :courses-data="coursesData"
         :prompt="showSearch"
@@ -14,6 +15,7 @@
             @add-course="showAddCourseModal"
         />
     </div>
+  </div>
 </template>
 
 <script>
@@ -59,7 +61,7 @@ export default {
     display: grid;
     gap: 5%;
     width: 70%;
-    margin: 0 auto;
+    margin: 16px auto;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -75,5 +77,13 @@ export default {
 
 .courseCard {
     width: fit-content;
+}
+
+@media (max-width: 768px) {
+    #table {
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 2%;
+    }
 }
 </style>
