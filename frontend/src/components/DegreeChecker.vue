@@ -108,22 +108,57 @@ export default {
 
     <q-list dense id="dropdown">
         
-        <h>All Requirements</h>
-        <q-item v-for = "item in allrequirements" :key = "item">
-            {{ item }}
-        </q-item>
-        <h>All credits</h>
-        <q-item v-for = "item in credits" :key = "item">
-            {{ item }}
-        </q-item>
-        <h>Fulfilled Credits/Requirements</h>
-        <q-item v-for = "item in fulfilled" :key = "item">
-            {{ item }}
-        </q-item>
-        <h>Unfulfilled Credits/Requirements</h>
-        <q-item v-for = "item in unfulfilled" :key = "item">
-            {{ item }}
-        </q-item>
+        <q-expansion-item
+                expand-separator
+                label="All credits"
+            >
+                <q-card>
+                <q-card-section>
+                    <q-item v-for = "item in credits" :key = "item">
+                        {{ item }}
+                    </q-item>
+                </q-card-section>
+                </q-card>
+        </q-expansion-item>
+
+        <q-expansion-item
+                expand-separator
+                label="All Requirements"
+            >
+                <q-card>
+                <q-card-section>
+                    <q-item v-for = "item in allrequirements" :key = "item">
+                        {{ item }}
+                    </q-item>
+                </q-card-section>
+                </q-card>
+        </q-expansion-item>
+
+        <q-expansion-item
+                expand-separator
+                label="Fulfilled Credits/Requirements"
+            >
+                <q-card>
+                <q-card-section>
+                    <q-item v-for = "item in fulfilled" :key = "item">
+                        {{ item }}
+                    </q-item>
+                </q-card-section>
+                </q-card>
+        </q-expansion-item>
+
+        <q-expansion-item
+                expand-separator
+                label="Unfulfilled Credits/Requirements"
+            >
+                <q-card>
+                <q-card-section>
+                    <q-item v-for = "item in unfulfilled" :key = "item">
+                        {{ item }}
+                    </q-item>
+                </q-card-section>
+                </q-card>
+        </q-expansion-item>
     </q-list>
 </q-card>
 </template>
