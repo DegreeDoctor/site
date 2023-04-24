@@ -1,7 +1,7 @@
 import json
 import os
 import unicodedata
-from typing import Dict, List, Tuple
+from typing import List, Tuple
 import requests
 from lxml import html
 from tqdm import tqdm
@@ -96,11 +96,17 @@ def norm_str(str):
 def rem_empty(lstr): 
     return list(filter(None, lstr))
 
+# Trims extraneous spaces
 def trim_space(str):
     while (str.find("  ") != -1):
         str = str.replace("  "," ");
     return str
 
+# trims course to only the course name
+def trim_crn(inp):
+    return inp[inp.find("-")+1:].strip()
+
+# converts given words in input to their number counterparts
 def word_to_num(inp):
     help_dict = {
     'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5',

@@ -3,8 +3,8 @@ import requests
 from lxml import html
 from tqdm import tqdm
 import json
-from degree_util import mnrs, root
-from degree_util import get_catalogs, norm_str, word_to_num, rep_uni
+from degree_util import root
+from degree_util import get_catalogs, norm_str, word_to_num, rep_uni, trim_crn
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
 # It is ok to publish this key because I found it online already public
@@ -19,10 +19,6 @@ def get_program_ids(catalog_id: str) -> List[str]:
         ).text.encode("utf8")
     )
     return programs_xml.xpath('//result[type="Integrative Pathway"]/id/text()')
-
-# trims course to only the course name
-def trim_crn(inp):
-    return inp[inp.find("-")+1:].strip()
 
 def get_pathway_data(program_ids: List[str], catalog_id) -> Dict:
     data = {}
@@ -40,6 +36,7 @@ def get_pathway_data(program_ids: List[str], catalog_id) -> Dict:
         if (len(description) == 0):
             description = rep_uni(norm_str(program.xpath("./cores/core/content")[0].text_content().strip()))
         
+        # gets all of the core components
         rest = program.xpath("./cores/core")
         for r in rest: 
             children = r.xpath("./children/core")
@@ -61,6 +58,11 @@ def get_pathway_data(program_ids: List[str], catalog_id) -> Dict:
             courses = r.xpath("./courses/include")
             adhocc = r.xpath("./courses/adhoc/content")
 
+            extra = r.xpath("./courses");
+            extra_arr = [];
+            for e in extra:
+                extra_arr.append(trim_crn(norm_str(e.text_content())));     
+
             # massaging the inputs to follow a standard input such that 
             # parsing is possible
             rem = 3 - course_sum if course_sum < 3 else 0
@@ -75,12 +77,14 @@ def get_pathway_data(program_ids: List[str], catalog_id) -> Dict:
                 tmp_s = tmp_s[:tmp_s.find(" ")]
                 required["amount"] = word_to_num(tmp_s) 
 
+            #  check for complete keyword
             elif(tmp.upper().find("COMPLETE") != -1):
 
                 tmp_s = tmp[tmp.upper().find("COMPLETE")+9:]
                 tmp_s = tmp_s[:tmp_s.find(" ")]
                 required["amount"] = word_to_num(tmp_s) 
 
+            # checks for required keyword
             elif (tmp.upper().find("REQUIRE") != -1 or content_s.upper().find("REQUIRE") != -1):
 
                 required["amount"] = len(courses)
@@ -92,7 +96,8 @@ def get_pathway_data(program_ids: List[str], catalog_id) -> Dict:
 
             else:
                 tmp_s = ""
-
+                
+                #  checks for choose keyword 
                 if (tmp.upper().find("CHOOSE") != -1):
                     tmp = tmp.replace("at least ","")
                     tmp = tmp[tmp.find(" ")+1:]

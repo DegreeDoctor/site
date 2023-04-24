@@ -4,7 +4,7 @@ from lxml import html
 from tqdm import tqdm
 import json
 from degree_util import mnrs, root
-from degree_util import get_catalogs, norm_str, word_to_num, rep_uni
+from degree_util import get_catalogs, norm_str, word_to_num, rep_uni, trim_crn
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
 # It is ok to publish this key because I found it online already public
@@ -19,10 +19,6 @@ def get_program_ids(catalog_id: str) -> List[str]:
         ).text.encode("utf8")
     )
     return programs_xml.xpath('//result[type="Minor"]/id/text()')
-
-# trims course to only the course name
-def trim_crn(inp):
-    return inp[inp.find("-")+1:].strip()
 
 def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
     data = {}
