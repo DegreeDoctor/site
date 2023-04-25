@@ -12,20 +12,20 @@
       }
   
       .flex-container {
-        display: -webkit-box;
+        /* display: -webkit-box;
         display: -webkit-flex;
         display: -moz-box;
-        display: -ms-flexbox;
+        display: -ms-flexbox; */
         display: flex;
-        -webkit-box-align: center;
+        /* -webkit-box-align: center;
         -webkit-align-items: center;
         -moz-box-align: center;
-        -ms-flex-align: center;
+        -ms-flex-align: center; */
         align-items: center;
-        -webkit-box-pack: center;
+        /* -webkit-box-pack: center;
         -webkit-justify-content: center;
         -moz-box-pack: center;
-        -ms-flex-pack: center;
+        -ms-flex-pack: center; */
         justify-content: center;
         position: fixed;
         top: 0;
@@ -35,7 +35,7 @@
     }
     
    .flex-item {
-        
+    position: sticky;
     text-align: center;
     margin: auto;
     top:50%;
@@ -43,8 +43,46 @@
 
     }
     #starting{
-        
+    animation: fade-in 3s,image-slideup 3s;
+    z-index: -1;
+    animation-fill-mode: forwards ;
     }
+    #welcome{
+    opacity: 0;
+    font-size: 3em;
+    animation: fade-in 3s;
+    animation-delay: 2s;
+    z-index: 0;
+    animation-fill-mode: forwards ;
+    }
+    @keyframes image-slideup {
+        0% { transform: translateY(-50px); }
+        60% { transform: translateY(-50px); }
+        90% { transform: translateY(-250px); }
+        100% { transform: translateY(-250px); }  
+    }
+    @keyframes fade-out{
+        from {
+            opacity: 1; 
+        }
+        to {
+            opacity: 0; 
+        }
+    }
+    @keyframes fade-in{
+        from {
+            opacity: 0; 
+        }
+        to {
+            opacity: 1; 
+        }
+    }
+    #splash{
+        animation:fade-out 1s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+    }
+    
     </style>
 </head>
 <body  >
@@ -63,7 +101,7 @@
     
      <!--Center align Splash contents in all screen sizes-->
          <div class ="flex-item" >
-         <h2 style ="color: white;">Welcome to Degree Doctor<h2>
+         <h2 id="welcome" style ="color: white;">Welcome to Degree Doctor<h2>
           <img id="starting" src="../assets/Degree_Doctor_logo.png" 
                alt="app_icon" 
                style="width:150px ; height :150px"
