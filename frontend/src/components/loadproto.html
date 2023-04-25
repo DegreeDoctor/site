@@ -12,20 +12,8 @@
       }
   
       .flex-container {
-        /* display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-box;
-        display: -ms-flexbox; */
         display: flex;
-        /* -webkit-box-align: center;
-        -webkit-align-items: center;
-        -moz-box-align: center;
-        -ms-flex-align: center; */
         align-items: center;
-        /* -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -moz-box-pack: center;
-        -ms-flex-pack: center; */
         justify-content: center;
         position: fixed;
         top: 0;
@@ -35,25 +23,24 @@
     }
     
    .flex-item {
-    position: sticky;
-    text-align: center;
-    margin: auto;
-    top:50%;
-    left:50%;
-
+        position: sticky;
+        text-align: center;
+        margin: auto;
+        top:50%;
+        left:50%;
     }
     #starting{
-    animation: fade-in 3s,image-slideup 3s;
-    z-index: -1;
-    animation-fill-mode: forwards ;
+        animation: fade-in 3s,image-slideup 3s;
+        z-index: -1;
+        animation-fill-mode: forwards ;
     }
     #welcome{
-    opacity: 0;
-    font-size: 3em;
-    animation: fade-in 3s;
-    animation-delay: 2s;
-    z-index: 0;
-    animation-fill-mode: forwards ;
+        opacity: 0;
+        font-size: 3em;
+        animation: fade-in 3s;
+        animation-delay: 2s;
+        z-index: 0;
+        animation-fill-mode: forwards ;
     }
     @keyframes image-slideup {
         0% { transform: translateY(-50px); }
@@ -113,19 +100,19 @@
   <!--  Scripts-->
   <script type="text/javascript">
     
-//     function fade(element) {
-//     var op = 1;  // initial opacity
-//     var timer = setInterval(function () {
-//         if (op <= 0.1){
-//             clearInterval(timer);
+    function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
           
-//             element.style.display = 'none';
-//         }
-//         element.style.opacity = op;
-//         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-//         op -= op * 0.1;
-//     }, 50);
-// }
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
 
     setTimeout(function(){ 
           
