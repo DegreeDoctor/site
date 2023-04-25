@@ -22,4 +22,5 @@ export default {
     </q-layout>
 </template>
 
+
 <style scoped></style>
