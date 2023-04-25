@@ -3,21 +3,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Track My Bus|Splash</title>
-  <meta name="author" content="Hitesh Sahu" />
+  <title></title>
   <style>
-     
-      /*
-        Force full width & height.
-        If this block is removed, the layout height/length will be determined by
-        the amount of content in the page. That might result in a page which has
-        a footer only a few inches from the top of the viewport, or one which
-        scrolls beyond the viewport.
-        This forces the layout to always be full screen regardless of how much,
-        or how little, content is in place. Neither is "right" or "wrong", there
-        are valid cases for each. I just want to be clear what's controlling the
-        page/viewport height.
-      */
       html, body, .viewport {
         width: 100%;
         height: 100%; 
@@ -65,16 +52,16 @@
   
   <!--Your Splash Screen-->
   <div id="splash"  class="flex-container" 
-        style ="background: #E91E63 ; display: none"  >
+        style ="background: #871ee9 ; display: none"  >
     
      <!--Center align Splash contents in all screen sizes-->
          <div class ="flex-item" >
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGvaIWed26uYYryjCfO2qWpAFGrDyoWUlvCuPx-sEMAguMHcKQvw" 
+          <img src="../assets/Degree_Doctor_logo.png" 
                alt="app_icon" 
                style="width:150px ; height :150px"
                />
            
-           <h2 style ="color: white;">My Awesome App<h2>
+           <h2 style ="color: white;">Welcome to Degree Doctor<h2>
          </div>
      </div>
   <!--  Scripts-->
@@ -108,8 +95,6 @@
                 setTimeout(function(){   
 
                  fade(document.getElementById('splash'));
-                  // document.getElementById('splash') .style.display = 'none'
-                   // window.location = "http://hiteshsahu.com";
                   
                  sessionStorage.setItem('spalashShown', true  );
               }
