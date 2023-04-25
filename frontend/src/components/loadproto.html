@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title></title>
+  <title>Degree Doctor Intro</title>
   <style>
       html, body, .viewport {
         width: 100%;
@@ -35,8 +35,15 @@
     }
     
    .flex-item {
-       text-align: center;
-        margin: auto;
+        
+    text-align: center;
+    margin: auto;
+    top:50%;
+    left:50%;
+
+    }
+    #starting{
+        
     }
     </style>
 </head>
@@ -44,7 +51,7 @@
  
   <!--Your Main contents-->
   <div id ="main" class="flex-container"  
-       style ="background: #673AB7;"> 
+       style ="background: #835eba;"> 
            
        <h1 style = " color: white;" > Open in New Browser or Restart this browser</h1>  
 
@@ -52,34 +59,35 @@
   
   <!--Your Splash Screen-->
   <div id="splash"  class="flex-container" 
-        style ="background: #871ee9 ; display: none"  >
+        style ="background: #835eba ; display: none"  >
     
      <!--Center align Splash contents in all screen sizes-->
          <div class ="flex-item" >
-          <img src="../assets/Degree_Doctor_logo.png" 
+         <h2 style ="color: white;">Welcome to Degree Doctor<h2>
+          <img id="starting" src="../assets/Degree_Doctor_logo.png" 
                alt="app_icon" 
                style="width:150px ; height :150px"
                />
            
-           <h2 style ="color: white;">Welcome to Degree Doctor<h2>
+          
          </div>
      </div>
   <!--  Scripts-->
   <script type="text/javascript">
     
-    function fade(element) {
-    var op = 1;  // initial opacity
-    var timer = setInterval(function () {
-        if (op <= 0.1){
-            clearInterval(timer);
+//     function fade(element) {
+//     var op = 1;  // initial opacity
+//     var timer = setInterval(function () {
+//         if (op <= 0.1){
+//             clearInterval(timer);
           
-            element.style.display = 'none';
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op -= op * 0.1;
-    }, 50);
-}
+//             element.style.display = 'none';
+//         }
+//         element.style.opacity = op;
+//         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+//         op -= op * 0.1;
+//     }, 50);
+// }
 
     setTimeout(function(){ 
           
