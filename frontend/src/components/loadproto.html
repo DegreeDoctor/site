@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Track My Bus|Splash</title>
+  <meta name="author" content="Hitesh Sahu" />
+  <style>
+     
+      /*
+        Force full width & height.
+        If this block is removed, the layout height/length will be determined by
+        the amount of content in the page. That might result in a page which has
+        a footer only a few inches from the top of the viewport, or one which
+        scrolls beyond the viewport.
+        This forces the layout to always be full screen regardless of how much,
+        or how little, content is in place. Neither is "right" or "wrong", there
+        are valid cases for each. I just want to be clear what's controlling the
+        page/viewport height.
+      */
+      html, body, .viewport {
+        width: 100%;
+        height: 100%; 
+        margin: 0;
+      }
+  
+      .flex-container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+   .flex-item {
+       text-align: center;
+        margin: auto;
+    }
+    </style>
+</head>
+<body  >
+ 
+  <!--Your Main contents-->
+  <div id ="main" class="flex-container"  
+       style ="background: #673AB7;"> 
+           
+       <h1 style = " color: white;" > Open in New Browser or Restart this browser</h1>  
+
+ </div>
+  
+  <!--Your Splash Screen-->
+  <div id="splash"  class="flex-container" 
+        style ="background: #E91E63 ; display: none"  >
+    
+     <!--Center align Splash contents in all screen sizes-->
+         <div class ="flex-item" >
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGvaIWed26uYYryjCfO2qWpAFGrDyoWUlvCuPx-sEMAguMHcKQvw" 
+               alt="app_icon" 
+               style="width:150px ; height :150px"
+               />
+           
+           <h2 style ="color: white;">My Awesome App<h2>
+         </div>
+     </div>
+  <!--  Scripts-->
+  <script type="text/javascript">
+    
+    function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+          
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
+
+    setTimeout(function(){ 
+          
+             if(typeof(Storage) !== "undefined") {
+         
+              console.log("Already shown" +sessionStorage.getItem('spalashShown'));
+
+               if( !sessionStorage.getItem('spalashShown') || sessionStorage.getItem('spalashShown') === null ) {  
+                 
+               document.getElementById('splash') .style.display = 'inline';
+
+                //Display splash
+                setTimeout(function(){   
+
+                 fade(document.getElementById('splash'));
+                  // document.getElementById('splash') .style.display = 'none'
+                   // window.location = "http://hiteshsahu.com";
+                  
+                 sessionStorage.setItem('spalashShown', true  );
+              }
+               , 3000);
+      
+                  } else {
+                    
+                     //Display Main Content
+                      document.getElementById('splash') .style.display = 'none'
+                        console.log("Already shown");
+                     }
+                  }
+         
+                else {
+                        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                      }
+                         }, 0);
+
+  	</script>
+  </body>
+</html>
