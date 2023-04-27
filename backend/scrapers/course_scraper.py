@@ -6,7 +6,6 @@ import requests
 from lxml import html
 from tqdm import tqdm
 import json
-import unicodedata
 from degree_util import subjs, root, get_catalogs, clean_str, norm_str, trim_space, get_courses, rem_empty
 
 # The api key is public so it does not need to be hidden in a .env file
@@ -74,8 +73,12 @@ def get_prereq(str):
     str = norm_str(str)
     if (str.upper().find("CREDIT CANNOT") != -1):
         str = str[:str.upper().find("CREDIT CANNOT")]
+
+    # specification fields
     reqs = []
     one_of = []
+
+    # splits requirements into chunks
     reqset = split_req(str)
     for req in reqset:
         tmp = []
@@ -133,17 +136,27 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
         course_ids[i : i + CHUNK_SIZE] for i in range(0, len(course_ids), CHUNK_SIZE)
     ]
     subj_input = []
+
+    # opens input root file
     f = open(root + '/backend/data/input.json', 'r')
     f = json.load(f)
+
+    # append for queries
     for subj in f:
         subj_input.append(subj)
 
+
+    # for each chunk in query, join on the API key
     for chunk in course_chunks:
         ids = "".join([f"&ids[]={id}" for id in chunk])
         url = f"{BASE_URL}content{DEFAULT_QUERY_PARAMS}&method=getItems&options[full]=1&catalog={catalog_id}&type=courses{ids}"
 
+        # convert courses_xml from the request
         courses_xml = html.fromstring(requests.get(url).text.encode("utf8"))
+
         courses = courses_xml.xpath("//courses/course[not(@child-of)]")
+
+        # xpath selection for course in category
         for course in courses:
             subj = course.xpath("./content/prefix/text()")[0].strip()
             if not (subj in subj_input):
@@ -151,6 +164,8 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
             ID = course.xpath("./content/code/text()")[0].strip()
             if ID[0] == '6' or ID[0] == '9':
                 continue
+
+            # required fields
             course_name = clean_str(trim_space(norm_str(course.xpath("./content/name/text()")[0].strip())))
             fields = course.xpath("./content/field")
             year = ""
@@ -161,20 +176,27 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
             professors = []
 
             
+            # check all individual fields
             base = int(fields[0].get('type')[-3:])
             for field in fields:
                 field_text = field.xpath("./descendant-or-self::*/text()")
                 if len(field_text) > 0:
+
+                    # credit field
                     field_text = field_text[0].strip()
                     if field.get('type')[-3:] == str(base - 4): 
                         credit = get_credit(field_text)
                     elif field.get('type')[-3:] == str(base - 8):
+
+                        # cross_listed field
                         if len(field_text) > 0:
                             crs = courses_from_string(field.text_content().upper())
                             for item in crs:
                                 if item.find(subj + '-' + str(ID)) == -1:
                                     cross_listed[subj] = str(ID)
                     elif field.get('type')[-3:] == str(base - 11):
+
+                        # semester field
                         if "fall" in field_text.lower():
                             semesters.append("fall")
                         if "spring" in field_text.lower():
@@ -190,6 +212,8 @@ def get_course_data(course_ids: List[str], catalog_id) -> Dict:
                         if len(year) == 0:
                             year = "all"
                     elif field.get('type')[-3:] == str(base - 13):
+
+                        # prerequisite field
                         field_text = field.text_content()
                         if len(field_text) > 0:
                             prereqs = get_prereq(field_text.upper())
@@ -222,6 +246,7 @@ def find_course(courses, inp):
             return item[0]
     return ""
 
+# checks that the CRN requirement is in line with other requirements
 def replace_crn(dict): 
     course_dict  = get_courses()
     for item in dict.items():

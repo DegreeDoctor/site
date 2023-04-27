@@ -3,9 +3,8 @@ import requests
 from lxml import html
 from tqdm import tqdm
 import json
-import unicodedata
 from degree_util import subjs, prgms, course_dict, root
-from degree_util import get_catalogs, norm_str, rem_empty, clean_str, trim_space
+from degree_util import get_catalogs, norm_str, rem_empty, clean_str, trim_space, get_program_ids
 from collections import OrderedDict
 
 # The api key is public so it does not need to be hidden in a .env file
@@ -13,15 +12,6 @@ BASE_URL = "http://rpi.apis.acalog.com/v1/"
 # It is ok to publish this key because I found it online already public
 DEFAULT_QUERY_PARAMS = "?key=3eef8a28f26fb2bcc514e6f1938929a1f9317628&format=xml"
 CHUNK_SIZE = 500
-
-# Returns a list of program ids for a given catalog
-def get_program_ids(catalog_id: str) -> List[str]:
-    programs_xml = html.fromstring(
-        requests.get(
-            f"{BASE_URL}search/programs{DEFAULT_QUERY_PARAMS}&method=listing&options[limit]=0&catalog={catalog_id}"
-        ).text.encode("utf8")
-    )
-    return programs_xml.xpath('//result[type="Baccalaureate"]/id/text()')
 
 # <<< need rework for programs >>>
 def course_from_string(inp, subjs):
@@ -34,16 +24,27 @@ def course_from_string(inp, subjs):
 
 # splits content and normalizes the string using the token 'Credit Hours'
 def split_content(str):
+
+    # takes in str content
     ret = []
+    # normalize
     str = norm_str(str)
+
+    # checks for distinct classes by credit amounts
     while (str.find("Credit Hours") != -1):
         ind = str.find("Credit Hours")
+        
+        # check that credit hours amount is numeric otherwise continue
         while (ind < len(str) and not str[ind].isnumeric()):
             ind += 1
+
+        # checks for dashes near start of string
         if ((len(str[ind+1:]) > 0 and str[ind+1:][0] == '-') or (len(str[ind+1:]) > 1 and str[ind+1:][1] == '-')):
             bound = ind+2
             if str[ind+1:][0] == ' ':
                 bound += 2
+                
+            # calculates lower bound 
             while (bound < len(str) and str[bound].isnumeric()):
                 bound += 1
             ret.append(rem_lor(norm_str(str[:bound])))
@@ -51,10 +52,11 @@ def split_content(str):
         else:
             ret.append(rem_lor(norm_str(str[:ind+1])))
             str = str[ind+1:]
-
+    # adds to current list
     if (len(str) > 0):
         ret.append(str)
     
+    # special case for mathematics capstone
     added = []
     for i,r in enumerate(ret):
         if (r.find("Capstone I") != -1):
@@ -136,6 +138,8 @@ def parse_template(semesters,extra):
     sems = OrderedDict()
     curr_year = 1
     first_sem_in_year = True
+
+    # check per year
     for item in semesters:
         template_str = str(curr_year) + "-" 
         # Extra content 
@@ -144,6 +148,8 @@ def parse_template(semesters,extra):
             continue
         # Year 1,2 and 4
         if curr_year != 3:
+
+            #  adds opposing years as item label
             if first_sem_in_year:
                 template_str += "Fall"
             elif not first_sem_in_year:
@@ -171,8 +177,13 @@ def get_subj(str):
             return str[fnd:fnd+4]
     return ""
 
+# removes the sjubect from the course
 def strip_subj(str):
+
+    # early error checking on trimming external spaces
     str = trim_space(str)
+
+    # defensive cehck for not removing data we dont want to get rid of
     if (len(get_subj(str)) == 0):
         return rep_subj_template(str)
     str = rep_subj_template(str)
@@ -217,6 +228,8 @@ def rep_subj(str):
 
 # seperates classes that may be stacked together and finds elective classes' department codes
 def get_elec(str):
+
+    # seperates electives using the keywords 'Elective' and 'Credit Hours'
     ret = []
     spltstr = str.split(" or ")
 
@@ -333,6 +346,7 @@ def parse_semester(inp):
     ret = []
     for classes in inp:
         sem = []
+
         title =classes.xpath("./title")
         title = title[0].text_content().strip()  
         options = classes.xpath("./children")
@@ -454,7 +468,7 @@ def scrape_programs():
     programs_per_year = {}
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         # print(year)
-        program_ids = get_program_ids(catalog_id)
+        program_ids = get_program_ids(catalog_id,"Baccalaureate")
         # scraing the program (degree)
         data = get_program_data(program_ids, catalog_id, year)
         programs_per_year[year] = data
