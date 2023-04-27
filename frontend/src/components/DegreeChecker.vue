@@ -94,7 +94,7 @@ export default {
         },
 
         closeNav() {
-            document.getElementById("dropdown").style.display = "block";
+            document.getElementById("dropdown").style.display = "none";
         },
     },
 
@@ -102,6 +102,7 @@ export default {
 </script>
 
 <template>
+
 <q-card class = "required">
     <q-btn class="openbtn" @click="openNav()"> </q-btn>
     <q-btn class="closebtn" @click="closeNav()">x</q-btn>
@@ -161,6 +162,8 @@ export default {
         </q-expansion-item>
     </q-list>
 </q-card>
+
+
 </template>
 <style lang="scss">
 .required {
@@ -168,9 +171,24 @@ export default {
     text-align: left;
     font-size: 1.5rem;
     font-weight: 600;
-    margin: 200px;
+    margin-bottom: 200px;
+    left: 10%;
     top: 150px;
+    width: 80%;
     bottom: 1000px;
     background-color: white;
 }
+
+.q-expansion-item {
+    border:1px solid #000000;
+    border-color: $primary;
+    background-color: $primary;
+}
+
+.q-expansion-item--expanded {
+    border:1px solid #000000;
+    border-color: $primary;
+    background-color: $primary;
+}
+
 </style>
