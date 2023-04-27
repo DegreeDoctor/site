@@ -1,1284 +1,1318 @@
 {
-    "2022-2023": {
-        "Architectural Acoustics Minor": {
-            "description": "The minor in architectural acoustics is open to all Rensselaer students interested in advanced study focusing on the optimization of acoustical quality of performance spaces and other aurally sensitive environments. After completing the minor, the student will be well-prepared for an entry level position dealing with acoustics issues in architectural practice, in acoustical consulting, or as a preparation for graduate studies in acoustics, for example in the Graduate Program in Architectural Acoustics at Rensselaer Polytechnic Institute. The program consists of 15 credits. Proficiency in Calculus I is necessary to comprehend the basics of architectural acoustics. Approval required by director of program.",
-            "name": "Architectural Acoustics Minor",
-            "requirements": [
-                {
-                    "amount": 7,
-                    "courses": [
-                        "Architectural Acoustics 1",
-                        "Architectural Acoustics 2",
-                        "Applied Psychoacoustics",
-                        "Sonics Research Lab 1",
-                        "Sonics Research Lab 2",
-                        "Aural Architecture",
-                        "Engineering Acoustics"
-                    ]
-                }
-            ]
-        },
-        "Architectural History Minor": {
-            "description": "The minor in architectural history is open to all Rensselaer students interested in the history of architecture as a socio-cultural phenomenon that examines architecture as a cultural artifact. It consists of the following courses.",
-            "name": "Architectural History Minor",
-            "requirements": [
-                {
-                    "amount": 6,
-                    "courses": [
-                        "The Ethos of Architecture",
-                        "Architectural Media",
-                        "Cities and Their Territories",
-                        "An Architectural Genealogy",
-                        "Cloud Atlas: 20th Century Architecture, Culture and Civilization",
-                        "Contemporary Design Approaches"
-                    ]
-                }
-            ]
-        },
-        "Architecture Minor": {
-            "description": "A minor in architecture is directed toward Rensselaer students interested in architecture as a socio-cultural phenomenon, the student who intends to study architecture at the graduate level, and/or those envisioning a career in some segment of the building industry. The minor program provides an exposure to architecture—what it is, what it includes, its history, how it is accomplished; and to architects—who they are and how they think and work. In order to earn a minor in architecture, students must compile at least 16 credits of architecture-related courses except for Architecture Design Studio, which is for B.Arch. majors only.",
-            "name": "Architecture Minor",
-            "requirements": [
-                {
-                    "amount": 3,
-                    "courses": [
-                        "The Ethos of Architecture",
-                        "Energy, Comfort, and Ecology",
-                        "Materials and Design"
-                    ]
-                }
-            ]
-        },
-        "Astrobiology Minor": {
-            "description": "The Departments of Biological Sciences, Chemistry and Chemical Biology, Earth and Environmental Sciences, and Physics, Applied Physics and Astronomy, participate in a multidisciplinary minor in Astrobiology. The minor requires at least 16 credits.  To complete the minor, students must complete the following:ISCI 1510 Introduction to Astrobiology (3 credits)ISCI 4510 Readings in Astrobiology and the Origins of Life (1 credit); taken at least 2 semestersA 3-credit research project on a topic related to Astrobiology under the supervision of a RARE faculty member or other faculty member with permission of the RARE DirectorISCI 4610 Capstone in Astrobiology (1 credit)At least two additional courses from the list below to bring the total credits to at least 16.  These additional courses must be outside the major field of study*",
-            "name": "Astrobiology Minor",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Genetics and Evolution",
-                        "Introductory Astronomy and Astrophysics",
-                        "Introduction to Astrobiology",
-                        "Instrumental Methods of Analysis",
-                        "Organic Chemistry I",
-                        "Aqueous Geochemistry",
-                        "Molecular Biology Laboratory",
-                        "Molecular Biochemistry II",
-                        "Mass Spectrometry",
-                        "Evolution",
-                        "Modern Techniques in Chemistry",
-                        "Molecular Biochemistry I",
-                        "Physical Chemistry for Life Sciences",
-                        "Earth and Sky",
-                        "Organic Geochemistry",
-                        "Introduction to Geobiology",
-                        "Isotope Geochemistry",
-                        "Stars, Galaxies, and the Cosmos",
-                        "Introduction to Geochemistry",
-                        "Chemistry of the Environment",
-                        "Earth Materials",
-                        "Molecular Biology",
-                        "Macroscopic Physical Chemistry",
-                        "Introduction to Cell and Molecular Biology"
-                    ]
-                }
-            ]
-        },
-        "Astronomy Minor": {
-            "description": "Astronomy Minor - intended for students with a general interest or who might pursue a K-12 science education or outreach career.",
-            "name": "Astronomy Minor",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": ["Introductory Astronomy and Astrophysics"]
-                },
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Topics in Astronomy and Astrophysics",
-                        "Earth and Sky",
-                        "Observational Astronomy",
-                        "Astrophysics",
-                        "Gravitation and Cosmology",
-                        "General Relativity",
-                        "Topics in Physics"
-                    ]
-                }
-            ]
-        },
-        "Astrophysics Minor": {
-            "description": "The Astrophysics Minor is intended primarily for students who intend to pursue a career in astronomy or astrophysics.",
-            "name": "Astrophysics Minor",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Introductory Astronomy and Astrophysics",
-                        "Special Projects in Astronomy"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Observational Astronomy",
-                        "Astrophysics",
-                        "Gravitation and Cosmology",
-                        "General Relativity"
-                    ]
-                }
-            ]
-        },
-        "Behavioral and Cognitive Neuroscience Minor": {
-            "description": "This minor is designed for students who want to gain proficiency in the scientific study of behavioral and cognitive neuroscience. Students seeking a minor in Behavioral and Cognitive Neuroscience will develop a Plan of Study in consultation with a departmental adviser. To obtain the minor, the student must complete a minimum of 16 credits as described:",
-            "name": "Behavioral and Cognitive Neuroscience Minor",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": ["Introduction to Psychological Science"]
-                },
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Introduction to Cognitive Neuroscience",
-                        "Hormones, Brain, and Behavior",
-                        "Drugs, Society, and Behavior",
-                        "Behavioral Neuroscience",
-                        "Cognition and the Brain",
-                        "Stress and the Brain"
-                    ]
-                }
-            ]
-        },
-        "Biochemistry/Biophysics Minor for Biology Majors": {
-            "description": "Students majoring in chemistry, biology, or biomedical or chemical engineering may obtain a minor in Biochemistry and Biophysics by completing the courses listed below. Since different essential courses are included in the requirements of each major, the minor requirements vary for different majors.",
-            "name": "Biochemistry/Biophysics Minor for Biology Majors",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Molecular Biochemistry II",
-                        "Physical Chemistry for Life Sciences"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Genetic Engineering",
-                        "Molecular Modeling",
-                        "The Biology of Systems",
-                        "Methods in Biophysics",
-                        "Protein Structure Determination"
-                    ]
-                }
-            ]
-        },
-        "Biochemistry/Biophysics Minor for Biomedical Engineering Majors": {
-            "description": "Students majoring in chemistry, biology, or biomedical or chemical engineering may obtain a minor in Biochemistry and Biophysics by completing the courses listed below. Since different essential courses are included in the requirements of each major, the minor requirements vary for different majors.",
-            "name": "Biochemistry/Biophysics Minor for Biomedical Engineering Majors",
-            "requirements": [
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Molecular Biochemistry I",
-                        "Molecular Biochemistry II",
-                        "Organic Chemistry I"
-                    ]
-                },
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Genetic Engineering",
-                        "Biochemistry Laboratory",
-                        "Protein Folding",
-                        "Methods in Biophysics",
-                        "Protein Structure Determination",
-                        "Molecular Biology",
-                        "Bioorganic Mechanisms",
-                        "Mathematics in Medicine and Biology"
-                    ]
-                }
-            ]
-        },
-        "Biochemistry/Biophysics Minor for Chemical Engineering Majors": {
-            "description": "Students majoring in chemistry, biology, or biomedical or chemical engineering may obtain a minor in Biochemistry and Biophysics by completing the courses listed below. Since different essential courses are included in the requirements of each major, the minor requirements vary for different majors.",
-            "name": "Biochemistry/Biophysics Minor for Chemical Engineering Majors",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Molecular Biochemistry I",
-                        "Molecular Biochemistry II"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Genetic Engineering",
-                        "Biochemistry Laboratory",
-                        "Protein Folding",
-                        "Methods in Biophysics",
-                        "Protein Structure Determination",
-                        "Molecular Biology",
-                        "Bioorganic Mechanisms",
-                        "Mathematics in Medicine and Biology"
-                    ]
-                }
-            ]
-        },
-        "Biochemistry/Biophysics Minor for Chemistry Majors": {
-            "description": "Students majoring in chemistry, biology, or biomedical or chemical engineering may obtain a minor in Biochemistry and Biophysics by completing the courses listed below. Since different essential courses are included in the requirements of each major, the minor requirements vary for different majors.",
-            "name": "Biochemistry/Biophysics Minor for Chemistry Majors",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Molecular Biochemistry I",
-                        "Molecular Biochemistry II"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Genetic Engineering",
-                        "Biochemistry Laboratory",
-                        "Protein Folding",
-                        "Methods in Biophysics",
-                        "Protein Structure Determination",
-                        "Molecular Biology",
-                        "Bioorganic Mechanisms",
-                        "Mathematics in Medicine and Biology"
-                    ]
-                }
-            ]
-        },
-        "Biological Neuroscience Minor": {
-            "description": "Students who have taken BIOL 2120  may choose to earn a minor in Neuroscience by taking the 3 required courses BIOL 4100  From Neuron to Behavior, BIOL 4260  Advanced Cell Biology, and BIOL 4150  Cellular Neuroscience, and one course from the list below. Some of the courses in this list may have additional prerequisites",
-            "name": "Biological Neuroscience Minor",
-            "requirements": []
-        },
-        "Biology Minor": {
-            "description": "Students who have passed BIOL 1010/BIOL 1015 or have AP credit may complete a minor in Biology by taking BIOL 2120 and three 4000-level courses in Biology. BIOL 2500 may substitute for one of the three but is not required. Only a total of 4 credits may come from the following list: BIOL 4900, BIOL 4970, or BIOL 4990. No more than 4 credits from research. BCBP, CBIO, BNSC, BHE majors cannot minor in Biology.",
-            "name": "Biology Minor",
-            "requirements": []
-        },
-        "Biomedical Engineering and Management Minor": {
-            "description": "The B.S. with Minor in Management can be completed by following the traditional BME Baccalaureate template and choosing appropriate classes from the Lally School for the four Free Electives. A list of acceptable classes for the different Management Minor programs can be found at http://lallyschool.rpi.edu/programs/undergraduate-programs/bs-business-management.",
-            "name": "Biomedical Engineering and Management Minor",
-            "requirements": []
-        },
-        "Chemistry Minor for Non-Chemistry Majors": {
-            "description": "In addition to CHEM courses required in their major, students must take one 3- or 4-credit CHEM course, plus:",
-            "name": "Chemistry Minor for Non-Chemistry Majors",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Inorganic Chemistry I",
-                        "Equilibrium Chemistry and Quantitative Analysis"
-                    ]
-                },
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Inorganic Chemistry I",
-                        "Equilibrium Chemistry and Quantitative Analysis",
-                        "Physical Chemistry for Life Sciences"
-                    ]
-                },
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Inorganic Chemistry I",
-                        "Introduction to Polymer Chemistry",
-                        "Molecular Biochemistry I"
-                    ]
-                }
-            ]
-        },
-        "Chinese Language Minor": {
-            "description": "16 credits (4 courses) consist of:",
-            "name": "Chinese Language Minor",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": ["Chinese I", "Chinese II"]
-                },
-                {
-                    "amount": 3,
-                    "courses": ["Chinese III", "Chinese IV", "Chinese V"]
-                },
-                {
-                    "amount": 1,
-                    "courses": ["Social Media: East & West"]
-                }
-            ]
-        },
-        "Civil Engineering Minor": {
-            "description": "Students pursuing this minor must satisfy the prerequisites and/or corequisites for these courses, which may involve other course work.",
-            "name": "Civil Engineering Minor",
-            "requirements": [
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Introduction to Transportation Engineering",
-                        "Introduction to Water Resources Engineering",
-                        "Introduction to Geotechnical Engineering",
-                        "Introduction to Structural Engineering",
-                        "Foundation Engineering",
-                        "Steel Design",
-                        "Concrete Design",
-                        "Geotechnical Design",
-                        "Matrix Structural Analysis",
-                        "Traffic Engineering",
-                        "Highway Engineering",
-                        "Introduction to Environmental Engineering"
-                    ]
-                },
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Introduction to Structural Engineering",
-                        "Steel Design",
-                        "Concrete Design"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Introduction to Geotechnical Engineering",
-                        "Foundation Engineering",
-                        "Geotechnical Design",
-                        "Construction Management",
-                        "Design for Constructability",
-                        "Matrix Structural Analysis"
-                    ]
-                }
-            ]
-        },
-        "Cognitive Science Minor": {
-            "description": "Students seeking a minor in Cognitive Science will develop a Plan of Study in consultation with a departmental adviser. To complete this minor, students must choose a minimum of four Cognitive Science (COGS) courses as described:COGS 2120  Introduction to Cognitive Science is required.The remaining three courses should be chosen from COGS, with at least two at the 4000 level.",
-            "name": "Cognitive Science Minor",
-            "requirements": []
-        },
-        "Cognitive Science of Artificial Intelligence Minor": {
-            "description": "This minor is designed for students who want to gain a cognitive science perspective on Artificial Intelligence. Students seeking this minor will develop a Plan of Study in consultation with the departmental coordinator of the Minor program. To obtain the minor, the student must complete a minimum of four courses as described:",
-            "name": "Cognitive Science of Artificial Intelligence Minor",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": ["Introduction to Cognitive Science"]
-                },
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Cognitive Modeling",
-                        "Programming for Cognitive Science and Artificial Intelligence",
-                        "Game AI",
-                        "Intelligent Virtual Agents",
-                        "Language-Endowed Intelligent Agents",
-                        "Minds and Machines"
-                    ]
-                }
-            ]
-        },
-        "Computer Science Minor": {
-            "description": "A computer science minor requires a minimum of four CSCI courses, which must include CSCI 2300 Introduction to Algorithms and three additional 3- or 4-credit courses at the 2000 level or above, excluding CSCI 2200 Foundations of Computer Science. At least two of these three additional courses must be at the 4000 (or 6000) level. Overall, at least two courses must be taken at RPI. Given that RPI requires a minimum of 15 credits for a minor, if the above required four courses falls below this 15-credit requirement, any other CSCI credits may be used. Reading and independent study courses and courses required by name for the student's major(s) cannot be used for the minor. The Pass/No Credit option cannot be used for any of these courses.",
-            "name": "Computer Science Minor",
-            "requirements": []
-        },
-        "Computer and Systems Engineering Minor": {
-            "description": "A minor in Computer and Systems Engineering consists of at least 15 credits from the courses below. Courses for the minor may not be taken on a Pass/No Credit basis.  No more than 50% of the course credits applied to the minor requirement may be drawn from credits applied to the major.  No course which is required for one minor can be used for another minor requirement. Students wishing to fulfill a minor need an approval from the ECSE curriculum chair.",
-            "name": "Computer and Systems Engineering Minor",
-            "requirements": []
-        },
-        "Data Science and Engineering": {
-            "description": "The Department of Industrial and Systems Engineering offers a minor in Data Science and Engineering (DSE) for undergraduates (minimum of 17 credits required). The minor contributes to students' ability to organize, analyze and act upon data, particularly for data associated with engineered systems.",
-            "name": "Data Science and Engineering",
-            "requirements": [
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Information and Data Systems",
-                        "Statistical Analysis",
-                        "Design of Experiments"
-                    ]
-                },
-                {
-                    "amount": 0,
-                    "courses": [
-                        "Database Systems",
-                        "Data Mining",
-                        "X-Informatics",
-                        "Data Science"
-                    ]
-                },
-                {
-                    "amount": 0,
-                    "courses": [
-                        "Biostatistics",
-                        "Biostatistics for Life Science Applications",
-                        "Biomedical Data Science",
-                        "Econometrics",
-                        "Human Performance Modeling and Support",
-                        "Mathematical Statistics",
-                        "Computational Intelligence",
-                        "Research Methods and Statistics II"
-                    ]
-                }
-            ]
-        },
-        "Ecology Minor": {
-            "description": "Ecology is a branch of Biology that studies the relations of organisms to one another and to their environment. RPI has a substantial depth in Ecological research and faculty expertise, as well as Institute-wide initiatives such as the Jefferson Project. The Institute offers a minor in Ecology to all students consisting of 16 credit hours, as noted below.",
-            "name": "Ecology Minor",
-            "requirements": [
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Principles of Ecology",
-                        "Global Environmental Change",
-                        "Non-thesis Research",
-                        "Senior Research Thesis"
-                    ]
-                },
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Lake George Limnology and Underwater Ecology (BLUE)",
-                        "Human Population",
-                        "Chemistry of the Environment",
-                        "Environmental and Resource Economics",
-                        "Earth's Climate: Past, Present, and Future"
-                    ]
-                }
-            ]
-        },
-        "Economics Minor": {
-            "description": "Students must complete 16 credits for the Economics Minor.",
-            "name": "Economics Minor",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Principles of Economics",
-                        "Introductory Economics",
-                        "Intermediate Microeconomic Theory"
-                    ]
-                }
-            ]
-        },
-        "Economics of Banking and Finance Minor": {
-            "description": "The Minor in Economics of Banking and Finance consists of 16 credits from the following template:",
-            "name": "Economics of Banking and Finance Minor",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Principles of Economics",
-                        "Introductory Economics"
-                    ]
-                },
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Intermediate Microeconomic Theory",
-                        "Intermediate Macroeconomic Theory"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Money and Banking",
-                        "Economics of Financial Institutions and Markets",
-                        "Behavioral Financial Economics"
-                    ]
-                }
-            ]
-        },
-        "Economics of Decision-Making": {
-            "description": "The Minor in Economics of Decision-Making consists of 16 credits from the following template:",
-            "name": "Economics of Decision-Making",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Principles of Economics",
-                        "Introductory Economics"
-                    ]
-                },
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Applied Game Theory",
-                        "Behavioral Economics",
-                        "Behavioral Financial Economics",
-                        "Economic Models of Decision-Making"
-                    ]
-                }
-            ]
-        },
-        "Economics of Healthcare Markets Minor": {
-            "description": "The minor in Economics of Healthcare Markets is a 16-credit requirement using the following template:",
-            "name": "Economics of Healthcare Markets Minor",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Intermediate Microeconomic Theory",
-                        "Principles of Economics",
-                        "Introductory Economics"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Health Economics and Policy",
-                        "Behavioral Economics",
-                        "Economics of Biotech and Medical Innovations"
-                    ]
-                }
-            ]
-        },
-        "Economics of Policy and Regulations": {
-            "description": "The minor in Economics of Policy and Regulations is a 16-credit requirement using the following template:",
-            "name": "Economics of Policy and Regulations",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Introductory Economics",
-                        "Principles of Economics",
-                        "Intermediate Microeconomic Theory"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Economics of Government Regulation and Firm Strategy",
-                        "Law and Economics",
-                        "Health Economics and Policy",
-                        "Environmental Economics",
-                        "Cost-Benefit Analysis"
-                    ]
-                }
-            ]
-        },
-        "Economics of Quantitative Modeling": {
-            "description": "The Economics of Quantitative Modeling Minor consists of 16 credits from the following template:",
-            "name": "Economics of Quantitative Modeling",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Introductory Economics",
-                        "Principles of Economics",
-                        "Intermediate Microeconomic Theory"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Econometric Methods for Big Data",
-                        "Econometrics",
-                        "Experimental Economics",
-                        "Cost-Benefit Analysis"
-                    ]
-                }
-            ]
-        },
-        "Economics of Technology and Innovation Minor": {
-            "description": "The Minor in Economics of Technology and Regulation requires 16 credits from the following:",
-            "name": "Economics of Technology and Innovation Minor",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Introductory Economics",
-                        "Principles of Economics",
-                        "Intermediate Microeconomic Theory"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Economics of Innovation and New Technologies",
-                        "Economics of Biotech and Medical Innovations",
-                        "Economics of Growth & Innovation"
-                    ]
-                }
-            ]
-        },
-        "Electrical Engineering Minor": {
-            "description": "A minor in Electrical Engineering consists of at least 15 credits from the courses below. Courses for the minor may not be taken on a Pass/No Credit basis.  No more than 50% of the course credits applied to the minor requirement may be drawn from credits applied to the major.  No course which is required for one minor can be used for another minor requirement. Students wishing to fulfill a minor need an approval from the ECSE curriculum chair.",
-            "name": "Electrical Engineering Minor",
-            "requirements": []
-        },
-        "Entrepreneurship Minor": {
-            "description": "The minor in entrepreneurship usually consists of the following four courses:",
-            "name": "Entrepreneurship Minor",
-            "requirements": [
-                {
-                    "amount": 4,
-                    "courses": [
-                        "Management in the Digital Age",
-                        "Invention, Innovation, and Entrepreneurship",
-                        "Introduction to Technological Entrepreneurship",
-                        "Starting Up a New Venture"
-                    ]
-                }
-            ]
-        },
-        "Environmental Design": {
-            "description": "The minor in Environmental Design is a 17-credit cross-school, interdisciplinary minor focused on developing skills related to environmentally sustainable design while developing students' critical understanding of the social and cultural context of sustainability debates and environmental justice. As an interdisciplinary minor, students are required to take at least one course from the School of Humanities, Arts, and Social Sciences and one course from the School of Architecture, with the remaining credits being freely selected from applicable courses. Courses are offered at both the Troy campus as well as CASE in New York City, enabling students to spend a semester at CASE while fulfilling minor requirements.Students are strongly recommended to use their HASS Core, namely the Sustainability or Environmental Futures pathways towards this minor.",
-            "name": "Environmental Design",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Environment and Society",
-                        "Environmental Parametrics"
-                    ]
-                },
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Research Investigations: Project Built Ecologies",
-                        "Materials Systems and Productions",
-                        "Sustainability Debates",
-                        "Environmental Justice",
-                        "Environmental Media & Data",
-                        "Politics of Design",
-                        "Design and Innovation Studio A",
-                        "Sustainability Education"
-                    ]
-                }
-            ]
-        },
-        "Environmental Engineering Minor": {
-            "description": "Students not majoring in environmental engineering may receive a minor in this discipline by completing four required courses and one elective.",
-            "name": "Environmental Engineering Minor",
-            "requirements": [
-                {
-                    "amount": 4,
-                    "courses": [
-                        "Introduction to Environmental Engineering",
-                        "Environmental Chemodynamics",
-                        "Physicochemical Processes in Environmental Engineering",
-                        "Biological Processes in Environmental Engineering"
-                    ]
-                },
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Solid and Hazardous Waste Engineering",
-                        "Introduction to Air Quality",
-                        "Applied Hydrology and Design"
-                    ]
-                }
-            ]
-        },
-        "Finance Minor": {
-            "description": "",
-            "name": "Finance Minor",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Financial Accounting in the Digital Age",
-                        "Managerial Finance"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Financial Trading and Investing",
-                        "Investments I",
-                        "Advanced Corporate Finance",
-                        "Risk Management",
-                        "Derivatives Markets"
-                    ]
-                }
-            ]
-        },
-        "General Psychology Minor": {
-            "description": "The customized minor is designed for students who want to sample a variety of topics within psychology or select a set of courses that share a common theme.",
-            "name": "General Psychology Minor",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": ["Introduction to Psychological Science"]
-                }
-            ]
-        },
-        "Geology Minor": {
-            "description": "Students not majoring in geology may take a minor by completing from the ERTH group at least 16 credit hours, 8 of which should be at the 4000 level. ERTH 1030 and ERTH 1040 (Natural Sciences) do not count towards the minor.",
-            "name": "Geology Minor",
-            "requirements": []
-        },
-        "Graphic Design Minor": {
-            "description": "Study graphic design through the integration of theory and practice, in print and digital media. Use creative and critical thinking to solve visual communication problems and reach target audiences with words, symbols, and images.",
-            "name": "Graphic Design Minor",
-            "requirements": [
-                {
-                    "amount": 4,
-                    "courses": [
-                        "Typography",
-                        "Introduction to Graphic Design",
-                        "Visual Poetics and Narrative",
-                        "Visual Design: Theory and Application",
-                        "Interactive Data Visualization",
-                        "Interface Design: Hypermedia Theory and Application",
-                        "Media and Society",
-                        "Life in Color",
-                        "2D Motion Graphics",
-                        "Brand Identity Design"
-                    ]
-                }
-            ]
-        },
-        "History Minor": {
-            "description": "The minor in History is designed for students interested in the U.S. and world history. Courses primarily focus on the social history and evolution of technology, scientific enterprise, medicine, and law. A minor in History requires completion of 16 credits from the following:",
-            "name": "History Minor",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": [
-                        "A Century of Environmental Thought",
-                        "War and Technology: Past, Present, and Future",
-                        "Science, Technology, and Society"
-                    ]
-                },
-                {
-                    "amount": 1,
-                    "courses": ["American History"]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "History of Medicine",
-                        "Drugs in History",
-                        "History of Mental Health",
-                        "History of American Technology",
-                        "History of Science and Technology",
-                        "Consumer Culture"
-                    ]
-                }
-            ]
-        },
-        "Hydrogeology Minor": {
-            "description": "Students not majoring in hydrogeology may take a minor by taking the following courses and electing from the ERTH group at least two additional courses except for ERTH 1030 and ERTH 1040.",
-            "name": "Hydrogeology Minor",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Environmental Geology",
-                        "Groundwater Hydrology"
-                    ]
-                }
-            ]
-        },
-        "Information Technology and Web Science Minor": {
-            "description": "The ITWS minor requires 16 credit hours that must be approved by the minor adviser in ITWS.",
-            "name": "Information Technology and Web Science Minor",
-            "requirements": [
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Introduction to Information Technology and Web Science",
-                        "Web Systems Development",
-                        "Managing IT Resources"
-                    ]
-                },
-                {
-                    "amount": 1,
-                    "courses": ["IT and Society"]
-                }
-            ]
-        },
-        "Interactive Media/Data Design Minor": {
-            "description": "This minor covers communication, interaction, and information design theory and practice to prepare students for creating different forms of interactive, multimedia communication, and data representation.",
-            "name": "Interactive Media/Data Design Minor",
-            "requirements": [
-                {
-                    "amount": 4,
-                    "courses": [
-                        "Media and Society",
-                        "Communication Theory and Practice",
-                        "Introduction to Graphic Design",
-                        "Foundations of HCI Usability",
-                        "Information Design",
-                        "Interface Design: Hypermedia Theory and Application",
-                        "Interactive Narrative",
-                        "Interactive Data Visualization",
-                        "Writing in Context"
-                    ]
-                }
-            ]
-        },
-        "Lighting Minor": {
-            "description": "The minor in lighting gives students the awareness and the confidence to extend their creative work through controlled use of light. The program covers human responses to light, both visual and non-visual, and the means by which light is produced and controlled. Interactions of light with form, texture, and color are examined in the contexts of daylight, electric lighting, and their integration. The Lighting minor requires 15 credits.",
-            "name": "Lighting Minor",
-            "requirements": [
-                {
-                    "amount": 7,
-                    "courses": [
-                        "Lighting Design",
-                        "Lighting Workshop",
-                        "Lighting Technologies and Applications",
-                        "Physics of Light",
-                        "Human Factors in Lighting",
-                        "Light and Health",
-                        "Advanced Individual Projects in Lighting"
-                    ]
-                }
-            ]
-        },
-        "Lighting Minor in Biological Sciences": {
-            "description": "This minor program is offered as a joint program by the Department of Biological Sciences and the Lighting Research Center.Light-dark patterns that reach the back of our eyes set the timing of the biological clock, and tell our bodies to do \"the right thing at the right time.\" A global lighting revolution is taking place because of the awareness of how profound the impact of light is in our daily lives. Humans and most terrestrial species perceive the time of day because of their internal biological or circadian clock. This circadian clock is a network of genes and proteins that regulates daily oscillations such as sleep, hormone release, rise and fall of blood pressure and body temperature, as well as other cellular functions and physiological responses. Because of this tight regulation, a disrupted circadian clock can be detrimental to daily function and human health, as evidenced by the increased rates of disease in nightshift workers and submariners, known to experience circadian disruption. Tailored lighting intervention, on the other hand, helps adolescents fall asleep earlier, premature infants be discharged from the hospital sooner, Alzheimer's disease patients sleep better, and cancer patients experience less fatigue. Because the light people are exposed to can have a profound impact on the proper timing of their circadian clocks, it is important to effectively specify, measure and apply lighting in the built environment. It is also important to understand how various species (human, mammals, and plants) respond to light. This minor will provide the foundation to understand the basic principles of how to specify, measure, and apply light to positively impact various species, and to work side-by-side with leading experts in the field in a professional project. This minor requires four courses with a minimum of 15 credits.",
-            "name": "Lighting Minor in Biological Sciences",
-            "requirements": [
-                {
-                    "amount": 4,
-                    "courses": [
-                        "Physics of Light",
-                        "Human Factors in Lighting",
-                        "Light and Health",
-                        "Advanced Individual Projects in Lighting"
-                    ]
-                }
-            ]
-        },
-        "Linguistics Minor": {
-            "description": "",
-            "name": "Linguistics Minor",
-            "requirements": [
-                {
-                    "amount": 4,
-                    "courses": [
-                        "Introduction to Linguistics",
-                        "Language-Endowed Intelligent Agents",
-                        "Animal Cognition and Interaction with Humans",
-                        "Cross-linguistic Perspectives",
-                        "The Linguistics of Computational Linguistics",
-                        "Advanced Topics in Linguistics"
-                    ]
-                }
-            ]
-        },
-        "Literature and Creative Writing Minor": {
-            "description": "The Literature and Creative Writing minor offers discussion-oriented courses across a range of literary genres and themes, with a choice of emphasis on either literature, creative writing, or both. Students will learn to read and write literary art critically and creatively, with clarity and imagination, and with sensitivity to multi-cultural expressions of diversity.",
-            "name": "Literature and Creative Writing Minor",
-            "requirements": [
-                {
-                    "amount": 4,
-                    "courses": [
-                        "Introduction to Literature",
-                        "Visual Poetics and Narrative",
-                        "Interactive Narrative",
-                        "Modern and Contemporary Literature",
-                        "Science and Fiction",
-                        "Irish Literature",
-                        "Women Writers",
-                        "Writing in Context",
-                        "Creative Nonfiction Writing",
-                        "Creative Writing:  Short Story",
-                        "Fiction: From Film to the Internet"
-                    ]
-                }
-            ]
-        },
-        "Management Minor": {
-            "description": "The minor in management usually consists of the following four courses:4000-level Restricted Elective (see minor adviser)",
-            "name": "Management Minor",
-            "requirements": [
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Management in the Digital Age",
-                        "Financial Accounting in the Digital Age",
-                        "Managerial Finance"
-                    ]
-                }
-            ]
-        },
-        "Marketing Minor": {
-            "description": "The minor in marketing usually consists of the following three courses:",
-            "name": "Marketing Minor",
-            "requirements": [
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Management in the Digital Age",
-                        "Marketing Principles",
-                        "Marketing Research"
-                    ]
-                },
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Consumer Behavior and Product Design",
-                        "Advertising Strategy and Promotions"
-                    ]
-                }
-            ]
-        },
-        "Materials Engineering Minor": {
-            "description": "Students not majoring in Materials Engineering may receive a minor in this discipline by completing 15 credit hours of courses with a MTLE designation. As general preparation for these courses, students should have taken ENGR 1600 Materials Science for Engineers. A list of suggested courses is given below. These are only suggestions, and courses can be chosen according to interest and scheduling. It is possible to take some courses out of sequence if the student is willing to put in the appropriate effort. Note, that some courses in the Department of Materials Science and Engineering are offered once a year, whereas some electives are offered only every other year.An excellent program for a Minor in Materials Engineering, giving students a solid foundation, would be to take Structure of Engineering Materials (MTLE 2100), plus any two of the 4-credit courses: Thermodynamics of Materials (MTLE 4100), Kinetics in Materials Science (MTLE 4150), Electrical and Optical Properties of Materials (MTLE 4200), Mechanical Properties of Materials (MTLE 4250), plus one 3-credit materials elective.",
-            "name": "Materials Engineering Minor",
-            "requirements": []
-        },
-        "Mathematics Minor": {
-            "description": "Students not majoring in mathematics may receive a minor in math by taking four courses at the 4000 level or above from the MATH and MATP course groups. These courses should form a coherent program and have the prior approval of the chairman of the Department of Mathematical Sciences.",
-            "name": "Mathematics Minor",
-            "requirements": []
-        },
-        "Media and Culture Minor": {
-            "description": "This minor examines different forms of expression and their cultural contexts in a variety of media, including film, television, photography, and new media. Its components will enhance creative and critical thinking, communication practices, and awareness of cultural and individual identities.",
-            "name": "Media and Culture Minor",
-            "requirements": [
-                {
-                    "amount": 4,
-                    "courses": [
-                        "Documentary in the 21st Century: Identity Production",
-                        "Media and Society",
-                        "The American Dream",
-                        "Perspectives on Photography",
-                        "Documentary Film",
-                        "Communication Theory and Practice",
-                        "Critical Television",
-                        "Post-Factual Media",
-                        "Visual Culture",
-                        "Religion, Politics, & Media",
-                        "Advertising and Culture",
-                        "Rethinking Documentary: Video Production"
-                    ]
-                }
-            ]
-        },
-        "Music Minor": {
-            "description": "A music minor consists of 16 credits from the music curriculum. Students may select 12 credits from any combination of courses at the 1000 and 2000 levels. The remaining 4 credits should be earned at the 4000 level, or by approved substitution at the 2000 level. The courses in the music curriculum are organized in three broad categories: Music and Culture, Composition and Production, and Performance.  Students may elect to focus their selection of courses within a single category, but this is not mandatory. Students may earn the minor within or by combining courses between any of the three categories.",
-            "name": "Music Minor",
-            "requirements": [
-                {
-                    "amount": 0,
-                    "courses": [
-                        "Topics in Deep Listening",
-                        "World Music",
-                        "Popular Music and Society",
-                        "Histories of Jazz and Improvised Music",
-                        "Music, Sound, & the Environment",
-                        "Deep Listening",
-                        "Interdisciplinary Research Seminar",
-                        "Topics in the History and Analysis of Music",
-                        "Game Sound and Musical Play",
-                        "The Multimedia Century",
-                        "Histories of Western Music"
-                    ]
-                },
-                {
-                    "amount": 0,
-                    "courses": [
-                        "Music and Technology I",
-                        "Music and Sound I",
-                        "Music and Sound II",
-                        "Sound Recording and Production I",
-                        "Designing Musical Games",
-                        "Ensemble Nonlinear",
-                        "Sound Recording and Production II",
-                        "Interdisciplinary Research Seminar"
-                    ]
-                },
-                {
-                    "amount": 0,
-                    "courses": [
-                        "Rensselaer Orchestra",
-                        "Chamber Music Ensemble",
-                        "Ensemble Nonlinear",
-                        "Contemporary Improvisation Ensemble",
-                        "Private Music Lessons"
-                    ]
-                }
-            ]
-        },
-        "Nuclear Engineering Minor": {
-            "description": "Students not majoring in nuclear engineering may receive a minor in this discipline by completing 1516 credit hours of study selected in consultation with their program adviser.",
-            "name": "Nuclear Engineering Minor",
-            "requirements": []
-        },
-        "Philosophy Minor": {
-            "description": "The Minor in Philosophy allows the interested student to attain a foundation in philosophy that will complement any academic major.To complete this minor, students must choose a minimum of four (4) Philosophy courses, distributed as follows:",
-            "name": "Philosophy Minor",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Minds and Machines",
-                        "Introduction to Philosophy"
-                    ]
-                }
-            ]
-        },
-        "Philosophy of Logic, Computation, and Mind Minor": {
-            "description": "This minor focuses on the nature of reasoning and formal systems, and the relations they bear on the study of mind and consciousness whether natural or artificial (artificial intelligence, AI).To complete this minor, students must choose a minimum of four (4) Philosophy courses distributed as follows:",
-            "name": "Philosophy of Logic, Computation, and Mind Minor",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Minds and Machines",
-                        "Introduction to Philosophy"
-                    ]
-                },
-                {
-                    "amount": 1,
-                    "courses": ["Introduction to Logic"]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Critical Thinking",
-                        "Intermediate Logic",
-                        "Philosophy of Artificial Intelligence",
-                        "Computability and Logic",
-                        "Metaphysics and Consciousness"
-                    ]
-                }
-            ]
-        },
-        "Physics Minor": {
-            "description": "Students not majoring in physics may minor in this subject by taking at least 16 credit hours of physics courses (coded PHYS) at the 2000 level or higher.",
-            "name": "Physics Minor",
-            "requirements": []
-        },
-        "Psychological Science Minor": {
-            "description": "This minor is designed for students who want to gain proficiency in research methods and statistics and their application in the scientific study of behavior and mental processes.",
-            "name": "Psychological Science Minor",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": ["Introduction to Psychological Science"]
-                },
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Research Methods and Statistics I",
-                        "Research Methods and Statistics II"
-                    ]
-                }
-            ]
-        },
-        "Public Health Minor": {
-            "description": "The minor in Public Health is designed for students interested in health-related careers who wish to develop skills and knowledge about global public health challenges. It also offers important courses for students on a pre-medical track. A minor in Public Health is completed by completing 16 credits from the following:",
-            "name": "Public Health Minor",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": [
-                        "The Genome and You",
-                        "Introduction to Psychological Science",
-                        "Science, Technology, and Society"
-                    ]
-                },
-                {
-                    "amount": 1,
-                    "courses": ["Sociology"]
-                },
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Environmental Justice",
-                        "History of Mental Health",
-                        "Hormones, Brain, and Behavior",
-                        "Health Economics and Policy",
-                        "Drugs, Society, and Behavior",
-                        "Behavioral Neuroscience",
-                        "Gender, Science, and Technology",
-                        "Medicine, Culture, and Society",
-                        "Bioethics",
-                        "Drugs in History",
-                        "Food, Farms, and Famine",
-                        "History of Medicine"
-                    ]
-                }
-            ]
-        },
-        "Science, Technology, and Society Minor": {
-            "description": "The minor in Science, Technology, and Society (STS) is designed for students broadly interested in the social and political dimensions of science, technology, engineering, and medicine. Students use political and social science methods to investigate scientific and technological developments. A minor in Science, Technology, and Society is completed by taking the following courses:",
-            "name": "Science, Technology, and Society Minor",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": ["Science, Technology, and Society"]
-                },
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Environment and Society",
-                        "Sociology",
-                        "American History"
-                    ]
-                }
-            ]
-        },
-        "Strategic Communication Minor": {
-            "description": "The minor in Strategic Communication is designed to train versatile, critical, and self-possessed communicators. Students who successfully complete this minor will demonstrate the ability to make focused, audience-appropriate arguments and communicate effectively across diverse rhetorical, sociocultural, and disciplinary contexts.",
-            "name": "Strategic Communication Minor",
-            "requirements": [
-                {
-                    "amount": 4,
-                    "courses": [
-                        "Communication Theory and Practice",
-                        "Advertising and Culture",
-                        "Language and Power",
-                        "Writing in Context",
-                        "Strategic Writing",
-                        "Speech Communication",
-                        "Writing and Response",
-                        "Research Writing",
-                        "Proposing and Persuading"
-                    ]
-                }
-            ]
-        },
-        "Studio Arts": {
-            "description": "A studio arts minor consists of 16 credits from the studio arts curriculum, which includes courses in drawing, painting, and sculpture. All studio arts minors must take three studio courses, and at least one of these must be at the 4000 level. The remaining 4 credits may be filled by another studio course or an art history course.",
-            "name": "Studio Arts",
-            "requirements": [
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Basic Drawing",
-                        "Graphic Storytelling",
-                        "Radical Graphics/Screenprinting",
-                        "Intermediate Drawing",
-                        "Sculpture I",
-                        "Fundamentals of 2D Design",
-                        "Advanced Drawing",
-                        "Sculpture II",
-                        "Painting",
-                        "Life Drawing and Anatomy for Artists"
-                    ]
-                },
-                {
-                    "amount": 1,
-                    "courses": ["Art History", "The Multimedia Century"]
-                }
-            ]
-        },
-        "Sustainability Studies Minor": {
-            "description": "The minor in Sustainability Studies focuses on the interactions between various systems—social, political, cultural, economic, technological, and ecological —that undergird environmental sustainability. Students use interdisciplinary approaches to investigate environmental problems. A minor in Sustainability Studies is completed by taking 16 credits from the following:",
-            "name": "Sustainability Studies Minor",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": ["Environment and Society"]
-                },
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Nature/Society",
-                        "Sustainability Debates",
-                        "A Century of Environmental Thought",
-                        "Science, Technology, and Society"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Sustainability and STS Careers",
-                        "Environmental Philosophy",
-                        "History of American Technology",
-                        "Consumer Culture",
-                        "Food, Farms, and Famine",
-                        "Sustainability Education",
-                        "Politics of Design",
-                        "Globalization and Development",
-                        "Environmental Justice",
-                        "Environmental Media & Data"
-                    ]
-                }
-            ]
-        },
-        "Video, Performance, and Social Practice": {
-            "description": "The minor allows students to study video, performance and social impact through the integration of theory and practice. Students are prepared to analyze and critique moving images; plan, produce and edit their own media productions in video/television and/or performance; and communicate through visual as well as audio medium. Strategically situating art, media and technology in a social context, students engage in a creative practice designed to make the change from the local to the global.The minor consists of 16 credits:",
-            "name": "Video, Performance, and Social Practice",
-            "requirements": [
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Behind the TV Screen",
-                        "Digital Filmmaking",
-                        "Intermediate Video",
-                        "The Multimedia Century"
-                    ]
-                },
-                {
-                    "amount": 2,
-                    "courses": [
-                        "Rethinking Documentary: Video Production",
-                        "Writing and Directing for Video",
-                        "Science Fictions",
-                        "Art, Community, and Technology",
-                        "Advanced Video Media Studio",
-                        "Biopunk: Arts Lab Practice",
-                        "Queer Ecologies",
-                        "Hactivism",
-                        "Eco Chic: Living Art"
-                    ]
-                }
-            ]
-        },
-        "Well-being": {
-            "description": "How do people maintain a sense of well-being in their lives? Each person's path to well-being in body and mind is unique—arising from an awareness of his or her needs, goals, and what each finds fulfilling. The Well-being minor includes a wide variety of courses that explore the nature of what it is to be human and to orient oneself in the world, to have relationships, make decisions, be creative, and make discoveries. Sixteen credits are required for the minor in Well-being.",
-            "name": "Well-being",
-            "requirements": [
-                {
-                    "amount": 1,
-                    "courses": [
-                        "Basic Drawing",
-                        "Nature/Society",
-                        "Minds and Machines",
-                        "Well-being: Cultivating Curiosity",
-                        "The Art of Listening",
-                        "Music, Sound, & the Environment"
-                    ]
-                },
-                {
-                    "amount": 3,
-                    "courses": [
-                        "Creative Nonfiction Writing",
-                        "Psychology of Mindfulness",
-                        "Creative Writing:  Short Story",
-                        "Hormones, Brain, and Behavior",
-                        "Introduction to Psychological Science",
-                        "Drugs, Society, and Behavior",
-                        "Sensibilities",
-                        "Ethics",
-                        "Rensselaer Concert Choir",
-                        "Positive Psychology",
-                        "Stress and the Brain"
-                    ]
-                }
-            ]
-        },
-        "Writing Minor": {
-            "description": "This minor offers students the opportunity to write in a variety of genres, media, and contexts. They may choose from regularly offered courses in strategic, creative, or academic writing.",
-            "name": "Writing Minor",
-            "requirements": [
-                {
-                    "amount": 4,
-                    "courses": [
-                        "Writing in Context",
-                        "Strategic Writing",
-                        "Creative Nonfiction Writing",
-                        "Creative Writing:  Short Story",
-                        "Speech Communication",
-                        "Proposing and Persuading",
-                        "Research Writing",
-                        "Writing and Response"
-                    ]
-                }
-            ]
+  "2022-2023": {
+    "Architectural Acoustics Minor": {
+      "description": "The minor in architectural acoustics is open to all Rensselaer students interested in advanced study focusing on the optimization of acoustical quality of performance spaces and other aurally sensitive environments. After completing the minor, the student will be well-prepared for an entry level position dealing with acoustics issues in architectural practice, in acoustical consulting, or as a preparation for graduate studies in acoustics, for example in the Graduate Program in Architectural Acoustics at Rensselaer Polytechnic Institute. The program consists of 15 credits. Proficiency in Calculus I is necessary to comprehend the basics of architectural acoustics. Approval required by director of program.",
+      "name": "Architectural Acoustics Minor",
+      "requirements": [
+        {
+          "amount": 7,
+          "courses": [
+            "Architectural Acoustics 1",
+            "Architectural Acoustics 2",
+            "Applied Psychoacoustics",
+            "Sonics Research Lab 1",
+            "Sonics Research Lab 2",
+            "Aural Architecture",
+            "Engineering Acoustics"
+          ]
         }
+      ]
+    },
+    "Architectural History Minor": {
+      "description": "The minor in architectural history is open to all Rensselaer students interested in the history of architecture as a socio-cultural phenomenon that examines architecture as a cultural artifact. It consists of the following courses.",
+      "name": "Architectural History Minor",
+      "requirements": [
+        {
+          "amount": 6,
+          "courses": [
+            "The Ethos of Architecture",
+            "Architectural Media",
+            "Cities and Their Territories",
+            "An Architectural Genealogy",
+            "Cloud Atlas: 20th Century Architecture, Culture and Civilization",
+            "Contemporary Design Approaches"
+          ]
+        }
+      ]
+    },
+    "Architecture Minor": {
+      "description": "A minor in architecture is directed toward Rensselaer students interested in architecture as a socio-cultural phenomenon, the student who intends to study architecture at the graduate level, and/or those envisioning a career in some segment of the building industry. The minor program provides an exposure to architecture—what it is, what it includes, its history, how it is accomplished; and to architects—who they are and how they think and work. In order to earn a minor in architecture, students must compile at least 16 credits of architecture-related courses except for Architecture Design Studio, which is for B.Arch. majors only.",
+      "name": "Architecture Minor",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "The Ethos of Architecture",
+            "Energy, Comfort, and Ecology",
+            "Materials and Design"
+          ]
+        }
+      ]
+    },
+    "Astrobiology Minor": {
+      "description": "The Departments of Biological Sciences, Chemistry and Chemical Biology, Earth and Environmental Sciences, and Physics, Applied Physics and Astronomy, participate in a multidisciplinary minor in Astrobiology. The minor requires at least 16 credits.  To complete the minor, students must complete the following:ISCI 1510 Introduction to Astrobiology (3 credits)ISCI 4510 Readings in Astrobiology and the Origins of Life (1 credit); taken at least 2 semestersA 3-credit research project on a topic related to Astrobiology under the supervision of a RARE faculty member or other faculty member with permission of the RARE DirectorISCI 4610 Capstone in Astrobiology (1 credit)At least two additional courses from the list below to bring the total credits to at least 16.  These additional courses must be outside the major field of study*",
+      "name": "Astrobiology Minor",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Stars, Galaxies, and the Cosmos",
+            "Macroscopic Physical Chemistry",
+            "Modern Techniques in Chemistry",
+            "Molecular Biology",
+            "Instrumental Methods of Analysis",
+            "Isotope Geochemistry",
+            "Earth Materials",
+            "Organic Geochemistry",
+            "Earth and Sky",
+            "Molecular Biochemistry II",
+            "Mass Spectrometry",
+            "Chemistry of the Environment",
+            "Genetics and Evolution",
+            "Molecular Biology Laboratory",
+            "Introduction to Astrobiology",
+            "Physical Chemistry for Life Sciences",
+            "Introductory Astronomy and Astrophysics",
+            "Organic Chemistry I",
+            "Introduction to Geobiology",
+            "Aqueous Geochemistry",
+            "Molecular Biochemistry I",
+            "Evolution",
+            "Introduction to Geochemistry",
+            "Introduction to Cell and Molecular Biology"
+          ]
+        }
+      ]
+    },
+    "Astronomy Minor": {
+      "description": "Astronomy Minor - intended for students with a general interest or who might pursue a K-12 science education or outreach career.",
+      "name": "Astronomy Minor",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introductory Astronomy and Astrophysics"
+          ]
+        },
+        {
+          "amount": 3,
+          "courses": [
+            "Topics in Astronomy and Astrophysics",
+            "Earth and Sky",
+            "Observational Astronomy",
+            "Astrophysics",
+            "Gravitation and Cosmology",
+            "General Relativity",
+            "Topics in Physics"
+          ]
+        }
+      ]
+    },
+    "Astrophysics Minor": {
+      "description": "The Astrophysics Minor is intended primarily for students who intend to pursue a career in astronomy or astrophysics.",
+      "name": "Astrophysics Minor",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Introductory Astronomy and Astrophysics",
+            "Special Projects in Astronomy"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Observational Astronomy",
+            "Astrophysics",
+            "Gravitation and Cosmology",
+            "General Relativity"
+          ]
+        }
+      ]
+    },
+    "Behavioral and Cognitive Neuroscience Minor": {
+      "description": "This minor is designed for students who want to gain proficiency in the scientific study of behavioral and cognitive neuroscience. Students seeking a minor in Behavioral and Cognitive Neuroscience will develop a Plan of Study in consultation with a departmental adviser. To obtain the minor, the student must complete a minimum of 16 credits as described:",
+      "name": "Behavioral and Cognitive Neuroscience Minor",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introduction to Psychological Science"
+          ]
+        },
+        {
+          "amount": 3,
+          "courses": [
+            "Introduction to Cognitive Neuroscience",
+            "Hormones, Brain, and Behavior",
+            "Stress and the Brain",
+            "Behavioral Neuroscience",
+            "Cognition and the Brain",
+            "Drugs, Society, and Behavior"
+          ]
+        }
+      ]
+    },
+    "Biochemistry/Biophysics Minor for Biology Majors": {
+      "description": "Students majoring in chemistry, biology, or biomedical or chemical engineering may obtain a minor in Biochemistry and Biophysics by completing the courses listed below. Since different essential courses are included in the requirements of each major, the minor requirements vary for different majors.",
+      "name": "Biochemistry/Biophysics Minor for Biology Majors",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Molecular Biochemistry II",
+            "Physical Chemistry for Life Sciences"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Genetic Engineering",
+            "Molecular Modeling",
+            "The Biology of Systems",
+            "Methods in Biophysics",
+            "Protein Structure Determination"
+          ]
+        }
+      ]
+    },
+    "Biochemistry/Biophysics Minor for Biomedical Engineering Majors": {
+      "description": "Students majoring in chemistry, biology, or biomedical or chemical engineering may obtain a minor in Biochemistry and Biophysics by completing the courses listed below. Since different essential courses are included in the requirements of each major, the minor requirements vary for different majors.",
+      "name": "Biochemistry/Biophysics Minor for Biomedical Engineering Majors",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Molecular Biochemistry I",
+            "Molecular Biochemistry II",
+            "Organic Chemistry I"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Genetic Engineering",
+            "Biochemistry Laboratory",
+            "Protein Folding",
+            "Methods in Biophysics",
+            "Protein Structure Determination",
+            "Molecular Biology",
+            "Bioorganic Mechanisms",
+            "Mathematics in Medicine and Biology"
+          ]
+        }
+      ]
+    },
+    "Biochemistry/Biophysics Minor for Chemical Engineering Majors": {
+      "description": "Students majoring in chemistry, biology, or biomedical or chemical engineering may obtain a minor in Biochemistry and Biophysics by completing the courses listed below. Since different essential courses are included in the requirements of each major, the minor requirements vary for different majors.",
+      "name": "Biochemistry/Biophysics Minor for Chemical Engineering Majors",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Molecular Biochemistry I",
+            "Molecular Biochemistry II"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Genetic Engineering",
+            "Biochemistry Laboratory",
+            "Protein Folding",
+            "Methods in Biophysics",
+            "Protein Structure Determination",
+            "Molecular Biology",
+            "Bioorganic Mechanisms",
+            "Mathematics in Medicine and Biology"
+          ]
+        }
+      ]
+    },
+    "Biochemistry/Biophysics Minor for Chemistry Majors": {
+      "description": "Students majoring in chemistry, biology, or biomedical or chemical engineering may obtain a minor in Biochemistry and Biophysics by completing the courses listed below. Since different essential courses are included in the requirements of each major, the minor requirements vary for different majors.",
+      "name": "Biochemistry/Biophysics Minor for Chemistry Majors",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Molecular Biochemistry I",
+            "Molecular Biochemistry II"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Genetic Engineering",
+            "Biochemistry Laboratory",
+            "Protein Folding",
+            "Methods in Biophysics",
+            "Protein Structure Determination",
+            "Molecular Biology",
+            "Bioorganic Mechanisms",
+            "Mathematics in Medicine and Biology"
+          ]
+        }
+      ]
+    },
+    "Biological Neuroscience Minor": {
+      "description": "Students who have taken BIOL 2120  may choose to earn a minor in Neuroscience by taking the 3 required courses BIOL 4100  From Neuron to Behavior, BIOL 4260  Advanced Cell Biology, and BIOL 4150  Cellular Neuroscience, and one course from the list below. Some of the courses in this list may have additional prerequisites",
+      "name": "Biological Neuroscience Minor",
+      "requirements": []
+    },
+    "Biology Minor": {
+      "description": "Students who have passed BIOL 1010/BIOL 1015 or have AP credit may complete a minor in Biology by taking BIOL 2120 and three 4000-level courses in Biology. BIOL 2500 may substitute for one of the three but is not required. Only a total of 4 credits may come from the following list: BIOL 4900, BIOL 4970, or BIOL 4990. No more than 4 credits from research. BCBP, CBIO, BNSC, BHE majors cannot minor in Biology.",
+      "name": "Biology Minor",
+      "requirements": []
+    },
+    "Biomedical Engineering and Management Minor": {
+      "description": "The B.S. with Minor in Management can be completed by following the traditional BME Baccalaureate template and choosing appropriate classes from the Lally School for the four Free Electives. A list of acceptable classes for the different Management Minor programs can be found at http://lallyschool.rpi.edu/programs/undergraduate-programs/bs-business-management.",
+      "name": "Biomedical Engineering and Management Minor",
+      "requirements": []
+    },
+    "Chemistry Minor for Non-Chemistry Majors": {
+      "description": "In addition to CHEM courses required in their major, students must take one 3- or 4-credit CHEM course, plus:",
+      "name": "Chemistry Minor for Non-Chemistry Majors",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Inorganic Chemistry I",
+            "Equilibrium Chemistry and Quantitative Analysis"
+          ]
+        },
+        {
+          "amount": 3,
+          "courses": [
+            "Inorganic Chemistry I",
+            "Equilibrium Chemistry and Quantitative Analysis",
+            "Physical Chemistry for Life Sciences"
+          ]
+        },
+        {
+          "amount": 3,
+          "courses": [
+            "Inorganic Chemistry I",
+            "Introduction to Polymer Chemistry",
+            "Molecular Biochemistry I"
+          ]
+        }
+      ]
+    },
+    "Chinese Language Minor": {
+      "description": "16 credits (4 courses) consist of:",
+      "name": "Chinese Language Minor",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Chinese I",
+            "Chinese II"
+          ]
+        },
+        {
+          "amount": 3,
+          "courses": [
+            "Chinese III",
+            "Chinese IV",
+            "Chinese V"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Social Media: East & West"
+          ]
+        }
+      ]
+    },
+    "Civil Engineering Minor": {
+      "description": "Students pursuing this minor must satisfy the prerequisites and/or corequisites for these courses, which may involve other course work.",
+      "name": "Civil Engineering Minor",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Introduction to Transportation Engineering",
+            "Introduction to Water Resources Engineering",
+            "Introduction to Geotechnical Engineering",
+            "Introduction to Structural Engineering",
+            "Foundation Engineering",
+            "Steel Design",
+            "Concrete Design",
+            "Geotechnical Design",
+            "Matrix Structural Analysis",
+            "Traffic Engineering",
+            "Highway Engineering",
+            "Introduction to Environmental Engineering"
+          ]
+        },
+        {
+          "amount": 3,
+          "courses": [
+            "Introduction to Structural Engineering",
+            "Steel Design",
+            "Concrete Design"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Introduction to Geotechnical Engineering",
+            "Foundation Engineering",
+            "Geotechnical Design",
+            "Construction Management",
+            "Design for Constructability",
+            "Matrix Structural Analysis"
+          ]
+        }
+      ]
+    },
+    "Cognitive Science Minor": {
+      "description": "Students seeking a minor in Cognitive Science will develop a Plan of Study in consultation with a departmental adviser. To complete this minor, students must choose a minimum of four Cognitive Science (COGS) courses as described:COGS 2120  Introduction to Cognitive Science is required.The remaining three courses should be chosen from COGS, with at least two at the 4000 level.",
+      "name": "Cognitive Science Minor",
+      "requirements": []
+    },
+    "Cognitive Science of Artificial Intelligence Minor": {
+      "description": "This minor is designed for students who want to gain a cognitive science perspective on Artificial Intelligence. Students seeking this minor will develop a Plan of Study in consultation with the departmental coordinator of the Minor program. To obtain the minor, the student must complete a minimum of four courses as described:",
+      "name": "Cognitive Science of Artificial Intelligence Minor",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introduction to Cognitive Science"
+          ]
+        },
+        {
+          "amount": 3,
+          "courses": [
+            "Cognitive Modeling",
+            "Programming for Cognitive Science and Artificial Intelligence",
+            "Game AI",
+            "Intelligent Virtual Agents",
+            "Language-Endowed Intelligent Agents",
+            "Minds and Machines"
+          ]
+        }
+      ]
+    },
+    "Computer Science Minor": {
+      "description": "A computer science minor requires a minimum of four CSCI courses, which must include CSCI 2300 Introduction to Algorithms and three additional 3- or 4-credit courses at the 2000 level or above, excluding CSCI 2200 Foundations of Computer Science. At least two of these three additional courses must be at the 4000 (or 6000) level. Overall, at least two courses must be taken at RPI. Given that RPI requires a minimum of 15 credits for a minor, if the above required four courses falls below this 15-credit requirement, any other CSCI credits may be used. Reading and independent study courses and courses required by name for the student's major(s) cannot be used for the minor. The Pass/No Credit option cannot be used for any of these courses.",
+      "name": "Computer Science Minor",
+      "requirements": []
+    },
+    "Computer and Systems Engineering Minor": {
+      "description": "A minor in Computer and Systems Engineering consists of at least 15 credits from the courses below. Courses for the minor may not be taken on a Pass/No Credit basis.  No more than 50% of the course credits applied to the minor requirement may be drawn from credits applied to the major.  No course which is required for one minor can be used for another minor requirement. Students wishing to fulfill a minor need an approval from the ECSE curriculum chair.",
+      "name": "Computer and Systems Engineering Minor",
+      "requirements": []
+    },
+    "Data Science and Engineering": {
+      "description": "The Department of Industrial and Systems Engineering offers a minor in Data Science and Engineering (DSE) for undergraduates (minimum of 17 credits required). The minor contributes to students' ability to organize, analyze and act upon data, particularly for data associated with engineered systems.",
+      "name": "Data Science and Engineering",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Information and Data Systems",
+            "Statistical Analysis",
+            "Design of Experiments"
+          ]
+        },
+        {
+          "amount": 0,
+          "courses": [
+            "Database Systems",
+            "Data Mining",
+            "X-Informatics",
+            "Data Science"
+          ]
+        },
+        {
+          "amount": 0,
+          "courses": [
+            "Biostatistics",
+            "Biostatistics for Life Science Applications",
+            "Biomedical Data Science",
+            "Econometrics",
+            "Human Performance Modeling and Support",
+            "Mathematical Statistics",
+            "Computational Intelligence",
+            "Research Methods and Statistics II"
+          ]
+        }
+      ]
+    },
+    "Ecology Minor": {
+      "description": "Ecology is a branch of Biology that studies the relations of organisms to one another and to their environment. RPI has a substantial depth in Ecological research and faculty expertise, as well as Institute-wide initiatives such as the Jefferson Project. The Institute offers a minor in Ecology to all students consisting of 16 credit hours, as noted below.",
+      "name": "Ecology Minor",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Principles of Ecology",
+            "Global Environmental Change",
+            "Non-thesis Research",
+            "Senior Research Thesis"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Lake George Limnology and Underwater Ecology (BLUE)",
+            "Human Population",
+            "Chemistry of the Environment",
+            "Environmental and Resource Economics",
+            "Earth's Climate: Past, Present, and Future"
+          ]
+        }
+      ]
+    },
+    "Economics Minor": {
+      "description": "Students must complete 16 credits for the Economics Minor.",
+      "name": "Economics Minor",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Principles of Economics",
+            "Introductory Economics",
+            "Intermediate Microeconomic Theory"
+          ]
+        }
+      ]
+    },
+    "Economics of Banking and Finance Minor": {
+      "description": "The Minor in Economics of Banking and Finance consists of 16 credits from the following template:",
+      "name": "Economics of Banking and Finance Minor",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Principles of Economics",
+            "Introductory Economics"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Intermediate Microeconomic Theory",
+            "Intermediate Macroeconomic Theory"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Money and Banking",
+            "Economics of Financial Institutions and Markets",
+            "Behavioral Financial Economics"
+          ]
+        }
+      ]
+    },
+    "Economics of Decision-Making": {
+      "description": "The Minor in Economics of Decision-Making consists of 16 credits from the following template:",
+      "name": "Economics of Decision-Making",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Principles of Economics",
+            "Introductory Economics"
+          ]
+        },
+        {
+          "amount": 3,
+          "courses": [
+            "Applied Game Theory",
+            "Behavioral Economics",
+            "Behavioral Financial Economics",
+            "Economic Models of Decision-Making"
+          ]
+        }
+      ]
+    },
+    "Economics of Healthcare Markets Minor": {
+      "description": "The minor in Economics of Healthcare Markets is a 16-credit requirement using the following template:",
+      "name": "Economics of Healthcare Markets Minor",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Intermediate Microeconomic Theory",
+            "Principles of Economics",
+            "Introductory Economics"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Health Economics and Policy",
+            "Behavioral Economics",
+            "Economics of Biotech and Medical Innovations"
+          ]
+        }
+      ]
+    },
+    "Economics of Policy and Regulations": {
+      "description": "The minor in Economics of Policy and Regulations is a 16-credit requirement using the following template:",
+      "name": "Economics of Policy and Regulations",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Introductory Economics",
+            "Principles of Economics",
+            "Intermediate Microeconomic Theory"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Economics of Government Regulation and Firm Strategy",
+            "Law and Economics",
+            "Health Economics and Policy",
+            "Environmental Economics",
+            "Cost-Benefit Analysis"
+          ]
+        }
+      ]
+    },
+    "Economics of Quantitative Modeling": {
+      "description": "The Economics of Quantitative Modeling Minor consists of 16 credits from the following template:",
+      "name": "Economics of Quantitative Modeling",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Introductory Economics",
+            "Principles of Economics",
+            "Intermediate Microeconomic Theory"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Econometric Methods for Big Data",
+            "Econometrics",
+            "Experimental Economics",
+            "Cost-Benefit Analysis"
+          ]
+        }
+      ]
+    },
+    "Economics of Technology and Innovation Minor": {
+      "description": "The Minor in Economics of Technology and Regulation requires 16 credits from the following:",
+      "name": "Economics of Technology and Innovation Minor",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Introductory Economics",
+            "Principles of Economics",
+            "Intermediate Microeconomic Theory"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Economics of Innovation and New Technologies",
+            "Economics of Biotech and Medical Innovations",
+            "Economics of Growth & Innovation"
+          ]
+        }
+      ]
+    },
+    "Electrical Engineering Minor": {
+      "description": "A minor in Electrical Engineering consists of at least 15 credits from the courses below. Courses for the minor may not be taken on a Pass/No Credit basis.  No more than 50% of the course credits applied to the minor requirement may be drawn from credits applied to the major.  No course which is required for one minor can be used for another minor requirement. Students wishing to fulfill a minor need an approval from the ECSE curriculum chair.",
+      "name": "Electrical Engineering Minor",
+      "requirements": []
+    },
+    "Entrepreneurship Minor": {
+      "description": "The minor in entrepreneurship usually consists of the following four courses:",
+      "name": "Entrepreneurship Minor",
+      "requirements": [
+        {
+          "amount": 4,
+          "courses": [
+            "Management in the Digital Age",
+            "Invention, Innovation, and Entrepreneurship",
+            "Introduction to Technological Entrepreneurship",
+            "Starting Up a New Venture"
+          ]
+        }
+      ]
+    },
+    "Environmental Design": {
+      "description": "The minor in Environmental Design is a 17-credit cross-school, interdisciplinary minor focused on developing skills related to environmentally sustainable design while developing students' critical understanding of the social and cultural context of sustainability debates and environmental justice. As an interdisciplinary minor, students are required to take at least one course from the School of Humanities, Arts, and Social Sciences and one course from the School of Architecture, with the remaining credits being freely selected from applicable courses. Courses are offered at both the Troy campus as well as CASE in New York City, enabling students to spend a semester at CASE while fulfilling minor requirements.Students are strongly recommended to use their HASS Core, namely the Sustainability or Environmental Futures pathways towards this minor.",
+      "name": "Environmental Design",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Environment and Society",
+            "Environmental Parametrics"
+          ]
+        },
+        {
+          "amount": 3,
+          "courses": [
+            "Research Investigations: Project Built Ecologies",
+            "Materials Systems and Productions",
+            "Sustainability Debates",
+            "Environmental Justice",
+            "Environmental Media & Data",
+            "Politics of Design",
+            "Design and Innovation Studio A",
+            "Sustainability Education"
+          ]
+        }
+      ]
+    },
+    "Environmental Engineering Minor": {
+      "description": "Students not majoring in environmental engineering may receive a minor in this discipline by completing four required courses and one elective.",
+      "name": "Environmental Engineering Minor",
+      "requirements": [
+        {
+          "amount": 4,
+          "courses": [
+            "Introduction to Environmental Engineering",
+            "Environmental Chemodynamics",
+            "Physicochemical Processes in Environmental Engineering",
+            "Biological Processes in Environmental Engineering"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Solid and Hazardous Waste Engineering",
+            "Introduction to Air Quality",
+            "Applied Hydrology and Design"
+          ]
+        }
+      ]
+    },
+    "Finance Minor": {
+      "description": "",
+      "name": "Finance Minor",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Financial Accounting in the Digital Age",
+            "Managerial Finance"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Financial Trading and Investing",
+            "Investments I",
+            "Advanced Corporate Finance",
+            "Risk Management",
+            "Derivatives Markets"
+          ]
+        }
+      ]
+    },
+    "General Psychology Minor": {
+      "description": "The customized minor is designed for students who want to sample a variety of topics within psychology or select a set of courses that share a common theme.",
+      "name": "General Psychology Minor",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introduction to Psychological Science"
+          ]
+        }
+      ]
+    },
+    "Geology Minor": {
+      "description": "Students not majoring in geology may take a minor by completing from the ERTH group at least 16 credit hours, 8 of which should be at the 4000 level. ERTH 1030 and ERTH 1040 (Natural Sciences) do not count towards the minor.",
+      "name": "Geology Minor",
+      "requirements": []
+    },
+    "Graphic Design Minor": {
+      "description": "Study graphic design through the integration of theory and practice, in print and digital media. Use creative and critical thinking to solve visual communication problems and reach target audiences with words, symbols, and images.",
+      "name": "Graphic Design Minor",
+      "requirements": [
+        {
+          "amount": 4,
+          "courses": [
+            "Typography",
+            "Introduction to Graphic Design",
+            "Visual Poetics and Narrative",
+            "Visual Design: Theory and Application",
+            "Interactive Data Visualization",
+            "Interface Design: Hypermedia Theory and Application",
+            "Media and Society",
+            "Life in Color",
+            "2D Motion Graphics",
+            "Brand Identity Design"
+          ]
+        }
+      ]
+    },
+    "History Minor": {
+      "description": "The minor in History is designed for students interested in the U.S. and world history. Courses primarily focus on the social history and evolution of technology, scientific enterprise, medicine, and law. A minor in History requires completion of 16 credits from the following:",
+      "name": "History Minor",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "A Century of Environmental Thought",
+            "War and Technology: Past, Present, and Future",
+            "Science, Technology, and Society"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "American History"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "History of Medicine",
+            "Drugs in History",
+            "History of Mental Health",
+            "History of American Technology",
+            "History of Science and Technology",
+            "Consumer Culture"
+          ]
+        }
+      ]
+    },
+    "Hydrogeology Minor": {
+      "description": "Students not majoring in hydrogeology may take a minor by taking the following courses and electing from the ERTH group at least two additional courses except for ERTH 1030 and ERTH 1040.",
+      "name": "Hydrogeology Minor",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Environmental Geology",
+            "Groundwater Hydrology"
+          ]
+        }
+      ]
+    },
+    "Information Technology and Web Science Minor": {
+      "description": "The ITWS minor requires 16 credit hours that must be approved by the minor adviser in ITWS.",
+      "name": "Information Technology and Web Science Minor",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Introduction to Information Technology and Web Science",
+            "Web Systems Development",
+            "Managing IT Resources"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "IT and Society"
+          ]
+        }
+      ]
+    },
+    "Interactive Media/Data Design Minor": {
+      "description": "This minor covers communication, interaction, and information design theory and practice to prepare students for creating different forms of interactive, multimedia communication, and data representation.",
+      "name": "Interactive Media/Data Design Minor",
+      "requirements": [
+        {
+          "amount": 4,
+          "courses": [
+            "Media and Society",
+            "Communication Theory and Practice",
+            "Introduction to Graphic Design",
+            "Foundations of HCI Usability",
+            "Information Design",
+            "Interface Design: Hypermedia Theory and Application",
+            "Interactive Narrative",
+            "Interactive Data Visualization",
+            "Writing in Context"
+          ]
+        }
+      ]
+    },
+    "Lighting Minor": {
+      "description": "The minor in lighting gives students the awareness and the confidence to extend their creative work through controlled use of light. The program covers human responses to light, both visual and non-visual, and the means by which light is produced and controlled. Interactions of light with form, texture, and color are examined in the contexts of daylight, electric lighting, and their integration. The Lighting minor requires 15 credits.",
+      "name": "Lighting Minor",
+      "requirements": [
+        {
+          "amount": 7,
+          "courses": [
+            "Lighting Design",
+            "Lighting Workshop",
+            "Lighting Technologies and Applications",
+            "Physics of Light",
+            "Human Factors in Lighting",
+            "Light and Health",
+            "Advanced Individual Projects in Lighting"
+          ]
+        }
+      ]
+    },
+    "Lighting Minor in Biological Sciences": {
+      "description": "This minor program is offered as a joint program by the Department of Biological Sciences and the Lighting Research Center.Light-dark patterns that reach the back of our eyes set the timing of the biological clock, and tell our bodies to do \"the right thing at the right time.\" A global lighting revolution is taking place because of the awareness of how profound the impact of light is in our daily lives. Humans and most terrestrial species perceive the time of day because of their internal biological or circadian clock. This circadian clock is a network of genes and proteins that regulates daily oscillations such as sleep, hormone release, rise and fall of blood pressure and body temperature, as well as other cellular functions and physiological responses. Because of this tight regulation, a disrupted circadian clock can be detrimental to daily function and human health, as evidenced by the increased rates of disease in nightshift workers and submariners, known to experience circadian disruption. Tailored lighting intervention, on the other hand, helps adolescents fall asleep earlier, premature infants be discharged from the hospital sooner, Alzheimer's disease patients sleep better, and cancer patients experience less fatigue. Because the light people are exposed to can have a profound impact on the proper timing of their circadian clocks, it is important to effectively specify, measure and apply lighting in the built environment. It is also important to understand how various species (human, mammals, and plants) respond to light. This minor will provide the foundation to understand the basic principles of how to specify, measure, and apply light to positively impact various species, and to work side-by-side with leading experts in the field in a professional project. This minor requires four courses with a minimum of 15 credits.",
+      "name": "Lighting Minor in Biological Sciences",
+      "requirements": [
+        {
+          "amount": 4,
+          "courses": [
+            "Physics of Light",
+            "Human Factors in Lighting",
+            "Light and Health",
+            "Advanced Individual Projects in Lighting"
+          ]
+        }
+      ]
+    },
+    "Linguistics Minor": {
+      "description": "",
+      "name": "Linguistics Minor",
+      "requirements": [
+        {
+          "amount": 4,
+          "courses": [
+            "The Linguistics of Computational Linguistics",
+            "Advanced Topics in Linguistics",
+            "Language-Endowed Intelligent Agents",
+            "Introduction to Linguistics",
+            "Animal Cognition and Interaction with Humans",
+            "Cross-linguistic Perspectives"
+          ]
+        }
+      ]
+    },
+    "Literature and Creative Writing Minor": {
+      "description": "The Literature and Creative Writing minor offers discussion-oriented courses across a range of literary genres and themes, with a choice of emphasis on either literature, creative writing, or both. Students will learn to read and write literary art critically and creatively, with clarity and imagination, and with sensitivity to multi-cultural expressions of diversity.",
+      "name": "Literature and Creative Writing Minor",
+      "requirements": [
+        {
+          "amount": 4,
+          "courses": [
+            "Introduction to Literature",
+            "Visual Poetics and Narrative",
+            "Interactive Narrative",
+            "Modern and Contemporary Literature",
+            "Science and Fiction",
+            "Irish Literature",
+            "Women Writers",
+            "Writing in Context",
+            "Creative Nonfiction Writing",
+            "Creative Writing:  Short Story",
+            "Fiction: From Film to the Internet"
+          ]
+        }
+      ]
+    },
+    "Management Minor": {
+      "description": "The minor in management usually consists of the following four courses:4000-level Restricted Elective (see minor adviser)",
+      "name": "Management Minor",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Management in the Digital Age",
+            "Financial Accounting in the Digital Age",
+            "Managerial Finance"
+          ]
+        }
+      ]
+    },
+    "Marketing Minor": {
+      "description": "The minor in marketing usually consists of the following three courses:",
+      "name": "Marketing Minor",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Management in the Digital Age",
+            "Marketing Principles",
+            "Marketing Research"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Consumer Behavior and Product Design",
+            "Advertising Strategy and Promotions"
+          ]
+        }
+      ]
+    },
+    "Materials Engineering Minor": {
+      "description": "Students not majoring in Materials Engineering may receive a minor in this discipline by completing 15 credit hours of courses with a MTLE designation. As general preparation for these courses, students should have taken ENGR 1600 Materials Science for Engineers. A list of suggested courses is given below. These are only suggestions, and courses can be chosen according to interest and scheduling. It is possible to take some courses out of sequence if the student is willing to put in the appropriate effort. Note, that some courses in the Department of Materials Science and Engineering are offered once a year, whereas some electives are offered only every other year.An excellent program for a Minor in Materials Engineering, giving students a solid foundation, would be to take Structure of Engineering Materials (MTLE 2100), plus any two of the 4-credit courses: Thermodynamics of Materials (MTLE 4100), Kinetics in Materials Science (MTLE 4150), Electrical and Optical Properties of Materials (MTLE 4200), Mechanical Properties of Materials (MTLE 4250), plus one 3-credit materials elective.",
+      "name": "Materials Engineering Minor",
+      "requirements": []
+    },
+    "Mathematics Minor": {
+      "description": "Students not majoring in mathematics may receive a minor in math by taking four courses at the 4000 level or above from the MATH and MATP course groups. These courses should form a coherent program and have the prior approval of the chairman of the Department of Mathematical Sciences.",
+      "name": "Mathematics Minor",
+      "requirements": []
+    },
+    "Media and Culture Minor": {
+      "description": "This minor examines different forms of expression and their cultural contexts in a variety of media, including film, television, photography, and new media. Its components will enhance creative and critical thinking, communication practices, and awareness of cultural and individual identities.",
+      "name": "Media and Culture Minor",
+      "requirements": [
+        {
+          "amount": 4,
+          "courses": [
+            "Documentary in the 21st Century: Identity Production",
+            "Media and Society",
+            "The American Dream",
+            "Perspectives on Photography",
+            "Documentary Film",
+            "Communication Theory and Practice",
+            "Critical Television",
+            "Post-Factual Media",
+            "Visual Culture",
+            "Religion, Politics, & Media",
+            "Advertising and Culture",
+            "Rethinking Documentary: Video Production"
+          ]
+        }
+      ]
+    },
+    "Music Minor": {
+      "description": "A music minor consists of 16 credits from the music curriculum. Students may select 12 credits from any combination of courses at the 1000 and 2000 levels. The remaining 4 credits should be earned at the 4000 level, or by approved substitution at the 2000 level. The courses in the music curriculum are organized in three broad categories: Music and Culture, Composition and Production, and Performance.  Students may elect to focus their selection of courses within a single category, but this is not mandatory. Students may earn the minor within or by combining courses between any of the three categories.",
+      "name": "Music Minor",
+      "requirements": [
+        {
+          "amount": 0,
+          "courses": [
+            "Topics in Deep Listening",
+            "Interdisciplinary Research Seminar",
+            "Music, Sound, & the Environment",
+            "Popular Music and Society",
+            "Topics in the History and Analysis of Music",
+            "Game Sound and Musical Play",
+            "Deep Listening",
+            "Histories of Jazz and Improvised Music",
+            "The Multimedia Century",
+            "World Music",
+            "Histories of Western Music"
+          ]
+        },
+        {
+          "amount": 0,
+          "courses": [
+            "Music and Technology I",
+            "Music and Sound I",
+            "Music and Sound II",
+            "Sound Recording and Production I",
+            "Designing Musical Games",
+            "Ensemble Nonlinear",
+            "Sound Recording and Production II",
+            "Interdisciplinary Research Seminar"
+          ]
+        },
+        {
+          "amount": 0,
+          "courses": [
+            "Rensselaer Orchestra",
+            "Chamber Music Ensemble",
+            "Ensemble Nonlinear",
+            "Contemporary Improvisation Ensemble",
+            "Private Music Lessons"
+          ]
+        }
+      ]
+    },
+    "Nuclear Engineering Minor": {
+      "description": "Students not majoring in nuclear engineering may receive a minor in this discipline by completing 1516 credit hours of study selected in consultation with their program adviser.",
+      "name": "Nuclear Engineering Minor",
+      "requirements": []
+    },
+    "Philosophy Minor": {
+      "description": "The Minor in Philosophy allows the interested student to attain a foundation in philosophy that will complement any academic major.To complete this minor, students must choose a minimum of four (4) Philosophy courses, distributed as follows:",
+      "name": "Philosophy Minor",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Minds and Machines",
+            "Introduction to Philosophy"
+          ]
+        }
+      ]
+    },
+    "Philosophy of Logic, Computation, and Mind Minor": {
+      "description": "This minor focuses on the nature of reasoning and formal systems, and the relations they bear on the study of mind and consciousness whether natural or artificial (artificial intelligence, AI).To complete this minor, students must choose a minimum of four (4) Philosophy courses distributed as follows:",
+      "name": "Philosophy of Logic, Computation, and Mind Minor",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Minds and Machines",
+            "Introduction to Philosophy"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Introduction to Logic"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Critical Thinking",
+            "Intermediate Logic",
+            "Philosophy of Artificial Intelligence",
+            "Computability and Logic",
+            "Metaphysics and Consciousness"
+          ]
+        }
+      ]
+    },
+    "Physics Minor": {
+      "description": "Students not majoring in physics may minor in this subject by taking at least 16 credit hours of physics courses (coded PHYS) at the 2000 level or higher.",
+      "name": "Physics Minor",
+      "requirements": []
+    },
+    "Psychological Science Minor": {
+      "description": "This minor is designed for students who want to gain proficiency in research methods and statistics and their application in the scientific study of behavior and mental processes.",
+      "name": "Psychological Science Minor",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Introduction to Psychological Science"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Research Methods and Statistics I",
+            "Research Methods and Statistics II"
+          ]
+        }
+      ]
+    },
+    "Public Health Minor": {
+      "description": "The minor in Public Health is designed for students interested in health-related careers who wish to develop skills and knowledge about global public health challenges. It also offers important courses for students on a pre-medical track. A minor in Public Health is completed by completing 16 credits from the following:",
+      "name": "Public Health Minor",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "The Genome and You",
+            "Introduction to Psychological Science",
+            "Science, Technology, and Society"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Sociology"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Drugs in History",
+            "Food, Farms, and Famine",
+            "Hormones, Brain, and Behavior",
+            "Health Economics and Policy",
+            "Gender, Science, and Technology",
+            "Behavioral Neuroscience",
+            "History of Mental Health",
+            "Bioethics",
+            "Medicine, Culture, and Society",
+            "Environmental Justice",
+            "History of Medicine",
+            "Drugs, Society, and Behavior"
+          ]
+        }
+      ]
+    },
+    "Science, Technology, and Society Minor": {
+      "description": "The minor in Science, Technology, and Society (STS) is designed for students broadly interested in the social and political dimensions of science, technology, engineering, and medicine. Students use political and social science methods to investigate scientific and technological developments. A minor in Science, Technology, and Society is completed by taking the following courses:",
+      "name": "Science, Technology, and Society Minor",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Science, Technology, and Society"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Environment and Society",
+            "Sociology",
+            "American History"
+          ]
+        }
+      ]
+    },
+    "Strategic Communication Minor": {
+      "description": "The minor in Strategic Communication is designed to train versatile, critical, and self-possessed communicators. Students who successfully complete this minor will demonstrate the ability to make focused, audience-appropriate arguments and communicate effectively across diverse rhetorical, sociocultural, and disciplinary contexts.",
+      "name": "Strategic Communication Minor",
+      "requirements": [
+        {
+          "amount": 4,
+          "courses": [
+            "Communication Theory and Practice",
+            "Advertising and Culture",
+            "Language and Power",
+            "Writing in Context",
+            "Strategic Writing",
+            "Speech Communication",
+            "Writing and Response",
+            "Research Writing",
+            "Proposing and Persuading"
+          ]
+        }
+      ]
+    },
+    "Studio Arts": {
+      "description": "A studio arts minor consists of 16 credits from the studio arts curriculum, which includes courses in drawing, painting, and sculpture. All studio arts minors must take three studio courses, and at least one of these must be at the 4000 level. The remaining 4 credits may be filled by another studio course or an art history course.",
+      "name": "Studio Arts",
+      "requirements": [
+        {
+          "amount": 3,
+          "courses": [
+            "Basic Drawing",
+            "Graphic Storytelling",
+            "Radical Graphics/Screenprinting",
+            "Intermediate Drawing",
+            "Sculpture I",
+            "Fundamentals of 2D Design",
+            "Advanced Drawing",
+            "Sculpture II",
+            "Painting",
+            "Life Drawing and Anatomy for Artists"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Art History",
+            "The Multimedia Century"
+          ]
+        }
+      ]
+    },
+    "Sustainability Studies Minor": {
+      "description": "The minor in Sustainability Studies focuses on the interactions between various systems—social, political, cultural, economic, technological, and ecological —that undergird environmental sustainability. Students use interdisciplinary approaches to investigate environmental problems. A minor in Sustainability Studies is completed by taking 16 credits from the following:",
+      "name": "Sustainability Studies Minor",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Environment and Society"
+          ]
+        },
+        {
+          "amount": 1,
+          "courses": [
+            "Nature/Society",
+            "Sustainability Debates",
+            "A Century of Environmental Thought",
+            "Science, Technology, and Society"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Sustainability and STS Careers",
+            "Environmental Philosophy",
+            "History of American Technology",
+            "Consumer Culture",
+            "Food, Farms, and Famine",
+            "Sustainability Education",
+            "Politics of Design",
+            "Globalization and Development",
+            "Environmental Justice",
+            "Environmental Media & Data"
+          ]
+        }
+      ]
+    },
+    "Video, Performance, and Social Practice": {
+      "description": "The minor allows students to study video, performance and social impact through the integration of theory and practice. Students are prepared to analyze and critique moving images; plan, produce and edit their own media productions in video/television and/or performance; and communicate through visual as well as audio medium. Strategically situating art, media and technology in a social context, students engage in a creative practice designed to make the change from the local to the global.The minor consists of 16 credits:",
+      "name": "Video, Performance, and Social Practice",
+      "requirements": [
+        {
+          "amount": 2,
+          "courses": [
+            "Behind the TV Screen",
+            "Digital Filmmaking",
+            "Intermediate Video",
+            "The Multimedia Century"
+          ]
+        },
+        {
+          "amount": 2,
+          "courses": [
+            "Rethinking Documentary: Video Production",
+            "Writing and Directing for Video",
+            "Science Fictions",
+            "Art, Community, and Technology",
+            "Advanced Video Media Studio",
+            "Biopunk: Arts Lab Practice",
+            "Queer Ecologies",
+            "Hactivism",
+            "Eco Chic: Living Art"
+          ]
+        }
+      ]
+    },
+    "Well-being": {
+      "description": "How do people maintain a sense of well-being in their lives? Each person's path to well-being in body and mind is unique—arising from an awareness of his or her needs, goals, and what each finds fulfilling. The Well-being minor includes a wide variety of courses that explore the nature of what it is to be human and to orient oneself in the world, to have relationships, make decisions, be creative, and make discoveries. Sixteen credits are required for the minor in Well-being.",
+      "name": "Well-being",
+      "requirements": [
+        {
+          "amount": 1,
+          "courses": [
+            "Basic Drawing",
+            "Nature/Society",
+            "Minds and Machines",
+            "Well-being: Cultivating Curiosity",
+            "The Art of Listening",
+            "Music, Sound, & the Environment"
+          ]
+        },
+        {
+          "amount": 3,
+          "courses": [
+            "Positive Psychology",
+            "Introduction to Psychological Science",
+            "Creative Nonfiction Writing",
+            "Hormones, Brain, and Behavior",
+            "Stress and the Brain",
+            "Rensselaer Concert Choir",
+            "Sensibilities",
+            "Ethics",
+            "Creative Writing:  Short Story",
+            "Psychology of Mindfulness",
+            "Drugs, Society, and Behavior"
+          ]
+        }
+      ]
+    },
+    "Writing Minor": {
+      "description": "This minor offers students the opportunity to write in a variety of genres, media, and contexts. They may choose from regularly offered courses in strategic, creative, or academic writing.",
+      "name": "Writing Minor",
+      "requirements": [
+        {
+          "amount": 4,
+          "courses": [
+            "Writing in Context",
+            "Strategic Writing",
+            "Creative Nonfiction Writing",
+            "Creative Writing:  Short Story",
+            "Speech Communication",
+            "Proposing and Persuading",
+            "Research Writing",
+            "Writing and Response"
+          ]
+        }
+      ]
     }
+  }
 }
