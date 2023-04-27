@@ -56,30 +56,30 @@
         {
           "amount": 2,
           "courses": [
-            "Stars, Galaxies, and the Cosmos",
-            "Macroscopic Physical Chemistry",
-            "Modern Techniques in Chemistry",
-            "Molecular Biology",
-            "Instrumental Methods of Analysis",
-            "Isotope Geochemistry",
-            "Earth Materials",
-            "Organic Geochemistry",
-            "Earth and Sky",
-            "Molecular Biochemistry II",
-            "Mass Spectrometry",
-            "Chemistry of the Environment",
-            "Genetics and Evolution",
-            "Molecular Biology Laboratory",
-            "Introduction to Astrobiology",
-            "Physical Chemistry for Life Sciences",
-            "Introductory Astronomy and Astrophysics",
-            "Organic Chemistry I",
-            "Introduction to Geobiology",
             "Aqueous Geochemistry",
             "Molecular Biochemistry I",
+            "Organic Geochemistry",
+            "Introductory Astronomy and Astrophysics",
+            "Physical Chemistry for Life Sciences",
+            "Stars, Galaxies, and the Cosmos",
+            "Introduction to Cell and Molecular Biology",
+            "Chemistry of the Environment",
+            "Modern Techniques in Chemistry",
+            "Molecular Biology Laboratory",
             "Evolution",
+            "Earth Materials",
+            "Molecular Biology",
+            "Isotope Geochemistry",
+            "Introduction to Astrobiology",
+            "Mass Spectrometry",
+            "Earth and Sky",
             "Introduction to Geochemistry",
-            "Introduction to Cell and Molecular Biology"
+            "Introduction to Geobiology",
+            "Macroscopic Physical Chemistry",
+            "Genetics and Evolution",
+            "Organic Chemistry I",
+            "Molecular Biochemistry II",
+            "Instrumental Methods of Analysis"
           ]
         }
       ]
@@ -143,12 +143,12 @@
         {
           "amount": 3,
           "courses": [
+            "Cognition and the Brain",
             "Introduction to Cognitive Neuroscience",
             "Hormones, Brain, and Behavior",
             "Stress and the Brain",
-            "Behavioral Neuroscience",
-            "Cognition and the Brain",
-            "Drugs, Society, and Behavior"
+            "Drugs, Society, and Behavior",
+            "Behavioral Neuroscience"
           ]
         }
       ]
@@ -876,11 +876,11 @@
         {
           "amount": 4,
           "courses": [
-            "The Linguistics of Computational Linguistics",
             "Advanced Topics in Linguistics",
-            "Language-Endowed Intelligent Agents",
-            "Introduction to Linguistics",
             "Animal Cognition and Interaction with Humans",
+            "Language-Endowed Intelligent Agents",
+            "The Linguistics of Computational Linguistics",
+            "Introduction to Linguistics",
             "Cross-linguistic Perspectives"
           ]
         }
@@ -983,17 +983,17 @@
         {
           "amount": 0,
           "courses": [
+            "World Music",
+            "The Multimedia Century",
             "Topics in Deep Listening",
-            "Interdisciplinary Research Seminar",
-            "Music, Sound, & the Environment",
-            "Popular Music and Society",
-            "Topics in the History and Analysis of Music",
+            "Histories of Jazz and Improvised Music",
             "Game Sound and Musical Play",
             "Deep Listening",
-            "Histories of Jazz and Improvised Music",
-            "The Multimedia Century",
-            "World Music",
-            "Histories of Western Music"
+            "Histories of Western Music",
+            "Topics in the History and Analysis of Music",
+            "Interdisciplinary Research Seminar",
+            "Music, Sound, & the Environment",
+            "Popular Music and Society"
           ]
         },
         {
@@ -1113,18 +1113,18 @@
         {
           "amount": 1,
           "courses": [
-            "Drugs in History",
-            "Food, Farms, and Famine",
-            "Hormones, Brain, and Behavior",
-            "Health Economics and Policy",
-            "Gender, Science, and Technology",
-            "Behavioral Neuroscience",
-            "History of Mental Health",
-            "Bioethics",
-            "Medicine, Culture, and Society",
-            "Environmental Justice",
             "History of Medicine",
-            "Drugs, Society, and Behavior"
+            "Behavioral Neuroscience",
+            "Gender, Science, and Technology",
+            "Hormones, Brain, and Behavior",
+            "Drugs in History",
+            "Drugs, Society, and Behavior",
+            "History of Mental Health",
+            "Health Economics and Policy",
+            "Bioethics",
+            "Food, Farms, and Famine",
+            "Environmental Justice",
+            "Medicine, Culture, and Society"
           ]
         }
       ]
@@ -1280,17 +1280,17 @@
         {
           "amount": 3,
           "courses": [
-            "Positive Psychology",
+            "Ethics",
             "Introduction to Psychological Science",
-            "Creative Nonfiction Writing",
+            "Creative Writing:  Short Story",
             "Hormones, Brain, and Behavior",
-            "Stress and the Brain",
+            "Creative Nonfiction Writing",
             "Rensselaer Concert Choir",
             "Sensibilities",
-            "Ethics",
-            "Creative Writing:  Short Story",
-            "Psychology of Mindfulness",
-            "Drugs, Society, and Behavior"
+            "Drugs, Society, and Behavior",
+            "Positive Psychology",
+            "Stress and the Brain",
+            "Psychology of Mindfulness"
           ]
         }
       ]

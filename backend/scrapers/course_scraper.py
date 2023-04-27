@@ -12,7 +12,7 @@ from degree_util import subjs, root, get_catalogs, clean_str, norm_str, trim_spa
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
 # It is ok to publish this key because I found it online already public
 DEFAULT_QUERY_PARAMS = "?key=3eef8a28f26fb2bcc514e6f1938929a1f9317628&format=xml"
-CHUNK_SIZE = 500
+CHUNK_SIZE = 100
 
 # Returns a list of course ids for a given catalog
 def get_course_ids(catalog_id: str) -> List[str]:

@@ -1,19 +1,45 @@
 {
   "2022-2023": {
     "Aeronautical Engineering Curriculum": {
-      "credits": 51,
+      "credits": 130,
       "description": "Freshmen or sophomores who have identified aeronautical engineering as their major may follow the baccalaureate program below in lieu of the general core engineering program. Dual major programs which lead to a single baccalaureate degree embracing two fields are also available and are described in more detail in the MANE Handbook (emailed to you when you declare a major in MANE, and available from the MANE Student Services Office, JEC 2012).",
       "extra": [],
       "name": "Aeronautical Engineering Curriculum",
       "requirements": {
+        "Aerodynamics": 4,
+        "Aeroelasticity and Structural Vibrations": 3,
+        "Aerospace Structures Laboratory": 2,
+        "Aerospace Structures and Materials": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Control Systems Laboratory": 2,
+        "Engineering Dynamics": 4,
+        "Engineering Graphics and CAD": 1,
+        "Engineering Processes": 1,
+        "Fluid Dynamics Laboratory": 2,
+        "Fluid Mechanics": 3,
         "Free": 12,
+        "Fundamentals of Flight": 1,
         "HASS": 20,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Engineering Analysis": 4,
         "MANE 4.... Aerospace Technical": 3,
         "MANE 4.... Capstone Design": 3,
         "MANE 4.... Computation": 3,
         "MANE 4.... Flight Mechanics": 4,
+        "Modeling and Analysis of Uncertainty": 3,
+        "Modeling and Control of Dynamic Systems": 3,
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "Numerical Methods and Programming for Engineers": 3,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Professional Development Leadership Competencies": 1,
+        "Propulsion Systems": 3,
         "STSO 4100 Professional Development II": 2,
-        "SoE 2.... Engineering Design": 4
+        "SoE 2.... Engineering Design": 4,
+        "Strength of Materials": 4,
+        "Thermodynamics": 3
       },
       "template": {
         "1-Fall": [
@@ -75,7 +101,7 @@
       }
     },
     "Applied Physics": {
-      "credits": 60,
+      "credits": 125,
       "description": "",
       "extra": [
         "Optical Physics",
@@ -87,12 +113,30 @@
       ],
       "name": "Applied Physics",
       "requirements": {
+        "A Passion for Physics": 1,
+        "Advanced Calculus": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Computer Science I": 4,
         "Culminating Experience": 4,
         "Elective": 4,
+        "Electromagnetic Theory": 4,
+        "Experimental Physics": 4,
         "Free": 8,
         "HASS": 24,
+        "Introduction to Biology": 3,
+        "Introduction to Biology Laboratory": 1,
+        "Introduction to Differential Equations": 4,
+        "Introductory Classical Dynamics": 4,
+        "Introductory Electromagnetic Theory": 4,
+        "Introductory Modern Physics": 4,
         "MATH": 4,
-        "Technical": 16
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "Quantum Physics I": 4,
+        "Technical": 16,
+        "Theoretical Mechanics": 4,
+        "Thermodynamics and Statistical Mechanics": 4
       },
       "template": {
         "1-Fall": [
@@ -147,7 +191,7 @@
       }
     },
     "Architecture": {
-      "credits": 40,
+      "credits": 142,
       "description": "This five-year undergraduate professional program is a first professional degree accredited by the National Architectural Accreditation Board. The program is for a limited number of qualified students committed to the study of architecture. These students are admitted directly to the professional degree program and begin studies in architecture in the first year.",
       "extra": [
         "Professional Elective Credit Hours: 2",
@@ -162,11 +206,43 @@
       ],
       "name": "Architecture",
       "requirements": {
+        "An Architectural Genealogy": 3,
+        "Architectural Case Studies": 2,
+        "Architectural Design Studio 1": 5,
+        "Architectural Design Studio 2": 5,
+        "Architectural Design Studio 3": 5,
+        "Architectural Design Studio 4": 5,
+        "Architectural Design Studio 5": 5,
+        "Architectural Design Studio 6": 5,
+        "Architectural Media": 2,
+        "Building Systems and Environment": 4,
+        "Calculus for Architecture Management and HASS": 4,
+        "Cities and Their Territories": 2,
+        "Cloud Atlas 20th Century Architecture Culture and Civilization": 3,
+        "Construction Systems": 2,
+        "Contemporary Design Approaches": 3,
+        "Digital Constructs 1": 2,
+        "Digital Constructs 2": 2,
+        "Digital Constructs 3": 2,
+        "Digital Constructs 4": 2,
         "Elective": 4,
+        "Energy Comfort and Ecology": 2,
+        "Entrepreneurship and Architecture": 2,
+        "Environmental and Ecological Systems": 4,
+        "General Physics": 4,
         "HASS": 20,
+        "Integrated Design Development": 5,
+        "Integrated Design Schematic": 5,
         "MATH": 4,
+        "Materials and Design": 2,
+        "Materials and Enclosures": 2,
         "Professional": 4,
-        "SCIS": 8
+        "Professional Practice 1": 2,
+        "Professional Practice 2": 2,
+        "SCIS": 8,
+        "Structures 1": 3,
+        "Structures 2": 3,
+        "The Ethos of Architecture": 3
       },
       "template": {
         "1-Fall": [
@@ -231,14 +307,37 @@
       }
     },
     "Biological Neuroscience": {
-      "credits": 52,
+      "credits": 128,
       "description": "Neuroscience is the study of the structure and function of the brain and nervous system. This field is highly interdisciplinary with scientists and engineers from many different backgrounds using multiple experimental approaches. At Rensselaer through the Department of Biological Sciences, we offer a Program in Biological Neuroscience, which will involve both foundational and advanced coursework.",
       "extra": [],
       "name": "Biological Neuroscience",
       "requirements": {
         "Advanced Biology Laboratory Option": 6,
+        "Advanced Cell Biology": 4,
+        "Biostatistics": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Cellular Neuroscience": 4,
+        "Chemistry I with Advanced Lab": 4,
+        "Chemistry II": 4,
+        "Developmental Biology": 4,
         "Free": 22,
-        "HASS": 24
+        "From Neuron to Behavior": 4,
+        "Genetics and Evolution": 4,
+        "HASS": 24,
+        "Human Physiology": 4,
+        "Introduction to Biology": 3,
+        "Introduction to Biology Laboratory": 1,
+        "Introduction to Cell and Molecular Biology": 3,
+        "Introduction to Cellular and Molecular Biology Laboratory": 1,
+        "Molecular Biochemistry I": 4,
+        "Molecular Biology": 4,
+        "Organic Chemistry I": 3,
+        "Organic Chemistry II": 3,
+        "Organic Chemistry Laboratory I": 1,
+        "Organic Chemistry Laboratory II": 1,
+        "Physics I": 4,
+        "Physics II": 4
       },
       "template": {
         "1-Fall": [
@@ -296,14 +395,32 @@
       }
     },
     "Biology": {
-      "credits": 56,
+      "credits": 112,
       "description": "The undergraduate curriculum in biology is designed to prepare students for admission to graduate or professional school or to enter the workplace. Recognizing that flexibility is essential for students with specific interests and goals other than those spelled out in the traditional curricula, it is designed to leave many options open to the student. The following is a sample biology curriculum, completion of which requires a minimum of 128 credit hours.",
       "extra": [],
       "name": "Biology",
       "requirements": {
         "BIOL - Biology": 12,
+        "Biostatistics": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I with Advanced Lab": 4,
+        "Chemistry II": 4,
         "Elective": 20,
-        "HASS": 24
+        "Genetics and Evolution": 4,
+        "HASS": 24,
+        "Introduction to Biology": 3,
+        "Introduction to Biology Laboratory": 1,
+        "Introduction to Cell and Molecular Biology": 3,
+        "Introduction to Cellular and Molecular Biology Laboratory": 1,
+        "Molecular Biochemistry I": 4,
+        "Molecular Biology": 4,
+        "Organic Chemistry I": 3,
+        "Organic Chemistry II": 3,
+        "Organic Chemistry Laboratory I": 1,
+        "Organic Chemistry Laboratory II": 1,
+        "Physics I": 4,
+        "Physics II": 4
       },
       "template": {
         "1-Fall": [
@@ -357,7 +474,7 @@
       }
     },
     "Biomedical Engineering": {
-      "credits": 44,
+      "credits": 128,
       "description": "In lieu of the general core engineering program presented earlier, students who identify biomedical engineering as their discipline may follow the program outlined below. This curriculum requires a minimum of 128 credits.",
       "extra": [
         "BME Technical Electives and Specialization Areas",
@@ -365,9 +482,35 @@
       ],
       "name": "Biomedical Engineering",
       "requirements": {
+        "Advanced Systems Physiology": 4,
         "BME Tech": 12,
+        "Bioimaging and Bioinstrumentation": 4,
+        "Biomaterials Science and Engineering": 4,
+        "Biomechanics": 4,
+        "Biomedical Engineering Design": 3,
+        "Biomedical Engineering Laboratory": 4,
+        "Biomedical Product Development and Commercialization": 3,
+        "Biomedical Transport Phenomena": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Engineering Graphics and CAD": 1,
+        "Engineering Processes": 1,
         "Free": 12,
-        "HASS": 20
+        "HASS": 20,
+        "Introduction to Cell and Molecular Biology": 3,
+        "Introduction to Cellular and Molecular Biology Laboratory": 1,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Engineering Analysis": 4,
+        "Introduction to Engineering Design": 4,
+        "Modeling and Analysis of Uncertainty": 3,
+        "Modeling of Biomedical Systems": 3,
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Professional Development 2 Technical Issues and Solutions": 2,
+        "Professional Development Leadership Competencies": 1,
+        "Programming for BME": 3
       },
       "template": {
         "1-Fall": [
@@ -428,7 +571,7 @@
       }
     },
     "Biotechnology and Health Economics": {
-      "credits": 54,
+      "credits": 124,
       "description": "The B.S. in Biotechnology and Health Economics provides students with a combination of skills in the biosciences, biotechnology, and economics. We anticipate substantial demand from various sectors in industry and consulting for majors from this program. The combination of skills in complementary areas of biotechnology, sciences and economics is increasingly in demand in industry and consulting. Skilled and quantitatively-trained personnel are often required to analyze not only the scientific side and emergence of new technologies, but also the economic implications for firms related to their pricing, investment, and innovation strategies, as well as the interface with economic and regulatory policy.",
       "extra": [
         "Data Analytics Focus Area",
@@ -440,11 +583,31 @@
       ],
       "name": "Biotechnology and Health Economics",
       "requirements": {
+        "Behavioral Economics": 4,
+        "Biochemistry Laboratory": 6,
         "Biotech and Health Economics Concentration Course #1": 4,
         "Biotech and Health Economics Concentration Course #2": 4,
         "Biotech and Health Economics Concentration Course #3": 4,
         "Biotech and Health Economics Concentration Course #4": 4,
-        "Free": 38
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I with Advanced Lab": 4,
+        "Chemistry II": 4,
+        "Econometrics": 4,
+        "Economics of Biotech and Medical Innovations": 4,
+        "Free": 38,
+        "Health Economics and Policy": 4,
+        "Intermediate Microeconomic Theory": 4,
+        "Introduction to Biology": 3,
+        "Introduction to Biology Laboratory": 1,
+        "Introduction to Cell and Molecular Biology": 3,
+        "Introduction to Cellular and Molecular Biology Laboratory": 1,
+        "Molecular Biochemistry I": 4,
+        "Organic Chemistry I": 3,
+        "Organic Chemistry Laboratory I": 1,
+        "Physics I": 4,
+        "Principles of Economics": 4,
+        "Readings in Economics": 4
       },
       "template": {
         "1-Fall": [
@@ -500,22 +663,44 @@
       }
     },
     "Building Sciences B.S.": {
-      "credits": 70,
+      "credits": 138,
       "description": "The four-year Bachelor of Science degree in Building Sciences prepares students for the broad range of roles and opportunities presented by the building industry. The building sciences focus on the design and construction of building systems such as structures, enclosures, environmental systems, lighting, and acoustics as well as their management, performance, and building diagnostics. The degree consists of 130 credits.",
       "extra": [],
       "name": "Building Sciences B.S.",
       "requirements": {
+        "Architectural Case Studies": 2,
+        "Architectural Design Studio 1": 5,
+        "Architectural Media": 2,
+        "Building Performance Studio 1": 5,
+        "Building Performance Studio 2": 5,
+        "Building Sciences Capstone": 4,
+        "Building Systems and Environment": 4,
+        "Calculus for Architecture Management and HASS": 4,
         "Concentration 1": 4,
         "Concentration 2": 4,
         "Concentration 3": 4,
         "Concentration 4": 4,
+        "Construction Industry Seminar 1": 2,
+        "Construction Industry Seminar 2": 2,
+        "Construction Systems": 2,
+        "Digital Constructs 1": 2,
         "Elective": 8,
+        "Energy Comfort and Ecology": 2,
+        "Environmental and Ecological Systems": 4,
         "Fall Fourth year.": 4,
         "Fall Fourth year.This course is required in either Fall Third year": 4,
         "Free": 4,
+        "General Physics": 4,
         "HASS": 24,
+        "Materials and Design": 2,
+        "Materials and Enclosures": 2,
+        "Mathematical Methods in Management and Economics": 4,
         "Professional": 2,
-        "SCIS": 8
+        "Professional Practice 2": 2,
+        "SCIS": 8,
+        "Structures 1": 3,
+        "Structures 2": 3,
+        "The Ethos of Architecture": 3
       },
       "template": {
         "1-Fall": [
@@ -577,15 +762,30 @@
       }
     },
     "Business Analytics": {
-      "credits": 24,
+      "credits": 82,
       "description": "",
       "extra": [],
       "name": "Business Analytics",
       "requirements": {
         ".": 4,
+        "Calculus I": 4,
+        "Computer Information Systems": 4,
+        "Computer Science I": 4,
+        "Econometric Methods for Big Data": 4,
+        "Econometrics": 4,
         "HASS": 4,
+        "Introduction to Machine Learning Applications": 4,
         "MGMT 4870 - Strategy and Policy Capstone": 2,
-        "SCIS": 14
+        "Management Professional Development 1": 2,
+        "Management in the Digital Age": 4,
+        "Managerial Finance": 4,
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "Operations Management": 4,
+        "Organizational Behavior in High Performance Organizations": 4,
+        "Principles of Economics": 4,
+        "Quantitative Methods for Business": 4,
+        "SCIS": 14,
+        "Statistical Methods": 4
       },
       "template": {
         "1-Fall": [
@@ -629,7 +829,7 @@
       }
     },
     "Business and Management": {
-      "credits": 28,
+      "credits": 108,
       "description": "This four-year B.S. in Business and Management program requires a minimum of 124 credit hours. A typical program is described below.",
       "extra": [
         "Entrepreneurship - Any three:",
@@ -646,8 +846,29 @@
       "name": "Business and Management",
       "requirements": {
         ".": 4,
+        "Business Law and Ethics": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Calculus for Architecture Management and HASS": 4,
+        "Computer Information Systems": 4,
+        "Computer Science I": 4,
         "Elective": 20,
-        "HASS": 4
+        "Financial Accounting in the Digital Age": 4,
+        "HASS": 4,
+        "Human Resources in High Performance Organizations": 4,
+        "Introduction to Data Management and Analytics": 4,
+        "Management Professional Development 1": 2,
+        "Management Professional Development 2": 2,
+        "Management in the Digital Age": 4,
+        "Managerial Finance": 4,
+        "Marketing Principles": 4,
+        "Mathematical Methods in Management and Economics": 4,
+        "Operations Management": 4,
+        "Organizational Behavior in High Performance Organizations": 4,
+        "Principles of Economics": 4,
+        "Quantitative Methods for Business": 4,
+        "Statistical Methods": 4,
+        "Strategy and Policy": 4
       },
       "template": {
         "1-Fall": [
@@ -697,15 +918,48 @@
       }
     },
     "Chemical Engineering": {
-      "credits": 38,
+      "credits": 135,
       "description": "The chemical engineering program comprises a minimum of 41 courses, which include three free electives and three area electives: one in advanced chemistry, one in advanced chemical engineering, and one in a nonchemical engineering area. On completion of three years of the baccalaureate program, the student may continue to the fourth year or be admitted to the professional program. While individual variations may be made in the course sequence in consultation with a faculty adviser, all listed courses and elective credits in the curricula must be satisfactorily completed to qualify for the specified degrees. A program outline that indicates required courses and electives is provided below. The complete curriculum totals 131 credit hours.",
       "extra": [],
       "name": "Chemical Engineering",
       "requirements": {
+        "Bioprocessing Laboratory Course": 3,
         "CHME 4XXX Chemical Engineering": 3,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemical Engineering Laboratory I": 3,
+        "Chemical Engineering Laboratory II": 3,
+        "Chemical Engineering Separations": 3,
+        "Chemical Process Design Applications": 3,
+        "Chemical Process Design Fundamentals": 3,
+        "Chemical Process Dynamics and Control": 4,
+        "Chemical Reactor Design": 3,
+        "Chemistry I with Advanced Lab": 4,
+        "Energy Entropy and Equilibrium": 3,
         "Engineering": 3,
+        "Engineering Communications": 1,
+        "Engineering Graphics and CAD": 1,
         "Free": 12,
-        "HASS": 20
+        "Fundamentals of Chemical Engineering": 4,
+        "HASS": 20,
+        "Introduction to Cell and Molecular Biology": 3,
+        "Introduction to Cellular and Molecular Biology Laboratory": 1,
+        "Introduction to Chemical Engineering": 1,
+        "Introduction to Computational Chemical Engineering": 3,
+        "Introduction to Differential Equations": 4,
+        "Material Energy and Entropy Balances": 3,
+        "Microscopic Physical Chemistry": 3,
+        "Modeling and Analysis of Uncertainty": 3,
+        "Modern Techniques in Chemistry": 4,
+        "Organic Chemistry I": 3,
+        "Organic Chemistry II": 3,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Professional Development 2 Technical Issues and Solutions": 2,
+        "Professional Development Group Dynamics": 1,
+        "Professional Development Leadership Competencies": 1,
+        "Transport Phenomena I": 4,
+        "Transport Phenomena II": 4
       },
       "template": {
         "1-Fall": [
@@ -770,15 +1024,41 @@
       }
     },
     "Chemistry - Chemical Biology Track": {
-      "credits": 43,
+      "credits": 127,
       "description": "refers to the application of Chemistry to biological problems. The \"",
       "extra": [],
       "name": "Chemistry - Chemical Biology Track",
       "requirements": {
+        "Biochemistry Laboratory": 6,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I with Advanced Lab": 4,
+        "Chemistry II": 4,
+        "Chemistry for Life": 1,
         "Elective": 12,
         "Electives Credit hours 3": 3,
         "Electives Credit hours: 4": 4,
-        "HASS": 24
+        "Equilibrium Chemistry and Quantitative Analysis": 3,
+        "Experimental Chemistry I Analytical Techniques": 2,
+        "Experimental Chemistry II Synthesis and Characterization": 3,
+        "Experimental Chemistry III Abridged Physical Methods": 2,
+        "Experimental Chemistry IV Physical and Instrumental Methods": 3,
+        "Genetics and Evolution": 4,
+        "HASS": 24,
+        "Inorganic Chemistry I": 3,
+        "Instrumental Methods of Analysis": 3,
+        "Introduction to Cell and Molecular Biology": 3,
+        "Introduction to Differential Equations": 4,
+        "Macroscopic Physical Chemistry": 3,
+        "Microscopic Physical Chemistry": 3,
+        "Molecular Biochemistry I": 4,
+        "Molecular Biochemistry II": 4,
+        "Organic Chemistry I": 3,
+        "Organic Chemistry II": 3,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Professional Development Seminar": 1,
+        "Senior Experience": 2
       },
       "template": {
         "1-Fall": [
@@ -837,14 +1117,42 @@
       }
     },
     "Chemistry - Industrial Chemistry Track": {
-      "credits": 44,
+      "credits": 128,
       "description": "This track is intended for students planning to go into industry and who wish to incorporate some core Chemical Engineering courses into their program. With proper choice of engineering electives students will be prepared for graduate programs in Chemical Engineering as well as in Chemistry. In particular, this program qualifies students for admission to a co-terminal MS degree program in Chemical Engineering. Students considering this option should consult with Chemical Engineering regarding choice of electives and MS course requirements.",
       "extra": [],
       "name": "Chemistry - Industrial Chemistry Track",
       "requirements": {
         "CHME": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I with Advanced Lab": 4,
+        "Chemistry II": 4,
+        "Chemistry for Life": 1,
         "Elective": 16,
-        "HASS": 24
+        "Equilibrium Chemistry and Quantitative Analysis": 3,
+        "Experimental Chemistry I Analytical Techniques": 2,
+        "Experimental Chemistry II Synthesis and Characterization": 3,
+        "Experimental Chemistry III Abridged Physical Methods": 2,
+        "Experimental Chemistry IV Physical and Instrumental Methods": 3,
+        "HASS": 24,
+        "Industrial Chemistry": 3,
+        "Inorganic Chemistry I": 3,
+        "Instrumental Methods of Analysis": 3,
+        "Introduction to Biology": 3,
+        "Introduction to Biology Laboratory": 1,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Polymer Chemistry": 3,
+        "Macroscopic Physical Chemistry": 3,
+        "Material Energy and Entropy Balances": 3,
+        "Microscopic Physical Chemistry": 3,
+        "Molecular Biochemistry I": 4,
+        "Organic Chemistry I": 3,
+        "Organic Chemistry II": 3,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Professional Development Seminar": 1,
+        "Senior Experience": 2,
+        "Transport Phenomena I": 4
       },
       "template": {
         "1-Fall": [
@@ -905,13 +1213,39 @@
       }
     },
     "Chemistry B.S.": {
-      "credits": 50,
+      "credits": 128,
       "description": "The B.S. in Chemistry curriculum is designed to meet the recommendations of the American Chemical Society Committee on Professional Training. At the same time, it provides ample opportunity for students to select electives that permit them to specialize in particular fields, to explore areas of potential interest, or to take unusual combinations of courses that will suit nontypical career goals. The program emphasizes hands-on laboratory experience and provides extensive opportunities to participate in research. Besides allowing students to prepare for careers that demand a good background in science and mathematics, the curriculum also offers a sound basis for careers in fields such as law, the health professions, management, and technical communication.",
       "extra": [],
       "name": "Chemistry B.S.",
       "requirements": {
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I with Advanced Lab": 4,
+        "Chemistry II": 4,
+        "Chemistry for Life": 1,
         "Elective": 26,
-        "HASS": 24
+        "Equilibrium Chemistry and Quantitative Analysis": 3,
+        "Experimental Chemistry I Analytical Techniques": 2,
+        "Experimental Chemistry II Synthesis and Characterization": 3,
+        "Experimental Chemistry III Inorganic and Physical Methods": 3,
+        "Experimental Chemistry IV Physical and Instrumental Methods": 3,
+        "HASS": 24,
+        "Inorganic Chemistry I": 3,
+        "Inorganic Chemistry II": 3,
+        "Instrumental Methods of Analysis": 3,
+        "Introduction to Biology": 3,
+        "Introduction to Biology Laboratory": 1,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Polymer Chemistry": 3,
+        "Macroscopic Physical Chemistry": 3,
+        "Microscopic Physical Chemistry": 3,
+        "Molecular Biochemistry I": 4,
+        "Organic Chemistry I": 3,
+        "Organic Chemistry II": 3,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Professional Development Seminar": 1,
+        "Senior Experience": 2
       },
       "template": {
         "1-Fall": [
@@ -969,7 +1303,7 @@
       }
     },
     "Civil Engineering": {
-      "credits": 49,
+      "credits": 128,
       "description": "The baccalaureate program in civil engineering leads to a B.S. degree and, for qualified students, a professional program of advanced study is available, leading to both the M.Eng. degree and B.S. degree. The civil engineering curriculum for the B.S. degree is shown below followed by a list of electives for each area of concentration. Concentrations include environmental, geotechnical, structural, transportation, and water resources engineering. A minimum of 128 credit hours is required for this curriculum.",
       "extra": [
         "Structural Engineering",
@@ -987,11 +1321,35 @@
       ],
       "name": "Civil Engineering",
       "requirements": {
+        "Applied Hydrology and Design": 4,
+        "Beginning Programming in Civil and Environmental Engineering": 1,
         "CE Design": 6,
         "CE Technical": 3,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Civil Engineering Capstone Design": 3,
+        "Engineering Dynamics": 4,
+        "Engineering Economics": 3,
+        "Engineering Graphics for Civil Engineers": 1,
+        "Fluid Mechanics for Civil and Environmental Engineering": 4,
         "Free": 12,
         "HASS": 20,
-        "SCIS": 8
+        "Introduction to Civil and Environmental Engineering": 1,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Engineering Analysis": 4,
+        "Introduction to Engineering Design": 4,
+        "Introduction to Geotechnical Engineering": 4,
+        "Introduction to Structural Engineering": 4,
+        "Introduction to Transportation Engineering": 4,
+        "Introduction to Water Resources Engineering": 4,
+        "Modeling and Analysis of Uncertainty": 3,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Professional Development 2 Technical Issues and Solutions": 2,
+        "Professional Development Leadership Competencies": 1,
+        "SCIS": 8,
+        "Strength of Materials": 4
       },
       "template": {
         "1-Fall": [
@@ -1050,14 +1408,35 @@
       }
     },
     "Cognitive Science": {
-      "credits": 60,
+      "credits": 144,
       "description": "Cognitive Science is the scientific study of cognitive phenomena such as reasoning, decision making, memory, learning, language, perception, and action. This young and emerging interdisciplinary field lies at the intersection of psychology, computer science, and philosophy, and has further important links to neuroscience, linguistics, anthropology, mathematics, biology, and education.",
       "extra": [],
       "name": "Cognitive Science",
       "requirements": {
         "And": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Cognitive Modeling": 4,
+        "Cognitive Psychology": 4,
+        "Computer Science I": 4,
+        "Data Structures": 4,
+        "Foundations of Computer Science": 4,
         "Free": 52,
-        "SCIS": 4
+        "Introduction to Algorithms": 4,
+        "Introduction to Artificial Intelligence": 4,
+        "Introduction to Cognitive Neuroscience": 4,
+        "Introduction to Cognitive Science": 4,
+        "Introduction to Linguistics": 4,
+        "Introduction to Logic": 4,
+        "Mathematical Methods in Psychological Science": 4,
+        "Metaphysics and Consciousness": 4,
+        "Minds and Machines": 4,
+        "Philosophy of Science": 4,
+        "Programming for Cognitive Science and Artificial Intelligence": 4,
+        "Research Methods and Statistics I": 4,
+        "SCIS": 4,
+        "Sensation and Perception": 4,
+        "Undergraduate Thesis": 4
       },
       "template": {
         "1-Fall": [
@@ -1108,16 +1487,23 @@
       }
     },
     "Communication, Media, and Design": {
-      "credits": 104,
+      "credits": 132,
       "description": "The B.S. in Communication, Media, and Design requires a total of 124 credit hours.",
       "extra": [],
       "name": "Communication, Media, and Design",
       "requirements": {
+        "Communication Theory and Practice": 4,
         "Free": 36,
         "HASS": 24,
+        "Introduction to Graphic Design": 4,
+        "Language and Power": 4,
+        "Life in Color": 4,
         "Major": 20,
         "Math": 8,
-        "SCIS": 16
+        "Media and Society": 4,
+        "ProSeminar in Communication Media and Design": 4,
+        "SCIS": 16,
+        "Strategic Writing": 4
       },
       "template": {
         "1-Fall": [
@@ -1170,7 +1556,7 @@
       }
     },
     "Computer Science": {
-      "credits": 80,
+      "credits": 128,
       "description": "All computer science students are assigned a faculty adviser to assist them with their interests and career goals throughout their academic career. As shown below in the 128-credit-hour B.S. curriculum leading to the B.S. degree in computer science, flexibility is one of the hallmarks of the Rensselaer computer science program. With this flexibility, students explore related areas and pursue minors and/or dual or double majors in the following fields: mathematics; electrical and computer systems engineering; information technology and web science; games and simulation arts and sciences; business and management; economics; physics; psychology; electronic media, arts, and communication; and most other disciplines.",
       "extra": [
         "Science",
@@ -1183,9 +1569,22 @@
       "name": "Computer Science",
       "requirements": {
         "CSCI": 16,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Computer Organization": 4,
+        "Computer Science I": 4,
+        "Data Structures": 4,
+        "Foundations of Computer Science": 4,
         "Free": 28,
         "HASS": 24,
+        "Introduction to Algorithms": 4,
+        "Introduction to Biology": 3,
+        "Introduction to Biology Laboratory": 1,
         "MATH": 8,
+        "Operating Systems": 4,
+        "Physics I": 4,
+        "Principles of Software": 4,
+        "Programming Languages": 4,
         "SCIS": 4
       },
       "template": {
@@ -1241,16 +1640,41 @@
       }
     },
     "Computer and Systems Engineering": {
-      "credits": 56,
+      "credits": 139,
       "description": "This field is one of the fastest-growing branches of engineering. Strong course sequences in software, hardware, and systems engineering are available. Students consider the computer as a system in itself, as a tool for modeling and design, and as an embedded element within a real-time system. There is the flexibility for in depth study in areas such as automatic control, communications, information processing, computer software, computer hardware, computer networks, robotics, signal processing, and image analysis.",
       "extra": [],
       "name": "Computer and Systems Engineering",
       "requirements": {
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Computer Architecture Networks and Operating Systems": 4,
+        "Computer Components and Operations": 4,
         "Computer Engineering": 4,
+        "Computer Science I": 4,
+        "Data Structures": 4,
+        "ECSE Enrichment Seminar": 1,
+        "Electric Circuits": 4,
+        "Embedded Control": 4,
+        "Engineering Communications": 1,
+        "Engineering Graphics and CAD": 1,
+        "Engineering Probability": 3,
+        "Foundations of Computer Science": 4,
         "Free": 16,
         "HASS": 20,
+        "Introduction to Algorithms": 4,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Electrical Computer and Systems Engineering": 4,
+        "Introduction to Electronics": 4,
+        "Introduction to Engineering Design": 4,
+        "Multidisciplinary Capstone Design": 3,
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Professional Development 2 Technical Issues and Solutions": 2,
+        "Professional Development Leadership Competencies": 1,
         "Restricted": 8,
         "SCIS": 4,
+        "Signals and Systems": 3,
         "Technical": 4
       },
       "template": {
@@ -1310,7 +1734,7 @@
       }
     },
     "Design, Innovation, and Society": {
-      "credits": 92,
+      "credits": 128,
       "description": "The Design, Innovation, and Society (commonly referred to as DIS) bachelor's degree program provides creative, socially conscious students a broad education in design. Offered by the Department of Science and Technology Studies, the program adopts a social-scientific approach to design that integrates creative, technical, and organizational/entrepreneurial dimensions. This unique bachelor's program includes project-based design studios, discussion-focused seminar courses, and a cumulative senior project that integrates all aspects of the student's education.",
       "extra": [],
       "name": "Design, Innovation, and Society",
@@ -1318,10 +1742,19 @@
         "Capstone Design": 4,
         "Complementary Area of Study": 16,
         "Design": 4,
+        "Design Culture and Society": 4,
+        "Design and Innovation Senior Project": 4,
+        "Design and Innovation Studio A": 4,
+        "Design and Innovation Studio B": 4,
+        "Design and Innovation Studio C": 4,
+        "Design and Innovation Studio I": 4,
+        "Design and Innovation Studio II": 4,
+        "Design and Innovation Studio III": 4,
         "Free": 12,
         "HASS": 24,
         "SCIS": 24,
-        "STS Advanced Option": 8
+        "STS Advanced Option": 8,
+        "Science Technology and Society": 4
       },
       "template": {
         "1-Fall": [
@@ -1375,15 +1808,22 @@
       }
     },
     "Economics": {
-      "credits": 100,
+      "credits": 128,
       "description": "A major in Economics requires 32 credit hours in the discipline and must include the following:",
       "extra": [],
       "name": "Economics",
       "requirements": {
+        "Calculus I": 4,
+        "Calculus II": 4,
         "Culminating Experience": 4,
+        "Econometrics": 4,
         "Economics": 12,
         "Free": 44,
         "HASS": 24,
+        "Intermediate Macroeconomic Theory": 4,
+        "Intermediate Microeconomic Theory": 4,
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "Principles of Economics": 4,
         "SCIS": 12,
         "Statistics Option": 4
       },
@@ -1439,16 +1879,40 @@
       }
     },
     "Electrical Engineering": {
-      "credits": 59,
+      "credits": 136,
       "description": "Traditionally the largest and most diverse in all of engineering, this curriculum offers courses with various degrees of emphasis on theory, design, experimental work, and computer simulation. Subject matter ranges from semiconductors, electromagnetics, circuits and electronics, and electric power, to control, computer, communication, and information processing systems.",
       "extra": [],
       "name": "Electrical Engineering",
       "requirements": {
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Computer Components and Operations": 4,
+        "Computer Science I": 4,
+        "ECSE Enrichment Seminar": 1,
+        "Electric Circuits": 4,
+        "Electrical Energy Systems": 3,
+        "Embedded Control": 4,
+        "Engineering Communications": 1,
+        "Engineering Graphics and CAD": 1,
+        "Engineering Probability": 3,
+        "Fields and Waves I": 4,
         "Free": 16,
         "HASS": 20,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Electrical Computer and Systems Engineering": 4,
+        "Introduction to Electronics": 4,
+        "Introduction to Engineering Design": 4,
         "Laboratory": 3,
+        "Microelectronics Technology": 3,
+        "Multidisciplinary Capstone Design": 3,
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Professional Development 2 Technical Issues and Solutions": 2,
+        "Professional Development Leadership Competencies": 1,
         "Restricted": 8,
         "SCIS": 8,
+        "Signals and Systems": 3,
         "Technical": 4
       },
       "template": {
@@ -1507,7 +1971,7 @@
       }
     },
     "Electronic Arts": {
-      "credits": 104,
+      "credits": 132,
       "description": "The Bachelor of Science in Electronic Arts (EART) degree is designed to support either a single or dual major option. It is intended for students who want to critically and creatively explore the arts at the intersection of the humanities, and the physical, computational, engineering, and social sciences.",
       "extra": [
         "Animation and Algorithmic Art",
@@ -1527,10 +1991,17 @@
       ],
       "name": "Electronic Arts",
       "requirements": {
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Calculus for Architecture Management and HASS": 4,
+        "Computer Science I": 4,
+        "Creative Seminar I": 4,
+        "Creative Seminar II": 4,
         "Focus Area": 24,
         "Free": 32,
         "HASS": 24,
         "History/Theory": 4,
+        "Mathematical Methods in Management and Economics": 4,
         "SCIS": 12,
         "Studio": 8
       },
@@ -1587,15 +2058,38 @@
       }
     },
     "Environmental Engineering": {
-      "credits": 48,
+      "credits": 125,
       "description": "The Rensselaer bachelor's program in environmental engineering builds upon a broad base of studies in chemistry, life sciences, and engineering sciences culminating in a uniquely structured course sequence. This sequence of courses, as shown below, is designed to develop equilibrium, transformation, and transport concepts, together with integrated laboratory experiences. It culminates in senior design courses. This structure presents a unified educational experience in environmental engineering. A minimum of 128 credit hours is required for this curriculum.",
       "extra": [],
       "name": "Environmental Engineering",
       "requirements": {
+        "Applied Hydrology and Design": 4,
+        "Beginning Programming in Civil and Environmental Engineering": 1,
+        "Biological Processes in Environmental Engineering": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Chemistry II": 4,
+        "Engineering Graphics for Civil Engineers": 1,
+        "Environmental Chemodynamics": 4,
+        "Environmental Process Design": 3,
+        "Fluid Mechanics for Civil and Environmental Engineering": 4,
         "Free": 12,
         "HASS": 20,
+        "Introduction to Air Quality": 3,
+        "Introduction to Civil and Environmental Engineering": 1,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Engineering Analysis": 4,
+        "Introduction to Engineering Design": 4,
+        "Introduction to Environmental Engineering": 4,
+        "Introduction to Water Resources Engineering": 4,
+        "Modeling and Analysis of Uncertainty": 3,
         "Multidisciplinary Eng,": 3,
+        "Physicochemical Processes in Environmental Engineering": 4,
+        "Physics I": 4,
+        "Physics II": 4,
         "Professional Development -Technical Issues and Solutions": 2,
+        "Professional Development Leadership Competencies": 1,
         "SCIS": 8,
         "Technical": 3
       },
@@ -1655,7 +2149,7 @@
       }
     },
     "Environmental Science": {
-      "credits": 46,
+      "credits": 111,
       "description": "This curriculum leads to a B.S. in environmental science. A typical four-year program is illustrated below. However, the order in which students take courses within the first two years is flexible.",
       "extra": [
         "Track Course and Free Elective Credit Hours: 1",
@@ -1670,9 +2164,28 @@
       ],
       "name": "Environmental Science",
       "requirements": {
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Chemistry II": 4,
         "Culminating Experience": 4,
+        "Earths Climate Past Present and Future": 4,
+        "Environmental Data Analysis": 4,
+        "Environmental Measurements": 4,
+        "Environmental Seminar": 2,
+        "Field Methods": 4,
         "Free": 10,
+        "Geographic Information Systems in the Sciences": 4,
+        "Geology I Earths Interior": 3,
+        "Geology I Earths Interior Lab": 1,
+        "Geology II Earths Surface": 3,
+        "Geology ll Earths Surface Lab": 1,
+        "Global Environmental Change": 4,
         "HASS": 24,
+        "Introduction to Geobiology": 4,
+        "One Mile of the Hudson River": 4,
+        "Organic Chemistry I": 3,
+        "Physics I": 4,
         "Track Course": 8
       },
       "template": {
@@ -1724,7 +2237,7 @@
       }
     },
     "Games and Simulation Arts and Sciences": {
-      "credits": 72,
+      "credits": 140,
       "description": "",
       "extra": [
         "Cognitive Science",
@@ -1742,9 +2255,26 @@
       ],
       "name": "Games and Simulation Arts and Sciences",
       "requirements": {
+        "Art for Interactive Media": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Calculus for Architecture Management and HASS": 4,
+        "Computer Science I": 4,
+        "Data Structures": 4,
+        "Experimental Game Design": 4,
         "Free": 12,
+        "GSAS Capstone": 4,
         "GSAS Concentration Course": 36,
+        "Game Development I": 4,
+        "Game Development II": 4,
+        "General Physics": 4,
         "HASS": 20,
+        "History and Culture of Games": 4,
+        "Introduction to Game Design": 4,
+        "Introduction to Game Programming": 4,
+        "Introduction to Game Storytelling": 4,
+        "Mathematical Methods in Management and Economics": 4,
+        "Physics I": 4,
         "SCIS": 4
       },
       "template": {
@@ -1802,18 +2332,36 @@
       }
     },
     "Geology": {
-      "credits": 67,
+      "credits": 129,
       "description": "Students who successfully complete this program will be able to demonstrate:",
       "extra": [],
       "name": "Geology",
       "requirements": {
         "Biology Requirement": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Chemistry II": 4,
         "Culminating Experience": 4,
         "ERTH": 4,
         "ERTH 4XXX selected from the ERTH": 4,
+        "Earth Materials": 4,
         "Elective": 23,
+        "Environmental Measurements": 4,
         "Free": 4,
-        "HASS": 24
+        "Geology I Earths Interior": 3,
+        "Geology I Earths Interior Lab": 1,
+        "Geology II Earths Surface": 3,
+        "Geology ll Earths Surface Lab": 1,
+        "HASS": 24,
+        "Introduction to Geochemistry": 4,
+        "Introduction to Geophysics": 4,
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "OutofClassroom Experience in Earth Sciences": 3,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Structural Geology": 4,
+        "Undergraduate Research Thesis": 3
       },
       "template": {
         "1-Fall": [
@@ -1866,17 +2414,36 @@
       }
     },
     "Hydrogeology": {
-      "credits": 60,
+      "credits": 126,
       "description": "Students who successfully complete this program will be able to demonstrate:",
       "extra": [],
       "name": "Hydrogeology",
       "requirements": {
         "Biology Requirement": 4,
         "CSCI": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Chemistry II": 4,
         "Culminating Experience": 4,
         "Elective": 16,
+        "Environmental Measurements": 4,
         "Free": 8,
-        "HASS": 24
+        "Geology I Earths Interior": 3,
+        "Geology I Earths Interior Lab": 1,
+        "Geology II Earths Surface": 3,
+        "Geology ll Earths Surface Lab": 1,
+        "Groundwater Hydrology": 4,
+        "HASS": 24,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Environmental Engineering": 4,
+        "Introduction to Geochemistry": 4,
+        "Introduction to Geophysics": 4,
+        "OutofClassroom Experience in Earth Sciences": 3,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Structural Geology": 4,
+        "Undergraduate Research Thesis": 3
       },
       "template": {
         "1-Fall": [
@@ -1929,15 +2496,38 @@
       }
     },
     "Industrial and Management Engineering": {
-      "credits": 52,
+      "credits": 128,
       "description": "This curriculum requires a minimum of 128 credit hours and completion of the course requirements shown in the typical four-year program presented below.",
       "extra": [],
       "name": "Industrial and Management Engineering",
       "requirements": {
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Computer Science I": 4,
+        "Design and Analysis of Supply Chains": 3,
+        "Discrete Event Simulation Modeling and Analysis": 4,
+        "Engineering Economics": 3,
+        "Engineering Graphics and CAD": 1,
+        "Engineering Processes": 1,
         "Free": 12,
         "HASS": 20,
+        "Information and Data Systems": 4,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Engineering Analysis": 4,
+        "Introduction to Engineering Design": 4,
         "Management": 4,
+        "Modeling and Analysis of Uncertainty": 3,
+        "Multidisciplinary Capstone Design": 3,
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "Operations Research Methods": 4,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Production and Operations Management": 3,
+        "Professional Development 2 Technical Issues and Solutions": 2,
+        "Professional Development Leadership Competencies": 1,
         "SCIS": 4,
+        "Statistical Analysis": 4,
         "Technical": 12
       },
       "template": {
@@ -1997,7 +2587,7 @@
       }
     },
     "Information Technology and Web Science": {
-      "credits": 67,
+      "credits": 110,
       "description": "Completion of the B.S. in Information Technology and Web Science requires a total of 128-130 credit hours, of which 56-58 credits constitute an ITWS Core and 32 credits are devoted to a Focus Track. The remaining credit hours fulfill Rensselaer degree requirements. The ITWS core requirements establish a solid foundation for applying ITWS to any discipline. The Rensselaer requirements ensure the degree's breadth and its consistency with long-established Rensselaer traditions. The required Focus Track provides an opportunity for in-depth study of an ITWS application area. Focus Track options include arts, computer networking, data science, law, information security, management information systems, medicine, psychological science, web technologies and numerous others. In consultation with a faculty adviser, students may also design their own Focus Track through the selection of courses that match their individual interests.",
       "extra": [
         "ITWS 4990 - Senior Thesis Credit Hours: 3",
@@ -2008,13 +2598,24 @@
       ],
       "name": "Information Technology and Web Science",
       "requirements": {
+        "Calculus I": 4,
+        "Computer Science I": 4,
+        "Data Structures": 4,
+        "Database Applications and Systems DBAS": 3,
+        "Database Systems": 4,
         "Focus Track Course": 20,
         "Focus Track Information": 4,
         "Free": 8,
         "HASS": 12,
+        "IT and Society": 4,
+        "Introduction to Human Computer Interaction": 4,
+        "Introduction to Information Technology and Web Science": 4,
+        "Managing IT Resources": 4,
         "Math": 4,
         "SCIS": 12,
         "Technical Track Course #1 Focus Track Course": 4,
+        "Web Science Systems Development": 4,
+        "Web Systems Development": 4,
         "orITWS 4990 - Senior Thesis": 3
       },
       "template": {
@@ -2065,7 +2666,7 @@
       }
     },
     "Materials Engineering": {
-      "credits": 43,
+      "credits": 126,
       "description": "The sample curriculum shown below, which results in the B.S. degree in Materials Engineering, requires a minimum of 129 credit hours and completion of the required elective courses that follow.",
       "extra": [
         "Restricted Electives (4 credits each)",
@@ -2075,11 +2676,37 @@
       ],
       "name": "Materials Engineering",
       "requirements": {
+        "Beginning Programming for Engineers": 1,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Computational Materials Design": 3,
+        "Electrical and Optical Properties of Materials": 4,
+        "Engineering Graphics and CAD": 1,
         "Free": 12,
         "HASS": 20,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Engineering Analysis": 4,
+        "Introduction to Engineering Design": 4,
+        "Introduction to Materials Engineering": 1,
+        "Kinetics in Materials Systems": 4,
         "Materials": 3,
+        "Materials Laboratory Skills": 1,
+        "Materials Science": 4,
+        "Materials Selection": 3,
+        "Materials Synthesis and Processing": 4,
+        "Mechanical Properties of Materials": 4,
+        "Modeling and Analysis of Uncertainty": 3,
+        "Multidisciplinary Capstone Design": 3,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Professional Development 2 Technical Issues and Solutions": 2,
+        "Professional Development Leadership Competencies": 1,
         "Restricted": 4,
-        "SCIS": 4
+        "SCIS": 4,
+        "Structure of Engineering Materials": 4,
+        "Thermal and Fluids Engineering I": 4,
+        "Thermodynamics of Materials": 4
       },
       "template": {
         "1-Fall": [
@@ -2138,20 +2765,29 @@
       }
     },
     "Mathematics": {
-      "credits": 96,
+      "credits": 125,
       "description": "",
       "extra": [],
       "name": "Mathematics",
       "requirements": {
+        "Art and Science of Mathematics I": 1,
+        "Calculus I": 4,
+        "Calculus II": 4,
         "Capstone I": 4,
         "Capstone II": 4,
         "Capstone III": 4,
+        "Computer Science I": 4,
         "Elective": 44,
         "HASS": 24,
+        "Introduction to Biology": 3,
+        "Introduction to Biology Laboratory": 1,
+        "Introduction to Differential Equations": 4,
         "MATH 4xxx Math Core I": 4,
         "MATH 4xxx Math Core II": 4,
         "MATH Option": 4,
-        "Math Option": 4
+        "Math Option": 4,
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "Physics I": 4
       },
       "template": {
         "1-Fall": [
@@ -2206,15 +2842,41 @@
       }
     },
     "Mechanical Engineering Curriculum": {
-      "credits": 37,
+      "credits": 119,
       "description": "Freshmen or sophomores who have identified mechanical engineering as their major may follow the baccalaureate program below in lieu of the general core engineering program. Dual major programs which lead to a single baccalaureate degree embracing two fields are also available and are described in more detail in the MANE Handbook (emailed to studentswhen they declare a major in MANE, and available from the MANE Student Services Office, JEC 2012).",
       "extra": [],
       "name": "Mechanical Engineering Curriculum",
       "requirements": {
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Control Systems Laboratory": 2,
+        "Electronic Instrumentation": 4,
+        "Elements of Mechanical Design": 4,
+        "Engineering Dynamics": 4,
+        "Engineering Graphics and CAD": 1,
+        "Engineering Processes": 1,
+        "Fluid Mechanics": 3,
         "Free": 12,
         "HASS": 19,
+        "Heat Transfer": 3,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Engineering Analysis": 4,
+        "Materials Science": 4,
+        "Mechanical Systems Laboratory": 2,
+        "Modeling and Analysis of Uncertainty": 3,
+        "Modeling and Control of Dynamic Systems": 3,
+        "Multidisciplinary Capstone Design": 3,
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "Numerical Methods and Programming for Engineers": 3,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Professional Development Leadership Competencies": 1,
         "STSO 4100 - Professional Development II": 2,
-        "SoE-2.... Engineering Design": 4
+        "SoE-2.... Engineering Design": 4,
+        "Strength of Materials": 4,
+        "Thermal and Fluids Engineering Laboratory": 2,
+        "Thermodynamics": 3
       },
       "template": {
         "1-Fall": [
@@ -2272,7 +2934,7 @@
       }
     },
     "Music": {
-      "credits": 93,
+      "credits": 137,
       "description": "The B.S. in Music focuses on preparing musicians for careers in creative professions combining depth in music with breadth in the sciences, media, and engineering. It advances music study within the technological university by preparing students for the multiplicity of roles available to musicians in the 21st century.",
       "extra": [
         "Performance Requirement",
@@ -2286,14 +2948,25 @@
       "requirements": {
         "ARTS 4500 - Topics in History and Analysis of Music": 2,
         "ARTS 4880 - Interdisciplinary Research Seminar": 2,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Calculus for Architecture Management and HASS": 4,
+        "Composition Seminar": 4,
         "Culminating Experience": 4,
         "Ensemble": 3,
         "Free": 34,
         "HASS": 28,
         "History and Culture course": 2,
+        "Interdisciplinary Research Seminar": 4,
+        "Mathematical Methods in Management and Economics": 4,
+        "Music and Sound I": 4,
+        "Music and Sound II": 4,
+        "Music and Technology I": 4,
+        "Music and Technology II": 4,
         "Performance Ensemble": 0,
         "Private Music Lesson": 6,
-        "SCIS": 12
+        "SCIS": 12,
+        "Topics in the History and Analysis of Music": 4
       },
       "template": {
         "1-Fall": [
@@ -2352,17 +3025,43 @@
       }
     },
     "Nuclear Engineering Curriculum": {
-      "credits": 49,
+      "credits": 130,
       "description": "Freshmen or sophomores who have identified nuclear engineering as their major may follow the baccalaureate program below in lieu of the general core program. Dual major programs which lead to a single baccalaureate degree embracing two fields are also available and are described in more detail in the MANE Handbook (emailed to you when you declare a major in MANE, available from the MANE Student Services office, JEC 2012, and https://mane.rpi.edu/undergraduate).",
       "extra": [],
       "name": "Nuclear Engineering Curriculum",
       "requirements": {
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Engineering Graphics and CAD": 1,
+        "Fluid Mechanics": 3,
         "Free": 12,
+        "Fundamentals of Nuclear Engineering": 4,
         "HASS": 20,
+        "Introduction to Differential Equations": 4,
+        "Introduction to Engineering Analysis": 4,
+        "Introduction to Nuclear Engineering": 1,
         "MANE 4.... NE Technical": 6,
         "MANE 4.... Nuclear Engineering Laboratory II": 3,
+        "Modeling and Analysis of Uncertainty": 3,
+        "Modeling and Control of Dynamic Systems": 3,
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "Nuclear Engineering Laboratory": 4,
+        "Nuclear Engineering Senior Design Project I": 1,
+        "Nuclear Engineering Senior Design Project II": 2,
+        "Nuclear Instrumentation and Measurement": 3,
+        "Nuclear Phenomena for Engineering Applications": 4,
+        "Nuclear Power Systems Engineering": 4,
+        "Numerical Methods and Programming for Engineers": 3,
+        "Physics I": 4,
+        "Physics II": 4,
+        "Physics of Nuclear Reactors": 4,
+        "Professional Development 2 Technical Issues and Solutions": 2,
+        "Professional Development Leadership Competencies": 1,
+        "Radiological Engineering": 3,
         "SCIS": 4,
-        "SoE 2.... Engineering Design": 4
+        "SoE 2.... Engineering Design": 4,
+        "Thermodynamics": 3
       },
       "template": {
         "1-Fall": [
@@ -2423,15 +3122,34 @@
       }
     },
     "Philosophy": {
-      "credits": 96,
+      "credits": 172,
       "description": "Philosophy is a search for understanding and wisdom through inquiry into fundamental questions regarding existence, knowledge, the nature of reality, and \"how to live a good life.\" Through research, reflection, and discussion, philosophy seeks both to refine and answer humanity's enduring questions: What is the nature of consciousness? What is the connection between mind and body? Does God exist? What counts as knowledge? Is there only one right way to reason? Does science give us objective truth? Could computers think? Could they feel or exhibit genuine creativity? Do we have free will? How are right and wrong to be determined? Of what does the good life consist? Does life have meaning?",
       "extra": [],
       "name": "Philosophy",
       "requirements": {
+        "Are Humans Rational": 4,
+        "Bioethics": 4,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Calculus for Architecture Management and HASS": 4,
+        "Capstone Experience in Philosophy": 4,
+        "Environmental Philosophy": 4,
+        "Ethics": 4,
         "Free": 44,
+        "Great Ideas in Philosophy": 4,
         "HASS": 24,
+        "Introduction to Logic": 4,
+        "Introduction to Philosophy": 4,
+        "Mathematical Methods in Management and Economics": 4,
+        "Minds and Machines": 4,
         "Philosophy": 12,
-        "SCIS": 16
+        "Philosophy Technology  the Human Future": 4,
+        "Philosophy of Biology": 4,
+        "Philosophy of Science": 4,
+        "SCIS": 16,
+        "Science and Scientific Misconduct": 4,
+        "Scientific Revolutions": 4,
+        "The Genome and You": 4
       },
       "template": {
         "1-Fall": [
@@ -2486,7 +3204,7 @@
       }
     },
     "Physics": {
-      "credits": 60,
+      "credits": 125,
       "description": "",
       "extra": [
         "Additional Information",
@@ -2494,11 +3212,29 @@
       ],
       "name": "Physics",
       "requirements": {
+        "A Passion for Physics": 1,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Chemistry I": 4,
+        "Computer Science I": 4,
         "Culminating Experience": 4,
         "Elective": 4,
+        "Electromagnetic Theory": 4,
+        "Experimental Physics": 4,
         "Free": 20,
         "HASS": 24,
-        "MATH": 8
+        "Introduction to Biology": 3,
+        "Introduction to Biology Laboratory": 1,
+        "Introduction to Differential Equations": 4,
+        "Introductory Classical Dynamics": 4,
+        "Introductory Electromagnetic Theory": 4,
+        "Introductory Modern Physics": 4,
+        "Introductory Quantum Mechanics": 4,
+        "MATH": 8,
+        "Multivariable Calculus and Matrix Algebra": 4,
+        "Quantum Physics I": 4,
+        "Theoretical Mechanics": 4,
+        "Thermodynamics and Statistical Mechanics": 4
       },
       "template": {
         "1-Fall": [
@@ -2553,18 +3289,27 @@
       }
     },
     "Psychological Science": {
-      "credits": 104,
+      "credits": 140,
       "description": "The ability to understand and predict how people act and think is more important than ever in addressing many of the greatest challenges faced as a society. At the same time, the study of behavior and mind is undergoing a rapid transformation. New technologies are continually being developed across the behavioral, data, and brain sciences. Advances in cloud and wearable computing, massive open datasets, noninvasive brain imaging, and virtual reality offer powerful new tools for understanding and predicting human thought and behavior. Psychological science is the rapidly evolving discipline that seeks to understand behavior and mind using rigorous scientific methods. Psychological scientists are trained to understand how behavior and thought are influenced by neurophysiological, emotional, cognitive, developmental, social, and environmental factors. With the benefit of emerging technologies, they are gleaning important new insights into how people learn, think, perceive, act, express emotions, make decisions, and interact with others, and applying these discoveries to improve the way people live and work.",
       "extra": [],
       "name": "Psychological Science",
       "requirements": {
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Calculus for Architecture Management and HASS": 4,
         "Choose one:PSYC 4XXX Advanced Seminar in Psychology": 4,
+        "Computer Science I": 4,
         "Free": 40,
         "HASS": 16,
+        "Introduction to Psychological Science": 4,
+        "Mathematical Methods in Management and Economics": 4,
+        "Mathematical Methods in Psychological Science": 4,
         "OrHonors Thesis": 4,
         "OrUndergraduate Research Project": 4,
         "PSYC 2/4000 Core Content": 16,
         "Psychology": 8,
+        "Research Methods and Statistics I": 4,
+        "Research Methods and Statistics II": 4,
         "SCIS": 12
       },
       "template": {
@@ -2622,17 +3367,26 @@
       }
     },
     "Science, Technology, and Society": {
-      "credits": 96,
+      "credits": 132,
       "description": "The Science, Technology, and Society bachelor's program of study is designed for intellectually curious, socially conscious, and self-motivated students who seek a well-rounded education.",
       "extra": [],
       "name": "Science, Technology, and Society",
       "requirements": {
         "Advanced STS Course": 8,
         "CAS Course": 16,
+        "Calculus I": 4,
+        "Calculus II": 4,
+        "Calculus for Architecture Management and HASS": 4,
         "Free": 28,
         "HASS": 24,
         "Intermediate STS course": 4,
-        "SCIS": 16
+        "Investigating Society": 4,
+        "Mathematical Methods in Management and Economics": 4,
+        "Research Design": 4,
+        "SCIS": 16,
+        "STS and Sustainability Senior Project": 4,
+        "Science Technology and Society": 4,
+        "Sustainability and STS Careers": 4
       },
       "template": {
         "1-Fall": [
@@ -2687,18 +3441,27 @@
       }
     },
     "Sustainability Studies": {
-      "credits": 96,
+      "credits": 132,
       "description": "The Sustainability Studies bachelor's program (SUST), offered by the Department of Science and Technology Studies (STS), is designed for environmentally conscious students who seek an education that blends social and natural sciences, humanities, and technology.",
       "extra": [],
       "name": "Sustainability Studies",
       "requirements": {
         "CAS Course": 12,
         "CAS Course Option": 4,
+        "Calculus I": 4,
+        "Calculus for Architecture Management and HASS": 4,
+        "Environment and Society": 4,
         "Free": 20,
         "HASS": 24,
+        "Investigating Society": 4,
         "MATH 1020 - Calculus II": 4,
+        "Mathematical Methods in Management and Economics": 4,
+        "Research Design": 4,
         "SCIS": 16,
-        "SUST Advanced Option": 16
+        "STS and Sustainability Senior Project": 4,
+        "SUST Advanced Option": 16,
+        "Sustainability Debates": 4,
+        "Sustainability and STS Careers": 4
       },
       "template": {
         "1-Fall": [
