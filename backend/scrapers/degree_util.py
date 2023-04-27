@@ -26,8 +26,6 @@ def get_program_ids(catalog_id: str, type_query : str) -> List[str]:
     )
     return programs_xml.xpath('//result[type="' + type_query + '"]/id/text()')
 
-
-
 def get_subjs():
     subjs = []
     f = open(root + '/backend/data/subjs.json', 'r') #make sure to close at end of file
