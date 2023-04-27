@@ -1,19 +1,20 @@
 <template>
-    <q-btn @click="debug()"> debug </q-btn>
-    <CourseSearch
-        :courses-data="coursesData"
-        :prompt="showSearch"
-        @close="showSearch = false"
-        @add-course="addCourse"
-    />
-    <div id="table" :key="semesters">
-        <Semester
-            v-for="semester in semesters"
-            :ref="semester[0]"
-            :key="semester[0]"
-            :semester="semester"
-            @add-course="showAddCourseModal"
+    <div>
+        <CourseSearch
+            :courses-data="coursesData"
+            :prompt="showSearch"
+            @close="showSearch = false"
+            @add-course="addCourse"
         />
+        <div id="table" :key="semesters">
+            <Semester
+                v-for="semester in semesters"
+                :ref="semester[0]"
+                :key="semester[0]"
+                :semester="semester"
+                @add-course="showAddCourseModal"
+            />
+        </div>
     </div>
 </template>
 
@@ -52,9 +53,6 @@ export default {
             this.$emit("addCourse", [course, this.opened]);
             this.showSearch = false;
         },
-        debug() {
-            console.log(this.showSearch);
-        },
     },
 };
 </script>
@@ -63,7 +61,7 @@ export default {
     display: grid;
     gap: 5%;
     width: 70%;
-    margin: 0 auto;
+    margin: 16px auto;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -79,5 +77,13 @@ export default {
 
 .courseCard {
     width: fit-content;
+}
+
+@media (max-width: 768px) {
+    #table {
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 2%;
+    }
 }
 </style>

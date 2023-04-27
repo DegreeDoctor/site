@@ -253,4 +253,10 @@ export default {
 .addButton {
     margin: auto;
 }
+
+@media (max-width: 600px) {
+    .card {
+        max-width: 95% !important;
+    }
+}
 </style>

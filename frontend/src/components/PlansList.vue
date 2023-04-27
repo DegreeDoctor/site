@@ -10,6 +10,8 @@ export default {
             plan: false,
             filter: "",
             deleteIconsVisible: false,
+            deleteIconsVisibleArray: [false],
+            htmlList: [],
         };
     },
     computed: {
@@ -39,6 +41,7 @@ export default {
         selectPlan(val) {
             this.store.swapDegree(this.store.findDegree(val));
             this.current = this.store.findDegree(val);
+            this.$router.push("/degree");
         },
         selectPlanByUUID(val) {
             this.store.swapDegree(val);
@@ -96,6 +99,7 @@ export default {
                 });
         },
         toggleTrashIcons() {
+            //this.deleteIconsVisibleArray[val]=!this.deleteIconsVisibleArray[val];
             this.deleteIconsVisible = !this.deleteIconsVisible;
         },
         showNotif(position, message, type, timeout = 1250) {
@@ -109,32 +113,57 @@ export default {
                 timeout,
             });
         },
-        renamePlanNotification() {
-            this.$q.notify({
-                badgeClass: "hide-badge",
-                type: "warning",
-                textColor: "white",
-                message: "This feature is not yet implemented",
-                position: "top",
-                timeout: 1250,
-            });
-        },
-        renamePlanDialog() {
+        // allows to change name of plan
+        renamePlanDialog(item) {
             this.$q
                 .dialog({
-                    title: "Change Plan Name",
-                    message: "Rename your plan",
-                    prompt: {
-                        model: "",
-                        type: "text",
-                    },
+                    title: "Rename Plan",
                     cancel: true,
                     persistent: false,
+                    prompt: {
+                        model: item,
+                        type: "text",
+                        label: "New Name",
+                        hint: "Enter a new name for the plan",
+                        isValid: (v) =>
+                            !!v &&
+                            v.length <= 25 &&
+                            !this.store.findDegree(v) &&
+                            v !== null,
+                        lazyRules: true,
+                        rules: [
+                            (v) => !!v || "Name is required",
+                            (v) =>
+                                (v && v.length <= 25) ||
+                                "Name must be less than 25 characters",
+                            // check if the name is already taken
+                            (v) =>
+                                !this.store.findDegree(v) ||
+                                "Name already taken",
+                        ],
+                    },
                 })
                 .onOk((data) => {
-                    this.store.updateDegree(this.current, data);
-                    this.selectPlan(data);
-                    this.current = data;
+                    // check if name is already taken
+                    if (!this.store.findDegree(data)) {
+                        this.store.renameDegree(
+                            this.store.findDegree(item),
+                            data
+                        );
+                        this.showNotif(
+                            "top",
+                            "Plan renamed to " + '"' + data + '"',
+                            "positive",
+                            1250
+                        );
+                    } else {
+                        this.showNotif(
+                            "top",
+                            "Name already taken",
+                            "negative",
+                            1250
+                        );
+                    }
                 })
                 .onCancel(() => {
                     return;
@@ -148,65 +177,70 @@ export default {
 </script>
 
 <template>
-    <div class="q-pa-md btn">
-        {{ selectedPlan }}
-        <q-menu anchor="bottom left">
-            <q-item
-                v-for="item in allDegreesSubNames"
-                :key="item"
-                class="planList"
-                :class="[
-                    'planList',
-                    { 'active-item': selectedPlan === item },
-                    darkMode() ? 'dark-mode-active-item' : '',
-                ]"
-            >
-                <a
-                    class="item truncate"
-                    :class="{ active: selectedPlan === item }"
-                    @click="selectPlan(item)"
+    <div>
+        <div class="q-pa-md btn">
+            {{ selectedPlan }}
+            <q-menu anchor="bottom left">
+                <q-item
+                    v-for="item in allDegreesSubNames"
+                    :key="item"
+                    class="planList"
+                    :class="[
+                        'planList',
+                        { 'active-item': selectedPlan === item },
+                        darkMode() ? 'dark-mode-active-item' : '',
+                    ]"
                 >
-                    {{ item }}
-                </a>
-                <a
-                    class="edit"
-                    :class="{ 'hide-icon': deleteIconsVisible }"
-                    @click="renamePlanNotification"
-                >
-                    <q-icon name="fa-solid fa-pen-to-square" size="1.25em" />
-                </a>
-                <a
-                    class="trash"
-                    :class="{ 'hide-icon': deleteIconsVisible }"
-                    @click="toggleTrashIcons"
-                >
-                    <q-icon name="fa-solid fa-trash" size="1.25em" />
-                </a>
-                <a
-                    class="check"
-                    :class="{ 'hide-icon': !deleteIconsVisible }"
-                    @click="deletePlan(item)"
-                >
-                    <q-icon name="fa-solid fa-check" size="1.25em" />
-                </a>
-                <a
-                    class="cross"
-                    :class="{ 'hide-icon': !deleteIconsVisible }"
-                    @click="toggleTrashIcons"
-                >
-                    <q-icon name="fa-solid fa-times" size="1.25em" />
-                </a>
-            </q-item>
-            <q-separator />
-            <q-item clickable to="/quiz">
-                <a class="new-plan">Create new plan</a>
-            </q-item>
-            <q-separator />
-            <q-item clickable @click="deleteAllPlans">
-                <a class="delete-all">Delete all plans</a>
-            </q-item>
-        </q-menu>
-        <q-icon name="fa-solid fa-caret-down" />
+                    <a
+                        class="item truncate"
+                        :class="{ active: selectedPlan === item }"
+                        @click="selectPlan(item)"
+                    >
+                        {{ item }}
+                    </a>
+                    <a
+                        class="edit"
+                        :class="{ 'hide-icon': deleteIconsVisible }"
+                        @click="renamePlanDialog(item)"
+                    >
+                        <q-icon
+                            name="fa-solid fa-pen-to-square"
+                            size="1.25em"
+                        />
+                    </a>
+                    <a
+                        class="trash"
+                        :class="{ 'hide-icon': deleteIconsVisible }"
+                        @click="toggleTrashIcons"
+                    >
+                        <q-icon name="fa-solid fa-trash" size="1.25em" />
+                    </a>
+                    <a
+                        class="check"
+                        :class="{ 'hide-icon': !deleteIconsVisible }"
+                        @click="deletePlan(item)"
+                    >
+                        <q-icon name="fa-solid fa-check" size="1.25em" />
+                    </a>
+                    <a
+                        class="cross"
+                        :class="{ 'hide-icon': !deleteIconsVisible }"
+                        @click="toggleTrashIcons"
+                    >
+                        <q-icon name="fa-solid fa-times" size="1.25em" />
+                    </a>
+                </q-item>
+                <q-separator />
+                <q-item clickable to="/quiz">
+                    <a class="new-plan">Create new plan</a>
+                </q-item>
+                <q-separator />
+                <q-item clickable @click="deleteAllPlans">
+                    <a class="delete-all">Delete all plans</a>
+                </q-item>
+            </q-menu>
+            <q-icon name="fa-solid fa-caret-down" />
+        </div>
     </div>
 </template>
 

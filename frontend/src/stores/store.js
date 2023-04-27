@@ -45,7 +45,7 @@ export const useStore = defineStore("main", {
         },
         getCurrentDegreeName: (state) => {
             if (state.selectedDegree != "") {
-                if(!state.degrees[state.selectedDegree]) return "";
+                if (!state.degrees[state.selectedDegree]) return "";
                 return state.degrees[state.selectedDegree].name;
             }
         },
@@ -57,7 +57,7 @@ export const useStore = defineStore("main", {
         },
         getCredits: (state) => {
             if (state.selectedDegree != "") {
-                if(!state.degrees[state.selectedDegree]) return [];
+                if (!state.degrees[state.selectedDegree]) return [];
                 return state.degrees[state.selectedDegree].credits;
             }
         },
@@ -77,7 +77,7 @@ export const useStore = defineStore("main", {
             return degreeSubNames;
         },
         templateToArray: (state) => {
-            if(!state.degrees[state.selectedDegree]) return [];
+            if (!state.degrees[state.selectedDegree]) return [];
             const template = state.degrees[state.selectedDegree]["template"];
             let array = [];
             let subArray = [];
@@ -126,8 +126,8 @@ export const useStore = defineStore("main", {
             // set the objects name atrribute to the uuid
             this.selectedDegree = uuid;
         },
-        updateDegree(name, degree) {
-            this.degrees[name] = degree;
+        renameDegree(id, name) {
+            this.degrees[id].name = name;
         },
         removeDegree(name) {
             delete this.degrees[name];

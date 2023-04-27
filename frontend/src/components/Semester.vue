@@ -1,6 +1,13 @@
 <template>
-    <div class="semesterContainer">
-        <h3 class="semesterName">{{ semester[0] }}</h3>
+    <div
+        :class="[
+            'semesterContainer',
+            darkMode() ? 'darkModeSemesterContainer' : '',
+        ]"
+    >
+        <h3 :class="['semesterName', darkMode() ? 'darkModeSemesterName' : '']">
+            {{ semester[0] }}
+        </h3>
         <draggable
             :list="courseList"
             group="courses"
@@ -18,6 +25,7 @@
             color="secondary"
             class="addButton"
             icon="add"
+            style="margin-bottom: 8px"
             @click="addCourse"
         />
     </div>
@@ -145,6 +153,9 @@ export default defineComponent({
                 );
             }
         },
+        darkMode() {
+            return this.store.getDarkMode;
+        },
     },
 });
 </script>
@@ -157,6 +168,10 @@ export default defineComponent({
     width: 100%;
     background-color: white;
 }
+.darkModeSemesterName.semesterName {
+    color: white;
+    background-color: black;
+}
 
 .semesterContainer {
     border: 1px solid black;
@@ -164,6 +179,12 @@ export default defineComponent({
     min-width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.darkModeSemesterContainer.semesterContainer {
+    border: 1px solid white;
+    background-color: #262626;
+    color: white;
 }
 
 .courseContainer {
@@ -185,6 +206,6 @@ export default defineComponent({
 }
 
 .addButton {
-    margin: auto 5px 5px auto;
+    margin: 0 5px 5px 0;
 }
 </style>
