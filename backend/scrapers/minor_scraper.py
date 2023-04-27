@@ -4,21 +4,12 @@ from lxml import html
 from tqdm import tqdm
 import json
 from degree_util import mnrs, root
-from degree_util import get_catalogs, norm_str, word_to_num, rep_uni, trim_crn
+from degree_util import get_catalogs, norm_str, word_to_num, rep_uni, trim_crn, get_program_ids
 # The api key is public so it does not need to be hidden in a .env file
 BASE_URL = "http://rpi.apis.acalog.com/v1/"
 # It is ok to publish this key because I found it online already public
 DEFAULT_QUERY_PARAMS = "?key=3eef8a28f26fb2bcc514e6f1938929a1f9317628&format=xml"
 CHUNK_SIZE = 500
-
-# Returns a list of program ids for a given catalog
-def get_program_ids(catalog_id: str) -> List[str]:
-    programs_xml = html.fromstring(
-        requests.get(
-            f"{BASE_URL}search/programs{DEFAULT_QUERY_PARAMS}&method=listing&options[limit]=0&catalog={catalog_id}"
-        ).text.encode("utf8")
-    )
-    return programs_xml.xpath('//result[type="Minor"]/id/text()')
 
 def get_minor_data(program_ids: List[str], catalog_id) -> Dict:
     data = {}
@@ -166,7 +157,7 @@ def scrape_minors():
     programs_per_year = {}
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         # print(year)
-        program_ids = get_program_ids(catalog_id)
+        program_ids = get_program_ids(catalog_id,"Minor")
         data = get_minor_data(program_ids, catalog_id)
         # scraing the program (degree)
         programs_per_year[year] = data

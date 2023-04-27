@@ -16,6 +16,18 @@ CHUNK_SIZE = 500
 filepath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 root = os.path.dirname(filepath)
 # Opens the subjects.JSON and returns a list of subject code
+
+# Returns a list of program ids for a given catalog
+def get_program_ids(catalog_id: str, type_query : str) -> List[str]:
+    programs_xml = html.fromstring(
+        requests.get(
+            f"{BASE_URL}search/programs{DEFAULT_QUERY_PARAMS}&method=listing&options[limit]=0&catalog={catalog_id}"
+        ).text.encode("utf8")
+    )
+    return programs_xml.xpath('//result[type="' + type_query + '"]/id/text()')
+
+
+
 def get_subjs():
     subjs = []
     f = open(root + '/backend/data/subjs.json', 'r') #make sure to close at end of file
@@ -25,16 +37,20 @@ def get_subjs():
     f.close()
     return subjs
 
+# subject object
 subjs = get_subjs()
 
+# gets courses from courses.json for programs logic
 def get_courses():
     f = open(root + '/frontend/src/data/courses.json','r')
     ret = json.load(f)
     f.close()
     return ret
 
+# course object
 course_dict = get_courses()
 
+#  gets list of skipped programs
 def get_prgms():
     prgms = []
     f = open(root + '/backend/data/skip_prgms.json', 'r')
@@ -46,6 +62,7 @@ def get_prgms():
 
 prgms = get_prgms()
 
+# gets list of skipped minors
 def get_mnrs():
     mnrs = []
     f = open(root + '/backend/data/skip_mnrs.json','r')
@@ -81,9 +98,12 @@ def get_catalogs() -> List[Tuple[str, int]]:
     return ret
     
 # QOL functions 
+
+# removes non alphanumeric and space characters
 def clean_str(s: str) -> str:
     return "".join([x for x in s if x.isalnum() or x.isspace()])
 
+# replaces various unicode text artifacts found on the catalog dataset.
 def rep_uni(str):
     return str.replace("\n","").replace("\t","").replace("\u200b","").replace("\u2013","").replace("\u00ad","").replace("\r","")
 

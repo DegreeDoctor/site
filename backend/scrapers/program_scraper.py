@@ -3,9 +3,8 @@ import requests
 from lxml import html
 from tqdm import tqdm
 import json
-import unicodedata
 from degree_util import subjs, prgms, course_dict, root
-from degree_util import get_catalogs, norm_str, rem_empty, clean_str, trim_space
+from degree_util import get_catalogs, norm_str, rem_empty, clean_str, trim_space, get_program_ids
 from collections import OrderedDict
 
 # The api key is public so it does not need to be hidden in a .env file
@@ -13,15 +12,6 @@ BASE_URL = "http://rpi.apis.acalog.com/v1/"
 # It is ok to publish this key because I found it online already public
 DEFAULT_QUERY_PARAMS = "?key=3eef8a28f26fb2bcc514e6f1938929a1f9317628&format=xml"
 CHUNK_SIZE = 500
-
-# Returns a list of program ids for a given catalog
-def get_program_ids(catalog_id: str) -> List[str]:
-    programs_xml = html.fromstring(
-        requests.get(
-            f"{BASE_URL}search/programs{DEFAULT_QUERY_PARAMS}&method=listing&options[limit]=0&catalog={catalog_id}"
-        ).text.encode("utf8")
-    )
-    return programs_xml.xpath('//result[type="Baccalaureate"]/id/text()')
 
 # <<< need rework for programs >>>
 def course_from_string(inp, subjs):
@@ -454,7 +444,7 @@ def scrape_programs():
     programs_per_year = {}
     for index, (year, catalog_id) in enumerate(tqdm(catalogs)):
         # print(year)
-        program_ids = get_program_ids(catalog_id)
+        program_ids = get_program_ids(catalog_id,"Baccalaureate")
         # scraing the program (degree)
         data = get_program_data(program_ids, catalog_id, year)
         programs_per_year[year] = data
