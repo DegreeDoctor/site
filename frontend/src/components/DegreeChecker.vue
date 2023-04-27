@@ -96,16 +96,24 @@ export default {
         closeNav() {
             document.getElementById("dropdown").style.display = "none";
         },
+
+        openAll() {
+            document.getElementById("dropdown").style.display = "none";
+        },  
     },
 
 };
+
 </script>
 
 <template>
 
 <q-card class = "required">
-    <q-btn class="openbtn" @click="openNav()"> </q-btn>
-    <q-btn class="closebtn" @click="closeNav()">x</q-btn>
+    <q-btn class="openbtn" @click="openNav()">Show</q-btn>
+    <q-btn class="closebtn" @click="closeNav()">Hide</q-btn>
+    
+
+    <q-toggle v-model="expanded" label="Expand All" class="q-mb-md"></q-toggle>
 
     <q-list dense id="dropdown">
         
