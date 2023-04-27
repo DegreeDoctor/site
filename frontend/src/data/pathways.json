@@ -61,12 +61,12 @@
         {
           "amount": 2,
           "courses": [
-            "Hormones, Brain, and Behavior",
-            "Behavioral Neuroscience",
             "Cognition and the Brain",
-            "Introduction to Cognitive Neuroscience",
+            "Behavioral Neuroscience",
+            "Hormones, Brain, and Behavior",
+            "Drugs, Society, and Behavior",
             "Stress and the Brain",
-            "Drugs, Society, and Behavior"
+            "Introduction to Cognitive Neuroscience"
           ]
         }
       ]
@@ -105,19 +105,19 @@
         {
           "amount": 2,
           "courses": [
-            "Cognitive Engineering",
-            "Visual Poetics and Narrative",
-            "Visual Design: Theory and Application",
-            "Sculpture II",
-            "Sound Recording and Production I",
             "Topics in Communication",
-            "Typography",
-            "Fundamentals of 2D Design",
             "Introduction to Graphic Design",
+            "Sound Recording and Production I",
+            "Cognitive Engineering",
             "Music and Sound I",
-            "Sculpture I",
+            "Typography",
             "Topics in the Arts",
-            "Introduction to Cognitive Science"
+            "Sculpture I",
+            "Introduction to Cognitive Science",
+            "Sculpture II",
+            "Visual Design: Theory and Application",
+            "Visual Poetics and Narrative",
+            "Fundamentals of 2D Design"
           ]
         }
       ]
@@ -280,8 +280,8 @@
           "amount": 2,
           "courses": [
             "Economics of Innovation and New Technologies",
-            "Economics of Growth & Innovation",
-            "Economics of Biotech and Medical Innovations"
+            "Economics of Biotech and Medical Innovations",
+            "Economics of Growth & Innovation"
           ]
         }
       ]
@@ -334,15 +334,15 @@
         {
           "amount": 2,
           "courses": [
-            "Eco Chic: Living Art",
-            "Environmental Economics",
             "Sustainability Education",
-            "Queer Ecologies",
-            "Environmental Philosophy",
             "Consumer Culture",
+            "Environmental Economics",
+            "Environmental Philosophy",
             "Art, Community, and Technology",
+            "Bioethics",
             "Biopunk: Arts Lab Practice",
-            "Bioethics"
+            "Eco Chic: Living Art",
+            "Queer Ecologies"
           ]
         }
       ]
@@ -354,19 +354,19 @@
         {
           "amount": 3,
           "courses": [
-            "Eco Chic: Living Art",
-            "Engineering Ethics",
-            "The Genome and You",
+            "Science and Scientific Misconduct",
             "Science, Technology, and Society",
             "Medicine, Culture, and Society",
-            "Science and Scientific Misconduct",
-            "Hactivism",
-            "Minds and Machines",
-            "Environmental Philosophy",
-            "Art, Community, and Technology",
             "Law, Values, and Public Policy: Perspectives on Science and Technology",
+            "Hactivism",
             "Ethics",
-            "Bioethics"
+            "Art, Community, and Technology",
+            "Environmental Philosophy",
+            "Engineering Ethics",
+            "Bioethics",
+            "The Genome and You",
+            "Eco Chic: Living Art",
+            "Minds and Machines"
           ]
         }
       ]
@@ -378,22 +378,22 @@
         {
           "amount": 3,
           "courses": [
-            "History of Science and Technology",
-            "The Art of Listening",
-            "Cognitive Psychology",
-            "Are Humans Rational?",
-            "Principles of Economics",
-            "Proposing and Persuading",
-            "Introduction to Logic",
-            "Behavioral Economics",
-            "Speech Communication",
-            "Minds and Machines",
             "Communication Theory and Practice",
-            "Critical Thinking",
-            "Applied Game Theory",
+            "The Art of Listening",
             "War and Society",
+            "Cognitive Psychology",
+            "Speech Communication",
+            "Introduction to Logic",
             "War and Technology: Past, Present, and Future",
-            "Introduction to Cognitive Science"
+            "History of Science and Technology",
+            "Behavioral Economics",
+            "Principles of Economics",
+            "Applied Game Theory",
+            "Introduction to Cognitive Science",
+            "Are Humans Rational?",
+            "Proposing and Persuading",
+            "Minds and Machines",
+            "Critical Thinking"
           ]
         }
       ]
@@ -417,19 +417,19 @@
         {
           "amount": 2,
           "courses": [
-            "Philosophy of Science",
-            "Science and Fiction",
             "Post-Factual Media",
-            "Rethinking Documentary: Video Production",
-            "Creative Nonfiction Writing",
+            "Documentary Film",
+            "Philosophy of Science",
             "Science Fictions",
-            "Hactivism",
             "Drugs in History",
             "American Politics in Crisis",
-            "Critical Thinking",
+            "Advertising and Culture",
             "Creative Writing:  Short Story",
-            "Documentary Film",
-            "Advertising and Culture"
+            "Science and Fiction",
+            "Creative Nonfiction Writing",
+            "Rethinking Documentary: Video Production",
+            "Hactivism",
+            "Critical Thinking"
           ]
         }
       ]
@@ -537,8 +537,8 @@
         {
           "amount": 2,
           "courses": [
-            "IT and Society",
-            "Introduction to Human Computer Interaction"
+            "Introduction to Human Computer Interaction",
+            "IT and Society"
           ]
         },
         {
@@ -661,20 +661,20 @@
         {
           "amount": 3,
           "courses": [
-            "Interface Design: Hypermedia Theory and Application",
             "Research Methods and Statistics I",
-            "Principles of Economics",
-            "The Genome and You",
-            "Mathematical Methods in Psychological Science",
             "Science and Scientific Misconduct",
-            "Behavioral Economics",
+            "Information Design",
+            "Interface Design: Hypermedia Theory and Application",
             "Interactive Data Visualization",
-            "Minds and Machines",
+            "Mathematical Methods in Psychological Science",
             "Econometrics",
             "IT and Society",
-            "Critical Thinking",
+            "Behavioral Economics",
+            "Principles of Economics",
             "Applied Game Theory",
-            "Information Design"
+            "The Genome and You",
+            "Minds and Machines",
+            "Critical Thinking"
           ]
         }
       ]
@@ -686,12 +686,12 @@
         {
           "amount": 3,
           "courses": [
-            "Are Humans Rational?",
-            "Introduction to Logic",
-            "Minds and Machines",
-            "Critical Thinking",
             "Intermediate Logic",
-            "Computability and Logic"
+            "Computability and Logic",
+            "Introduction to Logic",
+            "Are Humans Rational?",
+            "Minds and Machines",
+            "Critical Thinking"
           ]
         }
       ]
@@ -831,11 +831,11 @@
         {
           "amount": 1,
           "courses": [
-            "Introduction to Philosophy",
-            "The Genome and You",
             "Science and Scientific Misconduct",
-            "Introduction to Logic",
+            "Introduction to Philosophy",
             "Great Ideas in Philosophy",
+            "Introduction to Logic",
+            "The Genome and You",
             "Critical Thinking"
           ]
         },
@@ -844,11 +844,11 @@
           "courses": [
             "Philosophy of Science",
             "Metaphysics and Consciousness",
-            "Philosophy of Biology",
             "Introduction to Logic",
+            "Ethics",
             "Environmental Philosophy",
-            "Critical Thinking",
-            "Ethics"
+            "Philosophy of Biology",
+            "Critical Thinking"
           ]
         }
       ]
@@ -900,15 +900,15 @@
         {
           "amount": 1,
           "courses": [
-            "Hormones, Brain, and Behavior",
-            "History of Mental Health",
             "Gender, Science, and Technology",
-            "Medicine, Culture, and Society",
-            "Stress and the Brain",
-            "Drugs in History",
-            "History of Medicine",
-            "Drugs, Society, and Behavior",
             "Food, Farms, and Famine",
+            "Drugs in History",
+            "History of Mental Health",
+            "Medicine, Culture, and Society",
+            "Hormones, Brain, and Behavior",
+            "Drugs, Society, and Behavior",
+            "History of Medicine",
+            "Stress and the Brain",
             "Bioethics"
           ]
         }
@@ -922,10 +922,10 @@
           "amount": null,
           "courses": [
             "Sociology",
-            "Science, Technology, and Society",
-            "IT and Society",
             "American History",
-            "Environment and Society"
+            "Science, Technology, and Society",
+            "Environment and Society",
+            "IT and Society"
           ]
         }
       ]
@@ -1012,23 +1012,23 @@
         {
           "amount": 3,
           "courses": [
+            "Science and Scientific Misconduct",
             "Philosophy of Science",
-            "Eco Chic: Living Art",
-            "History of Science and Technology",
+            "Communication Theory and Practice",
+            "Strategic Writing",
+            "History of American Technology",
+            "Science, Technology, and Society",
             "Science and Fiction",
+            "Medicine, Culture, and Society",
             "Research Writing",
             "Topics in the Arts",
-            "Science, Technology, and Society",
-            "Philosophy of Biology",
-            "Medicine, Culture, and Society",
-            "Science and Scientific Misconduct",
-            "Strategic Writing",
-            "Proposing and Persuading",
-            "Critical Thinking",
             "Well-being: Cultivating Curiosity",
-            "History of American Technology",
             "War and Technology: Past, Present, and Future",
-            "Communication Theory and Practice"
+            "History of Science and Technology",
+            "Philosophy of Biology",
+            "Eco Chic: Living Art",
+            "Proposing and Persuading",
+            "Critical Thinking"
           ]
         }
       ]
@@ -1122,19 +1122,19 @@
         {
           "amount": 2,
           "courses": [
-            "Hormones, Brain, and Behavior",
-            "Introduction to Psychological Science",
-            "Stress and the Brain",
             "Psychology of Mindfulness",
+            "Introduction to Psychological Science",
             "Rensselaer Concert Choir",
-            "Creative Nonfiction Writing",
             "Creative Writing:  Short Story",
-            "Sensibilities",
+            "Positive Psychology",
+            "Hormones, Brain, and Behavior",
+            "Creative Nonfiction Writing",
             "Topics in the Arts",
+            "Sensibilities",
             "Drugs, Society, and Behavior",
             "Ethics",
             "Topics in Psychology",
-            "Positive Psychology"
+            "Stress and the Brain"
           ]
         }
       ]
