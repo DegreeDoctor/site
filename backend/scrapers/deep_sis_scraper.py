@@ -43,8 +43,7 @@ def deep_sis_scraper():
     for list in tail:
         urlTails.append(''.join(list))
     for tails in tqdm(urlTails):
-        #for year in years:
-            year = "202209"
+        for year in years:
             tempHead = head.replace("ZIGGSISTHEBEST", str(year))
             webpage_response = s.get(tempHead + tails)
             webpage = webpage_response.content
@@ -61,8 +60,8 @@ def deep_sis_scraper():
                 #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=ARTS&crse_numb_in=2060"
                 #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=COGS&crse_numb_in=2940"
                 #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=CSCI&crse_numb_in=4480"
-                link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=ASTR&crse_numb_in=4220"
-                Lcontent = s.get(link)
+                #link = "https://sis.rpi.edu/rss/bwckctlg.p_disp_course_detail?cat_term_in=202209&subj_code_in=ASTR&crse_numb_in=4220"
+                Lcontent = s.get(link) 
                 deepContent = Lcontent.content
                 contentSoup = BeautifulSoup(deepContent, "html.parser")
                 classInformation = contentSoup.text
@@ -235,6 +234,7 @@ def deep_sis_scraper():
                 if(courseName not in courseJson):
                     courseJson[courseName] = {} #creates a new course in the json file
                     courseJson[courseName]['properties'] = {}
+                    
                 
                 courseJson[courseName]['subject'] = courseSubject #adds the subject to the course
                 courseJson[courseName]['ID'] = courseID #adds the ID to the course
@@ -244,12 +244,14 @@ def deep_sis_scraper():
                 courseJson[courseName]['crosslisted'] = crossListing #adds the crossListing to the course
                 courseJson[courseName]['properties']['CI'] = CI #adds if communication intensive to the course
                 if len(restrictedMajor) > 0:
+                    courseJson[courseName]['properties'].get('MR', True)
                     courseJson[courseName]['properties']['MR'] = True
                     courseJson[courseName]['properties']['majorRestriction'] = restrictedMajor
                 else:
-                    if courseJson[courseName]['properties']['MR'] == True:
-                        print("hey guys ziggs here")
+                    if courseJson[courseName]['properties'].get('MR'):
+                        print(end="")
                     else:
+                        courseJson[courseName]['properties'].get('MR', False)
                         courseJson[courseName]['properties']['MR'] = False
                         courseJson[courseName]['properties']['majorRestriction'] = []
                 for val in cleanInstructors.tolist():

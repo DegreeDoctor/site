@@ -249,7 +249,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Benjamin P. Weissman"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -281,11 +283,16 @@
     ],
     "crosslisted": "",
     "description": "A survey course in modern astrophysics with an emphasis on stellar astrophysics and interstellar matter; topics include star formation, the structure and observable properties of normal and degenerate stars; and the composition, dynamics, and stability of the interstellar medium.",
-    "professors": [],
+    "professors": [
+      "Glenn Ciolek"
+    ],
     "properties": {
       "CI": false,
-      "MR": false,
-      "majorRestriction": []
+      "MR": true,
+      "majorRestriction": [
+        "Applied Physics",
+        "Physics"
+      ]
     },
     "subject": "ASTR"
   },
@@ -2844,13 +2851,30 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Alicia Ann Walf",
+      "Jason Sean Jacobskind"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
       "majorRestriction": []
     },
     "subject": "COGS"
+  },
+  "BEHIND THE TV SCREEN": {
+    "ID": "1030",
+    "credits": [
+      "4"
+    ],
+    "crosslisted": "",
+    "description": "",
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subject": "IHSS"
   },
   "BLACK PERSPECTIVE": {
     "ID": "2480",
@@ -2921,8 +2945,10 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false,
-      "majorRestriction": []
+      "MR": true,
+      "majorRestriction": [
+        "Information Tech & Web Science"
+      ]
     },
     "subject": "ITWS"
   },
@@ -2933,7 +2959,9 @@
     ],
     "crosslisted": "Cross lis",
     "description": "Investigates business-related considerations in successfully commercializing new technology in a new venture or within an existing enterprise: market and customer analysis, beating the competition, planning and managing for profitability, high-tech marketing and sales, and business partnerships and acquisitions. Not a general management course; focuses explicitly on what is relevant for engineers and scientists working in a commercial environment. For junior/senior undergraduate or graduate students.",
-    "professors": [],
+    "professors": [
+      "Kevin R. Stewart"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -4489,7 +4517,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Alicia Ann Walf"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -4519,7 +4549,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Michael J. Schoelles"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -4534,7 +4566,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Marjorie McShane"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -4558,8 +4592,92 @@
     },
     "subject": "ITWS"
   },
+  "CONSORTIA COURSE (AT JCA)": {
+    "ID": "1007",
+    "credits": [
+      "6"
+    ],
+    "crosslisted": "",
+    "description": "",
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subject": "IHSS"
+  },
+  "CONSORTIA COURSE (AT SIENA)": {
+    "ID": "1003",
+    "credits": [
+      "6"
+    ],
+    "crosslisted": "",
+    "description": "",
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subject": "IHSS"
+  },
+  "CONSORTIA COURSE (AT SKIDMORE)": {
+    "ID": "1004",
+    "credits": [
+      "6"
+    ],
+    "crosslisted": "",
+    "description": "",
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subject": "IHSS"
+  },
+  "CONSORTIA COURSE (AT ST. ROSE)": {
+    "ID": "1006",
+    "credits": [
+      "6"
+    ],
+    "crosslisted": "",
+    "description": "",
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subject": "IHSS"
+  },
+  "CONSORTIA COURSE (AT SUNYA)": {
+    "ID": "1002",
+    "credits": [
+      "6"
+    ],
+    "crosslisted": "",
+    "description": "",
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subject": "IHSS"
+  },
+  "CONSORTIA COURSE (AT UNION)": {
+    "ID": "1005",
+    "credits": [
+      "6"
+    ],
+    "crosslisted": "",
+    "description": "",
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subject": "IHSS"
+  },
   "CONSORTIA COURSE (at HVCC)": {
-    "ID": "4001",
+    "ID": "1001",
     "credits": [
       "6"
     ],
@@ -4571,7 +4689,7 @@
       "MR": false,
       "majorRestriction": []
     },
-    "subject": "LITR"
+    "subject": "IHSS"
   },
   "CONSORTIA COURSE (at SIENA)": {
     "ID": "4003",
@@ -4709,7 +4827,7 @@
     "subject": "LITR"
   },
   "CONSORTIA COURSE SCCC OR ACC": {
-    "ID": "4008",
+    "ID": "1008",
     "credits": [
       "6"
     ],
@@ -4721,7 +4839,21 @@
       "MR": false,
       "majorRestriction": []
     },
-    "subject": "LITR"
+    "subject": "IHSS"
+  },
+  "CONSORTIA COURSE(at ALB PHARM)": {
+    "ID": "1009",
+    "credits": [
+      "6"
+    ],
+    "crosslisted": "",
+    "description": "",
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subject": "IHSS"
   },
   "CREATIVE INTELLIGENT AGT": {
     "ID": "2220",
@@ -8065,7 +8197,8 @@
     "crosslisted": "",
     "description": "",
     "professors": [
-      "Thilanka Munasinghe"
+      "Thilanka Munasinghe",
+      "Linda Kramarchyk"
     ],
     "properties": {
       "CI": false,
@@ -8083,7 +8216,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Thilanka Munasinghe"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -8098,13 +8233,31 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Samuel Bernt Johnson",
+      "Richard M. Plotka",
+      "Kathleen Sturey Fontaine"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
       "majorRestriction": []
     },
     "subject": "ITWS"
+  },
+  "DOCUMENTARY 21ST C: IDENT PROD": {
+    "ID": "1040",
+    "credits": [
+      "4"
+    ],
+    "crosslisted": "",
+    "description": "",
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subject": "IHSS"
   },
   "Data Analysis in Economics and Finance": {
     "ID": "4580",
@@ -9902,6 +10055,20 @@
       "majorRestriction": []
     },
     "subject": "ECSE"
+  },
+  "EXPLORING MUSIC @ RENSSELAER": {
+    "ID": "1010",
+    "credits": [
+      "4"
+    ],
+    "crosslisted": "",
+    "description": "",
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subject": "IHSS"
   },
   "Earth Materials": {
     "ID": "2330",
@@ -13835,7 +14002,8 @@
     "crosslisted": "",
     "description": "",
     "professors": [
-      "Mei Si"
+      "Mei Si",
+      "Michael F Lynch"
     ],
     "properties": {
       "CI": false,
@@ -13854,11 +14022,15 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Eric Louis Ameres"
+    ],
     "properties": {
       "CI": false,
-      "MR": false,
-      "majorRestriction": []
+      "MR": true,
+      "majorRestriction": [
+        "Games & Simulation Arts & Sci"
+      ]
     },
     "subject": "COGS"
   },
@@ -15045,7 +15217,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Alicia Ann Walf"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -16054,13 +16228,43 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Mei Si"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
       "majorRestriction": []
     },
     "subject": "COGS"
+  },
+  "INTELLIGENT VIRTUAL AGENTS": {
+    "ID": "4640",
+    "credits": [
+      "4"
+    ],
+    "crosslisted": "",
+    "description": "This course introduces various computational approaches for creating intelligent conversational agents. This course will take the form of a combination of lectures, presentations by students, class discussions, and independent study.",
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subject": "COGS"
+  },
+  "INTERDIS. HUM & SOC SCI ELECT": {
+    "ID": "1000",
+    "credits": [
+      "6"
+    ],
+    "crosslisted": "",
+    "description": "",
+    "properties": {
+      "CI": false,
+      "MR": false,
+      "majorRestriction": []
+    },
+    "subject": "IHSS"
   },
   "INTRO TO COG NEUROSCIENCE": {
     "ID": "4330",
@@ -16120,7 +16324,8 @@
     "crosslisted": "",
     "description": "",
     "professors": [
-      "Richard M. Plotka"
+      "Richard M. Plotka",
+      "Linda Kramarchyk"
     ],
     "properties": {
       "CI": false,
@@ -16139,12 +16344,19 @@
     "crosslisted": "",
     "description": "",
     "professors": [
-      "Carolin Alice Hofmann"
+      "Carolin Alice Hofmann",
+      "James P Zappen",
+      "Skye Anicca"
     ],
     "properties": {
       "CI": false,
-      "MR": false,
-      "majorRestriction": []
+      "MR": true,
+      "majorRestriction": [
+        "Communication, Media, & Design",
+        "Elect Media, Arts, & Comm",
+        "Games & Simulation Arts & Sci",
+        "Information Tech & Web Science"
+      ]
     },
     "subject": "LITR"
   },
@@ -16155,11 +16367,15 @@
     ],
     "crosslisted": "PSYC 4330",
     "description": "This survey course is intended as an introduction to Cognitive Neuroscience. The topics covered will focus on exploring the neural underpinnings for cognitive processes, such as sensation, language, attention, motor control, executive functions, social communication, emotions, consciousness, and learning/memory. Basic aspects of nervous system function and neuroanatomy, brain development/evolution, structural and functional imaging techniques, and other research methods used in Cognitive Neuroscience will be discussed.",
-    "professors": [],
+    "professors": [
+      "Alicia Ann Walf"
+    ],
     "properties": {
       "CI": false,
-      "MR": false,
-      "majorRestriction": []
+      "MR": true,
+      "majorRestriction": [
+        "Cognitive Science"
+      ]
     },
     "subject": "COGS"
   },
@@ -16186,7 +16402,8 @@
     "crosslisted": "",
     "description": "",
     "professors": [
-      "Jami Lynn Cotler"
+      "Jami Lynn Cotler",
+      "Miles A Kimball"
     ],
     "properties": {
       "CI": false,
@@ -16255,7 +16472,10 @@
     "crosslisted": "",
     "description": "",
     "professors": [
-      "Kevin R. Stewart"
+      "Kevin R. Stewart",
+      "Richard M. Plotka",
+      "Linda Kramarchyk",
+      "Matthew John Grill"
     ],
     "properties": {
       "CI": false,
@@ -20564,7 +20784,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Mei Si"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -21291,7 +21513,9 @@
     "crosslisted": "",
     "description": "",
     "professors": [
-      "Cristina Claudia Caruso James"
+      "Cristina Claudia Caruso James",
+      "Ellen Esrock",
+      "Carolin Alice Hofmann"
     ],
     "properties": {
       "CI": false,
@@ -24433,7 +24657,9 @@
     ],
     "crosslisted": "COGS 6560",
     "description": "This course will explore the different strategies used by different languages to fulfill the same needs of human communication. A sampling of topics: quickly learning the basics of a new language using linguistic principles; cross-linguistic knowledge elicitation and engineering;  principles of generative grammar; space, time, agency, and other linguistic phenomena viewed cross-linguistically.",
-    "professors": [],
+    "professors": [
+      "Marjorie McShane"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -26025,7 +26251,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Michael J. Schoelles"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -29657,7 +29885,10 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "June Deery",
+      "Natalie Erika Amiama"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -29687,7 +29918,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Alicia Ann Walf"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -29702,7 +29935,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Peter A Fox"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -29782,7 +30017,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Bram Van Heuveln"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -32434,7 +32671,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Christopher C. Jeansonne"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -32513,11 +32752,17 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Christopher Robert Sims",
+      "Mei Si"
+    ],
     "properties": {
       "CI": false,
-      "MR": false,
-      "majorRestriction": []
+      "MR": true,
+      "majorRestriction": [
+        "Cognitive Science",
+        "Psychological Science"
+      ]
     },
     "subject": "COGS"
   },
@@ -32529,11 +32774,20 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Wayne D. Gray",
+      "Tomasz Strzalkowski",
+      "Bram Van Heuveln"
+    ],
     "properties": {
       "CI": false,
-      "MR": false,
-      "majorRestriction": []
+      "MR": true,
+      "majorRestriction": [
+        "Cognitive Science",
+        "Psychological Science",
+        "May not be enrolled as the following Classifications:",
+        "Freshman"
+      ]
     },
     "subject": "COGS"
   },
@@ -32545,11 +32799,18 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Tomasz Strzalkowski",
+      "James A. Hendler"
+    ],
     "properties": {
       "CI": false,
-      "MR": false,
-      "majorRestriction": []
+      "MR": true,
+      "majorRestriction": [
+        "Cognitive Science",
+        "Computer Science",
+        "Psychological Science"
+      ]
     },
     "subject": "COGS"
   },
@@ -32577,11 +32838,18 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Francine D. Berman",
+      "Brian Robert Callahan",
+      "Ana L. Milanova",
+      "Kathleen Sturey Fontaine"
+    ],
     "properties": {
       "CI": false,
-      "MR": false,
-      "majorRestriction": []
+      "MR": true,
+      "majorRestriction": [
+        "Information Tech & Web Science"
+      ]
     },
     "subject": "ITWS"
   },
@@ -32593,7 +32861,11 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Christopher C. Jeansonne",
+      "Skye Anicca",
+      "Miles A Kimball"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -34381,7 +34653,9 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Benjamin P. Weissman"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
@@ -34390,20 +34664,22 @@
     "subject": "COGS"
   },
   "UNDERGRADUATE RESEARCH PROJ": {
-    "ID": "2950",
+    "ID": "4941",
     "credits": [
       "1",
       "4"
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Brian Robert Callahan"
+    ],
     "properties": {
       "CI": false,
       "MR": false,
       "majorRestriction": []
     },
-    "subject": "LITR"
+    "subject": "ITWS"
   },
   "UNDERGRADUATE RESEARCH PROJECT": {
     "ID": "2941",
@@ -34438,7 +34714,9 @@
       "Mei Si",
       "Ralph G Noble",
       "Ron Sun",
-      "Selmer Bringsjord"
+      "Selmer Bringsjord",
+      "Michael J Kalsher",
+      "Michael J. Schoelles"
     ],
     "properties": {
       "CI": false,
@@ -34877,11 +35155,15 @@
     ],
     "crosslisted": "",
     "description": "",
-    "professors": [],
+    "professors": [
+      "Brian Robert Callahan"
+    ],
     "properties": {
       "CI": false,
-      "MR": false,
-      "majorRestriction": []
+      "MR": true,
+      "majorRestriction": [
+        "Information Tech & Web Science"
+      ]
     },
     "subject": "ITWS"
   },
@@ -34893,7 +35175,8 @@
     "crosslisted": "",
     "description": "",
     "professors": [
-      "Skye Anicca"
+      "Skye Anicca",
+      "Ellen Esrock"
     ],
     "properties": {
       "CI": false,
@@ -35400,8 +35683,10 @@
     ],
     "properties": {
       "CI": false,
-      "MR": false,
-      "majorRestriction": []
+      "MR": true,
+      "majorRestriction": [
+        "Information Tech & Web Science"
+      ]
     },
     "subject": "ITWS"
   },
